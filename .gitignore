@@ -3,5 +3,6 @@ node_modules/
 .vercel/
 .env*
 .codex-work/
+assets/city-heroes/
 tmp/
 *.log
