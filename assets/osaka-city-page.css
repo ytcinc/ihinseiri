@@ -223,7 +223,8 @@
       border-radius: 50%;
     }
 
-    .page {
+    .page,
+    .page-shell {
       width: min(1160px, calc(100% - 28px));
       margin: 28px auto 80px;
       display: grid;
@@ -231,8 +232,7 @@
       gap: 28px;
       align-items: start;
     }
-    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:22px; align-items:start; }
-    main.page { width:auto; margin:0; }
+    .page-shell > main.page { width:auto; margin:0; display:block; }
     aside { position:sticky; top:84px; display:grid; gap:16px; }
     .side-card { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); padding:17px; }
     .side-card h2 { margin:0 0 12px; font-size:19px; line-height:1.45; }
@@ -280,6 +280,7 @@
     .toc ol { margin: 0; padding-left: 24px; font-size: 15px; line-height: 1.85; }
 
     section { margin-top: 38px; }
+    main > section:not(#avoid-bad-vendors) > .eyebrow { display: none; }
 
     .section-title {
       margin: 0 0 18px;
@@ -1094,15 +1095,9 @@
     }
 
     @media (max-width: 980px) {
-      .hero-inner, .page { grid-template-columns: 1fr; }
-    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:22px; align-items:start; }
-    main.page { width:auto; margin:0; }
-    aside { position:sticky; top:84px; display:grid; gap:16px; }
-    .side-card { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); padding:17px; }
-    .side-card h2 { margin:0 0 12px; font-size:19px; line-height:1.45; }
-    .side-list { list-style:none; padding:0; margin:0; display:grid; gap:9px; font-size:14px; line-height:1.7; }
-    .side-list li { padding-left:18px; position:relative; }
-    .side-list li:before { content:""; width:7px; height:7px; border-radius:50%; background:var(--orange); position:absolute; left:0; top:.75em; }
+      .hero-inner,
+      .page,
+      .page-shell { grid-template-columns: 1fr; }
       aside { position: static; }
       .nav { overflow-x: auto; max-width: 100%; padding-bottom: 4px; }
       .hero-badges, .stats, .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
