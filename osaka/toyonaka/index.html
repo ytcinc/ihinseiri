@@ -51,12 +51,36 @@
     .page{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.section{margin-top:54px}.section-title{margin:0 0 24px;padding:11px 15px;background:var(--orange);border-left:7px solid var(--orange-dark);color:#fff;font-size:26px;line-height:1.45}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}.grid{display:grid;gap:22px}.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.cols4{grid-template-columns:repeat(4,minmax(0,1fr))}.card,.area-box,.chart-box,.notice{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:24px}.card h3,.area-box h3,.chart-box h3{margin:0 0 9px;font-size:20px;line-height:1.5}.card p,.area-box p,.chart-box p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}.notice{background:#fff8e9;line-height:1.82}.stat-card b{display:block;color:var(--orange-dark);font-size:34px;line-height:1.15}.stat-card span{display:block;color:var(--muted);font-size:15px;line-height:1.72}.toc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.toc a{display:block;padding:14px 15px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);font-weight:900;color:#343a36}.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}.price-table th,.price-table td{border:1px solid #ddd7d0;padding:15px;text-align:left;vertical-align:top}.price-table th{background:#f1eee8;font-weight:900}.tag-list{display:flex;flex-wrap:wrap;gap:10px}.tag,.tag-list a{display:inline-block;padding:6px 12px;border:1px solid var(--line);background:#fff;color:#343a36;border-radius:999px;font-size:15px;font-weight:900}.tag.featured,.tag-list a.featured{background:#fff1e6;border-color:#f2b48c;color:var(--orange-dark)}.tag.muted{background:#f3f1ed;color:#646b66}.bar-row{display:grid;grid-template-columns:132px 1fr 88px;gap:10px;align-items:center;margin:12px 0;font-size:15px}.bar-track{height:18px;background:#efeae4;border-radius:999px;overflow:hidden}.bar-fill{height:100%;background:linear-gradient(90deg,var(--orange),#f2b766);border-radius:inherit}.bar-fill.green{background:linear-gradient(90deg,var(--green),#83c7aa)}.bar-fill.blue{background:linear-gradient(90deg,var(--blue),#7fb8d1)}.source-note{margin:14px 0 0;color:var(--muted);font-size:13px;line-height:1.7}.ba-grid{display:grid;gap:18px}.ba-card{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px}.ba-card h3{margin:0 0 12px;font-size:20px;line-height:1.45}.ba-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ba-photo{position:relative;overflow:hidden;margin:0;border:1px solid var(--line);background:#f3f0ea;aspect-ratio:1/1}.ba-photo img{display:block;width:100%;height:100%;object-fit:cover}.ba-label{position:absolute;left:10px;top:10px;padding:2px 9px;background:rgba(45,45,45,.9);color:#fff;font-size:13px;font-weight:900}.ba-label.after{background:rgba(40,116,90,.94)}.case-detail{margin-top:14px;color:var(--muted);font-size:16px;line-height:1.8}.case-detail p{margin:0 0 10px}.case-points{display:flex;flex-wrap:wrap;gap:8px}.case-points span{display:inline-block;padding:4px 9px;background:#fff1e6;color:var(--orange-dark);border:1px solid #f2b48c;border-radius:999px;font-size:13px;font-weight:900}.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.flow div{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:20px;font-size:16px;line-height:1.78}.flow b{display:block;color:var(--orange-dark)}.check-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 0;padding:0}.check-list li{list-style:none;background:#fff;border:1px solid var(--line);padding:12px 14px;font-size:16px}.case-label{display:inline-block;margin-bottom:8px;padding:4px 8px;background:#fff1e6;color:var(--orange-dark);font-weight:900;font-size:13px}.faq details{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:16px 18px}.faq details+details{margin-top:12px}.faq summary{cursor:pointer;font-weight:900;color:#2f3431}.faq p{margin:10px 0 0;color:var(--muted);font-size:16px}.footer{background:#26231f;color:#fff;margin-top:50px;padding:26px 0}.footer-inner{width:min(1160px,calc(100% - 28px));margin:0 auto;color:#f3ece4;font-size:14px}
     @media(max-width:900px){.hero-inner{grid-template-columns:1fr;min-height:auto;padding:44px 0 52px}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}.toc,.cols2,.cols3,.cols4,.flow,.check-list{grid-template-columns:1fr}.hero h1{font-size:34px}.bar-row{grid-template-columns:100px 1fr 58px}.page{margin:30px auto 78px}.section{margin-top:42px}}
   </style>
+  <style>
+    .hero-badges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:24px;max-width:780px}
+    .badge{min-height:82px;padding:12px;background:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.58);box-shadow:0 10px 22px rgba(0,0,0,.12)}
+    .badge b{display:block;color:var(--orange-dark);font-size:21px;line-height:1.2}
+    .badge span{display:block;margin-top:5px;color:#4d4f4c;font-size:12px;line-height:1.55;font-weight:800}
+    .template-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.75;margin-top:16px}
+    .template-table th,.template-table td{border:1px solid #ddd7d0;padding:14px;text-align:left;vertical-align:top}
+    .template-table th{background:#f1eee8;font-weight:900}
+    .bad-vendor-visual{margin:20px 0;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .bad-vendor-visual img{display:block;width:100%;height:auto}
+    .bad-vendor-visual figcaption{padding:12px 14px;color:var(--muted);font-size:14px;line-height:1.7}
+    .bad-vendor-grid,.safe-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+    .bad-vendor-card,.safe-check{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px}
+    .bad-vendor-card h3,.safe-check h3{margin:0 0 8px;font-size:18px;line-height:1.45}
+    .bad-vendor-card h3:before{content:"!";display:inline-grid;place-items:center;width:22px;height:22px;margin-right:8px;background:#b92921;color:#fff;border-radius:50%;font-size:13px}
+    .safe-check h3:before{content:"✓";margin-right:8px;color:#0b7a4b;font-weight:900}
+    .bad-vendor-card p,.safe-check p{margin:0;color:var(--muted);font-size:15px;line-height:1.8}
+    .cta-band{margin-top:54px;background:#2d2d2d;color:#fff;padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    .cta-band h2{margin:0 0 6px;font-size:23px;line-height:1.4}
+    .cta-band p{margin:0;color:rgba(255,255,255,.82)}
+    .checkitem{background:#fff;border:1px solid var(--line);padding:14px 16px;font-size:16px;line-height:1.75}
+    .checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+    @media(max-width:900px){.hero-badges,.bad-vendor-grid,.safe-checks,.checklist,.cta-band{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="/"><span class="brand-symbol">整</span><span><span class="brand-main"><span class="brand-area-name">豊中市の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a>
-      <nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="/osaka/">大阪府</a><a href="#local">住宅特性</a><a href="#hotline">行政窓口</a><a class="call" href="#flow">見積もり準備</a></nav>
+      <nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="/osaka/">大阪府</a><a href="#local">住宅特性</a><a href="#hotline">行政窓口</a><a class="call" href="#process">見積もり準備</a></nav>
     </div>
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/osaka/">大阪府</a><span>›</span>豊中市</div></nav>
@@ -67,7 +91,13 @@
         <span class="eyebrow">豊中市で遺品整理・生前整理を探す</span>
         <h1>豊中市の遺品整理・生前整理で、料金と行政窓口を相談前に確認</h1>
         <p>千里中央・蛍池の駅前マンション、千里ニュータウンの団地、庄内・豊南町の戸建てや長屋、岡町・桜塚の住宅地まで。豊中市の住まいの特徴に合わせて、見積もり前に確認したい要点をまとめています。</p>
-        <div class="hero-actions"><a class="btn primary" href="#flow">相談前チェック</a><a class="btn secondary" href="#hotline">豊中市の窓口を見る</a></div>
+        <div class="hero-actions"><a class="btn primary" href="#process">相談前チェック</a><a class="btn secondary" href="#hotline">豊中市の窓口を見る</a></div>
+        <div class="hero-badges" aria-label="対応の特徴">
+          <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告で遠方親族も確認しやすい</span></div>
+          <div class="badge"><b>養生対応</b><span>マンション共用部やエレベーター搬出に配慮</span></div>
+          <div class="badge"><b>買取相殺</b><span>家電・貴金属・趣味用品の査定を相談</span></div>
+          <div class="badge"><b>福祉連携</b><span>市の制度や空き家相談先もあわせて確認</span></div>
+        </div>
       </div>
       <aside class="hero-panel">
         <h2>豊中市で特に確認したいこと</h2>
@@ -91,17 +121,34 @@
     <section id="toc" class="section">
       <h2 class="section-title">このページでわかること</h2>
       <div class="toc">
-        <a href="#vendor">業者の見分け方</a><a href="#local">住宅特性・統計</a><a href="#towns">対応町名・駅</a><a href="#service">任せられるサービス</a><a href="#cases">想定事例</a><a href="#price">料金目安</a><a href="#items">品目別対応</a><a href="#flow">相談の流れ</a><a href="#compare">業者比較</a><a href="#avoid">悪徳業者対策</a><a href="#faq">FAQ</a><a href="#hotline">行政・福祉窓口</a>
+        <a href="#search-intent">探している方へ</a><a href="#trust">業者の見分け方</a><a href="#local">住宅特性・統計</a><a href="#towns">対応町名・駅</a><a href="#service">任せられるサービス</a><a href="#cases">想定事例</a><a href="#price">料金目安</a><a href="#items">品目別対応</a><a href="#process">相談の流れ</a><a href="#compare">業者比較</a><a href="#avoid-bad-vendors">悪徳業者対策</a><a href="#hotline">行政・福祉窓口</a>
       </div>
     </section>
 
-    <section id="vendor" class="section">
-      <h2 class="section-title">豊中市で業者を見分けるポイント</h2>
+    <section id="search-intent" class="section search-intent">
+      <h2 class="section-title">豊中市で遺品整理・生前整理を探している方へ</h2>
+      <p class="lead"><span class="marker">豊中市の遺品整理</span>は、亡くなった後の家財整理、貴重品探索、形見分け、供養、退去前の片付けまでをまとめて相談したい方に向いています。一方で、<span class="marker">豊中市の生前整理</span>は、施設入居、住み替え、実家の空家化予防、家族に負担を残さないための荷物整理として早めに進める方が増えています。</p>
       <div class="grid cols3">
-        <div class="card"><h3>所在地より作業条件の説明</h3><p>豊中市対応をうたうだけでなく、集合住宅の養生、長屋の搬出、駐車条件まで聞き取る業者を選びます。</p></div>
-        <div class="card"><h3>見積書の内訳</h3><p>人件費、車両費、処分費、買取、供養、追加費用条件が分かれているか確認します。</p></div>
-        <div class="card"><h3>許可・委託先の説明</h3><p>一般廃棄物の扱い、古物商許可、提携先、リサイクル家電の処理方法を説明できるかが目安です。</p></div>
+        <div class="card"><h3>豊中市で遺品整理を相談したい場合</h3><p>通帳・印鑑・権利書・写真などを処分前に探し、残す品・供養する品・買取できる品を分けながら片付けます。</p></div>
+        <div class="card"><h3>豊中市で生前整理を進めたい場合</h3><p>施設入居や住み替えの前に、必要な荷物だけを残し、家具・家電・衣類・書類を無理のない順番で整理します。</p></div>
+        <div class="card"><h3>地域名で探すときの見方</h3><p>「豊中市 遺品整理」「豊中市 生前整理」で探す場合は、料金だけでなく行政ルール、建物養生、立会い不要対応、写真報告まで確認すると安心です。</p></div>
       </div>
+    </section>
+
+    <section id="trust" class="section">
+      <h2 class="section-title">豊中市で安心して依頼できる遺品整理・生前整理業者の見分け方</h2>
+      <p class="lead">遺品整理は、故人様の思い出が残る住まいに他人が入る作業です。安さだけで選ぶと、追加料金、雑な搬出、無許可回収、貴重品の見落としなどの不安が残ります。豊中市で依頼先を選ぶときは、まず次の情報がきちんと公開されているか確認してください。</p>
+      <table class="template-table">
+        <thead><tr><th>確認項目</th><th>掲載されているべき内容</th><th>見るべきポイント</th></tr></thead>
+        <tbody>
+          <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
+          <tr><td>一般廃棄物処理の体制</td><td>自治体ルールに沿った処分方法、許可業者・提携先の説明。</td><td>家庭ごみを適法に処分しているか。</td></tr>
+          <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>顔が見える情報</td><td>代表・スタッフの写真、挨拶、対応方針。</td><td>家の中に入る人の人柄が伝わるか。</td></tr>
+        </tbody>
+      </table>
+      <div class="notice" style="margin-top:18px"><b>豊中市ではここが大事</b><br>千里中央・蛍池周辺は集合住宅の搬出時間や養生、庄内・豊南町では戸建て・長屋の搬出導線、岡町・桜塚では住宅地での近隣配慮が重要です。管理会社への作業届、エレベーター養生、前面道路、駐車位置まで説明している業者を選ぶと安心です。</div>
     </section>
 
     <section id="local" class="section">
@@ -155,7 +202,7 @@
 
     <section id="cases" class="section">
       <h2 class="section-title">ビフォーアフター事例（想定事例）</h2>
-      <p class="lead">以下は口コミや実績の捏造ではなく、豊中市で起こりやすい条件をもとにした想定事例です。写真は福島区ページと同じビフォーアフター素材を使い、片付け前後の見え方を確認しやすくしています。</p>
+      <p class="lead">以下は口コミや実績の捏造ではなく、豊中市で起こりやすい条件をもとにした想定事例です。片付け前後の見え方を確認しやすいよう、ビフォーアフター写真を掲載しています。</p>
       <div class="ba-grid">
         <div class="ba-card"><h3>千里中央周辺のマンション整理</h3><div class="ba-photos"><figure class="ba-photo"><img src="/assets/before-after/before-00.jpg" alt="豊中市のマンション遺品整理ビフォー"><span class="ba-label">ビフォー</span></figure><figure class="ba-photo"><img src="/assets/before-after/after-00.jpg" alt="豊中市のマンション遺品整理アフター"><span class="ba-label after">アフター</span></figure></div><div class="case-detail"><p>管理会社へ搬出時間を確認し、エレベーターと廊下を養生。写真・書類を残しながら、退去日前に整理する想定です。</p><div class="case-points"><span>共用部養生</span><span>写真報告</span><span>退去前整理</span></div></div></div>
         <div class="ba-card"><h3>庄内・豊南町の戸建て整理</h3><div class="ba-photos"><figure class="ba-photo"><img src="/assets/before-after/before-01.jpg" alt="豊中市の戸建て整理ビフォー"><span class="ba-label">ビフォー</span></figure><figure class="ba-photo"><img src="/assets/before-after/after-01.jpg" alt="豊中市の戸建て整理アフター"><span class="ba-label after">アフター</span></figure></div><div class="case-detail"><p>2階家具と物置の残置物を分け、買取可能品を査定。前面道路の停車時間を短くする段取りを組みます。</p><div class="case-points"><span>大型家具搬出</span><span>貴重品探索</span><span>売却前整理</span></div></div></div>
@@ -166,72 +213,101 @@
     </section>
 
     <section id="price" class="section">
-      <h2 class="section-title">豊中市の料金目安</h2>
-      <p class="lead">料金は量だけでなく、階数、エレベーター、駐車位置、分別量、買取、供養、清掃、作業期限で変わります。下表は相談前の目安です。</p>
+      <h2 class="section-title">豊中市の遺品整理料金と基本作業</h2>
+      <p class="lead">料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。豊中市では、<span class="marker">管理会社の搬出届は必要か、前面道路に車両を停められるか</span> という点も必ず確認しましょう。</p>
       <table class="price-table">
-        <thead><tr><th>間取り・状況</th><th>目安</th><th>豊中市で確認したい条件</th></tr></thead>
+        <thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead>
         <tbody>
-          <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、集合住宅の搬出時間、写真報告。</td></tr>
-          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、共用部養生、買取査定。</td></tr>
-          <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、供養品、退去前整理、車両台数。</td></tr>
-          <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、階段搬出、空家・売却前の残置物整理。</td></tr>
+          <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
+          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
+          <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
+          <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
         </tbody>
       </table>
-      <p class="source-note">実際の見積もりでは、作業範囲と追加費用条件を書面で確認してください。</p>
+      <div class="notice" style="margin-top:18px"><b>豊中市の見積もりで見られるポイント</b><br>同じ部屋数でも、駅前マンション、団地、戸建て、長屋、搬出経路、駐車位置、管理会社への確認、買取希望品、供養品、退去期限で金額は変わります。写真だけで判断せず、現地状況と残したいものを整理して相談するのが安心です。</div>
     </section>
 
     <section id="items" class="section">
-      <h2 class="section-title">品目別対応</h2>
-      <div class="grid cols3">
-        <div class="card"><h3>大型家具</h3><p>タンス、ベッド、食器棚は解体搬出の有無と階段幅を確認します。</p></div>
-        <div class="card"><h3>家電リサイクル対象品</h3><p>テレビ、冷蔵庫、洗濯機、エアコンはリサイクル料金と処理方法を確認します。</p></div>
-        <div class="card"><h3>危険物・処理困難物</h3><p>灯油、スプレー缶、消火器、金庫、医療系廃棄物は対応可否を事前確認します。</p></div>
-        <div class="card"><h3>書類・写真</h3><p>権利書、契約書、保険証券、写真は処分前に探索・保管ルールを決めます。</p></div>
-        <div class="card"><h3>仏壇・位牌</h3><p>供養、お焚き上げ、搬出方法、宗派への配慮を確認します。</p></div>
-        <div class="card"><h3>買取可能品</h3><p>家電、ブランド品、骨董、工具、趣味用品は買取可否と明細への反映を確認します。</p></div>
-      </div>
-    </section>
-
-    <section id="flow" class="section">
-      <h2 class="section-title">相談の流れ＋チェックリスト</h2>
-      <div class="flow">
-        <div><b>1. 条件整理</b>住所、町名、建物種別、階数、エレベーター、駐車位置をまとめます。</div>
-        <div><b>2. 残す品の指定</b>通帳、印鑑、権利書、写真、貴金属、供養品をリスト化します。</div>
-        <div><b>3. 見積もり比較</b>内訳、追加費用、作業人数、車両、買取、許可説明を比較します。</div>
-        <div><b>4. 作業・報告</b>立会い可否、鍵の扱い、作業前後写真、貴重品返送を確認します。</div>
-      </div>
-      <ul class="check-list" aria-label="相談前チェックリスト">
-        <li>退去日・売却予定日・施設入居日が決まっている</li><li>管理会社への作業届や搬出時間の制限を確認した</li><li>残す品・探してほしい品を家族で共有した</li><li>粗大ごみや持ち込みで処理する物を分けた</li><li>見積書に追加費用条件が書かれている</li><li>作業後の写真報告や鍵返却方法を決めた</li>
-      </ul>
-    </section>
-
-    <section id="compare" class="section">
-      <h2 class="section-title">業者比較で見るところ</h2>
-      <table class="price-table">
-        <thead><tr><th>比較項目</th><th>確認する内容</th><th>注意点</th></tr></thead>
+      <h2 class="section-title">品目別の処分・買取・供養の判断</h2>
+      <p class="lead">遺品整理で迷いやすいのは、「捨てるもの」「残すもの」「売れるもの」「供養するもの」の線引きです。処分前に品目ごとの扱いを決めておくと、誤処分と追加費用を防ぎやすくなります。</p>
+      <table class="template-table">
+        <thead><tr><th>品目</th><th>確認すること</th><th>対応方針</th></tr></thead>
         <tbody>
-          <tr><td>料金</td><td>作業費、車両費、処分費、買取、供養、清掃の内訳</td><td>総額だけでなく追加条件を見る</td></tr>
-          <tr><td>許可・処分</td><td>一般廃棄物の扱い、提携先、古物商許可</td><td>不法投棄リスクを避ける</td></tr>
-          <tr><td>豊中市の現場理解</td><td>集合住宅、長屋、狭い道路、駐車制限への対応</td><td>当日追加の原因になりやすい</td></tr>
-          <tr><td>報告体制</td><td>写真報告、貴重品返送、鍵の扱い、遠方対応</td><td>口頭だけでなく書面・メールに残す</td></tr>
+          <tr><td>通帳・印鑑・権利書</td><td>相続や解約に必要な重要書類。</td><td><span class="marker">処分せず、探索対象として事前に共有。</span></td></tr>
+          <tr><td>家電・貴金属・趣味用品</td><td>年式、状態、付属品、需要。</td><td><span class="marker">買取査定を行い、整理費用から相殺できるか確認</span>。</td></tr>
+          <tr><td>仏壇・写真・人形</td><td>供養の希望、宗派、家族の意向。</td><td>通常処分と分けて、<span class="marker">供養・お焚き上げの相談対象</span>にする。</td></tr>
+          <tr><td>大型家具・粗大ごみ</td><td>豊中市の粗大ごみ対象、搬出可否、退去期限。</td><td>自治体回収・持ち込みと業者搬出のどちらが現実的か比較。</td></tr>
         </tbody>
       </table>
     </section>
 
-    <section id="avoid" class="section">
-      <h2 class="section-title">悪徳業者の見分け方</h2>
-      <div class="grid cols3">
-        <div class="card"><h3>極端に安い定額だけを強調</h3><p>搬出条件、処分量、追加費用を書面化しない場合は注意が必要です。</p></div>
-        <div class="card"><h3>許可や処分先を説明しない</h3><p>一般廃棄物、リサイクル家電、買取品の扱いを説明できるか確認します。</p></div>
-        <div class="card"><h3>即決を強く迫る</h3><p>相見積もりや家族確認の時間を取らせない営業は避けた方が無難です。</p></div>
+    <section id="process" class="section">
+      <h2 class="section-title">相談から作業完了までの流れ</h2>
+      <div class="flow">
+        <div><b>無料相談</b>住所、間取り、荷物量、立会い可否、退去期限を確認します。</div>
+        <div><b>現地見積もり</b>買取品、養生範囲、搬出経路、管理規約や駐車位置を確認します。</div>
+        <div><b>仕分け・探索</b>通帳、印鑑、権利書、写真、貴重品を処分前に探索します。</div>
+        <div><b>搬出・清掃</b>共用部を保護し、搬出後に簡易清掃と写真報告を行います。</div>
+      </div>
+      <h3>見積もり前チェックリスト</h3>
+      <div class="checklist">
+        <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
+        <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
+        <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
+        <div class="checkitem"><strong>買取希望品</strong><br>家電、貴金属、時計、骨董品、趣味用品、ブランド品をまとめます。</div>
+        <div class="checkitem"><strong>マンション管理規約</strong><br>搬出時間、エレベーター利用、養生、駐車位置を確認します。</div>
+        <div class="checkitem"><strong>供養したいもの</strong><br>仏壇、神棚、写真、人形、お守りなどの扱いを決めます。</div>
+      </div>
+    </section>
+
+    <section id="compare" class="section">
+      <h2 class="section-title">豊中市で遺品整理業者を比較するときの見方</h2>
+      <p class="lead">見積もり金額だけで比較すると、あとから追加料金や処分方法の不安が残ることがあります。特に豊中市のようにマンション、団地、戸建て、長屋が混在する地域では、養生、搬出経路、管理会社対応まで含めて比較することが大切です。</p>
+      <table class="template-table">
+        <thead><tr><th>比較項目</th><th>確認する内容</th><th>良い表示例</th></tr></thead>
+        <tbody>
+          <tr><td>料金</td><td>間取り別料金、基本作業、追加料金条件。</td><td>見積もり後の追加料金なし、基本料金に養生・簡易清掃込み。</td></tr>
+          <tr><td>許認可</td><td>古物商許可、一般廃棄物処理の提携、保険。</td><td>許可番号や提携先の仕組みが公開されている。</td></tr>
+          <tr><td>集合住宅対応</td><td>エレベーター、共用部、管理会社、駐車位置。</td><td>高層階作業や養生の対応が写真でわかる。</td></tr>
+          <tr><td>遠方対応</td><td>鍵預かり、写真報告、オンライン確認、振込精算。</td><td>立会い不要プランの流れがわかりやすい。</td></tr>
+          <tr><td>買取・供養</td><td>査定対象品、費用相殺、仏壇・写真の供養。</td><td>買取例や供養の流れを掲載。</td></tr>
+          <tr><td>地域情報</td><td>粗大ごみ、ふれあい収集、空家相談、町名・駅周辺の搬出条件。</td><td>豊中市の公式窓口・行政ルールへ誘導。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="avoid-bad-vendors" class="section">
+      <p class="eyebrow">悪徳業者対策</p>
+      <h2 class="section-title">トラブル急増中！やばい悪徳業者の5つの特徴</h2>
+      <p class="lead">遺品整理・生前整理では、「見積もり後の高額請求」「大切な品の誤処分」「不用品の不適切な扱い」などの不安を抱く方が少なくありません。豊中市で相談する前に、以下の特徴に当てはまる業者ではないか確認しましょう。</p>
+      <figure class="bad-vendor-visual">
+        <img src="/assets/avoid-bad-vendors-banner.png" alt="悪質業者に注意するためのチェック画像">
+        <figcaption>極端に安い見積もり、書面なし、即決要求には注意が必要です。相見積もりと現地確認で、追加請求や貴重品トラブルを防ぎましょう。</figcaption>
+      </figure>
+      <div class="bad-vendor-grid">
+        <div class="bad-vendor-card"><h3>見積金額が相場より極端に安い</h3><p>安さだけで契約させ、荷物を積み込んだ後に「量が多い」「特殊処分が必要」と追加料金を請求するケースがあります。</p></div>
+        <div class="bad-vendor-card"><h3>訪問・現地見積もりを避ける</h3><p>電話やメールだけの概算で進めると、当日の作業条件を理由に金額が変わりやすくなります。荷物量と搬出経路の確認が重要です。</p></div>
+        <div class="bad-vendor-card"><h3>見積書・契約書を書面で出さない</h3><p>口約束だけだと、基本料金に含まれる作業範囲や追加費用の条件があいまいになります。内訳を書面で残すことが大切です。</p></div>
+        <div class="bad-vendor-card"><h3>「今日決めれば安い」と即決を急かす</h3><p>他社と比較させないために契約を急がせる業者には注意しましょう。遺品整理は家族で確認しながら決めるほうが安心です。</p></div>
+        <div class="bad-vendor-card"><h3>遺品を乱雑に扱い、貴重品を安く買い取る</h3><p>骨董品、貴金属、時計、カメラなどを「価値がない」と説明し、不当に安く買い取るトラブルもあります。査定根拠の確認が必要です。</p></div>
+      </div>
+      <h3>当サイトで確認しておきたい安全な依頼先の条件</h3>
+      <div class="safe-checks">
+        <div class="safe-check"><h3>現地確認と書面見積もり</h3><p>作業前に現地を確認し、作業範囲・処分量・買取・供養・追加費用の条件を書面で説明できるか確認します。</p></div>
+        <div class="safe-check"><h3>許可・資格・提携体制の確認</h3><p>不用品の扱い、買取、提携先、保険の有無などを質問し、あいまいな説明のまま契約しないようにします。</p></div>
+        <div class="safe-check"><h3>立会い・写真報告・貴重品管理</h3><p>通帳、印鑑、権利書、写真、形見分け品などをどう確認するか、立会いできない場合の報告方法も決めておきます。</p></div>
+        <div class="safe-check"><h3>相見積もりを歓迎する姿勢</h3><p>料金だけでなく、スタッフ対応、説明のわかりやすさ、作業後の報告まで比較すると、依頼後の不安を減らせます。</p></div>
       </div>
     </section>
 
     <section id="faq" class="section faq">
-      <h2 class="section-title">FAQ</h2>
-      <details open><summary>豊中市の粗大ごみと業者依頼はどう使い分けますか？</summary><p>少量で期限に余裕がある物は豊中市の粗大ごみ受付を確認し、家一軒分、搬出が難しい大型家具、仕分けや貴重品探索を含む場合は遺品整理業者の見積もりを検討します。</p></details>
-      <details><summary>マンションの搬出は何を確認すればよいですか？</summary><p>管理会社への作業届、搬出可能時間、エレベーター使用、共用部養生、車両停車位置、近隣への配慮を確認してください。</p></details>
-      <details><summary>立会いなしでも依頼できますか？</summary><p>可能な場合があります。鍵の受け渡し、残す品の指定、作業前後写真、貴重品返送、追加確認の連絡方法を契約前に決めておきます。</p></details>
+      <h2 class="section-title">よくある質問</h2>
+      <details><summary>豊中市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、家族に負担を残さないための片付けなど、亡くなる前に行う生前整理にも対応できます。必要な荷物を残し、不要品、買取品、供養したい品を分けて進めます。</p></details>
+      <details open><summary>遠方に住んでいても依頼できますか？</summary><p>できます。鍵の郵送、作業前後の写真報告、オンライン確認、振込精算などを組み合わせると、豊中市まで来られないご家族でも進めやすくなります。</p></details>
+      <details><summary>マンションの管理会社への連絡は必要ですか？</summary><p>必要になる場合があります。搬出時間、エレベーター使用、養生範囲、駐車位置を事前に確認するとトラブルを防げます。</p></details>
+      <details><summary>通帳や権利書を探してもらえますか？</summary><p>見積もり時に探索対象を伝えておくと、仕分け作業の中で通帳、印鑑、保険証券、不動産書類、写真などを確認できます。</p></details>
+      <details><summary>豊中市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量なら行政収集が向いています。家一軒分、退去期限が近い、高齢で搬出できない、家電リサイクル品がある場合は業者相談が現実的です。</p></details>
+      <details><summary>買取で費用は安くなりますか？</summary><p>状態の良い家電、貴金属、時計、骨董品、趣味用品などは査定対象になります。買取額を整理費用から差し引くと実質負担を抑えられます。</p></details>
       <details><summary>豊中市で高齢者・障がい者向けの運び出し収集はありますか？</summary><p>豊中市には、ごみをステーションまで出すことが難しい世帯向けの「ふれあい収集」があります。対象条件は変更される可能性があるため、家庭ごみ事業課へ確認してください。</p></details>
     </section>
 
@@ -239,6 +315,14 @@
       <h2 class="section-title">周辺リンク</h2>
       <p class="lead">作成済みページだけにリンクし、未作成の近隣市はプレースホルダにしています。</p>
       <div class="tag-list"><a class="featured" href="/osaka/suita/">吹田市</a><a href="/osaka/ikeda/">池田市</a><a href="/osaka/minoh/">箕面市</a><span class="tag muted">尼崎市（準備中）</span><span class="tag muted">伊丹市（準備中）</span><a href="/osaka/">大阪市周辺（大阪府トップ）</a></div>
+    </section>
+
+    <section id="contact" class="cta-band">
+      <div>
+        <h2>豊中市の遺品整理・生前整理で迷ったら、見積もり前の条件を整理</h2>
+        <p>間取り、荷物量、退去期限、残したい品、管理会社への確認事項をまとめておくと、業者比較と行政制度の使い分けがしやすくなります。</p>
+      </div>
+      <a class="btn primary" href="#process">チェックリストへ</a>
     </section>
 
     <section id="hotline" class="section">
