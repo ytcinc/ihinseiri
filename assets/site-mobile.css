@@ -1,0 +1,270 @@
+html {
+  scroll-padding-top: 78px;
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+.nav,
+.topbar,
+.topbar-inner,
+.hero,
+.hero-inner,
+.wrap,
+.page,
+.page-shell,
+main,
+section {
+  max-width: 100%;
+}
+
+@media (max-width: 820px) {
+  body {
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .topbar-inner,
+  .header-inner,
+  .breadcrumb-inner,
+  .footer-inner,
+  .wrap,
+  .page,
+  .page-shell,
+  .hero-inner,
+  .container,
+  .inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .topbar-inner,
+  .header-inner {
+    min-height: auto !important;
+    padding: 10px 0 !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .brand,
+  .logo {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .brand-main,
+  .site-title,
+  .logo-title {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: keep-all !important;
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+  }
+
+  .brand-sub {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+  .nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    padding: 2px 0 6px !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a,
+  .call {
+    flex: 0 0 auto !important;
+    min-height: 36px !important;
+    padding: 7px 11px !important;
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero {
+    min-height: auto !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .hero-inner {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+    gap: 18px !important;
+    padding: 38px 0 44px !important;
+  }
+
+  .hero h1 {
+    max-width: 100% !important;
+    font-size: clamp(29px, 8.5vw, 36px) !important;
+    line-height: 1.28 !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+    letter-spacing: 0 !important;
+  }
+
+  .hero p,
+  .hero-lead,
+  .lead {
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.78 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .hero-panel,
+  .hero-search-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 18px !important;
+    margin-top: 8px !important;
+  }
+
+  .wrap,
+  .page,
+  .page-shell {
+    margin-top: 28px !important;
+    margin-bottom: 72px !important;
+  }
+
+  .section,
+  .engagement-panel,
+  .key-box,
+  .toc,
+  .banner,
+  .supervisor {
+    margin-top: 28px !important;
+    padding: 18px !important;
+  }
+
+  .section-title,
+  h2 {
+    font-size: 22px !important;
+    line-height: 1.45 !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .grid,
+  .grid.cols2,
+  .grid.cols3,
+  .grid.cols4,
+  .cards,
+  .stats,
+  .flow,
+  .online-flow,
+  .guide-panel,
+  .guide-actions,
+  .supervisor-card,
+  .selector-grid,
+  .panel-cta,
+  .quick-grid,
+  .area-shortcuts,
+  .memo-grid,
+  .first-steps-grid,
+  .metric-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card,
+  .area-box,
+  .chart-box,
+  .notice,
+  .online-step,
+  .flow div {
+    padding: 18px !important;
+  }
+
+  .price-table,
+  table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .price-table th,
+  .price-table td,
+  table th,
+  table td {
+    padding: 12px !important;
+    font-size: 14px !important;
+  }
+
+  .bar-row {
+    grid-template-columns: 88px minmax(0, 1fr) 64px !important;
+    gap: 8px !important;
+    font-size: 13px !important;
+  }
+
+  .bar-row b {
+    font-size: 13px !important;
+    text-align: right !important;
+  }
+
+  .ward-links,
+  .pref-links {
+    gap: 8px !important;
+  }
+
+  .ward-links a,
+  .pref-links a {
+    min-height: 34px !important;
+    padding: 7px 11px !important;
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero h1 {
+    font-size: 30px !important;
+  }
+
+  .btn,
+  .hero-actions a,
+  .panel-cta a {
+    width: 100% !important;
+  }
+
+  .ward-links a,
+  .pref-links a {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}

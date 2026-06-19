@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -96,7 +96,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/kita-umeda-hero-sharp.jpg?v=6"); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/original-heroes/hero-osaka-kita.jpg?v=130"); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1303,7 +1303,24 @@
       line-height: 1;
     }
 
+
+    /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
+    body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
+    .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
+    .topbar-inner{min-height:64px;gap:18px}.brand-main{color:#D05300}.brand-area,.brand-area-name{color:#2B2B2B}.brand-symbol{border-radius:4px;background:#D05300;color:#fff}
+    .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
+    .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
+    .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
+    table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
+    details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
+    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
+
   </style>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
 <body>
   <header class="topbar">
@@ -1342,13 +1359,7 @@
       </div>
             <div class="hero-panel">
         <h2>北区で特に多い相談</h2>
-        <ul class="quick-list">
-          <li>大阪駅・梅田周辺のマンションで管理会社への搬出届が必要</li>
-          <li>中津・中崎町の集合住宅でエレベーター養生が心配</li>
-          <li>天満・天神橋周辺の商店街近くで車両を停めにくい</li>
-          <li>遠方から北区の賃貸退去・実家整理を進めたい</li>
-          <li>通帳・権利書・貴金属を処分前に探してほしい</li>
-        </ul>
+        <ul class="quick-list"><li>大阪駅・梅田周辺のタワーマンションで搬出届とエレベーター予約を確認したい</li><li>中津・豊崎の単身賃貸を退去日までに空にしたい</li><li>天神橋筋・天満周辺で商店街近くの停車位置や作業時間が不安</li><li>中崎町・西天満の長屋・事務所併用物件で家財と書類を分けたい</li><li>遠方から北区の実家を鍵預かり・写真報告で進めたい</li></ul>
       </div>
     </div>
   </section>
@@ -1429,22 +1440,23 @@
 
       <section id="towns">
         <h2 class="section-title">北区の対応町名・駅周辺</h2>
-        <p>北区全域の遺品整理・生前整理・実家じまいに対応します。町名や駅周辺の特性まで確認しておくと、見積もり時に「搬出しやすい建物か」「車をどこに停められるか」「管理会社への連絡が必要か」を判断しやすくなります。</p>
-        <div class="area-tags"><span>大阪</span><span>梅田</span><span>中津</span><span>天満</span><span>中之島</span><span>梅田</span><span>茶屋町</span><span>天神橋</span><span>中崎</span><span>西天満</span></div>
+        <p>北区は同じ区内でも、梅田・中之島の高層マンション、中津・豊崎の単身賃貸、天神橋筋周辺の商店街沿い、中崎町・西天満の古い建物で搬出条件が大きく変わります。町名と建物種別を先に共有しておくと、見積もり時に「管理会社への届出」「停車位置」「書類探索の範囲」まで確認しやすくなります。</p>
+        <div class="area-tags"><span>梅田</span><span>中津</span><span>天神橋</span><span>中崎町</span><span>西天満</span></div>
         <table>
           <thead><tr><th>地域の見方</th><th>北区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead>
           <tbody>
-            <tr><td>駅周辺・マンション</td><td>中津のマンション</td><td>エレベーター使用、共用部養生、搬出時間、管理会社への作業届。</td></tr>
-            <tr><td>戸建て・長屋・団地</td><td>天神橋の長屋</td><td>階段幅、前面道路、トラック停車位置、大型家具や物置の有無。</td></tr>
-            <tr><td>退去・売却前整理</td><td>梅田周辺の単身整理</td><td>退去期限、鍵の受け渡し、残す品、買取希望品、供養したい品。</td></tr>
+            <tr><td>梅田・中之島の高層マンション</td><td>相続後の単身部屋、施設入居前の生前整理、退去前整理。</td><td>搬出届、エレベーター予約、養生範囲、防災センターへの連絡、駐車位置。</td></tr>
+            <tr><td>中津・豊崎の賃貸住宅</td><td>ワンルーム・1DKを期限内に空にしたい相談。</td><td>鍵返却日、管理会社の立会い日、家電リサイクル品、写真報告の必要範囲。</td></tr>
+            <tr><td>天満・天神橋筋周辺</td><td>商店街近くの集合住宅、店舗併用住宅、階段搬出の整理。</td><td>作業可能時間、前面道路の停車可否、近隣店舗への配慮、什器と家財の分別。</td></tr>
+            <tr><td>中崎町・西天満の古い建物</td><td>長屋、事務所兼住居、書類や権利書を探しながら進める片付け。</td><td>階段幅、廊下幅、残す書類、金庫・印鑑・写真類、買取査定の希望。</td></tr>
           </tbody>
         </table>
-        <div class="notice"><b>北区で特に確認したいこと</b><br>タワーマンション、オフィス、商業ビル、単身賃貸が混在。夜間・休日搬出や管理会社確認が重要です。 管理会社の搬出届は必要か、夜間搬出はできるか を見積もり時に確認しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
+        <div class="notice"><b>北区で特に確認したいこと</b><br>北区では、梅田・中津周辺の退去前整理、天神橋周辺の搬出導線、中崎町・西天満周辺の大型家具・物置整理など、同じ間取りでも条件が変わります。<span class="marker">管理会社の搬出届、夜間や早朝の搬出可否、駐車位置、鍵の受け渡し、写真報告の方法</span>を見積もり時に確認しておくと安心です。</div>
       </section>
 
       <section id="service">
         <h2 class="section-title">北区で任せられる遺品整理・生前整理サービス</h2>
-        <p>遺品整理は家財を運び出すだけではありません。北区では、住宅特性に合わせて、<span class="marker">仕分け、貴重品探索、買取、供養、退去前整理、空家化前の実家じまいまで一つずつ整理</span>して進めることが大切です。</p>
+        <p>遺品整理は家財を運び出すだけではありません。北区では、梅田・中之島の管理規約が厳しい建物、中津・豊崎の退去期限が近い単身賃貸、天満・天神橋筋の商店街沿いなど、同じ区内でも段取りが変わります。<span class="marker">搬出届、エレベーター予約、停車位置、貴重品探索、買取、供養、写真報告まで先に整理</span>して進めることが大切です。</p>
         <div class="cards">
           <div class="card"><strong>マンション・集合住宅の養生</strong><span>タワーマンション・単身賃貸・店舗併用物件では、エレベーター、廊下、壁、床を保護し、管理会社のルールに合わせて搬出します。</span></div>
           <div class="card"><strong>戸建て・長屋・団地の片付け</strong><span>押入れ、物置、庭、ベランダ、大型家具まで、家財量に合わせて人員と車両を組みます。</span></div>
@@ -1470,7 +1482,7 @@
         <div class="case-note"><b>北区の事例を見るときのポイント</b><br>写真のきれいさだけでなく、見積もり時にどこまで仕分けるか、貴重品探索を含めるか、買取・供養・写真報告まで頼めるかを確認すると、遺品整理・生前整理を相談しやすくなります。</div>
       <section id="price">
         <h2 class="section-title">北区の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。北区では、<span class="marker">管理会社の搬出届は必要か、夜間搬出はできるか</span> という点も必ず確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。北区では、<span class="marker">梅田・中之島の搬出届、天満周辺の停車位置、中崎町・西天満の階段幅や書類探索</span>を必ず確認しましょう。</p>
         <table>
           <thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead>
           <tbody>
@@ -1480,7 +1492,7 @@
             <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
           </tbody>
         </table>
-        <div class="notice"><b>北区の見積もりで見られるポイント</b><br>同じ部屋数でも、タワーマンション・単身賃貸・店舗併用物件、搬出経路、駐車位置、管理会社への確認、買取希望品、供養品、退去期限で金額は変わります。写真だけで判断せず、現地状況と残したいものを整理して相談するのが安心です。</div>
+        <div class="notice"><b>北区の見積もりで見られるポイント</b><br>北区は、梅田・中津周辺、天神橋周辺、中崎町・西天満周辺で、タワーマンション・単身賃貸・商業ビルが混在します。見積もりでは、管理会社の搬出届、夜間や早朝の搬出可否、駐車位置、階数、エレベーターの有無、前面道路の幅、買取希望品、供養品、退去期限を先に整理しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
       </section>
 
       <section id="items">
@@ -1655,13 +1667,7 @@
         <aside>
       <div class="side-card">
         <h2>北区で重視すること</h2>
-        <ul class="side-list">
-          <li>中津のマンション の搬出導線と養生</li>
-          <li>天神橋の長屋 の大型家具・物置整理</li>
-          <li>梅田周辺の単身整理 の退去期限と写真報告</li>
-          <li>管理会社の搬出届は必要か、夜間搬出はできるか</li>
-          <li>東北環境事業センターと粗大ごみ受付の使い分け</li>
-        </ul>
+        <ul class="side-list"><li>梅田・中之島の高層マンションは搬出届、EV予約、養生範囲を確認</li><li>中津・豊崎の単身賃貸は退去日、鍵返却日、写真報告を先に整理</li><li>天満・天神橋筋周辺は商店街近くの停車位置と作業可能時間に注意</li><li>中崎町・西天満の古い建物は階段幅、前面道路、書類探索の範囲を確認</li><li>北部環境事業センターと粗大ごみ受付、業者作業の使い分け</li></ul>
       </div>
       <div class="side-card">
         <h2>行政・福祉リンク</h2>
@@ -1695,6 +1701,7 @@
   </div>
 </body>
 </html>
+
 
 
 

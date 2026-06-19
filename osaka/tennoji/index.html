@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -96,7 +96,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/kita-umeda-hero-sharp.jpg?v=6"); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/original-heroes/hero-osaka-tennoji.jpg?v=130"); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1303,7 +1303,24 @@
       line-height: 1;
     }
 
+
+    /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
+    body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
+    .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
+    .topbar-inner{min-height:64px;gap:18px}.brand-main{color:#D05300}.brand-area,.brand-area-name{color:#2B2B2B}.brand-symbol{border-radius:4px;background:#D05300;color:#fff}
+    .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
+    .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
+    .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
+    table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
+    details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
+    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
+
   </style>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
 <body>
   <header class="topbar">
@@ -1331,13 +1348,7 @@
       </div>
             <div class="hero-panel">
         <h2>天王寺区で特に多い相談</h2>
-        <ul class="quick-list">
-          <li>上本町・谷町九丁目周辺のマンション搬出が心配</li>
-          <li>寺田町・勝山周辺の戸建てを実家じまいしたい</li>
-          <li>仏壇・写真・人形など供養品の扱いを相談したい</li>
-          <li>文教エリアの住宅で近隣に配慮して作業したい</li>
-          <li>相続書類や貴重品を処分前に確認したい</li>
-        </ul>
+        <ul class="quick-list"><li>上本町・谷町九丁目周辺のマンションを退去日までに整理したい</li><li>四天王寺周辺の寺社近くの住宅で仏壇や写真を丁寧に分けたい</li><li>玉造・寺田町周辺の戸建てで大型家具と押入れを片付けたい</li><li>真法院町・夕陽丘の落ち着いた住宅地を鍵預かりで進めたい</li><li>文教地区のマンションで搬出届、養生、作業時間を確認したい</li></ul>
       </div>
     </div>
   </section>
@@ -1416,7 +1427,7 @@
           </div>
         </div>
         <p class="source-note">出典：e-Stat 令和2年国勢調査 人口等基本集計（表 0003445099、0003445163、0003445284、0003445178、0003445129）をもとに天王寺区向けに算出。共同住宅居住率は「共同住宅」÷「住宅に住む一般世帯」、単身者世帯比率と65歳以上単独世帯率は一般世帯数を母数にしています。</p>
-        <div class="notice"><b>天王寺区の見積もりで見られるポイント</b><br>天王寺区では、駅周辺の集合住宅、昔ながらの住宅地、単身世帯や高齢世帯が混在します。とくに「上本町・谷町九丁目周辺のマンション搬出が心配」「寺田町・勝山周辺の戸建てを実家じまいしたい」「仏壇・写真・人形など供養品の扱いを相談したい」のような条件は、作業人数・車両・養生・処分方法に直接関わります。同じ間取りでも、建物の階数、エレベーターの有無、前面道路の広さ、駐車位置、管理会社への搬出届、買取品、供養品、退去期限によって金額は変わります。</div>
+        <div class="notice"><b>天王寺区の見積もりで見られるポイント</b><br>天王寺区は、上本町・四天王寺周辺、玉造周辺、寺田町・真法院町周辺で、文教地区のマンション・戸建て・寺社周辺住宅が混在します。見積もりでは、仏壇や写真の供養、狭い道路での搬出、管理会社確認、階数、エレベーターの有無、前面道路の幅、買取希望品、供養品、退去期限を先に整理しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
         <table>
           <thead><tr><th>確認項目</th><th>天王寺区で特に見られること</th><th>見積もり前に整理しておくこと</th></tr></thead>
           <tbody>
@@ -1429,22 +1440,23 @@
 
       <section id="towns">
         <h2 class="section-title">天王寺区の対応町名・駅周辺</h2>
-        <p>天王寺区全域の遺品整理・生前整理・実家じまいに対応します。町名や駅周辺の特性まで確認しておくと、見積もり時に「搬出しやすい建物か」「車をどこに停められるか」「管理会社への連絡が必要か」を判断しやすくなります。</p>
-        <div class="area-tags"><span>天王寺</span><span>上本町</span><span>谷町九丁目</span><span>玉造</span><span>寺田町</span><span>上本町</span><span>真法院町</span><span>勝山</span><span>筆ケ崎町</span><span>味原町</span></div>
+        <p>天王寺区は、上本町・谷町九丁目のマンション、四天王寺周辺の寺社に近い住宅、玉造・寺田町の戸建て、真法院町・夕陽丘の落ち着いた住宅地で搬出条件が変わります。町名と建物種別を先に共有しておくと、供養品の扱いや管理会社確認まで相談しやすくなります。</p>
+        <div class="area-tags"><span>上本町</span><span>四天王寺</span><span>玉造</span><span>寺田町</span><span>真法院町</span></div>
         <table>
           <thead><tr><th>地域の見方</th><th>天王寺区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead>
           <tbody>
-            <tr><td>駅周辺・マンション</td><td>上本町の分譲マンション</td><td>エレベーター使用、共用部養生、搬出時間、管理会社への作業届。</td></tr>
-            <tr><td>戸建て・長屋・団地</td><td>勝山の戸建て</td><td>階段幅、前面道路、トラック停車位置、大型家具や物置の有無。</td></tr>
-            <tr><td>退去・売却前整理</td><td>寺田町周辺の生前整理</td><td>退去期限、鍵の受け渡し、残す品、買取希望品、供養したい品。</td></tr>
+            <tr><td>上本町・谷町九丁目のマンション</td><td>退去前整理、単身部屋の片付け、施設入居前の生前整理。</td><td>搬出届、EV予約、共用部養生、車両位置、鍵の受け渡し。</td></tr>
+            <tr><td>四天王寺・夕陽丘周辺</td><td>仏壇、位牌、写真、手紙など供養品を分ける整理。</td><td>供養希望品、形見分け品、残す書類、近隣への配慮。</td></tr>
+            <tr><td>玉造・寺田町の戸建て</td><td>押入れ、物置、大型家具まで含む実家じまい。</td><td>階段幅、前面道路、トラック停車位置、家財量。</td></tr>
+            <tr><td>真法院町・文教地区の住宅</td><td>遠方親族の鍵預かり、売却前整理、貴重品探索。</td><td>鍵の受け渡し、通帳・印鑑・権利書、写真報告、退去期限。</td></tr>
           </tbody>
         </table>
-        <div class="notice"><b>天王寺区で特に確認したいこと</b><br>マンション密集、寺院・文教地区、坂のある住宅地。仏壇供養や静音搬出の相性が高い地域です。 仏壇・位牌・写真の供養はできるか を見積もり時に確認しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
+        <div class="notice"><b>天王寺区で特に確認したいこと</b><br>天王寺区では、上本町・四天王寺周辺の退去前整理、玉造周辺の搬出導線、寺田町・真法院町周辺の大型家具・物置整理など、同じ間取りでも条件が変わります。<span class="marker">仏壇や写真の供養、狭い道路での搬出、管理会社確認、鍵の受け渡し、写真報告の方法</span>を見積もり時に確認しておくと安心です。</div>
       </section>
 
       <section id="service">
         <h2 class="section-title">天王寺区で任せられる遺品整理・生前整理サービス</h2>
-        <p>遺品整理は家財を運び出すだけではありません。天王寺区では、住宅特性に合わせて、<span class="marker">仕分け、貴重品探索、買取、供養、退去前整理、空家化前の実家じまいまで一つずつ整理</span>して進めることが大切です。</p>
+        <p>遺品整理は家財を運び出すだけではありません。天王寺区では、上本町・四天王寺周辺、玉造周辺、寺田町・真法院町周辺で住宅条件が変わります。<span class="marker">仏壇や写真の供養、狭い道路での搬出、管理会社確認、貴重品探索、買取、供養、退去前整理まで一つずつ整理</span>して進めることが大切です。</p>
         <div class="cards">
           <div class="card"><strong>マンション・集合住宅の養生</strong><span>分譲マンション・戸建て・寺院周辺住宅では、エレベーター、廊下、壁、床を保護し、管理会社のルールに合わせて搬出します。</span></div>
           <div class="card"><strong>戸建て・長屋・団地の片付け</strong><span>押入れ、物置、庭、ベランダ、大型家具まで、家財量に合わせて人員と車両を組みます。</span></div>
@@ -1470,7 +1482,7 @@
         <div class="case-note"><b>天王寺区の事例を見るときのポイント</b><br>写真のきれいさだけでなく、見積もり時にどこまで仕分けるか、貴重品探索を含めるか、買取・供養・写真報告まで頼めるかを確認すると、遺品整理・生前整理を相談しやすくなります。</div>
       <section id="price">
         <h2 class="section-title">天王寺区の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。天王寺区では、<span class="marker">仏壇・位牌・写真の供養はできるか</span> という点も必ず確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。天王寺区では、<span class="marker">上本町・四天王寺周辺の搬出条件と、玉造・寺田町周辺の大型家財量</span>を必ず確認しましょう。</p>
         <table>
           <thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead>
           <tbody>
@@ -1599,7 +1611,7 @@
 
 
     <section id="contact" class="cta-band">
-      <div><h2>天王寺区の遺品整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを切り分けると、費用も作業範囲も判断しやすくなります。</p></div>
+      <div><h2>天王寺区の遺品整理は、文教地区と寺社周辺の配慮まで確認</h2><p>上本町・四天王寺・玉造・寺田町・真法院町周辺では、マンション、戸建て、寺社近くの住宅で確認点が変わります。供養したい品、残す書類、買取査定したい品を先に分けると、家族の気持ちにも配慮して進めやすくなります。</p></div>
       <a class="btn primary" href="#process">見積もり相談の準備をする</a>
     </section>
           <footer class="site-footer" data-ward="tennoji" data-environment-center="中部環境事業センター" data-environment-phone="06-6714-6411">
@@ -1652,13 +1664,7 @@
         <aside>
       <div class="side-card">
         <h2>天王寺区で重視すること</h2>
-        <ul class="side-list">
-          <li>上本町の分譲マンション の搬出導線と養生</li>
-          <li>勝山の戸建て の大型家具・物置整理</li>
-          <li>寺田町周辺の生前整理 の退去期限と写真報告</li>
-          <li>仏壇・位牌・写真の供養はできるか</li>
-          <li>中部環境事業センターと粗大ごみ受付の使い分け</li>
-        </ul>
+        <ul class="side-list"><li>上本町・四天王寺周辺の搬出導線、駐車位置、作業時間</li><li>玉造周辺の文教地区のマンション・戸建て・寺社周辺住宅に合わせた共用部養生</li><li>寺田町・真法院町周辺の大型家具、物置、庭まわり整理</li><li>鍵預かり、写真報告、遠方親族への完了共有</li><li>仏壇や写真の供養、狭い道路での搬出、管理会社確認と行政回収・業者作業の使い分け</li></ul>
       </div>
       <div class="side-card">
         <h2>行政・福祉リンク</h2>
@@ -1691,6 +1697,7 @@
     </aside>  </div>
 </body>
 </html>
+
 
 
 

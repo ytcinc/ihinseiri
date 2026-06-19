@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
   <meta property="og:title" content="八尾市の遺品整理・生前整理なら | 八尾市遺品整理・生前整理.jp">
   <meta property="og:description" content="八尾市で遺品整理・生前整理を検討している方向けに、住宅特性、令和2年国勢調査、行政窓口、料金目安、品目別対応、業者比較、FAQをまとめた地域特化ガイド。">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="/assets/osaka-city-heroes/yao.jpg">
+  <meta property="og:image" content="/assets/original-heroes/hero-osaka-yao.jpg?v=130">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
@@ -97,7 +97,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/osaka-prefecture-hero.jpg?v=1")); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/original-heroes/hero-osaka-yao.jpg?v=130")); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1304,10 +1304,27 @@
       line-height: 1;
     }
 
+
+    /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
+    body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
+    .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
+    .topbar-inner{min-height:64px;gap:18px}.brand-main{color:#D05300}.brand-area,.brand-area-name{color:#2B2B2B}.brand-symbol{border-radius:4px;background:#D05300;color:#fff}
+    .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
+    .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
+    .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
+    table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
+    details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
+    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
+
   </style>
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TOP","item":"https://ihinseiri-hazel.vercel.app/"},{"@type":"ListItem","position":2,"name":"大阪府","item":"https://ihinseiri-hazel.vercel.app/osaka/"},{"@type":"ListItem","position":3,"name":"八尾市","item":"https://ihinseiri-hazel.vercel.app/osaka/yao/"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"八尾市で遺品整理と生前整理のどちらも相談できますか？","acceptedAnswer":{"@type":"Answer","text":"相談できます。亡くなった後の家財整理だけでなく、施設入居前、住み替え前、実家じまい前の生前整理も対象です。"}},{"@type":"Question","name":"八尾市の粗大ごみと業者依頼はどちらを使うべきですか？","acceptedAnswer":{"@type":"Answer","text":"少量で時間に余裕があるものは自治体制度を確認し、屋内からの運び出し、短納期、大量家財、貴重品探索、供養、買取を伴う場合は業者見積もりを比較してください。"}},{"@type":"Question","name":"立会いなしでも進められますか？","acceptedAnswer":{"@type":"Answer","text":"鍵の受け渡し、作業前後の写真報告、貴重品返却、支払い方法を事前に決めれば、遠方の親族でも進めやすくなります。"}}]},{"@context":"https://schema.org","@type":"Organization","name":"遺品整理・生前整理.jp 編集部","url":"https://ihinseiri-hazel.vercel.app/"}]</script>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
-<body style="--hero-image:url('/assets/osaka-city-heroes/yao.jpg')">
+<body style="--hero-image:url('/assets/original-heroes/hero-osaka-yao.jpg?v=130')">
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="/" aria-label="八尾市の遺品整理・生前整理.jp"><span class="brand-symbol">整</span><span class="brand-word"><span class="brand-area">八尾市</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a>
@@ -1334,7 +1351,7 @@
       </div>
       <div class="hero-panel">
         <h2>八尾市で特に多い相談</h2>
-        <ul class="quick-list"><li>近鉄八尾・久宝寺周辺のマンションで、管理組合の搬出時間とエレベーター養生を先に確認したい</li><li>高安・恩智方面の坂道や細道沿いの戸建てで、2トントラックが近づけるか見てほしい</li><li>庭木、植木鉢、物置、古い家具が残る実家を、行政処分と買取を分けて整理したい</li><li>八尾市の実家を遠方から立会いなしで整理したい</li><li>通帳・印鑑・権利書・写真・貴金属を処分前に探してほしい</li></ul>
+        <ul class="quick-list"><li>近鉄八尾・久宝寺周辺のマンション退去日を確認したい</li><li>志紀・高安周辺の戸建てで前面道路と搬出導線を決めたい</li><li>山本・恩智周辺の坂道や大型家具の搬出を確認したい</li><li>町工場併用住宅の工具や什器を家財と分けたい</li><li>鍵預かり、写真報告、貴重品探索を遠方から依頼したい</li></ul>
       </div>
     </div>
   </section>
@@ -1385,13 +1402,13 @@
       <section id="towns">
         <h2 class="section-title">八尾市の対応町名・駅周辺</h2>
         <p>八尾市全域の遺品整理・生前整理・実家じまいに対応します。町名や駅周辺の特性まで見積もり前に共有しておくと、搬出しやすい建物か、車両をどこに停められるか、管理会社への連絡が必要かを判断しやすくなります。</p>
-        <h3>主な町名</h3><div class="area-tags"><span>本町</span><span>光町</span><span>山本町</span><span>高安町</span><span>恩智中町</span><span>志紀町</span><span>久宝寺</span><span>安中町</span><span>高美町</span><span>南木の本</span><span>太田</span><span>八尾木</span></div>
-        <h3>主な駅周辺</h3><div class="area-tags"><span>近鉄八尾</span><span>河内山本</span><span>高安</span><span>恩智</span><span>久宝寺</span><span>八尾</span><span>志紀</span></div>
+        <h3>主な町名</h3><div class="area-tags"><span>近鉄八尾</span><span>久宝寺</span><span>志紀</span><span>高安</span><span>山本</span></div>
+        <h3>主な駅周辺</h3><div class="area-tags"><span>近鉄八尾</span><span>久宝寺</span><span>志紀</span></div>
       </section>
 
       <section id="service">
         <h2 class="section-title">八尾市で任せられる遺品整理・生前整理サービス</h2>
-        <p>遺品整理は、家財を運び出すだけではありません。八尾市では、住宅特性に合わせて仕分け、貴重品探索、買取、供養、退去前整理、空家化前の実家じまいまで一つずつ整理して進めることが大切です。</p>
+        <p>遺品整理は家財を運び出すだけではありません。八尾市では、近鉄八尾・久宝寺周辺、志紀周辺、高安・山本周辺で住宅条件が変わります。<span class="marker">工具や事業用品、前面道路、物置整理、貴重品探索、買取、供養、退去前整理まで一つずつ整理</span>して進めることが大切です。</p>
         <div class="cards">
           <div class="card"><strong>マンション・集合住宅の養生</strong><span>エレベーター、共用廊下、壁、床を保護し、管理会社のルールに合わせて搬出します。</span></div>
           <div class="card"><strong>戸建て・長屋の片付け</strong><span>押入れ、物置、庭、ベランダ、大型家具まで、家財量に合わせて人員と車両を組みます。</span></div>
@@ -1417,14 +1434,14 @@
         <div class="case-note"><b>八尾市の事例を見るときのポイント</b><br>写真のきれいさだけでなく、見積もり時にどこまで仕分けるか、貴重品探索を含めるか、買取・供養・写真報告まで頼めるかを確認すると、遺品整理・生前整理を相談しやすくなります。</div>
       <section id="price">
         <h2 class="section-title">八尾市の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。八尾市では、管理会社の搬出届、車両の停車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。八尾市では、<span class="marker">近鉄八尾・久宝寺周辺の搬出条件と、志紀・高安周辺の大型家財量</span>を必ず確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
           <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
           <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
           <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
         </tbody></table>
-        <div class="notice"><b>八尾市の見積もりで見られるポイント</b><br>同じ部屋数でも、建物種別、搬出経路、駐車位置、管理会社への確認、買取希望品、供養品、退去期限で金額は変わります。写真だけで判断せず、現地状況と残したいものを整理して相談するのが安心です。</div>
+        <div class="notice"><b>八尾市の見積もりで見られるポイント</b><br>八尾市は、近鉄八尾・久宝寺周辺、志紀周辺、高安・山本周辺で、戸建て・町工場併用住宅・マンションが混在します。見積もりでは、工具や事業用品、前面道路、物置整理、階数、エレベーターの有無、前面道路の幅、買取希望品、供養品、退去期限を先に整理しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
       </section>
 
       <section id="items">
@@ -1498,9 +1515,11 @@
       
 
 
-      <section id="faq" class="faq">
+      <section id="faq">
         <h2 class="section-title">八尾市の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>八尾市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として八尾市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>八尾市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        <div class="faq">
+          <details><summary>八尾市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として八尾市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>八尾市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        </div>
       </section>
 
       <section id="nearby-wards" class="nearby-wards">
@@ -1551,7 +1570,7 @@
       </footer>
     </main>
     <aside>
-      <div class="side-card"><h2>八尾市で重視すること</h2><ul class="side-list"><li>住宅特性：39.9%の共同住宅居住率</li><li>単身世帯比率：33.4%</li><li>65歳以上割合：32.0%</li><li>行政窓口と業者作業の役割分担</li><li>立会い不要・写真報告・貴重品探索</li></ul></div>
+      <div class="side-card"><h2>八尾市で重視すること</h2><ul class="side-list"><li>近鉄八尾・久宝寺周辺の搬出導線、駐車位置、作業時間</li><li>志紀周辺の戸建て・町工場併用住宅・マンションに合わせた共用部養生</li><li>高安・山本周辺の大型家具、物置、庭まわり整理</li><li>鍵預かり、写真報告、遠方親族への完了共有</li><li>工具や事業用品、前面道路、物置整理と行政回収・業者作業の使い分け</li></ul></div>
       <div class="side-card"><h2>行政・福祉リンク</h2><ul class="side-list"><li><a href="#contact">八尾市の窓口一覧</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li></ul></div>
       <div class="side-card">
         <h2>ページ内メニュー</h2>
@@ -1572,3 +1591,5 @@
   </div>
 </body>
 </html>
+
+
