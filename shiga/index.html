@@ -55,17 +55,208 @@
   </style>
 
   <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
+  <style id="prefecture-top-hero-match">
+    .hero,
+    .hero.osaka-hero,
+    .hero.sakai-hero{
+      position:relative!important;
+      overflow:hidden!important;
+      background-image:
+        linear-gradient(90deg,rgba(35,42,37,.9) 0%,rgba(48,59,51,.76) 48%,rgba(48,59,51,.34) 72%,rgba(251,247,232,.86) 100%),
+        url("/assets/cv-hero-staff-illustration.png?v=3")!important;
+      background-size:cover,auto 118%!important;
+      background-position:center,calc(100% + 180px) center!important;
+      background-repeat:no-repeat!important;
+      color:#fff!important;
+    }
+    .hero::after,
+    .hero.osaka-hero::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0;
+      height:34%;
+      background:linear-gradient(180deg,rgba(247,245,240,0),rgba(247,245,240,.08));
+      pointer-events:none;
+    }
+    .hero .hero-inner,
+    .hero.osaka-hero .hero-inner{
+      position:relative!important;
+      z-index:1!important;
+      width:min(1120px,calc(100% - 28px))!important;
+      min-height:560px!important;
+      display:grid!important;
+      grid-template-columns:minmax(0,1fr) 390px!important;
+      gap:34px!important;
+      align-items:center!important;
+      padding:58px 0 64px!important;
+    }
+    .hero .hero-inner>div:first-child,
+    .hero.osaka-hero .hero-inner>div:first-child{
+      max-width:760px!important;
+      padding:0!important;
+      background:transparent!important;
+      border:0!important;
+      box-shadow:none!important;
+      backdrop-filter:none!important;
+    }
+    .hero .eyebrow,
+    .hero.osaka-hero .eyebrow{
+      display:inline-flex!important;
+      align-items:center!important;
+      min-height:30px!important;
+      margin-bottom:18px!important;
+      padding:0 12px!important;
+      border:1px solid rgba(255,255,255,.32)!important;
+      border-radius:999px!important;
+      background:rgba(255,255,255,.22)!important;
+      color:#fff!important;
+      box-shadow:none!important;
+      font-size:14px!important;
+      font-weight:900!important;
+    }
+    .hero h1,
+    .hero.osaka-hero h1{
+      max-width:760px!important;
+      margin:0 0 18px!important;
+      color:#fff!important;
+      font-size:clamp(38px,5.4vw,62px)!important;
+      line-height:1.17!important;
+      letter-spacing:0!important;
+      text-shadow:0 4px 20px rgba(0,0,0,.38)!important;
+      word-break:keep-all!important;
+      overflow-wrap:anywhere!important;
+    }
+    .hero h1::after,
+    .hero.osaka-hero h1::after{
+      content:"";
+      display:block;
+      width:min(220px,48vw);
+      height:6px;
+      margin:18px 0 0;
+      background:linear-gradient(90deg,#ffcf6b,#D05300,transparent);
+      border-radius:999px;
+    }
+    .hero p,
+    .hero .hero-lead,
+    .hero.osaka-hero p{
+      max-width:720px!important;
+      margin:0 0 22px!important;
+      color:rgba(255,255,255,.95)!important;
+      font-size:19px!important;
+      font-weight:700!important;
+      line-height:1.9!important;
+      text-shadow:0 2px 12px rgba(0,0,0,.32)!important;
+    }
+    .hero .hero-actions{
+      display:flex!important;
+      justify-content:flex-start!important;
+      flex-wrap:wrap!important;
+      gap:10px!important;
+      margin:22px 0 0!important;
+    }
+    .hero .btn.primary{background:#D05300!important;color:#fff!important;border-color:#D05300!important;}
+    .hero .btn.secondary{background:#fff!important;color:#8c3d00!important;border-color:rgba(255,255,255,.5)!important;}
+    .hero .hero-panel{
+      background:rgba(255,255,255,.96)!important;
+      color:#2f2b27!important;
+      border:1px solid rgba(255,255,255,.7)!important;
+      box-shadow:0 22px 48px rgba(0,0,0,.22)!important;
+      padding:22px!important;
+      backdrop-filter:none!important;
+    }
+    .hero .hero-panel h2{color:#2f2b27!important;}
+    .hero .hero-panel li{color:#2f2b27!important;}
+    .hero .hero-highlights span,
+    .hero .hero-badges .badge{
+      background:rgba(255,255,255,.14)!important;
+      border-color:rgba(255,255,255,.3)!important;
+      color:#fff!important;
+      box-shadow:none!important;
+    }
+    .hero .hero-highlights span:before{
+      content:"";
+      width:7px;
+      height:7px;
+      margin-right:7px;
+      border-radius:50%;
+      background:#9ed2b7;
+      box-shadow:0 0 0 3px rgba(158,210,183,.18);
+    }
+    @media(max-width:820px){
+      .hero,
+      .hero.osaka-hero{
+        background-size:cover,auto 105%!important;
+        background-position:center,72% center!important;
+      }
+      .hero .hero-inner,
+      .hero.osaka-hero .hero-inner{
+        display:block!important;
+        min-height:auto!important;
+        width:calc(100vw - 28px)!important;
+        max-width:calc(100vw - 28px)!important;
+        padding:34px 0 42px!important;
+      }
+      .hero h1,
+      .hero.osaka-hero h1{
+        font-size:31px!important;
+        line-height:1.34!important;
+      }
+      .hero h1::after,
+      .hero.osaka-hero h1::after{
+        height:4px;
+        margin-top:14px;
+      }
+      .hero p,
+      .hero .hero-lead,
+      .hero.osaka-hero p{
+        font-size:16px!important;
+        line-height:1.75!important;
+      }
+      .hero .hero-panel{margin-top:24px!important;padding:18px!important;}
+    }
+  </style>
+  <style id="common-kita-before-after-style">
+    .common-kita-ba{margin:34px 0;padding:28px;background:#fff;border:1px solid #eadfd0;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .common-kita-ba .section-title{margin:0 0 18px;padding:0 0 12px;border:0;border-bottom:3px solid #eadfc9;border-radius:0;box-shadow:none;background:transparent;color:#2B2B2B;font-size:24px;line-height:1.45}
+    .common-kita-ba .section-title::before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#D05300;border-radius:2px;vertical-align:middle}
+    .common-kita-ba .common-ba-lead{margin:0 0 16px;color:#414743;font-size:16px;line-height:1.85}
+    .common-kita-ba .marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .common-ba-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 18px}
+    .common-ba-guide span{display:block;padding:11px 13px;background:#fff8ea;border:1px solid #ead8b7;color:#5b4630;font-size:14px;font-weight:900;line-height:1.65}
+    .common-ba-slider{position:relative;padding:0 58px}
+    .common-ba-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 0 12px}
+    .common-ba-track::-webkit-scrollbar{display:none}
+    .common-ba-card{flex:0 0 100%;scroll-snap-align:start;border:1px solid #e5ded5;background:#fff;padding:18px;box-shadow:0 10px 24px rgba(34,28,22,.055)}
+    .common-ba-card h3{margin:0 0 14px;padding:10px 12px;background:#fff7df;color:#8c3d00;font-size:18px;line-height:1.45}
+    .common-ba-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;position:relative;align-items:stretch;padding:10px;background:#f7f3e7;border:1px solid #eadfd4}
+    .common-ba-photos::after{content:"→";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#D05300;border:3px solid #D05300;box-shadow:0 8px 20px rgba(34,28,22,.18);font-size:28px;font-weight:900;z-index:3}
+    .common-ba-photo{position:relative;overflow:hidden;margin:0;border:2px solid #d9d1c6;background:#f3f0ea;aspect-ratio:4/3;box-shadow:0 8px 18px rgba(34,28,22,.08)}
+    .common-ba-photo img{display:block;width:100%;height:100%;object-fit:cover}
+    .common-ba-label{position:absolute;left:0;right:0;top:0;display:grid;place-items:center;min-height:38px;padding:0 12px;background:rgba(126,50,28,.94);color:#fff;font-size:15px;font-weight:900}
+    .common-ba-label.after{background:rgba(40,116,90,.96)}
+    .common-ba-detail{margin-top:14px;padding:14px 16px;background:#fffdf8;border:1px solid #eadfd4}
+    .common-ba-detail p{margin:0 0 8px;color:#464c47;font-size:15px;line-height:1.75}
+    .common-ba-detail p:first-child{font-weight:900;color:#333}
+    .common-ba-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#eef8f2;border:1px solid #cfe8d8;color:#28745a;font-size:13px;font-weight:900}
+    .common-ba-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;display:grid;place-items:center;border:1px solid #dcbf9c;background:#fff;color:#8c3d00;border-radius:50%;box-shadow:0 10px 24px rgba(34,28,22,.18);font-size:28px;font-weight:900;line-height:1;cursor:pointer;z-index:4}
+    .common-ba-btn:hover{background:#fff1e6;border-color:#D05300}
+    .common-ba-btn[data-common-ba-prev]{left:0}
+    .common-ba-btn[data-common-ba-next]{right:0}
+    @media(max-width:820px){.common-kita-ba{padding:20px}.common-ba-guide{grid-template-columns:1fr}.common-ba-slider{padding:0 38px}.common-ba-card{padding:12px}.common-ba-photos{grid-template-columns:1fr;gap:10px}.common-ba-photos::after{width:34px;height:34px;font-size:22px;border-width:2px}.common-ba-btn{width:42px;height:42px;font-size:24px}.common-kita-ba .section-title{font-size:21px}}
+  </style>
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-symbol">整</span><span><span class="brand-main"><span class="brand-area-name">滋賀県 の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="/shiga/">滋賀県</a><a href="#municipalities">市町村</a><a href="#data">統計</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>滋賀県</div></nav>
-  <section class="hero" style="background-image:linear-gradient(90deg,rgba(18,24,26,.84) 0%,rgba(18,24,26,.60) 36%,rgba(18,24,26,.22) 66%,rgba(18,24,26,0) 100%),url('/assets/original-heroes/hero-shiga.jpg?v=130');"><div class="hero-inner"><div><span class="eyebrow">滋賀県で遺品整理・生前整理を探す</span><h1>琵琶湖の自然を守る、適正なクリーン片付け。</h1><p>琵琶湖を抱く滋賀の環境に配慮し、回収した遺品は100％適正に処理・リサイクル。蔵や大きな物置に残された不用品も、不法投棄などの心配がない「クリーンな遺品整理」を約束します。</p><div class="hero-highlights" aria-label="このページで確認できること"><span>市区町村別ページ</span><span>行政窓口</span><span>料金目安</span><span>立会いなし相談</span></div></div><aside class="hero-panel"><h2>滋賀県で相談が多い整理条件</h2><ul><li>大津市・草津市などのマンション退去前整理</li><li>湖東・湖北の戸建てや空き家整理</li><li>遠方家族向けの鍵預かり・写真報告</li><li>琵琶湖沿岸・山手住宅地の搬出条件確認</li></ul></aside></div></section>
+  <section class="hero" style="background-image:linear-gradient(90deg,rgba(18,24,26,.84) 0%,rgba(18,24,26,.60) 36%,rgba(18,24,26,.22) 66%,rgba(18,24,26,0) 100%),url('/assets/cv-hero-staff-illustration.png?v=3');"><div class="hero-inner"><div><span class="eyebrow">滋賀県で遺品整理・生前整理を探す</span><h1>琵琶湖の自然を守る、適正なクリーン片付け。</h1><p>琵琶湖を抱く滋賀の環境に配慮し、回収した遺品は100％適正に処理・リサイクル。蔵や大きな物置に残された不用品も、不法投棄などの心配がない「クリーンな遺品整理」を約束します。</p><div class="hero-highlights" aria-label="このページで確認できること"><span>市区町村別ページ</span><span>行政窓口</span><span>料金目安</span><span>立会いなし相談</span></div></div><aside class="hero-panel"><h2>滋賀県で相談が多い整理条件</h2><ul><li>大津市・草津市などのマンション退去前整理</li><li>湖東・湖北の戸建てや空き家整理</li><li>遠方家族向けの鍵預かり・写真報告</li><li>琵琶湖沿岸・山手住宅地の搬出条件確認</li></ul></aside></div></section>
   <main class="wrap">
+
     <section id="municipalities" class="section"><h2 class="section-title">滋賀県内の市町村から探す</h2><p class="lead">19市町の地域ページを、実家や作業場所に近い市町村から選べます。各ページでは、住宅特性、搬出時の注意点、行政窓口、見積もり前に確認したいことをまとめています。</p><div class="grid cols2"><div class="area-box"><h3>大津・南部</h3><div class="ward-links"><a href="/shiga/otsu/">大津市</a><a href="/shiga/kusatsu/">草津市</a><a href="/shiga/moriyama/">守山市</a><a href="/shiga/ritto/">栗東市</a><a href="/shiga/yasu/">野洲市</a></div></div>
 <div class="area-box"><h3>甲賀・東近江</h3><div class="ward-links"><a href="/shiga/koka/">甲賀市</a><a href="/shiga/konan/">湖南市</a><a href="/shiga/omihachiman/">近江八幡市</a><a href="/shiga/higashiomi/">東近江市</a><a href="/shiga/hino/">日野町</a><a href="/shiga/ryuo/">竜王町</a></div></div>
 <div class="area-box"><h3>湖東・湖北</h3><div class="ward-links"><a href="/shiga/hikone/">彦根市</a><a href="/shiga/aisho/">愛荘町</a><a href="/shiga/toyosato/">豊郷町</a><a href="/shiga/kora/">甲良町</a><a href="/shiga/taga/">多賀町</a><a href="/shiga/nagahama/">長浜市</a><a href="/shiga/maibara/">米原市</a></div></div>
 <div class="area-box"><h3>高島</h3><div class="ward-links"><a href="/shiga/takashima/">高島市</a></div></div></div></section>
-    <section id="data" class="section"><h2 class="section-title">データで見る滋賀県の遺品整理・生前整理</h2><p class="lead">滋賀県は、大津・草津など南部都市部のマンション整理と、湖東・湖北・高島の戸建てや空き家整理で、見積もり時に見るべき条件が変わります。数字を見ると、<span class="marker">「南部の共同住宅」か「郊外・北部の戸建て実家」かを先に分ける</span>ことが重要です。</p><div class="grid cols4"><div class="card stat-card metric-card"><span class="metric-label">年間死亡数</span><b>15,523人</b><p class="metric-note">令和6年確定数。滋賀県で遺品整理が発生する基礎需要です。</p></div><div class="card stat-card metric-card"><span class="metric-label">高齢者単独世帯</span><b>約12.0%</b><p class="metric-note">65歳以上の一人暮らし世帯。鍵預かり・写真報告の相談につながります。</p></div><div class="card stat-card metric-card"><span class="metric-label">共同住宅率</span><b>30.3%</b><p class="metric-note">県全体では戸建て寄りですが、草津・大津ではマンション搬出の確認が重要です。</p></div><div class="card stat-card metric-card"><span class="metric-label">空き家数</span><b>8.16万戸</b><p class="metric-note">相続後の実家整理、売却前整理、権利書探索の入口になります。</p></div></div>
+<section id="data" class="section"><h2 class="section-title">データで見る滋賀県の遺品整理・生前整理</h2><p class="lead">滋賀県は、大津・草津など南部都市部のマンション整理と、湖東・湖北・高島の戸建てや空き家整理で、見積もり時に見るべき条件が変わります。数字を見ると、<span class="marker">「南部の共同住宅」か「郊外・北部の戸建て実家」かを先に分ける</span>ことが重要です。</p><div class="grid cols4"><div class="card stat-card metric-card"><span class="metric-label">年間死亡数</span><b>15,523人</b><p class="metric-note">令和6年確定数。滋賀県で遺品整理が発生する基礎需要です。</p></div><div class="card stat-card metric-card"><span class="metric-label">高齢者単独世帯</span><b>約12.0%</b><p class="metric-note">65歳以上の一人暮らし世帯。鍵預かり・写真報告の相談につながります。</p></div><div class="card stat-card metric-card"><span class="metric-label">共同住宅率</span><b>30.3%</b><p class="metric-note">県全体では戸建て寄りですが、草津・大津ではマンション搬出の確認が重要です。</p></div><div class="card stat-card metric-card"><span class="metric-label">空き家数</span><b>8.16万戸</b><p class="metric-note">相続後の実家整理、売却前整理、権利書探索の入口になります。</p></div></div>
       <div class="grid cols4" style="margin-top:16px"><div class="card stat-card"><span class="metric-label">推計人口</span><b>139.3万人</b><span>令和8年5月1日現在。滋賀県全体の相談規模を示す母数です。</span></div><div class="card stat-card"><span class="metric-label">推計世帯数</span><b>61.3万世帯</b><span>世帯数は増加傾向。親子が離れて暮らす相談も起きやすくなります。</span></div><div class="card stat-card"><span class="metric-label">総住宅数</span><b>66.4万戸</b><span>令和5年住宅・土地統計調査。住宅ストックは過去最多水準です。</span></div><div class="card stat-card"><span class="metric-label">その他空き家</span><b>48,500戸</b><span>空き家の約59.4%。家財が残った実家の片付けにつながりやすい数字です。</span></div></div>
       <div class="notice" style="margin-top:16px"><b>滋賀県公式統計から見る相談背景</b><br>滋賀県は空き家率だけを見ると全国平均より低めですが、空き家の中では<span class="marker">売却用・賃貸用ではない「その他空き家」が約6割</span>を占めます。相続後に家財が残ったままになり、権利書、通帳、貴金属、仏壇、写真の整理が後回しになりやすい点が重要です。</div>
       <div class="grid cols2" style="margin-top:16px"><div class="chart-box"><h3>全国平均と比べた滋賀県の特徴</h3><div class="bar-row"><span>共同住宅</span><div class="bar-track"><div class="bar-fill" style="width:30%"></div></div><b>30.3%</b></div><div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill blue" style="width:45%"></div></div><b>44.9%</b></div><div class="bar-row"><span>空き家率</span><div class="bar-track"><div class="bar-fill green" style="width:62%"></div></div><b>12.3%</b></div><div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill blue" style="width:69%"></div></div><b>13.8%</b></div><p class="source-note">出典：添付データ内の滋賀県公式統計整理、令和5年住宅・土地統計調査の全国平均値。</p></div><div class="chart-box"><h3>滋賀県らしい建物条件</h3><div class="bar-row"><span>草津 共同</span><div class="bar-track"><div class="bar-fill" style="width:54%"></div></div><b>54.1%</b></div><div class="bar-row"><span>大津 共同</span><div class="bar-track"><div class="bar-fill blue" style="width:37%"></div></div><b>36.7%</b></div><div class="bar-row"><span>米原 持家</span><div class="bar-track"><div class="bar-fill green" style="width:90%"></div></div><b>90.2%</b></div><div class="bar-row"><span>高島 持家</span><div class="bar-track"><div class="bar-fill green" style="width:84%"></div></div><b>83.8%</b></div><p>南部は退去期限・エレベーター・共用部養生、湖東・湖北・高島は庭、物置、納屋、仏壇、農機具まで含めて確認します。</p></div></div>
@@ -104,10 +295,55 @@
     <section class="section"><h2 class="section-title">滋賀県で特に多い整理パターン</h2><div class="grid cols3"><div class="card"><h3>大津・湖南マンション型</h3><p>駅近マンションや賃貸退去では、エレベーター予約、共用部養生、管理会社の搬出時間を先に確認します。</p></div><div class="card"><h3>湖東・湖北戸建て型</h3><p>庭、物置、農機具、長年保管した家財まで含め、車両位置と分別量を見積もり前に整理します。</p></div><div class="card"><h3>高島・郊外空き家型</h3><p>遠方家族が立ち会いにくい地域では、鍵預かりと写真報告を組み合わせると進めやすくなります。</p></div></div><div class="notice" style="margin-top:16px"><b>滋賀県で特に大切な見積もりポイント</b><br>料金だけでなく、<span class="marker">現地見積もり、道路幅、共用部養生、貴重品探索、買取、供養、立会い不要の写真報告</span>まで確認してから依頼先を選ぶのがおすすめです。</div></section>
     <section id="flow" class="section"><h2 class="section-title">遠方にお住まいの方向け 完全オンライン完結プランの流れ</h2><p class="lead">他府県に住んでいて、滋賀県の実家へ何度も戻れない方に向けた進め方です。<span class="marker">鍵だけ安全な方法で預かれれば、見積もりから作業完了まで立会いなしで進められる</span>ように、写真・動画・オンライン確認を組み合わせます。</p><div class="online-flow"><div class="online-step"><b>1</b><h3>市町村ページを確認</h3><p>住所に近いページで、住宅特性、行政窓口、搬出時の注意点を確認します。</p></div><div class="online-step"><b>2</b><h3>鍵を安全に受け渡し</h3><p>記録が残る方法を使い、鍵の受け取り方と返却方法を事前に決めます。</p></div><div class="online-step"><b>3</b><h3>オンライン見積もり</h3><p>写真共有やビデオ通話で、荷物量・搬出経路・探索範囲を確認します。</p></div><div class="online-step"><b>4</b><h3>写真・動画で作業報告</h3><p>作業前、仕分け中、搬出後の状態を共有します。</p></div><div class="online-step"><b>5</b><h3>貴重品と鍵を返却</h3><p>通帳、権利書、写真、形見分け品などを郵送対応します。</p></div></div></section>
     <section class="section"><h2 class="section-title">滋賀県の料金目安</h2><table class="price-table"><thead><tr><th>間取り</th><th>料金目安</th><th>確認したい作業</th></tr></thead><tbody><tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、写真報告。</td></tr><tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr><tr><td>2LDK・3DK</td><td>120,000円〜</td><td>形見分け、買取査定、供養品の分別、退去前整理。</td></tr><tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前整理。</td></tr></tbody></table><div class="notice">料金は荷物量、建物の階数、エレベーターの有無、駐車位置、道路幅、買取できる品の有無で変わります。</div></section>
-    <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols3"><div class="card"><h3>滋賀県内のどのページを見ればよいですか？</h3><p>まず実家や作業場所に近い市町村ページを選んでください。住宅特性、搬出時の注意点、行政窓口を確認できます。</p></div><div class="card"><h3>立会いなしの遺品整理は相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、オンライン確認、振込精算を組み合わせると遠方家族でも進めやすくなります。</p></div><div class="card"><h3>空き家になった実家も整理できますか？</h3><p>整理できます。相続後の家財整理、売却前整理、権利書や保険証券の探索、仏壇・写真の供養などをまとめて確認しましょう。</p></div><div class="card"><h3>マンション退去日が近い場合は何を伝えればよいですか？</h3><p>退去期限、管理会社の作業ルール、エレベーターの有無、共用部養生、駐車位置、残したい貴重品を先に共有してください。</p></div><div class="card"><h3>見積もり前に写真だけで相談できますか？</h3><p>相談できます。玄関、各部屋、押入れ、物置、搬出経路、駐車位置の写真があると、荷物量と作業条件を整理しやすくなります。</p></div><div class="card"><h3>買取や供養も同時に確認できますか？</h3><p>確認できます。貴金属、時計、家電、工具、趣味用品は買取候補に分け、仏壇、位牌、写真、人形は供養希望品として先に伝えてください。</p></div></div></section>
+<section id="kita-before-after-cases" class="section common-kita-ba">
+  <h2 class="section-title">滋賀県の遺品整理ビフォーアフター事例</h2>
+  <p class="common-ba-lead"><span class="marker">写真で作業前後を確認できる</span>と、どこまで片付くのか、どの程度の荷物量なのかをイメージしやすくなります。見積もり前に仕上がりを判断しやすいよう、滋賀県の遺品整理のビフォーアフター写真を掲載しています。</p>
+  <div class="common-ba-guide" aria-label="ビフォーアフターの見方">
+    <span>左が作業前、右が作業後です。</span>
+    <span>床・通路・収納の空き具合を確認できます。</span>
+    <span>貴重品探索や写真報告の有無も相談時に確認しましょう。</span>
+  </div>
+  <div class="common-ba-slider">
+    <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
+    <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
+    <div class="common-ba-track" data-common-ba-track>
+      <article class="common-ba-card"><h3>滋賀県のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="滋賀県の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="滋賀県の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋賀県で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>滋賀県の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="滋賀県の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="滋賀県の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋賀県のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
+      <article class="common-ba-card"><h3>滋賀県の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="滋賀県の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="滋賀県の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋賀県で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
+      <article class="common-ba-card"><h3>滋賀県の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="滋賀県の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="滋賀県の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋賀県の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
+      <article class="common-ba-card"><h3>滋賀県の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="滋賀県の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="滋賀県の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋賀県の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
+    </div>
+  </div>
+</section>
+<section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols3"><div class="card"><h3>滋賀県内のどのページを見ればよいですか？</h3><p>まず実家や作業場所に近い市町村ページを選んでください。住宅特性、搬出時の注意点、行政窓口を確認できます。</p></div><div class="card"><h3>立会いなしの遺品整理は相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、オンライン確認、振込精算を組み合わせると遠方家族でも進めやすくなります。</p></div><div class="card"><h3>空き家になった実家も整理できますか？</h3><p>整理できます。相続後の家財整理、売却前整理、権利書や保険証券の探索、仏壇・写真の供養などをまとめて確認しましょう。</p></div><div class="card"><h3>マンション退去日が近い場合は何を伝えればよいですか？</h3><p>退去期限、管理会社の作業ルール、エレベーターの有無、共用部養生、駐車位置、残したい貴重品を先に共有してください。</p></div><div class="card"><h3>見積もり前に写真だけで相談できますか？</h3><p>相談できます。玄関、各部屋、押入れ、物置、搬出経路、駐車位置の写真があると、荷物量と作業条件を整理しやすくなります。</p></div><div class="card"><h3>買取や供養も同時に確認できますか？</h3><p>確認できます。貴金属、時計、家電、工具、趣味用品は買取候補に分け、仏壇、位牌、写真、人形は供養希望品として先に伝えてください。</p></div></div></section>
   </main>
   <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、粗大ごみ相談先、見積もり前チェックを整理する情報サイト</div></footer>
+<script id="common-kita-before-after-script">
+  (() => {
+    document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
+      if (track.dataset.commonBaReady) return;
+      track.dataset.commonBaReady = '1';
+      const wrap = track.closest('.common-ba-slider');
+      const prev = wrap?.querySelector('[data-common-ba-prev]');
+      const next = wrap?.querySelector('[data-common-ba-next]');
+      const move = (direction) => {
+        const slide = track.querySelector('.common-ba-card');
+        const amount = slide ? slide.getBoundingClientRect().width + 18 : track.clientWidth;
+        track.scrollBy({ left: direction * amount, behavior: 'smooth' });
+      };
+      prev?.addEventListener('click', () => move(-1));
+      next?.addEventListener('click', () => move(1));
+    });
+  })();
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
