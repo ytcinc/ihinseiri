@@ -8,7 +8,7 @@
   <meta property="og:title" content="太子町の遺品整理・生前整理なら | 太子町遺品整理・生前整理.jp">
   <meta property="og:description" content="太子町で遺品整理・生前整理を検討している方向けに、料金目安、行政窓口、FAQをまとめています。">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Eifukuji02s3200.jpg/1200px-Eifukuji02s3200.jpg">
+  <meta property="og:image" content="/assets/original-heroes/hero-osaka-taishi.jpg?v=130">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
@@ -100,7 +100,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/kita-umeda-hero-sharp.jpg?v=6")); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/original-heroes/hero-osaka-taishi.jpg?v=130"); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1307,7 +1307,24 @@
       line-height: 1;
     }
 
+
+    /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
+    body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
+    .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
+    .topbar-inner{min-height:64px;gap:18px}.brand-main{color:#D05300}.brand-area,.brand-area-name{color:#2B2B2B}.brand-symbol{border-radius:4px;background:#D05300;color:#fff}
+    .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
+    .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
+    .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
+    table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
+    details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
+    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
+
   </style>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
 <body>
   <header class="topbar">
@@ -1327,7 +1344,7 @@
   </header>
 
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/osaka/">大阪府</a><span>›</span>太子町</div></nav>
-  <section class="hero" style="--hero-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Eifukuji02s3200.jpg/1200px-Eifukuji02s3200.jpg'), url('/assets/osaka-prefecture-hero.jpg?v=1')">
+  <section class="hero">
     <div class="hero-inner">
       <div>
         <span class="eyebrow">太子町で遺品整理・生前整理を探している方へ</span>
@@ -1425,7 +1442,7 @@
             <tr><td>空き家・売却前整理</td><td>相続書類や貴重品を探しながら進める整理。</td><td>退去期限、鍵の受け渡し、残す品、買取希望品、供養したい品。</td></tr>
           </tbody>
         </table>
-        <div class="notice"><b>太子町で特に確認したいこと</b><br>建物種別、搬出導線、駐車位置、退去期限、残したい品を先に整理しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
+        <div class="notice"><b>太子町で特に確認したいこと</b><br>太子・春日方面の戸建ては、坂道、前面道路、大型家具、庭や物置の量を見積もり前に共有しましょう。相続書類や写真、仏壇は処分前の探索範囲を決めておくと安心です。</div>
       </section>
       <section id="service">
         <h2 class="section-title">太子町で任せられる遺品整理・生前整理サービス</h2>
@@ -1633,13 +1650,7 @@
     <aside>
       <div class="side-card">
         <h2>太子町で重視すること</h2>
-        <ul class="side-list">
-          <li>住宅特性：—</li>
-          <li>単身世帯比率：—</li>
-          <li>65歳以上割合：—</li>
-          <li>行政窓口と業者作業の役割分担</li>
-          <li>立会い不要・写真報告・貴重品探索</li>
-        </ul>
+        <ul class="side-list"><li>太子・春日方面は戸建ての前面道路と駐車位置を確認</li><li>山手住宅は坂道、階段、大型家具の搬出を先に確認</li><li>庭、物置、農具・工具、屋外用品の量を見積もり前に共有</li><li>空家化する実家は相続書類、写真、仏壇を分ける</li><li>遠方親族は鍵預かり、写真報告、貴重品返却を決める</li></ul>
       </div>
       <div class="side-card">
         <h2>行政・福祉リンク</h2>
@@ -1669,3 +1680,5 @@
     </aside></div>
 </body>
 </html>
+
+

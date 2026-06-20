@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -32,7 +32,7 @@
     .brand-main { color:#D05300; font-size:25px; font-weight:900; }
     .nav { display:flex; align-items:center; gap:13px; font-size:14px; font-weight:900; white-space:nowrap; overflow-x:auto; }
     .nav a { color:#333; } .call { display:inline-grid; place-items:center; min-height:36px; padding:0 14px; background:var(--orange); color:#fff!important; border-radius:4px; }
-    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.52) 34%,rgba(18,24,26,.18) 58%,rgba(18,24,26,0) 100%),url("/assets/fukushima-hero-user-v2.jpg"); background-size:cover; background-position:center; }
+    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.52) 34%,rgba(18,24,26,.18) 58%,rgba(18,24,26,0) 100%),url("/assets/original-heroes/hero-aichi.jpg?v=130"); background-size:cover; background-position:center; }
     .hero-inner { width:min(1160px,calc(100% - 28px)); margin:0 auto; min-height:560px; display:grid; grid-template-columns:minmax(0,1fr) 370px; gap:34px; align-items:center; padding:54px 0 62px; }
     .eyebrow { display:inline-block; margin-bottom:14px; padding:5px 11px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.34); color:#fff; font-size:14px; font-weight:900; }
     h1 { margin:0 0 16px; max-width:760px; color:#fff; font-size:clamp(34px,5.2vw,58px); line-height:1.18; font-weight:900; overflow-wrap:anywhere; text-shadow:0 2px 18px rgba(0,0,0,.28); }
@@ -559,11 +559,12 @@
     @media (max-width:720px){ .grid.cols2 { grid-template-columns:1fr; } }
     </style>
   <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TOP","item":"https://ihinseiri-hazel.vercel.app/"},{"@type":"ListItem","position":2,"name":"愛知県","item":"https://ihinseiri-hazel.vercel.app/aichi/"}]},{"@context":"https://schema.org","@type":"Organization","name":"遺品整理・生前整理.jp 編集部","url":"https://ihinseiri-hazel.vercel.app/"}]</script>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
 <body>
-  <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-symbol">整</span><span class="brand-word"><span class="brand-area">愛知県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="#nagoya">名古屋市</a><a href="#尾張">尾張</a><a href="#海部">海部</a><a href="#知多">知多</a><a href="#西三河">西三河</a><a href="#東三河">東三河</a></nav></div></header>
+  <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-symbol">整</span><span class="brand-word"><span class="brand-area">愛知県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#local">統計データ</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>愛知県</div></nav>
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">愛知県で遺品整理・生前整理を探す</span><h1>愛知県の遺品整理・生前整理を市区町村から確認</h1><p class="hero-lead">名古屋市16区と県内市町村を、愛知県公式ページの地域区分に沿って整理しました。各ページでは、住宅特性、料金目安、品目別対応、想定事例、行政窓口の確認方針を同じ構成で確認できます。</p><div class="hero-actions"><a class="btn primary" href="#nagoya">名古屋市から探す</a><a class="btn secondary" href="#尾張">市町村から探す</a></div></div><div class="hero-panel"><h2>愛知県ページの見方</h2><ul class="quick-list"><li>名古屋市は16区別ページへ分けています</li><li>県内54市町村を公式地域区分で整理</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>未確認の行政電話番号は `—` として掲載</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">愛知県で遺品整理・生前整理を探す</span><h1>名古屋の厳しいゴミ分別も、全てお任せ。</h1><p class="hero-lead">名古屋市をはじめとする愛知県内の自治体ごとの細かい廃棄ルールに完全準拠。名古屋16区から三河エリアまで自社スタッフで直行するため、不当な出張費や外注手数料は発生しません。</p><div class="hero-actions"><a class="btn primary" href="#nagoya">名古屋市から探す</a><a class="btn secondary" href="#尾張">市町村から探す</a></div></div><div class="hero-panel"><h2>愛知県ページの見方</h2><ul class="quick-list"><li>名古屋市は16区別ページへ分けています</li><li>県内54市町村を公式地域区分で整理</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>未確認の行政電話番号は `—` として掲載</li></ul></div></div></section>
   <div class="page"><main>
     <section id="local"><p class="section-kicker">愛知県統計</p><h2 class="section-title">愛知県全体の住宅特性・統計</h2><div class="stats"><div class="stat"><b>7,542,415人</b><span>令和2年国勢調査人口</span></div><div class="stat"><b>46.4%</b><span>共同住宅居住率</span></div><div class="stat"><b>36.3%</b><span>単身者世帯比率</span></div><div class="stat"><b>25.4%</b><span>65歳以上人口割合</span></div></div><p class="source-note">出典：e-Stat 令和2年国勢調査。個別ページでは市区町村コードの実値を掲載しています。</p></section>
     <section id="nagoya"><p class="section-kicker">政令市</p><h2 class="section-title">名古屋市の区から探す</h2><p>名古屋市は区別ページへ分け、見出しと title は「名古屋市○区」で統一しています。粗大ごみ窓口は市単位の共通情報を掲載します。</p><div class="ward-links"><a class="featured" href="/aichi/nagoya/">名古屋市トップ</a><a href="/aichi/nagoya/chikusa/">千種区</a><a href="/aichi/nagoya/higashi/">東区</a><a href="/aichi/nagoya/kita/">北区</a><a href="/aichi/nagoya/nishi/">西区</a><a href="/aichi/nagoya/nakamura/">中村区</a><a href="/aichi/nagoya/naka/">中区</a><a href="/aichi/nagoya/showa/">昭和区</a><a href="/aichi/nagoya/mizuho/">瑞穂区</a><a href="/aichi/nagoya/atsuta/">熱田区</a><a href="/aichi/nagoya/nakagawa/">中川区</a><a href="/aichi/nagoya/minato/">港区</a><a href="/aichi/nagoya/minami/">南区</a><a href="/aichi/nagoya/moriyama/">守山区</a><a href="/aichi/nagoya/midori/">緑区</a><a href="/aichi/nagoya/meito/">名東区</a><a href="/aichi/nagoya/tempaku/">天白区</a></div></section>
@@ -575,3 +576,5 @@
   </main><aside><div class="side-card"><h2>愛知県内リンク</h2><ul class="side-list"><li><a href="/aichi/nagoya/">名古屋市トップ</a></li><li><a href="#尾張">尾張エリア</a></li><li><a href="#東三河">東三河エリア</a></li></ul></div></aside></div>
 </body>
 </html>
+
+

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -96,7 +96,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/kita-umeda-hero-sharp.jpg?v=6")); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/original-heroes/hero-osaka-naniwa.jpg?v=130"); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1303,7 +1303,24 @@
       line-height: 1;
     }
 
+
+    /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
+    body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
+    .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
+    .topbar-inner{min-height:64px;gap:18px}.brand-main{color:#D05300}.brand-area,.brand-area-name{color:#2B2B2B}.brand-symbol{border-radius:4px;background:#D05300;color:#fff}
+    .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
+    .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
+    .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
+    .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
+    table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
+    details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
+    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
+
   </style>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
 </head>
 <body>
   <header class="topbar">
@@ -1315,7 +1332,7 @@
     </div>
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/osaka/">大阪府</a><span>›</span>浪速区</div></nav>
-  <section class="hero" style="--hero-image: url('/assets/ward-heroes/hero-naniwa-photo.jpg')">
+  <section class="hero">
     <div class="hero-inner">
       <div>
         <span class="eyebrow">大阪市浪速区で遺品整理・生前整理を探している方へ</span>
@@ -1331,13 +1348,7 @@
       </div>
             <div class="hero-panel">
         <h2>浪速区で特に多い相談</h2>
-        <ul class="quick-list">
-          <li>なんば・日本橋周辺の単身賃貸を急いで片付けたい</li>
-          <li>大国町・恵美須町周辺のマンション退去期限が近い</li>
-          <li>店舗併用住宅の什器や事業系ごみの扱いが不安</li>
-          <li>鍵預かりで立会いなしの作業を依頼したい</li>
-          <li>家電や趣味用品を買取査定して費用を抑えたい</li>
-        </ul>
+        <ul class="quick-list"><li>なんば・難波中の単身賃貸を退去日までに空にしたい</li><li>日本橋・恵美須町の店舗併用住宅で什器と家財を分けたい</li><li>大国町・敷津周辺のマンションを鍵預かりで進めたい</li><li>幸町・桜川の集合住宅で管理会社への搬出時間を確認したい</li><li>家電、ゲーム機、工具、オーディオなど趣味用品を査定したい</li></ul>
       </div>
     </div>
   </section>
@@ -1416,35 +1427,36 @@
           </div>
         </div>
         <p class="source-note">出典：e-Stat 令和2年国勢調査 人口等基本集計（表 0003445099、0003445163、0003445284、0003445178、0003445129）をもとに浪速区向けに算出。共同住宅居住率は「共同住宅」÷「住宅に住む一般世帯」、単身者世帯比率と65歳以上単独世帯率は一般世帯数を母数にしています。</p>
-        <div class="notice"><b>浪速区の見積もりで見られるポイント</b><br>浪速区では、駅周辺の集合住宅、昔ながらの住宅地、単身世帯や高齢世帯が混在します。とくに「なんば・日本橋周辺の単身賃貸を急いで片付けたい」「大国町・恵美須町周辺のマンション退去期限が近い」「店舗併用住宅の什器や事業系ごみの扱いが不安」のような条件は、作業人数・車両・養生・処分方法に直接関わります。同じ間取りでも、建物の階数、エレベーターの有無、前面道路の広さ、駐車位置、管理会社への搬出届、買取品、供養品、退去期限によって金額は変わります。</div>
+        <div class="notice"><b>浪速区の見積もりで見られるポイント</b><br>浪速区は、難波中・日本橋周辺、大国町周辺、恵美須町・幸町周辺で、単身賃貸・店舗併用住宅・商業地マンションが混在します。見積もりでは、事業系ごみとの切り分け、退去期限、鍵預かりと写真報告、階数、エレベーターの有無、前面道路の幅、買取希望品、供養品、退去期限を先に整理しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
         <table>
           <thead><tr><th>確認項目</th><th>浪速区で特に見られること</th><th>見積もり前に整理しておくこと</th></tr></thead>
           <tbody>
-            <tr><td>建物・搬出導線</td><td>なんば・日本橋周辺の単身賃貸を急いで片付けたい</td><td>階数、エレベーター、階段幅、玄関から車両までの距離、共用部養生の要否を確認します。</td></tr>
-            <tr><td>地域特性</td><td>大国町・恵美須町周辺のマンション退去期限が近い</td><td>商店街、幹線道路、住宅密集地、団地、大型マンションなど、作業時間や近隣配慮が必要か確認します。</td></tr>
-            <tr><td>家財量と探し物</td><td>店舗併用住宅の什器や事業系ごみの扱いが不安</td><td>通帳、印鑑、権利書、写真、貴金属、供養したい品を事前にメモし、捨ててよい物と残す物を分けます。</td></tr>
-            <tr><td>行政処分との使い分け</td><td>粗大ごみ、家電リサイクル品、ふれあい収集、空家相談の利用可否を確認します。</td><td>自分で出せるもの、家族で運べるもの、専門業者に任せた方がよいものを分けると費用感が見えやすくなります。</td></tr>
+            <tr><td>建物・搬出導線</td><td>難波中・元町の単身マンション、幸町・桜川の集合住宅</td><td>エレベーター使用時間、台車利用、共用廊下の養生、管理会社への作業届、車両を寄せられる位置を確認します。</td></tr>
+            <tr><td>地域特性</td><td>日本橋・恵美須町の店舗併用住宅や商店街沿い物件</td><td>住居の家財と店舗什器、在庫、事業系ごみを分け、営業時間外の搬出や近隣店舗への配慮が必要か確認します。</td></tr>
+            <tr><td>家財量と探し物</td><td>単身部屋でも家電、PC、ゲーム機、工具、趣味用品が多いケース</td><td>買取査定したい品、残す書類、通帳、印鑑、写真、形見分け品を先にリスト化し、処分前に確認できるようにします。</td></tr>
+            <tr><td>行政処分との使い分け</td><td>中部環境事業センター出張所、粗大ごみ受付、専門業者の使い分け</td><td>自分で出せる粗大ごみ、家電リサイクル対象品、事業系ごみ、即日搬出が必要な家財を分けると費用感が見えやすくなります。</td></tr>
           </tbody>
         </table>      </section>
 
       <section id="towns">
         <h2 class="section-title">浪速区の対応町名・駅周辺</h2>
-        <p>浪速区全域の遺品整理・生前整理・実家じまいに対応します。町名や駅周辺の特性まで確認しておくと、見積もり時に「搬出しやすい建物か」「車をどこに停められるか」「管理会社への連絡が必要か」を判断しやすくなります。</p>
-        <div class="area-tags"><span>なんば</span><span>大国町</span><span>恵美須町</span><span>桜川</span><span>芦原橋</span><span>難波中</span><span>敷津</span><span>元町</span><span>日本橋</span><span>幸町</span></div>
+        <p>浪速区は、なんば・日本橋の商業地、大国町・敷津の単身賃貸、恵美須町周辺の店舗併用住宅、桜川・幸町のマンションで相談内容が変わります。町名と建物種別を先に共有しておくと、見積もり時に「什器と家財の分別」「短時間搬出」「管理会社への連絡」まで確認しやすくなります。</p>
+        <div class="area-tags"><span>難波中</span><span>日本橋</span><span>大国町</span><span>恵美須町</span><span>幸町</span></div>
         <table>
           <thead><tr><th>地域の見方</th><th>浪速区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead>
           <tbody>
-            <tr><td>駅周辺・マンション</td><td>難波中のワンルーム</td><td>エレベーター使用、共用部養生、搬出時間、管理会社への作業届。</td></tr>
-            <tr><td>戸建て・長屋・団地</td><td>日本橋の店舗併用住宅</td><td>階段幅、前面道路、トラック停車位置、大型家具や物置の有無。</td></tr>
-            <tr><td>退去・売却前整理</td><td>幸町のマンション</td><td>退去期限、鍵の受け渡し、残す品、買取希望品、供養したい品。</td></tr>
+            <tr><td>難波中・元町の単身賃貸</td><td>退去期限が近い1K・1DKの家財整理、家電回収、写真報告。</td><td>鍵返却日、エレベーター利用、管理会社の搬出時間、家電リサイクル品。</td></tr>
+            <tr><td>日本橋・恵美須町の店舗併用住宅</td><td>住居部分の遺品整理と、店舗什器・在庫・事業系ごみの切り分け。</td><td>什器と家財の分別、事業系廃棄物の有無、作業可能時間、停車位置。</td></tr>
+            <tr><td>大国町・敷津のマンション</td><td>単身部屋を立会いなしで進めたい相談、買取査定を含む整理。</td><td>鍵預かり方法、写真報告の範囲、残す書類、買取できる趣味用品。</td></tr>
+            <tr><td>幸町・桜川の集合住宅</td><td>売却前・賃貸退去前の片付け、共用部養生が必要な搬出。</td><td>管理会社への作業届、共用部養生、車両位置、近隣への配慮。</td></tr>
           </tbody>
         </table>
-        <div class="notice"><b>浪速区で特に確認したいこと</b><br>単身賃貸、商業地、民泊・店舗併用物件が多い地域です。短期退去・鍵預かり・遠方対応が合います。 退去期限が近い単身部屋を即日整理できるか を見積もり時に確認しておくと、当日の追加作業や近隣トラブルを防ぎやすくなります。</div>
+        <div class="notice"><b>浪速区で特に確認したいこと</b><br>浪速区では、難波中・日本橋周辺の退去前整理、大国町周辺の搬出導線、恵美須町・幸町周辺の大型家具・物置整理など、同じ間取りでも条件が変わります。<span class="marker">事業系ごみとの切り分け、退去期限、鍵預かりと写真報告、鍵の受け渡し、写真報告の方法</span>を見積もり時に確認しておくと安心です。</div>
       </section>
 
       <section id="service">
         <h2 class="section-title">浪速区で任せられる遺品整理・生前整理サービス</h2>
-        <p>遺品整理は家財を運び出すだけではありません。浪速区では、住宅特性に合わせて、<span class="marker">仕分け、貴重品探索、買取、供養、退去前整理、空家化前の実家じまいまで一つずつ整理</span>して進めることが大切です。</p>
+        <p>遺品整理は家財を運び出すだけではありません。浪速区では、難波中・日本橋周辺、大国町周辺、恵美須町・幸町周辺で住宅条件が変わります。<span class="marker">事業系ごみとの切り分け、退去期限、鍵預かりと写真報告、貴重品探索、買取、供養、退去前整理まで一つずつ整理</span>して進めることが大切です。</p>
         <div class="cards">
           <div class="card"><strong>マンション・集合住宅の養生</strong><span>単身賃貸・商業地マンション・店舗併用物件では、エレベーター、廊下、壁、床を保護し、管理会社のルールに合わせて搬出します。</span></div>
           <div class="card"><strong>戸建て・長屋・団地の片付け</strong><span>押入れ、物置、庭、ベランダ、大型家具まで、家財量に合わせて人員と車両を組みます。</span></div>
@@ -1470,7 +1482,7 @@
         <div class="case-note"><b>浪速区の事例を見るときのポイント</b><br>写真のきれいさだけでなく、見積もり時にどこまで仕分けるか、貴重品探索を含めるか、買取・供養・写真報告まで頼めるかを確認すると、遺品整理・生前整理を相談しやすくなります。</div>
       <section id="price">
         <h2 class="section-title">浪速区の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。浪速区では、<span class="marker">退去期限が近い単身部屋を即日整理できるか</span> という点も必ず確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。浪速区では、<span class="marker">難波中・日本橋周辺の搬出条件と、大国町・恵美須町周辺の大型家財量</span>を必ず確認しましょう。</p>
         <table>
           <thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead>
           <tbody>
@@ -1599,7 +1611,7 @@
 
 
     <section id="contact" class="cta-band">
-      <div><h2>浪速区の遺品整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを切り分けると、費用も作業範囲も判断しやすくなります。</p></div>
+      <div><h2>浪速区の遺品整理は、退去期限と商業地の搬出条件を先に確認</h2><p>なんば・日本橋・大国町・桜川周辺では、単身賃貸、店舗併用住宅、商業地マンションが近接します。行政回収で済む家財、事業系として分ける品、買取査定したい家電・趣味用品を先に整理すると、短期間の見積もりでも判断しやすくなります。</p></div>
       <a class="btn primary" href="#process">見積もり相談の準備をする</a>
     </section>
           <footer class="site-footer" data-ward="naniwa" data-environment-center="中部環境事業センター出張所" data-environment-phone="06-6567-0750">
@@ -1652,13 +1664,7 @@
         <aside>
       <div class="side-card">
         <h2>浪速区で重視すること</h2>
-        <ul class="side-list">
-          <li>難波中のワンルーム の搬出導線と養生</li>
-          <li>日本橋の店舗併用住宅 の大型家具・物置整理</li>
-          <li>幸町のマンション の退去期限と写真報告</li>
-          <li>退去期限が近い単身部屋を即日整理できるか</li>
-          <li>中部環境事業センター出張所と粗大ごみ受付の使い分け</li>
-        </ul>
+        <ul class="side-list"><li>難波中・日本橋周辺の搬出導線、駐車位置、作業時間</li><li>大国町周辺の単身賃貸・店舗併用住宅・商業地マンションに合わせた共用部養生</li><li>恵美須町・幸町周辺の大型家具、物置、庭まわり整理</li><li>鍵預かり、写真報告、遠方親族への完了共有</li><li>事業系ごみとの切り分け、退去期限、鍵預かりと写真報告と行政回収・業者作業の使い分け</li></ul>
       </div>
       <div class="side-card">
         <h2>行政・福祉リンク</h2>
@@ -1691,6 +1697,7 @@
     </aside>  </div>
 </body>
 </html>
+
 
 
 
