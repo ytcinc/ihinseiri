@@ -96,7 +96,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url("/assets/kita-umeda-hero-sharp.jpg?v=6"); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/kita-umeda-hero-sharp.jpg?v=6")); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1315,7 +1315,7 @@
     </div>
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/osaka/">大阪府</a><span>›</span>西淀川区</div></nav>
-  <section class="hero">
+  <section class="hero" style="--hero-image: url('/assets/ward-heroes/hero-nishiyodogawa-photo.jpg')">
     <div class="hero-inner">
       <div>
         <span class="eyebrow">大阪市西淀川区で遺品整理・生前整理を探している方へ</span>

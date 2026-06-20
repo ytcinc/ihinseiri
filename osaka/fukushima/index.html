@@ -34,7 +34,7 @@
     .brand-main { color:#D05300; font-size:25px; font-weight:900; }
     .nav { display:flex; align-items:center; gap:13px; font-size:14px; font-weight:900; white-space:nowrap; overflow-x:auto; }
     .nav a { color:#333; } .call { display:inline-grid; place-items:center; min-height:36px; padding:0 14px; background:var(--orange); color:#fff!important; border-radius:4px; }
-    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.52) 34%,rgba(18,24,26,.18) 58%,rgba(18,24,26,0) 100%),url("/assets/fukushima-hero-user-v2.jpg"); background-size:cover; background-position:center; }
+    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/kita-umeda-hero-sharp.jpg?v=6")); background-size: cover; background-position:center center; }
     .hero-inner { width:min(1160px,calc(100% - 28px)); margin:0 auto; min-height:560px; display:grid; grid-template-columns:minmax(0,1fr) 370px; gap:34px; align-items:center; padding:54px 0 62px; }
     .eyebrow { display:inline-block; margin-bottom:14px; padding:5px 11px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.34); color:#fff; font-size:14px; font-weight:900; }
     h1 { margin:0 0 16px; max-width:760px; color:#fff; font-size:clamp(34px,5.2vw,58px); line-height:1.18; font-weight:900; overflow-wrap:anywhere; text-shadow:0 2px 18px rgba(0,0,0,.28); }
@@ -562,7 +562,7 @@
     </div>
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/osaka/">大阪府</a><span>›</span>福島区</div></nav>
-  <section class="hero">
+  <section class="hero" style="--hero-image: url('/assets/fukushima-hero-user-v2.jpg')">
     <div class="hero-inner">
       <div>
         <span class="eyebrow">大阪市福島区で遺品整理・生前整理を探している方へ</span>
@@ -932,8 +932,6 @@
     </aside>  </div>
 </body>
 </html>
-
-
 
 
 
