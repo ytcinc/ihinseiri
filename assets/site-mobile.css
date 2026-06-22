@@ -2,10 +2,581 @@ html {
   scroll-padding-top: 78px;
 }
 
+/* Closer visual match to rikon.asahi.com: bright portal, beige hero, orange chips. */
+body.katachi-layout {
+  --rikon-orange: #f57400;
+  --rikon-brown: #8a7426;
+  --rikon-beige: #e8d88e;
+  --rikon-cream: #f7f4e6;
+  --rikon-ink: #333333;
+  --rikon-line: #d8d2bc;
+  color: var(--rikon-ink) !important;
+  background: #fff !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif !important;
+}
+
+body.katachi-layout .topbar {
+  position: sticky !important;
+  top: 0 !important;
+  background: #fff !important;
+  border-bottom: 1px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .topbar-inner {
+  width: min(1200px, calc(100% - 40px)) !important;
+  min-height: 70px !important;
+  align-items: center !important;
+}
+
+body.katachi-layout .brand-symbol {
+  width: 34px !important;
+  height: 34px !important;
+  background: #333 !important;
+  color: #fff !important;
+  border-radius: 7px !important;
+}
+
+body.katachi-layout .brand-main {
+  color: #333 !important;
+  font-size: 26px !important;
+  font-weight: 900 !important;
+}
+
+body.katachi-layout .brand-main::first-letter {
+  color: var(--rikon-orange) !important;
+}
+
+body.katachi-layout .brand-area-name {
+  color: #333 !important;
+}
+
+body.katachi-layout .brand-sub {
+  color: #333 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+body.katachi-layout .nav {
+  align-self: stretch !important;
+  gap: 0 !important;
+  margin-left: auto !important;
+  border-left: 1px solid #ddd !important;
+  font-size: 15px !important;
+}
+
+body.katachi-layout .nav a:not(.call) {
+  min-width: 150px !important;
+  min-height: 70px !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 0 18px !important;
+  color: #333 !important;
+  border-right: 1px solid #ddd !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  font-weight: 500 !important;
+}
+
+body.katachi-layout .nav a:not(.call):hover {
+  color: var(--rikon-orange) !important;
+  background: #fff !important;
+}
+
+body.katachi-layout .call {
+  min-width: 132px !important;
+  min-height: 70px !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  border-right: 1px solid #ddd !important;
+  color: #333 !important;
+}
+
+body.katachi-layout .hero,
+body.katachi-layout .hero.osaka-hero,
+body.katachi-layout.streamlined-top .hero {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 420px !important;
+  padding: 56px 0 168px !important;
+  color: #fff !important;
+  background:
+    radial-gradient(120% 76% at 5% 92%, #f6f2dd 0 31%, transparent 32%),
+    radial-gradient(120% 86% at 72% 24%, #c9b95c 0 56%, transparent 57%),
+    linear-gradient(180deg, #ddcf7f 0%, #f7f4e6 100%) !important;
+}
+
+body.katachi-layout .hero::before,
+body.katachi-layout .hero.osaka-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  left: max(28px, calc((100vw - 1180px) / 2)) !important;
+  bottom: 54px !important;
+  width: min(520px, 42vw) !important;
+  aspect-ratio: 1.45 / 1 !important;
+  background: url("/assets/cv-hero-staff-illustration.png?v=3") center bottom / contain no-repeat !important;
+  filter: saturate(.9) brightness(1.04) !important;
+  opacity: .96 !important;
+  z-index: 1 !important;
+}
+
+body.katachi-layout .hero::after,
+body.katachi-layout .hero.osaka-hero::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 !important;
+  height: 70px !important;
+  background: #f7f4e6 !important;
+  pointer-events: none !important;
+}
+
+body.katachi-layout .hero-inner,
+body.katachi-layout.streamlined-top .hero-inner,
+body.katachi-layout .hero.osaka-hero .hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  min-height: 280px !important;
+  display: grid !important;
+  grid-template-columns: minmax(420px, .96fr) minmax(420px, 1.04fr) !important;
+  gap: 36px !important;
+  align-items: center !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+body.katachi-layout .hero-copy,
+body.katachi-layout .hero.osaka-hero .hero-inner > div:first-child {
+  grid-column: 2 !important;
+  max-width: 560px !important;
+  margin-left: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .article-meta,
+body.katachi-layout .hero-actions,
+body.katachi-layout .hero-note,
+body.katachi-layout .trust-row,
+body.katachi-layout .cv-proof-row,
+body.katachi-layout .hero-highlights {
+  display: none !important;
+}
+
+body.katachi-layout .pill,
+body.katachi-layout .eyebrow {
+  display: block !important;
+  width: fit-content !important;
+  min-height: 0 !important;
+  margin: 0 auto 12px 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1.7 !important;
+  text-shadow: 0 2px 4px rgba(60, 48, 18, .22) !important;
+}
+
+body.katachi-layout .hero h1,
+body.katachi-layout .hero.osaka-hero h1 {
+  max-width: 560px !important;
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: clamp(48px, 5.3vw, 78px) !important;
+  font-weight: 900 !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  text-shadow: 6px 6px 0 rgba(118, 101, 39, .56), 0 2px 4px rgba(60, 48, 18, .18) !important;
+}
+
+body.katachi-layout .hero p,
+body.katachi-layout .hero-lead,
+body.katachi-layout .hero.osaka-hero p {
+  margin-top: 16px !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1.9 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 4px rgba(60, 48, 18, .24) !important;
+}
+
+body.katachi-layout .hero-search-panel,
+body.katachi-layout .hero-panel,
+body.katachi-layout .quick-guide {
+  position: relative !important;
+  z-index: 5 !important;
+  background: #fff !important;
+  border: 1px solid var(--rikon-line) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  color: #333 !important;
+  padding: 28px 32px !important;
+}
+
+body.katachi-layout.streamlined-top .hero-search-panel,
+body.katachi-layout.prefecture-page .quick-guide {
+  margin-top: -118px !important;
+}
+
+body.katachi-layout .hero-panel h2,
+body.katachi-layout .search-panel-title,
+body.katachi-layout .guide-panel h2,
+body.katachi-layout .top-search-head h2,
+body.katachi-layout .panel-heading h2,
+body.katachi-layout .section-title {
+  color: #333 !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif !important;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0 !important;
+}
+
+body.katachi-layout .search-panel-title::before,
+body.katachi-layout .guide-panel h2::before,
+body.katachi-layout .top-search-head h2::before,
+body.katachi-layout .section-title::before {
+  content: "▣" !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  margin-right: 8px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--rikon-brown) !important;
+  font-size: .86em !important;
+  vertical-align: baseline !important;
+}
+
+body.katachi-layout .search-panel-lead {
+  color: #555 !important;
+}
+
+body.katachi-layout .selector-grid,
+body.katachi-layout .top-search-grid,
+body.katachi-layout .guide-panel {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 28px !important;
+}
+
+body.katachi-layout .selector-card,
+body.katachi-layout .search-chips a,
+body.katachi-layout .guide-actions a,
+body.katachi-layout .intent-card,
+body.katachi-layout .price-mini {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: auto !important;
+  min-width: 104px !important;
+  min-height: 38px !important;
+  padding: 8px 18px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--rikon-orange) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  text-align: center !important;
+}
+
+body.katachi-layout .selector-card span,
+body.katachi-layout .guide-actions span,
+body.katachi-layout .intent-card span,
+body.katachi-layout .price-mini span {
+  display: none !important;
+}
+
+body.katachi-layout .selector-card:hover,
+body.katachi-layout .search-chips a:hover,
+body.katachi-layout .guide-actions a:hover,
+body.katachi-layout .intent-card:hover,
+body.katachi-layout .price-mini:hover {
+  background: #df6500 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: none !important;
+}
+
+body.katachi-layout .panel-cta {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 12px !important;
+}
+
+body.katachi-layout .panel-cta a,
+body.katachi-layout .btn.primary,
+body.katachi-layout .panel-cta .orange,
+body.katachi-layout .search-chips .primary-chip,
+body.katachi-layout .area-shortcuts a.all-area {
+  min-height: 56px !important;
+  border-radius: 8px !important;
+  background: #333 !important;
+  border: 0 !important;
+  color: #fff !important;
+}
+
+body.katachi-layout .panel-cta .light {
+  background: #fff !important;
+  border: 1px solid var(--rikon-line) !important;
+  color: #333 !important;
+}
+
+body.katachi-layout .top-search-hub,
+body.katachi-layout .wrap,
+body.katachi-layout.prefecture-page .wrap {
+  background: var(--rikon-cream) !important;
+}
+
+body.katachi-layout .top-search-inner,
+body.katachi-layout .wrap,
+body.katachi-layout.streamlined-top .wrap {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+}
+
+body.katachi-layout .top-search-hub {
+  padding: 0 0 64px !important;
+  border: 0 !important;
+}
+
+body.katachi-layout .top-search-inner {
+  margin-top: -118px !important;
+  position: relative !important;
+  z-index: 6 !important;
+}
+
+body.katachi-layout .search-box,
+body.katachi-layout .popular-area,
+body.katachi-layout .price-teaser,
+body.katachi-layout .section,
+body.katachi-layout .engagement-panel,
+body.katachi-layout .supervisor,
+body.katachi-layout .key-box,
+body.katachi-layout .toc,
+body.katachi-layout .banner {
+  background: #fff !important;
+  border: 1px solid var(--rikon-line) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  padding: 28px 32px !important;
+}
+
+body.katachi-layout .section-title {
+  margin: 0 0 22px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .search-chips,
+body.katachi-layout .pref-links,
+body.katachi-layout .ward-links,
+body.katachi-layout .popular-links,
+body.katachi-layout .guide-actions,
+body.katachi-layout .intent-grid,
+body.katachi-layout .price-mini-grid,
+body.katachi-layout .area-shortcuts {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+body.katachi-layout .pref-links a,
+body.katachi-layout .ward-links a,
+body.katachi-layout .popular-links a,
+body.katachi-layout .area-shortcuts a {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: auto !important;
+  min-height: 36px !important;
+  padding: 6px 8px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #333 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+body.katachi-layout .pref-links a:hover,
+body.katachi-layout .ward-links a:hover,
+body.katachi-layout .popular-links a:hover,
+body.katachi-layout .area-shortcuts a:hover {
+  color: var(--rikon-orange) !important;
+  background: transparent !important;
+}
+
+body.katachi-layout .card,
+body.katachi-layout .area-box,
+body.katachi-layout .ward-area,
+body.katachi-layout .chart-box,
+body.katachi-layout .notice,
+body.katachi-layout .online-step,
+body.katachi-layout .flow div {
+  background: #fff !important;
+  border: 1px solid var(--rikon-line) !important;
+  border-top: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .card h3,
+body.katachi-layout .area-box h3,
+body.katachi-layout .ward-area h3,
+body.katachi-layout .chart-box h3 {
+  color: #333 !important;
+}
+
+body.katachi-layout .marker,
+body.katachi-layout .text-marker {
+  color: var(--rikon-orange) !important;
+  background: transparent !important;
+}
+
+body.katachi-layout .footer {
+  background: #333 !important;
+}
+
+@media (max-width: 820px) {
+  body.katachi-layout .topbar-inner {
+    width: calc(100% - 24px) !important;
+    min-height: auto !important;
+    align-items: flex-start !important;
+  }
+
+  body.katachi-layout .brand-main {
+    font-size: 21px !important;
+  }
+
+  body.katachi-layout .nav {
+    width: 100% !important;
+    border-left: 0 !important;
+    overflow-x: auto !important;
+  }
+
+  body.katachi-layout .nav a:not(.call),
+  body.katachi-layout .call {
+    min-width: auto !important;
+    min-height: 46px !important;
+    border-right: 0 !important;
+    padding: 8px 14px !important;
+  }
+
+  body.katachi-layout .hero,
+  body.katachi-layout .hero.osaka-hero,
+  body.katachi-layout.streamlined-top .hero {
+    padding: 30px 0 112px !important;
+  }
+
+  body.katachi-layout .hero::before,
+  body.katachi-layout .hero.osaka-hero::before {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    display: block !important;
+    width: min(330px, 88vw) !important;
+    margin: 0 auto 14px !important;
+  }
+
+  body.katachi-layout .hero-inner,
+  body.katachi-layout.streamlined-top .hero-inner,
+  body.katachi-layout .hero.osaka-hero .hero-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  body.katachi-layout .hero-copy,
+  body.katachi-layout .hero.osaka-hero .hero-inner > div:first-child {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  body.katachi-layout .hero h1,
+  body.katachi-layout .hero.osaka-hero h1 {
+    font-size: clamp(36px, 11vw, 48px) !important;
+    line-height: 1.26 !important;
+  }
+
+  body.katachi-layout .hero p,
+  body.katachi-layout .hero-lead,
+  body.katachi-layout .hero.osaka-hero p {
+    font-size: 15px !important;
+  }
+
+  body.katachi-layout.streamlined-top .hero-search-panel,
+  body.katachi-layout.prefecture-page .quick-guide,
+  body.katachi-layout .top-search-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-top: -72px !important;
+  }
+
+  body.katachi-layout .hero-search-panel,
+  body.katachi-layout .hero-panel,
+  body.katachi-layout .quick-guide,
+  body.katachi-layout .search-box,
+  body.katachi-layout .popular-area,
+  body.katachi-layout .price-teaser,
+  body.katachi-layout .section,
+  body.katachi-layout .engagement-panel {
+    padding: 20px !important;
+  }
+
+  body.katachi-layout .selector-grid,
+  body.katachi-layout .top-search-grid,
+  body.katachi-layout .guide-panel,
+  body.katachi-layout .panel-cta {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  body.katachi-layout .wrap,
+  body.katachi-layout.streamlined-top .wrap,
+  body.katachi-layout .top-search-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  body.katachi-layout .search-panel-title,
+  body.katachi-layout .guide-panel h2,
+  body.katachi-layout .top-search-head h2,
+  body.katachi-layout .panel-heading h2,
+  body.katachi-layout .section-title {
+    font-size: 23px !important;
+  }
+}
+
 body {
   overflow-x: hidden;
+  color: #2f3430;
+  background: #f7f5f0;
+  font-family: "BIZ UDPGothic", "BIZ UDPゴシック", "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 17px;
+  line-height: 1.82;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+p,
+li,
+td,
+th,
+summary {
+  line-height: 1.82;
 }
 
 img,
@@ -29,10 +600,38 @@ section {
   max-width: 100%;
 }
 
+.btn,
+.call,
+.nav-cta,
+.panel-cta a,
+.hero-actions a,
+button {
+  min-height: 48px;
+  padding-inline: 18px;
+  font-weight: 900;
+  touch-action: manipulation;
+}
+
+.section-title {
+  background: #2f6f63 !important;
+  border-left-color: #1f5148 !important;
+}
+
+.card,
+.notice,
+.area-box,
+.chart-box,
+.hero-panel,
+.side-card,
+.sidebar-card,
+.toc {
+  border-color: #e4ded3 !important;
+}
+
 @media (max-width: 820px) {
   body {
-    font-size: 16px !important;
-    line-height: 1.75 !important;
+    font-size: 17px !important;
+    line-height: 1.84 !important;
   }
 
   .topbar {
@@ -62,6 +661,7 @@ section {
     align-items: flex-start !important;
     flex-direction: column !important;
     gap: 8px !important;
+    overflow: hidden !important;
   }
 
   .brand,
@@ -75,7 +675,7 @@ section {
   .logo-title {
     white-space: normal !important;
     overflow-wrap: anywhere !important;
-    word-break: keep-all !important;
+    word-break: normal !important;
     font-size: 20px !important;
     line-height: 1.35 !important;
   }
@@ -89,7 +689,7 @@ section {
     width: 100% !important;
     max-width: 100% !important;
     display: flex !important;
-    gap: 8px !important;
+    gap: 10px !important;
     overflow-x: auto !important;
     padding: 2px 0 6px !important;
     white-space: nowrap !important;
@@ -99,9 +699,9 @@ section {
   .nav a,
   .call {
     flex: 0 0 auto !important;
-    min-height: 36px !important;
-    padding: 7px 11px !important;
-    font-size: 13px !important;
+    min-height: 44px !important;
+    padding: 8px 13px !important;
+    font-size: 14px !important;
     line-height: 1.35 !important;
   }
 
@@ -122,7 +722,7 @@ section {
   .hero h1 {
     max-width: 100% !important;
     font-size: clamp(29px, 8.5vw, 36px) !important;
-    line-height: 1.28 !important;
+    line-height: 1.34 !important;
     word-break: keep-all !important;
     overflow-wrap: anywhere !important;
     letter-spacing: 0 !important;
@@ -132,8 +732,8 @@ section {
   .hero-lead,
   .lead {
     max-width: 100% !important;
-    font-size: 16px !important;
-    line-height: 1.78 !important;
+    font-size: 17px !important;
+    line-height: 1.86 !important;
     overflow-wrap: anywhere !important;
   }
 
@@ -165,7 +765,7 @@ section {
   .section-title,
   h2 {
     font-size: 22px !important;
-    line-height: 1.45 !important;
+    line-height: 1.5 !important;
     word-break: keep-all !important;
     overflow-wrap: anywhere !important;
   }
@@ -207,6 +807,16 @@ section {
     padding: 18px !important;
   }
 
+  .btn,
+  .hero-actions a,
+  .panel-cta a,
+  .call,
+  button {
+    min-height: 52px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+
   .price-table,
   table {
     display: block !important;
@@ -215,6 +825,18 @@ section {
     overflow-x: auto !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .chart-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   .price-table th,
@@ -226,9 +848,12 @@ section {
   }
 
   .bar-row {
-    grid-template-columns: 88px minmax(0, 1fr) 64px !important;
+    grid-template-columns: 74px minmax(0, 1fr) 54px !important;
     gap: 8px !important;
     font-size: 13px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   .bar-row b {
@@ -250,6 +875,525 @@ section {
   }
 }
 
+/* Rikon no Katachi style refresh: clearer entry points, calmer cards, and stronger scanability. */
+body.katachi-layout {
+  --katachi-ink: #25312c;
+  --katachi-muted: #52625b;
+  --katachi-green: #2f6f63;
+  --katachi-green-dark: #1f5148;
+  --katachi-orange: #d05300;
+  --katachi-paper: #fff;
+  --katachi-soft: #f6faf7;
+  --katachi-line: #dbe7df;
+  color: var(--katachi-ink) !important;
+  background: #f7f8f4 !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", YuGothic, Meiryo, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+body.katachi-layout .topbar {
+  border-bottom: 1px solid var(--katachi-line) !important;
+  box-shadow: 0 2px 16px rgba(37, 49, 44, .06) !important;
+}
+
+body.katachi-layout .topbar-inner {
+  width: min(1180px, calc(100% - 40px)) !important;
+  min-height: 68px !important;
+}
+
+body.katachi-layout .brand-main {
+  color: var(--katachi-green-dark) !important;
+  font-size: 23px !important;
+  letter-spacing: 0 !important;
+}
+
+body.katachi-layout .brand-symbol {
+  background: var(--katachi-green) !important;
+  border-radius: 8px !important;
+}
+
+body.katachi-layout .nav {
+  gap: 8px !important;
+  font-size: 14px !important;
+}
+
+body.katachi-layout .nav a:not(.call) {
+  min-height: 40px !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  padding: 0 12px !important;
+  color: #33423b !important;
+  border-radius: 6px !important;
+}
+
+body.katachi-layout .nav a:not(.call):hover {
+  background: #eef7f1 !important;
+  text-decoration: none !important;
+}
+
+body.katachi-layout .call,
+body.katachi-layout .btn.primary,
+body.katachi-layout .panel-cta .orange,
+body.katachi-layout .search-chips .primary-chip,
+body.katachi-layout .area-shortcuts a.all-area {
+  background: var(--katachi-orange) !important;
+  border-color: var(--katachi-orange) !important;
+  color: #fff !important;
+}
+
+body.katachi-layout .hero,
+body.katachi-layout .hero.osaka-hero,
+body.katachi-layout.streamlined-top .hero {
+  min-height: 0 !important;
+  color: #fff !important;
+  background-image:
+    linear-gradient(90deg, rgba(28, 43, 37, .93) 0%, rgba(34, 61, 52, .84) 44%, rgba(34, 61, 52, .45) 72%, rgba(34, 61, 52, .18) 100%),
+    url("/assets/cv-hero-staff-illustration.png?v=3") !important;
+  background-size: cover !important;
+  background-position: center right !important;
+  padding: 58px 0 66px !important;
+}
+
+body.katachi-layout .hero-inner,
+body.katachi-layout.streamlined-top .hero-inner,
+body.katachi-layout .hero.osaka-hero .hero-inner {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  min-height: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr) !important;
+  gap: 30px !important;
+  align-items: center !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+body.katachi-layout .hero-copy,
+body.katachi-layout .hero.osaka-hero .hero-inner > div:first-child {
+  max-width: 760px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.katachi-layout .hero h1,
+body.katachi-layout .hero.osaka-hero h1 {
+  max-width: 760px !important;
+  margin: 0 0 18px !important;
+  color: #fff !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif !important;
+  font-size: clamp(34px, 4.8vw, 58px) !important;
+  font-weight: 900 !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .28) !important;
+}
+
+body.katachi-layout .hero p,
+body.katachi-layout .hero-lead,
+body.katachi-layout .hero.osaka-hero p {
+  max-width: 730px !important;
+  color: rgba(255, 255, 255, .94) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1.9 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .24) !important;
+}
+
+body.katachi-layout .pill,
+body.katachi-layout .eyebrow {
+  min-height: 30px !important;
+  padding: 5px 12px !important;
+  border: 1px solid rgba(255, 255, 255, .38) !important;
+  background: rgba(255, 255, 255, .16) !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+}
+
+body.katachi-layout .hero-search-panel,
+body.katachi-layout .hero-panel {
+  background: rgba(255, 255, 255, .98) !important;
+  border: 1px solid rgba(255, 255, 255, .78) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 24px 54px rgba(0, 0, 0, .22) !important;
+  color: var(--katachi-ink) !important;
+  padding: 24px !important;
+}
+
+body.katachi-layout .hero-panel h2,
+body.katachi-layout .search-panel-title {
+  color: var(--katachi-green-dark) !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+}
+
+body.katachi-layout .hero-panel li {
+  color: #34423b !important;
+}
+
+body.katachi-layout .trust-row span,
+body.katachi-layout .hero-highlights span,
+body.katachi-layout .cv-proof-row div {
+  border: 1px solid rgba(255, 255, 255, .34) !important;
+  background: rgba(255, 255, 255, .16) !important;
+  color: #fff !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .wrap,
+body.katachi-layout.streamlined-top .wrap {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  margin-top: 32px !important;
+}
+
+body.katachi-layout .article {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .top-search-hub,
+body.katachi-layout .assurance-strip {
+  background: #fff !important;
+  border-color: var(--katachi-line) !important;
+}
+
+body.katachi-layout .top-search-inner,
+body.katachi-layout .assurance-inner {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+}
+
+body.katachi-layout .section,
+body.katachi-layout .engagement-panel,
+body.katachi-layout .quick-guide,
+body.katachi-layout .popular-area,
+body.katachi-layout .price-teaser,
+body.katachi-layout .supervisor,
+body.katachi-layout .key-box,
+body.katachi-layout .toc,
+body.katachi-layout .banner {
+  background: #fff !important;
+  border: 1px solid var(--katachi-line) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 12px 28px rgba(37, 49, 44, .06) !important;
+  padding: 28px !important;
+}
+
+body.katachi-layout .section-title {
+  display: block !important;
+  margin: 0 0 18px !important;
+  padding: 0 0 13px !important;
+  border: 0 !important;
+  border-bottom: 3px solid var(--katachi-line) !important;
+  background: transparent !important;
+  color: var(--katachi-ink) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  line-height: 1.42 !important;
+  letter-spacing: 0 !important;
+}
+
+body.katachi-layout .section-title::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin-right: 9px !important;
+  border-radius: 3px !important;
+  background: var(--katachi-green) !important;
+  vertical-align: middle !important;
+}
+
+body.katachi-layout .lead,
+body.katachi-layout .panel-heading p {
+  color: #3f4e47 !important;
+  font-size: 17px !important;
+  line-height: 1.92 !important;
+}
+
+body.katachi-layout .guide-panel {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr) !important;
+  gap: 22px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .guide-panel::before {
+  display: none !important;
+}
+
+body.katachi-layout .guide-actions,
+body.katachi-layout .intent-grid,
+body.katachi-layout .price-mini-grid,
+body.katachi-layout .area-shortcuts,
+body.katachi-layout .top-search-grid {
+  gap: 12px !important;
+}
+
+body.katachi-layout .guide-actions a,
+body.katachi-layout .intent-card,
+body.katachi-layout .quick-card,
+body.katachi-layout .area-shortcuts a,
+body.katachi-layout .price-mini,
+body.katachi-layout .search-box,
+body.katachi-layout .selector-card {
+  min-height: 82px !important;
+  background: var(--katachi-soft) !important;
+  border: 1px solid var(--katachi-line) !important;
+  border-radius: 8px !important;
+  color: var(--katachi-green-dark) !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .guide-actions a:hover,
+body.katachi-layout .intent-card:hover,
+body.katachi-layout .quick-card:hover,
+body.katachi-layout .area-shortcuts a:hover,
+body.katachi-layout .price-mini:hover,
+body.katachi-layout .selector-card:hover {
+  background: #eef8f2 !important;
+  border-color: var(--katachi-green) !important;
+  text-decoration: none !important;
+  transform: translateY(-1px) !important;
+}
+
+body.katachi-layout .card,
+body.katachi-layout .area-box,
+body.katachi-layout .ward-area,
+body.katachi-layout .chart-box,
+body.katachi-layout .notice,
+body.katachi-layout .online-step,
+body.katachi-layout .flow div {
+  background: #fff !important;
+  border: 1px solid #e3ebe5 !important;
+  border-top: 4px solid var(--katachi-green) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 20px rgba(37, 49, 44, .045) !important;
+  padding: 20px !important;
+}
+
+body.katachi-layout .card h3,
+body.katachi-layout .area-box h3,
+body.katachi-layout .ward-area h3,
+body.katachi-layout .chart-box h3 {
+  color: var(--katachi-ink) !important;
+  font-size: 19px !important;
+  font-weight: 900 !important;
+  line-height: 1.48 !important;
+}
+
+body.katachi-layout .card p,
+body.katachi-layout .area-box p,
+body.katachi-layout .ward-area p,
+body.katachi-layout .chart-box p {
+  color: var(--katachi-muted) !important;
+  font-size: 15px !important;
+  line-height: 1.82 !important;
+}
+
+body.katachi-layout .pref-links a,
+body.katachi-layout .ward-links a,
+body.katachi-layout .popular-links a,
+body.katachi-layout .search-chips a {
+  min-height: 38px !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  padding: 7px 13px !important;
+  border: 1px solid var(--katachi-line) !important;
+  border-radius: 999px !important;
+  background: #fff !important;
+  color: #33423b !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+}
+
+body.katachi-layout .pref-links a:hover,
+body.katachi-layout .ward-links a:hover,
+body.katachi-layout .popular-links a:hover,
+body.katachi-layout .search-chips a:hover {
+  background: #eef8f2 !important;
+  border-color: var(--katachi-green) !important;
+  color: var(--katachi-green-dark) !important;
+  text-decoration: none !important;
+}
+
+body.katachi-layout .marker,
+body.katachi-layout .text-marker {
+  background: linear-gradient(transparent 62%, rgba(255, 211, 84, .78) 62%) !important;
+  color: inherit !important;
+  font-weight: 900 !important;
+}
+
+body.katachi-layout .price-table th {
+  background: #eef7f1 !important;
+  color: var(--katachi-green-dark) !important;
+}
+
+body.katachi-layout .price-table th,
+body.katachi-layout .price-table td {
+  border-color: #dfe8e2 !important;
+}
+
+body.katachi-layout .footer {
+  background: #25312c !important;
+}
+
+body.katachi-layout.prefecture-page .breadcrumb {
+  background: #fff !important;
+  border-color: var(--katachi-line) !important;
+}
+
+body.katachi-layout.prefecture-page .quick-guide {
+  margin-top: -58px !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+body.katachi-layout.prefecture-page .popular-area,
+body.katachi-layout.prefecture-page .price-teaser {
+  margin-top: 18px !important;
+}
+
+body.katachi-layout.prefecture-page .intent-grid,
+body.katachi-layout.prefecture-page .price-mini-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+body.katachi-layout.prefecture-page .price-mini-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+body.katachi-layout.prefecture-page .ward-area-grid {
+  gap: 14px !important;
+}
+
+body.katachi-layout.prefecture-page .online-flow {
+  gap: 14px !important;
+}
+
+body.katachi-layout.prefecture-page .online-step:not(:last-child)::after {
+  color: var(--katachi-green) !important;
+}
+
+@media (max-width: 820px) {
+  body.katachi-layout .topbar-inner,
+  body.katachi-layout .hero-inner,
+  body.katachi-layout.streamlined-top .hero-inner,
+  body.katachi-layout .hero.osaka-hero .hero-inner,
+  body.katachi-layout .wrap,
+  body.katachi-layout.streamlined-top .wrap,
+  body.katachi-layout .top-search-inner,
+  body.katachi-layout .assurance-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  body.katachi-layout .hero,
+  body.katachi-layout .hero.osaka-hero,
+  body.katachi-layout.streamlined-top .hero {
+    padding: 34px 0 46px !important;
+    background-position: center center !important;
+  }
+
+  body.katachi-layout .hero-inner,
+  body.katachi-layout.streamlined-top .hero-inner,
+  body.katachi-layout .hero.osaka-hero .hero-inner,
+  body.katachi-layout .guide-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.katachi-layout .hero h1,
+  body.katachi-layout .hero.osaka-hero h1 {
+    font-size: clamp(30px, 8.7vw, 38px) !important;
+    line-height: 1.28 !important;
+  }
+
+  body.katachi-layout .hero p,
+  body.katachi-layout .hero-lead,
+  body.katachi-layout .hero.osaka-hero p {
+    font-size: 16px !important;
+    line-height: 1.82 !important;
+  }
+
+  body.katachi-layout .hero-search-panel,
+  body.katachi-layout .hero-panel,
+  body.katachi-layout.streamlined-top .hero-search-panel {
+    display: block !important;
+    margin-top: 18px !important;
+    padding: 18px !important;
+  }
+
+  body.katachi-layout .hero-highlights {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  body.katachi-layout .hero-highlights span,
+  body.katachi-layout .trust-row span {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    white-space: normal !important;
+    text-align: center !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  body.katachi-layout .section,
+  body.katachi-layout .engagement-panel,
+  body.katachi-layout .quick-guide,
+  body.katachi-layout .popular-area,
+  body.katachi-layout .price-teaser,
+  body.katachi-layout .supervisor,
+  body.katachi-layout .key-box,
+  body.katachi-layout .toc,
+  body.katachi-layout .banner {
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+
+  body.katachi-layout .section-title {
+    font-size: 22px !important;
+  }
+
+  body.katachi-layout.prefecture-page .quick-guide {
+    margin-top: 18px !important;
+  }
+
+  body.katachi-layout.prefecture-page .intent-grid,
+  body.katachi-layout.prefecture-page .price-mini-grid,
+  body.katachi-layout .top-search-grid,
+  body.katachi-layout .area-shortcuts,
+  body.katachi-layout .guide-actions,
+  body.katachi-layout .quick-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.katachi-layout .pref-links a,
+  body.katachi-layout .ward-links a,
+  body.katachi-layout .popular-links a,
+  body.katachi-layout .search-chips a {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
 @media (max-width: 430px) {
   .hero h1 {
     font-size: 30px !important;
@@ -266,5 +1410,539 @@ section {
     width: 100% !important;
     justify-content: center !important;
     text-align: center !important;
+  }
+}
+
+/* Final reference-matching layer: rikon.asahi.com-like bright search portal. */
+body.katachi-layout {
+  --rk-orange: #f57400;
+  --rk-beige: #e6d58c;
+  --rk-cream: #f7f4e6;
+  --rk-brown: #8a7426;
+  --rk-line: #d8d2bc;
+  background: #fff !important;
+  color: #333 !important;
+}
+
+body.katachi-layout .topbar {
+  background: #fff !important;
+  border-bottom: 1px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .topbar-inner {
+  min-height: 70px !important;
+  width: min(1200px, calc(100% - 40px)) !important;
+}
+
+body.katachi-layout .brand-symbol {
+  background: #333 !important;
+  border-radius: 7px !important;
+}
+
+body.katachi-layout .brand-main {
+  color: #333 !important;
+  font-size: 26px !important;
+  font-weight: 900 !important;
+}
+
+body.katachi-layout .brand-main::first-letter {
+  color: var(--rk-orange) !important;
+}
+
+body.katachi-layout .nav {
+  align-self: stretch !important;
+  gap: 0 !important;
+  border-left: 1px solid #ddd !important;
+  overflow-x: auto !important;
+}
+
+body.katachi-layout .nav a:not(.call),
+body.katachi-layout .call {
+  min-width: 150px !important;
+  min-height: 70px !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 0 18px !important;
+  background: #fff !important;
+  border-right: 1px solid #ddd !important;
+  border-radius: 0 !important;
+  color: #333 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+body.katachi-layout .nav a:hover {
+  color: var(--rk-orange) !important;
+  background: #fff !important;
+  text-decoration: none !important;
+}
+
+body.katachi-layout .hero,
+body.katachi-layout .hero.osaka-hero,
+body.katachi-layout.streamlined-top .hero {
+  position: relative !important;
+  min-height: 420px !important;
+  overflow: hidden !important;
+  padding: 58px 0 168px !important;
+  background:
+    radial-gradient(115% 74% at 8% 96%, #f6f2dd 0 31%, transparent 32%),
+    radial-gradient(118% 84% at 73% 24%, #c8b85d 0 56%, transparent 57%),
+    linear-gradient(180deg, #dfd082 0%, #f7f4e6 100%) !important;
+  color: #fff !important;
+}
+
+body.katachi-layout .hero::before,
+body.katachi-layout .hero.osaka-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  left: max(34px, calc((100vw - 1180px) / 2)) !important;
+  bottom: 50px !important;
+  width: min(540px, 43vw) !important;
+  aspect-ratio: 1.45 / 1 !important;
+  background: url("/assets/cv-hero-staff-illustration.png?v=3") center bottom / contain no-repeat !important;
+  filter: saturate(.9) brightness(1.04) !important;
+  opacity: .98 !important;
+  z-index: 1 !important;
+}
+
+body.katachi-layout .hero::after,
+body.katachi-layout .hero.osaka-hero::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 !important;
+  height: 74px !important;
+  background: var(--rk-cream) !important;
+  pointer-events: none !important;
+}
+
+body.katachi-layout .hero-inner,
+body.katachi-layout.streamlined-top .hero-inner,
+body.katachi-layout .hero.osaka-hero .hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  min-height: 290px !important;
+  display: grid !important;
+  grid-template-columns: minmax(420px, .96fr) minmax(420px, 1.04fr) !important;
+  gap: 36px !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+body.katachi-layout .hero-copy,
+body.katachi-layout .hero.osaka-hero .hero-inner > div:first-child {
+  grid-column: 2 !important;
+  max-width: 560px !important;
+  margin-left: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.katachi-layout .article-meta,
+body.katachi-layout .hero-actions,
+body.katachi-layout .hero-note,
+body.katachi-layout .trust-row,
+body.katachi-layout .cv-proof-row,
+body.katachi-layout .hero-highlights {
+  display: none !important;
+}
+
+body.katachi-layout .eyebrow,
+body.katachi-layout .pill {
+  display: block !important;
+  width: auto !important;
+  min-height: 0 !important;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 4px rgba(60, 48, 18, .24) !important;
+}
+
+body.katachi-layout .hero h1,
+body.katachi-layout .hero.osaka-hero h1 {
+  max-width: 560px !important;
+  margin: 0 auto !important;
+  color: #fff !important;
+  font-size: clamp(48px, 5.2vw, 76px) !important;
+  font-weight: 900 !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  text-shadow: 6px 6px 0 rgba(118, 101, 39, .56), 0 2px 4px rgba(60, 48, 18, .18) !important;
+}
+
+body.katachi-layout .hero p,
+body.katachi-layout .hero-lead,
+body.katachi-layout .hero.osaka-hero p {
+  max-width: 560px !important;
+  margin: 18px auto 0 !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1.9 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 4px rgba(60, 48, 18, .24) !important;
+}
+
+body.katachi-layout .top-search-hub,
+body.katachi-layout .wrap,
+body.katachi-layout.prefecture-page .wrap {
+  background: var(--rk-cream) !important;
+}
+
+body.katachi-layout .top-search-hub {
+  padding: 0 0 64px !important;
+  border: 0 !important;
+}
+
+body.katachi-layout .top-search-inner {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  margin: -118px auto 0 !important;
+  position: relative !important;
+  z-index: 6 !important;
+}
+
+body.katachi-layout.streamlined-top .hero-search-panel,
+body.katachi-layout.prefecture-page .quick-guide {
+  width: min(1180px, calc(100% - 40px)) !important;
+  max-width: min(1180px, calc(100% - 40px)) !important;
+  margin: -118px auto 0 !important;
+  position: relative !important;
+  z-index: 6 !important;
+}
+
+body.katachi-layout .hero-search-panel,
+body.katachi-layout .hero-panel,
+body.katachi-layout .quick-guide,
+body.katachi-layout .search-box,
+body.katachi-layout .popular-area,
+body.katachi-layout .price-teaser,
+body.katachi-layout .section,
+body.katachi-layout .engagement-panel,
+body.katachi-layout .supervisor,
+body.katachi-layout .key-box,
+body.katachi-layout .toc,
+body.katachi-layout .banner {
+  background: #fff !important;
+  border: 1px solid var(--rk-line) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  color: #333 !important;
+  padding: 28px 32px !important;
+}
+
+body.katachi-layout .selector-grid,
+body.katachi-layout .top-search-grid,
+body.katachi-layout .guide-panel {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 28px !important;
+}
+
+body.katachi-layout .search-panel-title,
+body.katachi-layout .guide-panel h2,
+body.katachi-layout .top-search-head h2,
+body.katachi-layout .panel-heading h2,
+body.katachi-layout .section-title {
+  margin: 0 0 18px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #333 !important;
+  font-size: 28px !important;
+  font-weight: 900 !important;
+  line-height: 1.45 !important;
+}
+
+body.katachi-layout .search-panel-title::before,
+body.katachi-layout .guide-panel h2::before,
+body.katachi-layout .top-search-head h2::before,
+body.katachi-layout .section-title::before {
+  content: "▣" !important;
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  margin-right: 8px !important;
+  background: transparent !important;
+  color: var(--rk-brown) !important;
+  font-size: .86em !important;
+  vertical-align: baseline !important;
+}
+
+body.katachi-layout .selector-card,
+body.katachi-layout .search-chips a,
+body.katachi-layout .guide-actions a,
+body.katachi-layout .intent-card,
+body.katachi-layout .price-mini {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: auto !important;
+  min-width: 104px !important;
+  min-height: 38px !important;
+  padding: 8px 18px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--rk-orange) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+
+body.katachi-layout .selector-card span,
+body.katachi-layout .guide-actions span,
+body.katachi-layout .intent-card span,
+body.katachi-layout .price-mini span {
+  display: none !important;
+}
+
+body.katachi-layout .search-chips,
+body.katachi-layout .pref-links,
+body.katachi-layout .ward-links,
+body.katachi-layout .popular-links,
+body.katachi-layout .guide-actions,
+body.katachi-layout .intent-grid,
+body.katachi-layout .price-mini-grid,
+body.katachi-layout .area-shortcuts {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+}
+
+body.katachi-layout .pref-links a,
+body.katachi-layout .ward-links a,
+body.katachi-layout .popular-links a,
+body.katachi-layout .area-shortcuts a {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: auto !important;
+  min-height: 36px !important;
+  padding: 6px 8px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #333 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+body.katachi-layout .panel-cta a,
+body.katachi-layout .btn.primary,
+body.katachi-layout .panel-cta .orange,
+body.katachi-layout .area-shortcuts a.all-area {
+  min-height: 56px !important;
+  border-radius: 8px !important;
+  background: #333 !important;
+  border: 0 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+body.katachi-layout .panel-cta .light {
+  background: #fff !important;
+  border: 1px solid var(--rk-line) !important;
+  color: #333 !important;
+}
+
+body.katachi-layout .card,
+body.katachi-layout .area-box,
+body.katachi-layout .ward-area,
+body.katachi-layout .chart-box,
+body.katachi-layout .notice,
+body.katachi-layout .online-step,
+body.katachi-layout .flow div {
+  background: #fff !important;
+  border: 1px solid var(--rk-line) !important;
+  border-top: 0 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+body.katachi-layout .marker,
+body.katachi-layout .text-marker {
+  color: var(--rk-orange) !important;
+  background: transparent !important;
+}
+
+body.katachi-layout.streamlined-top .hero-search-panel,
+body.katachi-layout.prefecture-page .hero-panel {
+  display: none !important;
+}
+
+body.katachi-layout .top-search-inner {
+  margin-top: -128px !important;
+}
+
+body.katachi-layout.prefecture-page .quick-guide {
+  margin-top: -128px !important;
+}
+
+body.katachi-layout .hero::before,
+body.katachi-layout .hero.osaka-hero::before {
+  bottom: 118px !important;
+}
+
+@media (max-width: 820px) {
+  body.katachi-layout .topbar-inner {
+    width: calc(100% - 24px) !important;
+    min-height: auto !important;
+  }
+
+  body.katachi-layout .brand-main {
+    font-size: 21px !important;
+  }
+
+  body.katachi-layout .nav {
+    width: 100% !important;
+    border-left: 0 !important;
+  }
+
+  body.katachi-layout .nav a:not(.call),
+  body.katachi-layout .call {
+    min-width: auto !important;
+    min-height: 46px !important;
+    border-right: 0 !important;
+    padding: 8px 14px !important;
+  }
+
+  body.katachi-layout .hero,
+  body.katachi-layout .hero.osaka-hero,
+  body.katachi-layout.streamlined-top .hero {
+    min-height: auto !important;
+    padding: 28px 0 112px !important;
+  }
+
+  body.katachi-layout .hero::before,
+  body.katachi-layout .hero.osaka-hero::before {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    display: block !important;
+    width: min(330px, 88vw) !important;
+    margin: 0 auto 14px !important;
+  }
+
+  body.katachi-layout .hero-inner,
+  body.katachi-layout.streamlined-top .hero-inner,
+  body.katachi-layout .hero.osaka-hero .hero-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  body.katachi-layout .hero-copy,
+  body.katachi-layout .hero.osaka-hero .hero-inner > div:first-child {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  body.katachi-layout .hero h1,
+  body.katachi-layout .hero.osaka-hero h1 {
+    max-width: 100% !important;
+    font-size: clamp(30px, 8.9vw, 38px) !important;
+    line-height: 1.32 !important;
+    overflow-wrap: anywhere !important;
+    word-break: keep-all !important;
+    text-shadow: 3px 3px 0 rgba(118, 101, 39, .5), 0 2px 4px rgba(60, 48, 18, .18) !important;
+  }
+
+  body.katachi-layout .hero p,
+  body.katachi-layout .hero-lead,
+  body.katachi-layout .hero.osaka-hero p {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  body.katachi-layout.streamlined-top .hero-search-panel,
+  body.katachi-layout.prefecture-page .quick-guide,
+  body.katachi-layout .top-search-inner {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-top: -72px !important;
+  }
+
+  body.katachi-layout.prefecture-page .quick-guide {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px 0 0 !important;
+  }
+
+  body.katachi-layout.streamlined-top .hero-search-panel,
+  body.katachi-layout.prefecture-page .hero-panel {
+    display: none !important;
+  }
+
+  body.katachi-layout .selector-grid,
+  body.katachi-layout .top-search-grid,
+  body.katachi-layout .guide-panel,
+  body.katachi-layout .panel-cta {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  body.katachi-layout .hero-search-panel,
+  body.katachi-layout .hero-panel,
+  body.katachi-layout .quick-guide,
+  body.katachi-layout .search-box,
+  body.katachi-layout .popular-area,
+  body.katachi-layout .price-teaser,
+  body.katachi-layout .section,
+  body.katachi-layout .engagement-panel {
+    padding: 20px !important;
+  }
+
+  body.katachi-layout .search-panel-title,
+  body.katachi-layout .guide-panel h2,
+  body.katachi-layout .top-search-head h2,
+  body.katachi-layout .panel-heading h2,
+  body.katachi-layout .section-title,
+  body.katachi-layout h2,
+  body.katachi-layout h3 {
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  body.katachi-layout,
+  body.katachi-layout main,
+  body.katachi-layout section {
+    overflow-x: hidden !important;
+  }
+
+  body.katachi-layout .wrap,
+  body.katachi-layout.streamlined-top .wrap,
+  body.katachi-layout.prefecture-page .wrap {
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+  }
+
+  body.katachi-layout.prefecture-page .quick-guide,
+  body.katachi-layout .section,
+  body.katachi-layout .engagement-panel,
+  body.katachi-layout .popular-area,
+  body.katachi-layout .price-teaser {
+    width: auto !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }

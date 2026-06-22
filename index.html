@@ -110,11 +110,342 @@
     .common-ba-btn[data-common-ba-next]{right:0}
     @media(max-width:820px){.common-kita-ba{padding:20px}.common-ba-guide{grid-template-columns:1fr}.common-ba-slider{padding:0 38px}.common-ba-card{padding:12px}.common-ba-photos{grid-template-columns:1fr;gap:10px}.common-ba-photos::after{width:34px;height:34px;font-size:22px;border-width:2px}.common-ba-btn{width:42px;height:42px;font-size:24px}.common-kita-ba .section-title{font-size:21px}}
   </style>
+  <style id="top-readable-ux">
+    body.streamlined-top{background:#f7f5f0;color:#2f3430;font-size:18px;line-height:1.9}
+    .streamlined-top .topbar{box-shadow:0 2px 14px rgba(34,28,22,.05)}
+    .streamlined-top .brand-main{color:#b54a08}
+    .streamlined-top .nav{font-size:15px;gap:10px}
+    .streamlined-top .nav a{min-height:40px;display:grid;place-items:center;padding:0 8px}
+    .streamlined-top .nav .call{min-height:42px;padding:0 14px;background:#d05300;color:#fff!important}
+    .streamlined-top .hero{background:linear-gradient(90deg,rgba(35,48,42,.90) 0%,rgba(44,61,54,.76) 43%,rgba(44,61,54,.42) 68%,rgba(44,61,54,.18) 100%),url("/assets/cv-hero-staff-illustration.png?v=3");background-size:cover;background-position:center;color:#fff;padding:54px 0 58px}
+    .streamlined-top .hero-inner{width:calc(100% - 64px);max-width:1440px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:30px;align-items:center;text-align:left}
+    .streamlined-top .article-meta{justify-content:flex-start;margin-bottom:16px}
+    .streamlined-top .pill{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.34);color:#fff;font-size:14px}
+    .streamlined-top .hero h1{max-width:720px;margin:0 0 18px;color:#fff;font-size:clamp(36px,5vw,58px);line-height:1.22;letter-spacing:0;text-shadow:0 2px 14px rgba(0,0,0,.26)}
+    .streamlined-top .hero-lead{max-width:720px;margin:0 0 20px;color:rgba(255,255,255,.95);font-size:19px;line-height:1.95;font-weight:700}
+    .streamlined-top .text-marker,.streamlined-top .marker{background:linear-gradient(transparent 62%,rgba(255,198,77,.62) 62%)}
+    .streamlined-top .hero-actions{justify-content:flex-start;gap:12px;margin:22px 0 14px}
+    .streamlined-top .btn{min-height:54px;border-radius:6px;padding:0 20px;font-size:17px}
+    .streamlined-top .btn.primary{background:#d05300;color:#fff}
+    .streamlined-top .btn.secondary,.streamlined-top .btn.ghost{background:#fff;color:#7c3e08;border-color:#ead8bf}
+    .streamlined-top .hero-note{max-width:680px;margin:0;color:rgba(255,255,255,.9);font-size:15px;line-height:1.75}
+    .streamlined-top .trust-row{gap:9px;margin-top:18px}
+    .streamlined-top .trust-row span{min-height:34px;padding:0 12px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.34);color:#fff;font-size:14px}
+    .streamlined-top .cv-proof-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}
+    .streamlined-top .cv-proof-row div{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.26);padding:13px 14px;color:#fff}
+    .streamlined-top .cv-proof-row b{display:block;font-size:16px;line-height:1.45}
+    .streamlined-top .cv-proof-row span{display:block;margin-top:3px;color:rgba(255,255,255,.84);font-size:13px;line-height:1.55}
+    .streamlined-top .hero-search-panel{background:rgba(255,255,255,.97);border:1px solid rgba(255,255,255,.72);box-shadow:0 22px 48px rgba(0,0,0,.20);padding:24px}
+    .streamlined-top .search-panel-title{font-size:24px;color:#2f3430}
+    .streamlined-top .search-panel-lead{font-size:16px;color:#555f59}
+    .streamlined-top .selector-grid{grid-template-columns:1fr;gap:10px}
+    .streamlined-top .selector-card{min-height:66px;background:#f8fbf7;border-color:#d7e7dc;color:#273b34;padding:13px 14px;border-radius:6px}
+    .streamlined-top .selector-card span{font-size:14px;line-height:1.65}
+    .streamlined-top .panel-cta{grid-template-columns:1fr;gap:10px}
+    .streamlined-top .panel-cta a{min-height:52px;border-radius:6px;font-size:16px}
+    .streamlined-top .panel-cta .orange{background:#d05300;color:#fff}
+    .streamlined-top .panel-cta .light{background:#fff;border-color:#d7e7dc;color:#225346}
+    .streamlined-top .top-search-hub{background:#fff;border-bottom:1px solid #e4ded3}
+    .streamlined-top .top-search-inner{width:calc(100% - 64px);max-width:1440px;margin:0 auto;padding:28px 0 30px}
+    .streamlined-top .top-search-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:16px}
+    .streamlined-top .top-search-head h2{margin:0;color:#2f3430;font-size:28px;line-height:1.35}
+    .streamlined-top .top-search-head p{margin:0;color:#5a625d;font-size:16px;line-height:1.7}
+    .streamlined-top .top-search-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .streamlined-top .search-box{border:1px solid #dbe7de;background:#f8fbf7;padding:18px}
+    .streamlined-top .search-box h3{margin:0 0 12px;color:#225346;font-size:20px;line-height:1.45}
+    .streamlined-top .search-chips{display:flex;flex-wrap:wrap;gap:9px}
+    .streamlined-top .search-chips a{display:inline-grid;place-items:center;min-height:40px;padding:0 13px;border:1px solid #d7e7dc;background:#fff;color:#2f3430;border-radius:6px;font-weight:900;font-size:15px}
+    .streamlined-top .search-chips a:hover{text-decoration:none;border-color:#2f6f63;background:#eef8f2}
+    .streamlined-top .search-chips a.primary-chip{background:#d05300;border-color:#d05300;color:#fff}
+    .streamlined-top .condition-row{margin-top:14px;padding-top:14px;border-top:1px solid #e4eee7}
+    .streamlined-top .condition-row b{display:block;margin-bottom:9px;color:#3d4641;font-size:15px}
+    .streamlined-top .condition-row span{display:inline-grid;place-items:center;min-height:30px;margin:0 7px 7px 0;padding:0 10px;background:#fff;border:1px solid #e4ded3;border-radius:999px;color:#555f59;font-size:13px;font-weight:900}
+    .streamlined-top .assurance-strip{background:#eef6f1;border-top:1px solid #d4e8dc;border-bottom:1px solid #d4e8dc}
+    .streamlined-top .assurance-inner{width:calc(100% - 64px);max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:18px 0}
+    .streamlined-top .assurance-inner div{background:#fff;border:1px solid #dcebe2;padding:15px 16px}
+    .streamlined-top .assurance-inner b{display:block;color:#225346;font-size:17px;line-height:1.45}
+    .streamlined-top .assurance-inner span{display:block;margin-top:4px;color:#4e5d56;font-size:15px;line-height:1.7}
+    .streamlined-top .strategy-strip{background:#fffdf7;border-bottom:1px solid #e4ded3}
+    .streamlined-top .strategy-inner{width:calc(100% - 64px);max-width:1440px;margin:0 auto;padding:26px 0 30px}
+    .streamlined-top .strategy-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:16px}
+    .streamlined-top .strategy-head h2{margin:0;color:#2f3430;font-size:26px;line-height:1.45}
+    .streamlined-top .strategy-head p{max-width:680px;margin:0;color:#5a625d;font-size:16px;line-height:1.75}
+    .streamlined-top .strategy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .streamlined-top .strategy-card{background:#fff;border:1px solid #e4ded3;box-shadow:0 8px 20px rgba(34,28,22,.045);padding:18px}
+    .streamlined-top .strategy-card b{display:block;color:#225346;font-size:18px;line-height:1.45}
+    .streamlined-top .strategy-card span{display:block;margin-top:7px;color:#4e5852;font-size:15px;line-height:1.75}
+    .streamlined-top .strategy-card strong{color:#b54a08}
+    .streamlined-top .wrap{width:calc(100% - 64px);max-width:1280px;margin-top:28px}
+    .streamlined-top .article{background:transparent;border:0;box-shadow:none;padding:0}
+    .streamlined-top .engagement-panel,.streamlined-top .section,.streamlined-top .key-box,.streamlined-top .toc,.streamlined-top .banner,.streamlined-top .supervisor{background:#fff;border:1px solid #e4ded3;box-shadow:0 10px 24px rgba(34,28,22,.055);padding:28px;margin-top:24px}
+    .streamlined-top .panel-heading span{color:#2f6f63}
+    .streamlined-top .panel-heading h2{font-size:26px;line-height:1.45;margin-bottom:6px}
+    .streamlined-top .panel-heading p,.streamlined-top .lead{font-size:18px;line-height:1.95;color:#414743}
+    .streamlined-top .quick-grid{gap:14px}
+    .streamlined-top .quick-card,.streamlined-top .area-shortcuts a{border-radius:6px;border-color:#d9e8df;background:#fbfdfb;min-height:82px}
+    .streamlined-top .quick-card b,.streamlined-top .area-shortcuts a{color:#225346}
+    .streamlined-top .quick-card span,.streamlined-top .area-shortcuts span{font-size:15px;line-height:1.65;color:#59655f}
+    .streamlined-top .popular-area{border:2px solid #2f6f63}
+    .streamlined-top .popular-area .panel-heading h2{color:#225346}
+    .streamlined-top .area-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .streamlined-top .area-shortcuts a{display:block;padding:16px 18px;background:#f7fbf8;border:1px solid #cfe4d8;box-shadow:0 6px 14px rgba(34,28,22,.035);font-size:18px;font-weight:900}
+    .streamlined-top .area-shortcuts a:hover{background:#eef8f2;border-color:#2f6f63;box-shadow:0 10px 22px rgba(47,111,99,.12);text-decoration:none}
+    .streamlined-top .area-shortcuts a.all-area{background:#d05300;border-color:#d05300;color:#fff}
+    .streamlined-top .area-shortcuts a.all-area span{color:rgba(255,255,255,.86)}
+    .streamlined-top .section-title{padding:0 0 13px;border:0;border-bottom:3px solid #d9e8df;background:transparent!important;color:#2f3430!important;box-shadow:none;border-radius:0;font-size:26px}
+    .streamlined-top .section-title:before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#2f6f63;border-radius:2px;vertical-align:middle}
+    .streamlined-top .card,.streamlined-top .area-box,.streamlined-top .chart-box,.streamlined-top .notice{border-color:#e4ded3;box-shadow:0 7px 18px rgba(34,28,22,.045)}
+    .streamlined-top .pref-links a{min-height:40px;border-radius:6px;background:#fffdf8}
+    .streamlined-top .sticky-cta{background:rgba(255,255,255,.96);box-shadow:0 -6px 20px rgba(34,28,22,.09)}
+    .streamlined-top .sticky-cta a{min-height:52px;border-radius:6px;font-size:16px}
+    @media(max-width:820px){
+      body.streamlined-top{font-size:17px;line-height:1.86}
+      .streamlined-top .topbar-inner{gap:9px}
+      .streamlined-top .brand-main{font-size:21px;line-height:1.25}
+      .streamlined-top .brand-sub{font-size:12px;line-height:1.45}
+      .streamlined-top .nav{width:100%;gap:10px;padding-bottom:8px}
+      .streamlined-top .nav a{min-height:42px;font-size:14px}
+      .streamlined-top .hero{padding:28px 0 30px;background-position:center,right bottom;background-size:cover,auto 82%}
+      .streamlined-top .hero-inner{display:block;width:calc(100% - 20px);max-width:calc(100% - 20px)}
+      .streamlined-top .article-meta{gap:6px;margin-bottom:12px}
+      .streamlined-top .pill{font-size:12px;min-height:27px}
+      .streamlined-top .hero h1{font-size:31px;line-height:1.3;margin-bottom:12px}
+      .streamlined-top .hero-lead{font-size:16px;line-height:1.82}
+      .streamlined-top .hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+      .streamlined-top .btn{width:100%;min-height:50px;font-size:16px;text-align:center}
+      .streamlined-top .hero-note,
+      .streamlined-top .cv-proof-row,
+      .streamlined-top .trust-row,
+      .streamlined-top .hero-search-panel{display:none}
+      .streamlined-top .search-panel-title{font-size:22px}
+      .streamlined-top .top-search-inner{width:calc(100% - 20px);padding:20px 0}
+      .streamlined-top .top-search-head{display:block;margin-bottom:14px}
+      .streamlined-top .top-search-head h2{font-size:23px;margin-bottom:6px}
+      .streamlined-top .top-search-grid{grid-template-columns:1fr;gap:12px}
+      .streamlined-top .search-box{padding:16px}
+      .streamlined-top .search-box h3{font-size:18px}
+      .streamlined-top .search-chips a{min-height:42px;font-size:15px}
+      .streamlined-top .assurance-inner{grid-template-columns:1fr;padding:14px 0}
+      .streamlined-top .strategy-inner{width:calc(100% - 20px);padding:20px 0 22px}
+      .streamlined-top .strategy-head{display:block;margin-bottom:12px}
+      .streamlined-top .strategy-head h2{font-size:22px;margin-bottom:6px}
+      .streamlined-top .strategy-head p{font-size:15px}
+      .streamlined-top .strategy-grid{grid-template-columns:1fr;gap:10px}
+      .streamlined-top .strategy-card{padding:15px}
+      .streamlined-top .wrap{width:calc(100% - 20px);max-width:calc(100% - 20px);margin-top:20px}
+      .streamlined-top .engagement-panel,.streamlined-top .section,.streamlined-top .key-box,.streamlined-top .toc,.streamlined-top .banner,.streamlined-top .supervisor{padding:20px;margin-top:20px}
+      .streamlined-top .panel-heading h2,.streamlined-top .section-title{font-size:23px}
+      .streamlined-top .quick-grid,.streamlined-top .area-shortcuts,.streamlined-top .memo-grid,.streamlined-top .key-grid,.streamlined-top .grid.cols2,.streamlined-top .grid.cols3{grid-template-columns:1fr!important}
+      .streamlined-top .quick-card,.streamlined-top .area-shortcuts a{min-height:78px}
+      .streamlined-top .pref-links a{width:100%;text-align:center;display:grid;place-items:center;min-height:44px}
+    }
+  </style>
+  <style id="structure-inspired-final">
+    body.structure-layout{background:#f6f7f2!important;color:#28332e!important}
+    body.structure-layout .topbar{background:#fff!important;border-bottom:1px solid #dfe6df!important;box-shadow:0 2px 12px rgba(35,50,43,.05)!important}
+    body.structure-layout .topbar-inner{width:min(1180px,calc(100% - 40px))!important;min-height:68px!important}
+    body.structure-layout .brand-symbol{background:#2f6f63!important;border-radius:7px!important}
+    body.structure-layout .brand-main{color:#24483f!important;font-size:24px!important;font-weight:900!important}
+    body.structure-layout .brand-main::first-letter{color:inherit!important}
+    body.structure-layout .brand-sub{color:#5a655f!important}
+    body.structure-layout .nav{gap:8px!important;border-left:0!important}
+    body.structure-layout .nav a:not(.call),body.structure-layout .call{min-width:auto!important;min-height:42px!important;padding:0 13px!important;border:0!important;border-radius:6px!important;background:#fff!important;color:#28332e!important;font-weight:700!important}
+    body.structure-layout .nav a:hover{background:#eef5f1!important;color:#24483f!important;text-decoration:none!important}
+    body.structure-layout .call{background:#d05300!important;color:#fff!important}
+    body.structure-layout .hero,body.structure-layout.streamlined-top .hero{position:relative!important;overflow:hidden!important;min-height:0!important;padding:54px 0 110px!important;background:linear-gradient(180deg,#eef4ef 0%,#f7f8f4 100%)!important;color:#28332e!important}
+    body.structure-layout .hero::before{content:""!important;position:absolute!important;left:max(30px,calc((100vw - 1180px)/2))!important;bottom:54px!important;width:min(520px,43vw)!important;aspect-ratio:1.45/1!important;background:url("/assets/cv-hero-staff-illustration.png?v=3") center bottom/contain no-repeat!important;opacity:.95!important;filter:saturate(.9)!important}
+    body.structure-layout .hero::after{display:none!important}
+    body.structure-layout .hero-inner,body.structure-layout.streamlined-top .hero-inner{position:relative!important;z-index:2!important;width:min(1180px,calc(100% - 40px))!important;max-width:min(1180px,calc(100% - 40px))!important;display:grid!important;grid-template-columns:minmax(420px,.95fr) minmax(420px,1.05fr)!important;gap:40px!important;align-items:center!important;min-height:310px!important;padding:0!important}
+    body.structure-layout .hero-copy{grid-column:2!important;max-width:620px!important;margin-left:auto!important;background:transparent!important;border:0!important;box-shadow:none!important}
+    body.structure-layout .article-meta{display:flex!important;justify-content:flex-start!important;gap:8px!important}
+    body.structure-layout .pill{display:inline-flex!important;min-height:30px!important;padding:0 12px!important;border:1px solid #cadbd2!important;border-radius:999px!important;background:#fff!important;color:#2f6f63!important;font-size:13px!important;text-shadow:none!important}
+    body.structure-layout .hero h1{max-width:620px!important;margin:0!important;color:#28332e!important;font-size:clamp(38px,4.7vw,62px)!important;line-height:1.2!important;text-align:left!important;text-shadow:none!important}
+    body.structure-layout .hero p,.structure-layout .hero-lead{max-width:620px!important;margin:18px 0 0!important;color:#3f4d46!important;font-size:18px!important;line-height:1.9!important;text-align:left!important;text-shadow:none!important}
+    body.structure-layout .hero-search-panel{display:none!important}
+    body.structure-layout .top-search-hub{background:#f6f7f2!important;padding:0 0 34px!important;border:0!important}
+    body.structure-layout .top-search-inner{width:min(1180px,calc(100% - 40px))!important;max-width:min(1180px,calc(100% - 40px))!important;margin:-58px auto 0!important;position:relative!important;z-index:5!important}
+    body.structure-layout .top-search-grid{display:grid!important;grid-template-columns:1fr!important;gap:18px!important;align-items:stretch!important}
+    body.structure-layout .top-prefecture-directory{padding:20px!important}
+    body.structure-layout .top-prefecture-directory .pref-directory{min-height:248px;padding-right:236px}
+    body.structure-layout .search-box,body.structure-layout .engagement-panel,body.structure-layout .section,body.structure-layout .key-box,body.structure-layout .toc,body.structure-layout .banner,body.structure-layout .supervisor{background:#fff!important;border:1px solid #dfe6df!important;border-radius:10px!important;box-shadow:0 10px 24px rgba(35,50,43,.06)!important;padding:26px!important}
+    body.structure-layout .top-search-head h2,body.structure-layout .panel-heading h2,body.structure-layout .section-title{color:#28332e!important;font-size:26px!important;line-height:1.45!important;border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important}
+    body.structure-layout .top-search-head h2::before,body.structure-layout .section-title::before{content:""!important;display:inline-block!important;width:10px!important;height:10px!important;margin-right:8px!important;background:#2f6f63!important;border-radius:2px!important}
+    body.structure-layout .search-chips,body.structure-layout .pref-links,body.structure-layout .area-shortcuts{display:flex!important;flex-wrap:wrap!important;gap:10px!important}
+    body.structure-layout .search-chips a,body.structure-layout .area-shortcuts a,body.structure-layout .quick-card{display:inline-grid!important;place-items:center!important;min-height:38px!important;padding:8px 14px!important;border:1px solid #cfe0d7!important;border-radius:999px!important;background:#f8fbf9!important;color:#24483f!important;font-weight:900!important;text-decoration:none!important}
+    body.structure-layout .search-chips .primary-chip{background:#2f6f63!important;border-color:#2f6f63!important;color:#fff!important}
+    body.structure-layout .marker,body.structure-layout .text-marker{color:#d05300!important;background:transparent!important}
+    @media(max-width:820px){
+      body.structure-layout .topbar-inner,body.structure-layout .hero-inner,body.structure-layout .top-search-inner,body.structure-layout .wrap{width:calc(100% - 24px)!important;max-width:calc(100% - 24px)!important}
+      body.structure-layout .hero{padding:28px 0 78px!important}
+      body.structure-layout .hero::before{position:relative!important;left:auto!important;bottom:auto!important;display:block!important;width:min(330px,88vw)!important;margin:0 auto 18px!important}
+      body.structure-layout .hero-inner{display:block!important;min-height:auto!important}
+      body.structure-layout .hero-copy{max-width:100%!important}
+      body.structure-layout .hero h1{font-size:clamp(30px,8.5vw,38px)!important;line-height:1.32!important;overflow-wrap:anywhere!important}
+      body.structure-layout .hero p,.structure-layout .hero-lead{font-size:16px!important}
+      body.structure-layout .top-search-inner{margin:-46px auto 0!important}
+      body.structure-layout .top-search-grid{grid-template-columns:1fr!important}
+      body.structure-layout .top-prefecture-directory .pref-directory{padding-right:0;min-height:auto}
+    }
+  </style>
+  <style id="mobile-prefecture-accordion">
+    #prefectures .pref-toggle{appearance:none;-webkit-appearance:none;width:100%;border:0;background:transparent;margin:0 0 12px;padding:0;color:#225346;text-align:left;font:inherit;font-size:20px;font-weight:900;line-height:1.45;cursor:pointer}
+    #prefectures .pref-toggle:focus-visible{outline:3px solid rgba(47,111,99,.28);outline-offset:3px}
+    @media(max-width:820px){
+      body.structure-layout #prefectures .grid.cols3{gap:10px!important}
+      body.structure-layout #prefectures .pref-region{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+      body.structure-layout #prefectures .pref-toggle{min-height:56px;margin:0!important;padding:0 46px 0 16px!important;position:relative!important;background:#fff!important;border:1px solid #d7e7dc!important;border-radius:8px!important;box-shadow:0 6px 14px rgba(35,50,43,.05)!important;color:#225346!important;font-size:18px!important;text-align:left!important}
+      body.structure-layout #prefectures .pref-toggle::after{content:"＋";display:grid;place-items:center;position:absolute;right:12px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#f7fbf8;color:#2f6f63;border:1px solid #d7e7dc;font-size:18px;line-height:1}
+      body.structure-layout #prefectures .pref-region .pref-links{display:none!important;margin:0!important;padding:10px 8px 14px!important;background:#fff!important;border:1px solid #dfe6df!important;border-top:0!important;border-radius:0 0 8px 8px!important;box-shadow:0 8px 16px rgba(35,50,43,.04)!important}
+      body.structure-layout #prefectures .pref-region.is-open .pref-links{display:flex!important}
+      body.structure-layout #prefectures .pref-region.is-open .pref-toggle{border-radius:8px 8px 0 0!important;background:#eef8f2!important}
+      body.structure-layout #prefectures .pref-region.is-open .pref-toggle::after{content:"－"}
+      body.structure-layout #prefectures .pref-links a{width:auto!important;min-height:40px!important;padding:7px 12px!important;text-align:center!important}
+    }
+  </style>
+  <style id="top-conversion-hub">
+    .trust-alert-hub,.service-hub-strip,.price-sim-strip{background:#fffdf7;border-bottom:1px solid #e4ded3}
+    .trust-alert-inner,.service-hub-inner,.price-sim-inner{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:26px 0}
+    .trust-alert-card{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:22px;align-items:center;background:#fff;border:1px solid #e2d8c8;border-left:7px solid #d05300;border-radius:10px;box-shadow:0 12px 28px rgba(35,50,43,.07);padding:24px}
+    .trust-alert-card h2,.service-hub-head h2,.price-sim-head h2{margin:0;color:#28332e;font-size:26px;line-height:1.45}
+    .trust-alert-card p,.service-hub-head p,.price-sim-head p{margin:8px 0 0;color:#4f5c55;font-size:16px;line-height:1.8}
+    .trust-badges{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .trust-badges span{display:grid;place-items:center;min-height:46px;padding:8px 10px;background:#f7fbf8;border:1px solid #cfe0d7;border-radius:6px;color:#24483f;font-weight:900;text-align:center;line-height:1.45}
+    .service-hub-head,.price-sim-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:16px}
+    .service-hub-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .service-hub-card{display:block;background:#fff;border:1px solid #dfe6df;border-radius:10px;box-shadow:0 8px 20px rgba(35,50,43,.05);padding:18px;color:#28332e;text-decoration:none}
+    .service-hub-card:hover{border-color:#2f6f63;box-shadow:0 12px 26px rgba(47,111,99,.12);text-decoration:none;transform:translateY(-1px)}
+    .service-hub-card b{display:block;color:#225346;font-size:19px;line-height:1.45}
+    .service-hub-card span{display:block;margin-top:7px;color:#56635d;font-size:14px;line-height:1.7}
+    .price-sim-box{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.7fr);gap:18px;background:#fff;border:1px solid #dfe6df;border-radius:10px;box-shadow:0 10px 24px rgba(35,50,43,.06);padding:22px}
+    .price-sim-form{display:grid;gap:12px}
+    .price-sim-form label{display:grid;gap:6px;color:#28332e;font-weight:900}
+    .price-sim-form select{min-height:48px;border:1px solid #cfe0d7;border-radius:6px;background:#fff;padding:0 12px;font:inherit;color:#28332e}
+    .price-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .price-options label{display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45}
+    .price-sim-result{display:grid;align-content:center;background:#eef8f2;border:1px solid #cfe8d8;border-radius:8px;padding:18px}
+    .price-sim-result span{color:#4f5c55;font-size:14px;font-weight:900}
+    .price-sim-result b{display:block;margin:5px 0;color:#d05300;font-size:30px;line-height:1.2}
+    .price-sim-result p{margin:0;color:#4f5c55;font-size:13px;line-height:1.7}
+    .sticky-cta-inner{grid-template-columns:repeat(3,1fr)!important;max-width:720px!important}
+    .sticky-cta .tel{background:#d05300;color:#fff}.sticky-cta .line{background:#0b7a4b;color:#fff}.sticky-cta .mail{background:#24483f;color:#fff}
+    @media(max-width:820px){
+      .trust-alert-inner,.service-hub-inner,.price-sim-inner{width:calc(100% - 24px);padding:18px 0}
+      .trust-alert-card,.price-sim-box{grid-template-columns:1fr;padding:18px}
+      .trust-badges,.service-hub-grid,.price-options{grid-template-columns:1fr}
+      .service-hub-head,.price-sim-head{display:block;margin-bottom:12px}
+      .trust-alert-card h2,.service-hub-head h2,.price-sim-head h2{font-size:22px}
+      .price-sim-result b{font-size:26px}
+      .sticky-cta a{font-size:13px!important;min-height:48px!important}
+    }
+  </style>
+  <style id="top-japan-map-picker">
+    .japan-map-picker{margin:18px 0 22px;padding:22px;background:#f7fbf8;border:1px solid #d7e7dc;border-radius:10px;box-shadow:0 10px 24px rgba(35,50,43,.055)}
+    .japan-map-container{position:relative;max-width:780px;margin:0 auto;aspect-ratio:16/10;min-height:330px}
+    .japan-map-visual{position:absolute;inset:0;background:linear-gradient(180deg,#eef8f4 0%,#f8fbf9 100%);border:1px solid #cfe0d7;border-radius:10px;overflow:hidden}
+    .japan-map-visual::before{content:"";position:absolute;inset:9% 7%;background:radial-gradient(ellipse at 75% 15%,#cfe4d8 0 7%,transparent 7.4%),radial-gradient(ellipse at 68% 34%,#d9eadf 0 12%,transparent 12.5%),radial-gradient(ellipse at 57% 56%,#d9eadf 0 11%,transparent 11.5%),radial-gradient(ellipse at 43% 67%,#d9eadf 0 12%,transparent 12.5%),radial-gradient(ellipse at 27% 66%,#d9eadf 0 10%,transparent 10.5%),radial-gradient(ellipse at 30% 78%,#d9eadf 0 5%,transparent 5.4%),radial-gradient(ellipse at 15% 79%,#d9eadf 0 9%,transparent 9.5%);filter:drop-shadow(0 10px 12px rgba(35,50,43,.10))}
+    .japan-map-visual::after{content:"日本地図から地域を選択";position:absolute;left:18px;bottom:14px;color:#6a756f;font-size:13px;font-weight:900}
+    .region-map-btn{position:absolute;z-index:2;display:grid;place-items:center;min-height:42px;padding:8px 13px;border:1px solid #cfe0d7;border-radius:6px;background:#fff;color:#24483f;font-size:15px;font-weight:900;line-height:1.35;text-align:center;text-decoration:none;box-shadow:0 8px 18px rgba(35,50,43,.14);transform:translate(-50%,-50%);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+    .region-map-btn:hover{background:#eef8f2;border-color:#2f6f63;text-decoration:none;transform:translate(-50%,-54%);box-shadow:0 12px 24px rgba(47,111,99,.18)}
+    .region-map-btn.hokkaido-tohoku{top:22%;left:70%}
+    .region-map-btn.kanto{top:55%;left:67%}
+    .region-map-btn.tokai{top:61%;left:52%}
+    .region-map-btn.kinki{top:70%;left:39%}
+    .region-map-btn.chugoku{top:64%;left:25%}
+    .region-map-btn.shikoku{top:78%;left:31%}
+    .region-map-btn.kyushu{top:82%;left:14%}
+    @media(max-width:820px){
+      .japan-map-picker{padding:14px;margin:14px 0 18px}
+      .japan-map-container{max-width:100%;min-height:320px;aspect-ratio:1/1.05}
+      .japan-map-visual::after{font-size:12px;left:12px;bottom:10px}
+      .region-map-btn{min-height:38px;padding:7px 9px;font-size:12px;border-radius:6px}
+      .region-map-btn.hokkaido-tohoku{top:18%;left:70%}
+      .region-map-btn.kanto{top:52%;left:70%}
+      .region-map-btn.tokai{top:59%;left:54%}
+      .region-map-btn.kinki{top:69%;left:41%}
+      .region-map-btn.chugoku{top:64%;left:25%}
+      .region-map-btn.shikoku{top:76%;left:32%}
+      .region-map-btn.kyushu{top:82%;left:15%}
+    }
+  </style>
+  <style id="prefecture-directory-style">
+    .prefecture-directory-section{background:#fff!important;border:1px solid #e8e2d2!important;border-radius:8px!important;box-shadow:0 10px 24px rgba(35,50,43,.045)!important;padding:22px 18px!important;position:relative!important;overflow:hidden!important}
+    .pref-directory{position:relative;min-height:260px;padding:0 252px 0 0}
+    .pref-directory-head{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:#2f312d}
+    .pref-directory-icon{position:relative;width:22px;height:20px;display:inline-block;flex:0 0 auto}
+    .pref-directory-icon::before,.pref-directory-icon::after{content:"";position:absolute;bottom:0;width:5px;background:#8f8a62;border-radius:1px}
+    .pref-directory-icon::before{left:2px;height:5px;box-shadow:7px -4px 0 #8f8a62,14px -10px 0 #8f8a62}
+    .pref-directory-icon::after{left:0;right:0;bottom:-2px;width:20px;height:2px;background:#8f8a62}
+    .pref-directory-head h2{margin:0;font-size:22px;line-height:1.45;font-weight:500;color:#2f312d}
+    .pref-directory-list{display:grid;gap:10px;position:relative;z-index:2}
+    .pref-directory-row{display:grid;grid-template-columns:86px minmax(0,1fr);gap:8px;align-items:baseline}
+    .pref-directory-label{color:#f07a00;font-size:13px;font-weight:900;line-height:1.6;white-space:nowrap}
+    .pref-directory-links{display:flex;flex-wrap:wrap;gap:9px 12px;align-items:center}
+    .pref-directory-links a{color:#1f2523;text-decoration:underline;text-underline-offset:3px;font-size:16px;line-height:1.55;font-weight:500}
+    .pref-directory-links a:hover{color:#d05300}
+    .pref-map-ghost{position:absolute;right:0;top:4px;width:240px;height:250px;pointer-events:none;opacity:.92}
+    .pref-map-ghost span{position:absolute;display:block;background:#f0ead2;border-radius:10px}
+    .pref-map-ghost .hokkaido{right:8px;top:0;width:58px;height:52px;border-radius:7px}
+    .pref-map-ghost .honshu-a{right:0;top:68px;width:58px;height:78px;border-radius:8px 8px 18px 8px}
+    .pref-map-ghost .honshu-b{right:34px;top:126px;width:106px;height:36px;border-radius:18px 8px 8px 18px}
+    .pref-map-ghost .honshu-c{right:92px;top:150px;width:82px;height:34px;border-radius:10px}
+    .pref-map-ghost .honshu-d{right:132px;top:174px;width:72px;height:30px;border-radius:10px}
+    .pref-map-ghost .shikoku{right:128px;top:208px;width:60px;height:17px;border-radius:8px}
+    .pref-map-ghost .kyushu{right:182px;top:202px;width:42px;height:46px;border-radius:16px 10px 18px 12px}
+    .pref-map-ghost .okinawa{right:224px;top:238px;width:18px;height:8px;border-radius:999px}
+    @media(max-width:820px){
+      .prefecture-directory-section{padding:18px 14px!important}
+      .pref-directory{padding:0;min-height:auto}
+      .pref-map-ghost{position:relative;right:auto;top:auto;width:min(240px,72vw);height:120px;margin:8px auto 14px;opacity:.65}
+      .pref-map-ghost .hokkaido{right:10px;top:0;width:42px;height:36px}
+      .pref-map-ghost .honshu-a{right:14px;top:42px;width:42px;height:52px}
+      .pref-map-ghost .honshu-b{right:44px;top:82px;width:78px;height:24px}
+      .pref-map-ghost .honshu-c{right:92px;top:96px;width:56px;height:22px}
+      .pref-map-ghost .honshu-d{right:132px;top:106px;width:50px;height:18px}
+      .pref-map-ghost .shikoku{right:118px;top:124px;width:46px;height:12px}
+      .pref-map-ghost .kyushu{right:172px;top:118px;width:32px;height:34px}
+      .pref-map-ghost .okinawa{right:214px;top:146px;width:16px;height:7px}
+      .pref-directory-head h2{font-size:19px}
+      .pref-directory-row{grid-template-columns:1fr;gap:2px;padding:8px 0;border-top:1px solid #eee8d8}
+      .pref-directory-row:first-child{border-top:0}
+      .pref-directory-label{font-size:13px}
+      .pref-directory-links{gap:8px 11px}
+      .pref-directory-links a{font-size:15px}
+    }
+  </style>
+  <style id="top-prefecture-clean-layout">
+    body.structure-layout .top-prefecture-directory{padding:24px 26px!important}
+    body.structure-layout .top-prefecture-directory .pref-directory{min-height:276px;padding-right:380px}
+    body.structure-layout .top-prefecture-directory .pref-directory-head{margin-bottom:14px}
+    body.structure-layout .top-prefecture-directory .pref-directory-head h2{font-size:23px;line-height:1.45;font-weight:700}
+    body.structure-layout .top-prefecture-directory .pref-directory-list{gap:9px;max-width:680px}
+    body.structure-layout .top-prefecture-directory .pref-directory-row{grid-template-columns:108px minmax(0,1fr);gap:12px}
+    body.structure-layout .top-prefecture-directory .pref-directory-links{gap:8px 13px}
+    body.structure-layout .top-prefecture-directory .pref-directory-links a{font-size:16px;line-height:1.5}
+    body.structure-layout .top-prefecture-directory .pref-map-ghost{right:18px;top:46px;width:350px;height:220px;opacity:.82;border-radius:0;overflow:visible;background:transparent}
+    body.structure-layout .top-prefecture-directory .pref-map-image{display:block;width:100%;height:100%;object-fit:cover;object-position:right center;filter:saturate(.92)}
+    body.structure-layout .top-search-grid > .search-box:not(.top-prefecture-directory){padding:20px!important}
+    body.structure-layout .top-search-grid > .search-box:not(.top-prefecture-directory) h3{margin-top:0}
+    @media(max-width:980px){
+      body.structure-layout .top-prefecture-directory .pref-directory{padding-right:0;min-height:auto}
+      body.structure-layout .top-prefecture-directory .pref-directory-list{max-width:none}
+      body.structure-layout .top-prefecture-directory .pref-map-ghost{position:relative;right:auto;top:auto;width:100%;height:auto;aspect-ratio:2.35/1;margin:8px 0 14px;opacity:.78}
+      body.structure-layout .top-prefecture-directory .pref-map-image{object-fit:cover;object-position:right center}
+    }
+    @media(max-width:520px){
+      body.structure-layout .top-prefecture-directory{padding:18px 14px!important}
+      body.structure-layout .top-prefecture-directory .pref-directory-head h2{font-size:19px}
+      body.structure-layout .top-prefecture-directory .pref-map-ghost{aspect-ratio:2.15/1;margin:6px 0 10px;opacity:.68}
+      body.structure-layout .top-prefecture-directory .pref-directory-row{grid-template-columns:1fr;gap:3px;padding:8px 0;border-top:1px solid #eee8d8}
+      body.structure-layout .top-prefecture-directory .pref-directory-row:first-child{border-top:0}
+      body.structure-layout .top-prefecture-directory .pref-directory-links{gap:7px 10px}
+      body.structure-layout .top-prefecture-directory .pref-directory-links a{font-size:15px;line-height:1.55}
+    }
+  </style>
 </head>
-<body class="readable-refresh engagement-refresh less-copy streamlined-top cv-visual-refresh">
+<body class="readable-refresh engagement-refresh less-copy streamlined-top cv-visual-refresh katachi-layout structure-layout">
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="/"><span class="brand-symbol">整</span><span><span class="brand-main">遺品整理・生前整理.jp</span><br><span class="brand-sub">相談前の確認事項を整理する全国ガイド</span></span></a>
+      <a class="brand" href="/"><span><span class="brand-main">遺品整理・生前整理.jp</span><br><span class="brand-sub">相談前の確認事項を整理する全国ガイド</span></span></a>
       <nav class="nav" aria-label="サイト内ナビ"><a href="#quick-start">状況別</a><a href="#flow">準備</a><a href="#prefectures">都道府県</a><a href="#price">料金</a><a href="#vendor">業者選び</a><a class="call" href="#flow">準備リスト</a></nav>
     </div>
   </header>
@@ -127,43 +458,172 @@
           <span class="pill">生前整理</span>
           <span class="pill">全国対応ガイド</span>
         </div>
-        <h1>大切な思い出を<br>最後まで丁寧に。<br>実家の片付けを<br>まるごと相談。</h1>
-        <p class="hero-lead">遠方からでも大丈夫。<span class="text-marker">鍵のお預かり</span>、貴重品・重要書類の探索、作業前後の写真報告まで整理して進めます。<span class="text-marker">見積もり確定後の追加請求は一切ない</span>明朗会計で、不安を減らします。</p>
-        <div class="hero-actions"><a class="btn primary" href="#prefectures">地域から無料見積もり準備</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn ghost" href="#quick-start">状況から選ぶ</a></div>
-        <p class="hero-note">現地確認後に<span class="text-marker">作業範囲と金額を確定</span>。追加作業が必要な場合は、必ず事前に確認します。</p>
+        <h1>遺品整理・生前整理の<br>見積もり先を<br>地域から探す。</h1>
+        <p class="hero-lead">料金相場、追加請求の注意点、貴重品探索、供養・買取、立会い不要対応まで。<span class="text-marker">相談前に確認すべきこと</span>を、都道府県・市区町村ごとに整理しています。</p>
+        <div class="hero-actions"><a class="btn primary" href="#prefectures">都道府県から探す</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn ghost" href="#vendor">悪徳業者の注意点</a></div>
+        <p class="hero-note">見積もり前に、荷物量・搬出経路・作業範囲・追加料金条件を確認して、失敗しにくい依頼先を選びましょう。</p>
         <div class="trust-row">
-          <span>立会い不要</span>
-          <span>鍵預かり対応</span>
+          <span>料金相場</span>
+          <span>地域別ガイド</span>
+          <span>悪徳業者対策</span>
           <span>貴重品探索</span>
-          <span>写真報告</span>
-          <span>買取・供養相談</span>
+          <span>立会い不要</span>
         </div>
         <div class="cv-proof-row" aria-label="安心材料">
-          <div><b>追加請求を防ぐ</b><span>作業範囲と金額を確定してから進行</span></div>
-          <div><b>遠方でも確認</b><span>鍵預かり・写真報告・返送方法を整理</span></div>
-          <div><b>大切な品を探索</b><span>通帳・印鑑・写真・権利書を処分前に確認</span></div>
-          <div><b>供養・買取も相談</b><span>捨てる前に残す、活かす、納めるを判断</span></div>
+          <div><b>地域から探せる</b><span>都道府県・市区町村ごとの確認点へすぐ移動</span></div>
+          <div><b>料金を比較しやすい</b><span>間取り・荷物量・搬出条件ごとの見方を整理</span></div>
+          <div><b>業者選びで失敗しにくい</b><span>追加請求や書面なし契約の注意点を確認</span></div>
+          <div><b>遠方対応も確認</b><span>鍵預かり・写真報告・貴重品返送の流れを整理</span></div>
         </div>
       </div>
       <aside class="hero-search-panel" aria-label="すぐ確認する">
-        <h2 class="search-panel-title">いま近い状況は？</h2>
-        <p class="search-panel-lead">近いものを選んでください。</p>
+        <h2 class="search-panel-title">まずはここから</h2>
+        <p class="search-panel-lead">作業場所と状況を選ぶと、必要な確認点に進めます。</p>
         <div class="selector-grid">
           <a class="selector-card" href="#case-inheritance">遺品整理<span>退去・相続・形見分けを確認</span></a>
           <a class="selector-card" href="#case-living">生前整理<span>元気なうちに減らす物を確認</span></a>
           <a class="selector-card" href="#case-empty">実家じまい<span>空き家・売却前の整理を確認</span></a>
           <a class="selector-card" href="#case-remote">遠方対応<span>鍵預かり・写真報告を確認</span></a>
         </div>
-        <div class="panel-cta"><a class="orange" href="#prefectures">地域を選ぶ</a><a class="light" href="#price">料金を見る</a></div>
+        <div class="panel-cta"><a class="orange" href="#prefectures">地域から探す</a><a class="light" href="#price">料金を見る</a></div>
       </aside>
+    </div>
+  </section>
+
+  <section class="trust-alert-hub" aria-label="違法業者への注意と安心材料">
+    <div class="trust-alert-inner">
+      <div class="trust-alert-card">
+        <div>
+          <h2>不当請求・無許可業者に注意。見積もり前に確認を。</h2>
+          <p>極端に安い見積もり、書面なしの契約、当日の追加料金はトラブルにつながりやすいポイントです。相談前に、許可・買取体制・保険・写真報告の有無を確認できる状態にしておきましょう。</p>
+        </div>
+        <div class="trust-badges" aria-label="確認したい安心材料">
+          <span>書面見積もり</span><span>追加費用条件</span><span>古物商許可</span><span>損害保険</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="top-search-hub" aria-label="地域と目的から探す">
+    <div class="top-search-inner">
+      <div class="top-search-head">
+        <div>
+          <h2>地域・目的から遺品整理業者を探す</h2>
+          <p>作業場所が決まっている方は地域から、状況が決まっている方は目的から進んでください。</p>
+        </div>
+      </div>
+      <div class="top-search-grid">
+        <div id="prefectures" class="search-box prefecture-directory-section top-prefecture-directory">
+          <div class="pref-directory">
+            <div class="pref-directory-head">
+              <span class="pref-directory-icon" aria-hidden="true"></span>
+              <h2>都道府県から遺品整理・生前整理を探す</h2>
+            </div>
+            <div class="pref-map-ghost" aria-hidden="true">
+              <img class="pref-map-image" src="/assets/prefecture-directory-map.png?v=1" alt="">
+            </div>
+            <div class="pref-directory-list">
+              <div id="pref-region-hokkaido-tohoku" class="pref-directory-row"><div class="pref-directory-label">北海道・東北</div><div class="pref-directory-links"><a href="/hokkaido/">北海道</a><a href="/aomori/">青森</a><a href="/iwate/">岩手</a><a href="/akita/">秋田</a><a href="/miyagi/">宮城</a><a href="/yamagata/">山形</a><a href="/fukushima/">福島</a></div></div>
+              <div id="pref-region-kanto" class="pref-directory-row"><div class="pref-directory-label">関東</div><div class="pref-directory-links"><a href="/tokyo/">東京</a><a href="/kanagawa/">神奈川</a><a href="/saitama/">埼玉</a><a href="/chiba/">千葉</a><a href="/ibaraki/">茨城</a><a href="/tochigi/">栃木</a><a href="/gunma/">群馬</a></div></div>
+              <div id="pref-region-koshinetsu-hokuriku" class="pref-directory-row"><div class="pref-directory-label">甲信越・北陸</div><div class="pref-directory-links"><a href="/niigata/">新潟</a><a href="/yamanashi/">山梨</a><a href="/nagano/">長野</a><a href="/toyama/">富山</a><a href="/ishikawa/">石川</a><a href="/fukui/">福井</a></div></div>
+              <div id="pref-region-tokai" class="pref-directory-row"><div class="pref-directory-label">東海</div><div class="pref-directory-links"><a href="/aichi/">愛知</a><a href="/shizuoka/">静岡</a><a href="/gifu/">岐阜</a><a href="/mie/">三重</a></div></div>
+              <div id="pref-region-kansai" class="pref-directory-row"><div class="pref-directory-label">関西</div><div class="pref-directory-links"><a href="/osaka/">大阪</a><a href="/hyogo/">兵庫</a><a href="/kyoto/">京都</a><a href="/nara/">奈良</a><a href="/shiga/">滋賀</a><a href="/wakayama/">和歌山</a></div></div>
+              <div id="pref-region-chugoku-shikoku" class="pref-directory-row"><div class="pref-directory-label">中国・四国</div><div class="pref-directory-links"><a href="/hiroshima/">広島</a><a href="/okayama/">岡山</a><a href="/yamaguchi/">山口</a><a href="/tottori/">鳥取</a><a href="/shimane/">島根</a><a href="/kagawa/">香川</a><a href="/tokushima/">徳島</a><a href="/ehime/">愛媛</a><a href="/kochi/">高知</a></div></div>
+              <div id="pref-region-kyushu-okinawa" class="pref-directory-row"><div class="pref-directory-label">九州・沖縄</div><div class="pref-directory-links"><a href="/fukuoka/">福岡</a><a href="/saga/">佐賀</a><a href="/nagasaki/">長崎</a><a href="/kumamoto/">熊本</a><a href="/oita/">大分</a><a href="/miyazaki/">宮崎</a><a href="/kagoshima/">鹿児島</a><a href="/okinawa/">沖縄</a></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="search-box">
+          <h3>目的から探す</h3>
+          <div class="search-chips">
+            <a href="#case-inheritance">遺品整理</a>
+            <a href="#case-living">生前整理</a>
+            <a href="#case-empty">実家じまい</a>
+            <a href="#case-remote">立会い不要</a>
+            <a href="#price">料金目安</a>
+            <a href="#vendor">悪徳業者対策</a>
+          </div>
+        </div>
+      </div>
+      <div class="condition-row" aria-label="対応条件">
+        <b>よく確認される条件</b>
+        <span>追加請求対策</span>
+        <span>写真報告</span>
+        <span>鍵預かり</span>
+        <span>買取相殺</span>
+        <span>供養相談</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-hub-strip" aria-label="サービス別の入口">
+    <div class="service-hub-inner">
+      <div class="service-hub-head">
+        <h2>目的に合うページへ進む</h2>
+        <p>TOPでは入口を絞り、詳しい確認事項は専門ページ・地域ページへ誘導します。</p>
+      </div>
+      <div class="service-hub-grid">
+        <a class="service-hub-card" href="#case-inheritance"><b>遺品整理</b><span>退去、相続書類、形見分け、供養の確認へ</span></a>
+        <a class="service-hub-card" href="#case-living"><b>生前整理</b><span>施設入居前、家族に残す物、片付け範囲の確認へ</span></a>
+        <a class="service-hub-card" href="#price"><b>料金目安</b><span>間取り別料金と、追加費用が出やすい条件へ</span></a>
+        <a class="service-hub-card" href="#prefectures"><b>対応エリア</b><span>都道府県・市区町村ごとの地域ページへ</span></a>
+      </div>
     </div>
   </section>
 
   <section class="assurance-strip" aria-label="相談前の安心材料">
     <div class="assurance-inner">
-      <div><b><span class="text-marker">追加請求を防ぐ</span></b><span>見積もり確定前に荷物量・搬出経路・作業範囲を確認</span></div>
-      <div><b><span class="text-marker">遠方でも進めやすい</span></b><span>鍵預かり、写真報告、貴重品返送の流れを整理</span></div>
-      <div><b><span class="text-marker">地域ごとに確認</span></b><span>都道府県ページから住宅特性・行政窓口・料金目安へ</span></div>
+      <div><b><span class="text-marker">料金相場がわかる</span></b><span>間取りだけでなく、荷物量・搬出経路・追加条件まで確認</span></div>
+      <div><b><span class="text-marker">トラブルを避ける</span></b><span>極端に安い見積もり、書面なし、即決要求の注意点を確認</span></div>
+      <div><b><span class="text-marker">地域ページへ進める</span></b><span>都道府県・市区町村ごとに行政窓口や作業時の注意点を整理</span></div>
+    </div>
+  </section>
+
+  <section class="price-sim-strip" aria-label="簡易料金シミュレーター">
+    <div class="price-sim-inner">
+      <div class="price-sim-head">
+        <h2>概算料金を先に確認する</h2>
+        <p>正確な金額は現地確認が必要ですが、相談前の不安を減らすために、おおよその目安を確認できます。</p>
+      </div>
+      <div class="price-sim-box">
+        <div class="price-sim-form">
+          <label>間取りを選ぶ
+            <select data-price-room>
+              <option value="30000">1K・ワンルーム</option>
+              <option value="60000">1DK・1LDK</option>
+              <option value="100000">2DK・2LDK</option>
+              <option value="150000">3DK・3LDK</option>
+              <option value="220000">一戸建て・実家じまい</option>
+            </select>
+          </label>
+          <div class="price-options" aria-label="追加条件">
+            <label><input type="checkbox" data-price-option value="10000">階段作業あり</label>
+            <label><input type="checkbox" data-price-option value="8000">搬出距離が長い</label>
+            <label><input type="checkbox" data-price-option value="5000">供養品あり</label>
+            <label><input type="checkbox" data-price-option value="-10000">買取できる品がある</label>
+          </div>
+        </div>
+        <div class="price-sim-result" aria-live="polite">
+          <span>概算目安</span>
+          <b data-price-result>30,000円〜</b>
+          <p>荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strategy-strip" aria-label="見積もり前に比較するポイント">
+    <div class="strategy-inner">
+      <div class="strategy-head">
+        <h2>安さだけで選ばないための、見積もり前チェック</h2>
+        <p>遺品整理は作業後に追加請求が出やすい分野です。料金、作業範囲、許可・買取、報告方法を先にそろえると、複数社の見積もりを落ち着いて比べられます。</p>
+      </div>
+      <div class="strategy-grid">
+        <div class="strategy-card"><b>料金の根拠</b><span><strong>間取りだけで判断しない。</strong>荷物量、階数、搬出距離、駐車位置、供養品の量まで確認します。</span></div>
+        <div class="strategy-card"><b>書面見積もり</b><span><strong>口約束で決めない。</strong>基本料金に含まれる作業と、追加費用が出る条件を書面で残します。</span></div>
+        <div class="strategy-card"><b>法令・買取体制</b><span><strong>許可や提携先を確認。</strong>不用品の扱い、古物商許可に基づく査定、買取相殺の可否を見ます。</span></div>
+        <div class="strategy-card"><b>写真報告と立会い</b><span><strong>遠方でも進められるか。</strong>鍵預かり、作業前後の写真、貴重品の返送方法を決めておきます。</span></div>
+      </div>
     </div>
   </section>
 
@@ -279,20 +739,6 @@
           <div class="card situation-card"><h3>老人ホーム・施設入居前</h3><p>入居日までに荷物を選び、実家の扱いを決めたい方へ。</p><a class="card-link" href="#sit-shisetsu">詳しく見る</a></div>
           <div class="card situation-card"><h3>実家じまい・空き家（相続）</h3><p>相続後の家財整理、売却前整理、権利書探索を進めたい方へ。</p><a class="card-link" href="#sit-akiya">詳しく見る</a></div>
           <div class="card situation-card"><h3>賃貸退去に伴う整理</h3><p>退去日までに短期で片付け、共用部養生も確認したい方へ。</p><a class="card-link" href="#sit-taikyo">詳しく見る</a></div>
-        </div>
-      </section>
-
-      <section id="prefectures" class="section">
-        <h2 class="section-title">都道府県から探す</h2>
-        <p class="lead">作業場所に近い都道府県を選んでください。地域ページでは、住宅特性、行政窓口、搬出時の注意点まで確認できます。</p>
-        <div class="grid cols3">
-          <div class="area-box"><h3>北海道・東北</h3><div class="pref-links"><a href="/hokkaido/">北海道</a><a href="/aomori/">青森県</a><a href="/iwate/">岩手県</a><a href="/akita/">秋田県</a><a href="/miyagi/">宮城県</a><a href="/yamagata/">山形県</a><a href="/fukushima/">福島県</a></div></div>
-          <div class="area-box"><h3>関東</h3><div class="pref-links"><a href="/tokyo/">東京都</a><a href="/kanagawa/">神奈川県</a><a href="/saitama/">埼玉県</a><a href="/chiba/">千葉県</a><a href="/ibaraki/">茨城県</a><a href="/tochigi/">栃木県</a><a href="/gunma/">群馬県</a></div></div>
-          <div class="area-box"><h3>東海</h3><div class="pref-links"><a href="/aichi/">愛知県</a><a href="/shizuoka/">静岡県</a><a href="/niigata/">新潟県</a><a href="/nagano/">長野県</a><a href="/gifu/">岐阜県</a><a href="/ishikawa/">石川県</a><a href="/toyama/">富山県</a><a href="/yamanashi/">山梨県</a><a href="/fukui/">福井県</a></div></div>
-          <div class="area-box"><h3>近畿</h3><div class="pref-links"><a href="/osaka/">大阪府</a><a href="/hyogo/">兵庫県</a><a href="/kyoto/">京都府</a><a href="/mie/">三重県</a><a href="/shiga/">滋賀県</a><a href="/nara/">奈良県</a><a href="/wakayama/">和歌山県</a></div></div>
-          <div class="area-box"><h3>中国</h3><div class="pref-links"><a href="/hiroshima/">広島県</a><a href="/okayama/">岡山県</a><a href="/yamaguchi/">山口県</a><a href="/shimane/">島根県</a><a href="/tottori/">鳥取県</a></div></div>
-          <div class="area-box"><h3>四国</h3><div class="pref-links"><a href="/tokushima/">徳島県</a><a href="/kagawa/">香川県</a><a href="/ehime/">愛媛県</a><a href="/kochi/">高知県</a></div></div>
-          <div class="area-box"><h3>九州</h3><div class="pref-links"><a href="/fukuoka/">福岡県</a><a href="/saga/">佐賀県</a><a href="/nagasaki/">長崎県</a><a href="/oita/">大分県</a><a href="/kumamoto/">熊本県</a><a href="/miyazaki/">宮崎県</a><a href="/kagoshima/">鹿児島県</a><a href="/okinawa/">沖縄県</a></div></div>
         </div>
       </section>
 
@@ -509,7 +955,7 @@
     </article>
   </main>
 
-  <div class="sticky-cta" aria-label="固定問い合わせ導線"><div class="sticky-cta-inner"><a class="estimate" href="#prefectures">地域から見積準備</a><a class="check" href="#flow">準備リスト</a></div></div>
+  <div class="sticky-cta" aria-label="固定問い合わせ導線"><div class="sticky-cta-inner"><a class="tel" href="#prefectures">電話相談</a><a class="line" href="#price">LINE見積</a><a class="mail" href="#flow">メール相談</a></div></div>
   <script>
     (() => {
       const track = document.querySelector('[data-before-after-track]');
@@ -525,6 +971,60 @@
     })();
   </script>
   <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 相談前の確認事項を整理する全国ガイド</div></footer>
+  <script>
+    (() => {
+      const room = document.querySelector('[data-price-room]');
+      const options = Array.from(document.querySelectorAll('[data-price-option]'));
+      const result = document.querySelector('[data-price-result]');
+      if (!room || !result) return;
+      const update = () => {
+        const base = Number(room.value || 0);
+        const extra = options.reduce((sum, item) => sum + (item.checked ? Number(item.value || 0) : 0), 0);
+        const total = Math.max(0, base + extra);
+        result.textContent = total.toLocaleString('ja-JP') + '円〜';
+      };
+      room.addEventListener('change', update);
+      options.forEach((item) => item.addEventListener('change', update));
+      update();
+    })();
+  </script>
+
+  <script>
+    (() => {
+      const mq = window.matchMedia('(max-width: 820px)');
+      const regions = Array.from(document.querySelectorAll('#prefectures .pref-region'));
+      if (!regions.length) return;
+      const sync = () => {
+        regions.forEach((region) => {
+          const button = region.querySelector('.pref-toggle');
+          const expanded = mq.matches ? region.classList.contains('is-open') : true;
+          button?.setAttribute('aria-expanded', String(expanded));
+        });
+      };
+      document.querySelectorAll('[data-open-region]').forEach((link) => {
+        link.addEventListener('click', () => {
+          const target = document.getElementById(link.dataset.openRegion);
+          if (!target) return;
+          if (mq.matches) {
+            regions.forEach((item) => item.classList.remove('is-open'));
+            target.classList.add('is-open');
+            sync();
+          }
+        });
+      });
+      regions.forEach((region) => {
+        region.querySelector('.pref-toggle')?.addEventListener('click', () => {
+          if (!mq.matches) return;
+          const shouldOpen = !region.classList.contains('is-open');
+          regions.forEach((item) => item.classList.remove('is-open'));
+          if (shouldOpen) region.classList.add('is-open');
+          sync();
+        });
+      });
+      mq.addEventListener?.('change', sync);
+      sync();
+    })();
+  </script>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -545,6 +1045,22 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
