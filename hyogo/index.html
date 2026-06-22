@@ -52,7 +52,7 @@
     .intent-card b{display:block;color:var(--orange-dark);font-size:17px;line-height:1.45}
     .intent-card span{display:block;margin-top:5px;color:var(--muted);font-size:14px;line-height:1.55}
     .hyogo-area-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-    .hyogo-area-card{display:grid;grid-template-rows:auto auto 1fr;background:#fff;border:1px solid var(--line);border-top:6px solid var(--orange);box-shadow:var(--shadow);padding:22px}
+    .hyogo-area-card{display:grid;grid-template-rows:auto;background:#fff;border:1px solid var(--line);border-top:6px solid var(--orange);box-shadow:var(--shadow);padding:22px;align-content:start}
     .hyogo-area-card:nth-child(2){border-top-color:var(--green)}
     .hyogo-area-card:nth-child(3){border-top-color:var(--blue)}
     .hyogo-area-card:nth-child(4){border-top-color:#8a6b18}
@@ -83,7 +83,7 @@
     #hyogo-area .hyogo-area-head h3{font-size:20px;line-height:1.5}
     #hyogo-area .hyogo-area-count{min-height:28px;background:#fff1e6;border:1px solid #f0c49d;color:var(--orange-dark);font-size:13px}
     #hyogo-area .hyogo-area-note{min-height:0;font-size:16px;line-height:1.8}
-    #hyogo-area .hyogo-area-point{font-size:16px;line-height:1.8}
+    #hyogo-area .hyogo-area-point{font-size:16px;line-height:1.55;margin-bottom:12px;padding:8px 12px}
     #hyogo-area .hyogo-area-links{gap:12px}
     #hyogo-area .hyogo-area-links a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:8px 14px;border:1px solid #eadfd4;background:#fff;color:var(--ink);border-radius:999px;font-size:14px;font-weight:900;line-height:1.35;text-decoration:none;box-shadow:0 6px 14px rgba(70,50,32,.06)}
     #hyogo-area .hyogo-area-links a.priority{background:#fff;border-color:#eadfd4;color:var(--ink)}
@@ -481,7 +481,7 @@
         </div><div id="hyogo-hanshin-area" class="hyogo-area-card">
           <div class="hyogo-area-head"><h3>阪神間・北摂</h3><span class="hyogo-area-count">8市町</span></div>
           <p class="hyogo-area-note">阪神間・北摂は、駅近マンションや賃貸退去前整理が多い尼崎・西宮・芦屋・伊丹と、坂道住宅やニュータウン戸建ての相談が増えやすい宝塚・川西・三田・猪名川で、見積もり時に見るポイントが分かれます。</p>
-          <p class="hyogo-area-point">集合住宅では、管理会社への届出、エレベーター予約、共用部養生の要否を先に確認します。戸建てでは、前面道路、駐車位置、庭・物置の有無を整理しておくと、見積もりと当日の作業がスムーズです。</p>
+          <p class="hyogo-area-point">集合住宅は管理会社届出・エレベーター予約・共用部養生、戸建ては前面道路・駐車位置・庭や物置を確認して見積もります。</p>
           <div class="hyogo-area-links"><a class="priority" href="/hyogo/amagasaki/">尼崎市</a><a class="priority" href="/hyogo/nishinomiya/">西宮市</a><a class="priority" href="/hyogo/ashiya/">芦屋市</a><a href="/hyogo/itami/">伊丹市</a><a href="/hyogo/takarazuka/">宝塚市</a><a href="/hyogo/kawanishi/">川西市</a><a href="/hyogo/sanda/">三田市</a><a href="/hyogo/inagawa/">猪名川町</a></div>
           <div class="table-wrap" style="margin-top:18px">
             <table class="price-table">
@@ -842,12 +842,5 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
 
 
