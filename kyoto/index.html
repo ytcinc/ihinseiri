@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -261,12 +261,276 @@
     #sources{order:40!important}
     main.wrap>.toc,.toc,#trust,#avoid-bad-vendors,#nagano-consult-patterns,#nagano-price-factors,#service,#items,#compare{order:41!important}
   </style>
+  <style id="mobile-hero-safety-v1">
+    @media (max-width: 820px) {
+      html, body { overflow-x: hidden; }
+      .hero, .hero.osaka-hero, .hero.sakai-hero {
+        background-image:
+          linear-gradient(180deg, rgba(35,42,37,.98) 0%, rgba(35,42,37,.94) 54%, rgba(35,42,37,.84) 78%, rgba(35,42,37,.68) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1") !important;
+        background-size: cover, auto 44% !important;
+        background-position: center, calc(100% + 34px) bottom !important;
+        background-repeat: no-repeat !important;
+      }
+      .hero .hero-inner, .hero.osaka-hero .hero-inner, .hero.sakai-hero .hero-inner {
+        width: min(calc(100% - 24px), 366px) !important;
+        max-width: min(calc(100% - 24px), 366px) !important;
+        min-height: auto !important;
+        display: block !important;
+        margin: 0 12px !important;
+        padding: 28px 0 34px !important;
+      }
+      .hero .hero-inner > div:first-child, .hero.osaka-hero .hero-inner > div:first-child, .hero.sakai-hero .hero-inner > div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .hero .eyebrow, .hero.osaka-hero .eyebrow, .hero.sakai-hero .eyebrow {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+        line-height: 1.6 !important;
+      }
+      .hero h1, .hero.osaka-hero h1, .hero.sakai-hero h1 {
+        max-width: 100% !important;
+        margin-bottom: 14px !important;
+        font-size: clamp(25px, 7.2vw, 30px) !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+        word-break: break-all !important;
+        overflow-wrap: anywhere !important;
+        text-shadow: 0 3px 16px rgba(0,0,0,.45) !important;
+      }
+      .hero h1::after, .hero.osaka-hero h1::after, .hero.sakai-hero h1::after {
+        width: 128px !important;
+        height: 4px !important;
+        margin-top: 12px !important;
+      }
+      .hero p, .hero .hero-lead, .hero.osaka-hero p, .hero.sakai-hero p {
+        max-width: 100% !important;
+        margin-bottom: 16px !important;
+        font-size: 15px !important;
+        line-height: 1.78 !important;
+        word-break: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+      .hero .hero-highlights, .hero .hero-badges {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+      }
+      .hero .hero-highlights span, .hero .badge {
+        width: auto !important;
+        min-height: 42px !important;
+        padding: 8px 9px !important;
+        background: rgba(255,255,255,.16) !important;
+        border: 1px solid rgba(255,255,255,.34) !important;
+        color: #fff !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
+        box-shadow: none !important;
+      }
+      .hero .hero-actions {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin-top: 18px !important;
+      }
+      .hero .btn {
+        width: 100% !important;
+        min-height: 48px !important;
+        padding: 8px 10px !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+      }
+      .hero .hero-panel {
+        margin-top: 20px !important;
+        padding: 16px !important;
+        background: rgba(255,255,255,.97) !important;
+      }
+      .hero .hero-panel h2 { margin-bottom: 10px !important; font-size: 18px !important; }
+      .hero .hero-panel li { font-size: 14px !important; line-height: 1.75 !important; }
+    }
+  </style>
+
+<style id="kansai-prefecture-100-style">
+  .prefecture-100-boost{width:min(1160px,calc(100% - 28px));margin:-26px auto 34px;position:relative;z-index:6}
+  .prefecture-100-panel{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.95fr);gap:22px;align-items:stretch;background:#fff;border:1px solid #e4ded3;box-shadow:0 18px 44px rgba(34,28,22,.12);padding:24px;overflow:hidden}
+  .prefecture-100-copy{display:grid;align-content:center;gap:14px}
+  .prefecture-100-copy h2{margin:0;color:#28332e;font-size:28px;line-height:1.45;letter-spacing:0}
+  .prefecture-100-copy p{margin:0;color:#4f5c55;font-size:16px;line-height:1.86;font-weight:700}
+  .prefecture-100-copy .prefecture-100-note{padding:14px 16px;background:#fff8ea;border:1px solid #ead8b7;color:#5b4630}
+  .prefecture-100-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:4px}
+  .prefecture-100-actions a{display:grid;align-content:center;min-height:76px;padding:12px;border:1px solid #dfe6df;background:#f8fbf9;color:#24483f;text-decoration:none;font-size:14px;font-weight:900;line-height:1.45}
+  .prefecture-100-actions a:first-child{background:#2f6f63;border-color:#2f6f63;color:#fff}
+  .prefecture-100-actions a:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 10px 22px rgba(35,50,43,.12)}
+  .prefecture-100-visual{position:relative;min-height:320px;background:#f3f0ea;overflow:hidden}
+  .prefecture-100-visual img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover}
+  .prefecture-100-badges{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .prefecture-100-badges span{display:inline-flex;align-items:center;min-height:31px;padding:0 10px;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.75);color:#24302b;border-radius:999px;font-size:13px;font-weight:900;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+  @media(max-width:820px){
+    .prefecture-100-boost{width:calc(100% - 24px);margin:18px auto 24px}
+    .prefecture-100-panel{grid-template-columns:1fr;padding:18px;gap:16px}
+    .prefecture-100-copy h2{font-size:23px}
+    .prefecture-100-actions{grid-template-columns:1fr 1fr}
+    .prefecture-100-actions a{min-height:58px}
+    .prefecture-100-visual,.prefecture-100-visual img{min-height:210px}
+  }
+</style>
+
+
+<style id="kansai-prefecture-visual-proof-style">
+  .kansai-visual-proof{
+    width:min(1180px,calc(100% - 28px));
+    margin:30px auto 38px;
+  }
+  .kansai-visual-proof-inner{
+    background:#f6f7f2;
+    border:1px solid #e4ded3;
+    border-radius:12px;
+    padding:24px;
+    box-shadow:0 16px 38px rgba(39,55,47,.08);
+  }
+  .kansai-visual-proof-head{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(280px,.42fr);
+    gap:22px;
+    align-items:end;
+    margin:0 0 18px;
+  }
+  .kansai-visual-proof-head h2{
+    margin:0;
+    color:#28332e;
+    font-size:30px;
+    line-height:1.45;
+    letter-spacing:0;
+  }
+  .kansai-visual-proof-head p{
+    margin:0;
+    color:#4f5c55;
+    font-size:15px;
+    line-height:1.85;
+    font-weight:700;
+  }
+  .kansai-visual-grid{
+    display:grid;
+    grid-template-columns:1.1fr .95fr .95fr;
+    gap:16px;
+  }
+  .kansai-visual-card{
+    overflow:hidden;
+    background:#fff;
+    border:1px solid #dfe6df;
+    border-radius:12px;
+    box-shadow:0 14px 34px rgba(39,55,47,.10);
+    color:#28332e;
+    text-decoration:none;
+  }
+  .kansai-visual-card:hover{
+    text-decoration:none;
+    transform:translateY(-2px);
+    box-shadow:0 22px 48px rgba(39,55,47,.16);
+  }
+  .kansai-visual-media{
+    position:relative;
+    min-height:184px;
+    background:#f7f3e7;
+    overflow:hidden;
+  }
+  .kansai-visual-media img{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:184px;
+    object-fit:cover;
+  }
+  .kansai-visual-media.two-up{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    background:#e8efe9;
+  }
+  .kansai-visual-label{
+    position:absolute;
+    left:12px;
+    top:12px;
+    z-index:2;
+    display:inline-grid;
+    place-items:center;
+    min-height:30px;
+    padding:0 10px;
+    background:rgba(36,72,63,.94);
+    color:#fff;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:900;
+  }
+  .kansai-visual-body{padding:18px}
+  .kansai-visual-body b{
+    display:block;
+    color:#225346;
+    font-size:19px;
+    line-height:1.45;
+  }
+  .kansai-visual-body span{
+    display:block;
+    margin-top:6px;
+    color:#56635d;
+    font-size:14px;
+    line-height:1.7;
+    font-weight:700;
+  }
+  .kansai-visual-card.warning .kansai-visual-body b{color:#9f3e00}
+  .kansai-visual-card.price .kansai-visual-media img{object-position:center}
+  @media(max-width:900px){
+    .kansai-visual-proof{width:calc(100% - 20px);margin:24px auto 28px}
+    .kansai-visual-proof-inner{padding:17px;border-radius:10px}
+    .kansai-visual-proof-head{grid-template-columns:1fr;gap:8px}
+    .kansai-visual-proof-head h2{font-size:24px}
+    .kansai-visual-grid{grid-template-columns:1fr;gap:12px}
+    .kansai-visual-media,.kansai-visual-media img{min-height:170px}
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">京都府の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="/kyoto/">京都府</a><a href="#kyoto-city">京都市</a><a href="#kyoto-data">統計</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>京都府</div></nav>
   <section class="hero"><div class="hero-inner"><div><span class="eyebrow">京都府で遺品整理・生前整理を探す</span><h1>京町家も、市内のマンションも、丹後のご実家も。</h1><p>京都は伝統的な京町家から市街地のマンション、北部・丹後の戸建てまで住まいが大きく異なります。間口の狭い町家の搬出や、遠方・豪雪地のご実家も、貴重品の捜索からお部屋の引き渡しまで、状況に合わせて代行します。</p><div class="hero-highlights" aria-label="このページで確認できること"><span>市区町村別ページ</span><span>行政窓口</span><span>料金目安</span><span>立会いなし相談</span></div></div><aside class="hero-panel"><h2>京都府で相談が多い整理条件</h2><ul><li>京都市中心部の町家・長屋・マンション整理</li><li>宇治市・亀岡市・長岡京市などの実家じまい</li><li>丹後・中丹・南丹の戸建てや空き家整理</li><li>遠方家族向けの鍵預かり・写真報告</li></ul></aside></div></section>
   <main class="wrap">
+
+    <section class="kansai-visual-proof" aria-label="京都府で写真と料金を確認する">
+      <div class="kansai-visual-proof-inner">
+        <div class="kansai-visual-proof-head">
+          <h2>写真・料金・注意点を先に見て、依頼の不安を減らす。</h2>
+          <p>京都府で遺品整理・生前整理を検討するときは、片付け後の状態、費用の目安、危ない業者の見分け方を先に確認すると、相談がかなり楽になります。</p>
+        </div>
+        <div class="kansai-visual-grid">
+          <a class="kansai-visual-card" href="#kita-before-after-cases">
+            <div class="kansai-visual-media two-up">
+              <span class="kansai-visual-label">作業前後</span>
+              <img src="/assets/before-after/before-00.jpg" alt="京都府の遺品整理の作業前写真">
+              <img src="/assets/before-after/after-00.jpg" alt="京都府の遺品整理の作業後写真">
+            </div>
+            <div class="kansai-visual-body"><b>ビフォーアフターで片付け後を具体的に確認</b><span>部屋、収納、通路、家具搬出後の状態を写真で見て、作業後のイメージを持てます。</span></div>
+          </a>
+          <a class="kansai-visual-card price" href="#price">
+            <div class="kansai-visual-media">
+              <span class="kansai-visual-label">料金</span>
+              <img src="/assets/price-overview-bg.png?v=3" alt="京都府の遺品整理の料金目安を確認するイメージ">
+            </div>
+            <div class="kansai-visual-body"><b>間取りだけでなく追加条件まで料金を確認</b><span>階段作業、搬出距離、供養品、買取品の有無で金額が変わる理由を整理します。</span></div>
+          </a>
+          <a class="kansai-visual-card warning" href="#vendor">
+            <div class="kansai-visual-media">
+              <span class="kansai-visual-label">注意</span>
+              <img src="/assets/avoid-bad-vendors-banner.png?v=2" alt="京都府で悪質な遺品整理業者に注意する画像">
+            </div>
+            <div class="kansai-visual-body"><b>安すぎる見積もりと当日追加請求を避ける</b><span>書面なし、即決要求、説明のない追加費用など、契約前に見るべき点を確認できます。</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
 <section id="area-keyword-guide" class="section area-keyword-guide">
   <h2 class="section-title">京都府の で遺品整理・生前整理・実家じまいを検討している方へ</h2>
   <p class="lead">京都府のの遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。京都府の で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。京都府の で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
@@ -289,7 +553,7 @@
     
     <section id="kyoto-impact" class="section">
       <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
-      <p class="lead">京都府で遺品整理・生前整理を考えるときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。数字で見ると、実家の片付けを早めに相談する理由が分かります。</p>
+      <p class="lead">京都府で遺品整理・生前整理を考えるときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、実家の片付けを早めに相談する理由が分かります。</span></p>
       <div class="grid cols4 metric-grid">
         <div class="card stat-card metric-card impact-card"><span class="metric-label">3LDK一軒家</span><b>1.5〜3トン</b><p class="metric-note">長年住んだ実家では、不用品がトラック3〜5台分になることがあります。</p><span class="metric-sub">家具・布団・家電・物置まで含めて確認</span></div>
         <div class="card stat-card metric-card impact-card"><span class="metric-label">2DKでも</span><b>10〜15m³</b><p class="metric-note">袋ごみだけでは収まりにくく、分別・搬出・車両手配が必要になりやすい量です。</p><span class="metric-sub">退去期限がある部屋は早めに荷物量確認</span></div>
@@ -362,6 +626,7 @@
 </script>
 </body>
 </html>
+
 
 
 

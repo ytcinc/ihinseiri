@@ -621,6 +621,613 @@
       body.structure-layout .panel-cta{grid-template-columns:1fr!important;}
     }
   </style>
+  <style id="top-100-polish">
+    body.structure-layout .hero,
+    body.structure-layout.streamlined-top .hero{
+      padding-bottom:104px!important;
+    }
+    body.structure-layout .hero h1{
+      max-width:720px!important;
+    }
+    body.structure-layout .hero-note{
+      max-width:680px!important;
+      background:rgba(255,255,255,.14)!important;
+      border:1px solid rgba(255,255,255,.28)!important;
+      padding:12px 14px!important;
+      border-radius:6px!important;
+    }
+    .top-score-strip{
+      position:relative;
+      z-index:8;
+      margin-top:-58px;
+      background:linear-gradient(180deg,rgba(246,247,242,0) 0%,#f6f7f2 42%,#f6f7f2 100%);
+      padding:0 0 26px;
+    }
+    .top-score-inner{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+    }
+    .top-score-card{
+      display:block;
+      min-height:104px;
+      padding:18px 18px 16px;
+      background:#fff;
+      border:1px solid #dfe6df;
+      border-radius:10px;
+      box-shadow:0 16px 36px rgba(39,55,47,.12);
+      color:#28332e;
+      text-decoration:none;
+      transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+    }
+    .top-score-card:hover{
+      transform:translateY(-2px);
+      border-color:#9ab6a7;
+      box-shadow:0 20px 44px rgba(39,55,47,.18);
+    }
+    .top-score-card.primary{
+      background:#2f6f63;
+      border-color:#2f6f63;
+      color:#fff;
+    }
+    .top-score-card b{
+      display:block;
+      font-size:18px;
+      line-height:1.45;
+      letter-spacing:0;
+    }
+    .top-score-card span{
+      display:block;
+      margin-top:6px;
+      color:#5b6760;
+      font-size:14px;
+      line-height:1.65;
+      font-weight:700;
+    }
+    .top-score-card.primary span{color:rgba(255,255,255,.88);}
+    body.structure-layout .trust-alert-hub{background:#f6f7f2!important;}
+    body.structure-layout .trust-alert-inner{padding-top:10px!important;}
+    body.structure-layout .trust-alert-card{
+      border-left-color:#b43b18!important;
+      box-shadow:0 14px 34px rgba(39,55,47,.08)!important;
+    }
+    body.structure-layout .price-sim-strip{
+      background:linear-gradient(180deg,#fffdf7 0%,#f6f7f2 100%)!important;
+    }
+    body.structure-layout .price-sim-result{
+      border-left:6px solid #d05300!important;
+    }
+    body.structure-layout #quick-start .panel-heading h2::after{
+      content:"まずはここだけ見れば大丈夫です";
+      display:block;
+      margin-top:8px;
+      color:#5f6b64;
+      font-size:15px;
+      line-height:1.7;
+      font-weight:800;
+    }
+    body.structure-layout .service-hub-strip,
+    body.structure-layout .assurance-strip,
+    body.structure-layout #area-keyword-guide,
+    body.structure-layout #popular-area,
+    body.structure-layout .article > .intro,
+    body.structure-layout .article > .key-box,
+    body.structure-layout .article > .toc{
+      display:none!important;
+    }
+    body.structure-layout .article{
+      display:grid!important;
+      gap:34px!important;
+    }
+    body.structure-layout .article > .section,
+    body.structure-layout .article > .engagement-panel{
+      margin-top:0!important;
+    }
+    body.structure-layout .sticky-cta{
+      box-shadow:0 -10px 28px rgba(35,50,43,.14)!important;
+      border-top:1px solid rgba(255,255,255,.7)!important;
+    }
+    body.structure-layout .sticky-cta a{
+      letter-spacing:0!important;
+    }
+    .top-final-cta{
+      margin-top:36px;
+      padding:28px;
+      background:linear-gradient(135deg,#24483f 0%,#2f6f63 100%);
+      color:#fff;
+      border-radius:12px;
+      box-shadow:0 18px 42px rgba(35,50,43,.16);
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      gap:18px;
+      align-items:center;
+    }
+    .top-final-cta b{
+      display:block;
+      font-size:24px;
+      line-height:1.45;
+    }
+    .top-final-cta span{
+      display:block;
+      margin-top:6px;
+      color:rgba(255,255,255,.86);
+      font-size:15px;
+      line-height:1.8;
+      font-weight:700;
+    }
+    .top-final-cta a{
+      display:grid;
+      place-items:center;
+      min-height:50px;
+      padding:0 20px;
+      background:#fff;
+      color:#225346;
+      border-radius:6px;
+      font-weight:900;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .top-visual-proof{
+      background:#f6f7f2;
+      border-bottom:1px solid #e4ded3;
+      padding:8px 0 34px;
+    }
+    .top-visual-proof-inner{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+    }
+    .top-visual-proof-head{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,.42fr);
+      gap:22px;
+      align-items:end;
+      margin:0 0 18px;
+    }
+    .top-visual-proof-head h2{
+      margin:0;
+      color:#28332e;
+      font-size:30px;
+      line-height:1.45;
+      letter-spacing:0;
+    }
+    .top-visual-proof-head p{
+      margin:0;
+      color:#4f5c55;
+      font-size:15px;
+      line-height:1.85;
+      font-weight:700;
+    }
+    .top-visual-grid{
+      display:grid;
+      grid-template-columns:1.1fr .95fr .95fr;
+      gap:16px;
+    }
+    .top-visual-card{
+      overflow:hidden;
+      background:#fff;
+      border:1px solid #dfe6df;
+      border-radius:12px;
+      box-shadow:0 16px 38px rgba(39,55,47,.10);
+      color:#28332e;
+      text-decoration:none;
+    }
+    .top-visual-card:hover{
+      text-decoration:none;
+      transform:translateY(-2px);
+      box-shadow:0 22px 48px rgba(39,55,47,.16);
+    }
+    .top-visual-media{
+      position:relative;
+      min-height:184px;
+      background:#f7f3e7;
+      overflow:hidden;
+    }
+    .top-visual-media img{
+      display:block;
+      width:100%;
+      height:100%;
+      min-height:184px;
+      object-fit:cover;
+    }
+    .top-visual-media.two-up{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:0;
+      background:#e8efe9;
+    }
+    .top-visual-media.two-up img{min-height:184px;}
+    .top-visual-label{
+      position:absolute;
+      left:12px;
+      top:12px;
+      z-index:2;
+      display:inline-grid;
+      place-items:center;
+      min-height:30px;
+      padding:0 10px;
+      background:rgba(36,72,63,.94);
+      color:#fff;
+      border-radius:4px;
+      font-size:13px;
+      font-weight:900;
+    }
+    .top-visual-body{
+      padding:18px;
+    }
+    .top-visual-body b{
+      display:block;
+      color:#225346;
+      font-size:19px;
+      line-height:1.45;
+    }
+    .top-visual-body span{
+      display:block;
+      margin-top:6px;
+      color:#56635d;
+      font-size:14px;
+      line-height:1.7;
+      font-weight:700;
+    }
+    .top-visual-card.warning .top-visual-body b{color:#9f3e00;}
+    .top-visual-card.price .top-visual-media img{object-position:center;}
+    @media(max-width:900px){
+      body.structure-layout .hero,
+      body.structure-layout.streamlined-top .hero{
+        padding-bottom:42px!important;
+      }
+      .top-score-strip{
+        margin-top:0;
+        padding:16px 0 22px;
+      }
+      .top-score-inner{
+        width:calc(100% - 24px);
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+      }
+      .top-score-card{
+        min-height:96px;
+        padding:14px;
+        border-radius:8px;
+      }
+      .top-score-card b{font-size:16px;}
+      .top-score-card span{font-size:13px;line-height:1.55;}
+      .top-final-cta{
+        grid-template-columns:1fr;
+        padding:22px;
+      }
+      .top-final-cta b{font-size:21px;}
+      .top-visual-proof{padding:4px 0 24px;}
+      .top-visual-proof-inner{width:calc(100% - 24px);}
+      .top-visual-proof-head{grid-template-columns:1fr;gap:8px;}
+      .top-visual-proof-head h2{font-size:24px;}
+      .top-visual-grid{grid-template-columns:1fr;gap:12px;}
+      .top-visual-media,.top-visual-media img{min-height:170px;}
+    }
+    @media(max-width:520px){
+      .top-score-inner{grid-template-columns:1fr;}
+      .top-score-card{min-height:auto;}
+    }
+  </style>
+  <style id="mobile-hero-safety-v1">
+    @media (max-width: 820px) {
+      html, body { overflow-x: hidden; }
+      .hero, .hero.osaka-hero, .hero.sakai-hero {
+        background-image:
+          linear-gradient(180deg, rgba(35,42,37,.98) 0%, rgba(35,42,37,.94) 54%, rgba(35,42,37,.84) 78%, rgba(35,42,37,.68) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1") !important;
+        background-size: cover, auto 44% !important;
+        background-position: center, calc(100% + 34px) bottom !important;
+        background-repeat: no-repeat !important;
+      }
+      .hero .hero-inner, .hero.osaka-hero .hero-inner, .hero.sakai-hero .hero-inner {
+        width: min(calc(100% - 24px), 366px) !important;
+        max-width: min(calc(100% - 24px), 366px) !important;
+        min-height: auto !important;
+        display: block !important;
+        margin: 0 12px !important;
+        padding: 28px 0 34px !important;
+      }
+      .hero .hero-inner > div:first-child, .hero.osaka-hero .hero-inner > div:first-child, .hero.sakai-hero .hero-inner > div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .hero .eyebrow, .hero.osaka-hero .eyebrow, .hero.sakai-hero .eyebrow {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+        line-height: 1.6 !important;
+      }
+      .hero h1, .hero.osaka-hero h1, .hero.sakai-hero h1 {
+        max-width: 100% !important;
+        margin-bottom: 14px !important;
+        font-size: clamp(25px, 7.2vw, 30px) !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+        word-break: break-all !important;
+        overflow-wrap: anywhere !important;
+        text-shadow: 0 3px 16px rgba(0,0,0,.45) !important;
+      }
+      .hero h1::after, .hero.osaka-hero h1::after, .hero.sakai-hero h1::after {
+        width: 128px !important;
+        height: 4px !important;
+        margin-top: 12px !important;
+      }
+      .hero p, .hero .hero-lead, .hero.osaka-hero p, .hero.sakai-hero p {
+        max-width: 100% !important;
+        margin-bottom: 16px !important;
+        font-size: 15px !important;
+        line-height: 1.78 !important;
+        word-break: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+      .hero .hero-highlights, .hero .hero-badges {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+      }
+      .hero .hero-highlights span, .hero .badge {
+        width: auto !important;
+        min-height: 42px !important;
+        padding: 8px 9px !important;
+        background: rgba(255,255,255,.16) !important;
+        border: 1px solid rgba(255,255,255,.34) !important;
+        color: #fff !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
+        box-shadow: none !important;
+      }
+      .hero .hero-actions {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin-top: 18px !important;
+      }
+      .hero .btn {
+        width: 100% !important;
+        min-height: 48px !important;
+        padding: 8px 10px !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+      }
+      .hero .hero-panel {
+        margin-top: 20px !important;
+        padding: 16px !important;
+        background: rgba(255,255,255,.97) !important;
+      }
+      .hero .hero-panel h2 { margin-bottom: 10px !important; font-size: 18px !important; }
+      .hero .hero-panel li { font-size: 14px !important; line-height: 1.75 !important; }
+    }
+  </style>
+<style id="global-price-sim-style">
+  @media(max-width:820px){
+    .global-price-sim{padding:18px!important;margin-top:16px!important}
+    .global-price-sim-grid{grid-template-columns:1fr!important;gap:12px!important}
+    .global-price-options{grid-template-columns:1fr!important}
+    .global-price-sim [data-global-price-result]{font-size:26px!important}
+  }
+</style>
+  <style id="top-perfect-final-v1">
+    body.structure-layout{
+      background:#f6f7f2!important;
+    }
+    body.structure-layout .topbar{
+      box-shadow:0 2px 18px rgba(35,50,43,.08)!important;
+    }
+    body.structure-layout.streamlined-top .hero,
+    body.structure-layout .hero{
+      min-height:620px!important;
+      padding:76px 0 118px!important;
+      background-image:
+        linear-gradient(90deg,rgba(28,42,36,.96) 0%,rgba(31,50,42,.92) 42%,rgba(31,50,42,.58) 64%,rgba(31,50,42,.14) 100%),
+        url("/assets/cv-hero-staff-photo.png?v=1")!important;
+      background-size:cover,auto 112%!important;
+      background-position:center,calc(100% + 40px) bottom!important;
+      background-repeat:no-repeat!important;
+      color:#fff!important;
+      isolation:isolate!important;
+    }
+    body.structure-layout .hero::before,
+    body.structure-layout .hero::after{
+      display:none!important;
+    }
+    body.structure-layout .hero-inner,
+    body.structure-layout.streamlined-top .hero-inner{
+      width:min(1180px,calc(100% - 40px))!important;
+      max-width:min(1180px,calc(100% - 40px))!important;
+      min-height:auto!important;
+      display:grid!important;
+      grid-template-columns:minmax(0,1fr) 380px!important;
+      gap:34px!important;
+      align-items:center!important;
+      padding:0!important;
+    }
+    body.structure-layout .hero-copy{
+      grid-column:auto!important;
+      max-width:710px!important;
+      margin:0!important;
+    }
+    body.structure-layout .article-meta{
+      justify-content:flex-start!important;
+      margin-bottom:18px!important;
+    }
+    body.structure-layout .pill{
+      background:rgba(255,255,255,.15)!important;
+      border-color:rgba(255,255,255,.28)!important;
+      color:#fff!important;
+      text-shadow:none!important;
+    }
+    body.structure-layout .hero h1{
+      max-width:680px!important;
+      color:#fff!important;
+      font-size:clamp(42px,5.5vw,68px)!important;
+      line-height:1.14!important;
+      text-align:left!important;
+      text-shadow:0 4px 22px rgba(0,0,0,.38)!important;
+    }
+    body.structure-layout .hero h1::after{
+      width:210px!important;
+      height:6px!important;
+      margin-top:20px!important;
+      background:linear-gradient(90deg,#ffcf6b,#d05300,rgba(208,83,0,0))!important;
+    }
+    body.structure-layout .hero .hero-lead,
+    body.structure-layout .hero p{
+      max-width:690px!important;
+      color:rgba(255,255,255,.94)!important;
+      font-size:18px!important;
+      line-height:1.95!important;
+      text-align:left!important;
+      text-shadow:0 2px 12px rgba(0,0,0,.28)!important;
+    }
+    body.structure-layout .hero .text-marker{
+      color:#ffdf91!important;
+      background:none!important;
+      padding:0!important;
+      border-bottom:2px solid rgba(255,223,145,.55)!important;
+      box-decoration-break:clone!important;
+      -webkit-box-decoration-break:clone!important;
+    }
+    body.structure-layout .hero-actions{
+      justify-content:flex-start!important;
+      gap:12px!important;
+      margin:24px 0 0!important;
+    }
+    body.structure-layout .hero .btn{
+      min-height:52px!important;
+      padding:0 22px!important;
+      border-radius:8px!important;
+      box-shadow:0 10px 24px rgba(0,0,0,.18)!important;
+    }
+    body.structure-layout .hero .btn.primary{
+      background:#d05300!important;
+      border-color:#d05300!important;
+      color:#fff!important;
+    }
+    body.structure-layout .hero .btn.secondary{
+      background:#fff!important;
+      border-color:#fff!important;
+      color:#8c3d00!important;
+    }
+    body.structure-layout .hero .btn.ghost{
+      background:rgba(255,255,255,.13)!important;
+      border-color:rgba(255,255,255,.42)!important;
+      color:#fff!important;
+    }
+    body.structure-layout .hero-note{
+      margin-top:18px!important;
+      background:rgba(255,255,255,.11)!important;
+      border:1px solid rgba(255,255,255,.24)!important;
+      border-radius:8px!important;
+      color:rgba(255,255,255,.9)!important;
+    }
+    body.structure-layout .trust-row{
+      margin-top:18px!important;
+    }
+    body.structure-layout .trust-row span{
+      background:rgba(255,255,255,.13)!important;
+      border-color:rgba(255,255,255,.28)!important;
+      color:#fff!important;
+    }
+    body.structure-layout .cv-proof-row{
+      grid-template-columns:repeat(2,minmax(0,1fr))!important;
+      max-width:650px!important;
+    }
+    body.structure-layout .cv-proof-row div{
+      min-height:86px!important;
+      background:rgba(255,255,255,.12)!important;
+      border-color:rgba(255,255,255,.28)!important;
+      border-radius:8px!important;
+    }
+    body.structure-layout .hero-search-panel{
+      display:block!important;
+      align-self:stretch!important;
+      min-height:430px!important;
+      padding:26px!important;
+      background:rgba(255,255,255,.97)!important;
+      border:1px solid rgba(255,255,255,.72)!important;
+      border-radius:12px!important;
+      box-shadow:0 28px 60px rgba(0,0,0,.25)!important;
+      color:#28332e!important;
+    }
+    body.structure-layout .hero-search-panel .search-panel-title{
+      font-size:25px!important;
+      color:#22342e!important;
+    }
+    body.structure-layout .hero-search-panel .search-panel-lead{
+      font-size:15px!important;
+      color:#5a645f!important;
+    }
+    body.structure-layout .selector-card{
+      border-radius:8px!important;
+      background:#fffaf0!important;
+    }
+    body.structure-layout .panel-cta a{
+      border-radius:8px!important;
+    }
+    body.structure-layout .top-score-strip{
+      margin-top:-70px!important;
+      padding-bottom:32px!important;
+      background:linear-gradient(180deg,rgba(246,247,242,0) 0%,#f6f7f2 46%,#f6f7f2 100%)!important;
+    }
+    body.structure-layout .top-score-card{
+      border-radius:12px!important;
+      min-height:112px!important;
+    }
+    body.structure-layout .trust-alert-hub,
+    body.structure-layout .top-visual-proof,
+    body.structure-layout .top-search-hub,
+    body.structure-layout .price-sim-strip{
+      background:#f6f7f2!important;
+    }
+    body.structure-layout .strategy-strip{
+      background:#fffdf7!important;
+    }
+    @media(max-width:900px){
+      body.structure-layout.streamlined-top .hero,
+      body.structure-layout .hero{
+        min-height:auto!important;
+        padding:34px 0 34px!important;
+        background-image:
+          linear-gradient(180deg,rgba(28,42,36,.98) 0%,rgba(31,50,42,.94) 64%,rgba(31,50,42,.78) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1")!important;
+        background-size:cover,auto 42%!important;
+        background-position:center,calc(100% + 42px) bottom!important;
+      }
+      body.structure-layout .hero-inner,
+      body.structure-layout.streamlined-top .hero-inner{
+        width:calc(100% - 24px)!important;
+        max-width:calc(100% - 24px)!important;
+        display:block!important;
+      }
+      body.structure-layout .hero h1{
+        font-size:clamp(30px,8.4vw,38px)!important;
+        line-height:1.28!important;
+      }
+      body.structure-layout .hero .hero-lead,
+      body.structure-layout .hero p{
+        font-size:15px!important;
+        line-height:1.78!important;
+      }
+      body.structure-layout .hero-actions{
+        display:grid!important;
+        grid-template-columns:1fr!important;
+      }
+      body.structure-layout .hero-search-panel{
+        min-height:auto!important;
+        margin-top:22px!important;
+        padding:18px!important;
+      }
+      body.structure-layout .cv-proof-row{
+        grid-template-columns:1fr!important;
+      }
+      body.structure-layout .top-score-strip{
+        margin-top:0!important;
+      }
+    }
+  </style>
 </head>
 <body class="readable-refresh engagement-refresh less-copy streamlined-top cv-visual-refresh katachi-layout structure-layout">
   <header class="topbar">
@@ -638,10 +1245,10 @@
           <span class="pill">生前整理</span>
           <span class="pill">全国対応ガイド</span>
         </div>
-        <h1>遺品整理・生前整理の<br>見積もり先を<br>地域から探す。</h1>
-        <p class="hero-lead">料金相場、追加請求の注意点、貴重品探索、供養・買取、立会い不要対応まで。<span class="text-marker">相談前に確認すべきこと</span>を、都道府県・市区町村ごとに整理しています。</p>
-        <div class="hero-actions"><a class="btn primary" href="#prefectures">都道府県から探す</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn ghost" href="#vendor">悪徳業者の注意点</a></div>
-        <p class="hero-note">見積もり前に、荷物量・搬出経路・作業範囲・追加料金条件を確認して、失敗しにくい依頼先を選びましょう。</p>
+        <h1>実家の片付け、<br>ひとりで抱え込まない。</h1>
+        <p class="hero-lead">遺品整理・生前整理・実家じまいの料金、地域の注意点、悪徳業者の見分け方を相談前に確認できます。<span class="text-marker">作業場所から市区町村ページへ進めます</span>。</p>
+        <div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">業者選びを確認</a></div>
+        <p class="hero-note">急いで契約する前に、荷物量・搬出経路・退去期限・追加料金条件をそろえると、見積もりの失敗を減らせます。</p>
         <div class="trust-row">
           <span>料金相場</span>
           <span>地域別ガイド</span>
@@ -650,10 +1257,10 @@
           <span>立会い不要</span>
         </div>
         <div class="cv-proof-row" aria-label="安心材料">
-          <div><b>地域から探せる</b><span>都道府県・市区町村ごとの確認点へすぐ移動</span></div>
-          <div><b>料金を比較しやすい</b><span>間取り・荷物量・搬出条件ごとの見方を整理</span></div>
-          <div><b>業者選びで失敗しにくい</b><span>追加請求や書面なし契約の注意点を確認</span></div>
-          <div><b>遠方対応も確認</b><span>鍵預かり・写真報告・貴重品返送の流れを整理</span></div>
+          <div><b>地域からすぐ探せる</b><span>都道府県・市区町村ごとの注意点へ移動</span></div>
+          <div><b>料金の不安を減らす</b><span>間取り・荷物量・搬出条件ごとの見方を整理</span></div>
+          <div><b>追加請求を避ける</b><span>書面見積もり、許可、当日加算の確認点を整理</span></div>
+          <div><b>遠方家族も進めやすい</b><span>鍵預かり・写真報告・貴重品返送の流れを確認</span></div>
         </div>
       </div>
       <aside class="hero-search-panel" aria-label="すぐ確認する">
@@ -670,16 +1277,73 @@
     </div>
   </section>
 
+  <section class="top-score-strip" aria-label="最初に確認すること">
+    <div class="top-score-inner">
+      <a class="top-score-card primary" href="#prefectures"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
+      <a class="top-score-card" href="#price"><b>料金の目安を見る</b><span>間取り、荷物量、階段、供養、買取の条件を整理</span></a>
+      <a class="top-score-card" href="#flow"><b>相談前の準備をする</b><span>写真、退去期限、残す品、探す書類をメモ</span></a>
+      <a class="top-score-card" href="#vendor"><b>危ない業者を避ける</b><span>極端に安い見積もり、書面なし、即決要求を確認</span></a>
+    </div>
+  </section>
+
   <section class="trust-alert-hub" aria-label="違法業者への注意と安心材料">
     <div class="trust-alert-inner">
       <div class="trust-alert-card">
         <div>
-          <h2>不当請求・無許可業者に注意。見積もり前に確認を。</h2>
-          <p>極端に安い見積もり、書面なしの契約、当日の追加料金はトラブルにつながりやすいポイントです。相談前に、許可・買取体制・保険・写真報告の有無を確認できる状態にしておきましょう。</p>
+          <h2>安すぎる見積もり・当日追加請求に注意。</h2>
+          <p>「一式」「コミコミ」だけで決めると、当日に階段作業、家電リサイクル、車両追加、供養費が加算されることがあります。相談前に、書面見積もり、追加費用条件、買取査定、写真報告の有無を確認しましょう。</p>
         </div>
         <div class="trust-badges" aria-label="確認したい安心材料">
           <span>書面見積もり</span><span>追加費用条件</span><span>古物商許可</span><span>損害保険</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="top-visual-proof" aria-label="写真と料金で確認する">
+    <div class="top-visual-proof-inner">
+      <div class="top-visual-proof-head">
+        <h2>写真・料金・注意点を先に見て、依頼の不安を減らす。</h2>
+        <p>遺品整理は、片付け後の状態、費用の目安、危ない業者の見分け方を先に確認すると、相談がかなり楽になります。</p>
+      </div>
+      <div class="top-visual-grid">
+        <a class="top-visual-card" href="#before-after">
+          <div class="top-visual-media two-up">
+            <span class="top-visual-label">作業前後</span>
+            <img src="/assets/before-after/before-00.jpg" alt="遺品整理の作業前写真">
+            <img src="/assets/before-after/after-00.jpg" alt="遺品整理の作業後写真">
+          </div>
+          <div class="top-visual-body"><b>ビフォーアフターで片付け後を具体的に確認</b><span>部屋、収納、通路、家具搬出後の状態を写真で見て、作業後のイメージを持てます。</span></div>
+        </a>
+        <a class="top-visual-card price" href="#price">
+          <div class="top-visual-media">
+            <span class="top-visual-label">料金</span>
+            <img src="/assets/price-overview-bg.png?v=3" alt="遺品整理の料金目安を確認するイメージ">
+          </div>
+          <div class="top-visual-body"><b>間取りだけでなく追加条件まで料金を確認</b><span>階段作業、搬出距離、供養品、買取品の有無で金額が変わる理由を整理します。</span></div>
+        </a>
+        <a class="top-visual-card warning" href="#vendor">
+          <div class="top-visual-media">
+            <span class="top-visual-label">注意</span>
+            <img src="/assets/avoid-bad-vendors-banner.png?v=2" alt="悪質な遺品整理業者に注意する画像">
+          </div>
+          <div class="top-visual-body"><b>安すぎる見積もりと当日追加請求を避ける</b><span>書面なし、即決要求、説明のない追加費用など、契約前に見るべき点を確認できます。</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="strategy-strip" aria-label="データで見る整理相談の背景">
+    <div class="strategy-inner">
+      <div class="strategy-head">
+        <h2>数字で見る、遺品整理・生前整理を先延ばしにしない理由</h2>
+        <p>実家の片付けは、物量、時間、心理的負担、業者選びの不安が重なりやすい作業です。まずは全体像を知ることで、家族だけで抱え込むか、専門業者へ相談するかを判断しやすくなります。</p>
+      </div>
+      <div class="strategy-grid">
+        <div class="strategy-card"><b>生前整理の必要性</b><span><strong>約89.7%が必要性を実感。</strong>元気なうちに、銀行口座、家具、不動産、写真・手紙などを少しずつ確認しておくことが家族の負担軽減につながります。</span></div>
+        <div class="strategy-card"><b>荷物量の壁</b><span><strong>10箱以上が7割超。</strong>遺品整理では段ボール10箱以上の荷物になるケースが多く、大型家具・家電の搬出で手が止まりやすくなります。</span></div>
+        <div class="strategy-card"><b>追加請求の不安</b><span><strong>見積後の追加請求経験は約47.2%。</strong>安いパック料金だけで決めず、処分費、車両費、家電リサイクル、階段作業の条件を確認しましょう。</span></div>
+        <div class="strategy-card"><b>困る物の変化</b><span><strong>デジタル遺産も重要。</strong>スマホ、PC、ネット口座、サブスク、写真データなど、物理的な家財以外も整理対象として家族で共有しておくと安心です。</span></div>
       </div>
     </div>
   </section>
@@ -777,15 +1441,15 @@
             </select>
           </label>
           <div class="price-options" aria-label="追加条件">
-            <label><input type="checkbox" data-price-option value="10000">階段作業あり</label>
-            <label><input type="checkbox" data-price-option value="8000">搬出距離が長い</label>
-            <label><input type="checkbox" data-price-option value="5000">供養品あり</label>
+            <label><input type="checkbox" data-price-option value="10000" checked>階段作業あり</label>
+            <label><input type="checkbox" data-price-option value="8000" checked>搬出距離が長い</label>
+            <label><input type="checkbox" data-price-option value="5000" checked>供養品あり</label>
             <label><input type="checkbox" data-price-option value="-10000">買取できる品がある</label>
           </div>
         </div>
         <div class="price-sim-result" aria-live="polite">
           <span>概算目安</span>
-          <b data-price-result>30,000円〜</b>
+          <b data-price-result>43,000円〜</b>
           <p>荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
         </div>
       </div>
@@ -822,8 +1486,8 @@
       <section id="quick-start" class="engagement-panel quick-start" aria-label="30秒で入口を選ぶ">
         <div class="panel-heading">
           <span>START</span>
-          <h2>30秒で、読む場所を決める</h2>
-          <p>まずは状況から選べば大丈夫です。</p>
+          <h2>30秒で、相談前に見る場所を決める</h2>
+          <p>地域、料金、立会い不要、業者選びのどこから確認するかを選べます。</p>
         </div>
         <div class="quick-grid">
           <a id="case-inheritance" class="quick-card" href="#flow"><b>亡くなった後の整理</b><span>退去・形見分け・供養</span></a>
@@ -1073,7 +1737,37 @@
           <tr><td>2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類、共用部養生、搬出経路。</td></tr>
           <tr><td>3LDK</td><td>120,000円〜</td><td>形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
           <tr><td>戸建て・実家じまい</td><td>22万〜70万円以上</td><td>大型家具、物置、庭、仏壇供養、空き家・売却前整理。</td></tr>
-        </tbody></table></div>
+        </tbody></table>
+<div class="global-price-sim" data-global-price-sim style="margin-top:18px;padding:22px;border:1px solid #dfe6df;border-radius:10px;background:#fffdf7;box-shadow:0 10px 24px rgba(35,50,43,.06)">
+  <div style="display:grid;gap:6px;margin-bottom:16px">
+    <h3 style="margin:0;color:#28332e;font-size:22px;line-height:1.45">概算料金を先に確認する</h3>
+    <p style="margin:0;color:#4f5c55;font-size:15px;line-height:1.8">正確な金額は現地確認が必要ですが、相談前の不安を減らすために、おおよその目安を確認できます。</p>
+  </div>
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:16px" class="global-price-sim-grid">
+    <div style="display:grid;gap:12px">
+      <label style="display:grid;gap:6px;color:#28332e;font-weight:900">間取りを選ぶ
+        <select data-global-price-room style="min-height:48px;border:1px solid #cfe0d7;border-radius:6px;background:#fff;padding:0 12px;font:inherit;color:#28332e">
+          <option value="30000">1K・ワンルーム</option>
+          <option value="60000">1DK・1LDK</option>
+          <option value="100000">2DK・2LDK</option>
+          <option value="150000">3DK・3LDK</option>
+          <option value="220000">一戸建て・実家じまい</option>
+        </select>
+      </label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px" class="global-price-options">
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="10000" checked>階段作業あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="8000" checked>搬出距離が長い</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="5000" checked>供養品あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="-10000" checked>買取できる品がある</label>
+      </div>
+    </div>
+    <div style="display:grid;align-content:center;background:#eef8f2;border:1px solid #cfe8d8;border-radius:8px;padding:18px" aria-live="polite">
+      <span style="color:#4f5c55;font-size:14px;font-weight:900">概算目安</span>
+      <b data-global-price-result style="display:block;margin:5px 0;color:#d05300;font-size:30px;line-height:1.2">43,000円〜</b>
+      <p style="margin:0;color:#4f5c55;font-size:13px;line-height:1.7">荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
+    </div>
+  </div>
+</div></div>
         <div class="notice" style="margin-top:16px">料金は、<span class="text-marker">荷物量、階数、搬出経路、駐車位置</span>、買取の有無、供養品の量で変動します。見積もり時は、写真だけでなく「押入れ・物置・ベランダ・庭」も共有すると差が出にくくなります。</div>
       </section>
 
@@ -1138,13 +1832,21 @@
         <details><summary>買取や供養も相談できますか？</summary><p>家電、貴金属、時計、趣味用品と、供養したい仏壇、神棚、写真、人形を分けて伝えてください。</p></details>
       </section>
 
+      <section class="top-final-cta" aria-label="次に進む">
+        <div>
+          <b>まずは作業場所のページで、料金と注意点を確認しましょう。</b>
+          <span>都道府県・市区町村ページでは、住宅事情、搬出条件、行政窓口、見積もり前の確認事項を地域ごとに整理しています。</span>
+        </div>
+        <a href="#prefectures">地域から探す</a>
+      </section>
+
       <section class="section supervisor">
         <div class="supervisor-card"><div class="avatar">監</div><div><h2>監修者プロフィール</h2><p>家財整理における市場構造分析、優良業者の選定基準、消費者保護トラブル対策の観点から、相談前に確認したい情報を整理しています。</p></div></div>
       </section>
     </article>
   </main>
 
-  <div class="sticky-cta" aria-label="固定問い合わせ導線"><div class="sticky-cta-inner"><a class="tel" href="#prefectures">電話相談</a><a class="line" href="#price">LINE見積</a><a class="mail" href="#flow">メール相談</a></div></div>
+  <div class="sticky-cta" aria-label="固定ナビゲーション"><div class="sticky-cta-inner"><a class="tel" href="#prefectures">地域から探す</a><a class="line" href="#price">料金を見る</a><a class="mail" href="#flow">準備リスト</a></div></div>
   <script>
     (() => {
       const track = document.querySelector('[data-before-after-track]');
@@ -1232,8 +1934,28 @@
     });
   })();
 </script>
+<script id="global-price-sim-script">
+(() => {
+  const updateBox = (box) => {
+    const room = box.querySelector('[data-global-price-room]');
+    const result = box.querySelector('[data-global-price-result]');
+    if (!room || !result) return;
+    const options = Array.from(box.querySelectorAll('[data-global-price-option]'));
+    const update = () => {
+      const base = Number(room.value || 0);
+      const extra = options.reduce((sum, item) => sum + (item.checked ? Number(item.value || 0) : 0), 0);
+      result.textContent = Math.max(0, base + extra).toLocaleString('ja-JP') + '円〜';
+    };
+    room.addEventListener('change', update);
+    options.forEach((item) => item.addEventListener('change', update));
+    update();
+  };
+  document.querySelectorAll('[data-global-price-sim]').forEach(updateBox);
+})();
+</script>
 </body>
 </html>
+
 
 
 

@@ -220,6 +220,97 @@
     #sources{order:40!important}
     main.wrap>.toc,.toc,#trust,#avoid-bad-vendors,#nagano-consult-patterns,#nagano-price-factors,#service,#items,#compare{order:41!important}
   </style>
+  <style id="mobile-hero-safety-v1">
+    @media (max-width: 820px) {
+      html, body { overflow-x: hidden; }
+      .hero, .hero.osaka-hero, .hero.sakai-hero {
+        background-image:
+          linear-gradient(180deg, rgba(35,42,37,.98) 0%, rgba(35,42,37,.94) 54%, rgba(35,42,37,.84) 78%, rgba(35,42,37,.68) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1") !important;
+        background-size: cover, auto 44% !important;
+        background-position: center, calc(100% + 34px) bottom !important;
+        background-repeat: no-repeat !important;
+      }
+      .hero .hero-inner, .hero.osaka-hero .hero-inner, .hero.sakai-hero .hero-inner {
+        width: min(calc(100% - 24px), 366px) !important;
+        max-width: min(calc(100% - 24px), 366px) !important;
+        min-height: auto !important;
+        display: block !important;
+        margin: 0 12px !important;
+        padding: 28px 0 34px !important;
+      }
+      .hero .hero-inner > div:first-child, .hero.osaka-hero .hero-inner > div:first-child, .hero.sakai-hero .hero-inner > div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .hero .eyebrow, .hero.osaka-hero .eyebrow, .hero.sakai-hero .eyebrow {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+        line-height: 1.6 !important;
+      }
+      .hero h1, .hero.osaka-hero h1, .hero.sakai-hero h1 {
+        max-width: 100% !important;
+        margin-bottom: 14px !important;
+        font-size: clamp(25px, 7.2vw, 30px) !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+        word-break: break-all !important;
+        overflow-wrap: anywhere !important;
+        text-shadow: 0 3px 16px rgba(0,0,0,.45) !important;
+      }
+      .hero h1::after, .hero.osaka-hero h1::after, .hero.sakai-hero h1::after {
+        width: 128px !important;
+        height: 4px !important;
+        margin-top: 12px !important;
+      }
+      .hero p, .hero .hero-lead, .hero.osaka-hero p, .hero.sakai-hero p {
+        max-width: 100% !important;
+        margin-bottom: 16px !important;
+        font-size: 15px !important;
+        line-height: 1.78 !important;
+        word-break: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+      .hero .hero-highlights, .hero .hero-badges {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+      }
+      .hero .hero-highlights span, .hero .badge {
+        width: auto !important;
+        min-height: 42px !important;
+        padding: 8px 9px !important;
+        background: rgba(255,255,255,.16) !important;
+        border: 1px solid rgba(255,255,255,.34) !important;
+        color: #fff !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
+        box-shadow: none !important;
+      }
+      .hero .hero-actions {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin-top: 18px !important;
+      }
+      .hero .btn {
+        width: 100% !important;
+        min-height: 48px !important;
+        padding: 8px 10px !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+      }
+      .hero .hero-panel {
+        margin-top: 20px !important;
+        padding: 16px !important;
+        background: rgba(255,255,255,.97) !important;
+      }
+      .hero .hero-panel h2 { margin-bottom: 10px !important; font-size: 18px !important; }
+      .hero .hero-panel li { font-size: 14px !important; line-height: 1.75 !important; }
+    }
+  </style>
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">鳥取県の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">市町村別の相談前情報を確認</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#municipalities">市町村</a><a href="#data">統計データ</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
@@ -264,7 +355,7 @@
 </section>
 <section id="pref-impact" class="section">
         <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
-        <p class="lead">鳥取県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。数字で見ると、プロに相談する理由がはっきりします。</p>
+        <p class="lead">鳥取県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、プロに相談する理由がはっきりします。</span></p>
 
         <div class="grid cols4 metric-grid">
           <div class="card stat-card metric-card impact-card"><span class="metric-label">3LDK一軒家</span><b>1.5〜3トン</b><p class="metric-note">長年住んだ実家では、不用品がトラック3〜5台分になることがあります。</p><span class="metric-sub">家具・布団・家電・物置まで含めて確認</span></div>
@@ -338,6 +429,7 @@
 </script>
 </body>
 </html>
+
 
 
 

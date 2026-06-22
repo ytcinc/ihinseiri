@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -261,6 +261,245 @@
     #sources{order:40!important}
     main.wrap>.toc,.toc,#trust,#avoid-bad-vendors,#nagano-consult-patterns,#nagano-price-factors,#service,#items,#compare{order:41!important}
   </style>
+  <style id="mobile-hero-safety-v1">
+    @media (max-width: 820px) {
+      html, body { overflow-x: hidden; }
+      .hero, .hero.osaka-hero, .hero.sakai-hero {
+        background-image:
+          linear-gradient(180deg, rgba(35,42,37,.98) 0%, rgba(35,42,37,.94) 54%, rgba(35,42,37,.84) 78%, rgba(35,42,37,.68) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1") !important;
+        background-size: cover, auto 44% !important;
+        background-position: center, calc(100% + 34px) bottom !important;
+        background-repeat: no-repeat !important;
+      }
+      .hero .hero-inner, .hero.osaka-hero .hero-inner, .hero.sakai-hero .hero-inner {
+        width: min(calc(100% - 24px), 366px) !important;
+        max-width: min(calc(100% - 24px), 366px) !important;
+        min-height: auto !important;
+        display: block !important;
+        margin: 0 12px !important;
+        padding: 28px 0 34px !important;
+      }
+      .hero .hero-inner > div:first-child, .hero.osaka-hero .hero-inner > div:first-child, .hero.sakai-hero .hero-inner > div:first-child {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .hero .eyebrow, .hero.osaka-hero .eyebrow, .hero.sakai-hero .eyebrow {
+        margin-bottom: 12px !important;
+        font-size: 12px !important;
+        line-height: 1.6 !important;
+      }
+      .hero h1, .hero.osaka-hero h1, .hero.sakai-hero h1 {
+        max-width: 100% !important;
+        margin-bottom: 14px !important;
+        font-size: clamp(25px, 7.2vw, 30px) !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+        word-break: break-all !important;
+        overflow-wrap: anywhere !important;
+        text-shadow: 0 3px 16px rgba(0,0,0,.45) !important;
+      }
+      .hero h1::after, .hero.osaka-hero h1::after, .hero.sakai-hero h1::after {
+        width: 128px !important;
+        height: 4px !important;
+        margin-top: 12px !important;
+      }
+      .hero p, .hero .hero-lead, .hero.osaka-hero p, .hero.sakai-hero p {
+        max-width: 100% !important;
+        margin-bottom: 16px !important;
+        font-size: 15px !important;
+        line-height: 1.78 !important;
+        word-break: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+      .hero .hero-highlights, .hero .hero-badges {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+      }
+      .hero .hero-highlights span, .hero .badge {
+        width: auto !important;
+        min-height: 42px !important;
+        padding: 8px 9px !important;
+        background: rgba(255,255,255,.16) !important;
+        border: 1px solid rgba(255,255,255,.34) !important;
+        color: #fff !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+        text-align: center !important;
+        box-shadow: none !important;
+      }
+      .hero .hero-actions {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin-top: 18px !important;
+      }
+      .hero .btn {
+        width: 100% !important;
+        min-height: 48px !important;
+        padding: 8px 10px !important;
+        text-align: center !important;
+        line-height: 1.45 !important;
+      }
+      .hero .hero-panel {
+        margin-top: 20px !important;
+        padding: 16px !important;
+        background: rgba(255,255,255,.97) !important;
+      }
+      .hero .hero-panel h2 { margin-bottom: 10px !important; font-size: 18px !important; }
+      .hero .hero-panel li { font-size: 14px !important; line-height: 1.75 !important; }
+    }
+  </style>
+<style id="global-price-sim-style">
+  @media(max-width:820px){
+    .global-price-sim{padding:18px!important;margin-top:16px!important}
+    .global-price-sim-grid{grid-template-columns:1fr!important;gap:12px!important}
+    .global-price-options{grid-template-columns:1fr!important}
+    .global-price-sim [data-global-price-result]{font-size:26px!important}
+  }
+</style>
+
+<style id="kansai-prefecture-100-style">
+  .prefecture-100-boost{width:min(1160px,calc(100% - 28px));margin:-26px auto 34px;position:relative;z-index:6}
+  .prefecture-100-panel{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(330px,.95fr);gap:22px;align-items:stretch;background:#fff;border:1px solid #e4ded3;box-shadow:0 18px 44px rgba(34,28,22,.12);padding:24px;overflow:hidden}
+  .prefecture-100-copy{display:grid;align-content:center;gap:14px}
+  .prefecture-100-copy h2{margin:0;color:#28332e;font-size:28px;line-height:1.45;letter-spacing:0}
+  .prefecture-100-copy p{margin:0;color:#4f5c55;font-size:16px;line-height:1.86;font-weight:700}
+  .prefecture-100-copy .prefecture-100-note{padding:14px 16px;background:#fff8ea;border:1px solid #ead8b7;color:#5b4630}
+  .prefecture-100-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:4px}
+  .prefecture-100-actions a{display:grid;align-content:center;min-height:76px;padding:12px;border:1px solid #dfe6df;background:#f8fbf9;color:#24483f;text-decoration:none;font-size:14px;font-weight:900;line-height:1.45}
+  .prefecture-100-actions a:first-child{background:#2f6f63;border-color:#2f6f63;color:#fff}
+  .prefecture-100-actions a:hover{text-decoration:none;transform:translateY(-1px);box-shadow:0 10px 22px rgba(35,50,43,.12)}
+  .prefecture-100-visual{position:relative;min-height:320px;background:#f3f0ea;overflow:hidden}
+  .prefecture-100-visual img{display:block;width:100%;height:100%;min-height:320px;object-fit:cover}
+  .prefecture-100-badges{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .prefecture-100-badges span{display:inline-flex;align-items:center;min-height:31px;padding:0 10px;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.75);color:#24302b;border-radius:999px;font-size:13px;font-weight:900;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+  @media(max-width:820px){
+    .prefecture-100-boost{width:calc(100% - 24px);margin:18px auto 24px}
+    .prefecture-100-panel{grid-template-columns:1fr;padding:18px;gap:16px}
+    .prefecture-100-copy h2{font-size:23px}
+    .prefecture-100-actions{grid-template-columns:1fr 1fr}
+    .prefecture-100-actions a{min-height:58px}
+    .prefecture-100-visual,.prefecture-100-visual img{min-height:210px}
+  }
+</style>
+
+
+<style id="kansai-prefecture-visual-proof-style">
+  .kansai-visual-proof{
+    width:min(1180px,calc(100% - 28px));
+    margin:30px auto 38px;
+  }
+  .kansai-visual-proof-inner{
+    background:#f6f7f2;
+    border:1px solid #e4ded3;
+    border-radius:12px;
+    padding:24px;
+    box-shadow:0 16px 38px rgba(39,55,47,.08);
+  }
+  .kansai-visual-proof-head{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(280px,.42fr);
+    gap:22px;
+    align-items:end;
+    margin:0 0 18px;
+  }
+  .kansai-visual-proof-head h2{
+    margin:0;
+    color:#28332e;
+    font-size:30px;
+    line-height:1.45;
+    letter-spacing:0;
+  }
+  .kansai-visual-proof-head p{
+    margin:0;
+    color:#4f5c55;
+    font-size:15px;
+    line-height:1.85;
+    font-weight:700;
+  }
+  .kansai-visual-grid{
+    display:grid;
+    grid-template-columns:1.1fr .95fr .95fr;
+    gap:16px;
+  }
+  .kansai-visual-card{
+    overflow:hidden;
+    background:#fff;
+    border:1px solid #dfe6df;
+    border-radius:12px;
+    box-shadow:0 14px 34px rgba(39,55,47,.10);
+    color:#28332e;
+    text-decoration:none;
+  }
+  .kansai-visual-card:hover{
+    text-decoration:none;
+    transform:translateY(-2px);
+    box-shadow:0 22px 48px rgba(39,55,47,.16);
+  }
+  .kansai-visual-media{
+    position:relative;
+    min-height:184px;
+    background:#f7f3e7;
+    overflow:hidden;
+  }
+  .kansai-visual-media img{
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:184px;
+    object-fit:cover;
+  }
+  .kansai-visual-media.two-up{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    background:#e8efe9;
+  }
+  .kansai-visual-label{
+    position:absolute;
+    left:12px;
+    top:12px;
+    z-index:2;
+    display:inline-grid;
+    place-items:center;
+    min-height:30px;
+    padding:0 10px;
+    background:rgba(36,72,63,.94);
+    color:#fff;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:900;
+  }
+  .kansai-visual-body{padding:18px}
+  .kansai-visual-body b{
+    display:block;
+    color:#225346;
+    font-size:19px;
+    line-height:1.45;
+  }
+  .kansai-visual-body span{
+    display:block;
+    margin-top:6px;
+    color:#56635d;
+    font-size:14px;
+    line-height:1.7;
+    font-weight:700;
+  }
+  .kansai-visual-card.warning .kansai-visual-body b{color:#9f3e00}
+  .kansai-visual-card.price .kansai-visual-media img{object-position:center}
+  @media(max-width:900px){
+    .kansai-visual-proof{width:calc(100% - 20px);margin:24px auto 28px}
+    .kansai-visual-proof-inner{padding:17px;border-radius:10px}
+    .kansai-visual-proof-head{grid-template-columns:1fr;gap:8px}
+    .kansai-visual-proof-head h2{font-size:24px}
+    .kansai-visual-grid{grid-template-columns:1fr;gap:12px}
+    .kansai-visual-media,.kansai-visual-media img{min-height:170px}
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -291,16 +530,48 @@
   </section>
 
   <main class="wrap">
+
+    <section class="kansai-visual-proof" aria-label="和歌山県で写真と料金を確認する">
+      <div class="kansai-visual-proof-inner">
+        <div class="kansai-visual-proof-head">
+          <h2>写真・料金・注意点を先に見て、依頼の不安を減らす。</h2>
+          <p>和歌山県で遺品整理・生前整理を検討するときは、片付け後の状態、費用の目安、危ない業者の見分け方を先に確認すると、相談がかなり楽になります。</p>
+        </div>
+        <div class="kansai-visual-grid">
+          <a class="kansai-visual-card" href="#kita-before-after-cases">
+            <div class="kansai-visual-media two-up">
+              <span class="kansai-visual-label">作業前後</span>
+              <img src="/assets/before-after/before-00.jpg" alt="和歌山県の遺品整理の作業前写真">
+              <img src="/assets/before-after/after-00.jpg" alt="和歌山県の遺品整理の作業後写真">
+            </div>
+            <div class="kansai-visual-body"><b>ビフォーアフターで片付け後を具体的に確認</b><span>部屋、収納、通路、家具搬出後の状態を写真で見て、作業後のイメージを持てます。</span></div>
+          </a>
+          <a class="kansai-visual-card price" href="#price">
+            <div class="kansai-visual-media">
+              <span class="kansai-visual-label">料金</span>
+              <img src="/assets/price-overview-bg.png?v=3" alt="和歌山県の遺品整理の料金目安を確認するイメージ">
+            </div>
+            <div class="kansai-visual-body"><b>間取りだけでなく追加条件まで料金を確認</b><span>階段作業、搬出距離、供養品、買取品の有無で金額が変わる理由を整理します。</span></div>
+          </a>
+          <a class="kansai-visual-card warning" href="#vendor">
+            <div class="kansai-visual-media">
+              <span class="kansai-visual-label">注意</span>
+              <img src="/assets/avoid-bad-vendors-banner.png?v=2" alt="和歌山県で悪質な遺品整理業者に注意する画像">
+            </div>
+            <div class="kansai-visual-body"><b>安すぎる見積もりと当日追加請求を避ける</b><span>書面なし、即決要求、説明のない追加費用など、契約前に見るべき点を確認できます。</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
 <section id="area-keyword-guide" class="section area-keyword-guide">
-  <h2 class="section-title">和歌山県の で遺品整理・生前整理・実家じまいを検討している方へ</h2>
-  <p class="lead">和歌山県のの遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。和歌山県の で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。和歌山県の で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
+  <h2 class="section-title">和歌山県で遺品整理・生前整理・実家じまいを検討している方へ</h2>
+  <p class="lead">和歌山県の遺品整理は、室内の家財を片付けるだけでなく、空き家化した実家、納屋、倉庫、農機具、農薬、仏壇・神棚の供養まで同時に考える必要があります。持ち家の一戸建てが多く、退去期限がない分だけ先延ばしになりやすいため、売却・解体・相続手続きの前に作業範囲を整理しておくことが大切です。</p>
   <div class="faq area-keyword-details">
-    <details><summary>和歌山県のの遺品整理</summary><p>通帳、印鑑、権利書、写真、手紙、貴金属などを探しながら、残す物・処分する物・供養する物を分けます。遠方のご家族は写真報告や鍵預かりの可否も確認しましょう。</p></details>
-    <details><summary>和歌山県のの生前整理</summary><p>施設入居、介護、住み替え、空き家化の前に、生活動線を確保しながら家財量を減らします。買取できる品や思い出の品を早めに分けると、ご本人と家族の負担を抑えやすくなります。</p></details>
-    <details><summary>和歌山県のの実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
+    <details><summary>和歌山県の遺品整理</summary><p>通帳、印鑑、権利書、保険証券、写真、手紙、貴金属などを探しながら、残す物・処分する物・供養する物を分けます。母屋だけでなく、納屋、物置、庭、車庫、農機具、農薬の有無も見積もり前に確認します。</p></details>
+    <details><summary>和歌山県の生前整理</summary><p>高齢化率が高く、ひとり暮らしの高齢者も多い地域です。転倒や孤立死、空き家化を防ぐため、玄関、廊下、寝室、水回りの動線を確保し、重要書類と鍵の保管先を家族で共有しておきます。</p></details>
+    <details><summary>和歌山県の実家じまい</summary><p>売却、解体、空き家管理の前に、家財、仏壇、農機具、農薬、庭木、物置、権利書を確認します。巨大な仏壇や遺影は、高野山での供養・お焚き上げを含めて相談できるか確認すると安心です。</p></details>
   </div>
 </section>
-
     <section id="municipalities" class="section">
       <h2 class="section-title">和歌山県内の市町村から探す</h2>
       <p class="lead">作業場所に近い市町村ページを選ぶと、住宅特性、搬出時の注意点、行政窓口、見積もり前に確認したいことを確認できます。</p>
@@ -313,62 +584,82 @@
 
     <section id="wakayama-data" class="section">
       <h2 class="section-title">データで見る和歌山県の遺品整理・生前整理</h2>
-      <p class="lead">和歌山県は、大阪府のような共同住宅中心の都市型ではなく、<span class="marker">一戸建て・持ち家・広い家財量・若年層の転出</span>が重なりやすい地域です。数字を見ると、実家じまい、空き家整理、遠方家族の立会い不要対応が重要になる理由が分かります。</p>
+      <p class="lead">和歌山県は、大阪府のような都市部マンション型ではなく、<span class="marker">一戸建て実家・納屋・農機具・仏壇・全国トップ級の空き家率</span>が重なりやすい地域です。料金表を見る前に、空き家化、物量、農薬処分、供養、遠方家族の立会い不要対応を確認しておくと、見積もりの判断がしやすくなります。</p>
 
       <div class="grid cols4 metric-grid">
-        <div class="card stat-card metric-card"><span class="metric-label">推計人口</span><b>86.0万人</b><p class="metric-note">令和8年5月1日現在の和歌山県人口の目安です。</p><span class="metric-sub">大阪の約10分の1でも整理需要の密度が高い</span></div>
-        <div class="card stat-card metric-card"><span class="metric-label">年間死亡数</span><b>14,326人</b><p class="metric-note">令和7年速報値の死亡数。遺品整理の基礎需要です。</p><span class="metric-sub">人口規模に対して発生確率が高い</span></div>
-        <div class="card stat-card metric-card"><span class="metric-label">一戸建て率</span><b>74.8%</b><p class="metric-note">居住世帯のある住宅では一戸建てが主流です。</p><span class="metric-sub">納戸・屋根裏・庭・物置まで確認</span></div>
-        <div class="card stat-card metric-card"><span class="metric-label">持ち家率</span><b>73.8%</b><p class="metric-note">退去期限がない一方、家財が長年蓄積しやすい住宅特性です。</p><span class="metric-sub">相続・売却前の資産整理として考える</span></div>
+        <div class="card stat-card metric-card"><span class="metric-label">推計人口</span><b>85.6万人</b><p class="metric-note">2026年6月1日時点の推計人口は855,971人です。</p><span class="metric-sub">県外家族が実家整理を担うケースが増加</span></div>
+        <div class="card stat-card metric-card"><span class="metric-label">年間死亡数</span><b>14,586人</b><p class="metric-note">2024年の死亡数。毎年1.4万件規模の相続・整理需要があります。</p><span class="metric-sub">遺品整理・相続後整理の発生母数</span></div>
+        <div class="card stat-card metric-card"><span class="metric-label">高齢化率</span><b>33.9%</b><p class="metric-note">2025年時点。近畿圏1位、全国でも高い水準です。</p><span class="metric-sub">地域の片付け担い手不足につながる</span></div>
+        <div class="card stat-card metric-card"><span class="metric-label">空き家率</span><b>21.25%</b><p class="metric-note">令和5年住宅・土地統計調査。全国平均13.8%を大きく上回ります。</p><span class="metric-sub">5軒に1軒以上が空き家という重い課題</span></div>
       </div>
 
       <div class="grid cols4" style="margin-top:16px">
-        <div class="card stat-card"><b>39.6万世帯</b><span>令和8年5月1日現在の推計世帯数。実家整理の意思決定主体になります。</span></div>
-        <div class="card stat-card"><b>49.6万戸</b><span>令和5年住宅・土地統計調査の総住宅数。住宅ストックの規模です。</span></div>
-        <div class="card stat-card"><b>16.6</b><span>人口千対の簡易死亡率。大阪府の約11.4を大きく上回ります。</span></div>
-        <div class="card stat-card"><b>1,769人減</b><span>令和7年4月公表値の社会増減。若年層の転出が遠方整理につながります。</span></div>
+        <div class="card stat-card"><b>105,300戸</b><span>空き家数。総住宅数495,600戸のうち、家財が残ったまま放置される実家が問題になりやすい。</span></div>
+        <div class="card stat-card"><b>96,012人</b><span>65歳以上のひとり暮らし高齢者。高齢者人口の31.4%規模です。</span></div>
+        <div class="card stat-card"><b>54.6%</b><span>古座川町の高齢化率。九度山町も50.3%で、地域差が大きい。</span></div>
+        <div class="card stat-card"><b>43.21%</b><span>白浜町の空き家率。別荘・空き家・管理不全住宅の確認が必要です。</span></div>
       </div>
 
-      <div class="notice" style="margin-top:16px"><b>和歌山県の整理相談で最初に見たい数字</b><br>和歌山県は<span class="marker">一戸建て率74.8%、持ち家率73.8%、共同住宅率22.3%、平均居住室数5.01室</span>という特徴があります。マンション退去のスピードよりも、広い戸建てに蓄積した家財、納戸・屋根裏・庭先の物置、遠方家族の鍵預かり、売却前・解体前整理を確認することが重要です。</div>
+      <div class="notice" style="margin-top:16px"><b>和歌山県で早めに生前整理を考える理由</b><br>和歌山県は<span class="marker">空き家率21.25%、高齢化率33.9%、高齢者ひとり暮らし96,012人</span>という背景があります。持ち家の一戸建ては家賃が発生しないため片付けを先延ばしにしがちですが、台風・多雨・湿気で木造空き家の劣化が進むと、残置物処分だけでなく解体費用や特殊清掃まで負担が膨らみます。</div>
 
       <div class="grid cols2" style="margin-top:16px">
         <div class="chart-box">
-          <h3>大阪府と和歌山県の基礎需要比較</h3>
-          <span class="compare-note">簡易死亡率（人口千対）</span>
-          <div class="bar-row"><span>和歌山県</span><div class="bar-track"><div class="bar-fill" style="width:83%"></div></div><b>約16.6</b></div>
-          <div class="bar-row"><span>大阪府</span><div class="bar-track"><div class="bar-fill blue" style="width:57%"></div></div><b>約11.4</b></div>
-          <span class="compare-note">社会増減</span>
-          <div class="bar-row"><span>和歌山県</span><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><b>1,769人減</b></div>
-          <div class="bar-row"><span>大阪府</span><div class="bar-track"><div class="bar-fill green" style="width:88%"></div></div><b>14,770人増</b></div>
-          <p>和歌山県は人口規模は小さくても死亡発生率が高く、若年層の転出により、遠方家族が実家整理を判断する場面が起きやすい地域です。</p>
+          <h3>和歌山県と全国平均の比較</h3>
+          <span class="compare-note">空き家率</span>
+          <div class="bar-row"><span>和歌山県</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>21.25%</b></div>
+          <div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill blue" style="width:65%"></div></div><b>13.8%</b></div>
+          <span class="compare-note">高齢化率</span>
+          <div class="bar-row"><span>和歌山県</span><div class="bar-track"><div class="bar-fill green" style="width:84.8%"></div></div><b>33.9%</b></div>
+          <div class="bar-row"><span>全国</span><div class="bar-track"><div class="bar-fill blue" style="width:72.5%"></div></div><b>約29%</b></div>
+          <span class="compare-note">高齢者の独居率</span>
+          <div class="bar-row"><span>和歌山県</span><div class="bar-track"><div class="bar-fill" style="width:83%"></div></div><b>24.9%</b></div>
+          <div class="bar-row"><span>全国</span><div class="bar-track"><div class="bar-fill blue" style="width:63%"></div></div><b>約19%</b></div>
+          <p>和歌山県は、空き家化と高齢単身化が同時に進みやすく、親が亡くなってからゼロから片付けると負担が大きくなります。</p>
         </div>
         <div class="chart-box">
           <h3>住宅特性から見る見積もり注意点</h3>
           <div class="bar-row"><span>一戸建て率</span><div class="bar-track"><div class="bar-fill green" style="width:74.8%"></div></div><b>74.8%</b></div>
           <div class="bar-row"><span>持ち家率</span><div class="bar-track"><div class="bar-fill green" style="width:73.8%"></div></div><b>73.8%</b></div>
           <div class="bar-row"><span>共同住宅率</span><div class="bar-track"><div class="bar-fill blue" style="width:22.3%"></div></div><b>22.3%</b></div>
-          <div class="bar-row"><span>平均居住室数</span><div class="bar-track"><div class="bar-fill" style="width:83.5%"></div></div><b>5.01室</b></div>
-          <p>和歌山県では<span class="marker">タンス、大型家具、古い家電、農機具、庭先の物置</span>まで含めた家財量の確認が見積もりの精度に直結します。</p>
+          <div class="bar-row"><span>居住室数</span><div class="bar-track"><div class="bar-fill" style="width:83.5%"></div></div><b>5.01室</b></div>
+          <p>マンションの退去期限より、母屋、納屋、倉庫、庭、農機具、仏壇まで含めた<span class="marker">敷地全体の物量</span>が費用に影響します。</p>
+        </div>
+      </div>
+
+      <div class="grid cols2" style="margin-top:16px">
+        <div class="chart-box">
+          <h3>放置空き家になりやすい地域指標</h3>
+          <div class="bar-row"><span>白浜町</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>43.21%</b></div>
+          <div class="bar-row"><span>かつらぎ町</span><div class="bar-track"><div class="bar-fill green" style="width:43%"></div></div><b>18.66%</b></div>
+          <div class="bar-row"><span>有田川町</span><div class="bar-track"><div class="bar-fill green" style="width:41%"></div></div><b>17.61%</b></div>
+          <div class="bar-row"><span>新宮市</span><div class="bar-track"><div class="bar-fill green" style="width:36%"></div></div><b>15.69%</b></div>
+          <p>白浜町は空き家率、かつらぎ町・有田川町・新宮市は放置空き家率の高さが目立ちます。売却・解体前には、残置物撤去、権利書探索、庭木・物置の確認を先に進めましょう。</p>
+        </div>
+        <div class="chart-box">
+          <h3>農家住宅・仏壇で確認したいこと</h3>
+          <div class="risk-list">
+            <div><b>納屋・倉庫</b><br>みかん箱、農業資材、肥料袋、防鳥ネット、古い工具が母屋以上の物量になることがあります。</div>
+            <div><b>農機具・農薬</b><br>農薬や薬品類は自治体の通常ごみで出せません。購入元、JA、専門処理業者への確認が必要です。</div>
+            <div><b>仏壇・高野山供養</b><br>大型仏壇、遺影、神棚は、菩提寺への確認や高野山でのお焚き上げ供養も含めて相談しましょう。</div>
+          </div>
         </div>
       </div>
 
       <table class="price-table" style="margin-top:16px">
-        <thead><tr><th>比較項目</th><th>和歌山県</th><th>大阪府</th><th>遺品整理・生前整理で見たいこと</th></tr></thead>
+        <thead><tr><th>比較項目</th><th>全国</th><th>和歌山県</th><th>遺品整理・生前整理での意味</th></tr></thead>
         <tbody>
-          <tr><td>推計人口</td><td>86.0万人</td><td>877.6万人</td><td>人口規模は小さくても、死亡発生率が高く地域課題として身近です。</td></tr>
-          <tr><td>年間死亡数</td><td>14,326人</td><td>約10万人</td><td>毎年一定数の遺品整理が発生します。遠方家族は早めに相談先を決めたい。</td></tr>
-          <tr><td>簡易死亡率</td><td>約16.6</td><td>約11.4</td><td>人口に対する遺品整理の発生確率が高い地域です。</td></tr>
-          <tr><td>一戸建て率</td><td>74.8%</td><td>共同住宅率57.4%</td><td><span class="marker">納戸、屋根裏、庭、物置、農機具、大型家具</span>まで含めて確認。</td></tr>
-          <tr><td>持ち家率</td><td>73.8%</td><td>賃貸比率が高い</td><td>退去期限がないため先延ばしになりやすく、空き家化する前の整理が重要です。</td></tr>
-          <tr><td>社会増減</td><td>1,769人減</td><td>14,770人増</td><td>子世代が京阪神へ移り、和歌山の実家を遠方から整理する相談につながります。</td></tr>
+          <tr><td>空き家率</td><td>13.8%</td><td>21.25%</td><td><span class="marker">全国トップ級。相続後の放置を防ぐため、早期の家財整理と売却・解体判断が必要。</span></td></tr>
+          <tr><td>高齢化率</td><td>約29%</td><td>33.9%</td><td>親世代だけでなく地域も高齢化し、近隣互助で片付けることが難しくなりやすい。</td></tr>
+          <tr><td>高齢者の独居率</td><td>約19%</td><td>24.9%</td><td>孤立死・特殊清掃リスクを考え、鍵、緊急連絡先、通路確保を生前に共有したい。</td></tr>
+          <tr><td>住宅の建て方</td><td>共同住宅が多い都市部も多い</td><td>一戸建て・持ち家が多い</td><td>納屋、倉庫、農機具、農薬、庭木、仏壇まで含めた見積もりが重要。</td></tr>
+          <tr><td>年間死亡数</td><td>1,576,016人</td><td>14,586人</td><td>県内で毎年1.4万件規模の相続・遺品整理の潜在ニーズが発生します。</td></tr>
         </tbody>
       </table>
-      <p class="source-note">参考データ：添付Excel「大阪府と和歌山県における遺品整理・生前整理需要の構造比較分析」、令和5年住宅・土地統計調査等に関する記載をもとに作成。</p>
+      <p class="source-note">参考データ：添付資料「データで見る和歌山県の遺品整理・生前整理」、令和5年住宅・土地統計調査、和歌山県推計人口等の記載をもとに作成。</p>
     </section>
-
     <section id="wakayama-impact" class="section">
       <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
-      <p class="lead">和歌山県で遺品整理・生前整理を考えるときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。数字で見ると、実家の片付けを早めに相談する理由が分かります。</p>
+      <p class="lead">和歌山県で遺品整理・生前整理を考えるときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、実家の片付けを早めに相談する理由が分かります。</span></p>
       <div class="grid cols4 metric-grid">
         <div class="card stat-card metric-card impact-card"><span class="metric-label">3LDK一軒家</span><b>1.5〜3トン</b><p class="metric-note">長年住んだ実家では、不用品がトラック3〜5台分になることがあります。</p><span class="metric-sub">家具・布団・家電・物置まで含めて確認</span></div>
         <div class="card stat-card metric-card impact-card"><span class="metric-label">2DKでも</span><b>10〜15m³</b><p class="metric-note">袋ごみだけでは収まりにくく、分別・搬出・車両手配が必要になりやすい量です。</p><span class="metric-sub">退去期限がある部屋は早めに荷物量確認</span></div>
@@ -435,7 +726,8 @@
       <article class="common-ba-card"><h3>和歌山県の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="和歌山県の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="和歌山県の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>和歌山県の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
     </div>
   </div>
-</section>`r`n<section id="price" class="section">
+</section>
+<section id="price" class="section">
       <h2 class="section-title">和歌山県の料金目安</h2>
       <table class="price-table">
         <thead><tr><th>間取り</th><th>料金目安</th><th>確認したい作業</th></tr></thead>
@@ -446,6 +738,36 @@
           <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、納戸、屋根裏、庭、物置、農機具、仏壇供養、空き家整理。</td></tr>
         </tbody>
       </table>
+<div class="global-price-sim" data-global-price-sim style="margin-top:18px;padding:22px;border:1px solid #dfe6df;border-radius:10px;background:#fffdf7;box-shadow:0 10px 24px rgba(35,50,43,.06)">
+  <div style="display:grid;gap:6px;margin-bottom:16px">
+    <h3 style="margin:0;color:#28332e;font-size:22px;line-height:1.45">概算料金を先に確認する</h3>
+    <p style="margin:0;color:#4f5c55;font-size:15px;line-height:1.8">正確な金額は現地確認が必要ですが、相談前の不安を減らすために、おおよその目安を確認できます。</p>
+  </div>
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:16px" class="global-price-sim-grid">
+    <div style="display:grid;gap:12px">
+      <label style="display:grid;gap:6px;color:#28332e;font-weight:900">間取りを選ぶ
+        <select data-global-price-room style="min-height:48px;border:1px solid #cfe0d7;border-radius:6px;background:#fff;padding:0 12px;font:inherit;color:#28332e">
+          <option value="30000">1K・ワンルーム</option>
+          <option value="60000">1DK・1LDK</option>
+          <option value="100000">2DK・2LDK</option>
+          <option value="150000">3DK・3LDK</option>
+          <option value="220000">一戸建て・実家じまい</option>
+        </select>
+      </label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px" class="global-price-options">
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="10000" checked>階段作業あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="8000" checked>搬出距離が長い</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="5000" checked>供養品あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="-10000" checked>買取できる品がある</label>
+      </div>
+    </div>
+    <div style="display:grid;align-content:center;background:#eef8f2;border:1px solid #cfe8d8;border-radius:8px;padding:18px" aria-live="polite">
+      <span style="color:#4f5c55;font-size:14px;font-weight:900">概算目安</span>
+      <b data-global-price-result style="display:block;margin:5px 0;color:#d05300;font-size:30px;line-height:1.2">43,000円〜</b>
+      <p style="margin:0;color:#4f5c55;font-size:13px;line-height:1.7">荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
+    </div>
+  </div>
+</div>
       <div class="notice" style="margin-top:16px">料金は荷物量、階数、車両位置、搬出距離、買取できる品の有無、供養品の扱いで変わります。和歌山県では戸建て・持ち家の外回りに家財が残っていることも多いため、室内だけでなく納戸・屋根裏・庭・物置の写真も共有しておくと見積もりがぶれにくくなります。</div>
     </section>
 
@@ -481,8 +803,31 @@
     });
   })();
 </script>
+<script id="global-price-sim-script">
+(() => {
+  const updateBox = (box) => {
+    const room = box.querySelector('[data-global-price-room]');
+    const result = box.querySelector('[data-global-price-result]');
+    if (!room || !result) return;
+    const options = Array.from(box.querySelectorAll('[data-global-price-option]'));
+    const update = () => {
+      const base = Number(room.value || 0);
+      const extra = options.reduce((sum, item) => sum + (item.checked ? Number(item.value || 0) : 0), 0);
+      result.textContent = Math.max(0, base + extra).toLocaleString('ja-JP') + '円〜';
+    };
+    room.addEventListener('change', update);
+    options.forEach((item) => item.addEventListener('change', update));
+    update();
+  };
+  document.querySelectorAll('[data-global-price-sim]').forEach(updateBox);
+})();
+</script>
 </body>
 </html>
+
+
+
+
 
 
 
