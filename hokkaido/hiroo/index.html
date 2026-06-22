@@ -114,12 +114,320 @@
     .global-price-sim [data-global-price-result]{font-size:26px!important}
   }
 </style>
+
+<style id="global-top-hub-style">
+  .global-top-score-strip,
+  .global-trust-alert-hub,
+  .global-visual-proof,
+  .global-strategy-strip {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    font-family: inherit;
+  }
+  .hero .btn.ghost {
+    background: rgba(255,255,255,.16) !important;
+    color: #fff !important;
+    border-color: rgba(255,255,255,.48) !important;
+  }
+  .global-top-score-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .global-top-score-card {
+    display: block;
+    min-height: 154px;
+    padding: 18px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #e2e7df;
+    color: #26362d;
+    text-decoration: none;
+    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+  }
+  .global-top-score-card b {
+    display: block;
+    margin-bottom: 8px;
+    color: #1d5f48;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .global-top-score-card span {
+    display: block;
+    color: #536158;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .global-trust-alert-hub {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 18px;
+    align-items: center;
+    padding: 24px;
+    border-radius: 22px;
+    background: #fff8e7;
+    border: 1px solid #efd79d;
+    box-shadow: 0 14px 32px rgba(104,78,24,.08);
+  }
+  .global-trust-alert-hub h2 {
+    margin: 0 0 10px;
+    color: #6d3f00;
+    font-size: clamp(22px, 3vw, 32px);
+    line-height: 1.35;
+  }
+  .global-trust-alert-hub p {
+    margin: 0;
+    color: #4f4430;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .global-trust-badges {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .global-trust-badges span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 9px 12px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #ead6a6;
+    color: #674412;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .global-visual-proof {
+    padding: 28px 0;
+    border-top: 1px solid #e7e0d3;
+    border-bottom: 1px solid #e7e0d3;
+  }
+  .global-visual-proof-inner {
+    display: grid;
+    gap: 18px;
+  }
+  .global-visual-proof-head {
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+    gap: 20px;
+    align-items: end;
+  }
+  .global-visual-proof-head h2 {
+    margin: 0;
+    color: #26362d;
+    font-size: clamp(24px, 3.2vw, 36px);
+    line-height: 1.35;
+  }
+  .global-visual-proof-head p {
+    margin: 0;
+    color: #526056;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .global-visual-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .global-visual-card {
+    overflow: hidden;
+    display: block;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #e2e7df;
+    color: #26362d;
+    text-decoration: none;
+    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+  }
+  .global-visual-media {
+    position: relative;
+    min-height: 190px;
+    background: #f5f2ee;
+  }
+  .global-visual-media img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  .global-visual-media.two-up {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .global-visual-media.two-up img {
+    height: 220px;
+  }
+  .global-visual-label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 2;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: rgba(38,54,45,.86);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 900;
+  }
+  .global-visual-body {
+    padding: 17px;
+  }
+  .global-visual-body b {
+    display: block;
+    margin-bottom: 7px;
+    color: #1f6f52;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  .global-visual-body span {
+    display: block;
+    color: #536158;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .global-strategy-strip {
+    padding: 26px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #f2f8f0 0%, #fff 58%, #fff7e8 100%);
+    border: 1px solid #dfe9dc;
+  }
+  .global-strategy-head h2 {
+    margin: 0 0 10px;
+    color: #1f3a2d;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.35;
+  }
+  .global-strategy-head p {
+    margin: 0 0 18px;
+    color: #4f5f55;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .global-strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .global-strategy-card {
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.92);
+    border: 1px solid #dfe8dc;
+    box-shadow: 0 12px 24px rgba(38,56,44,.07);
+  }
+  .global-strategy-card b {
+    display: block;
+    margin-bottom: 8px;
+    color: #1f6f52;
+    font-size: 17px;
+  }
+  .global-strategy-card span {
+    display: block;
+    color: #4f5f55;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .global-strategy-card strong {
+    color: #26362d;
+  }
+  @media (max-width: 900px) {
+    .global-top-score-strip,
+    .global-trust-alert-hub,
+    .global-visual-proof-head,
+    .global-visual-grid,
+    .global-strategy-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 560px) {
+    .global-top-score-strip,
+    .global-trust-alert-hub,
+    .global-visual-proof,
+    .global-strategy-strip {
+      width: min(100% - 22px, 1120px);
+      margin: 18px auto;
+    }
+    .global-trust-alert-hub,
+    .global-strategy-strip {
+      padding: 18px;
+      border-radius: 18px;
+    }
+    .global-top-score-card {
+      min-height: auto;
+      padding: 16px;
+    }
+    .global-visual-media img,
+    .global-visual-media.two-up img {
+      height: 180px;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/" aria-label="広尾町の遺品整理・生前整理.jp"><span class="brand-word"><span class="brand-area">広尾町</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="目次ブロック"><a href="#price">料金</a><a href="#local">広尾町情報</a><a href="#towns">対応エリア</a><a href="#service">サービス</a><a href="#items">品目別対応</a><a href="#cases">事例</a><a href="#faq">Q&amp;A</a><a class="call" href="#contact">無料見積もり</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/hokkaido/">北海道</a><span>›</span>広尾町</div></nav>
 
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">北海道広尾町で遺品整理・生前整理を探している方へ</span><h1>広尾町で遺品整理・生前整理を相談する前に確認したいこと</h1><p class="hero-lead">広尾町で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p><div class="hero-actions"><a class="btn primary" href="#process">見積もり相談の準備をする</a><a class="btn secondary" href="#local">広尾町の確認点を見る</a></div><div class="hero-badges"><div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div><div class="badge"><b>養生対応</b><span>共用廊下・階段・車両位置を確認</span></div><div class="badge"><b>買取相殺</b><span>査定品を処分前に切り分け</span></div><div class="badge"><b>行政確認</b><span>不確実な窓口は推測で補完しません</span></div></div></div><div class="hero-panel"><h2>広尾町で先に確認すること</h2><ul class="quick-list"><li>住所、間取り、荷物量、退去期限</li><li>搬出経路、駐車位置、階段・エレベーター</li><li>通帳、印鑑、権利書、写真、形見分け品</li><li>買取できる品と供養したい品</li><li>自治体のごみ制度と業者作業の範囲</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">北海道広尾町で遺品整理・生前整理を探している方へ</span><h1>広尾町で遺品整理・生前整理を相談する前に確認したいこと</h1><p class="hero-lead">広尾町で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p><div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div><div class="hero-badges"><div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div><div class="badge"><b>養生対応</b><span>共用廊下・階段・車両位置を確認</span></div><div class="badge"><b>買取相殺</b><span>査定品を処分前に切り分け</span></div><div class="badge"><b>行政確認</b><span>不確実な窓口は推測で補完しません</span></div></div></div><div class="hero-panel"><h2>広尾町で先に確認すること</h2><ul class="quick-list"><li>住所、間取り、荷物量、退去期限</li><li>搬出経路、駐車位置、階段・エレベーター</li><li>通帳、印鑑、権利書、写真、形見分け品</li><li>買取できる品と供養したい品</li><li>自治体のごみ制度と業者作業の範囲</li></ul></div></div></section>
+
+<section class="global-top-score-strip" aria-label="最初に確認すること">
+  <a class="global-top-score-card" href="#towns"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
+  <a class="global-top-score-card" href="#price"><b>料金の目安を見る</b><span>間取り、荷物量、階段、供養、買取の条件を整理</span></a>
+  <a class="global-top-score-card" href="#process"><b>相談前の準備をする</b><span>写真、退去期限、残す品、探す書類をメモ</span></a>
+  <a class="global-top-score-card" href="#avoid-bad-vendors"><b>危ない業者を避ける</b><span>極端に安い見積もり、書面なし、即決要求を確認</span></a>
+</section>
+
+<section class="global-trust-alert-hub" aria-label="違法業者への注意と安心材料">
+  <div>
+    <h2>安すぎる見積もり・当日追加請求に注意。</h2>
+    <p>「一式」「コミコミ」だけで決めると、当日に階段作業、家電リサイクル、車両追加、供養費が加算されることがあります。相談前に、書面見積もり、追加費用条件、買取査定、写真報告の有無を確認しましょう。</p>
+  </div>
+  <div class="global-trust-badges" aria-label="確認したい安心材料">
+    <span>書面見積もり</span><span>追加費用条件</span><span>古物商許可</span><span>損害保険</span>
+  </div>
+</section>
+
+<section class="global-visual-proof" aria-label="写真と料金で確認する">
+  <div class="global-visual-proof-inner">
+    <div class="global-visual-proof-head">
+      <h2>写真・料金・注意点を先に見て、依頼の不安を減らす。</h2>
+      <p>遺品整理は、片付け後の状態、費用の目安、危ない業者の見分け方を先に確認すると、相談がかなり楽になります。</p>
+    </div>
+    <div class="global-visual-grid">
+      <a class="global-visual-card" href="#cases">
+        <div class="global-visual-media two-up"><span class="global-visual-label">作業前後</span><img src="/assets/before-after/before-00.jpg" alt="遺品整理の作業前写真"><img src="/assets/before-after/after-00.jpg" alt="遺品整理の作業後写真"></div>
+        <div class="global-visual-body"><b>ビフォーアフターで片付け後を具体的に確認</b><span>部屋、収納、通路、家具搬出後の状態を写真で見て、作業後のイメージを持てます。</span></div>
+      </a>
+      <a class="global-visual-card price" href="#price">
+        <div class="global-visual-media"><span class="global-visual-label">料金</span><img src="/assets/price-overview-bg.png?v=4" alt="遺品整理の料金目安を確認するイメージ"></div>
+        <div class="global-visual-body"><b>間取りだけでなく追加条件まで料金を確認</b><span>階段作業、搬出距離、供養品、買取品の有無で金額が変わる理由を整理します。</span></div>
+      </a>
+      <a class="global-visual-card warning" href="#avoid-bad-vendors">
+        <div class="global-visual-media"><span class="global-visual-label">注意</span><img src="/assets/avoid-bad-vendors-banner.png?v=2" alt="悪質な遺品整理業者に注意する画像"></div>
+        <div class="global-visual-body"><b>安すぎる見積もりと当日追加請求を避ける</b><span>書面なし、即決要求、説明のない追加費用など、契約前に見るべき点を確認できます。</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="global-strategy-strip" aria-label="データで見る整理相談の背景">
+  <div class="global-strategy-inner">
+    <div class="global-strategy-head">
+      <h2>数字で見る、遺品整理・生前整理を先延ばしにしない理由</h2>
+      <p>実家の片付けは、物量、時間、心理的負担、業者選びの不安が重なりやすい作業です。まずは全体像を知ることで、家族だけで抱え込むか、専門業者へ相談するかを判断しやすくなります。</p>
+    </div>
+    <div class="global-strategy-grid">
+      <div class="global-strategy-card"><b>生前整理の必要性</b><span><strong>約89.7%が必要性を実感。</strong>元気なうちに、銀行口座、家具、不動産、写真・手紙などを少しずつ確認しておくことが家族の負担軽減につながります。</span></div>
+      <div class="global-strategy-card"><b>荷物量の壁</b><span><strong>10箱以上が7割超。</strong>遺品整理では段ボール10箱以上の荷物になるケースが多く、大型家具・家電の搬出で手が止まりやすくなります。</span></div>
+      <div class="global-strategy-card"><b>追加請求の不安</b><span><strong>見積後の追加請求経験は約47.2%。</strong>安いパック料金だけで決めず、処分費、車両費、家電リサイクル、階段作業の条件を確認しましょう。</span></div>
+      <div class="global-strategy-card"><b>困る物の変化</b><span><strong>デジタル遺産も重要。</strong>スマホ、PC、ネット口座、サブスク、写真データなど、物理的な家財以外も整理対象として家族で共有しておくと安心です。</span></div>
+    </div>
+  </div>
+</section>
+
 
   <div class="page-shell"><main class="page">
 <section id="area-keyword-guide" class="section area-keyword-guide">
