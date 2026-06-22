@@ -1,4 +1,4 @@
-:root {
+﻿:root {
       --orange: #e9651a;
       --orange-dark: #bf4b08;
       --green: #28745a;
@@ -82,7 +82,7 @@
     }
 
     .hero {
-      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/osaka-prefecture-hero.jpg?v=1")); background-size: cover;
+      background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/cv-hero-staff-photo.png?v=1")); background-size: cover;
       background-position: center center;
       color: #fff;
     }
@@ -1359,3 +1359,5 @@
       font-weight: 900;
       line-height: 1;
     }
+
+

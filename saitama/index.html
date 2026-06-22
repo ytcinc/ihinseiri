@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>埼玉県の遺品整理・生前整理を市区町村から確認 | 埼玉県 遺品整理・生前整理.jp</title>
-  <meta name="description" content="高度成長期に開発された埼玉のニュータウンでは、戸建てが一斉に世代交代の時期を迎えています。遠方のご家族や、お一人での整理が難しい場合も、貴重品の仕分けからお部屋の引き渡しまで代行します。">
+  <title>埼玉県の遺品整理・生前整理・実家じまいを市区町村から確認 | 埼玉県 遺品整理・生前整理.jp</title>
+  <meta name="description" content="高度成長期に開発された埼玉のニュータウンでは、戸建てが一斉に世代交代の時期を迎えています。遠方のご家族や、お一人での整理が難しい場合も、貴重品の仕分けからお部屋の引き渡しまで代行します。遺品整理・生前整理に加えて、実家じまいの確認点も掲載。">
   <link rel="canonical" href="https://ihinseiri-hazel.vercel.app/saitama/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
     .brand-main { color:#D05300; font-size:25px; font-weight:900; }
     .nav { display:flex; align-items:center; gap:13px; font-size:14px; font-weight:900; white-space:nowrap; overflow-x:auto; }
     .nav a { color:#333; } .call { display:inline-grid; place-items:center; min-height:36px; padding:0 14px; background:var(--orange); color:#fff!important; border-radius:4px; }
-    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.52) 34%,rgba(18,24,26,.18) 58%,rgba(18,24,26,0) 100%),url("/assets/cv-hero-staff-illustration.png?v=3"); background-size:cover; background-position:center; }
+    .hero { background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.52) 34%,rgba(18,24,26,.18) 58%,rgba(18,24,26,0) 100%),url("/assets/cv-hero-staff-photo.png?v=1"); background-size:cover; background-position:center; }
     .hero-inner { width:min(1160px,calc(100% - 28px)); margin:0 auto; min-height:560px; display:grid; grid-template-columns:minmax(0,1fr) 370px; gap:34px; align-items:center; padding:54px 0 62px; }
     .eyebrow { display:inline-block; margin-bottom:14px; padding:5px 11px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.34); color:#fff; font-size:14px; font-weight:900; }
     h1 { margin:0 0 16px; max-width:760px; color:#fff; font-size:clamp(34px,5.2vw,58px); line-height:1.18; font-weight:900; overflow-wrap:anywhere; text-shadow:0 2px 18px rgba(0,0,0,.28); }
@@ -570,7 +570,7 @@
       overflow:hidden!important;
       background-image:
         linear-gradient(90deg,rgba(35,42,37,.9) 0%,rgba(48,59,51,.76) 48%,rgba(48,59,51,.34) 72%,rgba(251,247,232,.86) 100%),
-        url("/assets/cv-hero-staff-illustration.png?v=3")!important;
+        url("/assets/cv-hero-staff-photo.png?v=1")!important;
       background-size:cover,auto 118%!important;
       background-position:center,calc(100% + 180px) center!important;
       background-repeat:no-repeat!important;
@@ -752,18 +752,46 @@
     .common-ba-btn[data-common-ba-next]{right:0}
     @media(max-width:820px){.common-kita-ba{padding:20px}.common-ba-guide{grid-template-columns:1fr}.common-ba-slider{padding:0 38px}.common-ba-card{padding:12px}.common-ba-photos{grid-template-columns:1fr;gap:10px}.common-ba-photos::after{width:34px;height:34px;font-size:22px;border-width:2px}.common-ba-btn{width:42px;height:42px;font-size:24px}.common-kita-ba .section-title{font-size:21px}}
   </style>
+  <style id="prefecture-osaka-content-order">
+    main.wrap, main.page, body.prefecture-page main{display:flex!important;flex-direction:column!important}
+    main.wrap>section, main.page>section, body.prefecture-page main>section{order:4!important}
+    main.wrap>#area-keyword-guide,#area-keyword-guide{order:1!important}
+    main.wrap>.quick-guide,.quick-guide{display:block!important;order:2!important}
+    #osaka-city,#tokyo-wards,#tokyo-tama,#tokyo-islands,#kyoto-city,#nagoya,#sapporo,#sendai,#hiroshima-city,#kumamoto-city,#fukuoka-city{order:3!important}
+    #osaka-municipalities,#kyoto-municipalities,#municipalities,#cities,#towns,#hokkaido-list,#iwate-list,#niigata-list,#hyogo-area,#all-pages{order:4!important}
+    #local,#overview,#summary,#note{order:4!important}
+    #osaka-data,#tokyo-data,#kanagawa-data,#kyoto-data,#hyogo-data,#mie-data,#nara-data,#wakayama-data,#fukuoka-data,#nagano-data,#data,#stats{order:5!important}
+    #osaka-kodokushi,#kyoto-kodokushi,#nagano-demographic-risk,#nagano-vacant-villa,#nagano-life-planning,#nagano-isolation-support,#nagano-exit-strategy,#life-planning{order:6!important}
+    #osaka-impact,#kyoto-impact,#hyogo-impact,#mie-impact,#nara-impact,#wakayama-impact,#nagano-impact,#shiga-impact{order:7!important}
+    #online-plan{order:8!important}
+    #flow,#process,#nagano-precheck{order:9!important}
+    #kita-before-after-cases,#cases{order:10!important}
+    #price{order:11!important}
+    #faq{order:12!important}
+    #sources{order:40!important}
+    main.wrap>.toc,.toc,#trust,#avoid-bad-vendors,#nagano-consult-patterns,#nagano-price-factors,#service,#items,#compare{order:41!important}
+  </style>
 </head>
 <body>
 
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">埼玉県 の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a>
+      <a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">埼玉県の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a>
       <nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#municipalities">市町村</a><a href="#data">統計データ</a></nav>
     </div>
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>埼玉県</div></nav>
   <section class="hero"><div class="hero-inner"><div><span class="eyebrow">埼玉県で遺品整理・生前整理を探す</span><h1>ニュータウンの一斉高齢化。ご実家の整理に備えて。</h1><p class="hero-lead">高度成長期に開発された埼玉のニュータウンでは、戸建てが一斉に世代交代の時期を迎えています。遠方のご家族や、お一人での整理が難しい場合も、貴重品の仕分けからお部屋の引き渡しまで代行します。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">市区町村から探す</a><a class="btn secondary" href="/saitama/saitama/">さいたま市10区を見る</a></div></div><div class="hero-panel"><h2>埼玉県ページの見方</h2><ul class="quick-list"><li>さいたま市は10区ページへ分けています</li><li>市町村は県の地域ブロックで整理</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>未確認の行政電話番号は — として掲載</li></ul></div></div></section>
   <main class="wrap">
+<section id="area-keyword-guide" class="section area-keyword-guide">
+  <h2 class="section-title">埼玉県で遺品整理・生前整理・実家じまいを検討している方へ</h2>
+  <p class="lead">埼玉県の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。埼玉県で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。埼玉県で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
+  <div class="faq area-keyword-details">
+    <details><summary>埼玉県の遺品整理</summary><p>通帳、印鑑、権利書、写真、手紙、貴金属などを探しながら、残す物・処分する物・供養する物を分けます。遠方のご家族は写真報告や鍵預かりの可否も確認しましょう。</p></details>
+    <details><summary>埼玉県の生前整理</summary><p>施設入居、介護、住み替え、空き家化の前に、生活動線を確保しながら家財量を減らします。買取できる品や思い出の品を早めに分けると、ご本人と家族の負担を抑えやすくなります。</p></details>
+    <details><summary>埼玉県の実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
+  </div>
+</section>
 
     <section id="municipalities" class="section"><h2 class="section-title">埼玉県の市区町村から探す</h2><p class="lead">埼玉県内40市・22町・1村を、さいたま地域、南部、南西部、東部、県央、川越比企、西部、利根、北部、秩父の地域ブロックで整理しています。</p><div class="grid cols2"><div class="area-box"><h3>さいたま地域</h3><div class="ward-links"><a class="featured" href="/saitama/saitama/">さいたま市トップ</a><a href="/saitama/saitama/nishi/">西区</a><a href="/saitama/saitama/kita/">北区</a><a href="/saitama/saitama/omiya/">大宮区</a><a href="/saitama/saitama/minuma/">見沼区</a><a href="/saitama/saitama/chuo/">中央区</a><a href="/saitama/saitama/sakura/">桜区</a><a href="/saitama/saitama/urawa/">浦和区</a><a href="/saitama/saitama/minami/">南区</a><a href="/saitama/saitama/midori/">緑区</a><a href="/saitama/saitama/iwatsuki/">岩槻区</a></div></div><div class="area-box"><h3>南部地域</h3><div class="ward-links"><a href="/saitama/kawaguchi/">川口市</a><a href="/saitama/warabi/">蕨市</a><a href="/saitama/toda/">戸田市</a></div></div><div class="area-box"><h3>南西部地域</h3><div class="ward-links"><a href="/saitama/asaka/">朝霞市</a><a href="/saitama/shiki/">志木市</a><a href="/saitama/wako/">和光市</a><a href="/saitama/niiza/">新座市</a><a href="/saitama/fujimi/">富士見市</a><a href="/saitama/fujimino/">ふじみ野市</a><a href="/saitama/miyoshi/">三芳町</a></div></div><div class="area-box"><h3>東部地域</h3><div class="ward-links"><a href="/saitama/kasukabe/">春日部市</a><a href="/saitama/soka/">草加市</a><a href="/saitama/koshigaya/">越谷市</a><a href="/saitama/yashio/">八潮市</a><a href="/saitama/misato/">三郷市</a><a href="/saitama/yoshikawa/">吉川市</a><a href="/saitama/matsubushi/">松伏町</a></div></div><div class="area-box"><h3>県央地域</h3><div class="ward-links"><a href="/saitama/konosu/">鴻巣市</a><a href="/saitama/ageo/">上尾市</a><a href="/saitama/okegawa/">桶川市</a><a href="/saitama/kitamoto/">北本市</a><a href="/saitama/ina/">伊奈町</a></div></div><div class="area-box"><h3>川越比企地域</h3><div class="ward-links"><a href="/saitama/kawagoe/">川越市</a><a href="/saitama/higashimatsuyama/">東松山市</a><a href="/saitama/sakado/">坂戸市</a><a href="/saitama/tsurugashima/">鶴ヶ島市</a><a href="/saitama/moroyama/">毛呂山町</a><a href="/saitama/ogose/">越生町</a><a href="/saitama/namegawa/">滑川町</a><a href="/saitama/ranzan/">嵐山町</a><a href="/saitama/ogawa/">小川町</a><a href="/saitama/kawajima/">川島町</a><a href="/saitama/yoshimi/">吉見町</a><a href="/saitama/hatoyama/">鳩山町</a><a href="/saitama/tokigawa/">ときがわ町</a></div></div><div class="area-box"><h3>西部地域</h3><div class="ward-links"><a href="/saitama/tokorozawa/">所沢市</a><a href="/saitama/hanno/">飯能市</a><a href="/saitama/sayama/">狭山市</a><a href="/saitama/iruma/">入間市</a><a href="/saitama/hidaka/">日高市</a></div></div><div class="area-box"><h3>利根地域</h3><div class="ward-links"><a href="/saitama/gyoda/">行田市</a><a href="/saitama/kazo/">加須市</a><a href="/saitama/hanyu/">羽生市</a><a href="/saitama/kuki/">久喜市</a><a href="/saitama/hasuda/">蓮田市</a><a href="/saitama/satte/">幸手市</a><a href="/saitama/shiraoka/">白岡市</a><a href="/saitama/miyashiro/">宮代町</a><a href="/saitama/sugito/">杉戸町</a></div></div><div class="area-box"><h3>北部地域</h3><div class="ward-links"><a href="/saitama/kumagaya/">熊谷市</a><a href="/saitama/honjo/">本庄市</a><a href="/saitama/fukaya/">深谷市</a><a href="/saitama/misato-town/">美里町</a><a href="/saitama/kamikawa/">神川町</a><a href="/saitama/kamisato/">上里町</a><a href="/saitama/yorii/">寄居町</a></div></div><div class="area-box"><h3>秩父地域</h3><div class="ward-links"><a href="/saitama/chichibu/">秩父市</a><a href="/saitama/yokoze/">横瀬町</a><a href="/saitama/minano/">皆野町</a><a href="/saitama/nagatoro/">長瀞町</a><a href="/saitama/ogano/">小鹿野町</a><a href="/saitama/higashichichibu/">東秩父村</a></div></div></div></section>
 <section id="data" class="section"><h2 class="section-title">データで見る埼玉県の遺品整理・生前整理需要</h2><div class="grid cols4"><div class="card stat-card"><b>1,324,025人</b><span>さいたま市の令和2年国勢調査人口。政令市10区のページは区別値を掲載。</span></div><div class="card stat-card"><b>53.5%</b><span>さいたま市の共同住宅居住率。マンション搬出・養生確認の入口。</span></div><div class="card stat-card"><b>36.3%</b><span>さいたま市の単身者世帯比率。立会い不要や写真報告の確認に関係。</span></div><div class="card stat-card"><b>23.6%</b><span>さいたま市の65歳以上人口割合。生前整理・実家じまい相談の背景。</span></div></div><p class="source-note">出典：e-Stat 令和2年国勢調査。市区町村ページでは各自治体コードの実値を掲載しています。</p></section>
@@ -787,6 +815,58 @@
     </div>
   </div>
 </section>
+<section id="pref-impact" class="section">
+        <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
+        <p class="lead">埼玉県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。数字で見ると、プロに相談する理由がはっきりします。</p>
+
+        <div class="grid cols4 metric-grid">
+          <div class="card stat-card metric-card impact-card"><span class="metric-label">3LDK一軒家</span><b>1.5〜3トン</b><p class="metric-note">長年住んだ実家では、不用品がトラック3〜5台分になることがあります。</p><span class="metric-sub">家具・布団・家電・物置まで含めて確認</span></div>
+          <div class="card stat-card metric-card impact-card"><span class="metric-label">2DKでも</span><b>10〜15m³</b><p class="metric-note">袋ごみだけでは収まりにくく、分別・搬出・車両手配が必要になりやすい量です。</p><span class="metric-sub">退去期限がある部屋は早めに荷物量確認</span></div>
+          <div class="card stat-card metric-card impact-card"><span class="metric-label">家族だけだと</span><b>3ヶ月〜半年</b><p class="metric-note">週末ごとに通っても、仕分け・粗大ごみ予約・搬出で長期化しがちです。</p><span class="metric-sub">遠方家族では1年近くかかることも</span></div>
+          <div class="card stat-card metric-card impact-card"><span class="metric-label">プロ作業なら</span><b>1〜3日</b><p class="metric-note">一戸建てでも、仕分け・搬出・貴重品探索・写真報告をまとめて進めやすくなります。</p><span class="metric-sub">売却前整理・施設入居前整理に向く</span></div>
+        </div>
+
+        <div class="grid cols2" style="margin-top:16px">
+          <div class="chart-box">
+            <h3>自力整理とプロ作業の時間差</h3>
+            <div class="bar-row"><span>1DK 自力</span><div class="bar-track"><div class="bar-fill" style="width:66%"></div></div><b>約1ヶ月</b></div>
+            <div class="bar-row"><span>1K プロ</span><div class="bar-track"><div class="bar-fill green" style="width:8%"></div></div><b>1〜3時間</b></div>
+            <div class="bar-row"><span>一軒家 自力</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>3ヶ月〜半年</b></div>
+            <div class="bar-row"><span>一戸建て プロ</span><div class="bar-track"><div class="bar-fill green" style="width:14%"></div></div><b>1〜3日</b></div>
+            <p>家族だけで進めると、仕分け・搬出・車両手配・行政ルール確認・貴重品探索を何度も行う必要があります。<span class="marker">退去期限や売却予定がある場合は、プロ作業の短さが大きな安心材料</span>になります。</p>
+          </div>
+          <div class="chart-box">
+            <h3>親子の意識差と生前整理</h3>
+            <div class="bar-row"><span>手伝いたい子</span><div class="bar-track"><div class="bar-fill green" style="width:80%"></div></div><b>約8割</b></div>
+            <div class="bar-row"><span>手伝われたくない親</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><b>約6割</b></div>
+            <div class="bar-row"><span>終活の目的</span><div class="bar-track"><div class="bar-fill blue" style="width:40%"></div></div><b>約4割</b></div>
+            <p>子どもは手伝いたい一方で、親は迷惑をかけたくない、見られたくない物があると感じることがあります。生前整理では、<span class="marker">家族だけで抱え込まず、第三者を入れて必要な物だけ残す</span>進め方が向いています。</p>
+          </div>
+        </div>
+
+        <div class="grid cols2" style="margin-top:16px">
+          <div class="chart-box">
+            <h3>間取り別の費用目安</h3>
+            <div class="bar-row"><span>1R</span><div class="bar-track"><div class="bar-fill green" style="width:18%"></div></div><b>3〜8万円</b></div>
+            <div class="bar-row"><span>1DK</span><div class="bar-track"><div class="bar-fill green" style="width:28%"></div></div><b>5〜12万円</b></div>
+            <div class="bar-row"><span>2DK</span><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div><b>9〜25万円</b></div>
+            <div class="bar-row"><span>3LDK</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><b>17〜50万円</b></div>
+            <div class="bar-row"><span>一戸建て</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>22〜70万円以上</b></div>
+            <p>費用は間取りだけでなく、荷物量、階数、車両位置、買取品、供養品、退去期限で変わります。見積もり前に<span class="marker">残す品・探す書類・買取希望品</span>をまとめておくと、金額のブレを抑えやすくなります。</p>
+          </div>
+          <div class="chart-box">
+            <h3>買取で費用を抑える考え方</h3>
+            <div class="risk-list">
+              <div><b>家電・家具</b><br>製造年や状態によっては買取・再利用で整理費用から相殺できる場合があります。</div>
+              <div><b>貴金属・時計・カメラ</b><br>処分前に査定対象として分けると、見落としや不当な安値買取を防ぎやすくなります。</div>
+              <div><b>骨董品・趣味用品</b><br>茶道具、工具、釣具、レコード、コレクション品は家族だけで価値判断しにくい品目です。</div>
+            </div>
+            <p><span class="marker">買取相殺は「安く見せる」ためではなく、残す品・売れる品・供養する品を分けるための確認作業</span>として考えると安心です。</p>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:16px"><b>埼玉県で実家の片付けは家族だけでできますか？</b><br>少量の荷物なら家族だけでも進められますが、一戸建てや長年住んだ実家では家財量が多く、仕分け・搬出・車両手配・貴重品探索まで大きな負担になります。まずは<span class="marker">荷物量、退去期限、探したい書類、買取できそうな品</span>を整理し、必要な部分だけ専門業者に相談する方法も検討しましょう。</div>
+      </section>
 </main>
   <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 埼玉県内の住宅特性、行政窓口、粗大ごみ相談先、見積もり前チェックを整理する情報サイト</div></footer>
 <script id="common-kita-before-after-script">
@@ -809,6 +889,19 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

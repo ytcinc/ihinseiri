@@ -1,4 +1,4 @@
-html {
+﻿html {
   scroll-padding-top: 78px;
 }
 
@@ -114,7 +114,7 @@ body.katachi-layout .hero.osaka-hero::before {
   bottom: 54px !important;
   width: min(520px, 42vw) !important;
   aspect-ratio: 1.45 / 1 !important;
-  background: url("/assets/cv-hero-staff-illustration.png?v=3") center bottom / contain no-repeat !important;
+  background: url("/assets/cv-hero-staff-photo.png?v=1") center bottom / contain no-repeat !important;
   filter: saturate(.9) brightness(1.04) !important;
   opacity: .96 !important;
   z-index: 1 !important;
@@ -948,7 +948,7 @@ body.katachi-layout.streamlined-top .hero {
   color: #fff !important;
   background-image:
     linear-gradient(90deg, rgba(28, 43, 37, .93) 0%, rgba(34, 61, 52, .84) 44%, rgba(34, 61, 52, .45) 72%, rgba(34, 61, 52, .18) 100%),
-    url("/assets/cv-hero-staff-illustration.png?v=3") !important;
+    url("/assets/cv-hero-staff-photo.png?v=1") !important;
   background-size: cover !important;
   background-position: center right !important;
   padding: 58px 0 66px !important;
@@ -1500,7 +1500,7 @@ body.katachi-layout .hero.osaka-hero::before {
   bottom: 50px !important;
   width: min(540px, 43vw) !important;
   aspect-ratio: 1.45 / 1 !important;
-  background: url("/assets/cv-hero-staff-illustration.png?v=3") center bottom / contain no-repeat !important;
+  background: url("/assets/cv-hero-staff-photo.png?v=1") center bottom / contain no-repeat !important;
   filter: saturate(.9) brightness(1.04) !important;
   opacity: .98 !important;
   z-index: 1 !important;
@@ -1946,3 +1946,6 @@ body.katachi-layout .hero.osaka-hero::before {
     margin-right: 0 !important;
   }
 }
+
+
+
