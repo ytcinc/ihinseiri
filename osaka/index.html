@@ -1944,6 +1944,23 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="osaka-report-style-v1">
+.osaka-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.osaka-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.osaka-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.osaka-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.osaka-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.osaka-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.osaka-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.osaka-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.osaka-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.osaka-report-table th,.osaka-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.osaka-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.osaka-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.osaka-report-grid{grid-template-columns:1fr}.osaka-report-table th{width:120px}}
+</style>
+
 </head>
 <body class="katachi-layout structure-layout prefecture-page osaka-page">
   <header class="topbar">
@@ -2120,6 +2137,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="osaka-report" class="section osaka-report">
+  <div class="container">
+    <p class="section-kicker">大阪府レポート反映</p>
+    <h2 class="section-title">大阪府43市区町村調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">大阪府は大阪市内の高密度マンション、北摂の丘陵地住宅、北河内・中河内の集合住宅と工場併用住宅、泉州・南河内の戸建てや空き家整理で条件が変わります。添付調査の廃棄物処理、住環境、高齢者支援施策を、見積もり前に確認しやすい形へ整理しました。</p>
+    <div class="osaka-report-grid">
+      <div class="osaka-report-card"><b>広域処理</b><span>大阪広域環境施設組合、南河内、泉北、四交、柏羽藤など、施設の共同運用で持込先が変わります。</span></div>
+      <div class="osaka-report-card"><b>自己搬入</b><span>10kg単位、20kg単位、100kgまで一律など料金体系が分かれるため、粗大ごみと業者作業を分けて考えます。</span></div>
+      <div class="osaka-report-card"><b>福祉化</b><span>高齢者のごみ出し支援、エンディングノート、終活支援は、残置物化と孤立死リスクを減らす確認点です。</span></div>
+      <div class="osaka-report-card"><b>業者確認</b><span>家庭ごみの収集運搬は一般廃棄物収集運搬業の許可が重要。無料回収や不法投棄リスクを避けます。</span></div>
+    </div>
+    <table class="osaka-report-table">
+      <tr><th>大阪市内</th><td>24区は持込工場の管轄、管理会社届出、EV予約、共用部養生、駐車位置を先に確認します。</td></tr>
+      <tr><th>北摂・北河内</th><td>集合住宅、丘陵地、ニュータウン、狭い路地、階段搬出で作業人数と車両導線が変わります。</td></tr>
+      <tr><th>泉州・南河内</th><td>戸建て、物置、車庫、庭、農機具、空き家整理が絡みやすく、屋内外の作業範囲を分けて見積もります。</td></tr>
+    </table>
+    <p class="osaka-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各地域ページの出典欄は、市役所・町役場・村役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">大阪府内の主な処分センター・広域処理施設の確認</h2>
+  <p>大阪府では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>大阪市北区、大阪市福島区、堺市、豊中市、吹田市、高槻市、枚方市、東大阪市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.osaka.lg.jp/" target="_blank" rel="noopener">大阪府公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る大阪府</p>
@@ -2694,7 +2743,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

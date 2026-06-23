@@ -1776,6 +1776,32 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+<style id="fukushima-report-style-v1">
+.fukushima-report{margin-top:52px;padding:26px;border:1px solid #e4ded6;background:#fff;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+.fukushima-report .section-title{margin:0 0 18px;padding:0 0 12px;border:0!important;border-bottom:3px solid #eadfc9!important;background:transparent!important;color:#2B2B2B!important;box-shadow:none!important}
+.fukushima-report .section-title:before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#D05300;border-radius:2px;vertical-align:middle}
+.fukushima-report-lead{margin:0 0 20px;color:#414743;font-size:17px;line-height:1.85}
+.fukushima-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 22px}
+.fukushima-report-card{padding:16px;border:1px solid #ddd7d0;background:#fffaf4}
+.fukushima-report-card b{display:block;color:#a54812;font-size:22px;line-height:1.25}
+.fukushima-report-card span{display:block;margin-top:7px;color:#4f4a43;font-size:14px;line-height:1.7;font-weight:800}
+.fukushima-report-table{width:100%;border-collapse:collapse;background:#fff;margin:18px 0;font-size:15px;line-height:1.75}
+.fukushima-report-table th,.fukushima-report-table td{border:1px solid #ddd7d0;padding:13px;vertical-align:top;text-align:left}
+.fukushima-report-table th{background:#f1eee8;font-weight:900;white-space:nowrap}
+.fukushima-report-note{margin:14px 0 0;padding:13px 15px;border-left:4px solid #D05300;background:#fff7ec;color:#453f39;font-weight:800;line-height:1.8}
+@media(max-width:820px){.fukushima-report{padding:20px}.fukushima-report-grid{grid-template-columns:1fr}.fukushima-report-table{display:block;overflow-x:auto;white-space:nowrap}}
+</style>
+<section id="fukushima-report-insights" class="section fukushima-report">
+  <h2 class="section-title">福島県59市町村調査から見る、整理前の確認ポイント</h2>
+  <p class="fukushima-report-lead">添付レポートから、県北・県中・県南・会津・浜通りの処理ブロック差、自己搬入の可否、料金改定、高齢者ごみ出し支援、12市町村の空き家片付け補助を、見積もり前に使える情報へ整理しました。各市町村ページの出典は、市役所・町役場・村役場の公式サイトだけに絞っています。</p>
+  <div class="fukushima-report-grid">
+    <div class="fukushima-report-card"><b>59市町村</b><span>13市・31町・15村。中通り、会津、浜通りで処理ルールが大きく変わります。</span></div>
+    <div class="fukushima-report-card"><b>持込差</b><span>福島市は無料、須賀川地方は原則不可、会津・郡山では料金改定を確認します。</span></div>
+    <div class="fukushima-report-card"><b>高齢者支援</b><span>福島市、郡山市、二本松市、南相馬市などは戸別収集・見守り支援を確認します。</span></div>
+    <div class="fukushima-report-card"><b>12市町村</b><span>原発被災地域は空き家改修・片付け補助の対象条件を見ます。</span></div>
+  </div>
+</section>
+
 <section id="fukushima-local-hub" class="section fukushima-local-hub">
   <p class="section-kicker">福島県でまず見るところ</p>
   <h2 class="section-title">作業場所に近い地域から確認してください</h2>
@@ -1852,6 +1878,17 @@
       <tr><td><b>空き家率が高い地域</b></td><td>南相馬市、会津美里町、喜多方市などで空き家整理の確認が重要。</td><td>売却・解体予定、残置物量、権利書・通帳・写真、近隣対応。</td></tr>
     </tbody>
   </table>
+</section>
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">福島県内の主な処分センター・広域処理施設の確認</h2>
+  <p>福島県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>福島市、二本松市、伊達市、本宮市、桑折町、国見町、川俣町、大玉村など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.fukushima.lg.jp/" target="_blank" rel="noopener">福島県公式サイト</a></p>
 </section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
@@ -2134,7 +2171,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

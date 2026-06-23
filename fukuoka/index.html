@@ -1475,11 +1475,28 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="fukuoka-report-style-v1">
+.fukuoka-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.fukuoka-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.fukuoka-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.fukuoka-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.fukuoka-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.fukuoka-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.fukuoka-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.fukuoka-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.fukuoka-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.fukuoka-report-table th,.fukuoka-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.fukuoka-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.fukuoka-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.fukuoka-report-grid{grid-template-columns:1fr}.fukuoka-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-word"><span class="brand-area">福岡県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="#kitakyushu">北九州市</a><a href="#fukuoka">福岡市</a><a href="#福岡地域">福岡地域</a><a href="#北九州地域">北九州地域</a><a href="#筑豊地域">筑豊地域</a><a href="#筑後地域">筑後地域</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>福岡県</div></nav>
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">福岡県で遺品整理・生前整理を探す</span><h1>福岡・北九州の街も、筑豊のご実家も。</h1><p class="hero-lead">福岡は福岡市・北九州の都市マンションから、筑豊の戸建てまで住まいが幅広いのが特徴です。共用部への配慮から戸建ての物量整理まで、遠方のご遺族に代わり、貴重品の仕分け・お部屋の引き渡しを進めます。</p><div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>福岡県ページの見方</h2><ul class="quick-list"><li>政令市は区ページへネストしています</li><li>市町村は福岡・北九州・筑豊・筑後で整理</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なの行政電話番号は `—` として掲載</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">福岡県で遺品整理・生前整理を探す</span><h1>福岡・北九州の街も、筑豊のご実家も。</h1><p class="hero-lead">福岡は福岡市・北九州の都市マンションから、筑豊の戸建てまで住まいが幅広いのが特徴です。共用部への配慮から戸建ての物量整理まで、遠方のご遺族に代わり、貴重品の仕分け・お部屋の引き渡しを進めます。</p><div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>福岡県ページの見方</h2><ul class="quick-list"><li>政令市は区ページへネストしています</li><li>市町村は福岡・北九州・筑豊・筑後で整理</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要な行政電話番号は `—` として掲載</li></ul></div></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#prefectures"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -1634,6 +1651,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="fukuoka-report" class="section fukuoka-report">
+  <div class="container">
+    <p class="section-kicker">福岡県レポート反映</p>
+    <h2 class="section-title">福岡県60市町村調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">福岡県は福岡市・北九州市の都市部から、筑豊、筑後、京築、糟屋郡、遠賀郡、朝倉地域まで処理施設と受付ルールが大きく変わります。遺品整理・生前整理では、自己搬入予約、許可証、指定袋、家電4品目、一般廃棄物許可業者、空き家補助の事前申請を分けて確認することが重要です。</p>
+    <div class="fukuoka-report-grid">
+      <div class="fukuoka-report-card"><b>広域処理</b><span>福岡市、北九州市、有明、八女・筑後、宗像・糟屋北部、遠賀・中間、田川、京築などで搬入施設が分かれます。</span></div>
+      <div class="fukuoka-report-card"><b>料金目安</b><span>10kg100円・110円・140円・150円・170円・200円・220円、50kgや指定袋無料扱いなど地域差があります。</span></div>
+      <div class="fukuoka-report-card"><b>法令確認</b><span>家電4品目、産業廃棄物、他人のごみの代理搬入、一般廃棄物収集運搬許可は必ず分けて確認します。</span></div>
+      <div class="fukuoka-report-card"><b>空き家支援</b><span>家財処分・改修・除却補助は、空き家バンク登録、契約前申請、市内業者、跡地活用が重要です。</span></div>
+    </div>
+    <table class="fukuoka-report-table">
+      <tr><th>搬入前確認</th><td>自己搬入予約、役場許可証、搬入者本人確認、指定袋・証紙、可燃不燃の搬入先、粗大ごみ処理券を確認します。</td></tr>
+      <tr><th>費用を抑える考え方</th><td>指定袋入り無料や自己搬入の従量制がある一方、遺品整理では物量・搬出・車両・許可業者・家電リサイクルで費用が変わります。</td></tr>
+      <tr><th>福岡県らしい注意点</th><td>都市マンションの管理会社対応、筑豊・筑後の戸建て物量、京築の事前許可、糟屋郡の許可証方式、遠方家族の写真報告を先に整理します。</td></tr>
+    </table>
+    <p class="fukuoka-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各市区町村ページの出典欄には、市区町村の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">福岡県内の主な処分センター・広域処理施設の確認</h2>
+  <p>福岡県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>門司区、若松区、戸畑区、小倉北区、小倉南区、八幡東区、八幡西区、東区など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.fukuoka.lg.jp/" target="_blank" rel="noopener">福岡県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る福岡県</p>
@@ -1824,7 +1873,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

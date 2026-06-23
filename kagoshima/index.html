@@ -1134,7 +1134,7 @@
   </header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>鹿児島県</div></nav>
 
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">鹿児島県で遺品整理・生前整理を探す</span><h1>本土のご実家も、島々の住まいも。海を越えて。</h1><p>鹿児島は本土の農村から、奄美など数多くの離島まで広がり、島の整理にはフェリーを使った段取りが欠かせません。遠方のご遺族に代わり、本土も島も、貴重品の捜索からお部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><aside class="hero-panel"><h2>鹿児島県ページの見方</h2><ul><li>19市・20町・4村、全43市町村を掲載</li><li>政令市なし。すべて /kagoshima/{市町村}/ で掲載</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なのごみ専用電話番号は — として掲載</li></ul></aside></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">鹿児島県で遺品整理・生前整理を探す</span><h1>本土のご実家も、島々の住まいも。海を越えて。</h1><p>鹿児島は本土の農村から、奄美など数多くの離島まで広がり、島の整理にはフェリーを使った段取りが欠かせません。遠方のご遺族に代わり、本土も島も、貴重品の捜索からお部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><aside class="hero-panel"><h2>鹿児島県ページの見方</h2><ul><li>19市・20町・4村、全43市町村を掲載</li><li>政令市なし。すべて /kagoshima/{市町村}/ で掲載</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なごみ専用電話番号は — として掲載</li></ul></aside></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#municipalities"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -1289,6 +1289,110 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<style id="kagoshima-report-style">
+  .kagoshima-report{background:#fff;border-top:1px solid #e8ded2;border-bottom:1px solid #e8ded2;padding:clamp(34px,5vw,64px) 0;color:#2b2b2b}
+  .kagoshima-report .report-wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}
+  .kagoshima-report .section-kicker{margin:0 0 8px;color:#b94a00;font-weight:900;letter-spacing:.03em}
+  .kagoshima-report .section-title{margin:0 0 14px;color:#252525;font-size:clamp(25px,3vw,38px);line-height:1.35;font-weight:900}
+  .kagoshima-report .lead{max-width:940px;margin:0 0 22px;color:#4d5651;font-size:17px;line-height:1.9}
+  .kagoshima-report .report-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+  .kagoshima-report .report-card{background:#fffaf4;border:1px solid #ead8c3;border-radius:8px;padding:18px;box-shadow:0 10px 26px rgba(37,29,20,.06)}
+  .kagoshima-report .report-card h3{margin:0 0 8px;color:#2d2d2d;font-size:18px;line-height:1.45}
+  .kagoshima-report .report-card p{margin:0;color:#555;line-height:1.78;font-size:15px}
+  .kagoshima-report .report-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+  .kagoshima-report .fact{background:#f8f9fb;border:1px solid #dde4ea;border-radius:8px;padding:14px}
+  .kagoshima-report .fact b{display:block;color:#1f3f5b;font-size:20px;line-height:1.3}
+  .kagoshima-report .fact span{display:block;margin-top:4px;color:#59636b;font-size:13px;line-height:1.55}
+  .kagoshima-report .report-table-wrap{overflow:auto;border:1px solid #e2ddd6;border-radius:8px;background:#fff;margin-top:18px}
+  .kagoshima-report table{width:100%;border-collapse:collapse;min-width:780px}
+  .kagoshima-report th,.kagoshima-report td{padding:12px 14px;border-bottom:1px solid #eee5dc;text-align:left;vertical-align:top;font-size:14px;line-height:1.65}
+  .kagoshima-report th{background:#f7f2ec;color:#2c2c2c;font-weight:900;white-space:nowrap}
+  .kagoshima-report tr:last-child td{border-bottom:0}
+  .kagoshima-report a{color:#a64200;font-weight:900;text-decoration:underline;text-underline-offset:3px}
+  .kagoshima-report .source-note{margin:14px 0 0;color:#6a5c50;font-size:13px;line-height:1.75}
+  @media(max-width:900px){.kagoshima-report .report-grid,.kagoshima-report .report-facts{grid-template-columns:1fr}.kagoshima-report table{min-width:700px}}
+</style>
+
+<section id="kagoshima-report" class="kagoshima-report">
+  <div class="report-wrap">
+    <p class="section-kicker">鹿児島県調査データ</p>
+    <h2 class="section-title">鹿児島県43市町村の広域処理・離島搬出・空き家補助を整理</h2>
+    <p class="lead">添付調査をもとに、鹿児島県内のごみ処理ブロック、自己搬入料金、離島地域の搬出条件、高齢者のふれあい収集、空き家の家財処分・改修・解体補助につながる情報を市町村別に整理しました。出典リンクは市町村役所・公式サイトのみです。</p>
+    <div class="report-facts">
+      <div class="fact"><b>43市町村</b><span>19市・20町・4村を県直下ページへ反映</span></div>
+      <div class="fact"><b>南北約600km</b><span>本土、種子島、屋久島、奄美群島で搬出条件が大きく変化</span></div>
+      <div class="fact"><b>広域処理</b><span>北薩、南薩、指宿、大隅肝属、種子島、大島地区など</span></div>
+      <div class="fact"><b>空き家補助</b><span>家財処分・リフォーム・危険空家除却は事前申請を確認</span></div>
+    </div>
+    <div class="report-grid">
+      <div class="report-card"><h3>本土と離島で段取りが変わる</h3><p>離島では島外搬出、船便、港からの距離、処理不可品の扱いが費用と日程に直結します。写真報告と候補日調整を早めに行います。</p></div>
+      <div class="report-card"><h3>高齢者支援は安否確認も兼ねる</h3><p>鹿児島市、阿久根市、霧島市、薩摩川内市、姶良市などでは、戸別収集やごみ出し困難者支援を確認できます。</p></div>
+      <div class="report-card"><h3>家財処分補助は自治体差が大きい</h3><p>薩摩川内市、大崎町、奄美市、阿久根市、西之表市などで家財処分補助の条件が異なります。契約前に対象品目と許可業者要件を確認します。</p></div>
+    </div>
+    <div class="report-table-wrap">
+      <table>
+        <thead><tr><th>市町村</th><th>処理圏</th><th>主な施設・制度</th><th>見積もり前に見る数字</th><th>出典</th></tr></thead>
+        <tbody><tr><td>鹿児島市</td><td>鹿児島都市圏</td><td>北部清掃工場・粗大ごみ処理棟</td><td>100kg以下無料、超過10kgにつき70円を確認。</td><td><a href="https://www.city.kagoshima.lg.jp/" target="_blank" rel="noopener">鹿児島市公式サイト</a></td></tr>
+<tr><td>日置市</td><td>鹿児島・南薩</td><td>いちき串木野市・日置市衛生処理組合／南薩地区施設</td><td>区域・品目で搬入先が変わるため公式確認。</td><td><a href="https://www.city.hioki.kagoshima.jp/" target="_blank" rel="noopener">日置市公式サイト</a></td></tr>
+<tr><td>いちき串木野市</td><td>鹿児島・日置</td><td>串木野環境センター</td><td>100kgまで310円、以降100kgごと310円加算を確認。</td><td><a href="https://www.city.ichikikushikino.lg.jp/" target="_blank" rel="noopener">いちき串木野市公式サイト</a></td></tr>
+<tr><td>三島村</td><td>離島・鹿児島郡</td><td>村指定の粗大ごみ収集・搬出拠点</td><td>50cm以上の大型品は事前申込・指定日時を確認。</td><td><a href="https://mishimamura.com/" target="_blank" rel="noopener">三島村公式サイト</a></td></tr>
+<tr><td>十島村</td><td>離島・鹿児島郡</td><td>村指定の粗大ごみ収集・搬出拠点</td><td>50cm以上の大型品は事前申込・指定日時を確認。</td><td><a href="https://www.tokara.jp/" target="_blank" rel="noopener">十島村公式サイト</a></td></tr>
+<tr><td>枕崎市</td><td>南薩</td><td>南薩地区衛生管理組合など</td><td>なんさつECOの杜等の搬入条件を確認。</td><td><a href="https://www.city.makurazaki.lg.jp/" target="_blank" rel="noopener">枕崎市公式サイト</a></td></tr>
+<tr><td>指宿市</td><td>指宿広域</td><td>指宿広域クリーンセンター</td><td>30kgにつき100円、スプリングマットレス等は10kgにつき1,000円を確認。</td><td><a href="https://www.city.ibusuki.lg.jp/" target="_blank" rel="noopener">指宿市公式サイト</a></td></tr>
+<tr><td>南さつま市</td><td>南薩</td><td>なんさつECOの杜</td><td>持込量・ごみ種別により無料の場合あり、要公式確認。</td><td><a href="https://www.city.minamisatsuma.lg.jp/" target="_blank" rel="noopener">南さつま市公式サイト</a></td></tr>
+<tr><td>南九州市</td><td>南薩・指宿広域</td><td>なんさつECOの杜／指宿広域クリーンセンター</td><td>旧町域・品目で搬入先が変わるため公式確認。</td><td><a href="https://www.city.minamikyushu.lg.jp/" target="_blank" rel="noopener">南九州市公式サイト</a></td></tr>
+<tr><td>阿久根市</td><td>北薩</td><td>エネクリン北薩／エコリア北薩</td><td>100kgにつき300円、または10kgあたり60円を確認。</td><td><a href="https://www.city.akune.lg.jp/" target="_blank" rel="noopener">阿久根市公式サイト</a></td></tr>
+<tr><td>出水市</td><td>北薩</td><td>エネクリン北薩／エコリア北薩</td><td>100kgにつき300円、または10kgあたり60円を確認。</td><td><a href="https://www.city.kagoshima-izumi.lg.jp/" target="_blank" rel="noopener">出水市公式サイト</a></td></tr>
+<tr><td>薩摩川内市</td><td>北薩</td><td>川内クリーンセンター</td><td>100kgまで300円、以降100kg単位300円加算を確認。</td><td><a href="https://www.city.satsumasendai.lg.jp/" target="_blank" rel="noopener">薩摩川内市公式サイト</a></td></tr>
+<tr><td>さつま町</td><td>北薩</td><td>さつま町クリーンセンター</td><td>100kgまで310円、以降100kgにつき310円加算を確認。</td><td><a href="https://www.satsuma-net.jp/" target="_blank" rel="noopener">さつま町公式サイト</a></td></tr>
+<tr><td>長島町</td><td>北薩</td><td>北薩広域行政事務組合施設</td><td>北薩広域の搬入・料金条件を確認。</td><td><a href="https://www.town.nagashima.lg.jp/" target="_blank" rel="noopener">長島町公式サイト</a></td></tr>
+<tr><td>霧島市</td><td>姶良・霧島</td><td>敷根清掃センター／牧園横川クリーンステーション</td><td>30kgまで無料、超過10kgごと80円を確認。</td><td><a href="https://www.city-kirishima.jp/" target="_blank" rel="noopener">霧島市公式サイト</a></td></tr>
+<tr><td>伊佐市</td><td>伊佐湧水</td><td>未来館／三州リサイクルセンター</td><td>未来館50kgまで300円、超過10kgごと100円などを確認。</td><td><a href="https://www.city.isa.kagoshima.jp/" target="_blank" rel="noopener">伊佐市公式サイト</a></td></tr>
+<tr><td>姶良市</td><td>姶良</td><td>RPFエネルギーセンターなど</td><td>自治体規定によるため搬入届・施設条件を確認。</td><td><a href="https://www.city.aira.lg.jp/" target="_blank" rel="noopener">姶良市公式サイト</a></td></tr>
+<tr><td>湧水町</td><td>伊佐湧水</td><td>三州リサイクルセンターなど</td><td>30kgまで無料、超過10kgごと80円などを確認。</td><td><a href="https://www.town.yusui.kagoshima.jp/" target="_blank" rel="noopener">湧水町公式サイト</a></td></tr>
+<tr><td>鹿屋市</td><td>大隅肝属</td><td>肝属地区清掃センターなど</td><td>10kgあたり80円、または100kgまで300円等を確認。</td><td><a href="https://www.city.kanoya.lg.jp/" target="_blank" rel="noopener">鹿屋市公式サイト</a></td></tr>
+<tr><td>垂水市</td><td>大隅肝属</td><td>大隅肝属広域事務組合施設</td><td>広域組合の10kgあたり80円等を確認。</td><td><a href="https://www.city.tarumizu.lg.jp/" target="_blank" rel="noopener">垂水市公式サイト</a></td></tr>
+<tr><td>曽於市</td><td>曽於北部</td><td>曽於市クリーンセンターなど</td><td>50kgまで無料、超過1kgあたり5円を確認。</td><td><a href="https://www.city.soo.kagoshima.jp/" target="_blank" rel="noopener">曽於市公式サイト</a></td></tr>
+<tr><td>志布志市</td><td>曽於南部・大隅</td><td>曽於南部厚生事務組合清掃センターなど</td><td>指定袋等使用による搬入条件を確認。</td><td><a href="https://www.city.shibushi.lg.jp/" target="_blank" rel="noopener">志布志市公式サイト</a></td></tr>
+<tr><td>大崎町</td><td>曽於南部</td><td>曽於南部厚生事務組合清掃センター</td><td>指定袋等使用による搬入条件を確認。</td><td><a href="https://www.town.kagoshima-osaki.lg.jp/" target="_blank" rel="noopener">大崎町公式サイト</a></td></tr>
+<tr><td>東串良町</td><td>大隅肝属</td><td>肝属地区清掃センター</td><td>大隅肝属広域の搬入条件を確認。</td><td><a href="https://www.higashikushira.com/" target="_blank" rel="noopener">東串良町公式サイト</a></td></tr>
+<tr><td>錦江町</td><td>大隅肝属</td><td>大隅肝属広域事務組合施設</td><td>大隅肝属広域の搬入条件を確認。</td><td><a href="https://www.town.kinko.lg.jp/" target="_blank" rel="noopener">錦江町公式サイト</a></td></tr>
+<tr><td>南大隅町</td><td>大隅肝属</td><td>大隅肝属広域事務組合施設</td><td>大隅肝属広域の搬入条件を確認。</td><td><a href="https://www.town.minamiosumi.lg.jp/" target="_blank" rel="noopener">南大隅町公式サイト</a></td></tr>
+<tr><td>肝付町</td><td>大隅肝属</td><td>大隅肝属広域事務組合施設</td><td>大隅肝属広域の搬入条件を確認。</td><td><a href="https://kimotsuki-town.jp/" target="_blank" rel="noopener">肝付町公式サイト</a></td></tr>
+<tr><td>西之表市</td><td>種子島</td><td>種子島清掃センター</td><td>50kg以下260円、超過10kgごと50円加算を確認。</td><td><a href="https://www.city.nishinoomote.lg.jp/" target="_blank" rel="noopener">西之表市公式サイト</a></td></tr>
+<tr><td>中種子町</td><td>種子島</td><td>中種子清掃センター</td><td>50kg以下260円、超過10kgごと50円加算を確認。</td><td><a href="https://town.nakatane.kagoshima.jp/" target="_blank" rel="noopener">中種子町公式サイト</a></td></tr>
+<tr><td>南種子町</td><td>種子島</td><td>南種子町リサイクルセンター</td><td>無料扱いを確認。</td><td><a href="https://www.town.minamitane.kagoshima.jp/" target="_blank" rel="noopener">南種子町公式サイト</a></td></tr>
+<tr><td>屋久島町</td><td>屋久島</td><td>屋久島クリーンサポートセンター</td><td>10kgあたり30円を確認。</td><td><a href="https://www.town.yakushima.kagoshima.jp/" target="_blank" rel="noopener">屋久島町公式サイト</a></td></tr>
+<tr><td>奄美市</td><td>大島地区</td><td>名瀬クリーンセンター</td><td>大島地区衛生組合の持込有料条件を確認。</td><td><a href="https://www.city.amami.lg.jp/" target="_blank" rel="noopener">奄美市公式サイト</a></td></tr>
+<tr><td>大和村</td><td>大島地区</td><td>名瀬クリーンセンター</td><td>大島地区衛生組合の持込条件を確認。</td><td><a href="https://www.vill.yamato.lg.jp/" target="_blank" rel="noopener">大和村公式サイト</a></td></tr>
+<tr><td>宇検村</td><td>大島地区</td><td>名瀬クリーンセンター</td><td>大島地区衛生組合の持込条件を確認。</td><td><a href="https://www.uken.net/" target="_blank" rel="noopener">宇検村公式サイト</a></td></tr>
+<tr><td>瀬戸内町</td><td>大島地区</td><td>名瀬クリーンセンターなど</td><td>大島地区衛生組合の持込条件を確認。</td><td><a href="https://www.town.setouchi.lg.jp/" target="_blank" rel="noopener">瀬戸内町公式サイト</a></td></tr>
+<tr><td>龍郷町</td><td>大島地区</td><td>名瀬クリーンセンター</td><td>大島地区衛生組合の持込条件を確認。</td><td><a href="https://www.town.tatsugo.lg.jp/" target="_blank" rel="noopener">龍郷町公式サイト</a></td></tr>
+<tr><td>喜界町</td><td>喜界島</td><td>喜界町クリーンセンター</td><td>廃材以外10kg50円、廃材10kg200円を確認。</td><td><a href="https://www.town.kikai.lg.jp/" target="_blank" rel="noopener">喜界町公式サイト</a></td></tr>
+<tr><td>徳之島町</td><td>徳之島</td><td>徳之島愛ランドクリーンセンター</td><td>施設規定によるため公式確認。</td><td><a href="https://www.tokunoshima-town.org/" target="_blank" rel="noopener">徳之島町公式サイト</a></td></tr>
+<tr><td>天城町</td><td>徳之島</td><td>徳之島愛ランドクリーンセンター</td><td>施設規定によるため公式確認。</td><td><a href="https://www.town.amagi.lg.jp/" target="_blank" rel="noopener">天城町公式サイト</a></td></tr>
+<tr><td>伊仙町</td><td>徳之島</td><td>徳之島愛ランドクリーンセンター</td><td>施設規定によるため公式確認。</td><td><a href="https://www.town.isen.kagoshima.jp/" target="_blank" rel="noopener">伊仙町公式サイト</a></td></tr>
+<tr><td>和泊町</td><td>沖永良部</td><td>沖永良部クリーンセンター</td><td>10kgあたり75円を確認。</td><td><a href="https://www.town.wadomari.lg.jp/" target="_blank" rel="noopener">和泊町公式サイト</a></td></tr>
+<tr><td>知名町</td><td>沖永良部</td><td>沖永良部クリーンセンター</td><td>10kgあたり75円を確認。</td><td><a href="https://www.town.china.lg.jp/" target="_blank" rel="noopener">知名町公式サイト</a></td></tr>
+<tr><td>与論町</td><td>与論島</td><td>与論町リサイクルセンター</td><td>一般粗大10kg100円、廃木材1kg55円、トタン類1kg35円を確認。</td><td><a href="https://www.yoron.jp/" target="_blank" rel="noopener">与論町公式サイト</a></td></tr></tbody>
+      </table>
+    </div>
+    <p class="source-note">料金・補助制度は年度改定や対象要件があります。民間まとめサイトは出典として掲載せず、各市町村の公式情報で確認する前提で整理しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">鹿児島県内の主な処分センター・広域処理施設の確認</h2>
+  <p>鹿児島県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>鹿児島市、日置市、いちき串木野市、三島村、十島村、枕崎市、指宿市、南さつま市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.kagoshima.jp/" target="_blank" rel="noopener">鹿児島県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る鹿児島県</p>
@@ -1347,7 +1451,7 @@
   </div>
 </section>
 
-<section id="municipalities" class="section"><h2 class="section-title">鹿児島県内の市町村から探す</h2><p class="lead">鹿児島県は19市・20町・4村、合計43市町村です。政令市はないため、市町村ページはすべて県直下に作成しています。</p><div class="grid cols2"><div class="area-box"><h3>鹿児島地域</h3><p>鹿児島市・日置市・いちき串木野市と、三島村・十島村の離島部を分けて搬出条件を確認します。</p><div class="ward-links"><a href="/kagoshima/kagoshima/">鹿児島市</a><a href="/kagoshima/hioki/">日置市</a><a href="/kagoshima/ichikikushikino/">いちき串木野市</a><a href="/kagoshima/mishima/">三島村</a><a href="/kagoshima/toshima/">十島村</a></div></div><div class="area-box"><h3>南薩地域</h3><p>枕崎市・指宿市・南さつま市・南九州市の半島部、海沿い、山間部、観光地周辺の住まいを確認します。</p><div class="ward-links"><a href="/kagoshima/makurazaki/">枕崎市</a><a href="/kagoshima/ibusuki/">指宿市</a><a href="/kagoshima/minamisatsuma/">南さつま市</a><a href="/kagoshima/minamikyushu/">南九州市</a></div></div><div class="area-box"><h3>北薩地域</h3><p>阿久根市・出水市・薩摩川内市・さつま町・長島町の沿岸部、川内川流域、島しょ部を確認します。</p><div class="ward-links"><a href="/kagoshima/akune/">阿久根市</a><a href="/kagoshima/izumi/">出水市</a><a href="/kagoshima/satsumasendai/">薩摩川内市</a><a href="/kagoshima/satsuma/">さつま町</a><a href="/kagoshima/nagashima/">長島町</a></div></div><div class="area-box"><h3>姶良・伊佐地域</h3><p>霧島市・伊佐市・姶良市・湧水町の空港周辺、温泉地、内陸部、山間部の搬出条件を確認します。</p><div class="ward-links"><a href="/kagoshima/kirishima/">霧島市</a><a href="/kagoshima/isa/">伊佐市</a><a href="/kagoshima/aira/">姶良市</a><a href="/kagoshima/yusui/">湧水町</a></div></div><div class="area-box"><h3>大隅地域</h3><p>鹿屋市・垂水市・曽於市・志布志市と大隅半島の町部で、戸建て・農地周辺・沿岸部の整理を確認します。</p><div class="ward-links"><a href="/kagoshima/kanoya/">鹿屋市</a><a href="/kagoshima/tarumizu/">垂水市</a><a href="/kagoshima/soo/">曽於市</a><a href="/kagoshima/shibushi/">志布志市</a><a href="/kagoshima/osaki/">大崎町</a><a href="/kagoshima/higashikushira/">東串良町</a><a href="/kagoshima/kinko/">錦江町</a><a href="/kagoshima/minamiosumi/">南大隅町</a><a href="/kagoshima/kimotsuki/">肝付町</a></div></div><div class="area-box"><h3>熊毛地域</h3><p>種子島・屋久島の島内移動、船便、港・空港からの距離、持込先の確認を前提に整理します。</p><div class="ward-links"><a href="/kagoshima/nishinoomote/">西之表市</a><a href="/kagoshima/nakatane/">中種子町</a><a href="/kagoshima/minamitane/">南種子町</a><a href="/kagoshima/yakushima/">屋久島町</a></div></div><div class="area-box"><h3>大島地域</h3><p>奄美群島の1市9町2村で、島ごとの収集・持込・搬出手配を自治体公式情報で確認します。</p><div class="ward-links"><a href="/kagoshima/amami/">奄美市</a><a href="/kagoshima/yamato/">大和村</a><a href="/kagoshima/uken/">宇検村</a><a href="/kagoshima/setouchi/">瀬戸内町</a><a href="/kagoshima/tatsugo/">龍郷町</a><a href="/kagoshima/kikai/">喜界町</a><a href="/kagoshima/tokunoshima/">徳之島町</a><a href="/kagoshima/amagi/">天城町</a><a href="/kagoshima/isen/">伊仙町</a><a href="/kagoshima/wadomari/">和泊町</a><a href="/kagoshima/china/">知名町</a><a href="/kagoshima/yoron/">与論町</a></div></div></div><p class="source-note">市町村数はe-Stat標準地域コード、地域区分と公式リンクは鹿児島県の地域振興局・支庁ページおよび各自治体公式サイトを確認しています。行政窓口の詳細が公式確認が必要なの項目は公式情報を確認せず「—」で表示しています。</p></section>
+<section id="municipalities" class="section"><h2 class="section-title">鹿児島県内の市町村から探す</h2><p class="lead">鹿児島県は19市・20町・4村、合計43市町村です。政令市はないため、市町村ページはすべて県直下に作成しています。</p><div class="grid cols2"><div class="area-box"><h3>鹿児島地域</h3><p>鹿児島市・日置市・いちき串木野市と、三島村・十島村の離島部を分けて搬出条件を確認します。</p><div class="ward-links"><a href="/kagoshima/kagoshima/">鹿児島市</a><a href="/kagoshima/hioki/">日置市</a><a href="/kagoshima/ichikikushikino/">いちき串木野市</a><a href="/kagoshima/mishima/">三島村</a><a href="/kagoshima/toshima/">十島村</a></div></div><div class="area-box"><h3>南薩地域</h3><p>枕崎市・指宿市・南さつま市・南九州市の半島部、海沿い、山間部、観光地周辺の住まいを確認します。</p><div class="ward-links"><a href="/kagoshima/makurazaki/">枕崎市</a><a href="/kagoshima/ibusuki/">指宿市</a><a href="/kagoshima/minamisatsuma/">南さつま市</a><a href="/kagoshima/minamikyushu/">南九州市</a></div></div><div class="area-box"><h3>北薩地域</h3><p>阿久根市・出水市・薩摩川内市・さつま町・長島町の沿岸部、川内川流域、島しょ部を確認します。</p><div class="ward-links"><a href="/kagoshima/akune/">阿久根市</a><a href="/kagoshima/izumi/">出水市</a><a href="/kagoshima/satsumasendai/">薩摩川内市</a><a href="/kagoshima/satsuma/">さつま町</a><a href="/kagoshima/nagashima/">長島町</a></div></div><div class="area-box"><h3>姶良・伊佐地域</h3><p>霧島市・伊佐市・姶良市・湧水町の空港周辺、温泉地、内陸部、山間部の搬出条件を確認します。</p><div class="ward-links"><a href="/kagoshima/kirishima/">霧島市</a><a href="/kagoshima/isa/">伊佐市</a><a href="/kagoshima/aira/">姶良市</a><a href="/kagoshima/yusui/">湧水町</a></div></div><div class="area-box"><h3>大隅地域</h3><p>鹿屋市・垂水市・曽於市・志布志市と大隅半島の町部で、戸建て・農地周辺・沿岸部の整理を確認します。</p><div class="ward-links"><a href="/kagoshima/kanoya/">鹿屋市</a><a href="/kagoshima/tarumizu/">垂水市</a><a href="/kagoshima/soo/">曽於市</a><a href="/kagoshima/shibushi/">志布志市</a><a href="/kagoshima/osaki/">大崎町</a><a href="/kagoshima/higashikushira/">東串良町</a><a href="/kagoshima/kinko/">錦江町</a><a href="/kagoshima/minamiosumi/">南大隅町</a><a href="/kagoshima/kimotsuki/">肝付町</a></div></div><div class="area-box"><h3>熊毛地域</h3><p>種子島・屋久島の島内移動、船便、港・空港からの距離、持込先の確認を前提に整理します。</p><div class="ward-links"><a href="/kagoshima/nishinoomote/">西之表市</a><a href="/kagoshima/nakatane/">中種子町</a><a href="/kagoshima/minamitane/">南種子町</a><a href="/kagoshima/yakushima/">屋久島町</a></div></div><div class="area-box"><h3>大島地域</h3><p>奄美群島の1市9町2村で、島ごとの収集・持込・搬出手配を自治体公式情報で確認します。</p><div class="ward-links"><a href="/kagoshima/amami/">奄美市</a><a href="/kagoshima/yamato/">大和村</a><a href="/kagoshima/uken/">宇検村</a><a href="/kagoshima/setouchi/">瀬戸内町</a><a href="/kagoshima/tatsugo/">龍郷町</a><a href="/kagoshima/kikai/">喜界町</a><a href="/kagoshima/tokunoshima/">徳之島町</a><a href="/kagoshima/amagi/">天城町</a><a href="/kagoshima/isen/">伊仙町</a><a href="/kagoshima/wadomari/">和泊町</a><a href="/kagoshima/china/">知名町</a><a href="/kagoshima/yoron/">与論町</a></div></div></div><p class="source-note">市町村数はe-Stat標準地域コード、地域区分と公式リンクは鹿児島県の地域振興局・支庁ページおよび各自治体公式サイトを確認しています。行政窓口の詳細が公式確認が必要な項目は公式情報で確認し「—」で表示しています。</p></section>
     <section id="flow" class="section"><h2 class="section-title">見積もり相談までの流れ</h2><div class="flow"><div class="flow-item"><b>市町村を選ぶ</b><span>住まいのある市町村ページで、住宅特性と行政制度の確認方針を見ます。</span></div><div class="flow-item"><b>荷物量を整理</b><span>部屋数、物置、庭、仏壇、家電、貴重品探索の希望をメモします。</span></div><div class="flow-item"><b>行政制度を確認</b><span>粗大ごみ・自己搬入・福祉支援は公式サイトで最新情報を確認します。</span></div><div class="flow-item"><b>相見積もり</b><span>料金だけでなく、養生、写真報告、買取、供養、許認可を比較します。</span></div></div></section>
     
 
@@ -1526,7 +1630,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

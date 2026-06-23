@@ -1758,6 +1758,17 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">山形県内の主な処分センター・広域処理施設の確認</h2>
+  <p>山形県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>山形市、寒河江市、上山市、村山市、天童市、東根市、尾花沢市、山辺町など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.yamagata.jp/" target="_blank" rel="noopener">山形県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る山形県</p>
@@ -1793,6 +1804,46 @@
   </div>
 </section>
 
+
+<style id="yamagata-report-style-v1">
+.yamagata-report{margin-top:52px;padding:26px;border:1px solid #e4ded6;background:#fff;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+.yamagata-report .section-title{margin:0 0 18px;padding:0 0 12px;border:0!important;border-bottom:3px solid #eadfc9!important;background:transparent!important;color:#2B2B2B!important;box-shadow:none!important}
+.yamagata-report .section-title:before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#D05300;border-radius:2px;vertical-align:middle}
+.yamagata-report-lead{margin:0 0 20px;color:#414743;font-size:17px;line-height:1.85}
+.yamagata-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 22px}
+.yamagata-report-card{padding:16px;border:1px solid #ddd7d0;background:#fffaf4}
+.yamagata-report-card b{display:block;color:#a54812;font-size:22px;line-height:1.25}
+.yamagata-report-card span{display:block;margin-top:7px;color:#4f4a43;font-size:14px;line-height:1.7;font-weight:800}
+.yamagata-report-table{width:100%;border-collapse:collapse;background:#fff;margin:18px 0;font-size:15px;line-height:1.75}
+.yamagata-report-table th,.yamagata-report-table td{border:1px solid #ddd7d0;padding:13px;vertical-align:top;text-align:left}
+.yamagata-report-table th{background:#f1eee8;font-weight:900;white-space:nowrap}
+.yamagata-report-note{margin:14px 0 0;padding:13px 15px;border-left:4px solid #D05300;background:#fff7ec;color:#453f39;font-weight:800;line-height:1.8}
+@media(max-width:820px){.yamagata-report{padding:20px}.yamagata-report-grid{grid-template-columns:1fr}.yamagata-report-table{display:block;overflow-x:auto;white-space:nowrap}}
+</style>
+<section id="yamagata-report-insights" class="section yamagata-report">
+  <h2 class="section-title">山形県35市町村調査から見る、整理前に確認すべきこと</h2>
+  <p class="yamagata-report-lead">添付いただいた山形県全35市町村の調査内容から、遺品整理・生前整理に直結する「ごみ処理圏域」「粗大ごみの出し方」「空き家・家財処分補助」「高齢世帯のごみ出し支援」を整理しました。山形県は村山・最上・置賜・庄内の4地域で住宅条件が変わり、さらに8つの広域処理ブロックごとに搬入先や料金、戸別収集の考え方が変わります。</p>
+  <div class="yamagata-report-grid">
+    <div class="yamagata-report-card"><b>35市町村</b><span>13市・19町・3村を、村山・最上・置賜・庄内の4地域で確認。</span></div>
+    <div class="yamagata-report-card"><b>8処理圏域</b><span>粗大ごみの受付、直接搬入先、手数料は広域ブロック単位で変わります。</span></div>
+    <div class="yamagata-report-card"><b>家財補助</b><span>山形市・米沢市・天童市などは、空き家バンクや家財処分補助を確認。</span></div>
+    <div class="yamagata-report-card"><b>高齢世帯</b><span>行政収集では室内搬出まで対応しないことが多く、民間作業との切り分けが重要です。</span></div>
+  </div>
+  <table class="yamagata-report-table">
+    <thead><tr><th>処理圏域</th><th>対象市町村</th><th>見積もり前の確認点</th><th>整理相談で使うポイント</th></tr></thead>
+    <tbody>
+      <tr><th>山形広域</th><td>山形市・上山市・山辺町・中山町</td><td>粗大ごみ受付センター、証紙、可燃・不燃の搬入先。</td><td>集合住宅退去と戸建て整理の両方で、行政処分と業者搬出を分ける。</td></tr>
+      <tr><th>クリーンピア共立</th><td>東根市・村山市・天童市・河北町</td><td>直接搬入10kgごとの料金、紙資源、週末受付の有無。</td><td>片付け前に紙類・資源物を分けると費用を抑えやすい。</td></tr>
+      <tr><th>西村山広域</th><td>寒河江市・西川町・朝日町・大江町</td><td>戸別収集の予約締切、証紙、寒河江地区クリーンセンター。</td><td>農家住宅・物置の量を写真で共有し、行政搬入できる物を分ける。</td></tr>
+      <tr><th>最上広域</th><td>新庄市・金山町・最上町・舟形町・真室川町・大蔵村・鮭川村・戸沢村</td><td>可燃は鮭川村、不燃・粗大は舟形町。冬季道路と現金払いも確認。</td><td>豪雪期を避けた作業日、除雪、車両位置、遠方家族の写真報告を重視。</td></tr>
+      <tr><th>置賜広域</th><td>米沢市・長井市・南陽市・高畠町・川西町・小国町・白鷹町・飯豊町</td><td>住所別の搬入先、証紙、屋外までの搬出条件。</td><td>室内から大型家具を出す作業は、行政収集ではなく業者作業として見積もる。</td></tr>
+      <tr><th>庄内北部</th><td>酒田市・庄内町・遊佐町</td><td>記名袋、許可業者依頼、令和8年4月以降の料金改定。</td><td>海沿い住宅、風雪、スプリング入り家具の追加料金を先に確認。</td></tr>
+      <tr><th>庄内南部</th><td>鶴岡市・三川町</td><td>自己搬入または許可業者依頼、令和8年10月の料金改定予定。</td><td>車がない高齢世帯は、搬出・積込・写真報告までまとめて相談。</td></tr>
+      <tr><th>尾花沢・大石田</th><td>尾花沢市・大石田町</td><td>環境衛生センター、証紙、豪雪期の搬入日。</td><td>蔵・納屋・雪囲い用品まで、作業範囲を先に決める。</td></tr>
+    </tbody>
+  </table>
+  <p class="yamagata-report-note">空き家バンク登録物件や危険空き家除却に関連して、家財処分費が補助対象になる自治体があります。制度名・上限額・対象者は年度で変わるため、見積もり前に市町村公式情報と受付中かどうかを必ず確認してください。</p>
+</section>
 
 <section id="yamagata-handmade-guide" class="section remaining-hand-guide" style="--area-main:#2f6f63;--area-soft:#fff7ec">
   <p class="section-kicker">最初に見るところ</p>
@@ -2028,7 +2079,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

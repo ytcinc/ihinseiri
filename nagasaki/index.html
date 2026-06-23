@@ -927,11 +927,28 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="nagasaki-report-style-v1">
+.nagasaki-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.nagasaki-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.nagasaki-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.nagasaki-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.nagasaki-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.nagasaki-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.nagasaki-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.nagasaki-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.nagasaki-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.nagasaki-report-table th,.nagasaki-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.nagasaki-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.nagasaki-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.nagasaki-report-grid{grid-template-columns:1fr}.nagasaki-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-word"><span class="brand-area">長崎県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="#municipalities">市町</a><a href="#data">統計</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>長崎県</div></nav>
-  <section class="hero" style="background-image:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url('/assets/cv-hero-staff-photo.png?v=1')"><div class="hero-inner"><div><span class="eyebrow">長崎県で遺品整理・生前整理を探す</span><h1>坂の街も、離島のご実家も。搬出の難所まで。</h1><p class="hero-lead">長崎は坂の多い斜面地の住まいや、数多くの離島が特徴で、階段やフェリーを使う搬出に技術が要ります。遠方のご遺族に代わり、難所での搬出から貴重品の捜索、お部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><aside class="hero-panel"><h2>長崎県ページの見方</h2><ul class="quick-list"><li>13市・8町、全21市町を掲載</li><li>政令市なし。すべて /nagasaki/{市町}/ で掲載</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なのごみ専用電話番号は `—` として掲載</li></ul></aside></div></section>
+  <section class="hero" style="background-image:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url('/assets/cv-hero-staff-photo.png?v=1')"><div class="hero-inner"><div><span class="eyebrow">長崎県で遺品整理・生前整理を探す</span><h1>坂の街も、離島のご実家も。搬出の難所まで。</h1><p class="hero-lead">長崎は坂の多い斜面地の住まいや、数多くの離島が特徴で、階段やフェリーを使う搬出に技術が要ります。遠方のご遺族に代わり、難所での搬出から貴重品の捜索、お部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><aside class="hero-panel"><h2>長崎県ページの見方</h2><ul class="quick-list"><li>13市・8町、全21市町を掲載</li><li>政令市なし。すべて /nagasaki/{市町}/ で掲載</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なごみ専用電話番号は `—` として掲載</li></ul></aside></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#municipalities"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -1086,6 +1103,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="nagasaki-report" class="section nagasaki-report">
+  <div class="container">
+    <p class="section-kicker">長崎県レポート反映</p>
+    <h2 class="section-title">長崎県21市町調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">長崎県は斜面市街地、半島部、離島部で搬出条件が大きく変わります。遺品整理・生前整理では、階段搬出、車両停車、フェリー・海上輸送、自己搬入の事前申請、家電4品目、空き家改修・家財処分補助、高齢者のごみ出し支援を分けて確認することが重要です。</p>
+    <div class="nagasaki-report-grid">
+      <div class="nagasaki-report-card"><b>地形差</b><span>長崎市・佐世保市の斜面地、島原半島、東彼地区、五島・壱岐・対馬などの離島で搬出難度が変わります。</span></div>
+      <div class="nagasaki-report-card"><b>料金目安</b><span>10kg40円・60円・62.8円・100円・120円、50kg190円・200円・250円・450円、100kg600円台など地域差があります。</span></div>
+      <div class="nagasaki-report-card"><b>離島対応</b><span>家電4品目や大型家具は海上輸送費・二次運搬費が関係するため、鍵預かり、写真報告、候補日調整が重要です。</span></div>
+      <div class="nagasaki-report-card"><b>空き家支援</b><span>改修、家財処分、除却補助は、空き家バンク、移住・定住、老朽度判定、事前申請を確認します。</span></div>
+    </div>
+    <table class="nagasaki-report-table">
+      <tr><th>搬入前確認</th><td>粗大ごみ受付、自己搬入、搬入券・申請書、本人確認、可燃・不燃の施設分け、離島輸送、家電リサイクルを確認します。</td></tr>
+      <tr><th>費用を抑える考え方</th><td>自己搬入は安く済む場合がありますが、斜面地や離島では搬出距離、車両導線、海上輸送、特殊品の分離で費用が変わります。</td></tr>
+      <tr><th>長崎県らしい注意点</th><td>坂道・階段、狭い路地、漁村集落、島外家族の立会いなし、仏壇・位牌の供養、空き家バンク登録前の家財処分を先に整理します。</td></tr>
+    </table>
+    <p class="nagasaki-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各市町ページの出典欄には、市役所・町役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">長崎県内の主な処分センター・広域処理施設の確認</h2>
+  <p>長崎県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>長崎市、西海市、長与町、時津町、諫早市、大村市、東彼杵町、川棚町など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.nagasaki.jp/" target="_blank" rel="noopener">長崎県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る長崎県</p>
@@ -1284,7 +1333,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

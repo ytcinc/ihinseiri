@@ -1486,6 +1486,23 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="hyogo-report-style-v1">
+.hyogo-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.hyogo-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.hyogo-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.hyogo-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.hyogo-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.hyogo-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.hyogo-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.hyogo-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.hyogo-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.hyogo-report-table th,.hyogo-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.hyogo-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.hyogo-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.hyogo-report-grid{grid-template-columns:1fr}.hyogo-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1616,6 +1633,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="hyogo-report" class="section hyogo-report">
+  <div class="container">
+    <p class="section-kicker">兵庫県レポート反映</p>
+    <h2 class="section-title">兵庫県41市町調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">兵庫県は神戸・阪神間の都市型マンション、播磨の戸建て・工場併用住宅、但馬・丹波・淡路の広い敷地や遠方対応で、遺品整理・生前整理の確認事項が大きく変わります。添付調査の廃棄物処理、空き家対策、高齢者支援の要点を、見積もり前に使える形へ整理しました。</p>
+    <div class="hyogo-report-grid">
+      <div class="hyogo-report-card"><b>広域処理</b><span>複数市町で処理施設を共有する地域が多く、持込先・予約方法・手数料は市町ごとの公式確認が必要です。</span></div>
+      <div class="hyogo-report-card"><b>自己搬入</b><span>10kg単位や100kg単位など、料金体系が地域で異なります。大型家具は業者作業と行政制度を分けて考えます。</span></div>
+      <div class="hyogo-report-card"><b>高齢者支援</b><span>ふれあい収集、見守り、粗大ごみ運び出し支援は、対象要件と事前登録の有無を確認します。</span></div>
+      <div class="hyogo-report-card"><b>空き家対策</b><span>売却前、解体前、相続後の家財整理では、補助制度や空き家相談窓口を自治体公式で確認します。</span></div>
+    </div>
+    <table class="hyogo-report-table">
+      <tr><th>神戸・阪神間</th><td>高層マンション、駅近物件、管理会社届出、防災センター確認、EV予約、共用部養生を先に整理します。</td></tr>
+      <tr><th>播磨</th><td>戸建て、工場・倉庫併用、物置、庭まわりが絡みやすく、車両導線と大型家具の搬出条件を見ます。</td></tr>
+      <tr><th>但馬・丹波・淡路</th><td>広い敷地、山間部、海沿い住宅、冬季道路、遠方立会いなしの写真報告と候補日調整が重要です。</td></tr>
+    </table>
+    <p class="hyogo-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各市町ページの出典欄は、市役所・町役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">兵庫県内の主な処分センター・広域処理施設の確認</h2>
+  <p>兵庫県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>神戸市中央区、神戸市東灘区、神戸市灘区、尼崎市、西宮市、芦屋市、姫路市、明石市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://web.pref.hyogo.lg.jp/" target="_blank" rel="noopener">兵庫県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る兵庫県</p>
@@ -2380,7 +2429,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

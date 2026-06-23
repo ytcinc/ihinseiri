@@ -1434,6 +1434,23 @@
     #service .service-list { grid-template-columns: 1fr; }
   }
 </style>
+
+<style id="kyoto-report-style-v1">
+.kyoto-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.kyoto-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.kyoto-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.kyoto-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.kyoto-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.kyoto-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.kyoto-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.kyoto-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.kyoto-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.kyoto-report-table th,.kyoto-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.kyoto-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.kyoto-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.kyoto-report-grid{grid-template-columns:1fr}.kyoto-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1866,15 +1883,44 @@
         </div>
       </section>
 
-      <section id="admin">
-        <p class="section-kicker">行政・福祉ホットライン</p>
-        <h2 class="section-title">八幡市の行政窓口・公式リンク</h2>
-        <p>公式確認が取れていない電話番号・受付時間は公式情報を確認せず、— として掲載しています。</p>
-        <div class="grid cols2"><div class="admin-card"><h3>粗大ごみ・大型ごみ受付</h3><p>—（八幡市公式サイトのごみ・リサイクル案内で確認。電話番号・受付時間は公式情報を確認しません。）</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>持込・処理施設</h3><p>—（直営、広域連合、一部事務組合などの別は公式確認が必要です。）</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>高齢者等の運び出し支援</h3><p>—（対象条件・申請先を公式情報で確認してください。）</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>空家・住まい相談</h3><p>—（空家相談、住まい相談、福祉窓口は公式サイトで確認してください。）</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>市役所・町村役場公式</h3><p>八幡市公式サイト。制度・受付時間・対象条件は相談前に確認してください。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div></div>
-        <p class="source-note">行政制度、受付時間、対象条件、料金は変更される場合があります。相談前に各公式ページで最新情報を確認してください。</p>
-      </section>
+      <section id="admin" class="admin-hotline-section">
+  <p class="section-kicker">行政・福祉ホットライン</p>
+  <h2 class="section-title">八幡市の行政窓口・粗大ごみ・住まい相談</h2>
+  <p>八幡市で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+  <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>八幡市役所</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>八幡市のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/kyoto/" target="_blank" rel="noopener">京都府ページへ戻る</a></div>
+  </div>
+  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+</section>
 
-      <section id="faq" class="faq">
+      
+<section id="kyoto-report" class="section kyoto-report">
+  <div class="container">
+    <p class="section-kicker">京都府調査データ</p>
+    <h2 class="section-title">八幡市に反映した京都府調査データ</h2>
+    <p class="lead">添付調査から、八幡市で遺品整理・生前整理を進める前に確認したい廃棄物処理、空き家対策、高齢者支援の要点を整理しました。料金・受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <div class="kyoto-report-grid">
+      <div class="kyoto-report-card"><b>自己搬入・粗大ごみ</b><span>八幡市環境エネルギーセンター。家庭系ごみ10kgにつき200円目安。</span></div>
+      <div class="kyoto-report-card"><b>搬出条件</b><span>乙訓・山城はベッドタウンの集合住宅と戸建てが混在し、退去期限、EV予約、前面道路、事前申請の有無を分けて確認します。</span></div>
+      <div class="kyoto-report-card"><b>空き家・生前整理</b><span>売却前、解体前、施設入居前は、残す書類、仏壇、写真、貴重品、屋外品を分けて確認します。</span></div>
+      <div class="kyoto-report-card"><b>役所出典</b><span><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">八幡市公式サイト</a>のみを出典として記載。</span></div>
+    </div>
+    <table class="kyoto-report-table">
+      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、臨時収集、家電リサイクルは、事前申請、搬入申込書、指定袋、手数料券の要否を確認します。</td></tr>
+      <tr><th>料金目安</th><td>家庭系ごみ10kgにつき200円目安。家電4品目、危険物、事業系ごみ、解体材、仏壇の供養希望品は別ルールとして分けてください。</td></tr>
+      <tr><th>地域事情</th><td>乙訓・山城はベッドタウンの集合住宅と戸建てが混在し、退去期限、EV予約、前面道路、事前申請の有無を分けて確認します。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">八幡市公式サイト</a></td></tr>
+    </table>
+    <p class="kyoto-report-note">出典リンクは市役所・町役場・村役場の公式サイトのみです。広域組合や民間まとめサイトのURLは出典欄に出さず、公式確認を前提にしています。</p>
+  </div>
+</section>
+
+<section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">八幡市の遺品整理・生前整理でよくある質問</h2>
         <details><summary>八幡市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として八幡市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>八幡市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
@@ -1894,12 +1940,14 @@
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
 
-      <footer id="operator" class="site-footer">
-        <div class="footer-grid">
-          <div><h2>八幡市遺品整理・生前整理.jp編集部</h2><p>本サイトは京都府八幡市で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。口コミやレビューを装った表示は行わず、ビフォーアフターは想定事例として明記しています。</p></div>
-          <div id="policy"><h3>運営ポリシー</h3><p>人口・世帯・住宅の統計はe-Stat、行政窓口は公式サイトを根拠にします。不確実な電話番号や料金は公式情報を確認せず、公式確認が必要な項目は — として掲載します。</p><p id="hotline"><a href="/">TOP</a> / <a href="/kyoto/">京都府</a> / <a href="#admin">行政・福祉ホットライン</a></p></div>
-        </div>
-      </footer>
+      <footer id="operator" class="site-footer" data-pref="kyoto" data-city="八幡市">
+  <div class="footer-grid">
+    <section class="footer-col"><h2>八幡市ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
+    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>八幡市役所</span><span>電話・受付時間は公式サイトで確認</span></li><li><b>粗大ごみ・収集の相談</b><span>八幡市公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>清掃センター、環境センター、広域処理組合、自己搬入条件を確認。</span></li><li><b>ごみの持ち出しサービス</b><span>高齢者・障がい者などの支援制度は福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に八幡市公式情報も確認してください。</p></section>
+    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.city.yawata.kyoto.jp/" target="_blank" rel="noopener">八幡市公式サイト</a></li><li><a href="/kyoto/">京都府トップ</a></li></ul><p class="footer-note" id="operator">運営: 京都府八幡市遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは八幡市で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
+  </div>
+  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">八幡市情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
+</footer>
     </main>
     <aside>
       <div class="side-card"><h2>八幡市で重視すること</h2><ul class="side-list"><li>八幡周辺の集合住宅で搬出時間と共用部養生を確認したい</li><li>男山周辺の戸建てで大型家具・物置まで整理したい</li><li>遠方から鍵を預け、作業前後の写真報告で進めたい</li><li>通帳・印鑑・権利書・写真・貴金属を処分前に探してほしい</li><li>行政の大型ごみ・粗大ごみと業者作業の範囲を分けたい</li></ul></div>

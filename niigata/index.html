@@ -1046,6 +1046,23 @@ table{width:100%;border-collapse:collapse;margin:18px 0 22px;background:#fff;fon
     background:#fff!important;
   }
 </style>
+
+<style id="niigata-report-style-v1">
+.niigata-report{background:#f8f7f4;border-top:1px solid #ddd7d0;border-bottom:1px solid #ddd7d0;padding:clamp(34px,5vw,62px) 0;color:#2d2d2d}
+.niigata-report .section-kicker{color:#6c5a45;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.niigata-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2d2d2d}
+.niigata-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.niigata-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.niigata-report-card{background:#fff;border:1px solid #ddd7d0;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(45,45,45,.06)}
+.niigata-report-card b{display:block;color:#2f6f8f;font-size:15px;margin-bottom:6px}
+.niigata-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.niigata-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #ddd7d0;border-radius:10px;overflow:hidden}
+.niigata-report-table th,.niigata-report-table td{border-bottom:1px solid #e8e2dc;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.niigata-report-table th{width:180px;background:#f0ece6;color:#5d6670;font-weight:900}
+.niigata-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.niigata-report-grid{grid-template-columns:1fr}.niigata-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
 
@@ -1211,6 +1228,38 @@ table{width:100%;border-collapse:collapse;margin:18px 0 22px;background:#fff;fon
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="niigata-report" class="section niigata-report">
+  <div class="container">
+    <p class="section-kicker">新潟県レポート反映</p>
+    <h2 class="section-title">新潟県30市町村調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">新潟県は下越・中越・上越・佐渡で、広域処理施設、冬季道路、山間部、離島対応、遠方家族の立会いなし整理の条件が変わります。添付調査の一般廃棄物処理、空き家対策、高齢者支援制度を、遺品整理・生前整理の見積もり前に使える形へ整理しました。</p>
+    <div class="niigata-report-grid">
+      <div class="niigata-report-card"><b>指定袋・有料化</b><span>多くの自治体で1Lあたり約1円前後の指定袋制度があり、分別と費用負担の確認が必要です。</span></div>
+      <div class="niigata-report-card"><b>自己搬入</b><span>10kg単位、50kg単位、100kgまで一律など施設ごとに料金体系が異なります。</span></div>
+      <div class="niigata-report-card"><b>豪雪・遠方対応</b><span>魚沼・中越・上越は冬季道路、山間部、候補日調整、写真報告を先に決めると進めやすくなります。</span></div>
+      <div class="niigata-report-card"><b>空き家・高齢者支援</b><span>ごみ出し困難世帯、空き家化、残置物処理は、自治体の支援制度と業者作業を分けて確認します。</span></div>
+    </div>
+    <table class="niigata-report-table">
+      <tr><th>下越</th><td>新潟市周辺の都市型集合住宅と、村上・新発田方面の郊外戸建て、海沿い住宅で搬出条件が変わります。</td></tr>
+      <tr><th>県央・中越</th><td>長岡・三条・燕・柏崎方面は、物置、車庫、工場・倉庫併用住宅、大型家具の搬出を先に見ます。</td></tr>
+      <tr><th>魚沼・上越・佐渡</th><td>豪雪、山間部、離島対応、遠距離移動、鍵預かり、写真報告を前提に段取りします。</td></tr>
+    </table>
+    <p class="niigata-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各地域ページの出典欄は、市役所・町役場・村役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">新潟県内の主な処分センター・広域処理施設の確認</h2>
+  <p>新潟県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>新潟市、長岡市、上越市、三条市、新発田市、柏崎市、十日町市、南魚沼市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.niigata.lg.jp/" target="_blank" rel="noopener">新潟県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る新潟県</p>
@@ -1550,7 +1599,7 @@ table{width:100%;border-collapse:collapse;margin:18px 0 22px;background:#fff;fon
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

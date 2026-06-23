@@ -629,6 +629,23 @@
     #service .service-list { grid-template-columns: 1fr; }
   }
 </style>
+
+<style id="saga-report-style-v1">
+.saga-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.saga-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.saga-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.saga-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.saga-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.saga-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.saga-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.saga-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.saga-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.saga-report-table th,.saga-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.saga-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.saga-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.saga-report-grid{grid-template-columns:1fr}.saga-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -646,7 +663,7 @@
         <h1>基山町で遺品整理・生前整理を相談する前に確認したいこと</h1>
         <p class="hero-lead">基山町で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p>
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
-        <div class="hero-badges"><div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div><div class="badge"><b>養生対応</b><span>共用廊下・階段・車両位置を確認</span></div><div class="badge"><b>買取相殺</b><span>査定品を処分前に切り分け</span></div><div class="badge"><b>行政確認</b><span>不確実な窓口は公式情報を確認しません</span></div></div>
+        <div class="hero-badges"><div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div><div class="badge"><b>養生対応</b><span>共用廊下・階段・車両位置を確認</span></div><div class="badge"><b>買取相殺</b><span>査定品を処分前に切り分け</span></div><div class="badge"><b>行政確認</b><span>不確実な窓口は公式情報で確認</span></div></div>
       </div>
       <div class="hero-panel"><h2>基山町で特に多い相談</h2><ul class="quick-list"><li>基山駅周辺の住まいで大型家具と家電を整理したい</li><li>けやき台周辺の戸建て・集合住宅で搬出条件を確認したい</li><li>遠方から鍵を預け、作業前後の写真報告で進めたい</li><li>通帳・印鑑・権利書・写真・貴金属を処分前に探してほしい</li><li>自治体のごみ制度と業者作業の範囲を分けたい</li></ul></div>
     </div>
@@ -904,15 +921,58 @@
 
       <section id="avoid-bad-vendors"><p class="section-kicker">悪徳業者対策</p><h2 class="section-title">トラブル急増中！悪質な遺品整理業者の手口と見分け方</h2><p>遺品整理・生前整理では、見積もり後の高額請求、大切な品の誤処分、不透明な処分ルートなどの不安を抱える方が少なくありません。基山町で相談する前に、以下の特徴に当てはまる業者ではないか確認しましょう。</p><div class="bad-vendor-visual"><img src="/assets/avoid-bad-vendors-banner.png" alt="悪質業者に注意するためのチェック画像"></div><div class="bad-vendor-grid"><div class="bad-vendor-card"><h3>見積金額が相場より極端に安い</h3><p>安さだけで契約させ、積み込み後に追加料金を請求するケースがあります。</p></div><div class="bad-vendor-card"><h3>訪問・現地見積もりを避ける</h3><p>電話だけの概算では、当日の搬出条件を理由に金額が変わりやすくなります。</p></div><div class="bad-vendor-card"><h3>見積書・契約書を書面で出さない</h3><p>口約束だけでは、作業範囲や追加費用の条件が曖昧になります。</p></div><div class="bad-vendor-card"><h3>即決を強く迫る</h3><p>他社と比較させないために「今日だけ値引き」と急がせる業者には注意しましょう。</p></div></div></section>
 
-      <section id="admin"><p class="section-kicker">行政・福祉ホットライン</p><h2 class="section-title">基山町の行政窓口・公式リンク</h2><p>ごみ専用電話・受付時間・持込先は自治体ごとに変わります。公式確認が取れていない項目は公式情報を確認せず、— として掲載しています。</p><div class="grid cols2"><div class="admin-card"><h3>粗大ごみ・大型ごみ受付</h3><p>—（基山町公式サイトのごみ・リサイクル案内で確認。電話番号・受付時間は公式情報を確認しません。）</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>持込・処理施設</h3><p>—（直営、一部事務組合、広域処理施設などの別は自治体公式情報で確認してください。）</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>高齢者等の運び出し支援</h3><p>—（ふれあい収集・戸別支援の対象条件と申請先は公式情報で確認してください。）</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>空家・住まい相談</h3><p>—（空家相談、住まい相談、福祉窓口は公式サイトで確認してください。）</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>市役所・町役場代表</h3><p>—（基山町公式サイトで代表電話、所在地、担当課、開庁時間を確認してください。公式情報を確認しません。）</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>佐賀県公式サイト</h3><p>県内の制度・生活情報は佐賀県公式サイトからも確認できます。</p><a href="https://www.pref.saga.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div></div><p class="source-note">代表電話・所在地、公式サイトURLは各自治体公式サイトを確認しています。ごみ制度、受付時間、対象条件、料金は変更される場合があります。</p></section>
+      <section id="admin" class="admin-hotline-section">
+  <p class="section-kicker">行政・福祉ホットライン</p>
+  <h2 class="section-title">基山町の行政窓口・粗大ごみ・住まい相談</h2>
+  <p>基山町で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+  <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>基山町役場</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>基山町のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/saga/" target="_blank" rel="noopener">佐賀県ページへ戻る</a></div>
+  </div>
+  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+</section>
 
-      <section id="faq" class="faq"><p class="section-kicker">FAQ</p><h2 class="section-title">基山町の遺品整理・生前整理でよくある質問</h2><details><summary>基山町で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として基山町でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>基山町の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details></section>
+      
+<section id="saga-report" class="section saga-report">
+  <div class="container">
+    <p class="section-kicker">佐賀県調査データ</p>
+    <h2 class="section-title">基山町に反映した佐賀県調査データ</h2>
+    <p class="lead">添付調査から、基山町で遺品整理・生前整理を進める前に確認したい粗大ごみ、自己搬入、空き家・家財処分、高齢者支援の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <div class="saga-report-grid">
+      <div class="saga-report-card"><b>処理圏</b><span>佐賀県東部。佐賀東部クリーンエコランド</span></div>
+      <div class="saga-report-card"><b>料金目安</b><span>家庭ごみは50kgまで300円、以降10kg増すごと100円加算が目安です。</span></div>
+      <div class="saga-report-card"><b>地域特性</b><span>鳥栖・三養基・神埼圏は、旧施設から新施設への再編が進んでいます。搬入先、指定袋、許可・予約を公式で確認します。</span></div>
+      <div class="saga-report-card"><b>役所出典</b><span><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">基山町公式サイト</a>のみを出典として記載。</span></div>
+    </div>
+    <table class="saga-report-table">
+      <tr><th>受付確認</th><td>戸別収集、自己搬入、一時多量ごみ、家電リサイクル、指定袋・ステッカー、日曜・祝日予約、空き家補助は、予約と事前申請を分けて確認します。</td></tr>
+      <tr><th>料金目安</th><td>家庭ごみは50kgまで300円、以降10kg増すごと100円加算が目安です。</td></tr>
+      <tr><th>制度確認</th><td>家財処分等費用補助は上限10万円の例があり、不良住宅除去や耐震支援と分けて確認します。</td></tr>
+      <tr><th>見積もり前</th><td>鳥栖・三養基・神埼圏は、旧施設から新施設への再編が進んでいます。搬入先、指定袋、許可・予約を公式で確認します。 残す品、探す書類、買取候補、供養品、仏壇・寝具・物置・庭木の範囲も先に共有します。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">基山町公式サイト</a></td></tr>
+    </table>
+    <p class="saga-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+  </div>
+</section>
+
+<section id="faq" class="faq"><p class="section-kicker">FAQ</p><h2 class="section-title">基山町の遺品整理・生前整理でよくある質問</h2><details><summary>基山町で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として基山町でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>基山町の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details></section>
 
       <section id="links" class="nearby-wards"><p class="section-kicker">周辺リンク</p><h2 class="section-title">基山町周辺のページも見る</h2><p>基山町で遺品整理・生前整理を検討している方が、同じ佐賀県内の近隣ページも確認できるよう、作成済みページだけを掲載しています。</p><div class="ward-links"><a href="/saga/tosu/">鳥栖市</a><a href="/saga/kanzaki/">神埼市</a><a href="/saga/yoshinogari/">吉野ヶ里町</a><a href="/saga/kamimine/">上峰町</a></div></section>
 
       <section id="contact" class="cta-band"><p class="section-kicker">見積もり前チェック</p><h2>基山町の遺品整理・生前整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを分けると、費用も作業範囲も判断しやすくなります。</p><div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div></section>
 
-      <footer id="operator" class="site-footer"><div class="footer-grid"><div><h2>基山町遺品整理・生前整理.jp編集部</h2><p>本サイトは佐賀県基山町で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。口コミやレビューを装った表示は行わず、ビフォーアフターは想定事例として明記しています。</p></div><div id="policy"><h3>運営ポリシー</h3><p>人口・世帯・住宅の統計はe-Stat、代表電話・所在地と公式サイトURLは各自治体公式サイトを根拠にします。不確実なごみ専用電話や料金は公式情報を確認せず、公式確認が必要な項目は `—` として掲載します。</p><p id="hotline"><a href="/">TOP</a> / <a href="/saga/">佐賀県</a> / <a href="#admin">行政・福祉ホットライン</a></p></div></div></footer>
+      <footer id="operator" class="site-footer" data-pref="saga" data-city="基山町">
+  <div class="footer-grid">
+    <section class="footer-col"><h2>基山町ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
+    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>基山町役場</span><span>電話・受付時間は公式サイトで確認</span></li><li><b>粗大ごみ・収集の相談</b><span>基山町公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>清掃センター、環境センター、広域処理組合、自己搬入条件を確認。</span></li><li><b>ごみの持ち出しサービス</b><span>高齢者・障がい者などの支援制度は福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に基山町公式情報も確認してください。</p></section>
+    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">基山町公式サイト</a></li><li><a href="/saga/">佐賀県トップ</a></li></ul><p class="footer-note" id="operator">運営: 佐賀県基山町遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは基山町で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
+  </div>
+  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">基山町情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
+</footer>
     </main>
     <aside><div class="side-card"><h2>基山町で重視すること</h2><ul class="side-list"><li>住宅特性：26.3%の共同住宅居住率</li><li>単身世帯比率：26.1%</li><li>65歳以上割合：31.2%</li><li>行政窓口と業者作業の役割分担</li><li>立会い不要・写真報告・貴重品探索</li></ul></div><div class="side-card"><h2>行政・福祉リンク</h2><ul class="side-list"><li><a href="#admin">基山町の窓口一覧</a></li><li><a href="https://www.town.kiyama.lg.jp/" target="_blank" rel="noopener">基山町公式サイト</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li></ul></div></aside>
   </div>

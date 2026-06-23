@@ -1289,6 +1289,85 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<style id="oita-report-style">
+  .oita-report{background:#fff;border-top:1px solid #e8ded2;border-bottom:1px solid #e8ded2;padding:clamp(34px,5vw,64px) 0;color:#2b2b2b}
+  .oita-report .report-wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}
+  .oita-report .section-kicker{margin:0 0 8px;color:#b94a00;font-weight:900;letter-spacing:.03em}
+  .oita-report .section-title{margin:0 0 14px;color:#252525;font-size:clamp(25px,3vw,38px);line-height:1.35;font-weight:900}
+  .oita-report .lead{max-width:940px;margin:0 0 22px;color:#4d5651;font-size:17px;line-height:1.9}
+  .oita-report .report-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+  .oita-report .report-card{background:#fffaf4;border:1px solid #ead8c3;border-radius:8px;padding:18px;box-shadow:0 10px 26px rgba(37,29,20,.06)}
+  .oita-report .report-card h3{margin:0 0 8px;color:#2d2d2d;font-size:18px;line-height:1.45}
+  .oita-report .report-card p{margin:0;color:#555;line-height:1.78;font-size:15px}
+  .oita-report .report-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+  .oita-report .fact{background:#f8f9fb;border:1px solid #dde4ea;border-radius:8px;padding:14px}
+  .oita-report .fact b{display:block;color:#1f3f5b;font-size:20px;line-height:1.3}
+  .oita-report .fact span{display:block;margin-top:4px;color:#59636b;font-size:13px;line-height:1.55}
+  .oita-report .report-table-wrap{overflow:auto;border:1px solid #e2ddd6;border-radius:8px;background:#fff;margin-top:18px}
+  .oita-report table{width:100%;border-collapse:collapse;min-width:760px}
+  .oita-report th,.oita-report td{padding:12px 14px;border-bottom:1px solid #eee5dc;text-align:left;vertical-align:top;font-size:14px;line-height:1.65}
+  .oita-report th{background:#f7f2ec;color:#2c2c2c;font-weight:900;white-space:nowrap}
+  .oita-report tr:last-child td{border-bottom:0}
+  .oita-report a{color:#a64200;font-weight:900;text-decoration:underline;text-underline-offset:3px}
+  .oita-report .source-note{margin:14px 0 0;color:#6a5c50;font-size:13px;line-height:1.75}
+  @media(max-width:900px){.oita-report .report-grid,.oita-report .report-facts{grid-template-columns:1fr}.oita-report table{min-width:680px}}
+</style>
+
+<section id="oita-report" class="oita-report">
+  <div class="report-wrap">
+    <p class="section-kicker">大分県調査データ</p>
+    <h2 class="section-title">大分県18市町村の粗大ごみ・高齢者支援・空き家補助を整理</h2>
+    <p class="lead">添付調査をもとに、大分県内の自己搬入施設、戸別収集、家電リサイクル、仏壇・スプリングマットレスなど遺品整理で詰まりやすい品目、高齢者のごみ出し支援、空き家家財処分補助を市町村別に整理しました。出典リンクは市町村役所・広域組合など公式サイトのみです。</p>
+    <div class="report-facts">
+      <div class="fact"><b>18市町村</b><span>14市・3町・1村を県直下ページへ反映</span></div>
+      <div class="fact"><b>広域処理</b><span>別杵速見、宇佐・高田・国東、日田玖珠など</span></div>
+      <div class="fact"><b>高齢者支援</b><span>大分市のごみ出し支援など安否確認型制度を確認</span></div>
+      <div class="fact"><b>空き家補助</b><span>家財撤去・改修・危険空き家除却は事前申請を確認</span></div>
+    </div>
+    <div class="report-grid">
+      <div class="report-card"><h3>持込と戸別収集を分けて見る</h3><p>大分市・別府市などは戸別収集と自己搬入があり、日田市・津久見市などは許可業者委託が前提になりやすいです。屋内搬出の有無で見積もり条件が変わります。</p></div>
+      <div class="report-card"><h3>特殊品目は先に分ける</h3><p>家電4品目、仏壇、スプリングマットレスは通常の粗大ごみと扱いが異なります。供養、リサイクル券、指定引取場所、業者搬出の範囲を分けます。</p></div>
+      <div class="report-card"><h3>空き家活用前の家財処分</h3><p>空き家バンクや移住定住施策に、上限10万円規模の家財処分補助や改修補助が関係する自治体があります。作業前の申請確認が重要です。</p></div>
+    </div>
+    <div class="report-table-wrap">
+      <table>
+        <thead><tr><th>市町村</th><th>処理圏</th><th>主な施設・制度</th><th>見積もり前に見る数字</th><th>出典</th></tr></thead>
+        <tbody><tr><td>大分市</td><td>大分都市圏</td><td>佐野清掃センター／福宗環境センター</td><td>持込は10kgごと35円または40円、1回350kg超過時は事業系料金適用を確認。</td><td><a href="https://www.city.oita.oita.jp/" target="_blank" rel="noopener">大分市公式サイト</a></td></tr>
+<tr><td>別府市</td><td>別杵速見</td><td>藤ケ谷清掃センター</td><td>20kgまで100円、超過10kgごと50円加算を確認。</td><td><a href="https://www.city.beppu.oita.jp/" target="_blank" rel="noopener">別府市公式サイト</a></td></tr>
+<tr><td>中津市</td><td>県北</td><td>中津市クリーンプラザ</td><td>10kgあたり66円、住所確認書類が必要な扱いを確認。</td><td><a href="https://www.city-nakatsu.jp/" target="_blank" rel="noopener">中津市公式サイト</a></td></tr>
+<tr><td>日田市</td><td>日田玖珠</td><td>日田市清掃センター／最終処分場</td><td>100kg未満620円。大量時は最終処分場の扱いを確認。</td><td><a href="https://www.city.hita.oita.jp/" target="_blank" rel="noopener">日田市公式サイト</a></td></tr>
+<tr><td>佐伯市</td><td>県南沿岸</td><td>エコセンター番匠</td><td>50kgまで50円、50-100kgまで100円、以降10kgごと50円加算を確認。</td><td><a href="https://www.city.saiki.oita.jp/" target="_blank" rel="noopener">佐伯市公式サイト</a></td></tr>
+<tr><td>臼杵市</td><td>県南沿岸</td><td>臼杵市清掃センター</td><td>100kgまで350円、以降10kgごと50円加算を確認。</td><td><a href="https://www.city.usuki.oita.jp/" target="_blank" rel="noopener">臼杵市公式サイト</a></td></tr>
+<tr><td>津久見市</td><td>県南沿岸</td><td>ドリームフューエルセンター</td><td>100kgまで110円、以降100kgごと110円加算を確認。</td><td><a href="https://www.city.tsukumi.oita.jp/" target="_blank" rel="noopener">津久見市公式サイト</a></td></tr>
+<tr><td>竹田市</td><td>豊肥・中山間</td><td>竹田市清掃センター</td><td>100kg未満300円、指定袋使用時無料、100kg以上は20kgごと60円加算を確認。</td><td><a href="https://www.city.taketa.oita.jp/" target="_blank" rel="noopener">竹田市公式サイト</a></td></tr>
+<tr><td>豊後高田市</td><td>県北・国東</td><td>宇佐・高田・国東広域事務組合</td><td>10kgにつき44円など、令和8年改定後基準を公式で確認。</td><td><a href="https://www.city.bungotakada.oita.jp/" target="_blank" rel="noopener">豊後高田市公式サイト</a></td></tr>
+<tr><td>杵築市</td><td>別杵速見</td><td>藤ケ谷清掃センター</td><td>20kgまで100円、以降10kgごと50円加算を確認。</td><td><a href="https://www.city.kitsuki.lg.jp/" target="_blank" rel="noopener">杵築市公式サイト</a></td></tr>
+<tr><td>宇佐市</td><td>県北・国東</td><td>宇佐・高田・国東広域事務組合</td><td>10kgにつき44円など、広域組合規定を確認。</td><td><a href="https://www.city.usa.oita.jp/" target="_blank" rel="noopener">宇佐市公式サイト</a></td></tr>
+<tr><td>豊後大野市</td><td>豊肥・中山間</td><td>豊後大野市清掃センター</td><td>100kgまで200円、以降10kgごと20円加算を確認。</td><td><a href="https://www.bungo-ohno.jp/" target="_blank" rel="noopener">豊後大野市公式サイト</a></td></tr>
+<tr><td>由布市</td><td>大分・別府湾</td><td>第2ゆふ浄苑など</td><td>軽トラック1台1,040円、2t車2,090円、施設により10kgごと35円などを確認。</td><td><a href="https://www.city.yufu.oita.jp/" target="_blank" rel="noopener">由布市公式サイト</a></td></tr>
+<tr><td>国東市</td><td>県北・国東</td><td>宇佐・高田・国東広域事務組合など</td><td>500kg未満530円、または10kgごと40円など施設・時期別に確認。</td><td><a href="https://www.city.kunisaki.oita.jp/" target="_blank" rel="noopener">国東市公式サイト</a></td></tr>
+<tr><td>姫島村</td><td>離島</td><td>姫島村清掃センター</td><td>一世帯一人につき月額200円など定額制の扱いを確認。</td><td><a href="https://www.himeshima.jp/" target="_blank" rel="noopener">姫島村公式サイト</a></td></tr>
+<tr><td>日出町</td><td>別杵速見</td><td>藤ケ谷清掃センター</td><td>20kgまで100円、以降10kgごと50円加算を確認。</td><td><a href="https://www.town.hiji.lg.jp/" target="_blank" rel="noopener">日出町公式サイト</a></td></tr>
+<tr><td>九重町</td><td>日田玖珠</td><td>玖珠清掃センターなど</td><td>広域組合規定に基づく料金体系を確認。</td><td><a href="https://www.town.kokonoe.oita.jp/" target="_blank" rel="noopener">九重町公式サイト</a></td></tr>
+<tr><td>玖珠町</td><td>日田玖珠</td><td>玖珠清掃センター</td><td>100kg未満620円などを確認。</td><td><a href="https://www.town.kusu.oita.jp/" target="_blank" rel="noopener">玖珠町公式サイト</a></td></tr></tbody>
+      </table>
+    </div>
+    <p class="source-note">料金・補助制度は年度改定や対象要件があります。民間まとめサイトのURLは出典として掲載せず、各市町村・広域組合の公式情報で確認する前提で整理しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">大分県内の主な処分センター・広域処理施設の確認</h2>
+  <p>大分県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>大分市、別府市、由布市、臼杵市、津久見市、中津市、宇佐市、豊後高田市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.oita.jp/" target="_blank" rel="noopener">大分県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る大分県</p>
@@ -1347,7 +1426,7 @@
   </div>
 </section>
 
-<section id="municipalities" class="section"><h2 class="section-title">大分県内の市町村から探す</h2><p class="lead">大分県は14市・3町・1村、合計18市町村です。市町村ページはすべて県直下に作成し、住まいのある地域から選べるように整理しています。</p><div class="grid cols2"><div class="area-box"><h3>大分・別府湾エリア</h3><p>大分市・別府市周辺の集合住宅、戸建て、温泉地の住まいを確認します。</p><div class="ward-links"><a href="/oita/oita/">大分市</a><a href="/oita/beppu/">別府市</a><a href="/oita/yufu/">由布市</a><a href="/oita/usuki/">臼杵市</a><a href="/oita/tsukumi/">津久見市</a></div></div><div class="area-box"><h3>県北・国東エリア</h3><p>中津市、宇佐市、国東半島、離島で日程・搬出導線を確認します。</p><div class="ward-links"><a href="/oita/nakatsu/">中津市</a><a href="/oita/usa/">宇佐市</a><a href="/oita/bungotakada/">豊後高田市</a><a href="/oita/kunisaki/">国東市</a><a href="/oita/himeshima/">姫島村</a></div></div><div class="area-box"><h3>日田・玖珠エリア</h3><p>山間部、温泉地、広い戸建て、倉庫・物置の整理条件を確認します。</p><div class="ward-links"><a href="/oita/hita/">日田市</a><a href="/oita/kokonoe/">九重町</a><a href="/oita/kusu/">玖珠町</a></div></div><div class="area-box"><h3>佐伯・南部エリア</h3><p>沿岸部や広い戸建てで、車両位置、分別量、退去期限を確認します。</p><div class="ward-links"><a href="/oita/saiki/">佐伯市</a></div></div><div class="area-box"><h3>豊肥エリア</h3><p>竹田市・豊後大野市の中山間地域、農家住宅、屋外品の整理を確認します。</p><div class="ward-links"><a href="/oita/taketa/">竹田市</a><a href="/oita/bungoono/">豊後大野市</a></div></div><div class="area-box"><h3>杵築・速見エリア</h3><p>杵築市と日出町の戸建て、集合住宅、別荘地周辺の条件を確認します。</p><div class="ward-links"><a href="/oita/kitsuki/">杵築市</a><a href="/oita/hiji/">日出町</a></div></div></div><p class="source-note">地域区分は県内の地理・生活圏に合わせた探しやすさを優先しています。行政窓口の詳細が公式確認が必要なの項目は公式情報を確認せず「—」で表示しています。</p></section>
+<section id="municipalities" class="section"><h2 class="section-title">大分県内の市町村から探す</h2><p class="lead">大分県は14市・3町・1村、合計18市町村です。市町村ページはすべて県直下に作成し、住まいのある地域から選べるように整理しています。</p><div class="grid cols2"><div class="area-box"><h3>大分・別府湾エリア</h3><p>大分市・別府市周辺の集合住宅、戸建て、温泉地の住まいを確認します。</p><div class="ward-links"><a href="/oita/oita/">大分市</a><a href="/oita/beppu/">別府市</a><a href="/oita/yufu/">由布市</a><a href="/oita/usuki/">臼杵市</a><a href="/oita/tsukumi/">津久見市</a></div></div><div class="area-box"><h3>県北・国東エリア</h3><p>中津市、宇佐市、国東半島、離島で日程・搬出導線を確認します。</p><div class="ward-links"><a href="/oita/nakatsu/">中津市</a><a href="/oita/usa/">宇佐市</a><a href="/oita/bungotakada/">豊後高田市</a><a href="/oita/kunisaki/">国東市</a><a href="/oita/himeshima/">姫島村</a></div></div><div class="area-box"><h3>日田・玖珠エリア</h3><p>山間部、温泉地、広い戸建て、倉庫・物置の整理条件を確認します。</p><div class="ward-links"><a href="/oita/hita/">日田市</a><a href="/oita/kokonoe/">九重町</a><a href="/oita/kusu/">玖珠町</a></div></div><div class="area-box"><h3>佐伯・南部エリア</h3><p>沿岸部や広い戸建てで、車両位置、分別量、退去期限を確認します。</p><div class="ward-links"><a href="/oita/saiki/">佐伯市</a></div></div><div class="area-box"><h3>豊肥エリア</h3><p>竹田市・豊後大野市の中山間地域、農家住宅、屋外品の整理を確認します。</p><div class="ward-links"><a href="/oita/taketa/">竹田市</a><a href="/oita/bungoono/">豊後大野市</a></div></div><div class="area-box"><h3>杵築・速見エリア</h3><p>杵築市と日出町の戸建て、集合住宅、別荘地周辺の条件を確認します。</p><div class="ward-links"><a href="/oita/kitsuki/">杵築市</a><a href="/oita/hiji/">日出町</a></div></div></div><p class="source-note">地域区分は県内の地理・生活圏に合わせた探しやすさを優先しています。行政窓口の詳細が公式確認が必要な項目は公式情報で確認し「—」で表示しています。</p></section>
     <section id="flow" class="section"><h2 class="section-title">見積もり相談までの流れ</h2><div class="flow"><div class="flow-item"><b>市町村を選ぶ</b><span>住まいのある市町村ページで、住宅特性と行政制度の確認方針を見ます。</span></div><div class="flow-item"><b>荷物量を整理</b><span>部屋数、物置、庭、仏壇、家電、貴重品探索の希望をメモします。</span></div><div class="flow-item"><b>行政制度を確認</b><span>粗大ごみ・自己搬入・福祉支援は公式サイトで最新情報を確認します。</span></div><div class="flow-item"><b>相見積もり</b><span>料金だけでなく、養生、写真報告、買取、供養、許認可を比較します。</span></div></div></section>
     
 
@@ -1411,7 +1490,7 @@
       </section>
 
 <section id="faq" class="section"><h2 class="section-title">大分県の遺品整理・生前整理でよくある質問</h2><div class="grid cols2"><div class="card"><h3>大分県内の市町村ページはありますか？</h3><p>はい。作成済みの18市町村ページへ、この県トップから移動できます。</p></div><div class="card"><h3>行政窓口の電話番号が載っていない項目がありますか？</h3><p>推測で電話番号や受付時間を補完しないため、公式確認が必要な項目は「—」として公式サイト確認へ誘導しています。</p></div><div class="card"><h3>まず何を準備すればよいですか？</h3><p>住所、間取り、荷物量、退去期限、探したい貴重品、買取・供養の希望を整理してください。</p></div><div class="card"><h3>ビフォーアフター事例も確認できますか？</h3><p>県全体の想定事例を下部に掲載し、市町村ページでは地域名に合わせた確認ポイントを掲載しています。</p></div></div></section>
-    <section id="sources" class="section"><h2 class="section-title">確認方針</h2><p class="lead">市町村ページでは、地域名、住宅特性、料金目安、行政窓口の確認方針、悪質業者を避けるチェックを同じ構成で掲載しています。</p><p class="source-note">市町村コード・統計の確認には e-Stat、県公式サイト、各市町村公式サイトを参照する想定です。公式確認が必要な情報は公式情報を確認しません。</p></section>
+    <section id="sources" class="section"><h2 class="section-title">確認方針</h2><p class="lead">市町村ページでは、地域名、住宅特性、料金目安、行政窓口の確認方針、悪質業者を避けるチェックを同じ構成で掲載しています。</p><p class="source-note">市町村コード・統計の確認には e-Stat、県公式サイト、各市町村公式サイトを参照する想定です。公式確認が必要な情報は公式情報で確認してください。</p></section>
     <section id="all-pages" class="section"><h2 class="section-title">大分県の全ページ一覧</h2><p class="lead">市町村名を選ぶと、各地域の遺品整理・生前整理ページへ移動できます。</p><div class="pref-links"><a href="/oita/oita/">大分市の遺品整理・生前整理なら</a><a href="/oita/beppu/">別府市の遺品整理・生前整理なら</a><a href="/oita/yufu/">由布市の遺品整理・生前整理なら</a><a href="/oita/usuki/">臼杵市の遺品整理・生前整理なら</a><a href="/oita/tsukumi/">津久見市の遺品整理・生前整理なら</a><a href="/oita/nakatsu/">中津市の遺品整理・生前整理なら</a><a href="/oita/usa/">宇佐市の遺品整理・生前整理なら</a><a href="/oita/bungotakada/">豊後高田市の遺品整理・生前整理なら</a><a href="/oita/kunisaki/">国東市の遺品整理・生前整理なら</a><a href="/oita/himeshima/">姫島村の遺品整理・生前整理なら</a><a href="/oita/hita/">日田市の遺品整理・生前整理なら</a><a href="/oita/kokonoe/">九重町の遺品整理・生前整理なら</a><a href="/oita/kusu/">玖珠町の遺品整理・生前整理なら</a><a href="/oita/saiki/">佐伯市の遺品整理・生前整理なら</a><a href="/oita/taketa/">竹田市の遺品整理・生前整理なら</a><a href="/oita/bungoono/">豊後大野市の遺品整理・生前整理なら</a><a href="/oita/kitsuki/">杵築市の遺品整理・生前整理なら</a><a href="/oita/hiji/">日出町の遺品整理・生前整理なら</a></div></section>
 <section id="kita-before-after-cases" class="section common-kita-ba">
   <h2 class="section-title">大分県の遺品整理ビフォーアフター事例</h2>
@@ -1526,7 +1605,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

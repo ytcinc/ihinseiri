@@ -1124,6 +1124,23 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="saga-report-style-v1">
+.saga-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.saga-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.saga-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.saga-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.saga-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.saga-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.saga-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.saga-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.saga-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.saga-report-table th,.saga-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.saga-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.saga-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.saga-report-grid{grid-template-columns:1fr}.saga-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1289,6 +1306,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="saga-report" class="section saga-report">
+  <div class="container">
+    <p class="section-kicker">佐賀県レポート反映</p>
+    <h2 class="section-title">佐賀県20市町調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">佐賀県は佐賀市単独、佐賀県東部、天山地区、佐賀県西部、唐津・玄海でごみ処理施設と料金が分かれます。遺品整理・生前整理では、自己搬入の重量課金、粗大ごみステッカー、指定袋、家電4品目、空き家バンク登録、家財処分・除却補助の事前申請を分けて確認することが重要です。</p>
+    <div class="saga-report-grid">
+      <div class="saga-report-card"><b>広域処理</b><span>佐賀東部クリーンエコランド、クリーンヒル天山、さが西部クリーンセンター、唐津市清掃センターなどに集約されています。</span></div>
+      <div class="saga-report-card"><b>料金目安</b><span>50kg300円・400円・410円・500円、50kg770円など、自己搬入の最低料金と加算単位が地域で変わります。</span></div>
+      <div class="saga-report-card"><b>家財処分</b><span>仏壇、大型家具、寝具、古い家電は、行政搬入と民間作業の分担、供養、買取候補を分けて確認します。</span></div>
+      <div class="saga-report-card"><b>空き家支援</b><span>不要物撤去、家財処分、改修、除却補助は、空き家バンク登録、契約前申請、施工業者条件が重要です。</span></div>
+    </div>
+    <table class="saga-report-table">
+      <tr><th>搬入前確認</th><td>本人確認、搬入先、粗大ごみステッカー、指定袋、戸別収集日、日曜・祝日予約、黒色袋不可などを市町ごとに確認します。</td></tr>
+      <tr><th>費用を抑える考え方</th><td>自己搬入は安く済む場合がありますが、車両手配、分別、搬出、仏壇・家電4品目、家財量によって専門作業との分担が必要です。</td></tr>
+      <tr><th>佐賀県らしい注意点</th><td>農村の旧家、納屋・庭、仏間、陶磁器・農機具、遠方家族の立会いなし、空き家流通前の家財撤去を先に整理します。</td></tr>
+    </table>
+    <p class="saga-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各市町ページの出典欄には、市役所・町役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">佐賀県内の主な処分センター・広域処理施設の確認</h2>
+  <p>佐賀県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>佐賀市、多久市、小城市、神埼市、吉野ヶ里町、鳥栖市、基山町、上峰町など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.saga.lg.jp/" target="_blank" rel="noopener">佐賀県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る佐賀県</p>
@@ -1347,7 +1396,7 @@
   </div>
 </section>
 
-<section id="municipalities" class="section"><h2 class="section-title">佐賀県内の市町村から探す</h2><p class="lead">佐賀県は10市・10町、合計20市町村です。市町村ページはすべて県直下に作成し、住まいのある地域から選べるように整理しています。</p><div class="grid cols2"><div class="area-box"><h3>佐賀・小城・神埼エリア</h3><p>県央部の市街地、郊外戸建て、実家じまいを分けて確認します。</p><div class="ward-links"><a href="/saga/saga/">佐賀市</a><a href="/saga/taku/">多久市</a><a href="/saga/ogi/">小城市</a><a href="/saga/kanzaki/">神埼市</a><a href="/saga/yoshinogari/">吉野ヶ里町</a></div></div><div class="area-box"><h3>鳥栖・三養基エリア</h3><p>鳥栖市周辺の集合住宅、戸建て、県境移動を含む搬出条件を確認します。</p><div class="ward-links"><a href="/saga/tosu/">鳥栖市</a><a href="/saga/kiyama/">基山町</a><a href="/saga/kamimine/">上峰町</a><a href="/saga/miyaki/">みやき町</a></div></div><div class="area-box"><h3>唐津・玄海エリア</h3><p>沿岸部、漁村集落、広い戸建て、物置や車庫まわりの整理を確認します。</p><div class="ward-links"><a href="/saga/karatsu/">唐津市</a><a href="/saga/genkai/">玄海町</a></div></div><div class="area-box"><h3>伊万里・有田エリア</h3><p>焼き物、骨董品、趣味用品の買取確認と、戸建て・店舗兼住宅の整理を分けます。</p><div class="ward-links"><a href="/saga/imari/">伊万里市</a><a href="/saga/arita/">有田町</a></div></div><div class="area-box"><h3>武雄・嬉野・杵島エリア</h3><p>温泉地、郊外戸建て、実家じまい、施設入居前の整理条件を確認します。</p><div class="ward-links"><a href="/saga/takeo/">武雄市</a><a href="/saga/ureshino/">嬉野市</a><a href="/saga/omachi/">大町町</a><a href="/saga/kohoku/">江北町</a><a href="/saga/shiroishi/">白石町</a></div></div><div class="area-box"><h3>鹿島・太良エリア</h3><p>有明海沿岸の住まい、車両導線、納屋・屋外品の有無を確認します。</p><div class="ward-links"><a href="/saga/kashima/">鹿島市</a><a href="/saga/tara/">太良町</a></div></div></div><p class="source-note">地域区分は県内の地理・生活圏に合わせた探しやすさを優先しています。行政窓口の詳細が公式確認が必要なの項目は公式情報を確認せず「—」で表示しています。</p></section>
+<section id="municipalities" class="section"><h2 class="section-title">佐賀県内の市町村から探す</h2><p class="lead">佐賀県は10市・10町、合計20市町村です。市町村ページはすべて県直下に作成し、住まいのある地域から選べるように整理しています。</p><div class="grid cols2"><div class="area-box"><h3>佐賀・小城・神埼エリア</h3><p>県央部の市街地、郊外戸建て、実家じまいを分けて確認します。</p><div class="ward-links"><a href="/saga/saga/">佐賀市</a><a href="/saga/taku/">多久市</a><a href="/saga/ogi/">小城市</a><a href="/saga/kanzaki/">神埼市</a><a href="/saga/yoshinogari/">吉野ヶ里町</a></div></div><div class="area-box"><h3>鳥栖・三養基エリア</h3><p>鳥栖市周辺の集合住宅、戸建て、県境移動を含む搬出条件を確認します。</p><div class="ward-links"><a href="/saga/tosu/">鳥栖市</a><a href="/saga/kiyama/">基山町</a><a href="/saga/kamimine/">上峰町</a><a href="/saga/miyaki/">みやき町</a></div></div><div class="area-box"><h3>唐津・玄海エリア</h3><p>沿岸部、漁村集落、広い戸建て、物置や車庫まわりの整理を確認します。</p><div class="ward-links"><a href="/saga/karatsu/">唐津市</a><a href="/saga/genkai/">玄海町</a></div></div><div class="area-box"><h3>伊万里・有田エリア</h3><p>焼き物、骨董品、趣味用品の買取確認と、戸建て・店舗兼住宅の整理を分けます。</p><div class="ward-links"><a href="/saga/imari/">伊万里市</a><a href="/saga/arita/">有田町</a></div></div><div class="area-box"><h3>武雄・嬉野・杵島エリア</h3><p>温泉地、郊外戸建て、実家じまい、施設入居前の整理条件を確認します。</p><div class="ward-links"><a href="/saga/takeo/">武雄市</a><a href="/saga/ureshino/">嬉野市</a><a href="/saga/omachi/">大町町</a><a href="/saga/kohoku/">江北町</a><a href="/saga/shiroishi/">白石町</a></div></div><div class="area-box"><h3>鹿島・太良エリア</h3><p>有明海沿岸の住まい、車両導線、納屋・屋外品の有無を確認します。</p><div class="ward-links"><a href="/saga/kashima/">鹿島市</a><a href="/saga/tara/">太良町</a></div></div></div><p class="source-note">地域区分は県内の地理・生活圏に合わせた探しやすさを優先しています。行政窓口の詳細が公式確認が必要な項目は公式情報で確認し「—」で表示しています。</p></section>
     <section id="flow" class="section"><h2 class="section-title">見積もり相談までの流れ</h2><div class="flow"><div class="flow-item"><b>市町村を選ぶ</b><span>住まいのある市町村ページで、住宅特性と行政制度の確認方針を見ます。</span></div><div class="flow-item"><b>荷物量を整理</b><span>部屋数、物置、庭、仏壇、家電、貴重品探索の希望をメモします。</span></div><div class="flow-item"><b>行政制度を確認</b><span>粗大ごみ・自己搬入・福祉支援は公式サイトで最新情報を確認します。</span></div><div class="flow-item"><b>相見積もり</b><span>料金だけでなく、養生、写真報告、買取、供養、許認可を比較します。</span></div></div></section>
     
 
@@ -1411,7 +1460,7 @@
       </section>
 
 <section id="faq" class="section"><h2 class="section-title">佐賀県の遺品整理・生前整理でよくある質問</h2><div class="grid cols2"><div class="card"><h3>佐賀県内の市町村ページはありますか？</h3><p>はい。作成済みの20市町村ページへ、この県トップから移動できます。</p></div><div class="card"><h3>行政窓口の電話番号が載っていない項目がありますか？</h3><p>推測で電話番号や受付時間を補完しないため、公式確認が必要な項目は「—」として公式サイト確認へ誘導しています。</p></div><div class="card"><h3>まず何を準備すればよいですか？</h3><p>住所、間取り、荷物量、退去期限、探したい貴重品、買取・供養の希望を整理してください。</p></div><div class="card"><h3>ビフォーアフター事例も確認できますか？</h3><p>県全体の想定事例を下部に掲載し、市町村ページでは地域名に合わせた確認ポイントを掲載しています。</p></div></div></section>
-    <section id="sources" class="section"><h2 class="section-title">確認方針</h2><p class="lead">市町村ページでは、地域名、住宅特性、料金目安、行政窓口の確認方針、悪質業者を避けるチェックを同じ構成で掲載しています。</p><p class="source-note">市町村コード・統計の確認には e-Stat、県公式サイト、各市町村公式サイトを参照する想定です。公式確認が必要な情報は公式情報を確認しません。</p></section>
+    <section id="sources" class="section"><h2 class="section-title">確認方針</h2><p class="lead">市町村ページでは、地域名、住宅特性、料金目安、行政窓口の確認方針、悪質業者を避けるチェックを同じ構成で掲載しています。</p><p class="source-note">市町村コード・統計の確認には e-Stat、県公式サイト、各市町村公式サイトを参照する想定です。公式確認が必要な情報は公式情報で確認してください。</p></section>
     <section id="all-pages" class="section"><h2 class="section-title">佐賀県の全ページ一覧</h2><p class="lead">市町村名を選ぶと、各地域の遺品整理・生前整理ページへ移動できます。</p><div class="pref-links"><a href="/saga/saga/">佐賀市の遺品整理・生前整理なら</a><a href="/saga/taku/">多久市の遺品整理・生前整理なら</a><a href="/saga/ogi/">小城市の遺品整理・生前整理なら</a><a href="/saga/kanzaki/">神埼市の遺品整理・生前整理なら</a><a href="/saga/yoshinogari/">吉野ヶ里町の遺品整理・生前整理なら</a><a href="/saga/tosu/">鳥栖市の遺品整理・生前整理なら</a><a href="/saga/kiyama/">基山町の遺品整理・生前整理なら</a><a href="/saga/kamimine/">上峰町の遺品整理・生前整理なら</a><a href="/saga/miyaki/">みやき町の遺品整理・生前整理なら</a><a href="/saga/karatsu/">唐津市の遺品整理・生前整理なら</a><a href="/saga/genkai/">玄海町の遺品整理・生前整理なら</a><a href="/saga/imari/">伊万里市の遺品整理・生前整理なら</a><a href="/saga/arita/">有田町の遺品整理・生前整理なら</a><a href="/saga/takeo/">武雄市の遺品整理・生前整理なら</a><a href="/saga/ureshino/">嬉野市の遺品整理・生前整理なら</a><a href="/saga/omachi/">大町町の遺品整理・生前整理なら</a><a href="/saga/kohoku/">江北町の遺品整理・生前整理なら</a><a href="/saga/shiroishi/">白石町の遺品整理・生前整理なら</a><a href="/saga/kashima/">鹿島市の遺品整理・生前整理なら</a><a href="/saga/tara/">太良町の遺品整理・生前整理なら</a></div></section>
 <section id="kita-before-after-cases" class="section common-kita-ba">
   <h2 class="section-title">佐賀県の遺品整理ビフォーアフター事例</h2>
@@ -1526,7 +1575,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

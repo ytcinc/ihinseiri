@@ -1625,11 +1625,28 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="toyama-report-style-v1">
+.toyama-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.toyama-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.toyama-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.toyama-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.toyama-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.toyama-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.toyama-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.toyama-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.toyama-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.toyama-report-table th,.toyama-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.toyama-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.toyama-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.toyama-report-grid{grid-template-columns:1fr}.toyama-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-word"><span class="brand-area">富山県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#富山・中新川">富山・中新川</a><a href="#新川・下新川">新川・下新川</a><a href="#高岡・射水">高岡・射水</a><a href="#砺波・小矢部">砺波・小矢部</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>富山県</div></nav>
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">富山県で遺品整理・生前整理を探す</span><h1>大きなご実家、蔵も仏間も。物量ごと、ていねいに。</h1><p class="hero-lead">持ち家率の高い富山では、蔵や仏間を備えた大型のご実家が多く、家財の量も相当になります。豪雪と遠さで現地に通いにくいご遺族に代わり、蔵の中の仕分けから貴重品の捜索、お部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>富山県ページの見方</h2><ul class="quick-list"><li>富山県内15市町村をすべて掲載</li><li>地域ブロック別にハブから移動できます</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なの行政電話番号は `—` として掲載</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">富山県で遺品整理・生前整理を探す</span><h1>大きなご実家、蔵も仏間も。物量ごと、ていねいに。</h1><p class="hero-lead">持ち家率の高い富山では、蔵や仏間を備えた大型のご実家が多く、家財の量も相当になります。豪雪と遠さで現地に通いにくいご遺族に代わり、蔵の中の仕分けから貴重品の捜索、お部屋の引き渡しまで責任を持って進めます。</p><div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>富山県ページの見方</h2><ul class="quick-list"><li>富山県内15市町村をすべて掲載</li><li>地域ブロック別にハブから移動できます</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要な行政電話番号は `—` として掲載</li></ul></div></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#prefectures"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -1784,6 +1801,38 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<section id="toyama-report" class="section toyama-report">
+  <div class="container">
+    <p class="section-kicker">富山県レポート反映</p>
+    <h2 class="section-title">富山県15市町村調査から見る、整理前の確認ポイント</h2>
+    <p class="lead">富山県は持ち家率や住宅面積が大きい地域特性があり、遺品整理・生前整理では大型の実家、蔵、仏間、納屋、車庫、庭木、農機具まで含めた確認が重要です。粗大ごみの搬入先は富山地区広域圏、新川広域圏、県西部の個別施設で分かれ、空き家の家財処分補助は事前申請が基本です。</p>
+    <div class="toyama-report-grid">
+      <div class="toyama-report-card"><b>処理圏の違い</b><span>富山地区広域圏は可燃・不燃で搬入先が分かれ、新川広域圏はエコぽ～とと宮沢清掃センター、県西部は市ごとの施設確認が必要です。</span></div>
+      <div class="toyama-report-card"><b>料金目安</b><span>可燃10kg180円、不燃10kg110円、50kg200円、100kg500円、10kg90〜160円など、地域・品目で差があります。</span></div>
+      <div class="toyama-report-card"><b>処理困難物</b><span>家電4品目、農機具、スプリング入りマットレス、消火器、耐火金庫、ピアノ、タイヤ、廃油、農薬は通常搬入と分けて確認します。</span></div>
+      <div class="toyama-report-card"><b>空き家支援</b><span>家財処分・解体補助は空き家バンク登録、契約成立、事前申請、市町村税、業者条件が重要です。</span></div>
+    </div>
+    <table class="toyama-report-table">
+      <tr><th>搬入前確認</th><td>可燃・不燃の搬入先、寸法制限、予約・許可証、戸別収集の立会い、家電リサイクル品の扱いを先に確認します。</td></tr>
+      <tr><th>費用を抑える考え方</th><td>自己搬入は安く済みやすい一方、分別、積み込み、搬入日調整、特殊品の分離が必要です。大きな実家や蔵は専門作業との切り分けが安心です。</td></tr>
+      <tr><th>富山県らしい注意点</th><td>大型住宅、仏間、蔵、納屋、庭木、車庫、農機具、空き家バンク登録前の家財処分を、見積もり前にまとめて確認します。</td></tr>
+    </table>
+    <p class="toyama-report-note">このセクションは添付調査の要点をサイト向けに再編集したものです。各市町村ページの出典欄には、市町村役所・町村役場・村役場の公式サイトのみを掲載しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">富山県内の主な処分センター・広域処理施設の確認</h2>
+  <p>富山県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>富山市、高岡市、射水市、砺波市、南砺市、魚津市、黒部市、氷見市など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.toyama.jp/" target="_blank" rel="noopener">富山県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る富山県</p>
@@ -2122,7 +2171,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')

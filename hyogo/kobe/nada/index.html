@@ -840,6 +840,23 @@
     #service .service-list { grid-template-columns: 1fr; }
   }
 </style>
+
+<style id="hyogo-report-style-v1">
+.hyogo-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
+.hyogo-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.hyogo-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.hyogo-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
+.hyogo-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+.hyogo-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
+.hyogo-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
+.hyogo-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
+.hyogo-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
+.hyogo-report-table th,.hyogo-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.hyogo-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
+.hyogo-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
+@media(max-width:860px){.hyogo-report-grid{grid-template-columns:1fr}.hyogo-report-table th{width:120px}}
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">灘区の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前チェックガイド</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/hyogo/">兵庫県</a><a href="#local">地域特性</a><a href="#price">料金目安</a><a class="call" href="#process">相談準備</a></nav></div></header>
@@ -990,7 +1007,20 @@
   <div class="notice" style="margin-top:18px"><b>灘区の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
 </section>
     <section id="local" class="section"><h2 class="section-title">灘区で遺品整理・生前整理が必要になりやすい住宅特性</h2><p class="lead">六甲・王子公園・摩耶周辺は、駅近マンション、山手の坂道住宅、古い戸建てが近接します。階段搬出や駐車位置、管理会社への連絡、書類・貴重品探索の範囲を先に決めておくと安心です。</p><div class="kobe-research-panel"><h3>神戸市の統計で見る、灘区の整理相談の背景</h3><p>神戸市は人口が都心へ集まる一方で、郊外ニュータウンや下町密集市街地では高齢化・単身化・空き家化が進んでいます。灘区では「文教住宅地・坂道集合住宅型」として、間取りだけでなく建物の種類、坂道、車両位置、管理規約、遠方家族の立会い可否まで確認することが大切です。</p><div class="kobe-data-grid"><div class="kobe-data-card"><b>1,525,152人</b><span>令和2年国勢調査の神戸市人口。2015年比で12,120人、0.8%減少。</span></div><div class="kobe-data-card"><b>766,349世帯</b><span>神戸市の世帯数。平均世帯人員は1.95人で、単身化が進んでいます。</span></div><div class="kobe-data-card"><b>約1.7倍</b><span>神戸市の単独世帯は2000年から2020年で大きく増加。立会い不要・写真報告の需要につながります。</span></div><div class="kobe-data-card"><b>471,928世帯</b><span>共同住宅に住む世帯。マンション・団地では養生、搬出届、エレベーター予約が重要です。</span></div></div><div class="kobe-ward-focus"><div class="card"><h3>灘区の注目データ</h3><p><strong>文教地区として増加傾向を維持</strong><br>六甲山麓の坂道住宅、王子公園・六甲道周辺の集合住宅、古い下町住宅が近接。学生・単身・高齢世帯が混ざるため、短期整理と実家じまいの両方が起きます。</p></div><div class="card"><h3>整理で費用差が出やすい理由</h3><p>山手の階段搬出、駅前マンションの養生、古い木造住宅の長距離手運びを分けて見積もる必要があります。</p></div></div><div class="grid cols3 kobe-original-points"><div class="card"><h3>地域で見たい条件</h3><p>六甲・摩耶山麓では坂道と階段が多く、家具の分解や小運搬の有無が費用に影響します。</p></div><div class="card"><h3>地域で見たい条件</h3><p>六甲道・王子公園周辺の集合住宅は、管理会社連絡と共用部養生を先に決めます。</p></div><div class="card"><h3>地域で見たい条件</h3><p>灘区東部・西部の古い住宅では、近隣配慮と作業時間、貴重品探索の範囲を明確にします。</p></div></div><p class="kobe-source-note">出典・反映内容：添付資料「神戸市における生前整理・遺品整理と生活環境インフラに関わる地域特性と構造的課題の総合分析」（令和2年国勢調査、神戸市の環境事業所、大型ごみ、すまいるネット、アキカツカウンター等の整理情報）をページ向けに要約。</p></div><div class="notice"><b>見積もり前のコツ</b><br>「探してほしいもの」「残したいもの」「買取してほしいもの」「供養したいもの」を先にメモしておくと、作業当日の判断が速くなり、誤処分のリスクも下がります。</div></section>
-    <section id="towns" class="section"><h2 class="section-title">灘区の対応町名・駅周辺</h2><p class="lead">灘区は同じ区内でも、駅周辺の集合住宅、山手・郊外の戸建て、古い建物、団地で搬出条件が変わります。町名と建物種別を先に共有しておくと、見積もり時に「管理会社への届出」「停車位置」「書類探索の範囲」まで確認しやすくなります。</p><div class="kobe-area-tags"><span>六甲</span><span>王子公園</span><span>摩耶</span><span>灘駅周辺</span><span>水道筋</span></div><table><thead><tr><th>地域の見方</th><th>灘区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead><tbody><tr><td>六甲・阪急沿線</td><td>マンション整理、施設入居前の生前整理。</td><td>エレベーター予約、養生範囲、管理会社への連絡。</td></tr><tr><td>摩耶・王子公園周辺</td><td>古い建物や階段搬出を伴う片付け。</td><td>階段幅、搬出時間、近隣店舗・住宅への配慮。</td></tr><tr><td>水道筋周辺</td><td>商店街近くの住宅、店舗併用住宅の整理。</td><td>前面道路、停車可否、什器と家財の分別。</td></tr><tr><td>山手住宅地</td><td>坂道や狭い道の戸建て整理。</td><td>車両位置、大型家具、物置、庭まわり。</td></tr></tbody></table><div class="notice"><b>灘区で特に確認したいこと</b><br>灘区では、駅近集合住宅、山手の坂道、古い戸建ての条件で、同じ間取りでも作業時間や車両台数が変わります。管理会社の搬出届、作業可能時間、駐車位置、鍵の受け渡し、写真報告の方法を見積もり時に確認しておくと安心です。</div></section><section id="admin" class="section"><h2 class="section-title">灘区の行政・住まい相談窓口</h2><p class="lead">大型ごみ、通常収集、空き家、マンション管理、遠方親族の相談先は、対応エリア表とは分けて確認できるようにまとめています。制度や受付時間は変わる場合があるため、作業前に神戸市公式案内も確認してください。</p><div class="kobe-admin-grid"><div class="kobe-admin-card"><h3>灘区の環境事業所</h3><p><strong>灘事業所</strong><br>電話: 078-871-1081<br>大型家具や通常収集、福祉的なごみ出し支援は、まず区を担当する事業所と神戸市公式案内を確認します。</p></div><div class="kobe-admin-card"><h3>神戸市大型ごみ受付センター</h3><p>電話: 078-392-7953<br>FAX: 078-392-5500<br>インターネット受付やキャッシュレス決済にも対応しているため、遠方家族が事前手配しやすい窓口です。</p></div><div class="kobe-admin-card"><h3>空き家・住まいの相談</h3><p><strong>すまいるネット</strong><br>空き家相談: 078-647-9988<br>老朽空家等解体補助: 078-647-9969<br>マンション管理相談: 078-647-9955</p></div><div class="kobe-admin-card"><h3>遠方親族の空き家相談</h3><p><strong>神戸市アキカツカウンター</strong><br>電話: 0120-830-634<br>神戸市内の空き家なら、所有者が全国どこに住んでいても相談しやすい伴走型窓口です。</p></div></div></section>
+    <section id="towns" class="section"><h2 class="section-title">灘区の対応町名・駅周辺</h2><p class="lead">灘区は同じ区内でも、駅周辺の集合住宅、山手・郊外の戸建て、古い建物、団地で搬出条件が変わります。町名と建物種別を先に共有しておくと、見積もり時に「管理会社への届出」「停車位置」「書類探索の範囲」まで確認しやすくなります。</p><div class="kobe-area-tags"><span>六甲</span><span>王子公園</span><span>摩耶</span><span>灘駅周辺</span><span>水道筋</span></div><table><thead><tr><th>地域の見方</th><th>灘区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead><tbody><tr><td>六甲・阪急沿線</td><td>マンション整理、施設入居前の生前整理。</td><td>エレベーター予約、養生範囲、管理会社への連絡。</td></tr><tr><td>摩耶・王子公園周辺</td><td>古い建物や階段搬出を伴う片付け。</td><td>階段幅、搬出時間、近隣店舗・住宅への配慮。</td></tr><tr><td>水道筋周辺</td><td>商店街近くの住宅、店舗併用住宅の整理。</td><td>前面道路、停車可否、什器と家財の分別。</td></tr><tr><td>山手住宅地</td><td>坂道や狭い道の戸建て整理。</td><td>車両位置、大型家具、物置、庭まわり。</td></tr></tbody></table><div class="notice"><b>灘区で特に確認したいこと</b><br>灘区では、駅近集合住宅、山手の坂道、古い戸建ての条件で、同じ間取りでも作業時間や車両台数が変わります。管理会社の搬出届、作業可能時間、駐車位置、鍵の受け渡し、写真報告の方法を見積もり時に確認しておくと安心です。</div></section><section id="admin" class="admin-hotline-section">
+  <p class="section-kicker">行政・福祉ホットライン</p>
+  <h2 class="section-title">灘区の行政窓口・粗大ごみ・住まい相談</h2>
+  <p>灘区で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+  <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>灘区役所</strong><br>確認済み電話: 078-871-1081<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>灘区のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/hyogo/" target="_blank" rel="noopener">兵庫県ページへ戻る</a></div>
+  </div>
+  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+</section>
     <section id="service" class="section"><h2 class="section-title">任せられる整理内容</h2><div class="grid cols2"><div class="card"><h3>遺品整理・家財整理</h3><p>家具、家電、衣類、書類、生活用品を仕分け、必要品・貴重品・供養品・処分品に分けます。</p></div><div class="card"><h3>生前整理・実家じまい</h3><p>施設入居、住み替え、空き家化の前に、残す荷物と手放す荷物を家族で確認しながら進めます。</p></div><div class="card"><h3>貴重品探索・写真報告</h3><p>通帳、印鑑、権利書、保険証券、写真、形見分け品などを探索し、立会いが難しい場合も写真で報告します。</p></div><div class="card"><h3>供養・買取・処分相談</h3><p>仏壇、神棚、写真、人形などの供養相談や、状態の良い家電・貴金属・趣味用品の査定確認にも対応します。</p></div></div></section>
     <section id="cases" class="section common-kita-ba">
   <h2 class="section-title">灘区の遺品整理ビフォーアフター事例</h2>
@@ -1101,9 +1131,38 @@
 
 <section id="process" class="section"><h2 class="section-title">相談前に準備すると進めやすいもの</h2><div class="grid cols3"><div class="card"><h3>部屋全体の写真</h3><p>各部屋、押入れ、納戸、ベランダ、物置、庭を撮影して荷物量を共有します。</p></div><div class="card"><h3>建物条件</h3><p>階数、エレベーター、駐車位置、前面道路、管理会社への連絡要否を確認します。</p></div><div class="card"><h3>残したいもの</h3><p>貴重品、写真、仏壇、形見分け品、買取候補品を処分前に探すリストとして共有します。</p></div></div></section>
     <section id="items" class="section"><h2 class="section-title">品目別の処分・買取・供養</h2><div class="grid cols3"><div class="card"><h3>貴重品・重要書類</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙は処分前に探索範囲として共有します。</p></div><div class="card"><h3>買取できる品</h3><p>貴金属、時計、カメラ、工具、家電、趣味用品は査定できるか確認します。</p></div><div class="card"><h3>供養したい品</h3><p>仏壇、位牌、写真、人形、手紙などは通常処分と分けて相談します。</p></div></div></section>
-<section id="compare" class="section"><h2 class="section-title">業者比較と見積もり前チェック</h2><div class="section-note">灘区で比較するときは、総額だけでなく、作業人数、作業時間、追加料金、買取相殺、供養、写真報告、キャンセル条件まで同じ条件で見比べてください。</div></section><section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>灘区で立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、作業前後の写真報告、貴重品返却、支払い方法を事前に決めれば進めやすくなります。</p></div><div class="card"><h3>粗大ごみと業者依頼はどちらがよいですか？</h3><p>少量なら自治体制度を確認し、大量家財、屋内搬出、短納期、供養・買取・探索が必要な場合は業者見積もりを比較してください。</p></div><div class="card"><h3>灘区で見積もり前に地域事情として何を伝えるべきですか？</h3><p>六甲・王子公園・摩耶周辺は、駅近マンション、山手の坂道住宅、古い戸建てが近接します。階段搬出や駐車位置、管理会社への連絡、書類・貴重品探索の範囲を先に決めておくと安心です。</p></div><div class="card"><h3>灘区で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>灘区の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section>
+<section id="compare" class="section"><h2 class="section-title">業者比較と見積もり前チェック</h2><div class="section-note">灘区で比較するときは、総額だけでなく、作業人数、作業時間、追加料金、買取相殺、供養、写真報告、キャンセル条件まで同じ条件で見比べてください。</div></section>
+<section id="hyogo-report" class="section hyogo-report">
+  <div class="container">
+    <p class="section-kicker">兵庫県調査データ</p>
+    <h2 class="section-title">灘区に反映した兵庫県調査データ</h2>
+    <p class="lead">添付調査のうち、灘区で見積もり前に使いやすい廃棄物処理・空き家対策・高齢者支援の確認点を整理しました。料金は変更されるため、依頼前に必ず自治体公式サイトで最新条件を確認してください。</p>
+    <div class="hyogo-report-grid">
+      <div class="hyogo-report-card"><b>自己搬入・粗大ごみ</b><span>神戸市クリーンセンター等。燃えるごみ80円/10kg、燃えないごみ140円/10kg。</span></div>
+      <div class="hyogo-report-card"><b>搬出条件</b><span>神戸市内は坂道、高層マンション、防災センター確認、管理規約の有無で作業時間が変わります。</span></div>
+      <div class="hyogo-report-card"><b>空き家・生前整理</b><span>売却前、解体前、施設入居前の整理では、残す書類、仏壇、写真、貴重品、屋外品を分けて確認します。</span></div>
+      <div class="hyogo-report-card"><b>役所出典</b><span><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">神戸市公式サイト</a>のみを出典として記載。</span></div>
+    </div>
+    <table class="hyogo-report-table">
+      <tr><th>受付確認</th><td>粗大ごみ・自己搬入・高齢者支援は、事前予約、本人確認、搬入車両、受付日を公式サイトで確認します。</td></tr>
+      <tr><th>料金目安</th><td>燃えるごみ80円/10kg、燃えないごみ140円/10kg。家電リサイクル品、危険物、事業系ごみ、解体材は別ルールになるため混ぜて見積もらないでください。</td></tr>
+      <tr><th>地域事情</th><td>神戸市内は坂道、高層マンション、防災センター確認、管理規約の有無で作業時間が変わります。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">神戸市公式サイト</a></td></tr>
+    </table>
+    <p class="hyogo-report-note">出典リンクは市役所・町役場の公式サイトのみです。民間まとめサイトや不確実な電話番号は出典欄に載せず、公式確認を前提にしています。</p>
+  </div>
+</section>
+
+<section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>灘区で立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、作業前後の写真報告、貴重品返却、支払い方法を事前に決めれば進めやすくなります。</p></div><div class="card"><h3>粗大ごみと業者依頼はどちらがよいですか？</h3><p>少量なら自治体制度を確認し、大量家財、屋内搬出、短納期、供養・買取・探索が必要な場合は業者見積もりを比較してください。</p></div><div class="card"><h3>灘区で見積もり前に地域事情として何を伝えるべきですか？</h3><p>六甲・王子公園・摩耶周辺は、駅近マンション、山手の坂道住宅、古い戸建てが近接します。階段搬出や駐車位置、管理会社への連絡、書類・貴重品探索の範囲を先に決めておくと安心です。</p></div><div class="card"><h3>灘区で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>灘区の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section>
   </main>
-  <footer class="footer"><div class="footer-inner">運営: 灘区遺品整理・生前整理.jp編集部 / 本サイトは地域の整理相談前に確認したい情報をまとめたガイドです。</div></footer>
+  <footer id="operator" class="site-footer" data-pref="hyogo" data-city="灘区">
+  <div class="footer-grid">
+    <section class="footer-col"><h2>灘区ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
+    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>灘区役所</span><span>確認済み電話: 078-871-1081</span></li><li><b>粗大ごみ・収集の相談</b><span>灘区公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>清掃センター、環境センター、広域処理組合、自己搬入条件を確認。</span></li><li><b>ごみの持ち出しサービス</b><span>高齢者・障がい者などの支援制度は福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に灘区公式情報も確認してください。</p></section>
+    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">灘区公式サイト</a></li><li><a href="/hyogo/">兵庫県トップ</a></li></ul><p class="footer-note" id="operator">運営: 兵庫県灘区遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは灘区で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
+  </div>
+  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">灘区情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
+</footer>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {

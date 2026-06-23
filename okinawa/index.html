@@ -1634,6 +1634,108 @@
 @media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
+
+<style id="okinawa-report-style">
+  .okinawa-report{background:#fff;border-top:1px solid #e8ded2;border-bottom:1px solid #e8ded2;padding:clamp(34px,5vw,64px) 0;color:#2b2b2b}
+  .okinawa-report .report-wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}
+  .okinawa-report .section-kicker{margin:0 0 8px;color:#b94a00;font-weight:900;letter-spacing:.03em}
+  .okinawa-report .section-title{margin:0 0 14px;color:#252525;font-size:clamp(25px,3vw,38px);line-height:1.35;font-weight:900}
+  .okinawa-report .lead{max-width:940px;margin:0 0 22px;color:#4d5651;font-size:17px;line-height:1.9}
+  .okinawa-report .report-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+  .okinawa-report .report-card{background:#fffaf4;border:1px solid #ead8c3;border-radius:8px;padding:18px;box-shadow:0 10px 26px rgba(37,29,20,.06)}
+  .okinawa-report .report-card h3{margin:0 0 8px;color:#2d2d2d;font-size:18px;line-height:1.45}
+  .okinawa-report .report-card p{margin:0;color:#555;line-height:1.78;font-size:15px}
+  .okinawa-report .report-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+  .okinawa-report .fact{background:#f8f9fb;border:1px solid #dde4ea;border-radius:8px;padding:14px}
+  .okinawa-report .fact b{display:block;color:#1f3f5b;font-size:20px;line-height:1.3}
+  .okinawa-report .fact span{display:block;margin-top:4px;color:#59636b;font-size:13px;line-height:1.55}
+  .okinawa-report .report-table-wrap{overflow:auto;border:1px solid #e2ddd6;border-radius:8px;background:#fff;margin-top:18px}
+  .okinawa-report table{width:100%;border-collapse:collapse;min-width:780px}
+  .okinawa-report th,.okinawa-report td{padding:12px 14px;border-bottom:1px solid #eee5dc;text-align:left;vertical-align:top;font-size:14px;line-height:1.65}
+  .okinawa-report th{background:#f7f2ec;color:#2c2c2c;font-weight:900;white-space:nowrap}
+  .okinawa-report tr:last-child td{border-bottom:0}
+  .okinawa-report a{color:#a64200;font-weight:900;text-decoration:underline;text-underline-offset:3px}
+  .okinawa-report .source-note{margin:14px 0 0;color:#6a5c50;font-size:13px;line-height:1.75}
+  @media(max-width:900px){.okinawa-report .report-grid,.okinawa-report .report-facts{grid-template-columns:1fr}.okinawa-report table{min-width:700px}}
+</style>
+
+<section id="okinawa-report" class="okinawa-report">
+  <div class="report-wrap">
+    <p class="section-kicker">沖縄県調査データ</p>
+    <h2 class="section-title">沖縄県41市町村の広域処理・離島搬出・居住福祉支援を整理</h2>
+    <p class="lead">添付調査をもとに、沖縄県内の一部事務組合、自己搬入の予約制・手数料、離島地域の家電リサイクル、高齢者のごみ出し支援、空き家除却・残置物処理補助につながる情報を市町村別に整理しました。出典リンクは市町村役所・公式サイトのみです。</p>
+    <div class="report-facts">
+      <div class="fact"><b>41市町村</b><span>11市・11町・19村を県直下ページへ反映</span></div>
+      <div class="fact"><b>事前予約制</b><span>那覇・南風原、倉浜、南部広域などで許可証や予約を確認</span></div>
+      <div class="fact"><b>離島搬出</b><span>宮古・八重山・周辺離島は船便、保管、協力店確認が重要</span></div>
+      <div class="fact"><b>居住福祉</b><span>ふれあい収集、アシスト収集、空き家残置物支援を確認</span></div>
+    </div>
+    <div class="report-grid">
+      <div class="report-card"><h3>搬入前の許可・予約が重要</h3><p>沖縄県では施設老朽化と手数料改定に伴い、自己搬入の事前予約・搬入許可証・処理券の確認が重要です。屋内搬出は行政収集の対象外になりやすいです。</p></div>
+      <div class="report-card"><h3>離島は家電リサイクルの動線が違う</h3><p>宮古・石垣・周辺離島では指定引取場所や協力店、島内一時保管、船便手配を確認します。大型家財は日程に余裕を持たせます。</p></div>
+      <div class="report-card"><h3>空き家と残置物処理を一体で見る</h3><p>恩納村の空家活用事業、沖縄市・那覇市の除却補助など、残置物・解体・改修の順序を作業前に確認します。</p></div>
+    </div>
+    <div class="report-table-wrap">
+      <table>
+        <thead><tr><th>市町村</th><th>処理圏</th><th>主な施設・制度</th><th>見積もり前に見る数字</th><th>出典</th></tr></thead>
+        <tbody><tr><td>那覇市</td><td>那覇・南風原</td><td>那覇・南風原クリーンセンター</td><td>完全事前予約制、10kgごと60円を確認。</td><td><a href="https://www.city.naha.okinawa.jp/" target="_blank" rel="noopener">那覇市公式サイト</a></td></tr>
+<tr><td>南風原町</td><td>那覇・南風原</td><td>那覇・南風原クリーンセンター</td><td>完全事前予約制、10kgごと60円を確認。</td><td><a href="https://www.town.haebaru.lg.jp/" target="_blank" rel="noopener">南風原町公式サイト</a></td></tr>
+<tr><td>糸満市</td><td>南部広域</td><td>糸豊環境美化センター等</td><td>10kgあたり100円、令和8年4月から200円予定を確認。</td><td><a href="https://www.city.itoman.lg.jp/" target="_blank" rel="noopener">糸満市公式サイト</a></td></tr>
+<tr><td>豊見城市</td><td>南部広域</td><td>南部広域行政組合施設</td><td>10kgあたり100円、令和8年4月から200円予定を確認。</td><td><a href="https://www.city.tomigusuku.lg.jp/" target="_blank" rel="noopener">豊見城市公式サイト</a></td></tr>
+<tr><td>与那原町</td><td>南部広域</td><td>南部広域行政組合施設</td><td>10kgあたり100円、令和8年4月から200円予定を確認。</td><td><a href="https://www.town.yonabaru.okinawa.jp/" target="_blank" rel="noopener">与那原町公式サイト</a></td></tr>
+<tr><td>西原町</td><td>南部広域</td><td>南部広域行政組合施設</td><td>10kgあたり100円、令和8年4月から200円予定を確認。</td><td><a href="https://www.town.nishihara.okinawa.jp/" target="_blank" rel="noopener">西原町公式サイト</a></td></tr>
+<tr><td>南城市</td><td>南部広域</td><td>東部環境美化センター等</td><td>持込手数料改定予定があるため最新条件を確認。</td><td><a href="https://www.city.nanjo.okinawa.jp/" target="_blank" rel="noopener">南城市公式サイト</a></td></tr>
+<tr><td>八重瀬町</td><td>南部広域</td><td>南部広域行政組合施設</td><td>10kgあたり100円、令和8年4月から200円予定を確認。</td><td><a href="https://www.town.yaese.lg.jp/" target="_blank" rel="noopener">八重瀬町公式サイト</a></td></tr>
+<tr><td>沖縄市</td><td>倉浜</td><td>エコトピア池原</td><td>搬入許可証が必要、10kgあたり100円を確認。</td><td><a href="https://www.city.okinawa.okinawa.jp/" target="_blank" rel="noopener">沖縄市公式サイト</a></td></tr>
+<tr><td>宜野湾市</td><td>倉浜</td><td>エコトピア池原</td><td>搬入許可証が必要、10kgあたり100円を確認。</td><td><a href="https://www.city.ginowan.lg.jp/" target="_blank" rel="noopener">宜野湾市公式サイト</a></td></tr>
+<tr><td>北谷町</td><td>倉浜</td><td>エコトピア池原</td><td>搬入許可証が必要、10kgあたり100円を確認。</td><td><a href="https://www.chatan.jp/" target="_blank" rel="noopener">北谷町公式サイト</a></td></tr>
+<tr><td>中城村</td><td>中城・北中城</td><td>青葉苑</td><td>役場申請後に直接搬入、10kgにつき60円を確認。</td><td><a href="https://www.vill.nakagusuku.okinawa.jp/" target="_blank" rel="noopener">中城村公式サイト</a></td></tr>
+<tr><td>北中城村</td><td>中城・北中城</td><td>青葉苑</td><td>役場申請後に直接搬入、10kgにつき60円を確認。</td><td><a href="https://www.vill.kitanakagusuku.lg.jp/" target="_blank" rel="noopener">北中城村公式サイト</a></td></tr>
+<tr><td>うるま市</td><td>中部北</td><td>中部北環境施設組合</td><td>搬入許可証が必要、1点200円の点数制を確認。</td><td><a href="https://www.city.uruma.lg.jp/" target="_blank" rel="noopener">うるま市公式サイト</a></td></tr>
+<tr><td>恩納村</td><td>中部北</td><td>中部北環境施設組合</td><td>搬入許可証が必要、1点200円の点数制を確認。</td><td><a href="https://www.vill.onna.okinawa.jp/" target="_blank" rel="noopener">恩納村公式サイト</a></td></tr>
+<tr><td>嘉手納町</td><td>比謝川</td><td>比謝川行政事務組合 環境美化センター</td><td>10kgにつき100円を確認。</td><td><a href="https://www.town.kadena.okinawa.jp/" target="_blank" rel="noopener">嘉手納町公式サイト</a></td></tr>
+<tr><td>読谷村</td><td>比謝川</td><td>比謝川行政事務組合 環境美化センター</td><td>10kgにつき100円を確認。</td><td><a href="https://www.vill.yomitan.okinawa.jp/" target="_blank" rel="noopener">読谷村公式サイト</a></td></tr>
+<tr><td>浦添市</td><td>単独処理</td><td>浦添市クリーンセンター</td><td>10kgにつき100円、令和8年4月以降の手数料改定を確認。</td><td><a href="https://www.city.urasoe.lg.jp/" target="_blank" rel="noopener">浦添市公式サイト</a></td></tr>
+<tr><td>名護市</td><td>北部</td><td>市戸別収集・民間許可業者中心</td><td>自己搬入は原則不可。処理券は令和7年以降300円統一等を確認。</td><td><a href="https://www.city.nago.okinawa.jp/" target="_blank" rel="noopener">名護市公式サイト</a></td></tr>
+<tr><td>本部町</td><td>本部・今帰仁</td><td>環境美化センター</td><td>電話予約、粗大ごみ処理券1点300円を確認。</td><td><a href="https://www.town.motobu.okinawa.jp/" target="_blank" rel="noopener">本部町公式サイト</a></td></tr>
+<tr><td>今帰仁村</td><td>本部・今帰仁</td><td>環境美化センター</td><td>電話予約、粗大ごみ処理券1点300円を確認。</td><td><a href="https://www.nakijin.jp/" target="_blank" rel="noopener">今帰仁村公式サイト</a></td></tr>
+<tr><td>金武町</td><td>金武地区</td><td>金武町ごみ処理場</td><td>1個ごと300円の処理券を確認。</td><td><a href="https://www.town.kin.okinawa.jp/" target="_blank" rel="noopener">金武町公式サイト</a></td></tr>
+<tr><td>宜野座村</td><td>金武地区</td><td>金武町ごみ処理場</td><td>1個ごと300円の処理券を確認。</td><td><a href="https://www.vill.ginoza.okinawa.jp/" target="_blank" rel="noopener">宜野座村公式サイト</a></td></tr>
+<tr><td>国頭村</td><td>国頭地区</td><td>やんばる美化センター</td><td>直接搬入無料を確認。</td><td><a href="https://www.vill.kunigami.okinawa.jp/" target="_blank" rel="noopener">国頭村公式サイト</a></td></tr>
+<tr><td>大宜味村</td><td>国頭地区</td><td>やんばる美化センター</td><td>直接搬入無料を確認。</td><td><a href="https://www.vill.ogimi.okinawa.jp/" target="_blank" rel="noopener">大宜味村公式サイト</a></td></tr>
+<tr><td>東村</td><td>国頭地区</td><td>やんばる美化センター</td><td>直接搬入無料を確認。</td><td><a href="https://www.vill.higashi.okinawa.jp/" target="_blank" rel="noopener">東村公式サイト</a></td></tr>
+<tr><td>宮古島市</td><td>宮古</td><td>宮古島市クリーンセンター</td><td>5kgあたり20円を確認。</td><td><a href="https://www.city.miyakojima.lg.jp/" target="_blank" rel="noopener">宮古島市公式サイト</a></td></tr>
+<tr><td>多良間村</td><td>宮古離島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.tarama.okinawa.jp/" target="_blank" rel="noopener">多良間村公式サイト</a></td></tr>
+<tr><td>石垣市</td><td>八重山</td><td>石垣市クリーンセンター</td><td>前日までの予約制、10kgにつき80円を確認。</td><td><a href="https://www.city.ishigaki.okinawa.jp/" target="_blank" rel="noopener">石垣市公式サイト</a></td></tr>
+<tr><td>竹富町</td><td>八重山離島</td><td>島内処理施設・指定搬出拠点</td><td>島ごとの搬出条件を公式確認。</td><td><a href="https://www.town.taketomi.lg.jp/" target="_blank" rel="noopener">竹富町公式サイト</a></td></tr>
+<tr><td>与那国町</td><td>八重山離島</td><td>町内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.town.yonaguni.okinawa.jp/" target="_blank" rel="noopener">与那国町公式サイト</a></td></tr>
+<tr><td>久米島町</td><td>久米島</td><td>久米島町クリーンセンター</td><td>5kgあたり25円、資源ごみ無料を確認。</td><td><a href="https://www.town.kumejima.okinawa.jp/" target="_blank" rel="noopener">久米島町公式サイト</a></td></tr>
+<tr><td>伊江村</td><td>伊江島</td><td>伊江村E&amp;Cセンター</td><td>10kgまで100円、以降10kgごと50円加算を確認。</td><td><a href="https://www.iejima.org/" target="_blank" rel="noopener">伊江村公式サイト</a></td></tr>
+<tr><td>渡嘉敷村</td><td>慶良間</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.tokashiki.okinawa.jp/" target="_blank" rel="noopener">渡嘉敷村公式サイト</a></td></tr>
+<tr><td>座間味村</td><td>慶良間</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.zamami.okinawa.jp/" target="_blank" rel="noopener">座間味村公式サイト</a></td></tr>
+<tr><td>粟国村</td><td>周辺離島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.aguni.okinawa.jp/" target="_blank" rel="noopener">粟国村公式サイト</a></td></tr>
+<tr><td>渡名喜村</td><td>周辺離島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.tonaki.okinawa.jp/" target="_blank" rel="noopener">渡名喜村公式サイト</a></td></tr>
+<tr><td>南大東村</td><td>大東諸島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.minamidaito.okinawa.jp/" target="_blank" rel="noopener">南大東村公式サイト</a></td></tr>
+<tr><td>北大東村</td><td>大東諸島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://vill.kitadaito.okinawa.jp/" target="_blank" rel="noopener">北大東村公式サイト</a></td></tr>
+<tr><td>伊平屋村</td><td>伊平屋島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://www.vill.iheya.okinawa.jp/" target="_blank" rel="noopener">伊平屋村公式サイト</a></td></tr>
+<tr><td>伊是名村</td><td>伊是名島</td><td>村内処理施設・指定搬出拠点</td><td>島内処理・指定日・搬出条件を公式確認。</td><td><a href="https://vill.izena.okinawa.jp/" target="_blank" rel="noopener">伊是名村公式サイト</a></td></tr></tbody>
+      </table>
+    </div>
+    <p class="source-note">料金・補助制度は年度改定や対象要件があります。民間まとめサイトは出典として掲載せず、各市町村の公式情報で確認する前提で整理しています。</p>
+  </div>
+</section>
+
+<section id="pref-facility-directory" class="pref-facility-directory">
+  <p class="section-kicker">行政確認</p>
+  <h2 class="section-title">沖縄県内の主な処分センター・広域処理施設の確認</h2>
+  <p>沖縄県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
+  <div class="grid cols3 pref-facility-grid">
+    <div class="card"><strong>市区町村のごみ窓口</strong><span>名護市、国頭村、大宜味村、東村、今帰仁村、本部町、恩納村、宜野座村など、作業場所の自治体公式サイトで粗大ごみ・自己搬入・収集日を確認します。</span></div>
+    <div class="card"><strong>処理施設・広域組合</strong><span>清掃センター、環境センター、クリーンセンター、広域処理組合は搬入条件、予約、本人確認、車両条件を確認します。</span></div>
+    <div class="card"><strong>県・公的機関の情報</strong><span>廃棄物処理、空き家対策、高齢者支援は県と市区町村の公式情報を出典として整理します。</span></div>
+  </div>
+  <p class="source-note">処分施設の名称、受付日、料金、持込条件は変更される場合があります。掲載前・相談前に市区町村、広域組合、県の公式情報で確認してください。<a href="https://www.pref.okinawa.jp/" target="_blank" rel="noopener">沖縄県公式サイト</a></p>
+</section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
     <p class="section-kicker">人口・世帯・住宅で見る沖縄県</p>
@@ -1696,7 +1798,7 @@
 <section id="南部"><p class="section-kicker">地域ブロック</p><h2 class="section-title">南部エリアから探す <span class="hub-block-count">9市町村</span></h2><p>那覇市、浦添市、豊見城市、糸満市、南城市、島尻郡の町を中心に、都市型マンション、密集住宅地、郊外戸建てが混在します。退去期限、エレベーター利用、道路幅を見積もり前に共有します。</p><div class="ward-links"><a href="/okinawa/naha/">那覇市</a><a href="/okinawa/urasoe/">浦添市</a><a href="/okinawa/itoman/">糸満市</a><a href="/okinawa/tomigusuku/">豊見城市</a><a href="/okinawa/nanjo/">南城市</a><a href="/okinawa/nishihara/">西原町</a><a href="/okinawa/yonabaru/">与那原町</a><a href="/okinawa/haebaru/">南風原町</a><a href="/okinawa/yaese/">八重瀬町</a></div></section>
 <section id="南部離島・大東"><p class="section-kicker">地域ブロック</p><h2 class="section-title">南部離島・大東エリアから探す <span class="hub-block-count">7市町村</span></h2><p>慶良間諸島、粟国・渡名喜、久米島、大東諸島では、船便や航空便、作業日程、持込先、搬出車両の手配が費用と日程に直結します。遠方親族は写真報告の段取りも先に決めます。</p><div class="ward-links"><a href="/okinawa/tokashiki/">渡嘉敷村</a><a href="/okinawa/zamami/">座間味村</a><a href="/okinawa/aguni/">粟国村</a><a href="/okinawa/tonaki/">渡名喜村</a><a href="/okinawa/kumejima/">久米島町</a><a href="/okinawa/minamidaito/">南大東村</a><a href="/okinawa/kitadaito/">北大東村</a></div></section>
 <section id="宮古"><p class="section-kicker">地域ブロック</p><h2 class="section-title">宮古エリアから探す <span class="hub-block-count">2市町村</span></h2><p>宮古島市と多良間村では、島内移動、納屋・屋外品、農具、海沿い住宅の搬出条件を確認します。島しょ部は日程と処分先の確認を早めに行うことが大切です。</p><div class="ward-links"><a href="/okinawa/miyakojima/">宮古島市</a><a href="/okinawa/tarama/">多良間村</a></div></section>
-<section id="八重山"><p class="section-kicker">地域ブロック</p><h2 class="section-title">八重山エリアから探す <span class="hub-block-count">3市町村</span></h2><p>石垣市、竹富町、与那国町では、離島ごとの移動手段、船便、処理施設、保管場所の条件が大きく変わります。鍵預かり、写真報告、返却品の発送方法を事前に決めます。</p><div class="ward-links"><a href="/okinawa/ishigaki/">石垣市</a><a href="/okinawa/taketomi/">竹富町</a><a href="/okinawa/yonaguni/">与那国町</a></div></section><section id="note"><p class="section-kicker">確認方針</p><h2 class="section-title">行政窓口の扱い</h2><p>沖縄県内の市町村公式URLを確認導線として掲載し、粗大ごみ受付、持込施設、運び出し支援などの細部は公式情報を確認していません。詳細が公式確認が必要なの項目は `—` とし、自治体公式サイトへの確認導線を置いています。</p><p class="source-note">市町村コード・統計：e-Stat 令和2年国勢調査。市町村公式URLの確認導線：沖縄県公式リンク集および各市町村公式サイト。</p></section>
+<section id="八重山"><p class="section-kicker">地域ブロック</p><h2 class="section-title">八重山エリアから探す <span class="hub-block-count">3市町村</span></h2><p>石垣市、竹富町、与那国町では、離島ごとの移動手段、船便、処理施設、保管場所の条件が大きく変わります。鍵預かり、写真報告、返却品の発送方法を事前に決めます。</p><div class="ward-links"><a href="/okinawa/ishigaki/">石垣市</a><a href="/okinawa/taketomi/">竹富町</a><a href="/okinawa/yonaguni/">与那国町</a></div></section><section id="note"><p class="section-kicker">確認方針</p><h2 class="section-title">行政窓口の扱い</h2><p>沖縄県内の市町村公式URLを確認導線として掲載し、粗大ごみ受付、持込施設、運び出し支援などの細部は公式情報を確認していません。詳細が公式確認が必要な項目は `—` とし、自治体公式サイトへの確認導線を置いています。</p><p class="source-note">市町村コード・統計：e-Stat 令和2年国勢調査。市町村公式URLの確認導線：沖縄県公式リンク集および各市町村公式サイト。</p></section>
 
 
 <section id="pref-impact" class="section">
@@ -1829,7 +1931,7 @@
     /地域区分に沿って/,
     /作成済みの市町村ページへ移動できます/,
     /統計はe-Stat/,
-    /公式確認が必要なの電話番号/
+    /公式確認が必要な電話番号/
   ];
   const stripTitle = (text) => (text || '')
     .replace(/エリアから探す/g,'')
