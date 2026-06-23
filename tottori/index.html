@@ -135,8 +135,8 @@
       height:7px;
       margin-right:7px;
       border-radius:50%;
-      background:#9ed2b7;
-      box-shadow:0 0 0 3px rgba(158,210,183,.18);
+      background:#d05300;
+      box-shadow:0 0 0 3px rgba(208,83,0,.18);
     }
     @media(max-width:820px){
       .hero,
@@ -189,12 +189,12 @@
     .common-ba-photo{position:relative;overflow:hidden;margin:0;border:2px solid #d9d1c6;background:#f3f0ea;aspect-ratio:4/3;box-shadow:0 8px 18px rgba(34,28,22,.08)}
     .common-ba-photo img{display:block;width:100%;height:100%;object-fit:cover}
     .common-ba-label{position:absolute;left:0;right:0;top:0;display:grid;place-items:center;min-height:38px;padding:0 12px;background:rgba(126,50,28,.94);color:#fff;font-size:15px;font-weight:900}
-    .common-ba-label.after{background:rgba(40,116,90,.96)}
+    .common-ba-label.after{background:rgba(208,83,0,.96)}
     .common-ba-detail{margin-top:14px;padding:14px 16px;background:#fffdf8;border:1px solid #eadfd4}
     .common-ba-detail p{margin:0 0 8px;color:#464c47;font-size:15px;line-height:1.75}
     .common-ba-detail p:first-child{font-weight:900;color:#333}
     .common-ba-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#eef8f2;border:1px solid #cfe8d8;color:#28745a;font-size:13px;font-weight:900}
+    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#fff7ec;border:1px solid #ead8c1;color:#d05300;font-size:13px;font-weight:900}
     .common-ba-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;display:grid;place-items:center;border:1px solid #dcbf9c;background:#fff;color:#8c3d00;border-radius:50%;box-shadow:0 10px 24px rgba(34,28,22,.18);font-size:28px;font-weight:900;line-height:1;cursor:pointer;z-index:4}
     .common-ba-btn:hover{background:#fff1e6;border-color:#D05300}
     .common-ba-btn[data-common-ba-prev]{left:0}
@@ -340,12 +340,12 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-top-score-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1d5f48;
+    color: #9f3e00;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -437,7 +437,7 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-visual-media {
     position: relative;
@@ -464,7 +464,7 @@
     z-index: 2;
     padding: 5px 10px;
     border-radius: 999px;
-    background: rgba(38,54,45,.86);
+    background: rgba(126,50,28,.86);
     color: #fff;
     font-size: 13px;
     font-weight: 900;
@@ -475,7 +475,7 @@
   .global-visual-body b {
     display: block;
     margin-bottom: 7px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
     line-height: 1.45;
   }
@@ -488,12 +488,12 @@
   .global-strategy-strip {
     padding: 26px;
     border-radius: 24px;
-    background: linear-gradient(135deg, #f2f8f0 0%, #fff 58%, #fff7e8 100%);
-    border: 1px solid #dfe9dc;
+    background: linear-gradient(135deg, #fff7ec 0%, #fff 58%, #fff7e8 100%);
+    border: 1px solid #ead8c1;
   }
   .global-strategy-head h2 {
     margin: 0 0 10px;
-    color: #1f3a2d;
+    color: #2b2b2b;
     font-size: clamp(24px, 3vw, 34px);
     line-height: 1.35;
   }
@@ -512,13 +512,13 @@
     padding: 18px;
     border-radius: 18px;
     background: rgba(255,255,255,.92);
-    border: 1px solid #dfe8dc;
-    box-shadow: 0 12px 24px rgba(38,56,44,.07);
+    border: 1px solid #ead8c1;
+    box-shadow: 0 12px 24px rgba(208,83,0,.07);
   }
   .global-strategy-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
   }
   .global-strategy-card span {
@@ -632,36 +632,484 @@
   }</style>
 
 
-<style id="area-keyword-orange-unify">
-  .area-keyword-details,
-  .search-intent .area-keyword-details{
-    background:#fffdf8!important;
-    border:1px solid #eadfd0!important;
-    box-shadow:0 10px 24px rgba(34,28,22,.055)!important;
-    padding:12px!important;
+<style id="pref-region-card-uniform-v1">
+  body{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif!important;letter-spacing:0!important}
+  .pref-region-summary{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:20px 0 24px!important}
+  .pref-region-summary a{display:grid!important;gap:4px!important;min-height:82px!important;align-content:center!important;padding:14px 16px!important;background:#fff!important;border:1px solid #e5ded5!important;border-top:5px solid #D05300!important;color:#2B2B2B!important;box-shadow:0 10px 24px rgba(34,28,22,.06)!important;text-decoration:none!important}
+  .pref-region-summary b{color:#D05300!important;font-size:20px!important;line-height:1.25!important;font-weight:900!important}
+  .pref-region-summary span{color:#555f59!important;font-size:15px!important;line-height:1.5!important;font-weight:700!important}
+  .pref-region-grid,.grid:has(.pref-region-card){align-items:stretch!important;gap:22px!important}
+  .pref-region-card{display:flex!important;flex-direction:column!important;gap:14px!important;padding:24px!important;border:1px solid #e5ded5!important;border-top:6px solid #D05300!important;border-radius:0!important;background:#fff!important;box-shadow:0 14px 36px rgba(34,28,22,.08)!important}
+  .pref-region-card p{margin:0!important;font-size:16px!important;line-height:1.85!important;font-weight:500!important;color:#555f59!important}
+  .pref-region-card .region-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding-bottom:12px!important;border-bottom:1px solid #eadfd4!important}
+  .pref-region-card .region-head h3{margin:0!important;padding:0!important;border:0!important;color:#2B2B2B!important;font-size:24px!important;line-height:1.45!important;font-weight:900!important;letter-spacing:0!important}
+  .pref-region-card .region-head span{display:inline-grid!important;place-items:center!important;min-height:34px!important;padding:0 12px!important;background:#fff7ef!important;border:1px solid #f0c7ad!important;color:#D05300!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important}
+  .pref-region-card .region-checks{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+  .pref-region-card .region-checks span{display:grid!important;place-items:center!important;min-height:36px!important;padding:6px 8px!important;background:#fffaf4!important;border:1px solid #ead8c1!important;color:#d05300!important;font-size:14px!important;line-height:1.35!important;font-weight:900!important;text-align:center!important}
+  .pref-region-card .ward-links,.pref-region-card .area-tags{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:4px 0 0!important;padding-top:4px!important}
+  .pref-region-card .ward-links a,.pref-region-card .area-tags a,.pref-region-card .area-tags span{display:inline-grid!important;place-items:center!important;min-height:38px!important;padding:7px 13px!important;border:1px solid #e5ded5!important;border-radius:4px!important;background:#fff!important;color:#2B2B2B!important;font-size:15px!important;line-height:1.35!important;font-weight:900!important;text-decoration:none!important}
+  .pref-region-card .ward-links a:hover,.pref-region-card .area-tags a:hover{background:#fff7ef!important;border-color:#D05300!important;color:#D05300!important;text-decoration:none!important}
+  @media(max-width:820px){.pref-region-summary{grid-template-columns:1fr!important}.pref-region-card .region-head{align-items:flex-start!important;flex-direction:column!important}.pref-region-card .region-checks{grid-template-columns:1fr!important}.pref-region-card .ward-links a,.pref-region-card .area-tags a,.pref-region-card .area-tags span{width:100%!important;justify-content:flex-start!important}}
+</style>
+<style id="pref-data-dashboard-style">
+
+    .pref-data-card.data-population{border-top:5px solid #69707a;background:#f7f8fa}
+    .pref-data-card.data-housing{border-top:5px solid #8a6d3b;background:#fff9ed}
+    .pref-data-card.data-vacant{border-top:5px solid #e9812f;background:#fff6ed}
+    .pref-data-card.data-other{border-top:5px solid #d05300;background:#fff7ec}
+    .pref-data-card.data-secondary{border-top:5px solid #d05300;background:#fff6ea}
+    .pref-data-card.data-aging{border-top:5px solid #7c5cc4;background:#f7f3ff}
+    .pref-data-card.data-apartment{border-top:5px solid #d05300;background:#fff7ec}
+    .pref-data-card.data-population b{color:#4f5864}
+    .pref-data-card.data-housing b{color:#735929}
+    .pref-data-card.data-vacant b{color:#c76519}
+    .pref-data-card.data-other b{color:#9f3e00}
+    .pref-data-card.data-secondary b{color:#9f3e00}
+    .pref-data-card.data-aging b{color:#6343aa}
+    .pref-data-card.data-apartment b{color:#9f3e00}
+    .bar-fill.vacancy{background:linear-gradient(90deg,#f3a35c,#e9812f)}
+    .bar-fill.national{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.aging{background:linear-gradient(90deg,#a78be2,#7c5cc4)}
+    .bar-fill.apartment{background:linear-gradient(90deg,#d05300,#d05300)}
+    .bar-fill.total-vacant{background:linear-gradient(90deg,#f3a35c,#e9812f)}
+    .bar-fill.other-vacant{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.secondary-home{background:linear-gradient(90deg,#d05300,#f2b766)}
+  </style>
+
+  <style id="chugoku-shikoku-data-style">
+    .cs-data-section{background:#fff;border:1px solid #dde6ee;border-radius:8px;padding:28px;margin:28px 0;box-shadow:0 12px 28px rgba(31,47,64,.07)}
+    .cs-data-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+    .cs-data-card{border:1px solid #e2e8ef;border-radius:8px;padding:16px;background:#fff}
+    .cs-data-card b{display:block;font-size:24px;line-height:1.25;margin-bottom:6px}
+    .cs-data-card span{display:block;font-weight:700;font-size:15px;color:#2d3748}
+    .cs-data-card p{margin:8px 0 0;font-size:14px;line-height:1.65;color:#596575}
+    .cs-data-card.data-vacant{border-top:5px solid #e9812f;background:#fff6ed}
+    .cs-data-card.data-national{border-top:5px solid #d05300;background:#fff6ea}
+    .cs-data-card.data-risk{border-top:5px solid #d05300;background:#fff7ec}
+    .cs-data-card.data-local{border-top:5px solid #7c5cc4;background:#f7f3ff}
+    .cs-data-card.data-vacant b{color:#c76519}
+    .cs-data-card.data-national b{color:#9f3e00}
+    .cs-data-card.data-risk b{color:#9f3e00}
+    .cs-data-card.data-local b{color:#6343aa}
+    .cs-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+    .cs-chart{border:1px solid #e2e8ef;border-radius:8px;padding:18px;background:#fbfdff}
+    .cs-chart h3{margin:0 0 12px;font-size:18px}
+    .bar-row{display:grid;grid-template-columns:130px 1fr 78px;gap:10px;align-items:center;margin:10px 0;font-size:15px}
+    .bar-track{height:14px;background:#edf2f7;border-radius:999px;overflow:hidden}
+    .bar-fill{height:100%;border-radius:999px}
+    .bar-fill.vacancy{background:linear-gradient(90deg,#f3a35c,#e9812f)}
+    .bar-fill.national{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.risk{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.local{background:linear-gradient(90deg,#a78be2,#7c5cc4)}
+    .cs-table{width:100%;border-collapse:collapse;margin-top:18px;font-size:16px;background:#fff}
+    .cs-table th,.cs-table td{border:1px solid #dfe7ee;padding:12px;vertical-align:top;text-align:left}
+    .cs-table th{background:#f3f7fa}
+    @media(max-width:760px){.cs-data-grid,.cs-chart-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:96px 1fr 62px}.cs-data-card b{font-size:21px}}
+  </style>
+
+
+<style id="prefecture-data-unified-colors">
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-population{border-top:5px solid #69707a!important;background:#f7f8fa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-housing{border-top:5px solid #8a6d3b!important;background:#fff9ed!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-vacant{border-top:5px solid #e9812f!important;background:#fff6ed!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-national{border-top:5px solid #d05300!important;background:#fff6ea!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-other{border-top:5px solid #d05300!important;background:#fff7ec!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-secondary{border-top:5px solid #234f89!important;background:#f0f6ff!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-aging{border-top:5px solid #7c5cc4!important;background:#f7f3ff!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-apartment{border-top:5px solid #d05300!important;background:#fff7ec!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-population b{color:#4f5864!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-housing b{color:#735929!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-vacant b{color:#c76519!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-national b{color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-other b{color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-secondary b{color:#234f89!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-aging b{color:#6343aa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-apartment b{color:#9f3e00!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).vacancy,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).total-vacant{background:linear-gradient(90deg,#f3a35c,#e9812f)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).national{background:linear-gradient(90deg,#d05300,#f2b766)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).aging,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).local{background:linear-gradient(90deg,#a78be2,#7c5cc4)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).apartment{background:linear-gradient(90deg,#d05300,#d05300)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).other,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).other-vacant,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).risk{background:linear-gradient(90deg,#d05300,#f2b766)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).secondary,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).secondary-home{background:linear-gradient(90deg,#79a9e8,#234f89)!important}
+</style>
+
+
+
+
+<style id="prefecture-region-readable-style">
+  .prefecture-region-readable-grid,
+  .municipality-directory-grid.pref-region-summary,
+  .grid.cols2.municipality-directory-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:18px!important;
+    align-items:start!important;
   }
-  .area-keyword-details details,
-  .faq.area-keyword-details details,
-  .search-intent .area-keyword-details details{
+  .pref-region-card{
     background:#fff!important;
-    border:1px solid #ead8bf!important;
-    border-left:6px solid #d05300!important;
-    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
-    margin:10px 0!important;
+    border:1px solid #e5ded5!important;
+    border-top:5px solid #D05300!important;
+    box-shadow:0 12px 28px rgba(34,28,22,.07)!important;
+    padding:20px!important;
+    margin:0 0 18px!important;
+    border-radius:0!important;
   }
-  .area-keyword-details summary,
-  .faq.area-keyword-details summary,
-  .search-intent .area-keyword-details summary{
-    color:#d05300!important;
+  .pref-region-card .region-head{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:12px!important;
+    margin:0 0 12px!important;
   }
-  .area-keyword-details details[open],
-  .faq.area-keyword-details details[open]{
-    background:#fffaf4!important;
+  .pref-region-card .region-head h3{
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    color:#2B2B2B!important;
+    background:transparent!important;
+    font-size:22px!important;
+    line-height:1.45!important;
+    font-weight:900!important;
   }
-  .search-intent,
-  section:has(.area-keyword-details){
+  .pref-region-card .region-head span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:31px!important;
+    padding:3px 11px!important;
+    background:#26332d!important;
+    color:#fff!important;
+    font-size:14px!important;
+    font-weight:900!important;
+    white-space:nowrap!important;
+  }
+  .pref-region-card .area-box-lead,
+  .pref-region-card p:not(.section-kicker){
+    margin:0 0 12px!important;
+    color:#414743!important;
+    font-size:16px!important;
+    line-height:1.85!important;
+  }
+  .pref-region-card .region-checks{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:10px 0 14px!important;
+  }
+  .pref-region-card .region-checks span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:31px!important;
+    padding:4px 11px!important;
+    background:#fff7ef!important;
+    border:1px solid #efc9a7!important;
+    color:#8c3d00!important;
+    font-size:14px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+  }
+  .pref-region-card .ward-links,
+  .pref-region-card .area-tags{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:10px!important;
+    margin:4px 0 0!important;
+    padding-top:4px!important;
+  }
+  .pref-region-card .ward-links a,
+  .pref-region-card .area-tags a,
+  .pref-region-card .area-tags span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:40px!important;
+    padding:7px 13px!important;
+    border:1px solid #e5ded5!important;
+    border-radius:4px!important;
+    background:#fff!important;
+    color:#2B2B2B!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+    text-decoration:none!important;
+  }
+  .pref-region-card .ward-links a:hover,
+  .pref-region-card .area-tags a:hover{
+    background:#fff7ef!important;
+    border-color:#D05300!important;
+    color:#D05300!important;
+    text-decoration:none!important;
+  }
+  .pref-region-card .section-title,
+  .pref-region-card .section-kicker{
+    display:none!important;
+  }
+  .pref-region-summary{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:12px!important;
+    margin:18px 0 24px!important;
+  }
+  .pref-region-summary a{
+    display:grid!important;
+    gap:4px!important;
+    min-height:82px!important;
+    align-content:center!important;
+    padding:14px 16px!important;
+    background:#fff!important;
+    border:1px solid #e5ded5!important;
+    border-top:5px solid #D05300!important;
+    color:#2B2B2B!important;
+    box-shadow:0 10px 24px rgba(34,28,22,.06)!important;
+    text-decoration:none!important;
+  }
+  .pref-region-summary b{color:#D05300!important;font-size:20px!important;line-height:1.25!important;font-weight:900!important}
+  .pref-region-summary span{color:#555f59!important;font-size:15px!important;line-height:1.5!important;font-weight:700!important}
+  @media(max-width:900px){
+    .prefecture-region-readable-grid,
+    .municipality-directory-grid.pref-region-summary,
+    .grid.cols2.municipality-directory-grid,
+    .pref-region-summary{grid-template-columns:1fr!important}
+    .pref-region-card .region-head{align-items:flex-start!important;flex-direction:column!important}
+    .pref-region-card .ward-links a,
+    .pref-region-card .area-tags a,
+    .pref-region-card .area-tags span{width:100%!important;justify-content:flex-start!important}
+  }
+</style>
+
+
+<style id="west-tokai-handmade-top-v1">
+  .west-tokai-hand-guide{background:#fff!important;border:1px solid #eadfd0!important;border-left:6px solid var(--area-main,#d05300)!important;box-shadow:0 12px 28px rgba(34,28,22,.06)!important;border-radius:8px!important;padding:28px!important;margin:24px 0!important}
+  .west-tokai-hand-guide .lead{font-size:18px!important;line-height:1.95!important;font-weight:700!important;color:#414743!important}
+  .west-tokai-hand-actions{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:18px 0!important}
+  .west-tokai-hand-actions a{display:grid!important;align-content:center!important;min-height:86px!important;padding:15px!important;border:1px solid #eadfd0!important;border-top:5px solid var(--area-main,#d05300)!important;border-radius:8px!important;background:linear-gradient(180deg,#fff 0%,var(--area-soft,#fff8ef) 100%)!important;color:#2f312d!important;text-decoration:none!important;box-shadow:0 8px 20px rgba(34,28,22,.045)!important}
+  .west-tokai-hand-actions b{display:block!important;color:#2f312d!important;font-size:17px!important;line-height:1.45!important;font-weight:900!important}
+  .west-tokai-hand-actions span{display:block!important;margin-top:5px!important;color:#555f59!important;font-size:14px!important;line-height:1.6!important;font-weight:700!important}
+  .west-tokai-hand-checks{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin-top:14px!important}
+  .west-tokai-hand-checks div{padding:16px!important;border:1px solid #eadfd0!important;border-radius:8px!important;background:#fff!important}
+  .west-tokai-hand-checks strong{display:block!important;margin-bottom:5px!important;color:var(--area-main,#d05300)!important;font-size:16px!important;line-height:1.45!important}
+  .west-tokai-hand-checks span{display:block!important;color:#555f59!important;font-size:14px!important;line-height:1.75!important;font-weight:700!important}
+  .ward-links{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(108px,1fr))!important;gap:8px!important}
+  .ward-links a{display:grid!important;place-items:center!important;min-height:40px!important;padding:8px 12px!important;border:1px solid #e7dcc5!important;border-radius:6px!important;background:#fffaf4!important;color:#2f312d!important;font-size:15px!important;font-weight:900!important;text-align:center!important;text-decoration:none!important}
+  .ward-links a:hover{background:#fff1e6!important;border-color:#d05300!important;color:#8c3d00!important}
+  @media(max-width:900px){.west-tokai-hand-actions,.west-tokai-hand-checks{grid-template-columns:1fr!important}.west-tokai-hand-guide{padding:20px!important}}
+</style>
+
+
+<style id="niigata-like-prefecture-data-colors-v2">
+  .pref-data-dashboard,
+  .kanto-national-section,
+  .kyushu-data-section,
+  .cs-data-section,
+  .tokai-data-section,
+  section:has(.pref-data-card),
+  section:has(.kyushu-data-card),
+  section:has(.cs-data-card),
+  section:has(.tokai-data-card),
+  section:has(.kanto-national-card) {
     background:#fffdf8!important;
-    border-color:#eadfd0!important;
+    border:1px solid #eadfd4!important;
+    border-radius:8px!important;
+    box-shadow:0 12px 28px rgba(34,28,22,.06)!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) {
+    border:1px solid #ddd7d0!important;
+    border-top:5px solid #69707a!important;
+    border-radius:8px!important;
+    background:#f7f8fa!important;
+    box-shadow:0 8px 20px rgba(34,28,22,.045)!important;
+    padding:16px!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) b {
+    display:block!important;
+    font-size:25px!important;
+    line-height:1.18!important;
+    font-weight:900!important;
+    color:#4f5864!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) span {
+    display:block!important;
+    margin-top:6px!important;
+    color:#555f59!important;
+    font-size:13px!important;
+    font-weight:900!important;
+    line-height:1.55!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) p {
+    margin:8px 0 0!important;
+    color:#555f59!important;
+    font-size:13px!important;
+    line-height:1.65!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-population,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-household {
+    border-top-color:#69707a!important;
+    background:#f7f8fa!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-housing {
+    border-top-color:#8a6d3b!important;
+    background:#fff9ed!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacancy {
+    border-top-color:#e9812f!important;
+    background:#fff6ed!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-national {
+    border-top-color:#d05300!important;
+    background:#fff6ea!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk {
+    border-top-color:#d05300!important;
+    background:#fff7ec!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary {
+    border-top-color:#234f89!important;
+    background:#f0f6ff!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging {
+    border-top-color:#7c5cc4!important;
+    background:#f7f3ff!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment {
+    border-top-color:#d05300!important;
+    background:#fff7ec!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-population b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-household b {color:#4f5864!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-housing b {color:#735929!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacancy b {color:#c76519!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-national b {color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk b {color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary b {color:#234f89!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging b {color:#6343aa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment b {color:#9f3e00!important}
+
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill) {
+    background:linear-gradient(90deg,#f3a35c,#e9812f)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).national {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).aging,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).purple {
+    background:linear-gradient(90deg,#a78be2,#7c5cc4)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).apartment {
+    background:linear-gradient(90deg,#d05300,#d05300)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other-vacant,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).green,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).risk {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary-home {
+    background:linear-gradient(90deg,#79a9e8,#234f89)!important;
+  }
+  .kanto-national-card.data-vacant span::after,
+  .pref-data-card.data-vacant span::after,
+  .kyushu-data-card.data-vacant span::after,
+  .cs-data-card.data-vacant span::after,
+  .tokai-data-card.data-vacant span::after {
+    content:"";
+  }
+</style>
+
+
+<style id="pref-region-niigata-like-v2">
+  .pref-region-summary{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important;margin-top:20px!important}
+  .pref-region-card{padding:24px!important;background:#fff!important;border:1px solid #e5ded5!important;border-top:6px solid #d05300!important;border-radius:8px!important;box-shadow:0 14px 36px rgba(34,28,22,.08)!important}
+  .pref-region-card .region-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding-bottom:12px!important;margin-bottom:12px!important;border-bottom:1px solid #eadfd4!important}
+  .pref-region-card .region-head h3{margin:0!important;color:#2b2b2b!important;font-size:24px!important;line-height:1.45!important;font-weight:900!important}
+  .pref-region-card .region-head span{display:inline-grid!important;place-items:center!important;min-height:34px!important;padding:0 12px!important;background:#fff7ef!important;border:1px solid #f0c7ad!important;color:#d05300!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important}
+  .pref-region-card .area-box-lead{margin:0 0 14px!important;color:#4f5b55!important;font-size:16px!important;line-height:1.85!important}
+  .pref-region-card .region-checks{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;margin:12px 0 14px!important}
+  .pref-region-card .region-checks span{display:grid!important;place-items:center!important;min-height:36px!important;padding:6px 8px!important;background:#fff7ef!important;border:1px solid #f0c7ad!important;color:#9f3e00!important;font-size:14px!important;line-height:1.35!important;font-weight:900!important;text-align:center!important}
+  .pref-region-card .ward-links,.pref-region-card .area-tags{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:4px 0 0!important;padding-top:4px!important}
+  .pref-region-card .ward-links a,.pref-region-card .area-tags a{display:inline-grid!important;place-items:center!important;min-height:38px!important;padding:7px 13px!important;border:1px solid #e5ded5!important;border-radius:4px!important;background:#fff!important;color:#2b2b2b!important;font-size:15px!important;line-height:1.35!important;font-weight:900!important;text-decoration:none!important}
+  .pref-region-card .ward-links a:hover,.pref-region-card .area-tags a:hover{background:#fff7ef!important;border-color:#d05300!important;color:#d05300!important;text-decoration:none!important}
+  @media(max-width:900px){.pref-region-summary{grid-template-columns:1fr!important}.pref-region-card .region-head{align-items:flex-start!important;flex-direction:column!important}.pref-region-card .region-checks{grid-template-columns:1fr!important}.pref-region-card .ward-links a,.pref-region-card .area-tags a{width:100%!important;justify-content:flex-start!important}}
+</style>
+
+<style id="prefecture-region-heading-orange-v1">
+  section:has(> .ward-links) > .section-title,
+  section:has(> .area-tags) > .section-title,
+  section:has(> p + .ward-links) > .section-title,
+  section:has(> p + .area-tags) > .section-title,
+  .pref-region-card > .section-title {
+    background:#fff7ef!important;
+    color:#2b2b2b!important;
+    border:1px solid #eadfd0!important;
+    border-left:7px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  section:has(> .ward-links) > .section-title::before,
+  section:has(> .area-tags) > .section-title::before,
+  section:has(> p + .ward-links) > .section-title::before,
+  section:has(> p + .area-tags) > .section-title::before,
+  .pref-region-card > .section-title::before {
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:9px;
+    background:#D05300;
+    border-radius:2px;
+    vertical-align:middle;
+  }
+  section:has(> .ward-links),
+  section:has(> .area-tags) {
+    background:#fff!important;
+  }
+</style>
+<style id="data-section-green-zero-reset-v1">
+  .macro-data-section,
+  .pref-data-dashboard,
+  .pref-official-stats,
+  .kyushu-data-section,
+  .cs-data-section,
+  .tokai-data-section,
+  section:has(.pref-data-card),
+  section:has(.kyushu-data-card),
+  section:has(.cs-data-card),
+  section:has(.tokai-data-card),
+  section:has(.kanto-national-card) {
+    background:#fffdf8!important;
+    border-color:#ead8c1!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant-rate {
+    background:#fff7ec!important;
+    border-top-color:#d05300!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant-rate b {
+    color:#9f3e00!important;
+  }
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).apartment,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other-vacant,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).green,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).risk,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary-home,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).aging {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
 </head>
@@ -726,6 +1174,71 @@
 </section>
 
   <main class="wrap">
+
+<style id="area-keyword-neutral-unify">
+  #area-keyword-guide.area-keyword-guide,
+  section.area-keyword-guide{
+    background:#fff!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:0 14px 32px rgba(34,28,22,.07)!important;
+    padding:24px!important;
+    border-radius:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .section-title,
+  section.area-keyword-guide .section-title{
+    margin:0 0 18px!important;
+    padding:11px 15px!important;
+    background:#D05300!important;
+    border-left:7px solid #9F3E00!important;
+    color:#fff!important;
+    font-size:26px!important;
+    line-height:1.45!important;
+    font-weight:900!important;
+  }
+  #area-keyword-guide.area-keyword-guide .lead,
+  section.area-keyword-guide .lead{
+    margin:0 0 22px!important;
+    background:transparent!important;
+    color:#414743!important;
+    font-size:18px!important;
+    line-height:1.82!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details,
+  section.area-keyword-guide .area-keyword-details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details,
+  section.area-keyword-guide .faq.area-keyword-details{
+    background:#fffdf8!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:none!important;
+    padding:12px!important;
+    margin:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details,
+  section.area-keyword-guide .area-keyword-details details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details,
+  section.area-keyword-guide .faq.area-keyword-details details{
+    background:#fff!important;
+    border:1px solid #ead8bf!important;
+    border-left:6px solid #D05300!important;
+    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
+    margin:10px 0!important;
+    padding:14px 16px!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details[open],
+  section.area-keyword-guide .area-keyword-details details[open],
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details[open],
+  section.area-keyword-guide .faq.area-keyword-details details[open]{
+    background:#fffaf4!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details summary,
+  section.area-keyword-guide .area-keyword-details summary,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details summary,
+  section.area-keyword-guide .faq.area-keyword-details summary{
+    color:#8c3d00!important;
+    font-weight:900!important;
+  }
+</style>
+
 <section id="area-keyword-guide" class="section area-keyword-guide">
   <h2 class="section-title">鳥取県で遺品整理・生前整理・実家じまいを検討している方へ</h2>
   <p class="lead">鳥取県の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。鳥取県で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。鳥取県で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
@@ -735,11 +1248,91 @@
     <details><summary>鳥取県の実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
   </div>
 </section>
+<style id="pref-official-stats-unified-v1">
+.pref-official-stats{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,64px) 0;color:#2b2b2b}
+.pref-official-stats .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.pref-official-stats .section-title{font-size:clamp(26px,3.2vw,40px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.pref-official-stats .lead{max-width:940px;margin:0 0 22px;color:#4f4a43;font-size:18px;line-height:1.85}
+.pref-data-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.pref-data-card{background:#fff;border:1px solid #eadbc8;border-radius:8px;padding:16px;box-shadow:0 10px 24px rgba(82,54,24,.06);border-top:4px solid #d05300;min-height:150px}
+.pref-data-card b{display:block;color:#9f3e00;font-size:clamp(24px,2.8vw,34px);line-height:1.1;margin-bottom:8px;font-family:Roboto,"BIZ UDPGothic",sans-serif}
+.pref-data-card span{display:block;font-weight:900;color:#2b2b2b;margin-bottom:7px}
+.pref-data-card p{margin:0;color:#5f5a52;font-size:15px;line-height:1.65}
+.pref-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.pref-chart-box{background:#fff;border:1px solid #eadbc8;border-radius:8px;padding:18px;box-shadow:0 12px 28px rgba(82,54,24,.06)}
+.pref-chart-box h3{margin:0 0 12px;color:#2b2b2b;font-size:20px}
+.pref-bar-row{display:grid;grid-template-columns:112px 1fr 86px;gap:10px;align-items:center;margin:10px 0;color:#3a352f}
+.pref-bar-row span{font-weight:900}
+.pref-bar-row b{text-align:right;color:#9f3e00;font-family:Roboto,"BIZ UDPGothic",sans-serif}
+.pref-bar-track{height:12px;background:#f1e5d8;border-radius:999px;overflow:hidden}
+.pref-bar-fill{height:100%;border-radius:999px;background:#d05300}
+.pref-bar-fill.national{background:#d05300}.pref-bar-fill.aging{background:#b45309}.pref-bar-fill.apartment{background:#286f94}.pref-bar-fill.other{background:#c2410c}.pref-bar-fill.secondary{background:#7c3aed}
+.pref-data-source{margin:14px 0 0;color:#6b6258;font-size:14px;line-height:1.7}
+@media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
+</style>
+<section id="pref-official-stats" class="section pref-official-stats">
+  <div class="section-inner">
+    <p class="section-kicker">人口・世帯・住宅で見る鳥取県</p>
+    <h2 class="section-title">鳥取県の公式統計と全国比較で見る整理相談の背景</h2>
+    <p class="lead">鳥取・米子周辺の市街地と、中山間部・海沿いの戸建て、空き家整理で条件が変わります。車庫、納屋、遠方対応を確認します。ここでは令和2年国勢調査と令和5年住宅・土地統計調査を合わせて、見積もり前に見るべき住宅事情を整理します。</p>
+    <div class="pref-data-grid" aria-label="鳥取県の統計概要">
+      <div class="pref-data-card data-population"><b>553,407人</b><span>令和2年国勢調査人口</span><p>県全体の相談規模を把握する基礎数字です。</p></div>
+      <div class="pref-data-card data-housing"><b>26.2万戸</b><span>総住宅数</span><p>令和5年住宅・土地統計調査の県全体値です。</p></div>
+      <div class="pref-data-card data-vacant"><b>4.1万戸</b><span>空き家数</span><p>売却前・解体前・相続後の家財整理につながる母数です。</p></div>
+      <div class="pref-data-card data-vacant-rate"><b>15.7%</b><span>空き家率</span><p>全国平均13.8%と比べて、空き家整理の優先度を見ます。</p></div>
+      <div class="pref-data-card data-other"><b>2.5万戸</b><span>その他空き家</span><p>賃貸・売却・二次的住宅を除く、実家じまいに近い空き家です。</p></div>
+      <div class="pref-data-card data-secondary"><b>0.1万戸</b><span>二次的住宅</span><p>別荘・季節利用住宅など、遠方対応や鍵預かりと関係します。</p></div>
+      <div class="pref-data-card data-aging"><b>32.5%</b><span>65歳以上人口割合</span><p>生前整理、施設入居前整理、遠方家族の相談につながる指標です。</p></div>
+      <div class="pref-data-card data-apartment"><b>21.2%</b><span>共同住宅居住率</span><p>EV予約、共用部養生、管理規約が必要になりやすい指標です。</p></div>
+    </div>
+    <div class="pref-chart-grid">
+      <div class="pref-chart-box">
+        <h3>鳥取県で見積もり前に見たい主要指標</h3>
+        <div class="pref-bar-row"><span>空き家率</span><div class="pref-bar-track"><div class="pref-bar-fill vacancy" style="width:52.5%"></div></div><b>15.7%</b></div>
+        <div class="pref-bar-row"><span>全国平均</span><div class="pref-bar-track"><div class="pref-bar-fill national" style="width:46.1%"></div></div><b>13.8%</b></div>
+        <div class="pref-bar-row"><span>高齢化率</span><div class="pref-bar-track"><div class="pref-bar-fill aging" style="width:72.2%"></div></div><b>32.5%</b></div>
+        <div class="pref-bar-row"><span>共同住宅率</span><div class="pref-bar-track"><div class="pref-bar-fill apartment" style="width:28.3%"></div></div><b>21.2%</b></div>
+      </div>
+      <div class="pref-chart-box">
+        <h3>空き家の中身で整理方法が変わる</h3>
+        <div class="pref-bar-row"><span>空き家総数</span><div class="pref-bar-track"><div class="pref-bar-fill total-vacant" style="width:100%"></div></div><b>4.1万戸</b></div>
+        <div class="pref-bar-row"><span>その他空き家</span><div class="pref-bar-track"><div class="pref-bar-fill other" style="width:61.5%"></div></div><b>2.5万戸</b></div>
+        <div class="pref-bar-row"><span>二次的住宅</span><div class="pref-bar-track"><div class="pref-bar-fill secondary" style="width:2.2%"></div></div><b>0.1万戸</b></div>
+        <p class="pref-data-source">その他空き家は相続後の実家整理、二次的住宅は別荘・季節利用住宅の遠方対応と相性が強い区分です。</p>
+      </div>
+    </div>
+    <p class="pref-data-source">出典：総務省統計局「令和2年国勢調査」、総務省統計局「令和5年住宅・土地統計調査」。住宅数・空き家数は都道府県表、空き家率は空き家数を総住宅数で除して算出。</p>
+  </div>
+</section>
+
+<section id="pref-original-guide" class="section pref-original-guide">
+  <h2 class="section-title">鳥取県で失敗しないための地域特化チェック</h2>
+  <p class="lead">鳥取県は鳥取市・米子市周辺の住宅地、東部・中部・西部の戸建てや山間部で整理条件が変わります。前面道路、冬季道路、物置、庭、仏壇を先に確認します。</p>
+  <div class="grid cols3">
+    <div class="card"><h3>市街地の集合住宅</h3><p>退去期限、管理会社連絡、EV利用、駐車位置を確認します。</p></div>
+    <div class="card"><h3>戸建て・空き家整理</h3><p>庭、物置、車庫、二階家具、仏壇を作業範囲に含めるか確認します。</p></div>
+    <div class="card"><h3>山間部・遠方対応</h3><p>冬季道路、坂道、鍵預かり、写真報告、貴重品返送を決めます。</p></div>
+  </div>
+  <div class="notice" style="margin-top:18px"><b>鳥取県で見積もり前にそろえること</b><br>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置・仏壇の写真を用意し、探してほしい通帳・印鑑・権利書・写真・形見分け品を先に共有してください。</div>
+</section>
+
+<section id="tottori-handmade-guide" class="section west-tokai-hand-guide" style="--area-main:#7a8b22;--area-soft:#f5fae8">
+  <p class="section-kicker">最初に見るところ</p>
+  <h2 class="section-title">鳥取県で遺品整理・生前整理を探す前に</h2>
+  <p class="lead">鳥取市・米子市の市街地、倉吉・境港・中山間地域の戸建て整理で作業計画が変わります。冬季道路、庭、納屋、遠方立会いなし対応を見ます。</p>
+  <div class="west-tokai-hand-actions"><a href="#cities"><b>鳥取市を見る</b><span>市街地・戸建て</span></a><a href="#cities"><b>米子・境港を見る</b><span>沿岸部・集合住宅</span></a><a href="#cities"><b>中部・山間部を見る</b><span>納屋・冬季道路</span></a><a href="#kita-before-after-cases"><b>事例を見る</b><span>整理の流れ</span></a></div>
+  <div class="west-tokai-hand-checks">
+    <div><strong>建物条件</strong><span>階数、エレベーター、前面道路、駐車位置、搬出時間を先に整理。</span></div>
+    <div><strong>残す品・探す品</strong><span>通帳、印鑑、権利書、写真、貴金属、形見分け品を処分前に共有。</span></div>
+    <div><strong>地域事情</strong><span>海沿い、山間部、島しょ部、冬季道路、庭・物置など県内条件を見積もりに反映。</span></div>
+  </div>
+</section>
+
 
     <section id="municipalities" class="section"><h2 class="section-title">鳥取県内の市町村から探す</h2><p class="lead">鳥取県公式「県内市町村」に掲載されている4市14町1村、合計19市町村を地域別に整理しました。各ページでは、令和2年国勢調査の人口・世帯数等と、行政窓口を確認するための公式リンクを掲載しています。</p><div class="grid cols2"><div class="area-box"><h3>東部地域</h3><div class="ward-links"><a href="/tottori/tottori/">鳥取市</a><a href="/tottori/iwami/">岩美町</a><a href="/tottori/wakasa/">若桜町</a><a href="/tottori/chizu/">智頭町</a><a href="/tottori/yazu/">八頭町</a></div></div>
 <div class="area-box"><h3>中部地域</h3><div class="ward-links"><a href="/tottori/kurayoshi/">倉吉市</a><a href="/tottori/misasa/">三朝町</a><a href="/tottori/yurihama/">湯梨浜町</a><a href="/tottori/kotoura/">琴浦町</a><a href="/tottori/hokuei/">北栄町</a></div></div>
 <div class="area-box"><h3>西部地域</h3><div class="ward-links"><a href="/tottori/yonago/">米子市</a><a href="/tottori/sakaiminato/">境港市</a><a href="/tottori/hiezu/">日吉津村</a><a href="/tottori/daisen/">大山町</a><a href="/tottori/nanbu/">南部町</a><a href="/tottori/houki/">伯耆町</a><a href="/tottori/nichinan/">日南町</a><a href="/tottori/hino/">日野町</a><a href="/tottori/kofu/">江府町</a></div></div></div></section>
-<section id="data" class="section"><h2 class="section-title">データで見る鳥取県の遺品整理・生前整理需要</h2><div class="grid cols4"><div class="card stat-card"><b>19市町村</b><span>4市14町1村で構成されています。</span></div><div class="card stat-card"><b>553,407人</b><span>令和2年国勢調査の鳥取県人口。</span></div><div class="card stat-card"><b>219,742世帯</b><span>令和2年国勢調査の鳥取県世帯数。</span></div><div class="card stat-card"><b>157.8人/km2</b><span>令和2年国勢調査の人口密度。</span></div></div><div class="notice" style="margin-top:16px"><b>統計の扱い</b><br>人口・世帯数・人口増減率・面積・人口密度・年齢3区分・単身者世帯比率・共同住宅居住率は e-Stat 令和2年国勢調査の市町村別実値を掲載しています。行政窓口の電話番号や受付時間は未確認の項目を推測せず `—` とし、市町村公式サイトへの導線を掲載しています。</div></section>
     <section id="flow" class="section"><h2 class="section-title">鳥取県で相談前に整理したいこと</h2><div class="grid cols4"><div class="card"><h3>建物条件</h3><p>階数、エレベーター、前面道路、駐車位置、共用部養生を確認します。</p></div><div class="card"><h3>残す品・探す品</h3><p>通帳、印鑑、権利書、保険証券、写真、形見分け品を処分前に探します。</p></div><div class="card"><h3>行政制度</h3><p>粗大ごみ、持込施設、運び出し支援は市町村公式サイトで確認します。</p></div><div class="card"><h3>買取・供養</h3><p>買取できる品と供養したい品を分け、費用と心理的負担を抑えます。</p></div></div></section>
     <section class="section"><h2 class="section-title">鳥取県の料金目安</h2><table class="price-table"><thead><tr><th>間取り</th><th>料金目安</th><th>確認したい作業</th></tr></thead><tbody><tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、写真報告。</td></tr><tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr><tr><td>2LDK・3DK</td><td>120,000円〜</td><td>形見分け、買取査定、供養品の分別、退去前整理。</td></tr><tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前整理。</td></tr></tbody></table></section>
 <section id="kita-before-after-cases" class="section common-kita-ba">
@@ -762,6 +1355,7 @@
     </div>
   </div>
 </section>
+
 <section id="pref-impact" class="section">
         <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
         <p class="lead">鳥取県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、プロに相談する理由がはっきりします。</span></p>
@@ -777,14 +1371,14 @@
           <div class="chart-box">
             <h3>自力整理とプロ作業の時間差</h3>
             <div class="bar-row"><span>1DK 自力</span><div class="bar-track"><div class="bar-fill" style="width:66%"></div></div><b>約1ヶ月</b></div>
-            <div class="bar-row"><span>1K プロ</span><div class="bar-track"><div class="bar-fill green" style="width:8%"></div></div><b>1〜3時間</b></div>
+            <div class="bar-row"><span>1K プロ</span><div class="bar-track"><div class="bar-fill warm" style="width:8%"></div></div><b>1〜3時間</b></div>
             <div class="bar-row"><span>一軒家 自力</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>3ヶ月〜半年</b></div>
-            <div class="bar-row"><span>一戸建て プロ</span><div class="bar-track"><div class="bar-fill green" style="width:14%"></div></div><b>1〜3日</b></div>
+            <div class="bar-row"><span>一戸建て プロ</span><div class="bar-track"><div class="bar-fill warm" style="width:14%"></div></div><b>1〜3日</b></div>
             <p>家族だけで進めると、仕分け・搬出・車両手配・行政ルール確認・貴重品探索を何度も行う必要があります。<span class="marker">退去期限や売却予定がある場合は、プロ作業の短さが大きな安心材料</span>になります。</p>
           </div>
           <div class="chart-box">
             <h3>親子の意識差と生前整理</h3>
-            <div class="bar-row"><span>手伝いたい子</span><div class="bar-track"><div class="bar-fill green" style="width:80%"></div></div><b>約8割</b></div>
+            <div class="bar-row"><span>手伝いたい子</span><div class="bar-track"><div class="bar-fill warm" style="width:80%"></div></div><b>約8割</b></div>
             <div class="bar-row"><span>手伝われたくない親</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><b>約6割</b></div>
             <div class="bar-row"><span>終活の目的</span><div class="bar-track"><div class="bar-fill blue" style="width:40%"></div></div><b>約4割</b></div>
             <p>子どもは手伝いたい一方で、親は迷惑をかけたくない、見られたくない物があると感じることがあります。生前整理では、<span class="marker">家族だけで抱え込まず、第三者を入れて必要な物だけ残す</span>進め方が向いています。</p>
@@ -794,8 +1388,8 @@
         <div class="grid cols2" style="margin-top:16px">
           <div class="chart-box">
             <h3>間取り別の費用目安</h3>
-            <div class="bar-row"><span>1R</span><div class="bar-track"><div class="bar-fill green" style="width:18%"></div></div><b>3〜8万円</b></div>
-            <div class="bar-row"><span>1DK</span><div class="bar-track"><div class="bar-fill green" style="width:28%"></div></div><b>5〜12万円</b></div>
+            <div class="bar-row"><span>1R</span><div class="bar-track"><div class="bar-fill warm" style="width:18%"></div></div><b>3〜8万円</b></div>
+            <div class="bar-row"><span>1DK</span><div class="bar-track"><div class="bar-fill warm" style="width:28%"></div></div><b>5〜12万円</b></div>
             <div class="bar-row"><span>2DK</span><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div><b>9〜25万円</b></div>
             <div class="bar-row"><span>3LDK</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><b>17〜50万円</b></div>
             <div class="bar-row"><span>一戸建て</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>22〜70万円以上</b></div>
@@ -815,7 +1409,12 @@
         <div class="notice" style="margin-top:16px"><b>鳥取県で実家の片付けは家族だけでできますか？</b><br>少量の荷物なら家族だけでも進められますが、一戸建てや長年住んだ実家では家財量が多く、仕分け・搬出・車両手配・貴重品探索まで大きな負担になります。まずは<span class="marker">荷物量、退去期限、探したい書類、買取できそうな品</span>を整理し、必要な部分だけ専門業者に相談する方法も検討しましょう。</div>
       </section>
 
-      <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>鳥取県ページから何を選べばよいですか？</h3><p>まず実家や作業場所に近い市町村ページを選び、建物条件と行政窓口の確認導線を見てください。</p></div><div class="card"><h3>行政の電話番号が載っていないのはなぜですか？</h3><p>市町村ごとに制度が違うため、未確認の番号や受付時間は掲載せず、公式サイトで確認できる導線にしています。</p></div><div class="card"><h3>立会いなしの遺品整理は相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、オンライン確認、振込精算を組み合わせると遠方家族でも進めやすくなります。</p></div><div class="card"><h3>空き家になった実家も整理できますか？</h3><p>整理できます。相続後の家財整理、売却前整理、権利書や保険証券の探索、仏壇・写真の供養などをまとめて確認しましょう。</p></div><div class="card"><h3>マンション退去日が近い場合は何を伝えればよいですか？</h3><p>退去期限、管理会社の作業ルール、エレベーターの有無、共用部養生、駐車位置、残したい貴重品を先に共有してください。</p></div><div class="card"><h3>見積もり前に写真だけで相談できますか？</h3><p>相談できます。玄関、各部屋、押入れ、物置、搬出経路、駐車位置の写真があると、荷物量と作業条件を整理しやすくなります。</p></div></div></section>
+      
+      <section id="towns" class="section"><p class="section-kicker">対応エリア</p><h2 class="section-title">人口最少の県でも、ご実家はきちんと整えます。の対応エリア</h2>
+        <p>人口最少の県でも、ご実家はきちんと整えます。全域の遺品整理・生前整理・実家じまいに対応します。町名、駅名、団地名、建物名、階数、駐車位置を見積もり前に共有すると、搬出経路と作業時間を判断しやすくなります。</p>
+      </section>
+
+<section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>鳥取県ページから何を選べばよいですか？</h3><p>まず実家や作業場所に近い市町村ページを選び、建物条件と行政窓口の確認導線を見てください。</p></div><div class="card"><h3>行政の電話番号が載っていないのはなぜですか？</h3><p>市町村ごとに制度が違うため、公式確認が必要なの番号や受付時間は掲載せず、公式サイトで確認できる導線にしています。</p></div><div class="card"><h3>立会いなしの遺品整理は相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、オンライン確認、振込精算を組み合わせると遠方家族でも進めやすくなります。</p></div><div class="card"><h3>空き家になった実家も整理できますか？</h3><p>整理できます。相続後の家財整理、売却前整理、権利書や保険証券の探索、仏壇・写真の供養などをまとめて確認しましょう。</p></div><div class="card"><h3>マンション退去日が近い場合は何を伝えればよいですか？</h3><p>退去期限、管理会社の作業ルール、エレベーターの有無、共用部養生、駐車位置、残したい貴重品を先に共有してください。</p></div><div class="card"><h3>見積もり前に写真だけで相談できますか？</h3><p>相談できます。玄関、各部屋、押入れ、物置、搬出経路、駐車位置の写真があると、荷物量と作業条件を整理しやすくなります。</p></div></div></section>
   </main>
   <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、粗大ごみ相談先、見積もり前チェックを整理する情報サイト</div></footer>
 <script id="common-kita-before-after-script">
@@ -836,6 +1435,970 @@
     });
   })();
 </script>
+<script id="pref-region-card-uniform-script-v1">
+(() => {
+  const labelsFor = (text) => {
+    if (/別荘|リゾート|軽井沢|白馬|蓼科/.test(text)) return ['別荘管理','鍵預かり','車両位置'];
+    if (/雪|積雪|凍結|山間|山沿い|寒冷/.test(text)) return ['冬季道路','坂道搬出','駐車位置'];
+    if (/農家|納屋|蔵|物置|郊外|戸建て|庭/.test(text)) return ['戸建て物置','庭・納屋','車両進入'];
+    if (/都市|中心|駅|マンション|集合住宅|区|退去/.test(text)) return ['退去期限','EV予約','共用部養生'];
+    if (/島|沿岸|海|離島/.test(text)) return ['遠方家族','搬出距離','車両進入'];
+    return ['搬出経路','駐車位置','見積もり写真'];
+  };
+  const cards = Array.from(document.querySelectorAll('.admin-card,.area-box,.ward-area,.card')).filter((card) => {
+    const links = card.querySelectorAll('.ward-links a,.area-tags a');
+    return links.length >= 3 && card.querySelector('h3');
+  });
+  cards.forEach((card, index) => {
+    if (card.dataset.prefRegionReady) return;
+    const links = card.querySelectorAll('.ward-links a,.area-tags a');
+    const h3 = card.querySelector('h3');
+    if (!h3 || !links.length) return;
+    card.dataset.prefRegionReady = '1';
+    card.classList.add('pref-region-card');
+    if (!card.id) card.id = 'pref-region-card-' + (index + 1);
+    if (!card.querySelector(':scope > .region-head')) {
+      const head = document.createElement('div');
+      head.className = 'region-head';
+      const count = document.createElement('span');
+      count.textContent = links.length + '市区町村';
+      h3.parentNode.insertBefore(head, h3);
+      head.appendChild(h3);
+      head.appendChild(count);
+    }
+    if (!card.querySelector(':scope > .region-checks')) {
+      const checks = document.createElement('div');
+      checks.className = 'region-checks';
+      labelsFor(card.textContent).forEach((label) => {
+        const item = document.createElement('span');
+        item.textContent = label;
+        checks.appendChild(item);
+      });
+      const linkBox = card.querySelector('.ward-links,.area-tags');
+      card.insertBefore(checks, linkBox || null);
+    }
+  });
+  const first = cards[0];
+  if (!first) return;
+  const section = first.closest('section');
+  if (!section || section.querySelector(':scope > .pref-region-summary')) return;
+  const summary = document.createElement('div');
+  summary.className = 'pref-region-summary';
+  cards.slice(0, 4).forEach((card) => {
+    const h = card.querySelector('.region-head h3,h3');
+    const count = card.querySelectorAll('.ward-links a,.area-tags a').length;
+    const a = document.createElement('a');
+    a.href = '#' + card.id;
+    a.innerHTML = '<b>' + (h ? h.textContent.trim() : '地域') + '</b><span>' + count + '件から探す</span>';
+    summary.appendChild(a);
+  });
+  const lead = section.querySelector('.lead');
+  if (lead && lead.nextSibling) lead.parentNode.insertBefore(summary, lead.nextSibling);
+  else section.insertBefore(summary, section.firstChild);
+})();
+</script>
+
+
+
+<script id="prefecture-region-readable-script">
+(function(){
+  const genericPatterns = [
+    /公式ページの地域区分に沿って/,
+    /地域区分に沿って/,
+    /作成済みの市町村ページへ移動できます/,
+    /統計はe-Stat/,
+    /公式確認が必要なの電話番号/
+  ];
+  const stripTitle = (text) => (text || '')
+    .replace(/エリアから探す/g,'')
+    .replace(/の市町村ページ一覧/g,'')
+    .replace(/から探す/g,'')
+    .replace(/\s+/g,' ')
+    .trim();
+  const linkNames = (card) => Array.from(card.querySelectorAll('.ward-links a,.area-tags a')).map(a => a.textContent.trim()).filter(Boolean);
+  const countLabel = (names) => names.length + (names.some(n => /区$/.test(n)) ? '区・市町村' : '市町村');
+  const tagsFor = (title, names, lead) => {
+    const text = [title, names.join('、'), lead].join(' ');
+    if (/札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本|区/.test(text)) return ['集合住宅','管理会社対応','退去期限'];
+    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) return ['海沿い住宅','遠方立会いなし','車両導線'];
+    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) return ['山間部住宅','冬季道路','物置・納屋'];
+    if (/北摂|北河内|阪神|尾張|三河|県央|中越|筑豊|筑後|央|都市|市/.test(text)) return ['戸建て・集合住宅','前面道路','大型家具'];
+    return ['搬出経路','駐車位置','写真報告'];
+  };
+  const leadFor = (title, names, oldLead) => {
+    if (oldLead && !genericPatterns.some((pattern) => pattern.test(oldLead)) && oldLead.length > 35) return oldLead;
+    const sample = names.slice(0, 3).join('、');
+    const text = [title, names.join('、')].join(' ');
+    if (/区|札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本/.test(text)) {
+      return `${sample}方面は、集合住宅、駅近物件、戸建てが混在します。退去期限、管理会社対応、エレベーター予約、共用部養生、駐車位置を先に確認します。`;
+    }
+    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) {
+      return `${sample}方面は、海沿い住宅、離島・半島部、遠方家族からの相談が多くなります。鍵預かり、写真報告、車両導線、候補日調整を確認します。`;
+    }
+    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) {
+      return `${sample}方面は、山間部の戸建て、空き家、物置・納屋を含む整理が多くなります。冬季道路、前面道路、車両進入、大型家具の搬出を確認します。`;
+    }
+    return `${sample}方面は、戸建て、集合住宅、郊外住宅が混在します。退去期限、前面道路、階段作業、物置・庭の有無を写真で共有すると見積もりが早くなります。`;
+  };
+  const candidates = Array.from(document.querySelectorAll('section,.area-box,.ward-area,.card')).filter((node) => {
+    if (node.dataset.prefRegionReadableReady) return false;
+    const links = node.querySelectorAll(':scope .ward-links a,:scope .area-tags a');
+    if (links.length < 3) return false;
+    const heading = node.querySelector(':scope h3,:scope h2,:scope strong');
+    if (!heading) return false;
+    if (node.closest('.common-kita-ba,.hero,.footer,.site-footer,.global-price-sim')) return false;
+    const childRegionCards = node.querySelectorAll(':scope .area-box .ward-links a,:scope .ward-area .ward-links a,:scope .card .ward-links a,:scope .area-box .area-tags a,:scope .ward-area .area-tags a,:scope .card .area-tags a');
+    if (node.matches('section') && childRegionCards.length >= 3) return false;
+    return true;
+  });
+  candidates.forEach((card, index) => {
+    card.dataset.prefRegionReadableReady = '1';
+    card.classList.add('pref-region-card');
+    if (!card.id) card.id = 'pref-region-readable-' + (index + 1);
+    const names = linkNames(card);
+    const heading = card.querySelector(':scope h3,:scope h2,:scope strong');
+    const title = stripTitle(heading ? heading.textContent : '地域');
+    if (!card.querySelector(':scope > .region-head')) {
+      const head = document.createElement('div');
+      head.className = 'region-head';
+      const h3 = document.createElement('h3');
+      h3.textContent = title || '地域';
+      const count = document.createElement('span');
+      count.textContent = countLabel(names);
+      head.appendChild(h3);
+      head.appendChild(count);
+      card.insertBefore(head, card.firstChild);
+    }
+    const leadNode = Array.from(card.querySelectorAll(':scope > p')).find(p => !p.classList.contains('section-kicker'));
+    const oldLead = leadNode ? leadNode.textContent.trim() : '';
+    const newLead = leadFor(title, names, oldLead);
+    if (leadNode) {
+      leadNode.classList.add('area-box-lead');
+      if (newLead !== oldLead) leadNode.textContent = newLead;
+    } else {
+      const p = document.createElement('p');
+      p.className = 'area-box-lead';
+      p.textContent = newLead;
+      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
+      card.insertBefore(p, linkBox || null);
+    }
+    if (!card.querySelector(':scope > .region-checks')) {
+      const checks = document.createElement('div');
+      checks.className = 'region-checks';
+      tagsFor(title, names, newLead).forEach((label) => {
+        const item = document.createElement('span');
+        item.textContent = label;
+        checks.appendChild(item);
+      });
+      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
+      card.insertBefore(checks, linkBox || null);
+    }
+  });
+  const grouped = candidates.filter(card => card.classList.contains('pref-region-card'));
+  if (!grouped.length) return;
+  const firstSection = grouped[0].closest('section');
+  if (!firstSection || firstSection.querySelector(':scope > .pref-region-summary')) return;
+  const summary = document.createElement('div');
+  summary.className = 'pref-region-summary';
+  grouped.slice(0, 4).forEach((card) => {
+    const h = card.querySelector(':scope .region-head h3');
+    const names = linkNames(card);
+    const a = document.createElement('a');
+    a.href = '#' + card.id;
+    a.innerHTML = '<b>' + (h ? h.textContent.trim() : '地域') + '</b><span>' + countLabel(names) + 'から探す</span>';
+    summary.appendChild(a);
+  });
+  const lead = firstSection.querySelector(':scope .lead');
+  if (lead && lead.nextSibling) lead.parentNode.insertBefore(summary, lead.nextSibling);
+  else firstSection.insertBefore(summary, firstSection.firstChild);
+})();
+</script>
+
+
+<script id="niigata-like-prefecture-data-script-v2">
+  (function(){
+    function classifyCard(card){
+      var t = card.textContent || '';
+      card.classList.remove('data-household');
+      if (/全国平均|全国空き家/.test(t)) card.classList.add('data-national');
+      else if (/人口/.test(t)) card.classList.add('data-population');
+      else if (/世帯人員|世帯規模|平均世帯/.test(t)) card.classList.add('data-household');
+      else if (/総住宅|住宅数/.test(t)) card.classList.add('data-housing');
+      else if (/空き家率|空き家数|空き家総数/.test(t)) card.classList.add('data-vacant');
+      else if (/その他空き家|放置空き家/.test(t)) card.classList.add('data-other');
+      else if (/二次的住宅|別荘|季節利用/.test(t)) card.classList.add('data-secondary');
+      else if (/65歳|高齢|高齢化/.test(t)) card.classList.add('data-aging');
+      else if (/共同住宅|マンション|11階建/.test(t)) card.classList.add('data-apartment');
+    }
+    function classifyBar(row){
+      var t = row.textContent || '';
+      var fills = row.querySelectorAll('.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill');
+      fills.forEach(function(fill){
+        if (/全国平均|全国空き家/.test(t)) fill.classList.add('national');
+        else if (/高齢|65歳/.test(t)) fill.classList.add('aging');
+        else if (/共同住宅|マンション|11階建/.test(t)) fill.classList.add('apartment');
+        else if (/その他空き家|放置空き家/.test(t)) fill.classList.add('other-vacant');
+        else if (/二次的住宅|別荘|季節利用/.test(t)) fill.classList.add('secondary-home');
+        else if (/空き家/.test(t)) fill.classList.add('total-vacant');
+      });
+    }
+    document.querySelectorAll('.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card').forEach(classifyCard);
+    document.querySelectorAll('.bar-row,.kanto-national-row,.pref-data-bar').forEach(classifyBar);
+  })();
+</script>
+
+
+<script id="pref-region-niigata-like-script-v2">
+document.addEventListener('DOMContentLoaded', () => {
+  const cleanTitle = (raw) => (raw || '')
+    .replace(/エリアから探す/g,'')
+    .replace(/のページ一覧/g,'')
+    .replace(/から探す/g,'')
+    .replace(/市区町村一覧/g,'')
+    .replace(/県の市区町村/g,'')
+    .replace(/県の市町村/g,'')
+    .replace(/ページ/g,'')
+    .trim();
+  const namesOf = (box) => Array.from(box.querySelectorAll('.ward-links a,.area-tags a')).map(a => a.textContent.trim()).filter(Boolean);
+  const countLabel = (names) => `${names.filter(n => !/トップ$|トップ）$|（.*区.*）$/.test(n)).length}市町村`;
+  const tagsFor = (title, names) => {
+    const text = `${title} ${names.join(' ')}`;
+    if (/札幌|仙台|広島市|岡山市|福岡市|北九州|熊本市|市街|都市|中央|博多|小倉|中区/.test(text)) return ['集合住宅','管理会社対応','退去期限'];
+    if (/島|離島|佐渡|壱岐|対馬|五島|天草|沖縄|宮古|八重山|隠岐|瀬戸|沿岸|海|湾|港|釧路|函館|青森|下関|萩|松山|高松|長崎/.test(text)) return ['海沿い住宅','遠方立会いなし','車両導線'];
+    if (/山|奥|北|内陸|阿蘇|霧島|日田|大洲|美作|備北|中山間|津山|十勝|上川|会津|置賜|最上|県北|県央|県西|山間/.test(text)) return ['山間部住宅','冬季道路','物置・納屋'];
+    if (/筑豊|筑後|県南|南部|久留米|大牟田|足利|倉敷|福山|宇部|米子|郡山|盛岡|秋田|山形|大分|宮崎|鹿児島/.test(text)) return ['戸建て・集合住宅','前面道路','大型家具'];
+    return ['戸建て整理','物置・車庫','前面道路'];
+  };
+  const leadFor = (pref, title, names) => {
+    const sample = names.filter(n => !/トップ|（.*区/.test(n)).slice(0, 3).join('、') || title;
+    const text = `${title} ${names.join(' ')}`;
+    if (/札幌|仙台|広島市|岡山市|福岡市|北九州|熊本市|都市|市街|中央|博多|小倉/.test(text)) {
+      return `${sample}方面は、駅近の集合住宅、単身整理、退去期限のある住まいが多い地域です。管理会社対応、エレベーター予約、共用部養生、駐車位置を先に確認します。`;
+    }
+    if (/島|離島|佐渡|壱岐|対馬|五島|天草|沖縄|宮古|八重山|隠岐|瀬戸|沿岸|海|湾|港|下関|萩|松山|高松|長崎/.test(text)) {
+      return `${sample}方面は、海沿い住宅、島しょ部、遠方家族からの相談で作業計画が変わります。鍵預かり、写真報告、車両導線、候補日調整を確認します。`;
+    }
+    if (/山|奥|北|内陸|阿蘇|霧島|日田|大洲|美作|備北|中山間|津山|十勝|上川|会津|置賜|最上|県北|山間/.test(text)) {
+      return `${sample}方面は、山間部の戸建て、空き家、物置・納屋を含む整理が多くなります。冬季道路、前面道路、車両進入、大型家具の搬出を確認します。`;
+    }
+    return `${sample}方面は、戸建て、集合住宅、郊外住宅が混在します。退去期限、前面道路、階段作業、物置・庭の有無を写真で共有すると見積もりが早くなります。`;
+  };
+  const shouldSkip = (section) => {
+    const text = section.textContent || '';
+    if (!section.querySelector('.ward-links a,.area-tags a')) return true;
+    if (section.closest('footer,.site-footer,.nearby-wards,.toc')) return true;
+    if (/ページ内メニュー|行政・福祉|このページ|FAQ|よくある質問/.test(text)) return true;
+    return false;
+  };
+  const boxes = Array.from(document.querySelectorAll('section,.area-box,.card')).filter(node => !shouldSkip(node));
+  boxes.forEach((box) => {
+    if (box.dataset.niigataLikeReady) return;
+    const linkBox = box.querySelector(':scope > .ward-links,:scope > .area-tags');
+    if (!linkBox) return;
+    Array.from(linkBox.querySelectorAll('a')).forEach((a) => {
+      if (/トップ$|トップ）$/.test(a.textContent.trim())) a.remove();
+    });
+    const names = namesOf(box);
+    if (names.length < 2) return;
+    const heading = box.querySelector(':scope h3,:scope h2,:scope strong');
+    const rawTitle = heading ? heading.textContent.trim() : '';
+    const title = cleanTitle(rawTitle) || names.slice(0,2).join('・');
+    const oldLead = box.querySelector(':scope p');
+    const pref = (document.querySelector('.brand-area') || document.querySelector('h1') || {}).textContent || '';
+    const lead = leadFor(pref, title, names);
+    box.classList.add('pref-region-card');
+    box.dataset.niigataLikeReady = '1';
+    if (heading) heading.remove();
+    if (oldLead) oldLead.remove();
+    const existingChecks = box.querySelector(':scope .region-checks');
+    if (existingChecks) existingChecks.remove();
+    const head = document.createElement('div');
+    head.className = 'region-head';
+    head.innerHTML = `<h3>${title}</h3><span>${countLabel(names)}</span>`;
+    const p = document.createElement('p');
+    p.className = 'area-box-lead';
+    p.textContent = lead;
+    const checks = document.createElement('div');
+    checks.className = 'region-checks';
+    tagsFor(title, names).forEach(t => {
+      const s = document.createElement('span');
+      s.textContent = t;
+      checks.appendChild(s);
+    });
+    box.insertBefore(head, box.firstChild);
+    box.insertBefore(p, linkBox);
+    box.insertBefore(checks, linkBox);
+  });
+  document.querySelectorAll('.grid.cols2,.cards').forEach((grid) => {
+    if (grid.querySelector(':scope > .pref-region-card')) grid.classList.add('pref-region-summary');
+  });
+  document.querySelectorAll('section').forEach((section) => {
+    if (section.querySelector(':scope > .pref-region-summary')) section.classList.add('pref-region-directory');
+  });
+});
+</script>
+
+<style id="prefecture-region-heading-orange-v2">
+  section:has(> .ward-links) > .section-title,
+  section:has(> .area-tags) > .section-title,
+  section:has(> p + .ward-links) > .section-title,
+  section:has(> p + .area-tags) > .section-title,
+  .pref-region-card > .section-title {
+    background:#fff7ef!important;
+    color:#2b2b2b!important;
+    border:1px solid #eadfd0!important;
+    border-left:7px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  section:has(> .ward-links) > .section-title::before,
+  section:has(> .area-tags) > .section-title::before,
+  section:has(> p + .ward-links) > .section-title::before,
+  section:has(> p + .area-tags) > .section-title::before,
+  .pref-region-card > .section-title::before {
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:9px;
+    background:#D05300;
+    border-radius:2px;
+    vertical-align:middle;
+  }
+  section:has(> .ward-links),
+  section:has(> .area-tags) {
+    background:#fff!important;
+  }
+</style>
+
+<style id="all-pref-impact-neutral-reset-v1">
+  html body section#pref-impact {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-left:0!important;
+    box-shadow:none!important;
+    padding:0!important;
+  }
+  html body section#pref-impact .section-title {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-left:0!important;
+    color:#2B2B2B!important;
+  }
+  html body section#pref-impact .lead {
+    background:transparent!important;
+    color:#414743!important;
+  }
+  html body section#pref-impact .marker {
+    background:none!important;
+    color:inherit!important;
+    font-weight:900!important;
+  }
+  html body section#pref-impact .card,
+  html body section#pref-impact .metric-card,
+  html body section#pref-impact .impact-card {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-top:1px solid #e5ded5!important;
+    box-shadow:none!important;
+  }
+  html body section#pref-impact .metric-label {
+    background:#f7f5f0!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    color:#3f433f!important;
+  }
+  html body section#pref-impact .stat-card b,
+  html body section#pref-impact .metric-card b,
+  html body section#pref-impact .impact-card b {
+    color:#2B2B2B!important;
+  }
+  html body section#pref-impact .metric-note,
+  html body section#pref-impact .impact-card p {
+    color:#555f59!important;
+  }
+  html body section#pref-impact .metric-sub {
+    background:#f7f5f0!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    color:#555f59!important;
+  }
+</style>
+<script id="all-pref-impact-neutral-reset-script-v1">
+(function(){
+  function resetImpactColors(){
+    var root = document.getElementById('pref-impact');
+    if (!root) return;
+    root.style.setProperty('background', '#fff', 'important');
+    root.style.setProperty('background-image', 'none', 'important');
+    root.style.setProperty('border-color', '#e5ded5', 'important');
+    root.style.setProperty('box-shadow', 'none', 'important');
+    root.querySelectorAll('.section-title,.card,.metric-card,.impact-card,.metric-label,.metric-sub').forEach(function(el){
+      el.style.setProperty('background-image', 'none', 'important');
+      if (el.classList.contains('metric-label') || el.classList.contains('metric-sub')) {
+        el.style.setProperty('background-color', '#f7f5f0', 'important');
+      } else {
+        el.style.setProperty('background-color', '#fff', 'important');
+      }
+      el.style.setProperty('border-color', '#e5ded5', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+    });
+    root.querySelectorAll('b').forEach(function(el){
+      el.style.setProperty('color', '#2B2B2B', 'important');
+    });
+    root.querySelectorAll('p,.lead,.metric-note,.metric-sub').forEach(function(el){
+      el.style.setProperty('color', '#555f59', 'important');
+    });
+    root.querySelectorAll('.marker').forEach(function(el){
+      el.style.setProperty('background', 'none', 'important');
+      el.style.setProperty('color', 'inherit', 'important');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resetImpactColors);
+  } else {
+    resetImpactColors();
+  }
+  setTimeout(resetImpactColors, 250);
+  setTimeout(resetImpactColors, 900);
+})();
+</script>
+
+
+
+
+
+
+<style id="all-pref-white-orange-no-green-v2">
+  html body {
+    --green:#D05300!important;
+  }
+  html body .quick-list li::before,
+  html body .hero-panel li::before,
+  html body .risk-list li::before,
+  html body .check-list li::before {
+    background:#D05300!important;
+  }
+  html body .common-ba-label.after,
+  html body .ba-label.after,
+  html body .common-ba-points span,
+  html body .common-ba-guide span,
+  html body .region-checks span,
+  html body .pref-region-card .region-checks span,
+  html body .area-tags span,
+  html body .area-tags a,
+  html body .tag.green,
+  html body .tag.warm,
+  html body .badge.green,
+  html body .badge.warm,
+  html body .data-risk,
+  html body .data-risk span,
+  html body .data-risk b {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#D05300!important;
+    color:#D05300!important;
+  }
+  html body .bar-fill.green,
+  html body .bar-fill.warm,
+  html body .pref-data-fill.green,
+  html body .kyushu-bar-fill.green,
+  html body .cs-bar-fill.green,
+  html body .tokai-bar-fill.green,
+  html body .kanto-national-fill.green,
+  html body .bar-fill.risk,
+  html body .bar-fill.other-vacant {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #D05300!important;
+    box-shadow:inset 0 0 0 2px #D05300!important;
+  }
+  html body .pref-data-card.data-risk,
+  html body .kyushu-data-card.data-risk,
+  html body .cs-data-card.data-risk,
+  html body .tokai-data-card.data-risk,
+  html body .kanto-national-card.data-risk {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#D05300!important;
+  }
+  html body .pref-data-card.data-risk b,
+  html body .kyushu-data-card.data-risk b,
+  html body .cs-data-card.data-risk b,
+  html body .tokai-data-card.data-risk b,
+  html body .kanto-national-card.data-risk b {
+    color:#D05300!important;
+  }
+</style>
+<script id="all-pref-white-orange-no-green-script-v2">
+(function(){
+  function whiteOrangeNoGreen(){
+    document.documentElement.style.setProperty('--green', '#D05300', 'important');
+    if (document.body) document.body.style.setProperty('--green', '#D05300', 'important');
+    document.querySelectorAll('.common-ba-label.after,.ba-label.after,.common-ba-points span,.common-ba-guide span,.region-checks span,.area-tags span,.area-tags a,.tag.green,.tag.warm,.badge.green,.badge.warm,.data-risk,.data-risk span,.data-risk b').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('border-color', '#D05300', 'important');
+      el.style.setProperty('color', '#D05300', 'important');
+    });
+    document.querySelectorAll('.bar-fill.green,.bar-fill.warm,.pref-data-fill.green,.kyushu-bar-fill.green,.cs-bar-fill.green,.tokai-bar-fill.green,.kanto-national-fill.green,.bar-fill.risk,.bar-fill.other-vacant').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('border', '1px solid #D05300', 'important');
+      el.style.setProperty('box-shadow', 'inset 0 0 0 2px #D05300', 'important');
+    });
+    document.querySelectorAll('*').forEach(function(el){
+      var cs = getComputedStyle(el);
+      var pack = cs.backgroundColor + ' ' + cs.backgroundImage + ' ' + cs.color + ' ' + cs.borderColor;
+      if (/40,\s*116,\s*90|52,\s*122,\s*66|238,\s*248,\s*242|207,\s*232,\s*216|131,\s*199,\s*170|#28745a|#347a42|#eef8f2|#cfe8d8|#83c7aa/i.test(pack)) {
+        if (cs.backgroundColor !== 'rgba(0, 0, 0, 0)') {
+          el.style.setProperty('background-color', '#fff', 'important');
+        }
+        el.style.setProperty('background-image', 'none', 'important');
+        el.style.setProperty('border-color', '#D05300', 'important');
+        el.style.setProperty('color', '#D05300', 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', whiteOrangeNoGreen);
+  } else {
+    whiteOrangeNoGreen();
+  }
+  setTimeout(whiteOrangeNoGreen, 250);
+  setTimeout(whiteOrangeNoGreen, 900);
+})();
+</script>
+
+
+<style id="all-pref-section-title-white-orange-v1">
+  html body .section-title,
+  html body section .section-title,
+  html body .pref-official-stats .section-title,
+  html body .common-kita-ba .section-title,
+  html body .area-keyword-guide .section-title,
+  html body .engagement-refresh .section-title,
+  html body body.structure-layout .section-title {
+    background:#fff!important;
+    background-image:none!important;
+    color:#D05300!important;
+    border:1px solid #eadfd0!important;
+    border-left:6px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  html body .section-title::before,
+  html body section .section-title::before,
+  html body .common-kita-ba .section-title::before {
+    background:#D05300!important;
+  }
+  html body .section-kicker {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#eadfd0!important;
+    color:#D05300!important;
+  }
+  html body .chart-box h3,
+  html body .compare-card h3,
+  html body .common-ba-card h3,
+  html body .case h3 {
+    background:#fff!important;
+    background-image:none!important;
+    color:#D05300!important;
+    border-color:#eadfd0!important;
+  }
+</style>
+<script id="all-pref-section-title-white-orange-script-v1">
+(function(){
+  function resetSectionTitles(){
+    document.querySelectorAll('.section-title,.section-kicker,.chart-box h3,.compare-card h3,.common-ba-card h3,.case h3').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('color', '#D05300', 'important');
+      el.style.setProperty('border-color', '#eadfd0', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+      if (el.classList.contains('section-title')) {
+        el.style.setProperty('border-left', '6px solid #D05300', 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resetSectionTitles);
+  } else {
+    resetSectionTitles();
+  }
+  setTimeout(resetSectionTitles, 250);
+  setTimeout(resetSectionTitles, 900);
+})();
+</script>
+
+<style id="global-brand-color-uniform-v2">
+  html body .brand,
+  html body .brand:visited,
+  html body .brand:hover {
+    color:#2B2B2B!important;
+    text-decoration:none!important;
+  }
+  html body .brand-word {
+    color:#2B2B2B!important;
+  }
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no,
+  html body .brand-main .brand-area-name,
+  html body.structure-layout .brand-area,
+  html body.structure-layout .brand-area-name,
+  html body.structure-layout .brand-no,
+  html body.structure-layout .brand-main .brand-area-name {
+    color:#2B2B2B!important;
+  }
+  html body .brand-main,
+  html body.structure-layout .brand-main {
+    color:#D05300!important;
+  }
+  html body .brand-symbol,
+  html body.structure-layout .brand-symbol {
+    background:#D05300!important;
+    color:#fff!important;
+  }
+</style>
+<style id="global-readable-palette-reset-v1">
+  html body {
+    background:#F6F2EC!important;
+    color:#25211D!important;
+  }
+  html body .topbar,
+  html body header,
+  html body .site-header {
+    background:#FFFDF9!important;
+    border-color:#E6DDD4!important;
+  }
+  html body .brand,
+  html body .brand-word,
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no {
+    color:#25211D!important;
+  }
+  html body .brand-main {
+    color:#C65312!important;
+  }
+  html body .global-visual-proof {
+    width:min(1160px,calc(100% - 28px))!important;
+    margin:32px auto!important;
+    padding:28px!important;
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    border-radius:0!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .global-visual-proof-inner {
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 auto!important;
+  }
+  html body .global-visual-proof-head {
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+    max-width:940px!important;
+    margin:0 auto 18px!important;
+    text-align:center!important;
+    align-items:center!important;
+  }
+  html body .global-visual-proof-head h2 {
+    margin:0 auto!important;
+    max-width:860px!important;
+    color:#25211D!important;
+    text-align:center!important;
+  }
+  html body .global-visual-proof-head p {
+    margin:0 auto!important;
+    max-width:900px!important;
+    color:#5C544B!important;
+    text-align:center!important;
+  }
+  html body .global-visual-grid {
+    max-width:1100px!important;
+    margin:0 auto!important;
+  }
+  html body .section,
+  html body .card,
+  html body .area-box,
+  html body .pref-region-card,
+  html body .common-ba-card,
+  html body .flow-item,
+  html body .faq-item,
+  html body .price-card,
+  html body .service-card,
+  html body .compare-card,
+  html body .chart-box,
+  html body .pref-chart-box,
+  html body .pref-data-card,
+  html body .guide-panel>div,
+  html body .popular-area,
+  html body .price-teaser,
+  html body .intent-card,
+  html body .remaining-hand-card,
+  html body .admin-card,
+  html body .global-visual-card,
+  html body .global-strategy-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border-color:#E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .section-title,
+  html body h2.section-title {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    color:#25211D!important;
+    border:1px solid #E5DDD3!important;
+    border-left:7px solid #C65312!important;
+    box-shadow:none!important;
+  }
+  html body h1,
+  html body h2,
+  html body h3,
+  html body .card strong {
+    color:#25211D!important;
+  }
+  html body p,
+  html body li,
+  html body .lead,
+  html body .area-box-lead,
+  html body .global-visual-body span,
+  html body .global-strategy-card span,
+  html body .muted {
+    color:#5C544B!important;
+  }
+  html body a,
+  html body nav a {
+    color:#9B3F0D!important;
+  }
+  html body .btn,
+  html body .button,
+  html body .cta,
+  html body .hero a:first-of-type,
+  html body .call {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .btn.secondary,
+  html body .button.secondary,
+  html body .hero a:not(:first-of-type),
+  html body .guide-actions a,
+  html body .popular-links a,
+  html body .ward-links a,
+  html body .area-tags a,
+  html body .pref-region-summary a,
+  html body .price-mini,
+  html body .intent-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:none!important;
+  }
+  html body .guide-actions a:hover,
+  html body .popular-links a:hover,
+  html body .ward-links a:hover,
+  html body .area-tags a:hover,
+  html body .pref-region-summary a:hover,
+  html body .price-mini:hover,
+  html body .intent-card:hover {
+    background:#FFF4E8!important;
+    border-color:#EBCFB7!important;
+    color:#8A3D11!important;
+    text-decoration:none!important;
+  }
+  html body .metric-label,
+  html body .region-head span,
+  html body .region-checks span,
+  html body .area-tags span {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:26px!important;
+    padding:4px 9px!important;
+    border-radius:999px!important;
+    background:#F1EEE8!important;
+    background-image:none!important;
+    border:1px solid #DDD4C9!important;
+    color:#4D4740!important;
+    font-size:12px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+    box-shadow:none!important;
+  }
+  html body .common-ba-label.after,
+  html body .common-ba-points span,
+  html body .global-visual-label {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .common-ba-label:not(.after) {
+    background:#3A342E!important;
+    color:#fff!important;
+  }
+  html body .bar-track,
+  html body .pref-bar-track,
+  html body .pref-data-track {
+    background:#ECE6DE!important;
+    box-shadow:inset 0 0 0 1px rgba(55,45,35,.05)!important;
+  }
+  html body .bar-fill,
+  html body .pref-bar-fill,
+  html body .pref-data-fill,
+  html body .kanto-national-fill,
+  html body .kyushu-bar-fill,
+  html body .cs-bar-fill,
+  html body .tokai-bar-fill {
+    background:#4F6F8F!important;
+    background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
+  }
+  html body .bar-fill.warm {
+    background:#D68A3A!important;
+    background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
+  }
+  html body .bar-fill.vacancy,
+  html body .bar-fill.total-vacant,
+  html body .pref-bar-fill.vacancy,
+  html body .pref-bar-fill.total-vacant {
+    background:#C65312!important;
+    background-image:linear-gradient(90deg,#C65312,#E99A57)!important;
+  }
+  html body .bar-fill.national,
+  html body .pref-bar-fill.national {
+    background:#807970!important;
+    background-image:linear-gradient(90deg,#807970,#B8B0A7)!important;
+  }
+  html body .bar-fill.aging,
+  html body .pref-bar-fill.aging {
+    background:#7756B5!important;
+    background-image:linear-gradient(90deg,#7756B5,#B59BE3)!important;
+  }
+  html body .bar-fill.blue,
+  html body .bar-fill.apartment,
+  html body .bar-fill.secondary-home,
+  html body .pref-bar-fill.apartment,
+  html body .pref-bar-fill.secondary,
+  html body .pref-data-fill.blue {
+    background:#2F6FA3!important;
+    background-image:linear-gradient(90deg,#2F6FA3,#7CB7DF)!important;
+  }
+  html body .bar-fill.other,
+  html body .bar-fill.other-vacant,
+  html body .bar-fill.risk,
+  html body .pref-bar-fill.other {
+    background:#A76A2D!important;
+    background-image:linear-gradient(90deg,#A76A2D,#D9A66B)!important;
+  }
+  html body .pref-data-card:nth-child(1) {border-top:4px solid #6C747D!important}
+  html body .pref-data-card:nth-child(2) {border-top:4px solid #8B7356!important}
+  html body .pref-data-card:nth-child(3),
+  html body .pref-data-card:nth-child(4) {border-top:4px solid #C65312!important}
+  html body .pref-data-card:nth-child(5) {border-top:4px solid #A76A2D!important}
+  html body .pref-data-card:nth-child(6) {border-top:4px solid #2F6FA3!important}
+  html body .pref-data-card:nth-child(7) {border-top:4px solid #7756B5!important}
+  html body .pref-data-card:nth-child(8) {border-top:4px solid #3E7892!important}
+  html body .pref-data-card:nth-child(1) b {color:#5D6670!important}
+  html body .pref-data-card:nth-child(2) b {color:#745C3F!important}
+  html body .pref-data-card:nth-child(3) b,
+  html body .pref-data-card:nth-child(4) b {color:#A94812!important}
+  html body .pref-data-card:nth-child(5) b {color:#8D5D2F!important}
+  html body .pref-data-card:nth-child(6) b {color:#2F6FA3!important}
+  html body .pref-data-card:nth-child(7) b {color:#6D4FA8!important}
+  html body .pref-data-card:nth-child(8) b {color:#3E7892!important}
+  html body table th {
+    background:#F4EEE6!important;
+    color:#25211D!important;
+  }
+  html body table td {
+    background:#FFFDF9!important;
+    color:#25211D!important;
+  }
+  html body .notice,
+  html body .check,
+  html body .source-note {
+    background:#FFF6EA!important;
+    border-color:#EAD8C1!important;
+    color:#4D4740!important;
+  }
+  html body .marker {
+    background:linear-gradient(transparent 62%,rgba(246,186,97,.38) 62%)!important;
+    color:inherit!important;
+  }
+  @media(max-width:900px){
+    html body .global-visual-proof {
+      padding:22px 16px!important;
+    }
+    html body .global-visual-proof-head {
+      text-align:left!important;
+    }
+    html body .global-visual-proof-head h2,
+    html body .global-visual-proof-head p {
+      text-align:left!important;
+    }
+  }
+</style>
+<script id="global-readable-palette-reset-script-v1">
+(function(){
+  function applyGlobalReadablePalette(){
+    document.querySelectorAll('.global-visual-proof').forEach(function(el){
+      el.style.setProperty('width','min(1160px,calc(100% - 28px))','important');
+      el.style.setProperty('margin','32px auto','important');
+      el.style.setProperty('padding','28px','important');
+      el.style.setProperty('background','#FFFDF9','important');
+      el.style.setProperty('border','1px solid #E5DDD3','important');
+      el.style.setProperty('box-shadow','0 14px 34px rgba(45,36,28,.06)','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head').forEach(function(el){
+      el.style.setProperty('grid-template-columns','1fr','important');
+      el.style.setProperty('max-width','940px','important');
+      el.style.setProperty('margin','0 auto 18px','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head h2,.global-visual-proof-head p').forEach(function(el){
+      el.style.setProperty('margin-left','auto','important');
+      el.style.setProperty('margin-right','auto','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.metric-label,.region-head span,.region-checks span,.area-tags span').forEach(function(el){
+      el.style.setProperty('background','#F1EEE8','important');
+      el.style.setProperty('background-image','none','important');
+      el.style.setProperty('border','1px solid #DDD4C9','important');
+      el.style.setProperty('color','#4D4740','important');
+      el.style.setProperty('border-radius','999px','important');
+      el.style.setProperty('box-shadow','none','important');
+    });
+    document.querySelectorAll('.bar-fill,.pref-bar-fill,.pref-data-fill,.kanto-national-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill').forEach(function(el){
+      var color = ['#4F6F8F','#8EACC6'];
+      if (el.classList.contains('national')) color = ['#807970','#B8B0A7'];
+      else if (el.classList.contains('aging') || el.classList.contains('purple')) color = ['#7756B5','#B59BE3'];
+      else if (el.classList.contains('apartment') || el.classList.contains('blue') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) color = ['#2F6FA3','#7CB7DF'];
+      else if (el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) color = ['#A76A2D','#D9A66B'];
+      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#C65312','#E99A57'];
+      else if (el.classList.contains('warm')) color = ['#D68A3A','#EEC07E'];
+      el.style.setProperty('background', color[0], 'important');
+      el.style.setProperty('background-image', 'linear-gradient(90deg,' + color[0] + ',' + color[1] + ')', 'important');
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyGlobalReadablePalette);
+  else applyGlobalReadablePalette();
+  setTimeout(applyGlobalReadablePalette, 900);
+  setTimeout(applyGlobalReadablePalette, 1800);
+})();
+</script>
 </body>
 </html>
+
+
 

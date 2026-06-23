@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
-    :root { --orange:#e9651a; --orange-dark:#bf4b08; --green:#28745a; --blue:#286f94; --ink:#2e332f; --muted:#4f5551; --line:#e4ded6; --bg:#f5f2ee; --paper:#fff; --soft:#fbf8f3; --notice:#fff7d7; --shadow:0 12px 34px rgba(34,28,22,.08); }
+    :root { --orange:#e9651a; --orange-dark:#bf4b08; --green:#d05300; --blue:#286f94; --ink:#2e332f; --muted:#4f5551; --line:#e4ded6; --bg:#f5f2ee; --paper:#fff; --soft:#fbf8f3; --notice:#fff7d7; --shadow:0 12px 34px rgba(34,28,22,.08); }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; color:var(--ink); background:var(--bg); font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif; font-size:16px; font-weight:500; line-height:2; letter-spacing:0; }
@@ -295,7 +295,7 @@
     .ba-photo { position:relative; overflow:hidden; margin:0; border:1px solid var(--line); background:#f3f0ea; aspect-ratio:1/1; }
     .ba-photo img { display:block; width:100%; height:100%; object-fit:cover; }
     .ba-label { position:absolute; left:10px; top:10px; padding:2px 9px; background:rgba(45,45,45,.9); color:#fff; font-size:13px; font-weight:900; }
-    .ba-label.after { background:rgba(40,116,90,.94); }
+    .ba-label.after { background:rgba(208,83,0,.94); }
     .faq { display:grid; gap:10px; margin:18px 0; } .faq details { border:1px solid var(--line); background:#fff; padding:12px 14px; } .faq summary { cursor:pointer; font-weight:900; }
     .notice { border:1px solid #d9c78d; background:var(--notice); padding:16px 18px; margin:18px 0; }
     .cta-band { margin-top:38px; background:#2d2d2d; color:#fff; padding:24px; display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; } .cta-band h2 { margin:0 0 6px; font-size:23px; line-height:1.4; } .cta-band p { margin:0; color:rgba(255,255,255,.82); }
@@ -544,7 +544,7 @@
       display: inline-grid;
       place-items: center;
       border-radius: 50%;
-      background: #28745a;
+      background: #d05300;
       color: #fff;
       box-shadow: none;
       font-size: 14px;
@@ -552,7 +552,7 @@
       line-height: 1;
     }
 
-  
+
     .grid { display:grid; gap:16px; }
     .grid.cols2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
     .admin-card { background:#fff; border:1px solid var(--line); padding:16px; box-shadow:0 12px 28px rgba(42,31,23,.08); }
@@ -688,8 +688,8 @@
       height:7px;
       margin-right:7px;
       border-radius:50%;
-      background:#9ed2b7;
-      box-shadow:0 0 0 3px rgba(158,210,183,.18);
+      background:#d05300;
+      box-shadow:0 0 0 3px rgba(208,83,0,.18);
     }
     @media(max-width:820px){
       .hero,
@@ -742,12 +742,12 @@
     .common-ba-photo{position:relative;overflow:hidden;margin:0;border:2px solid #d9d1c6;background:#f3f0ea;aspect-ratio:4/3;box-shadow:0 8px 18px rgba(34,28,22,.08)}
     .common-ba-photo img{display:block;width:100%;height:100%;object-fit:cover}
     .common-ba-label{position:absolute;left:0;right:0;top:0;display:grid;place-items:center;min-height:38px;padding:0 12px;background:rgba(126,50,28,.94);color:#fff;font-size:15px;font-weight:900}
-    .common-ba-label.after{background:rgba(40,116,90,.96)}
+    .common-ba-label.after{background:rgba(208,83,0,.96)}
     .common-ba-detail{margin-top:14px;padding:14px 16px;background:#fffdf8;border:1px solid #eadfd4}
     .common-ba-detail p{margin:0 0 8px;color:#464c47;font-size:15px;line-height:1.75}
     .common-ba-detail p:first-child{font-weight:900;color:#333}
     .common-ba-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#eef8f2;border:1px solid #cfe8d8;color:#28745a;font-size:13px;font-weight:900}
+    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#fff7ec;border:1px solid #ead8c1;color:#d05300;font-size:13px;font-weight:900}
     .common-ba-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;display:grid;place-items:center;border:1px solid #dcbf9c;background:#fff;color:#8c3d00;border-radius:50%;box-shadow:0 10px 24px rgba(34,28,22,.18);font-size:28px;font-weight:900;line-height:1;cursor:pointer;z-index:4}
     .common-ba-btn:hover{background:#fff1e6;border-color:#D05300}
     .common-ba-btn[data-common-ba-prev]{left:0}
@@ -893,12 +893,12 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-top-score-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1d5f48;
+    color: #9f3e00;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -990,7 +990,7 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-visual-media {
     position: relative;
@@ -1017,7 +1017,7 @@
     z-index: 2;
     padding: 5px 10px;
     border-radius: 999px;
-    background: rgba(38,54,45,.86);
+    background: rgba(126,50,28,.86);
     color: #fff;
     font-size: 13px;
     font-weight: 900;
@@ -1028,7 +1028,7 @@
   .global-visual-body b {
     display: block;
     margin-bottom: 7px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
     line-height: 1.45;
   }
@@ -1041,12 +1041,12 @@
   .global-strategy-strip {
     padding: 26px;
     border-radius: 24px;
-    background: linear-gradient(135deg, #f2f8f0 0%, #fff 58%, #fff7e8 100%);
-    border: 1px solid #dfe9dc;
+    background: linear-gradient(135deg, #fff7ec 0%, #fff 58%, #fff7e8 100%);
+    border: 1px solid #ead8c1;
   }
   .global-strategy-head h2 {
     margin: 0 0 10px;
-    color: #1f3a2d;
+    color: #2b2b2b;
     font-size: clamp(24px, 3vw, 34px);
     line-height: 1.35;
   }
@@ -1065,13 +1065,13 @@
     padding: 18px;
     border-radius: 18px;
     background: rgba(255,255,255,.92);
-    border: 1px solid #dfe8dc;
-    box-shadow: 0 12px 24px rgba(38,56,44,.07);
+    border: 1px solid #ead8c1;
+    box-shadow: 0 12px 24px rgba(208,83,0,.07);
   }
   .global-strategy-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
   }
   .global-strategy-card span {
@@ -1185,43 +1185,455 @@
   }</style>
 
 
-<style id="area-keyword-orange-unify">
-  .area-keyword-details,
-  .search-intent .area-keyword-details{
-    background:#fffdf8!important;
-    border:1px solid #eadfd0!important;
-    box-shadow:0 10px 24px rgba(34,28,22,.055)!important;
-    padding:12px!important;
+<style id="pref-region-card-uniform-v1">
+  body{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif!important;letter-spacing:0!important}
+  .pref-region-summary{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:20px 0 24px!important}
+  .pref-region-summary a{display:grid!important;gap:4px!important;min-height:82px!important;align-content:center!important;padding:14px 16px!important;background:#fff!important;border:1px solid #e5ded5!important;border-top:5px solid #D05300!important;color:#2B2B2B!important;box-shadow:0 10px 24px rgba(34,28,22,.06)!important;text-decoration:none!important}
+  .pref-region-summary b{color:#D05300!important;font-size:20px!important;line-height:1.25!important;font-weight:900!important}
+  .pref-region-summary span{color:#555f59!important;font-size:15px!important;line-height:1.5!important;font-weight:700!important}
+  .pref-region-grid,.grid:has(.pref-region-card){align-items:stretch!important;gap:22px!important}
+  .pref-region-card{display:flex!important;flex-direction:column!important;gap:14px!important;padding:24px!important;border:1px solid #e5ded5!important;border-top:6px solid #D05300!important;border-radius:0!important;background:#fff!important;box-shadow:0 14px 36px rgba(34,28,22,.08)!important}
+  .pref-region-card p{margin:0!important;font-size:16px!important;line-height:1.85!important;font-weight:500!important;color:#555f59!important}
+  .pref-region-card .region-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;padding-bottom:12px!important;border-bottom:1px solid #eadfd4!important}
+  .pref-region-card .region-head h3{margin:0!important;padding:0!important;border:0!important;color:#2B2B2B!important;font-size:24px!important;line-height:1.45!important;font-weight:900!important;letter-spacing:0!important}
+  .pref-region-card .region-head span{display:inline-grid!important;place-items:center!important;min-height:34px!important;padding:0 12px!important;background:#fff7ef!important;border:1px solid #f0c7ad!important;color:#D05300!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important}
+  .pref-region-card .region-checks{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+  .pref-region-card .region-checks span{display:grid!important;place-items:center!important;min-height:36px!important;padding:6px 8px!important;background:#fffaf4!important;border:1px solid #ead8c1!important;color:#d05300!important;font-size:14px!important;line-height:1.35!important;font-weight:900!important;text-align:center!important}
+  .pref-region-card .ward-links,.pref-region-card .area-tags{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:4px 0 0!important;padding-top:4px!important}
+  .pref-region-card .ward-links a,.pref-region-card .area-tags a,.pref-region-card .area-tags span{display:inline-grid!important;place-items:center!important;min-height:38px!important;padding:7px 13px!important;border:1px solid #e5ded5!important;border-radius:4px!important;background:#fff!important;color:#2B2B2B!important;font-size:15px!important;line-height:1.35!important;font-weight:900!important;text-decoration:none!important}
+  .pref-region-card .ward-links a:hover,.pref-region-card .area-tags a:hover{background:#fff7ef!important;border-color:#D05300!important;color:#D05300!important;text-decoration:none!important}
+  @media(max-width:820px){.pref-region-summary{grid-template-columns:1fr!important}.pref-region-card .region-head{align-items:flex-start!important;flex-direction:column!important}.pref-region-card .region-checks{grid-template-columns:1fr!important}.pref-region-card .ward-links a,.pref-region-card .area-tags a,.pref-region-card .area-tags span{width:100%!important;justify-content:flex-start!important}}
+</style>
+<style id="pref-osaka-top-v2">
+.quick-guide{margin-top:34px}.guide-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:18px;align-items:stretch}.guide-panel>div,.popular-area,.price-teaser{background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);padding:22px}.guide-panel h2,.popular-area h2,.price-teaser h2{margin:0 0 10px;font-size:22px;line-height:1.45;color:#2B2B2B}.guide-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:16px}.guide-actions a,.price-mini,.intent-card{display:block;min-height:72px;padding:13px 15px;background:#fff8ea;border:1px solid #ead8b7;color:#2B2B2B;text-decoration:none;font-weight:900}.guide-actions span,.price-mini span,.intent-card span{display:block;margin-top:5px;color:#5d554d;font-size:14px;line-height:1.55;font-weight:700}.guide-check ul{margin:10px 0 0;padding-left:1.2em;line-height:1.85}.popular-area,.price-teaser{margin-top:16px}.popular-links,.price-mini-grid,.intent-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.popular-links a{display:grid;place-items:center;min-height:42px;padding:8px 10px;background:#fff;border:1px solid #e5ded5;color:#2B2B2B;text-decoration:none;font-size:15px;font-weight:900}.price-mini-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.price-mini b{font-size:22px;color:#8c3d00}.intent-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin:16px 0 22px}.pref-region-summary{margin-top:18px}.pref-region-card .region-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.pref-region-card .region-head h3{margin:0;font-size:21px}.pref-region-card .region-head span{display:inline-grid;place-items:center;min-height:30px;padding:3px 10px;background:#26332d;color:#fff;font-weight:900}.region-checks{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.region-checks span{display:inline-grid;place-items:center;min-height:30px;padding:4px 10px;background:#fff7ec;border:1px solid #ead8c1;color:#d05300;font-size:13px;font-weight:900}@media(max-width:900px){.guide-panel,.popular-links,.price-mini-grid,.intent-grid{grid-template-columns:1fr}.guide-actions{grid-template-columns:1fr}.popular-links a{justify-content:flex-start}.guide-panel>div,.popular-area,.price-teaser{padding:18px}}
+</style>  <style id="pref-data-dashboard-style">
+    .pref-data-dashboard{border:1px solid #eadfd4;background:#fffdf8;padding:22px;margin-top:32px}
+    .pref-data-dashboard .lead{font-size:17px;line-height:1.9}
+    .pref-data-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0}
+    .pref-data-card{border:1px solid #ddd7d0;background:#fff;padding:14px;min-height:112px}
+    .pref-data-card b{display:block;color:#9F3E00;font-size:25px;line-height:1.18;font-weight:900}
+    .pref-data-card span{display:block;margin-top:6px;color:#555f59;font-size:13px;font-weight:900;line-height:1.55}
+    .pref-data-card p{margin:8px 0 0;color:#555f59;font-size:13px;line-height:1.65}
+    .pref-data-card.data-population{border-top:5px solid #6f5b4a;background:#fffdf8}
+    .pref-data-card.data-housing{border-top:5px solid #7b8794;background:#fbfcfd}
+    .pref-data-card.data-vacant{border-top:5px solid #d95f24;background:#fff7ef}
+    .pref-data-card.data-other{border-top:5px solid #d05300;background:#fff7ec}
+    .pref-data-card.data-secondary{border-top:5px solid #d05300;background:#fff6ea}
+    .pref-data-card.data-aging{border-top:5px solid #7b5bb8;background:#f8f5ff}
+    .pref-data-card.data-apartment{border-top:5px solid #d05300;background:#fff7ec}
+    .pref-data-card.data-vacant b{color:#b94a16}
+    .pref-data-card.data-other b{color:#9f3e00}
+    .pref-data-card.data-secondary b{color:#9f3e00}
+    .pref-data-card.data-aging b{color:#654ba0}
+    .pref-data-card.data-apartment b{color:#9f3e00}
+    .bar-fill.vacancy{background:linear-gradient(90deg,#d95f24,#f0a15f)}
+    .bar-fill.national{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.aging{background:linear-gradient(90deg,#7b5bb8,#aa8cdb)}
+    .bar-fill.apartment{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.total-vacant{background:linear-gradient(90deg,#6f5b4a,#b59d82)}
+    .bar-fill.other-vacant{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .bar-fill.secondary-home{background:linear-gradient(90deg,#2f6fb3,#7fb8e8)}
+    .pref-data-bars{display:grid;gap:12px;margin:18px 0}
+    .pref-data-bar{display:grid;grid-template-columns:150px 1fr 64px;gap:10px;align-items:center;font-size:14px;font-weight:900}
+    .pref-data-track{height:18px;background:#efeae4;border-radius:999px;overflow:hidden}
+    .pref-data-fill{height:100%;background:linear-gradient(90deg,#D05300,#f2b766);border-radius:999px}
+    .pref-data-fill.blue{background:linear-gradient(90deg,#286f94,#7bb6d4)}
+    .pref-data-fill.green{background:linear-gradient(90deg,#d05300,#f2b766)}
+    .pref-data-table th,.pref-data-table td{font-size:15px;line-height:1.85}
+    @media(max-width:820px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-data-bar{grid-template-columns:96px 1fr 52px}.pref-data-dashboard{padding:18px}}
+    @media(max-width:560px){.pref-data-grid{grid-template-columns:1fr}}
+  </style>
+
+<style id="prefecture-data-unified-colors">
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-population{border-top:5px solid #69707a!important;background:#f7f8fa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-housing{border-top:5px solid #8a6d3b!important;background:#fff9ed!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-vacant{border-top:5px solid #e9812f!important;background:#fff6ed!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-national{border-top:5px solid #d05300!important;background:#fff6ea!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-other{border-top:5px solid #d05300!important;background:#fff7ec!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-secondary{border-top:5px solid #234f89!important;background:#f0f6ff!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-aging{border-top:5px solid #7c5cc4!important;background:#f7f3ff!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-apartment{border-top:5px solid #d05300!important;background:#fff7ec!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-population b{color:#4f5864!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-housing b{color:#735929!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-vacant b{color:#c76519!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-national b{color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-other b{color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-secondary b{color:#234f89!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-aging b{color:#6343aa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card).data-apartment b{color:#9f3e00!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).vacancy,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).total-vacant{background:linear-gradient(90deg,#f3a35c,#e9812f)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).national{background:linear-gradient(90deg,#d05300,#f2b766)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).aging,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).local{background:linear-gradient(90deg,#a78be2,#7c5cc4)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).apartment{background:linear-gradient(90deg,#d05300,#d05300)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).other,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).other-vacant,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).risk{background:linear-gradient(90deg,#d05300,#f2b766)!important}
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).secondary,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill).secondary-home{background:linear-gradient(90deg,#79a9e8,#234f89)!important}
+</style>
+
+
+
+
+<style id="prefecture-region-readable-style">
+  .prefecture-region-readable-grid,
+  .municipality-directory-grid.pref-region-summary,
+  .grid.cols2.municipality-directory-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:18px!important;
+    align-items:start!important;
   }
-  .area-keyword-details details,
-  .faq.area-keyword-details details,
-  .search-intent .area-keyword-details details{
+  .pref-region-card{
     background:#fff!important;
-    border:1px solid #ead8bf!important;
-    border-left:6px solid #d05300!important;
-    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
-    margin:10px 0!important;
+    border:1px solid #e5ded5!important;
+    border-top:5px solid #D05300!important;
+    box-shadow:0 12px 28px rgba(34,28,22,.07)!important;
+    padding:20px!important;
+    margin:0 0 18px!important;
+    border-radius:0!important;
   }
-  .area-keyword-details summary,
-  .faq.area-keyword-details summary,
-  .search-intent .area-keyword-details summary{
-    color:#d05300!important;
+  .pref-region-card .region-head{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:12px!important;
+    margin:0 0 12px!important;
   }
-  .area-keyword-details details[open],
-  .faq.area-keyword-details details[open]{
-    background:#fffaf4!important;
+  .pref-region-card .region-head h3{
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    color:#2B2B2B!important;
+    background:transparent!important;
+    font-size:22px!important;
+    line-height:1.45!important;
+    font-weight:900!important;
   }
-  .search-intent,
-  section:has(.area-keyword-details){
+  .pref-region-card .region-head span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:31px!important;
+    padding:3px 11px!important;
+    background:#26332d!important;
+    color:#fff!important;
+    font-size:14px!important;
+    font-weight:900!important;
+    white-space:nowrap!important;
+  }
+  .pref-region-card .area-box-lead,
+  .pref-region-card p:not(.section-kicker){
+    margin:0 0 12px!important;
+    color:#414743!important;
+    font-size:16px!important;
+    line-height:1.85!important;
+  }
+  .pref-region-card .region-checks{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:10px 0 14px!important;
+  }
+  .pref-region-card .region-checks span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:31px!important;
+    padding:4px 11px!important;
+    background:#fff7ef!important;
+    border:1px solid #efc9a7!important;
+    color:#8c3d00!important;
+    font-size:14px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+  }
+  .pref-region-card .ward-links,
+  .pref-region-card .area-tags{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:10px!important;
+    margin:4px 0 0!important;
+    padding-top:4px!important;
+  }
+  .pref-region-card .ward-links a,
+  .pref-region-card .area-tags a,
+  .pref-region-card .area-tags span{
+    display:inline-grid!important;
+    place-items:center!important;
+    min-height:40px!important;
+    padding:7px 13px!important;
+    border:1px solid #e5ded5!important;
+    border-radius:4px!important;
+    background:#fff!important;
+    color:#2B2B2B!important;
+    font-size:15px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+    text-decoration:none!important;
+  }
+  .pref-region-card .ward-links a:hover,
+  .pref-region-card .area-tags a:hover{
+    background:#fff7ef!important;
+    border-color:#D05300!important;
+    color:#D05300!important;
+    text-decoration:none!important;
+  }
+  .pref-region-card .section-title,
+  .pref-region-card .section-kicker{
+    display:none!important;
+  }
+  .pref-region-summary{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:12px!important;
+    margin:18px 0 24px!important;
+  }
+  .pref-region-summary a{
+    display:grid!important;
+    gap:4px!important;
+    min-height:82px!important;
+    align-content:center!important;
+    padding:14px 16px!important;
+    background:#fff!important;
+    border:1px solid #e5ded5!important;
+    border-top:5px solid #D05300!important;
+    color:#2B2B2B!important;
+    box-shadow:0 10px 24px rgba(34,28,22,.06)!important;
+    text-decoration:none!important;
+  }
+  .pref-region-summary b{color:#D05300!important;font-size:20px!important;line-height:1.25!important;font-weight:900!important}
+  .pref-region-summary span{color:#555f59!important;font-size:15px!important;line-height:1.5!important;font-weight:700!important}
+  @media(max-width:900px){
+    .prefecture-region-readable-grid,
+    .municipality-directory-grid.pref-region-summary,
+    .grid.cols2.municipality-directory-grid,
+    .pref-region-summary{grid-template-columns:1fr!important}
+    .pref-region-card .region-head{align-items:flex-start!important;flex-direction:column!important}
+    .pref-region-card .ward-links a,
+    .pref-region-card .area-tags a,
+    .pref-region-card .area-tags span{width:100%!important;justify-content:flex-start!important}
+  }
+</style>
+
+
+<style id="remaining-prefecture-handmade-guide-v1">
+  .remaining-hand-guide{background:#fff!important;border:1px solid #eadfd0!important;border-left:6px solid var(--area-main,#d05300)!important;box-shadow:0 12px 28px rgba(34,28,22,.06)!important;border-radius:8px!important;padding:28px!important;margin:24px 0!important}
+  .remaining-hand-guide .lead{font-size:18px!important;line-height:1.95!important;font-weight:700!important;color:#414743!important}
+  .remaining-hand-actions{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;margin:18px 0!important}
+  .remaining-hand-actions a{display:grid!important;align-content:center!important;min-height:86px!important;padding:15px!important;border:1px solid #eadfd0!important;border-top:5px solid var(--area-main,#d05300)!important;border-radius:8px!important;background:linear-gradient(180deg,#fff 0%,var(--area-soft,#fff8ef) 100%)!important;color:#2f312d!important;text-decoration:none!important;box-shadow:0 8px 20px rgba(34,28,22,.045)!important}
+  .remaining-hand-actions b{display:block!important;color:#2f312d!important;font-size:17px!important;line-height:1.45!important;font-weight:900!important}
+  .remaining-hand-actions span{display:block!important;margin-top:5px!important;color:#555f59!important;font-size:14px!important;line-height:1.6!important;font-weight:700!important}
+  .remaining-hand-checks{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin-top:14px!important}
+  .remaining-hand-checks div{padding:16px!important;border:1px solid #eadfd0!important;border-radius:8px!important;background:#fff!important}
+  .remaining-hand-checks strong{display:block!important;margin-bottom:5px!important;color:var(--area-main,#d05300)!important;font-size:16px!important;line-height:1.45!important}
+  .remaining-hand-checks span{display:block!important;color:#555f59!important;font-size:14px!important;line-height:1.75!important;font-weight:700!important}
+  @media(max-width:900px){.remaining-hand-actions,.remaining-hand-checks{grid-template-columns:1fr!important}.remaining-hand-guide{padding:20px!important}}
+</style>
+
+
+<style id="niigata-like-prefecture-data-colors-v2">
+  .pref-data-dashboard,
+  .kanto-national-section,
+  .kyushu-data-section,
+  .cs-data-section,
+  .tokai-data-section,
+  section:has(.pref-data-card),
+  section:has(.kyushu-data-card),
+  section:has(.cs-data-card),
+  section:has(.tokai-data-card),
+  section:has(.kanto-national-card) {
     background:#fffdf8!important;
-    border-color:#eadfd0!important;
+    border:1px solid #eadfd4!important;
+    border-radius:8px!important;
+    box-shadow:0 12px 28px rgba(34,28,22,.06)!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) {
+    border:1px solid #ddd7d0!important;
+    border-top:5px solid #69707a!important;
+    border-radius:8px!important;
+    background:#f7f8fa!important;
+    box-shadow:0 8px 20px rgba(34,28,22,.045)!important;
+    padding:16px!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) b {
+    display:block!important;
+    font-size:25px!important;
+    line-height:1.18!important;
+    font-weight:900!important;
+    color:#4f5864!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) span {
+    display:block!important;
+    margin-top:6px!important;
+    color:#555f59!important;
+    font-size:13px!important;
+    font-weight:900!important;
+    line-height:1.55!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card) p {
+    margin:8px 0 0!important;
+    color:#555f59!important;
+    font-size:13px!important;
+    line-height:1.65!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-population,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-household {
+    border-top-color:#69707a!important;
+    background:#f7f8fa!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-housing {
+    border-top-color:#8a6d3b!important;
+    background:#fff9ed!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacancy {
+    border-top-color:#e9812f!important;
+    background:#fff6ed!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-national {
+    border-top-color:#d05300!important;
+    background:#fff6ea!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk {
+    border-top-color:#d05300!important;
+    background:#fff7ec!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary {
+    border-top-color:#234f89!important;
+    background:#f0f6ff!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging {
+    border-top-color:#7c5cc4!important;
+    background:#f7f3ff!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment {
+    border-top-color:#d05300!important;
+    background:#fff7ec!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-population b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-household b {color:#4f5864!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-housing b {color:#735929!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacancy b {color:#c76519!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-national b {color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk b {color:#9f3e00!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary b {color:#234f89!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging b {color:#6343aa!important}
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment b {color:#9f3e00!important}
+
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill) {
+    background:linear-gradient(90deg,#f3a35c,#e9812f)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).national {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).aging,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).purple {
+    background:linear-gradient(90deg,#a78be2,#7c5cc4)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).apartment {
+    background:linear-gradient(90deg,#d05300,#d05300)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other-vacant,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).green,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).risk {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
+  }
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary,
+  :where(.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary-home {
+    background:linear-gradient(90deg,#79a9e8,#234f89)!important;
+  }
+  .kanto-national-card.data-vacant span::after,
+  .pref-data-card.data-vacant span::after,
+  .kyushu-data-card.data-vacant span::after,
+  .cs-data-card.data-vacant span::after,
+  .tokai-data-card.data-vacant span::after {
+    content:"";
+  }
+</style>
+
+<style id="prefecture-region-heading-orange-v1">
+  section:has(> .ward-links) > .section-title,
+  section:has(> .area-tags) > .section-title,
+  section:has(> p + .ward-links) > .section-title,
+  section:has(> p + .area-tags) > .section-title,
+  .pref-region-card > .section-title {
+    background:#fff7ef!important;
+    color:#2b2b2b!important;
+    border:1px solid #eadfd0!important;
+    border-left:7px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  section:has(> .ward-links) > .section-title::before,
+  section:has(> .area-tags) > .section-title::before,
+  section:has(> p + .ward-links) > .section-title::before,
+  section:has(> p + .area-tags) > .section-title::before,
+  .pref-region-card > .section-title::before {
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:9px;
+    background:#D05300;
+    border-radius:2px;
+    vertical-align:middle;
+  }
+  section:has(> .ward-links),
+  section:has(> .area-tags) {
+    background:#fff!important;
+  }
+</style>
+<style id="data-section-green-zero-reset-v1">
+  .macro-data-section,
+  .pref-data-dashboard,
+  .pref-official-stats,
+  .kyushu-data-section,
+  .cs-data-section,
+  .tokai-data-section,
+  section:has(.pref-data-card),
+  section:has(.kyushu-data-card),
+  section:has(.cs-data-card),
+  section:has(.tokai-data-card),
+  section:has(.kanto-national-card) {
+    background:#fffdf8!important;
+    border-color:#ead8c1!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant-rate {
+    background:#fff7ec!important;
+    border-top-color:#d05300!important;
+  }
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-other b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-risk b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-apartment b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-secondary b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-aging b,
+  :where(.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card).data-vacant-rate b {
+    color:#9f3e00!important;
+  }
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).apartment,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).other-vacant,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).green,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).risk,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).secondary-home,
+  :where(.bar-fill,.pref-bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill).aging {
+    background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-word"><span class="brand-area">福井県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#municipalities">市町村</a><a href="#data">統計データ</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>福井県</div></nav>
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">福井県で遺品整理・生前整理を探す</span><h1>三世代の家財が詰まったご実家も、まるごと。</h1><p class="hero-lead">持ち家・三世代同居の文化が根づく福井では、住み継がれたご実家に何世代分もの家財が残ることがあります。豪雪と遠さで通いにくいご遺族に代わり、物量の整理から貴重品の捜索、お部屋の引き渡しまで進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>福井県ページの見方</h2><ul class="quick-list"><li>県内17市町を漏れなく掲載</li><li>政令市はないため区ネストなし</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>未確認の行政電話番号は `—` として掲載</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">福井県で遺品整理・生前整理を探す</span><h1>三世代の家財が詰まったご実家も、まるごと。</h1><p class="hero-lead">持ち家・三世代同居の文化が根づく福井では、住み継がれたご実家に何世代分もの家財が残ることがあります。豪雪と遠さで通いにくいご遺族に代わり、物量の整理から貴重品の捜索、お部屋の引き渡しまで進めます。</p><div class="hero-actions"><a class="btn primary" href="#municipalities">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><div class="hero-panel"><h2>福井県ページの見方</h2><ul class="quick-list"><li>県内17市町を漏れなく掲載</li><li>政令市はないため区ネストなし</li><li>統計はe-Stat令和2年国勢調査の実値</li><li>公式確認が必要なの行政電話番号は `—` として掲載</li></ul></div></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#municipalities"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -1279,24 +1691,214 @@
 </section>
 
   <div class="page"><main>
+
+<style id="area-keyword-neutral-unify">
+  #area-keyword-guide.area-keyword-guide,
+  section.area-keyword-guide{
+    background:#fff!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:0 14px 32px rgba(34,28,22,.07)!important;
+    padding:24px!important;
+    border-radius:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .section-title,
+  section.area-keyword-guide .section-title{
+    margin:0 0 18px!important;
+    padding:11px 15px!important;
+    background:#D05300!important;
+    border-left:7px solid #9F3E00!important;
+    color:#fff!important;
+    font-size:26px!important;
+    line-height:1.45!important;
+    font-weight:900!important;
+  }
+  #area-keyword-guide.area-keyword-guide .lead,
+  section.area-keyword-guide .lead{
+    margin:0 0 22px!important;
+    background:transparent!important;
+    color:#414743!important;
+    font-size:18px!important;
+    line-height:1.82!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details,
+  section.area-keyword-guide .area-keyword-details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details,
+  section.area-keyword-guide .faq.area-keyword-details{
+    background:#fffdf8!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:none!important;
+    padding:12px!important;
+    margin:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details,
+  section.area-keyword-guide .area-keyword-details details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details,
+  section.area-keyword-guide .faq.area-keyword-details details{
+    background:#fff!important;
+    border:1px solid #ead8bf!important;
+    border-left:6px solid #D05300!important;
+    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
+    margin:10px 0!important;
+    padding:14px 16px!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details[open],
+  section.area-keyword-guide .area-keyword-details details[open],
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details[open],
+  section.area-keyword-guide .faq.area-keyword-details details[open]{
+    background:#fffaf4!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details summary,
+  section.area-keyword-guide .area-keyword-details summary,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details summary,
+  section.area-keyword-guide .faq.area-keyword-details summary{
+    color:#8c3d00!important;
+    font-weight:900!important;
+  }
+</style>
+
 <section id="area-keyword-guide" class="section area-keyword-guide">
-  <h2 class="section-title">福井県の で遺品整理・生前整理・実家じまいを検討している方へ</h2>
-  <p class="lead">福井県の の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。福井県の で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。福井県の で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
+  <h2 class="section-title">福井県で遺品整理・生前整理・実家じまいを検討している方へ</h2>
+  <p class="lead">福井県の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。福井県で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。福井県で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
   <div class="faq area-keyword-details">
-    <details><summary>福井県の の遺品整理</summary><p>通帳、印鑑、権利書、写真、手紙、貴金属などを探しながら、残す物・処分する物・供養する物を分けます。遠方のご家族は写真報告や鍵預かりの可否も確認しましょう。</p></details>
-    <details><summary>福井県の の生前整理</summary><p>施設入居、介護、住み替え、空き家化の前に、生活動線を確保しながら家財量を減らします。買取できる品や思い出の品を早めに分けると、ご本人と家族の負担を抑えやすくなります。</p></details>
-    <details><summary>福井県の の実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
+    <details><summary>福井県の遺品整理</summary><p>通帳、印鑑、権利書、写真、手紙、貴金属などを探しながら、残す物・処分する物・供養する物を分けます。遠方のご家族は写真報告や鍵預かりの可否も確認しましょう。</p></details>
+    <details><summary>福井県の生前整理</summary><p>施設入居、介護、住み替え、空き家化の前に、生活動線を確保しながら家財量を減らします。買取できる品や思い出の品を早めに分けると、ご本人と家族の負担を抑えやすくなります。</p></details>
+    <details><summary>福井県の実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
+  </div>
+</section>
+<style id="pref-official-stats-unified-v1">
+.pref-official-stats{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,64px) 0;color:#2b2b2b}
+.pref-official-stats .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
+.pref-official-stats .section-title{font-size:clamp(26px,3.2vw,40px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
+.pref-official-stats .lead{max-width:940px;margin:0 0 22px;color:#4f4a43;font-size:18px;line-height:1.85}
+.pref-data-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.pref-data-card{background:#fff;border:1px solid #eadbc8;border-radius:8px;padding:16px;box-shadow:0 10px 24px rgba(82,54,24,.06);border-top:4px solid #d05300;min-height:150px}
+.pref-data-card b{display:block;color:#9f3e00;font-size:clamp(24px,2.8vw,34px);line-height:1.1;margin-bottom:8px;font-family:Roboto,"BIZ UDPGothic",sans-serif}
+.pref-data-card span{display:block;font-weight:900;color:#2b2b2b;margin-bottom:7px}
+.pref-data-card p{margin:0;color:#5f5a52;font-size:15px;line-height:1.65}
+.pref-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.pref-chart-box{background:#fff;border:1px solid #eadbc8;border-radius:8px;padding:18px;box-shadow:0 12px 28px rgba(82,54,24,.06)}
+.pref-chart-box h3{margin:0 0 12px;color:#2b2b2b;font-size:20px}
+.pref-bar-row{display:grid;grid-template-columns:112px 1fr 86px;gap:10px;align-items:center;margin:10px 0;color:#3a352f}
+.pref-bar-row span{font-weight:900}
+.pref-bar-row b{text-align:right;color:#9f3e00;font-family:Roboto,"BIZ UDPGothic",sans-serif}
+.pref-bar-track{height:12px;background:#f1e5d8;border-radius:999px;overflow:hidden}
+.pref-bar-fill{height:100%;border-radius:999px;background:#d05300}
+.pref-bar-fill.national{background:#d05300}.pref-bar-fill.aging{background:#b45309}.pref-bar-fill.apartment{background:#286f94}.pref-bar-fill.other{background:#c2410c}.pref-bar-fill.secondary{background:#7c3aed}
+.pref-data-source{margin:14px 0 0;color:#6b6258;font-size:14px;line-height:1.7}
+@media (max-width:900px){.pref-data-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pref-chart-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
+</style>
+<section id="pref-official-stats" class="section pref-official-stats">
+  <div class="section-inner">
+    <p class="section-kicker">人口・世帯・住宅で見る福井県</p>
+    <h2 class="section-title">福井県の公式統計と全国比較で見る整理相談の背景</h2>
+    <p class="lead">福井市周辺の住宅地と、嶺北・嶺南の戸建て、車庫・物置付き住宅で条件が変わります。雪や前面道路、大型家具を確認します。ここでは令和2年国勢調査と令和5年住宅・土地統計調査を合わせて、見積もり前に見るべき住宅事情を整理します。</p>
+    <div class="pref-data-grid" aria-label="福井県の統計概要">
+      <div class="pref-data-card data-population"><b>766,863人</b><span>令和2年国勢調査人口</span><p>県全体の相談規模を把握する基礎数字です。</p></div>
+      <div class="pref-data-card data-housing"><b>34.1万戸</b><span>総住宅数</span><p>令和5年住宅・土地統計調査の県全体値です。</p></div>
+      <div class="pref-data-card data-vacant"><b>5.3万戸</b><span>空き家数</span><p>売却前・解体前・相続後の家財整理につながる母数です。</p></div>
+      <div class="pref-data-card data-vacant-rate"><b>15.6%</b><span>空き家率</span><p>全国平均13.8%と比べて、空き家整理の優先度を見ます。</p></div>
+      <div class="pref-data-card data-other"><b>2.9万戸</b><span>その他空き家</span><p>賃貸・売却・二次的住宅を除く、実家じまいに近い空き家です。</p></div>
+      <div class="pref-data-card data-secondary"><b>0.1万戸</b><span>二次的住宅</span><p>別荘・季節利用住宅など、遠方対応や鍵預かりと関係します。</p></div>
+      <div class="pref-data-card data-aging"><b>30.7%</b><span>65歳以上人口割合</span><p>生前整理、施設入居前整理、遠方家族の相談につながる指標です。</p></div>
+      <div class="pref-data-card data-apartment"><b>22.5%</b><span>共同住宅居住率</span><p>EV予約、共用部養生、管理規約が必要になりやすい指標です。</p></div>
+    </div>
+    <div class="pref-chart-grid">
+      <div class="pref-chart-box">
+        <h3>福井県で見積もり前に見たい主要指標</h3>
+        <div class="pref-bar-row"><span>空き家率</span><div class="pref-bar-track"><div class="pref-bar-fill vacancy" style="width:51.8%"></div></div><b>15.6%</b></div>
+        <div class="pref-bar-row"><span>全国平均</span><div class="pref-bar-track"><div class="pref-bar-fill national" style="width:46.1%"></div></div><b>13.8%</b></div>
+        <div class="pref-bar-row"><span>高齢化率</span><div class="pref-bar-track"><div class="pref-bar-fill aging" style="width:68.2%"></div></div><b>30.7%</b></div>
+        <div class="pref-bar-row"><span>共同住宅率</span><div class="pref-bar-track"><div class="pref-bar-fill apartment" style="width:30.0%"></div></div><b>22.5%</b></div>
+      </div>
+      <div class="pref-chart-box">
+        <h3>空き家の中身で整理方法が変わる</h3>
+        <div class="pref-bar-row"><span>空き家総数</span><div class="pref-bar-track"><div class="pref-bar-fill total-vacant" style="width:100%"></div></div><b>5.3万戸</b></div>
+        <div class="pref-bar-row"><span>その他空き家</span><div class="pref-bar-track"><div class="pref-bar-fill other" style="width:54.4%"></div></div><b>2.9万戸</b></div>
+        <div class="pref-bar-row"><span>二次的住宅</span><div class="pref-bar-track"><div class="pref-bar-fill secondary" style="width:2.6%"></div></div><b>0.1万戸</b></div>
+        <p class="pref-data-source">その他空き家は相続後の実家整理、二次的住宅は別荘・季節利用住宅の遠方対応と相性が強い区分です。</p>
+      </div>
+    </div>
+    <p class="pref-data-source">出典：総務省統計局「令和2年国勢調査」、総務省統計局「令和5年住宅・土地統計調査」。住宅数・空き家数は都道府県表、空き家率は空き家数を総住宅数で除して算出。</p>
   </div>
 </section>
 
-    <section id="municipalities"><p class="section-kicker">市町一覧</p><h2 class="section-title">福井県内17市町から探す</h2><p>福井県公式の県内市町リンク集に掲載されている17市町を対象に、各市町ページへリンクしています。越前市と越前町はURLで分け、越前町は <code>/fukui/echizencho/</code> としています。</p><div class="ward-links"><a href="/fukui/fukui/">福井市</a><a href="/fukui/tsuruga/">敦賀市</a><a href="/fukui/obama/">小浜市</a><a href="/fukui/ono/">大野市</a><a href="/fukui/katsuyama/">勝山市</a><a href="/fukui/sabae/">鯖江市</a><a href="/fukui/awara/">あわら市</a><a href="/fukui/echizen/">越前市</a><a href="/fukui/sakai/">坂井市</a><a href="/fukui/eiheiji/">永平寺町</a><a href="/fukui/ikeda/">池田町</a><a href="/fukui/minamiechizen/">南越前町</a><a href="/fukui/echizencho/">越前町</a><a href="/fukui/mihama/">美浜町</a><a href="/fukui/takahama/">高浜町</a><a href="/fukui/ohi/">おおい町</a><a href="/fukui/wakasa/">若狭町</a></div></section>
-<section id="福井・坂井" class="section"><p class="section-kicker">地域ブロック</p><h2 class="section-title">福井・坂井エリアから探す</h2><p class="lead">福井県内の作成済み市町ページへ移動できます。統計はe-Statの実値、行政窓口は未確認の電話番号を補完せず `—` としています。</p><div class="ward-links"><a href="/fukui/fukui/">福井市</a><a href="/fukui/awara/">あわら市</a><a href="/fukui/sakai/">坂井市</a><a href="/fukui/eiheiji/">永平寺町</a></div></section>
-<section id="奥越" class="section"><p class="section-kicker">地域ブロック</p><h2 class="section-title">奥越エリアから探す</h2><p class="lead">福井県内の作成済み市町ページへ移動できます。統計はe-Statの実値、行政窓口は未確認の電話番号を補完せず `—` としています。</p><div class="ward-links"><a href="/fukui/ono/">大野市</a><a href="/fukui/katsuyama/">勝山市</a></div></section>
-<section id="丹南" class="section"><p class="section-kicker">地域ブロック</p><h2 class="section-title">丹南エリアから探す</h2><p class="lead">福井県内の作成済み市町ページへ移動できます。統計はe-Statの実値、行政窓口は未確認の電話番号を補完せず `—` としています。</p><div class="ward-links"><a href="/fukui/sabae/">鯖江市</a><a href="/fukui/echizen/">越前市</a><a href="/fukui/ikeda/">池田町</a><a href="/fukui/minamiechizen/">南越前町</a><a href="/fukui/echizencho/">越前町</a></div></section>
-<section id="嶺南" class="section"><p class="section-kicker">地域ブロック</p><h2 class="section-title">嶺南エリアから探す</h2><p class="lead">福井県内の作成済み市町ページへ移動できます。統計はe-Statの実値、行政窓口は未確認の電話番号を補完せず `—` としています。</p><div class="ward-links"><a href="/fukui/tsuruga/">敦賀市</a><a href="/fukui/obama/">小浜市</a><a href="/fukui/mihama/">美浜町</a><a href="/fukui/takahama/">高浜町</a><a href="/fukui/ohi/">おおい町</a><a href="/fukui/wakasa/">若狭町</a></div></section>
-    <section id="data" class="section"><p class="section-kicker">県全体の統計</p><h2 class="section-title">データで見る福井県の遺品整理・生前整理需要</h2><div class="stats"><div class="stat"><b>766,863人</b><span>令和2年国勢調査人口</span></div><div class="stat"><b>23.1%</b><span>共同住宅居住率</span></div><div class="stat"><b>29.7%</b><span>単身者世帯比率</span></div><div class="stat"><b>30.8%</b><span>65歳以上人口割合</span></div></div><p class="source-note">出典：e-Stat 令和2年国勢調査。市町ページでは各市町村コードの実値を掲載しています。</p></section>
-    <section id="sources" class="section"><p class="section-kicker">確認方針</p><h2 class="section-title">市町一覧・行政窓口の扱い</h2><p>市町一覧と公式リンクは福井県「福井県内市町リンク集」をもとにし、各ページの行政窓口は公式確認が取れていない電話番号・受付時間を推測で補完せず `—` としています。</p></section>
-<section id="kita-before-after-cases" class="section common-kita-ba">
+
+<section id="fukui-handmade-guide" class="section remaining-hand-guide" style="--area-main:#d05300;--area-soft:#fff1e6">
+  <p class="section-kicker">最初に見るところ</p>
+  <h2 class="section-title">福井県で遺品整理・生前整理を探す前に</h2>
+  <p class="lead">福井市周辺、嶺北、嶺南で戸建てや広い敷地の整理条件が変わります。雪、車庫、農機具、解体・売却前整理を確認します。</p>
+  <div class="remaining-hand-actions"><a href="#cities"><b>福井市周辺を見る</b><span>市街地・戸建て</span></a><a href="#cities"><b>嶺北を見る</b><span>雪・広い敷地</span></a><a href="#cities"><b>嶺南を見る</b><span>沿岸部・遠距離</span></a><a href="#area-keyword-guide"><b>統計データを見る</b><span>住宅・空き家</span></a></div>
+  <div class="remaining-hand-checks">
+    <div><strong>作業場所</strong><span>市区町村、町名、建物種別、階数、駐車位置、搬出時間を確認。</span></div>
+    <div><strong>残す品</strong><span>通帳、印鑑、権利書、写真、貴金属、形見分け品を処分前に共有。</span></div>
+    <div><strong>地域条件</strong><span>雪、坂道、海沿い、山間部、島しょ部、物置・納屋などを見積もりに反映。</span></div>
+  </div>
+</section>
+
+<section id="pref-original-guide" class="section pref-original-guide">
+  <h2 class="section-title">福井県で失敗しないための地域特化チェック</h2>
+  <p class="lead">福井県は福井市周辺の住宅地、嶺北の戸建て、嶺南の沿岸住宅で搬出条件が変わります。雪、車庫、物置、庭、仏壇、海沿いの屋外品まで見積もり前に整理します。</p>
+  <div class="grid cols3">
+    <div class="card"><h3>福井市周辺の集合住宅</h3><p>管理会社届出、EV予約、駐車位置、退去期限を先に確認します。</p></div>
+    <div class="card"><h3>嶺北の戸建て・農家住宅</h3><p>納屋、車庫、庭、農具、冬季の除雪状況を確認します。</p></div>
+    <div class="card"><h3>嶺南・沿岸部の整理</h3><p>潮風で劣化した屋外品、前面道路、遠方立会いの有無を共有します。</p></div>
+  </div>
+  <div class="notice" style="margin-top:18px"><b>福井県で見積もり前にそろえること</b><br>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置・仏壇の写真を用意し、探してほしい通帳・印鑑・権利書・写真・形見分け品を先に共有してください。</div>
+</section>
+    <section class="section quick-guide" aria-label="福井県ページの見方">
+      <div class="guide-panel">
+        <div>
+          <h2>まず、作業場所に近いページを選んでください</h2>
+          <p>福井県トップでは、市町ページ、地域別の搬出条件、料金目安、立会いなしの進め方をまとめています。実家や作業場所が決まっている場合は、先に近い地域ページを開くと、行政窓口や見積もり前に見る条件を探しやすくなります。</p>
+          <div class="guide-actions">
+            <a href="#fukui-municipalities">福井県内の市町から探す<span>を地域別に確認</span></a>
+            <a href="#fukui-local-check">福井県ならではの注意点<span>の搬出条件</span></a>
+            <a href="#price">料金目安を見る<span>間取り別の相場を確認</span></a>
+            <a href="#online-plan">立会いなしの流れを見る<span>遠方家族向けの進め方</span></a>
+          </div>
+        </div>
+        <div class="guide-check">
+          <b>見積もり前に整理すると早い項目</b>
+          <ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>雪、坂道、前面道路、駐車位置、庭・物置の有無</li></ul>
+        </div>
+      </div>
+      <div class="popular-area" aria-label="福井県でよく探される地域">
+        <h2>よく探される地域からすぐ確認</h2>
+        <p>福井県内で相談が多い地域を先にまとめました。作業場所が決まっている場合は、近いページから確認してください。</p>
+        <div class="popular-links"><a href="/fukui/fukui/">福井市</a><a href="/fukui/sakai/">坂井市</a><a href="/fukui/sabae/">鯖江市</a><a href="/fukui/echizen/">越前市</a><a href="/fukui/tsuruga/">敦賀市</a><a href="/fukui/obama/">小浜市</a><a href="/fukui/ono/">大野市</a><a href="/fukui/katsuyama/">勝山市</a><a href="/fukui/awara/">あわら市</a><a href="/fukui/wakasa/">若狭町</a></div>
+      </div>
+      <div class="price-teaser" aria-label="福井県の料金目安ショートカット">
+        <h2>料金目安を先に確認</h2>
+        <p>料金目的で来た方がすぐ判断できるよう、よく見られる間取りを抜粋しています。正確な金額は荷物量、階数、搬出条件、買取品の有無、冬季条件で変わります。</p>
+        <div class="price-mini-grid"><a class="price-mini" href="#price"><b>35,000円〜</b><span>1K・1DK。単身整理、少量家財、写真報告。</span></a><a class="price-mini" href="#price"><b>70,000円〜</b><span>1LDK・2DK。家具・家電・書類の仕分け。</span></a><a class="price-mini" href="#price"><b>180,000円〜</b><span>戸建て・実家じまい。物置、庭、仏壇供養も確認。</span></a></div>
+      </div>
+    </section>
+        <section id="fukui-municipalities" class="section">
+      <h2 class="section-title">福井県内の市町から探す</h2>
+      <p class="lead">福井県の遺品整理・生前整理は、都市部の集合住宅、郊外戸建て、山間部や海沿いの空き家、別荘・三世代住宅などで見積もり条件が変わります。地域ごとの特徴を見てから、近い市町村ページへ進んでください。</p>
+      <div class="intent-grid" aria-label="目的別ショートカット"><a class="intent-card" href="#fukui-municipalities"><b>福井・坂井の退去前整理</b><span>集合住宅と戸建てが混在。駐車位置と搬出時間を確認。</span></a><a class="intent-card" href="#fukui-municipalities"><b>奥越の雪・戸建て整理</b><span>冬季道路、納屋、車庫、庭、仏間を先に確認。</span></a><a class="intent-card" href="#fukui-municipalities"><b>丹南の三世代住宅</b><span>広い家財、物置、仏壇、貴重品探索を整理。</span></a><a class="intent-card" href="#fukui-municipalities"><b>嶺南の遠方整理</b><span>海沿い住宅、鍵預かり、写真報告、移動時間を確認。</span></a></div>
+      <div class="grid cols2 municipality-directory-grid pref-region-summary"><div class="area-box pref-region-card"><div class="region-head"><h3>福井・坂井</h3><span>4市町</span></div><p class="area-box-lead">福井市、坂井、あわら、永平寺方面は、集合住宅、郊外戸建て、三世代住宅が混在します。駐車位置と作業範囲を確認します。</p><div class="region-checks"><span>集合住宅</span><span>三世代住宅</span><span>駐車位置</span></div><div class="ward-links"><a href="/fukui/fukui/">福井市</a><a href="/fukui/awara/">あわら市</a><a href="/fukui/sakai/">坂井市</a><a href="/fukui/eiheiji/">永平寺町</a></div></div><div class="area-box pref-region-card"><div class="region-head"><h3>奥越・丹南</h3><span>7市町</span></div><p class="area-box-lead">大野、勝山、鯖江、越前方面は、雪、広い戸建て、納屋・車庫、仏間を含む整理が多く、作業範囲を先に決めます。</p><div class="region-checks"><span>雪</span><span>納屋・車庫</span><span>仏間</span></div><div class="ward-links"><a href="/fukui/ono/">大野市</a><a href="/fukui/katsuyama/">勝山市</a><a href="/fukui/sabae/">鯖江市</a><a href="/fukui/echizen/">越前市</a><a href="/fukui/ikeda/">池田町</a><a href="/fukui/minamiechizen/">南越前町</a><a href="/fukui/echizencho/">越前町</a></div></div><div class="area-box pref-region-card"><div class="region-head"><h3>嶺南</h3><span>6市町</span></div><p class="area-box-lead">敦賀、小浜、美浜、高浜、おおい、若狭方面は、海沿い住宅、遠方家族の鍵預かり、写真報告が重要になりやすい地域です。</p><div class="region-checks"><span>海沿い住宅</span><span>鍵預かり</span><span>遠方家族</span></div><div class="ward-links"><a href="/fukui/tsuruga/">敦賀市</a><a href="/fukui/obama/">小浜市</a><a href="/fukui/mihama/">美浜町</a><a href="/fukui/takahama/">高浜町</a><a href="/fukui/ohi/">おおい町</a><a href="/fukui/wakasa/">若狭町</a></div></div></div>
+    </section>
+    <section id="fukui-local-check" class="section">
+      <h2 class="section-title">福井県で見積もり前に確認したい条件</h2>
+      <p class="lead">同じ福井県内でも、地域と建物種別で追加費用になりやすい条件が変わります。写真を送るときは、室内だけでなく、玄関、階段、前面道路、駐車位置、庭、物置、仏壇まわりまで共有すると見積もりのズレを減らせます。</p>
+      <table><thead><tr><th>確認項目</th><th>福井県で見やすいポイント</th><th>写真で送るもの</th></tr></thead><tbody><tr><td>搬出経路</td><td>階段、エレベーター、坂道、雪、前面道路で作業人数が変わります。</td><td>玄関、階段、廊下、建物前道路、駐車位置。</td></tr><tr><td>作業範囲</td><td>室内だけでなく、庭、物置、納屋、車庫、仏壇、倉庫を含むか確認します。</td><td>各部屋、押入れ、物置、庭、車庫、仏壇。</td></tr><tr><td>遠方対応</td><td>立会いなしの場合は鍵の受け渡し、写真報告、貴重品返送を決めます。</td><td>鍵の所在、残す品、探したい書類、返送先。</td></tr><tr><td>行政制度</td><td>粗大ごみ、持込、福祉支援、空家相談と業者作業を分けます。</td><td>処分したい品目、量、退去日、売却・解体予定。</td></tr></tbody></table>
+    </section>
+    
+      <section id="towns" class="section"><p class="section-kicker">対応エリア</p><h2 class="section-title">三世代の家財が詰まったご実家も、まるごと。の対応エリア</h2>
+        <p>三世代の家財が詰まったご実家も、まるごと。全域の遺品整理・生前整理・実家じまいに対応します。町名、駅名、団地名、建物名、階数、駐車位置を見積もり前に共有すると、搬出経路と作業時間を判断しやすくなります。</p>
+      </section>
+
+<section id="price" class="section">
+      <h2 class="section-title">福井県の遺品整理料金と作業内容</h2>
+      <p class="lead">料金は間取りだけでなく、荷物量、階数、搬出距離、車両位置、買取品、供養品、退去期限で変わります。まずは間取り別の目安を確認し、地域ページで具体的な搬出条件を整理してください。</p>
+      <table><thead><tr><th>間取り・状況</th><th>料金目安</th><th>含まれやすい作業</th></tr></thead><tbody><tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、衣類・小型家具、簡易清掃、写真報告。</td></tr><tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電、書類仕分け、貴重品探索、共用部養生。</td></tr><tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、仏壇、物置、庭、車庫、供養・買取確認。</td></tr></tbody></table>
+    </section>
+    <section id="online-plan" class="section">
+      <h2 class="section-title">立会いなしで進める場合の流れ</h2>
+      <div class="flow"><div class="flow-item"><b>写真で状況共有</b><span>部屋、押入れ、物置、道路、駐車位置を送ります。</span></div><div class="flow-item"><b>残す品を決める</b><span>通帳、印鑑、権利書、写真、貴金属、供養品を指定します。</span></div><div class="flow-item"><b>鍵預かり・作業</b><span>管理会社、親族、郵送など鍵の受け渡し方法を決めます。</span></div><div class="flow-item"><b>完了報告</b><span>作業前後の写真、探索品、買取・供養の結果を確認します。</span></div></div>
+    </section><section id="kita-before-after-cases" class="section common-kita-ba">
   <h2 class="section-title">福井県の遺品整理ビフォーアフター事例</h2>
   <p class="common-ba-lead"><span class="marker">写真で作業前後を確認できる</span>と、どこまで片付くのか、どの程度の荷物量なのかをイメージしやすくなります。見積もり前に仕上がりを判断しやすいよう、福井県の遺品整理のビフォーアフター写真を掲載しています。</p>
   <div class="common-ba-guide" aria-label="ビフォーアフターの見方">
@@ -1316,6 +1918,64 @@
     </div>
   </div>
 </section>
+
+<section id="fukui-macro-data" class="section macro-data-section">
+  <p class="section-kicker">全国比較</p>
+  <h2 class="section-title">データで見る福井県の遺品整理・生前整理</h2>
+  <p class="lead">福井県は戸建て・実家じまいの比重が高く、嶺北・嶺南で移動距離や搬出条件が変わります。空き家率は全国平均を上回り、空き家化する前の生前整理、売却前の家財整理を早めに確認したい県です。</p>
+  <div class="grid cols3">
+    <div class="card stat-card metric-card"><span class="metric-label">総住宅数</span><b>34.1万戸</b><p class="metric-note">県内の住宅ストック規模。</p></div>
+    <div class="card stat-card metric-card"><span class="metric-label">空き家数</span><b>5.3万戸</b><p class="metric-note">実家じまい・売却前整理と関係します。</p></div>
+    <div class="card stat-card metric-card"><span class="metric-label">空き家率</span><b>15.6%</b><p class="metric-note">全国平均13.8%を上回ります。</p></div>
+    <div class="card stat-card metric-card"><span class="metric-label">その他空き家</span><b>2.9万戸</b><p class="metric-note">賃貸・売却・別荘以外の実家型空き家。</p></div>
+    <div class="card stat-card metric-card"><span class="metric-label">二次的住宅</span><b>0.1万戸</b><p class="metric-note">別荘よりも戸建て整理を中心に考えます。</p></div>
+    <div class="card stat-card metric-card"><span class="metric-label">全国平均との差</span><b>+1.8pt</b><p class="metric-note">早めの整理で空き家化を抑えたい水準。</p></div>
+  </div>
+  <div class="grid cols2" style="margin-top:18px">
+    <div class="chart-box compare-card">
+      <h3>空き家率を全国平均と比較</h3>
+      <div class="bar-row"><span>福井県</span><div class="bar-track"><div class="bar-fill vacancy" style="width:71%"></div></div><b>15.6%</b></div>
+      <div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill national" style="width:63%"></div></div><b>13.8%</b></div>
+      <p>福井県の空き家率は15.6%で、全国平均より1.8ポイント高い水準です。空き家数は5.3万戸。遺品整理・生前整理では、家財量だけでなく売却・解体・空き家管理の予定まで確認します。</p>
+    </div>
+    <div class="chart-box compare-card">
+      <h3>空き家の中身で整理方法が変わる</h3>
+      <div class="bar-row"><span>空き家総数</span><div class="bar-track"><div class="bar-fill total-vacant" style="width:100%"></div></div><b>5.3万戸</b></div>
+      <div class="bar-row"><span>その他空き家</span><div class="bar-track"><div class="bar-fill other-vacant" style="width:56%"></div></div><b>2.9万戸</b></div>
+      <div class="bar-row"><span>二次的住宅</span><div class="bar-track"><div class="bar-fill secondary-home" style="width:30%"></div></div><b>0.1万戸</b></div>
+      <p>その他空き家は相続後の実家整理、二次的住宅は別荘・季節利用住宅の鍵預かりや写真報告と関係します。県ごとに多い住まいのタイプを分けて確認します。</p>
+    </div>
+  </div>
+  <div class="grid cols2" style="margin-top:18px">
+    <div class="chart-box compare-card">
+      <h3>全国で見る孤立死と生前整理</h3>
+      <div class="bar-row"><span>孤立死・自宅死亡</span><div class="bar-track"><div class="bar-fill warm" style="width:76%"></div></div><b>76,020人</b></div>
+      <div class="bar-row"><span>65歳以上</span><div class="bar-track"><div class="bar-fill aging" style="width:58%"></div></div><b>58,044人</b></div>
+      <div class="bar-row"><span>8日以上経過</span><div class="bar-track"><div class="bar-fill blue" style="width:29%"></div></div><b>21,856人</b></div>
+      <p>発見が遅れると、遺品整理だけでなく特殊清掃、脱臭、原状回復、退去手続きが重なります。生前整理では、重要書類と残す品を先に分けることが大切です。</p>
+    </div>
+    <div class="chart-box compare-card">
+      <h3>放置空き家リスク</h3>
+      <div class="bar-row"><span>全国空き家</span><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div><b>900.2万戸</b></div>
+      <div class="bar-row"><span>放置空き家</span><div class="bar-track"><div class="bar-fill warm other-vacant" style="width:39%"></div></div><b>385.6万戸</b></div>
+      <div class="bar-row"><span>放置空き家率</span><div class="bar-track"><div class="bar-fill blue vacancy other-vacant" style="width:59%"></div></div><b>5.9%</b></div>
+      <p>家財が残ったままだと、売却、空き家バンク登録、解体前確認が止まりやすくなります。整理後の出口を決めておくと無駄な費用を抑えやすくなります。</p>
+    </div>
+  </div>
+  <div class="table-wrap" style="margin-top:18px">
+    <table class="price-table">
+      <thead><tr><th>福井県で起きやすい状況</th><th>見積もり前に見ること</th></tr></thead>
+      <tbody>
+      <tr><td>福井市・坂井市周辺の戸建て</td><td>家財量、庭、物置、車庫、駐車位置、搬出距離を確認。</td></tr>
+      <tr><td>嶺南方面の遠方対応</td><td>鍵預かり、写真報告、移動距離、作業日程を先に確認。</td></tr>
+      <tr><td>空き家化前の生前整理</td><td>通帳、権利書、保険証券、仏壇、買取品を早めに分ける。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="notice" style="margin-top:16px"><b>福井県で数字を見る意味</b><br>福井県では、空き家になってから慌てて片付けるより、親が元気なうちに重要書類と残す品を整理しておく方が負担を抑えやすくなります。嶺北・嶺南の距離感も見積もり前に確認しましょう。</div>
+  <p class="source-note">出典：総務省統計局・e-Stat「令和5年住宅・土地統計調査 主要統計表 表1 居住世帯の有無別住宅数」、警察庁 2024年孤独死・孤立死関連集計、サイト内で整理済みの県別統計値。空き家率の全国平均は9,001,600戸÷65,046,700戸（13.8%）を使用しています。</p>
+</section>
+
 <section id="pref-impact" class="section">
         <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
         <p class="lead">福井県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、プロに相談する理由がはっきりします。</span></p>
@@ -1331,14 +1991,14 @@
           <div class="chart-box">
             <h3>自力整理とプロ作業の時間差</h3>
             <div class="bar-row"><span>1DK 自力</span><div class="bar-track"><div class="bar-fill" style="width:66%"></div></div><b>約1ヶ月</b></div>
-            <div class="bar-row"><span>1K プロ</span><div class="bar-track"><div class="bar-fill green" style="width:8%"></div></div><b>1〜3時間</b></div>
+            <div class="bar-row"><span>1K プロ</span><div class="bar-track"><div class="bar-fill warm" style="width:8%"></div></div><b>1〜3時間</b></div>
             <div class="bar-row"><span>一軒家 自力</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>3ヶ月〜半年</b></div>
-            <div class="bar-row"><span>一戸建て プロ</span><div class="bar-track"><div class="bar-fill green" style="width:14%"></div></div><b>1〜3日</b></div>
+            <div class="bar-row"><span>一戸建て プロ</span><div class="bar-track"><div class="bar-fill warm" style="width:14%"></div></div><b>1〜3日</b></div>
             <p>家族だけで進めると、仕分け・搬出・車両手配・行政ルール確認・貴重品探索を何度も行う必要があります。<span class="marker">退去期限や売却予定がある場合は、プロ作業の短さが大きな安心材料</span>になります。</p>
           </div>
           <div class="chart-box">
             <h3>親子の意識差と生前整理</h3>
-            <div class="bar-row"><span>手伝いたい子</span><div class="bar-track"><div class="bar-fill green" style="width:80%"></div></div><b>約8割</b></div>
+            <div class="bar-row"><span>手伝いたい子</span><div class="bar-track"><div class="bar-fill warm" style="width:80%"></div></div><b>約8割</b></div>
             <div class="bar-row"><span>手伝われたくない親</span><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><b>約6割</b></div>
             <div class="bar-row"><span>終活の目的</span><div class="bar-track"><div class="bar-fill blue" style="width:40%"></div></div><b>約4割</b></div>
             <p>子どもは手伝いたい一方で、親は迷惑をかけたくない、見られたくない物があると感じることがあります。生前整理では、<span class="marker">家族だけで抱え込まず、第三者を入れて必要な物だけ残す</span>進め方が向いています。</p>
@@ -1348,8 +2008,8 @@
         <div class="grid cols2" style="margin-top:16px">
           <div class="chart-box">
             <h3>間取り別の費用目安</h3>
-            <div class="bar-row"><span>1R</span><div class="bar-track"><div class="bar-fill green" style="width:18%"></div></div><b>3〜8万円</b></div>
-            <div class="bar-row"><span>1DK</span><div class="bar-track"><div class="bar-fill green" style="width:28%"></div></div><b>5〜12万円</b></div>
+            <div class="bar-row"><span>1R</span><div class="bar-track"><div class="bar-fill warm" style="width:18%"></div></div><b>3〜8万円</b></div>
+            <div class="bar-row"><span>1DK</span><div class="bar-track"><div class="bar-fill warm" style="width:28%"></div></div><b>5〜12万円</b></div>
             <div class="bar-row"><span>2DK</span><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div><b>9〜25万円</b></div>
             <div class="bar-row"><span>3LDK</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><b>17〜50万円</b></div>
             <div class="bar-row"><span>一戸建て</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><b>22〜70万円以上</b></div>
@@ -1368,6 +2028,13 @@
 
         <div class="notice" style="margin-top:16px"><b>福井県で実家の片付けは家族だけでできますか？</b><br>少量の荷物なら家族だけでも進められますが、一戸建てや長年住んだ実家では家財量が多く、仕分け・搬出・車両手配・貴重品探索まで大きな負担になります。まずは<span class="marker">荷物量、退去期限、探したい書類、買取できそうな品</span>を整理し、必要な部分だけ専門業者に相談する方法も検討しましょう。</div>
       </section>
+
+      <section id="faq" class="section faq-section"><p class="section-kicker">よくある質問</p><h2 class="section-title">三世代の家財が詰まったご実家も、まるごと。の遺品整理・生前整理でよくある質問</h2>
+        <details><summary>三世代の家財が詰まったご実家も、まるごと。で立会いなしの整理は相談できますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品の返却方法、支払い方法を事前に決めると、遠方のご家族でも進めやすくなります。</p></details>
+        <details><summary>見積もり前に何を共有すればよいですか？</summary><p>部屋数、荷物量、階数、エレベーターの有無、駐車位置、残したい品、探したい書類、退去期限を写真と一緒に共有してください。</p></details>
+        <details><summary>行政の粗大ごみと業者作業はどう分けますか？</summary><p>少量で期限に余裕があるものは自治体制度を確認し、大量家財、屋内搬出、供養、買取、貴重品探索が必要な場合は業者見積もりと比較します。</p></details>
+      </section>
+
 </main><aside><div class="side-card"><h2>福井県内リンク</h2><ul class="side-list"><li><a href="#福井・坂井">福井・坂井エリア</a></li><li><a href="#丹南">丹南エリア</a></li><li><a href="#嶺南">嶺南エリア</a></li></ul></div></aside></div>
 <script id="common-kita-before-after-script">
   (() => {
@@ -1387,6 +2054,879 @@
     });
   })();
 </script>
+<script id="pref-region-card-uniform-script-v1">
+(() => {
+  const labelsFor = (text) => {
+    if (/別荘|リゾート|軽井沢|白馬|蓼科/.test(text)) return ['別荘管理','鍵預かり','車両位置'];
+    if (/雪|積雪|凍結|山間|山沿い|寒冷/.test(text)) return ['冬季道路','坂道搬出','駐車位置'];
+    if (/農家|納屋|蔵|物置|郊外|戸建て|庭/.test(text)) return ['戸建て物置','庭・納屋','車両進入'];
+    if (/都市|中心|駅|マンション|集合住宅|区|退去/.test(text)) return ['退去期限','EV予約','共用部養生'];
+    if (/島|沿岸|海|離島/.test(text)) return ['遠方家族','搬出距離','車両進入'];
+    return ['搬出経路','駐車位置','見積もり写真'];
+  };
+  const cards = Array.from(document.querySelectorAll('.admin-card,.area-box,.ward-area,.card')).filter((card) => {
+    const links = card.querySelectorAll('.ward-links a,.area-tags a');
+    return links.length >= 3 && card.querySelector('h3');
+  });
+  cards.forEach((card, index) => {
+    if (card.dataset.prefRegionReady) return;
+    const links = card.querySelectorAll('.ward-links a,.area-tags a');
+    const h3 = card.querySelector('h3');
+    if (!h3 || !links.length) return;
+    card.dataset.prefRegionReady = '1';
+    card.classList.add('pref-region-card');
+    if (!card.id) card.id = 'pref-region-card-' + (index + 1);
+    if (!card.querySelector(':scope > .region-head')) {
+      const head = document.createElement('div');
+      head.className = 'region-head';
+      const count = document.createElement('span');
+      count.textContent = links.length + '市区町村';
+      h3.parentNode.insertBefore(head, h3);
+      head.appendChild(h3);
+      head.appendChild(count);
+    }
+    if (!card.querySelector(':scope > .region-checks')) {
+      const checks = document.createElement('div');
+      checks.className = 'region-checks';
+      labelsFor(card.textContent).forEach((label) => {
+        const item = document.createElement('span');
+        item.textContent = label;
+        checks.appendChild(item);
+      });
+      const linkBox = card.querySelector('.ward-links,.area-tags');
+      card.insertBefore(checks, linkBox || null);
+    }
+  });
+  const first = cards[0];
+  if (!first) return;
+  const section = first.closest('section');
+  if (!section || section.querySelector(':scope > .pref-region-summary')) return;
+  const summary = document.createElement('div');
+  summary.className = 'pref-region-summary';
+  cards.slice(0, 4).forEach((card) => {
+    const h = card.querySelector('.region-head h3,h3');
+    const count = card.querySelectorAll('.ward-links a,.area-tags a').length;
+    const a = document.createElement('a');
+    a.href = '#' + card.id;
+    a.innerHTML = '<b>' + (h ? h.textContent.trim() : '地域') + '</b><span>' + count + '件から探す</span>';
+    summary.appendChild(a);
+  });
+  const lead = section.querySelector('.lead');
+  if (lead && lead.nextSibling) lead.parentNode.insertBefore(summary, lead.nextSibling);
+  else section.insertBefore(summary, section.firstChild);
+})();
+</script>
+
+
+
+<script id="prefecture-region-readable-script">
+(function(){
+  const genericPatterns = [
+    /公式ページの地域区分に沿って/,
+    /地域区分に沿って/,
+    /作成済みの市町村ページへ移動できます/,
+    /統計はe-Stat/,
+    /公式確認が必要なの電話番号/
+  ];
+  const stripTitle = (text) => (text || '')
+    .replace(/エリアから探す/g,'')
+    .replace(/の市町村ページ一覧/g,'')
+    .replace(/から探す/g,'')
+    .replace(/\s+/g,' ')
+    .trim();
+  const linkNames = (card) => Array.from(card.querySelectorAll('.ward-links a,.area-tags a')).map(a => a.textContent.trim()).filter(Boolean);
+  const countLabel = (names) => names.length + (names.some(n => /区$/.test(n)) ? '区・市町村' : '市町村');
+  const tagsFor = (title, names, lead) => {
+    const text = [title, names.join('、'), lead].join(' ');
+    if (/札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本|区/.test(text)) return ['集合住宅','管理会社対応','退去期限'];
+    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) return ['海沿い住宅','遠方立会いなし','車両導線'];
+    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) return ['山間部住宅','冬季道路','物置・納屋'];
+    if (/北摂|北河内|阪神|尾張|三河|県央|中越|筑豊|筑後|央|都市|市/.test(text)) return ['戸建て・集合住宅','前面道路','大型家具'];
+    return ['搬出経路','駐車位置','写真報告'];
+  };
+  const leadFor = (title, names, oldLead) => {
+    if (oldLead && !genericPatterns.some((pattern) => pattern.test(oldLead)) && oldLead.length > 35) return oldLead;
+    const sample = names.slice(0, 3).join('、');
+    const text = [title, names.join('、')].join(' ');
+    if (/区|札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本/.test(text)) {
+      return `${sample}方面は、集合住宅、駅近物件、戸建てが混在します。退去期限、管理会社対応、エレベーター予約、共用部養生、駐車位置を先に確認します。`;
+    }
+    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) {
+      return `${sample}方面は、海沿い住宅、離島・半島部、遠方家族からの相談が多くなります。鍵預かり、写真報告、車両導線、候補日調整を確認します。`;
+    }
+    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) {
+      return `${sample}方面は、山間部の戸建て、空き家、物置・納屋を含む整理が多くなります。冬季道路、前面道路、車両進入、大型家具の搬出を確認します。`;
+    }
+    return `${sample}方面は、戸建て、集合住宅、郊外住宅が混在します。退去期限、前面道路、階段作業、物置・庭の有無を写真で共有すると見積もりが早くなります。`;
+  };
+  const candidates = Array.from(document.querySelectorAll('section,.area-box,.ward-area,.card')).filter((node) => {
+    if (node.dataset.prefRegionReadableReady) return false;
+    const links = node.querySelectorAll(':scope .ward-links a,:scope .area-tags a');
+    if (links.length < 3) return false;
+    const heading = node.querySelector(':scope h3,:scope h2,:scope strong');
+    if (!heading) return false;
+    if (node.closest('.common-kita-ba,.hero,.footer,.site-footer,.global-price-sim')) return false;
+    const childRegionCards = node.querySelectorAll(':scope .area-box .ward-links a,:scope .ward-area .ward-links a,:scope .card .ward-links a,:scope .area-box .area-tags a,:scope .ward-area .area-tags a,:scope .card .area-tags a');
+    if (node.matches('section') && childRegionCards.length >= 3) return false;
+    return true;
+  });
+  candidates.forEach((card, index) => {
+    card.dataset.prefRegionReadableReady = '1';
+    card.classList.add('pref-region-card');
+    if (!card.id) card.id = 'pref-region-readable-' + (index + 1);
+    const names = linkNames(card);
+    const heading = card.querySelector(':scope h3,:scope h2,:scope strong');
+    const title = stripTitle(heading ? heading.textContent : '地域');
+    if (!card.querySelector(':scope > .region-head')) {
+      const head = document.createElement('div');
+      head.className = 'region-head';
+      const h3 = document.createElement('h3');
+      h3.textContent = title || '地域';
+      const count = document.createElement('span');
+      count.textContent = countLabel(names);
+      head.appendChild(h3);
+      head.appendChild(count);
+      card.insertBefore(head, card.firstChild);
+    }
+    const leadNode = Array.from(card.querySelectorAll(':scope > p')).find(p => !p.classList.contains('section-kicker'));
+    const oldLead = leadNode ? leadNode.textContent.trim() : '';
+    const newLead = leadFor(title, names, oldLead);
+    if (leadNode) {
+      leadNode.classList.add('area-box-lead');
+      if (newLead !== oldLead) leadNode.textContent = newLead;
+    } else {
+      const p = document.createElement('p');
+      p.className = 'area-box-lead';
+      p.textContent = newLead;
+      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
+      card.insertBefore(p, linkBox || null);
+    }
+    if (!card.querySelector(':scope > .region-checks')) {
+      const checks = document.createElement('div');
+      checks.className = 'region-checks';
+      tagsFor(title, names, newLead).forEach((label) => {
+        const item = document.createElement('span');
+        item.textContent = label;
+        checks.appendChild(item);
+      });
+      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
+      card.insertBefore(checks, linkBox || null);
+    }
+  });
+  const grouped = candidates.filter(card => card.classList.contains('pref-region-card'));
+  if (!grouped.length) return;
+  const firstSection = grouped[0].closest('section');
+  if (!firstSection || firstSection.querySelector(':scope > .pref-region-summary')) return;
+  const summary = document.createElement('div');
+  summary.className = 'pref-region-summary';
+  grouped.slice(0, 4).forEach((card) => {
+    const h = card.querySelector(':scope .region-head h3');
+    const names = linkNames(card);
+    const a = document.createElement('a');
+    a.href = '#' + card.id;
+    a.innerHTML = '<b>' + (h ? h.textContent.trim() : '地域') + '</b><span>' + countLabel(names) + 'から探す</span>';
+    summary.appendChild(a);
+  });
+  const lead = firstSection.querySelector(':scope .lead');
+  if (lead && lead.nextSibling) lead.parentNode.insertBefore(summary, lead.nextSibling);
+  else firstSection.insertBefore(summary, firstSection.firstChild);
+})();
+</script>
+
+
+<script id="niigata-like-prefecture-data-script-v2">
+  (function(){
+    function classifyCard(card){
+      var t = card.textContent || '';
+      card.classList.remove('data-household');
+      if (/全国平均|全国空き家/.test(t)) card.classList.add('data-national');
+      else if (/人口/.test(t)) card.classList.add('data-population');
+      else if (/世帯人員|世帯規模|平均世帯/.test(t)) card.classList.add('data-household');
+      else if (/総住宅|住宅数/.test(t)) card.classList.add('data-housing');
+      else if (/空き家率|空き家数|空き家総数/.test(t)) card.classList.add('data-vacant');
+      else if (/その他空き家|放置空き家/.test(t)) card.classList.add('data-other');
+      else if (/二次的住宅|別荘|季節利用/.test(t)) card.classList.add('data-secondary');
+      else if (/65歳|高齢|高齢化/.test(t)) card.classList.add('data-aging');
+      else if (/共同住宅|マンション|11階建/.test(t)) card.classList.add('data-apartment');
+    }
+    function classifyBar(row){
+      var t = row.textContent || '';
+      var fills = row.querySelectorAll('.bar-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill,.kanto-national-fill,.pref-data-fill');
+      fills.forEach(function(fill){
+        if (/全国平均|全国空き家/.test(t)) fill.classList.add('national');
+        else if (/高齢|65歳/.test(t)) fill.classList.add('aging');
+        else if (/共同住宅|マンション|11階建/.test(t)) fill.classList.add('apartment');
+        else if (/その他空き家|放置空き家/.test(t)) fill.classList.add('other-vacant');
+        else if (/二次的住宅|別荘|季節利用/.test(t)) fill.classList.add('secondary-home');
+        else if (/空き家/.test(t)) fill.classList.add('total-vacant');
+      });
+    }
+    document.querySelectorAll('.pref-data-card,.kyushu-data-card,.cs-data-card,.tokai-data-card,.kanto-national-card').forEach(classifyCard);
+    document.querySelectorAll('.bar-row,.kanto-national-row,.pref-data-bar').forEach(classifyBar);
+  })();
+</script>
+
+<style id="prefecture-region-heading-orange-v2">
+  section:has(> .ward-links) > .section-title,
+  section:has(> .area-tags) > .section-title,
+  section:has(> p + .ward-links) > .section-title,
+  section:has(> p + .area-tags) > .section-title,
+  .pref-region-card > .section-title {
+    background:#fff7ef!important;
+    color:#2b2b2b!important;
+    border:1px solid #eadfd0!important;
+    border-left:7px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  section:has(> .ward-links) > .section-title::before,
+  section:has(> .area-tags) > .section-title::before,
+  section:has(> p + .ward-links) > .section-title::before,
+  section:has(> p + .area-tags) > .section-title::before,
+  .pref-region-card > .section-title::before {
+    content:"";
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin-right:9px;
+    background:#D05300;
+    border-radius:2px;
+    vertical-align:middle;
+  }
+  section:has(> .ward-links),
+  section:has(> .area-tags) {
+    background:#fff!important;
+  }
+</style>
+
+<style id="all-pref-impact-neutral-reset-v1">
+  html body section#pref-impact {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-left:0!important;
+    box-shadow:none!important;
+    padding:0!important;
+  }
+  html body section#pref-impact .section-title {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-left:0!important;
+    color:#2B2B2B!important;
+  }
+  html body section#pref-impact .lead {
+    background:transparent!important;
+    color:#414743!important;
+  }
+  html body section#pref-impact .marker {
+    background:none!important;
+    color:inherit!important;
+    font-weight:900!important;
+  }
+  html body section#pref-impact .card,
+  html body section#pref-impact .metric-card,
+  html body section#pref-impact .impact-card {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    border-top:1px solid #e5ded5!important;
+    box-shadow:none!important;
+  }
+  html body section#pref-impact .metric-label {
+    background:#f7f5f0!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    color:#3f433f!important;
+  }
+  html body section#pref-impact .stat-card b,
+  html body section#pref-impact .metric-card b,
+  html body section#pref-impact .impact-card b {
+    color:#2B2B2B!important;
+  }
+  html body section#pref-impact .metric-note,
+  html body section#pref-impact .impact-card p {
+    color:#555f59!important;
+  }
+  html body section#pref-impact .metric-sub {
+    background:#f7f5f0!important;
+    background-image:none!important;
+    border:1px solid #e5ded5!important;
+    color:#555f59!important;
+  }
+</style>
+<script id="all-pref-impact-neutral-reset-script-v1">
+(function(){
+  function resetImpactColors(){
+    var root = document.getElementById('pref-impact');
+    if (!root) return;
+    root.style.setProperty('background', '#fff', 'important');
+    root.style.setProperty('background-image', 'none', 'important');
+    root.style.setProperty('border-color', '#e5ded5', 'important');
+    root.style.setProperty('box-shadow', 'none', 'important');
+    root.querySelectorAll('.section-title,.card,.metric-card,.impact-card,.metric-label,.metric-sub').forEach(function(el){
+      el.style.setProperty('background-image', 'none', 'important');
+      if (el.classList.contains('metric-label') || el.classList.contains('metric-sub')) {
+        el.style.setProperty('background-color', '#f7f5f0', 'important');
+      } else {
+        el.style.setProperty('background-color', '#fff', 'important');
+      }
+      el.style.setProperty('border-color', '#e5ded5', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+    });
+    root.querySelectorAll('b').forEach(function(el){
+      el.style.setProperty('color', '#2B2B2B', 'important');
+    });
+    root.querySelectorAll('p,.lead,.metric-note,.metric-sub').forEach(function(el){
+      el.style.setProperty('color', '#555f59', 'important');
+    });
+    root.querySelectorAll('.marker').forEach(function(el){
+      el.style.setProperty('background', 'none', 'important');
+      el.style.setProperty('color', 'inherit', 'important');
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resetImpactColors);
+  } else {
+    resetImpactColors();
+  }
+  setTimeout(resetImpactColors, 250);
+  setTimeout(resetImpactColors, 900);
+})();
+</script>
+
+
+
+
+
+
+<style id="all-pref-white-orange-no-green-v2">
+  html body {
+    --green:#D05300!important;
+  }
+  html body .quick-list li::before,
+  html body .hero-panel li::before,
+  html body .risk-list li::before,
+  html body .check-list li::before {
+    background:#D05300!important;
+  }
+  html body .common-ba-label.after,
+  html body .ba-label.after,
+  html body .common-ba-points span,
+  html body .common-ba-guide span,
+  html body .region-checks span,
+  html body .pref-region-card .region-checks span,
+  html body .area-tags span,
+  html body .area-tags a,
+  html body .tag.green,
+  html body .tag.warm,
+  html body .badge.green,
+  html body .badge.warm,
+  html body .data-risk,
+  html body .data-risk span,
+  html body .data-risk b {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#D05300!important;
+    color:#D05300!important;
+  }
+  html body .bar-fill.green,
+  html body .bar-fill.warm,
+  html body .pref-data-fill.green,
+  html body .kyushu-bar-fill.green,
+  html body .cs-bar-fill.green,
+  html body .tokai-bar-fill.green,
+  html body .kanto-national-fill.green,
+  html body .bar-fill.risk,
+  html body .bar-fill.other-vacant {
+    background:#fff!important;
+    background-image:none!important;
+    border:1px solid #D05300!important;
+    box-shadow:inset 0 0 0 2px #D05300!important;
+  }
+  html body .pref-data-card.data-risk,
+  html body .kyushu-data-card.data-risk,
+  html body .cs-data-card.data-risk,
+  html body .tokai-data-card.data-risk,
+  html body .kanto-national-card.data-risk {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#D05300!important;
+  }
+  html body .pref-data-card.data-risk b,
+  html body .kyushu-data-card.data-risk b,
+  html body .cs-data-card.data-risk b,
+  html body .tokai-data-card.data-risk b,
+  html body .kanto-national-card.data-risk b {
+    color:#D05300!important;
+  }
+</style>
+<script id="all-pref-white-orange-no-green-script-v2">
+(function(){
+  function whiteOrangeNoGreen(){
+    document.documentElement.style.setProperty('--green', '#D05300', 'important');
+    if (document.body) document.body.style.setProperty('--green', '#D05300', 'important');
+    document.querySelectorAll('.common-ba-label.after,.ba-label.after,.common-ba-points span,.common-ba-guide span,.region-checks span,.area-tags span,.area-tags a,.tag.green,.tag.warm,.badge.green,.badge.warm,.data-risk,.data-risk span,.data-risk b').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('border-color', '#D05300', 'important');
+      el.style.setProperty('color', '#D05300', 'important');
+    });
+    document.querySelectorAll('.bar-fill.green,.bar-fill.warm,.pref-data-fill.green,.kyushu-bar-fill.green,.cs-bar-fill.green,.tokai-bar-fill.green,.kanto-national-fill.green,.bar-fill.risk,.bar-fill.other-vacant').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('border', '1px solid #D05300', 'important');
+      el.style.setProperty('box-shadow', 'inset 0 0 0 2px #D05300', 'important');
+    });
+    document.querySelectorAll('*').forEach(function(el){
+      var cs = getComputedStyle(el);
+      var pack = cs.backgroundColor + ' ' + cs.backgroundImage + ' ' + cs.color + ' ' + cs.borderColor;
+      if (/40,\s*116,\s*90|52,\s*122,\s*66|238,\s*248,\s*242|207,\s*232,\s*216|131,\s*199,\s*170|#28745a|#347a42|#eef8f2|#cfe8d8|#83c7aa/i.test(pack)) {
+        if (cs.backgroundColor !== 'rgba(0, 0, 0, 0)') {
+          el.style.setProperty('background-color', '#fff', 'important');
+        }
+        el.style.setProperty('background-image', 'none', 'important');
+        el.style.setProperty('border-color', '#D05300', 'important');
+        el.style.setProperty('color', '#D05300', 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', whiteOrangeNoGreen);
+  } else {
+    whiteOrangeNoGreen();
+  }
+  setTimeout(whiteOrangeNoGreen, 250);
+  setTimeout(whiteOrangeNoGreen, 900);
+})();
+</script>
+
+
+<style id="all-pref-section-title-white-orange-v1">
+  html body .section-title,
+  html body section .section-title,
+  html body .pref-official-stats .section-title,
+  html body .common-kita-ba .section-title,
+  html body .area-keyword-guide .section-title,
+  html body .engagement-refresh .section-title,
+  html body body.structure-layout .section-title {
+    background:#fff!important;
+    background-image:none!important;
+    color:#D05300!important;
+    border:1px solid #eadfd0!important;
+    border-left:6px solid #D05300!important;
+    box-shadow:none!important;
+  }
+  html body .section-title::before,
+  html body section .section-title::before,
+  html body .common-kita-ba .section-title::before {
+    background:#D05300!important;
+  }
+  html body .section-kicker {
+    background:#fff!important;
+    background-image:none!important;
+    border-color:#eadfd0!important;
+    color:#D05300!important;
+  }
+  html body .chart-box h3,
+  html body .compare-card h3,
+  html body .common-ba-card h3,
+  html body .case h3 {
+    background:#fff!important;
+    background-image:none!important;
+    color:#D05300!important;
+    border-color:#eadfd0!important;
+  }
+</style>
+<script id="all-pref-section-title-white-orange-script-v1">
+(function(){
+  function resetSectionTitles(){
+    document.querySelectorAll('.section-title,.section-kicker,.chart-box h3,.compare-card h3,.common-ba-card h3,.case h3').forEach(function(el){
+      el.style.setProperty('background', '#fff', 'important');
+      el.style.setProperty('background-image', 'none', 'important');
+      el.style.setProperty('color', '#D05300', 'important');
+      el.style.setProperty('border-color', '#eadfd0', 'important');
+      el.style.setProperty('box-shadow', 'none', 'important');
+      if (el.classList.contains('section-title')) {
+        el.style.setProperty('border-left', '6px solid #D05300', 'important');
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resetSectionTitles);
+  } else {
+    resetSectionTitles();
+  }
+  setTimeout(resetSectionTitles, 250);
+  setTimeout(resetSectionTitles, 900);
+})();
+</script>
+
+<style id="global-brand-color-uniform-v2">
+  html body .brand,
+  html body .brand:visited,
+  html body .brand:hover {
+    color:#2B2B2B!important;
+    text-decoration:none!important;
+  }
+  html body .brand-word {
+    color:#2B2B2B!important;
+  }
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no,
+  html body .brand-main .brand-area-name,
+  html body.structure-layout .brand-area,
+  html body.structure-layout .brand-area-name,
+  html body.structure-layout .brand-no,
+  html body.structure-layout .brand-main .brand-area-name {
+    color:#2B2B2B!important;
+  }
+  html body .brand-main,
+  html body.structure-layout .brand-main {
+    color:#D05300!important;
+  }
+  html body .brand-symbol,
+  html body.structure-layout .brand-symbol {
+    background:#D05300!important;
+    color:#fff!important;
+  }
+</style>
+<style id="global-readable-palette-reset-v1">
+  html body {
+    background:#F6F2EC!important;
+    color:#25211D!important;
+  }
+  html body .topbar,
+  html body header,
+  html body .site-header {
+    background:#FFFDF9!important;
+    border-color:#E6DDD4!important;
+  }
+  html body .brand,
+  html body .brand-word,
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no {
+    color:#25211D!important;
+  }
+  html body .brand-main {
+    color:#C65312!important;
+  }
+  html body .global-visual-proof {
+    width:min(1160px,calc(100% - 28px))!important;
+    margin:32px auto!important;
+    padding:28px!important;
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    border-radius:0!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .global-visual-proof-inner {
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 auto!important;
+  }
+  html body .global-visual-proof-head {
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+    max-width:940px!important;
+    margin:0 auto 18px!important;
+    text-align:center!important;
+    align-items:center!important;
+  }
+  html body .global-visual-proof-head h2 {
+    margin:0 auto!important;
+    max-width:860px!important;
+    color:#25211D!important;
+    text-align:center!important;
+  }
+  html body .global-visual-proof-head p {
+    margin:0 auto!important;
+    max-width:900px!important;
+    color:#5C544B!important;
+    text-align:center!important;
+  }
+  html body .global-visual-grid {
+    max-width:1100px!important;
+    margin:0 auto!important;
+  }
+  html body .section,
+  html body .card,
+  html body .area-box,
+  html body .pref-region-card,
+  html body .common-ba-card,
+  html body .flow-item,
+  html body .faq-item,
+  html body .price-card,
+  html body .service-card,
+  html body .compare-card,
+  html body .chart-box,
+  html body .pref-chart-box,
+  html body .pref-data-card,
+  html body .guide-panel>div,
+  html body .popular-area,
+  html body .price-teaser,
+  html body .intent-card,
+  html body .remaining-hand-card,
+  html body .admin-card,
+  html body .global-visual-card,
+  html body .global-strategy-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border-color:#E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .section-title,
+  html body h2.section-title {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    color:#25211D!important;
+    border:1px solid #E5DDD3!important;
+    border-left:7px solid #C65312!important;
+    box-shadow:none!important;
+  }
+  html body h1,
+  html body h2,
+  html body h3,
+  html body .card strong {
+    color:#25211D!important;
+  }
+  html body p,
+  html body li,
+  html body .lead,
+  html body .area-box-lead,
+  html body .global-visual-body span,
+  html body .global-strategy-card span,
+  html body .muted {
+    color:#5C544B!important;
+  }
+  html body a,
+  html body nav a {
+    color:#9B3F0D!important;
+  }
+  html body .btn,
+  html body .button,
+  html body .cta,
+  html body .hero a:first-of-type,
+  html body .call {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .btn.secondary,
+  html body .button.secondary,
+  html body .hero a:not(:first-of-type),
+  html body .guide-actions a,
+  html body .popular-links a,
+  html body .ward-links a,
+  html body .area-tags a,
+  html body .pref-region-summary a,
+  html body .price-mini,
+  html body .intent-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:none!important;
+  }
+  html body .guide-actions a:hover,
+  html body .popular-links a:hover,
+  html body .ward-links a:hover,
+  html body .area-tags a:hover,
+  html body .pref-region-summary a:hover,
+  html body .price-mini:hover,
+  html body .intent-card:hover {
+    background:#FFF4E8!important;
+    border-color:#EBCFB7!important;
+    color:#8A3D11!important;
+    text-decoration:none!important;
+  }
+  html body .metric-label,
+  html body .region-head span,
+  html body .region-checks span,
+  html body .area-tags span {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:26px!important;
+    padding:4px 9px!important;
+    border-radius:999px!important;
+    background:#F1EEE8!important;
+    background-image:none!important;
+    border:1px solid #DDD4C9!important;
+    color:#4D4740!important;
+    font-size:12px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+    box-shadow:none!important;
+  }
+  html body .common-ba-label.after,
+  html body .common-ba-points span,
+  html body .global-visual-label {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .common-ba-label:not(.after) {
+    background:#3A342E!important;
+    color:#fff!important;
+  }
+  html body .bar-track,
+  html body .pref-bar-track,
+  html body .pref-data-track {
+    background:#ECE6DE!important;
+    box-shadow:inset 0 0 0 1px rgba(55,45,35,.05)!important;
+  }
+  html body .bar-fill,
+  html body .pref-bar-fill,
+  html body .pref-data-fill,
+  html body .kanto-national-fill,
+  html body .kyushu-bar-fill,
+  html body .cs-bar-fill,
+  html body .tokai-bar-fill {
+    background:#4F6F8F!important;
+    background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
+  }
+  html body .bar-fill.warm {
+    background:#D68A3A!important;
+    background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
+  }
+  html body .bar-fill.vacancy,
+  html body .bar-fill.total-vacant,
+  html body .pref-bar-fill.vacancy,
+  html body .pref-bar-fill.total-vacant {
+    background:#C65312!important;
+    background-image:linear-gradient(90deg,#C65312,#E99A57)!important;
+  }
+  html body .bar-fill.national,
+  html body .pref-bar-fill.national {
+    background:#807970!important;
+    background-image:linear-gradient(90deg,#807970,#B8B0A7)!important;
+  }
+  html body .bar-fill.aging,
+  html body .pref-bar-fill.aging {
+    background:#7756B5!important;
+    background-image:linear-gradient(90deg,#7756B5,#B59BE3)!important;
+  }
+  html body .bar-fill.blue,
+  html body .bar-fill.apartment,
+  html body .bar-fill.secondary-home,
+  html body .pref-bar-fill.apartment,
+  html body .pref-bar-fill.secondary,
+  html body .pref-data-fill.blue {
+    background:#2F6FA3!important;
+    background-image:linear-gradient(90deg,#2F6FA3,#7CB7DF)!important;
+  }
+  html body .bar-fill.other,
+  html body .bar-fill.other-vacant,
+  html body .bar-fill.risk,
+  html body .pref-bar-fill.other {
+    background:#A76A2D!important;
+    background-image:linear-gradient(90deg,#A76A2D,#D9A66B)!important;
+  }
+  html body .pref-data-card:nth-child(1) {border-top:4px solid #6C747D!important}
+  html body .pref-data-card:nth-child(2) {border-top:4px solid #8B7356!important}
+  html body .pref-data-card:nth-child(3),
+  html body .pref-data-card:nth-child(4) {border-top:4px solid #C65312!important}
+  html body .pref-data-card:nth-child(5) {border-top:4px solid #A76A2D!important}
+  html body .pref-data-card:nth-child(6) {border-top:4px solid #2F6FA3!important}
+  html body .pref-data-card:nth-child(7) {border-top:4px solid #7756B5!important}
+  html body .pref-data-card:nth-child(8) {border-top:4px solid #3E7892!important}
+  html body .pref-data-card:nth-child(1) b {color:#5D6670!important}
+  html body .pref-data-card:nth-child(2) b {color:#745C3F!important}
+  html body .pref-data-card:nth-child(3) b,
+  html body .pref-data-card:nth-child(4) b {color:#A94812!important}
+  html body .pref-data-card:nth-child(5) b {color:#8D5D2F!important}
+  html body .pref-data-card:nth-child(6) b {color:#2F6FA3!important}
+  html body .pref-data-card:nth-child(7) b {color:#6D4FA8!important}
+  html body .pref-data-card:nth-child(8) b {color:#3E7892!important}
+  html body table th {
+    background:#F4EEE6!important;
+    color:#25211D!important;
+  }
+  html body table td {
+    background:#FFFDF9!important;
+    color:#25211D!important;
+  }
+  html body .notice,
+  html body .check,
+  html body .source-note {
+    background:#FFF6EA!important;
+    border-color:#EAD8C1!important;
+    color:#4D4740!important;
+  }
+  html body .marker {
+    background:linear-gradient(transparent 62%,rgba(246,186,97,.38) 62%)!important;
+    color:inherit!important;
+  }
+  @media(max-width:900px){
+    html body .global-visual-proof {
+      padding:22px 16px!important;
+    }
+    html body .global-visual-proof-head {
+      text-align:left!important;
+    }
+    html body .global-visual-proof-head h2,
+    html body .global-visual-proof-head p {
+      text-align:left!important;
+    }
+  }
+</style>
+<script id="global-readable-palette-reset-script-v1">
+(function(){
+  function applyGlobalReadablePalette(){
+    document.querySelectorAll('.global-visual-proof').forEach(function(el){
+      el.style.setProperty('width','min(1160px,calc(100% - 28px))','important');
+      el.style.setProperty('margin','32px auto','important');
+      el.style.setProperty('padding','28px','important');
+      el.style.setProperty('background','#FFFDF9','important');
+      el.style.setProperty('border','1px solid #E5DDD3','important');
+      el.style.setProperty('box-shadow','0 14px 34px rgba(45,36,28,.06)','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head').forEach(function(el){
+      el.style.setProperty('grid-template-columns','1fr','important');
+      el.style.setProperty('max-width','940px','important');
+      el.style.setProperty('margin','0 auto 18px','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head h2,.global-visual-proof-head p').forEach(function(el){
+      el.style.setProperty('margin-left','auto','important');
+      el.style.setProperty('margin-right','auto','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.metric-label,.region-head span,.region-checks span,.area-tags span').forEach(function(el){
+      el.style.setProperty('background','#F1EEE8','important');
+      el.style.setProperty('background-image','none','important');
+      el.style.setProperty('border','1px solid #DDD4C9','important');
+      el.style.setProperty('color','#4D4740','important');
+      el.style.setProperty('border-radius','999px','important');
+      el.style.setProperty('box-shadow','none','important');
+    });
+    document.querySelectorAll('.bar-fill,.pref-bar-fill,.pref-data-fill,.kanto-national-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill').forEach(function(el){
+      var color = ['#4F6F8F','#8EACC6'];
+      if (el.classList.contains('national')) color = ['#807970','#B8B0A7'];
+      else if (el.classList.contains('aging') || el.classList.contains('purple')) color = ['#7756B5','#B59BE3'];
+      else if (el.classList.contains('apartment') || el.classList.contains('blue') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) color = ['#2F6FA3','#7CB7DF'];
+      else if (el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) color = ['#A76A2D','#D9A66B'];
+      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#C65312','#E99A57'];
+      else if (el.classList.contains('warm')) color = ['#D68A3A','#EEC07E'];
+      el.style.setProperty('background', color[0], 'important');
+      el.style.setProperty('background-image', 'linear-gradient(90deg,' + color[0] + ',' + color[1] + ')', 'important');
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyGlobalReadablePalette);
+  else applyGlobalReadablePalette();
+  setTimeout(applyGlobalReadablePalette, 900);
+  setTimeout(applyGlobalReadablePalette, 1800);
+})();
+</script>
 </body>
 </html>
+
+
 

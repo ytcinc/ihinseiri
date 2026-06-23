@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
-    :root { --orange:#e9651a; --orange-dark:#bf4b08; --green:#28745a; --blue:#286f94; --ink:#2e332f; --muted:#4f5551; --line:#e4ded6; --bg:#f5f2ee; --paper:#fff; --soft:#fbf8f3; --notice:#fff7d7; --shadow:0 12px 34px rgba(34,28,22,.08); }
+    :root { --orange:#e9651a; --orange-dark:#bf4b08; --green:#d05300; --blue:#286f94; --ink:#2e332f; --muted:#4f5551; --line:#e4ded6; --bg:#f5f2ee; --paper:#fff; --soft:#fbf8f3; --notice:#fff7d7; --shadow:0 12px 34px rgba(34,28,22,.08); }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; color:var(--ink); background:var(--bg); font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif; font-size:16px; font-weight:500; line-height:2; letter-spacing:0; }
@@ -295,7 +295,7 @@
     .ba-photo { position:relative; overflow:hidden; margin:0; border:1px solid var(--line); background:#f3f0ea; aspect-ratio:1/1; }
     .ba-photo img { display:block; width:100%; height:100%; object-fit:cover; }
     .ba-label { position:absolute; left:10px; top:10px; padding:2px 9px; background:rgba(45,45,45,.9); color:#fff; font-size:13px; font-weight:900; }
-    .ba-label.after { background:rgba(40,116,90,.94); }
+    .ba-label.after { background:rgba(208,83,0,.94); }
     .faq { display:grid; gap:10px; margin:18px 0; } .faq details { border:1px solid var(--line); background:#fff; padding:12px 14px; } .faq summary { cursor:pointer; font-weight:900; }
     .notice { border:1px solid #d9c78d; background:var(--notice); padding:16px 18px; margin:18px 0; }
     .cta-band { margin-top:38px; background:#2d2d2d; color:#fff; padding:24px; display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; } .cta-band h2 { margin:0 0 6px; font-size:23px; line-height:1.4; } .cta-band p { margin:0; color:rgba(255,255,255,.82); }
@@ -544,7 +544,7 @@
       display: inline-grid;
       place-items: center;
       border-radius: 50%;
-      background: #28745a;
+      background: #d05300;
       color: #fff;
       box-shadow: none;
       font-size: 14px;
@@ -691,12 +691,12 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-top-score-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1d5f48;
+    color: #9f3e00;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -788,7 +788,7 @@
     border: 1px solid #e2e7df;
     color: #26362d;
     text-decoration: none;
-    box-shadow: 0 14px 30px rgba(31,49,38,.08);
+    box-shadow: 0 14px 30px rgba(34,28,22,.08);
   }
   .global-visual-media {
     position: relative;
@@ -815,7 +815,7 @@
     z-index: 2;
     padding: 5px 10px;
     border-radius: 999px;
-    background: rgba(38,54,45,.86);
+    background: rgba(126,50,28,.86);
     color: #fff;
     font-size: 13px;
     font-weight: 900;
@@ -826,7 +826,7 @@
   .global-visual-body b {
     display: block;
     margin-bottom: 7px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
     line-height: 1.45;
   }
@@ -839,12 +839,12 @@
   .global-strategy-strip {
     padding: 26px;
     border-radius: 24px;
-    background: linear-gradient(135deg, #f2f8f0 0%, #fff 58%, #fff7e8 100%);
-    border: 1px solid #dfe9dc;
+    background: linear-gradient(135deg, #fff7ec 0%, #fff 58%, #fff7e8 100%);
+    border: 1px solid #ead8c1;
   }
   .global-strategy-head h2 {
     margin: 0 0 10px;
-    color: #1f3a2d;
+    color: #2b2b2b;
     font-size: clamp(24px, 3vw, 34px);
     line-height: 1.35;
   }
@@ -863,13 +863,13 @@
     padding: 18px;
     border-radius: 18px;
     background: rgba(255,255,255,.92);
-    border: 1px solid #dfe8dc;
-    box-shadow: 0 12px 24px rgba(38,56,44,.07);
+    border: 1px solid #ead8c1;
+    box-shadow: 0 12px 24px rgba(208,83,0,.07);
   }
   .global-strategy-card b {
     display: block;
     margin-bottom: 8px;
-    color: #1f6f52;
+    color: #9f3e00;
     font-size: 17px;
   }
   .global-strategy-card span {
@@ -983,36 +983,198 @@
   }</style>
 
 
-<style id="area-keyword-orange-unify">
-  .area-keyword-details,
-  .search-intent .area-keyword-details{
-    background:#fffdf8!important;
-    border:1px solid #eadfd0!important;
-    box-shadow:0 10px 24px rgba(34,28,22,.055)!important;
-    padding:12px!important;
-  }
-  .area-keyword-details details,
-  .faq.area-keyword-details details,
-  .search-intent .area-keyword-details details{
+
+<style id="west-tokai-city-kita-quality-hand-v1">
+  body.west-tokai-city-quality{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP",Meiryo,sans-serif!important;background:#f7f5f0!important;color:#2f312d!important;letter-spacing:0!important}
+  body.west-tokai-city-quality .layout,body.west-tokai-city-quality .wrap{width:min(1120px,calc(100% - 32px))!important;margin-inline:auto!important}
+  body.west-tokai-city-quality p,body.west-tokai-city-quality li{font-size:18px!important;line-height:1.95!important;color:#414743!important}
+  body.west-tokai-city-quality .hero{background:linear-gradient(90deg,rgba(35,48,42,.92),rgba(44,61,54,.72)),url("/assets/cv-hero-staff-photo.png?v=1") center/cover no-repeat!important;color:#fff!important;padding:54px 0 58px!important}
+  body.west-tokai-city-quality .hero-inner{width:min(1120px,calc(100% - 32px))!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr)!important;gap:28px!important;align-items:center!important}
+  body.west-tokai-city-quality .hero h1{color:#fff!important;font-size:clamp(36px,5vw,56px)!important;line-height:1.22!important;font-weight:900!important;letter-spacing:0!important;text-shadow:0 2px 14px rgba(0,0,0,.28)!important}
+  body.west-tokai-city-quality .hero .hero-lead,body.west-tokai-city-quality .hero p{color:rgba(255,255,255,.95)!important;font-size:18px!important;line-height:1.95!important;font-weight:700!important}
+  body.west-tokai-city-quality .hero-panel{background:rgba(255,255,255,.97)!important;border:1px solid rgba(255,255,255,.72)!important;border-radius:8px!important;box-shadow:0 18px 42px rgba(0,0,0,.18)!important;padding:22px!important}
+  body.west-tokai-city-quality .hero-panel h2{margin:0 0 12px!important;color:#2f312d!important;font-size:22px!important;font-weight:900!important;line-height:1.45!important}
+  body.west-tokai-city-quality .hero-panel li{font-size:15px!important;line-height:1.75!important}
+  body.west-tokai-city-quality .btn,body.west-tokai-city-quality .hero-actions a,body.west-tokai-city-quality .card-link{min-height:48px!important;display:inline-grid!important;place-items:center!important;padding:0 18px!important;border-radius:6px!important;font-size:15px!important;font-weight:900!important;text-decoration:none!important}
+  body.west-tokai-city-quality .btn.primary,body.west-tokai-city-quality .hero-actions .primary{background:#d05300!important;color:#fff!important;border:1px solid #d05300!important}
+  body.west-tokai-city-quality .btn.secondary,body.west-tokai-city-quality .btn.ghost{background:#fff!important;color:#8c3d00!important;border:1px solid #eadfd0!important}
+  body.west-tokai-city-quality .west-tokai-first-check{width:min(1120px,calc(100% - 32px))!important;margin:-28px auto 24px!important;position:relative!important;z-index:4!important;background:#fff!important;border:1px solid #eadfd0!important;border-left:6px solid #d05300!important;border-radius:8px!important;box-shadow:0 14px 32px rgba(34,28,22,.09)!important;padding:22px!important}
+  body.west-tokai-city-quality .west-tokai-first-check h2{margin:0 0 6px!important;color:#2f312d!important;font-size:24px!important;font-weight:900!important;line-height:1.45!important}
+  body.west-tokai-city-quality .west-tokai-first-check p{margin:0 0 14px!important;color:#555f59!important;font-size:16px!important;line-height:1.75!important;font-weight:700!important}
+  body.west-tokai-city-quality .west-tokai-first-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
+  body.west-tokai-city-quality .west-tokai-first-grid a{display:grid!important;align-content:center!important;min-height:76px!important;padding:14px!important;border:1px solid #eadfd0!important;border-top:5px solid var(--wt-card,#d05300)!important;border-radius:8px!important;background:linear-gradient(180deg,#fff 0%,var(--wt-bg,#fff8ef) 100%)!important;color:#2f312d!important;text-decoration:none!important}
+  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(1){--wt-card:#d05300;--wt-bg:#fff3e8}
+  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(2){--wt-card:#2f6f63;--wt-bg:#f1faf5}
+  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(3){--wt-card:#4378a8;--wt-bg:#f1f7fb}
+  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(4){--wt-card:#9a4f76;--wt-bg:#fff5f8}
+  body.west-tokai-city-quality .west-tokai-first-grid b{font-size:16px!important;line-height:1.45!important;font-weight:900!important;color:#2f312d!important}
+  body.west-tokai-city-quality .west-tokai-first-grid span{margin-top:4px!important;font-size:13px!important;line-height:1.55!important;font-weight:700!important;color:#555f59!important}
+  body.west-tokai-city-quality main>section,body.west-tokai-city-quality .section,body.west-tokai-city-quality .toc,body.west-tokai-city-quality .area-keyword-guide,body.west-tokai-city-quality .common-kita-ba{background:#fff!important;border:1px solid #eadfd0!important;border-radius:8px!important;box-shadow:0 12px 28px rgba(34,28,22,.06)!important;padding:28px!important;margin-top:24px!important}
+  body.west-tokai-city-quality .section-title,body.west-tokai-city-quality section>h2,body.west-tokai-city-quality .toc h2{margin:0 0 18px!important;padding:0 0 12px!important;border:0!important;border-bottom:3px solid #eadfc9!important;background:transparent!important;color:#2b2b2b!important;font-size:24px!important;line-height:1.45!important;font-weight:900!important}
+  body.west-tokai-city-quality .section-title::before,body.west-tokai-city-quality .toc h2::before{content:""!important;display:inline-block!important;width:12px!important;height:12px!important;margin-right:9px!important;background:#d05300!important;border-radius:2px!important;vertical-align:middle!important}
+  body.west-tokai-city-quality .section-kicker{display:inline-grid!important;place-items:center!important;min-height:28px!important;margin:0 0 8px!important;padding:0 10px!important;border-radius:999px!important;background:#fff1e6!important;color:#8c3d00!important;font-size:13px!important;font-weight:900!important}
+  body.west-tokai-city-quality .toc ol{margin:0!important;padding:0!important;list-style:none!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  body.west-tokai-city-quality .toc li{margin:0!important;font-size:16px!important;line-height:1.5!important}
+  body.west-tokai-city-quality .toc a,body.west-tokai-city-quality .ward-links a,body.west-tokai-city-quality .pref-links a{display:grid!important;place-items:center!important;min-height:40px!important;padding:8px 12px!important;border:1px solid #e7dcc5!important;border-radius:6px!important;background:#fffaf4!important;color:#2f312d!important;font-size:15px!important;font-weight:900!important;line-height:1.35!important;text-align:center!important;text-decoration:none!important}
+  body.west-tokai-city-quality .toc a:hover,body.west-tokai-city-quality .ward-links a:hover{background:#fff1e6!important;border-color:#d05300!important;color:#8c3d00!important}
+  body.west-tokai-city-quality .ward-links{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(108px,1fr))!important;gap:8px!important}
+  body.west-tokai-city-quality .card,body.west-tokai-city-quality .admin-card,body.west-tokai-city-quality .checkitem,body.west-tokai-city-quality .stat,body.west-tokai-city-quality .flow-item,body.west-tokai-city-quality .area-box{background:#fff!important;border:1px solid #eadfd0!important;border-radius:8px!important;box-shadow:0 8px 20px rgba(34,28,22,.045)!important;padding:18px!important}
+  body.west-tokai-city-quality table{width:100%!important;border-collapse:collapse!important;background:#fff!important;font-size:16px!important;line-height:1.72!important}
+  body.west-tokai-city-quality th,body.west-tokai-city-quality td{border:1px solid #ddd7d0!important;padding:14px!important;text-align:left!important;vertical-align:top!important;font-size:16px!important;line-height:1.72!important}
+  body.west-tokai-city-quality th{background:#f1eee8!important;color:#2f312d!important;font-weight:900!important}
+  body.west-tokai-city-quality .marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%)!important;font-weight:900!important}
+  @media(max-width:900px){body.west-tokai-city-quality .hero-inner{display:block!important}body.west-tokai-city-quality .hero-panel{margin-top:18px!important}body.west-tokai-city-quality .toc ol,body.west-tokai-city-quality .west-tokai-first-grid{grid-template-columns:1fr!important}}
+  @media(max-width:560px){body.west-tokai-city-quality p,body.west-tokai-city-quality li{font-size:16px!important}body.west-tokai-city-quality main>section,body.west-tokai-city-quality .section,body.west-tokai-city-quality .toc,body.west-tokai-city-quality .area-keyword-guide,body.west-tokai-city-quality .common-kita-ba{padding:20px!important}body.west-tokai-city-quality .section-title,body.west-tokai-city-quality section>h2,body.west-tokai-city-quality .toc h2{font-size:21px!important}body.west-tokai-city-quality .hero h1{font-size:30px!important}}
+</style>
+
+
+<style id="kodokushi-cost-neutral-cost-colors-v1">
+  #kodokushi-cost.kodokushi-cost {
     background:#fff!important;
-    border:1px solid #ead8bf!important;
+    border:1px solid #eadfd0!important;
     border-left:6px solid #d05300!important;
-    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
-    margin:10px 0!important;
+    border-radius:8px!important;
+    box-shadow:0 12px 28px rgba(34,28,22,.06)!important;
   }
-  .area-keyword-details summary,
-  .faq.area-keyword-details summary,
-  .search-intent .area-keyword-details summary{
-    color:#d05300!important;
+  #kodokushi-cost.kodokushi-cost .section-title {
+    color:#2b2b2b!important;
+    border-bottom-color:#eadfc9!important;
   }
-  .area-keyword-details details[open],
-  .faq.area-keyword-details details[open]{
-    background:#fffaf4!important;
+  #kodokushi-cost.kodokushi-cost .stats {
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:12px!important;
   }
-  .search-intent,
-  section:has(.area-keyword-details){
-    background:#fffdf8!important;
-    border-color:#eadfd0!important;
+  #kodokushi-cost.kodokushi-cost .stat {
+    background:#fff!important;
+    border:1px solid #eadfd0!important;
+    border-top:5px solid #d05300!important;
+    border-radius:8px!important;
+    box-shadow:0 8px 20px rgba(34,28,22,.045)!important;
+    padding:16px!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat:nth-child(1) {
+    border-top-color:#e9812f!important;
+    background:#fff6ed!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat:nth-child(2) {
+    border-top-color:#9a4f76!important;
+    background:#fff5f8!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat:nth-child(3) {
+    border-top-color:#7a1e1e!important;
+    background:#fff4f2!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat span {
+    color:#555f59!important;
+    font-size:14px!important;
+    font-weight:900!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat strong {
+    display:block!important;
+    margin-top:5px!important;
+    color:#8c3d00!important;
+    font-size:26px!important;
+    line-height:1.2!important;
+    font-weight:900!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat:nth-child(2) strong {
+    color:#8a3752!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat:nth-child(3) strong {
+    color:#7a1e1e!important;
+  }
+  #kodokushi-cost.kodokushi-cost .stat small {
+    display:block!important;
+    margin-top:6px!important;
+    color:#555f59!important;
+    font-size:13px!important;
+    line-height:1.55!important;
+    font-weight:700!important;
+  }
+  #kodokushi-cost.kodokushi-cost .bar-track {
+    background:#f1ebe3!important;
+    border-radius:999px!important;
+    overflow:hidden!important;
+  }
+  #kodokushi-cost.kodokushi-cost .bar-fill {
+    background:linear-gradient(90deg,#f3a35c,#e9812f)!important;
+  }
+  #kodokushi-cost.kodokushi-cost .bar-fill.accent {
+    background:linear-gradient(90deg,#c37a99,#9a4f76)!important;
+  }
+  #kodokushi-cost.kodokushi-cost .bar-fill.warm,
+  #kodokushi-cost.kodokushi-cost .bar-fill.total-cost {
+    background:linear-gradient(90deg,#cf5d4e,#7a1e1e)!important;
+  }
+  #kodokushi-cost.kodokushi-cost .notice {
+    background:#fff8ea!important;
+    border:1px solid #ead8b7!important;
+    border-left:5px solid #d05300!important;
+    color:#3f3a31!important;
+  }
+  #kodokushi-cost.kodokushi-cost .source-note {
+    color:#6a6259!important;
+  }
+  @media(max-width:820px){
+    #kodokushi-cost.kodokushi-cost .stats {
+      grid-template-columns:1fr!important;
+    }
+  }
+</style>
+
+<style id="service-section-background-restore-v1">
+  #service {
+    margin: 30px 0;
+    padding: clamp(22px, 3vw, 34px);
+    background: #fff7ec;
+    border: 1px solid #ead8c1;
+    border-radius: 8px;
+    box-shadow: 0 14px 30px rgba(82, 54, 24, .07);
+  }
+  #service .section-kicker {
+    color: #9f3e00;
+    font-weight: 900;
+  }
+  #service .section-title {
+    margin-top: 0;
+    color: #2b2b2b;
+  }
+  #service > p {
+    color: #4f4a43;
+  }
+  #service .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+  }
+  #service .service-list .card {
+    margin: 0;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #eadfd4;
+    border-top: 4px solid #d05300;
+    border-radius: 8px;
+    box-shadow: 0 10px 22px rgba(34, 28, 22, .06);
+  }
+  #service .service-list .card h3 {
+    margin: 0 0 8px;
+    color: #8c3d00;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  #service .service-list .card p {
+    margin: 0;
+    color: #4f4a43;
+    line-height: 1.75;
+  }
+  @media (max-width: 900px) {
+    #service .service-list { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 620px) {
+    #service { padding: 20px; }
+    #service .service-list { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -1103,6 +1265,71 @@
 
   <div class="page">
     <main>
+
+<style id="area-keyword-neutral-unify">
+  #area-keyword-guide.area-keyword-guide,
+  section.area-keyword-guide{
+    background:#fff!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:0 14px 32px rgba(34,28,22,.07)!important;
+    padding:24px!important;
+    border-radius:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .section-title,
+  section.area-keyword-guide .section-title{
+    margin:0 0 18px!important;
+    padding:11px 15px!important;
+    background:#D05300!important;
+    border-left:7px solid #9F3E00!important;
+    color:#fff!important;
+    font-size:26px!important;
+    line-height:1.45!important;
+    font-weight:900!important;
+  }
+  #area-keyword-guide.area-keyword-guide .lead,
+  section.area-keyword-guide .lead{
+    margin:0 0 22px!important;
+    background:transparent!important;
+    color:#414743!important;
+    font-size:18px!important;
+    line-height:1.82!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details,
+  section.area-keyword-guide .area-keyword-details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details,
+  section.area-keyword-guide .faq.area-keyword-details{
+    background:#fffdf8!important;
+    border:1px solid #eadfd0!important;
+    box-shadow:none!important;
+    padding:12px!important;
+    margin:0!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details,
+  section.area-keyword-guide .area-keyword-details details,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details,
+  section.area-keyword-guide .faq.area-keyword-details details{
+    background:#fff!important;
+    border:1px solid #ead8bf!important;
+    border-left:6px solid #D05300!important;
+    box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
+    margin:10px 0!important;
+    padding:14px 16px!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details details[open],
+  section.area-keyword-guide .area-keyword-details details[open],
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details details[open],
+  section.area-keyword-guide .faq.area-keyword-details details[open]{
+    background:#fffaf4!important;
+  }
+  #area-keyword-guide.area-keyword-guide .area-keyword-details summary,
+  section.area-keyword-guide .area-keyword-details summary,
+  #area-keyword-guide.area-keyword-guide .faq.area-keyword-details summary,
+  section.area-keyword-guide .faq.area-keyword-details summary{
+    color:#8c3d00!important;
+    font-weight:900!important;
+  }
+</style>
+
 <section id="area-keyword-guide" class="section area-keyword-guide">
   <h2 class="section-title">いの町で遺品整理・生前整理・実家じまいを検討している方へ</h2>
   <p class="lead">いの町の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。いの町で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。いの町で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
@@ -1111,6 +1338,16 @@
     <details><summary>いの町の生前整理</summary><p>施設入居、介護、住み替え、空き家化の前に、生活動線を確保しながら家財量を減らします。買取できる品や思い出の品を早めに分けると、ご本人と家族の負担を抑えやすくなります。</p></details>
     <details><summary>いの町の実家じまい</summary><p>売却、解体、賃貸退去、空き家管理の前に、家財、物置、庭、仏壇、重要書類を確認します。搬出経路、駐車位置、近隣配慮を含めて見積もり前に共有することが大切です。</p></details>
   </div>
+</section>
+<section id="city-original-guide" class="section city-original-guide">
+  <h2 class="section-title">いの町で失敗しないための地域特化チェック</h2>
+  <p class="lead">伊野駅周辺の市街地、天王ニュータウン、吾北・本川方面の山間部まで広い町です。地域名、搬出距離、坂道、庭・物置の量を見積もり前に共有します。</p>
+  <div class="grid cols3">
+    <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
+    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、いの町の作業範囲を判断しやすくなります。</p></div>
+    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+  </div>
+  <div class="notice" style="margin-top:18px"><b>いの町の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
 </section>
       <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#cases">いの町の遺品整理ビフォーアフター事例</a></li><li><a href="#price">いの町の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">いの町の住宅特性・行政ルール</a></li><li><a href="#towns">いの町の対応エリア</a></li><li><a href="#service">いの町で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
@@ -1149,8 +1386,8 @@
           <div class="stat"><b>39.7%</b><span>65歳以上人口割合</span></div>
         </div>
         <div class="chart-grid">
-          <div class="chart-box"><h3>令和2年 国勢調査 年齢3区分</h3><div class="bar-row"><span>15歳未満</span><div class="bar-track"><div class="bar-fill " style="width:9.6%"></div></div><strong>9.6%</strong></div><div class="bar-row"><span>15〜64歳</span><div class="bar-track"><div class="bar-fill green" style="width:50.7%"></div></div><strong>50.7%</strong></div><div class="bar-row"><span>65歳以上</span><div class="bar-track"><div class="bar-fill blue" style="width:39.7%"></div></div><strong>39.7%</strong></div></div>
-          <div class="chart-box"><h3>世帯・住宅の見方</h3><div class="bar-row"><span>共同住宅</span><div class="bar-track"><div class="bar-fill " style="width:11.4%"></div></div><strong>11.4%</strong></div><div class="bar-row"><span>単身世帯</span><div class="bar-track"><div class="bar-fill green" style="width:29.3%"></div></div><strong>29.3%</strong></div><div class="bar-row"><span>65歳以上単独</span><div class="bar-track"><div class="bar-fill blue" style="width:19.3%"></div></div><strong>19.3%</strong></div></div>
+          <div class="chart-box"><h3>令和2年 国勢調査 年齢3区分</h3><div class="bar-row"><span>15歳未満</span><div class="bar-track"><div class="bar-fill " style="width:9.6%"></div></div><strong>9.6%</strong></div><div class="bar-row"><span>15〜64歳</span><div class="bar-track"><div class="bar-fill warm" style="width:50.7%"></div></div><strong>50.7%</strong></div><div class="bar-row"><span>65歳以上</span><div class="bar-track"><div class="bar-fill blue" style="width:39.7%"></div></div><strong>39.7%</strong></div></div>
+          <div class="chart-box"><h3>世帯・住宅の見方</h3><div class="bar-row"><span>共同住宅</span><div class="bar-track"><div class="bar-fill " style="width:11.4%"></div></div><strong>11.4%</strong></div><div class="bar-row"><span>単身世帯</span><div class="bar-track"><div class="bar-fill warm" style="width:29.3%"></div></div><strong>29.3%</strong></div><div class="bar-row"><span>65歳以上単独</span><div class="bar-track"><div class="bar-fill blue" style="width:19.3%"></div></div><strong>19.3%</strong></div></div>
         </div>
         <p class="source-note">出典：e-Stat 令和2年国勢調査 人口等基本集計（表1-1、2-7、6-3、19-4、26-1）をもとに算出。共同住宅居住率は「共同住宅」÷「住宅に住む一般世帯」、単身者世帯比率と65歳以上単独世帯率は一般世帯数を母数。 人口 21,374人、面積 470.97km2、人口密度 45.4人/km2。</p>
       </section>
@@ -1214,13 +1451,13 @@
         </select>
       </label>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px" class="global-price-options">
-        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="10000" checked>階段作業あり</label>
-        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="8000" checked>搬出距離が長い</label>
-        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="5000" checked>供養品あり</label>
-        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#f8fbf9;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="-10000" checked>買取できる品がある</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#fffaf4;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="10000" checked>階段作業あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#fffaf4;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="8000" checked>搬出距離が長い</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#fffaf4;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="5000" checked>供養品あり</label>
+        <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#fffaf4;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="-10000" checked>買取できる品がある</label>
       </div>
     </div>
-    <div style="display:grid;align-content:center;background:#eef8f2;border:1px solid #cfe8d8;border-radius:8px;padding:18px" aria-live="polite">
+    <div style="display:grid;align-content:center;background:#fff7ec;border:1px solid #ead8c1;border-radius:8px;padding:18px" aria-live="polite">
       <span style="color:#4f5c55;font-size:14px;font-weight:900">概算目安</span>
       <b data-global-price-result style="display:block;margin:5px 0;color:#d05300;font-size:30px;line-height:1.2">43,000円〜</b>
       <p style="margin:0;color:#4f5c55;font-size:13px;line-height:1.7">荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
@@ -1242,7 +1479,63 @@
         </tbody></table>
       </section>
 
-      <section id="process">
+      
+<section id="kodokushi-cost" class="section kodokushi-cost">
+  <h2 class="section-title">孤独死後に重くなりやすい費用</h2>
+  <p class="lead">発見が遅れると、遺品整理だけでなく特殊清掃、脱臭、床材や壁紙の修繕が必要になることがあります。賃貸では退去期限も重なり、残された家族や連帯保証人の金銭的・精神的負担が一気に大きくなります。</p>
+
+  <h3>いの町で孤独死・空き家化の前に決めておきたいこと</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>いの町で起きやすい状況</th>
+          <th>放置すると起きること</th>
+          <th>生前整理で先にできること</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>いの町の戸建て・空き家でひとり暮らし</td>
+        <td>発見が遅れると、母屋だけでなく物置・庭・納屋まで整理範囲が広がり、車両手配も重くなります。</td>
+        <td>鍵の保管先、近隣連絡先、屋外倉庫の有無、写真報告の希望を家族で共有しておきます。</td>
+      </tr>
+      <tr>
+        <td>いの町で長年住んだ実家に物が多い</td>
+        <td>大型家具、古い家電、農具、布団、押入れの荷物が残り、数日で終わらないことがあります。</td>
+        <td>残す家具、処分する家電、買取希望品、供養したい物、庭・物置の範囲を分けます。</td>
+      </tr>
+      <tr>
+        <td>いの町で相続書類や保険証券の場所が分からない</td>
+        <td>売却、相続、口座手続き、解約手続きが止まり、家財整理も進みにくくなります。</td>
+        <td>権利書、通帳、印鑑、保険証券、年金関係書類、スマホや契約情報の保管場所を一覧化します。</td>
+      </tr>
+      <tr>
+        <td>いの町の親が片付けを嫌がる</td>
+        <td>家族だけで急に進めると口論になり、必要な安全確保や貴重品探索まで遅れることがあります。</td>
+        <td>まずは玄関、寝室、通路、台所など安全に関わる場所から小さく始め、残す物の希望を聞きます。</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="stats" aria-label="孤独死後に発生しやすい費用の目安">
+    <div class="stat"><span>残置物処理</span><strong>約29.5万円</strong><small>家財の仕分け・搬出・処分</small></div>
+    <div class="stat"><span>原状回復</span><strong>約47.4万円</strong><small>床材・壁紙・脱臭など</small></div>
+    <div class="stat"><span>合計平均</span><strong>約76.9万円</strong><small>整理費用とは別に重くなりやすい負担</small></div>
+  </div>
+  <div class="chart-box" style="margin-top:18px">
+    <div class="bar-row"><span>残置物処理</span><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div><b>約29.5万円</b></div>
+    <div class="bar-row"><span>原状回復</span><div class="bar-track"><div class="bar-fill accent" style="width:62%"></div></div><b>約47.4万円</b></div>
+    <div class="bar-row"><span>合計平均</span><div class="bar-track"><div class="bar-fill warm" style="width:100%"></div></div><b>約76.9万円</b></div>
+  </div>
+  <div class="notice" style="margin-top:18px">
+    <strong>生前整理で先に決めておきたいこと</strong><br>
+    通帳・印鑑・保険証券・権利書・写真・貴金属・スマホや契約情報を、元気なうちに家族へ伝えておくと、万一の時の残置物整理・原状回復・退去手続きの負担を減らしやすくなります。
+  </div>
+  <p class="source-note">費用は孤独死後の残置物処理・原状回復で重くなりやすい目安です。実際の金額は発見までの日数、部屋の状態、家財量、賃貸契約、特殊清掃や修繕の範囲で変わります。</p>
+</section>
+
+<section id="process">
         <p class="section-kicker">相談の流れ</p>
         <h2 class="section-title">相談から作業完了までの流れ</h2>
         <div class="flow">
@@ -1293,8 +1586,8 @@
       <section id="admin">
         <p class="section-kicker">行政・福祉ホットライン</p>
         <h2 class="section-title">いの町の行政窓口・公式リンク</h2>
-        <p>粗大ごみ受付、持込施設、運び出し支援、空家相談などの詳細な電話番号・受付時間は推測で補完せず、— として掲載しています。いの町公式サイトで最新情報を確認してください。</p>
-        <div class="grid cols2"><div class="admin-card"><h3>粗大ごみ・大型ごみ受付</h3><p>—（いの町公式サイトのごみ・リサイクル案内で確認。電話番号・受付時間は推測で補完しません。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>持込・処理施設</h3><p>—（直営、一部事務組合、広域処理施設などの別は公式確認が必要です。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>高齢者等の運び出し支援</h3><p>—（対象条件、申請先、収集可否は自治体ごとに異なります。公式情報で確認してください。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>空家・住まい相談</h3><p>—（空家、住まい、福祉の相談窓口は自治体公式サイトで確認してください。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>市町村公式サイト</h3><p>高知県公式の県内市町村リンクで確認したいの町公式サイトです。代表電話や担当課、開庁時間は公式サイトで確認してください。</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div></div>
+        <p>粗大ごみ受付、持込施設、運び出し支援、空家相談などの詳細な電話番号・受付時間は公式情報を確認せず、— として掲載しています。いの町公式サイトで最新情報を確認してください。</p>
+        <div class="grid cols2"><div class="admin-card"><h3>粗大ごみ・大型ごみ受付</h3><p>—（いの町公式サイトのごみ・リサイクル案内で確認。電話番号・受付時間は公式情報を確認しません。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>持込・処理施設</h3><p>—（直営、一部事務組合、広域処理施設などの別は公式確認が必要です。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>高齢者等の運び出し支援</h3><p>—（対象条件、申請先、収集可否は自治体ごとに異なります。公式情報で確認してください。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>空家・住まい相談</h3><p>—（空家、住まい、福祉の相談窓口は自治体公式サイトで確認してください。）</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div><div class="admin-card"><h3>市町村公式サイト</h3><p>高知県公式の県内市町村リンクで確認したいの町公式サイトです。代表電話や担当課、開庁時間は公式サイトで確認してください。</p><a href="https://www.town.ino.kochi.jp/" target="_blank" rel="noopener">公式ページで確認</a></div></div>
         <p class="source-note">行政制度、受付時間、対象条件、料金は変更される場合があります。相談前に各公式ページで最新情報を確認してください。</p>
       </section>
 
@@ -1308,7 +1601,7 @@
         <p class="section-kicker">周辺リンク</p>
         <h2 class="section-title">いの町周辺のページも見る</h2>
         <p>いの町で遺品整理・生前整理を検討している方が、近隣の住宅特性、粗大ごみ、作業時の注意点も確認できるよう、高知県内の作成済みページだけを掲載しています。</p>
-        <div class="ward-links"><a href="/kochi/niyodogawa/">仁淀川町</a><a href="/kochi/tosa/">土佐市</a><a href="/kochi/sakawa/">佐川町</a><a href="/kochi/">高知県トップ</a></div>
+        <div class="ward-links"><a href="/kochi/niyodogawa/">仁淀川町</a><a href="/kochi/tosa/">土佐市</a><a href="/kochi/sakawa/">佐川町</a></div>
       </section>
 
       <section id="contact" class="cta-band">
@@ -1321,7 +1614,7 @@
       <footer id="operator" class="site-footer">
         <div class="footer-grid">
           <div><h2>いの町遺品整理・生前整理.jp編集部</h2><p>本サイトは高知県いの町で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。口コミやレビューを装った表示は行わず、ビフォーアフターは想定事例として明記しています。</p></div>
-          <div id="policy"><h3>運営ポリシー</h3><p>人口・世帯・住宅の統計はe-Stat、自治体公式URLは高知県公式の県内市町村リンクを根拠にします。粗大ごみ受付など未確認の詳細は推測で補完せず、確認できない項目は `—` として掲載します。</p><p id="hotline"><a href="/">TOP</a> / <a href="/kochi/">高知県</a> / <a href="#admin">行政・福祉ホットライン</a></p></div>
+          <div id="policy"><h3>運営ポリシー</h3><p>人口・世帯・住宅の統計はe-Stat、自治体公式URLは高知県公式の県内市町村リンクを根拠にします。粗大ごみ受付など公式確認が必要なの詳細は公式情報を確認せず、公式確認が必要な項目は `—` として掲載します。</p><p id="hotline"><a href="/">TOP</a> / <a href="/kochi/">高知県</a> / <a href="#admin">行政・福祉ホットライン</a></p></div>
         </div>
       </footer>
     </main>
@@ -1349,6 +1642,407 @@
   document.querySelectorAll('[data-global-price-sim]').forEach(updateBox);
 })();
 </script>
+
+<script id="west-tokai-city-kita-quality-hand-script-v1">
+  (function(){
+    document.body.classList.add('west-tokai-city-quality');
+    if (document.querySelector('.west-tokai-first-check')) return;
+    var pref = location.pathname.replace(/^\//,'').split('/')[0];
+    var lens = {"hiroshima": ["広島県内では、都市部の集合住宅、坂道住宅、島しょ部の遠方対応で見積もり条件が変わります。", "坂道・港・島しょ部"], "okayama": ["岡山県内では、岡山・倉敷の都市部と県北の戸建て・山間部住宅で、搬出導線と作業範囲が変わります。", "県北・戸建て・農機具"], "yamaguchi": ["山口県内では、瀬戸内沿岸、坂道住宅、山間部の戸建てで、車両位置と屋外倉庫の確認が大切です。", "海沿い・坂道・物置"], "tottori": ["鳥取県内では、冬季道路、市街地の集合住宅、中山間地域の戸建てで、日程と車両計画が変わります。", "冬季道路・中山間地域"], "shimane": ["島根県内では、松江・出雲の市街地、石見・隠岐の遠方対応、山間部の空き家で条件が変わります。", "遠方対応・隠岐・山間部"], "kagawa": ["香川県内では、高松市街地、中讃・西讃の戸建て、小豆島など島しょ部で搬出計画が変わります。", "高松・中讃西讃・島しょ部"], "tokushima": ["徳島県内では、徳島市周辺、県南の沿岸部、山間部の坂道住宅で確認点が変わります。", "県南・坂道・納屋"], "ehime": ["愛媛県内では、松山の集合住宅、東予の戸建て、南予・島しょ部の遠方整理で条件が変わります。", "東予・南予・島しょ部"], "kochi": ["高知県内では、沿岸部、山間部、広い敷地の戸建てで、車両進入と納屋の有無が重要です。", "沿岸部・山間部・広い敷地"], "fukuoka": ["福岡県内では、福岡市・北九州市の集合住宅、筑豊・筑後の戸建て整理で条件が変わります。", "福岡市・北九州・筑豊筑後"], "saga": ["佐賀県内では、市街地、海沿いの戸建て、農家住宅で庭・納屋・車両導線の確認が大切です。", "海沿い・農家住宅・庭"], "nagasaki": ["長崎県内では、坂道住宅、狭い道路、島しょ部の船便・日程調整で作業計画が変わります。", "坂道・狭小路・島しょ部"], "kumamoto": ["熊本県内では、熊本市の集合住宅、阿蘇方面や県南の広い敷地・納屋付き住宅で条件が変わります。", "阿蘇・県南・納屋"], "oita": ["大分県内では、大分・別府の市街地、温泉地の坂道、県北・県南の戸建て整理で確認点が変わります。", "別府坂道・県北県南"], "miyazaki": ["宮崎県内では、宮崎市街地、都城方面の広い敷地、沿岸部・中山間地域で搬出条件が変わります。", "広い敷地・沿岸部"], "kagoshima": ["鹿児島県内では、坂道、火山灰、薩摩・大隅の戸建て、離島の船便対応で条件が変わります。", "火山灰・坂道・離島"], "okinawa": ["沖縄県内では、中南部の集合住宅、北部の戸建て、離島の船便・台風時期で作業計画が変わります。", "台風時期・離島・駐車位置"], "aichi": ["愛知県内では、名古屋市の集合住宅、尾張・三河の戸建て、車庫・物置付き住宅で条件が変わります。", "名古屋・尾張・三河"], "shizuoka": ["静岡県内では、静岡・浜松の都市部、伊豆の別荘地、沿岸部・山間部で搬出条件が変わります。", "伊豆・浜松・海沿い山間部"], "gifu": ["岐阜県内では、岐阜市周辺、西濃・中濃・東濃、飛騨の冬季道路や山間部住宅で条件が変わります。", "飛騨・冬季道路・納屋"], "mie": ["三重県内では、北勢の集合住宅、伊勢志摩・東紀州の沿岸部、山間部の戸建てで条件が変わります。", "北勢・伊勢志摩・東紀州"]};
+    var info = lens[pref] || ['この地域では、建物条件と行政制度を見積もり前に整理すると進めやすくなります。','地域条件'];
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+    var h1 = document.querySelector('h1');
+    var area = h1 ? h1.textContent.replace(/で遺品整理・生前整理.*/, '').replace(/の遺品整理.*/, '').trim() : 'この地域';
+    var section = document.createElement('section');
+    section.className = 'west-tokai-first-check';
+    section.innerHTML = '<h2>' + area + 'で最初に確認すること</h2><p>' + info[0] + ' 料金だけで決めず、建物条件、行政制度、残す品、悪質業者対策を先に整理してください。</p><div class="west-tokai-first-grid"><a href="#towns"><b>対応エリア</b><span>町名・駅・周辺地域</span></a><a href="#price"><b>料金目安</b><span>間取りと追加条件</span></a><a href="#admin"><b>' + info[1] + '</b><span>行政・搬出条件</span></a><a href="#avoid-bad-vendors"><b>業者確認</b><span>追加費用・許可・見積書</span></a></div>';
+    hero.insertAdjacentElement('afterend', section);
+  })();
+</script>
+
+
+<script id="kodokushi-cost-neutral-cost-script-v1">
+  (function(){
+    var section = document.querySelector('#kodokushi-cost.kodokushi-cost');
+    if (!section) return;
+    section.querySelectorAll('.bar-row').forEach(function(row){
+      var text = row.textContent || '';
+      var fill = row.querySelector('.bar-fill');
+      if (!fill) return;
+      if (/合計平均/.test(text)) fill.classList.add('total-cost');
+      if (/原状回復/.test(text)) fill.classList.add('accent');
+    });
+  })();
+</script>
+
+<style id="global-brand-color-uniform-v2">
+  html body .brand,
+  html body .brand:visited,
+  html body .brand:hover {
+    color:#2B2B2B!important;
+    text-decoration:none!important;
+  }
+  html body .brand-word {
+    color:#2B2B2B!important;
+  }
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no,
+  html body .brand-main .brand-area-name,
+  html body.structure-layout .brand-area,
+  html body.structure-layout .brand-area-name,
+  html body.structure-layout .brand-no,
+  html body.structure-layout .brand-main .brand-area-name {
+    color:#2B2B2B!important;
+  }
+  html body .brand-main,
+  html body.structure-layout .brand-main {
+    color:#D05300!important;
+  }
+  html body .brand-symbol,
+  html body.structure-layout .brand-symbol {
+    background:#D05300!important;
+    color:#fff!important;
+  }
+</style>
+<style id="global-readable-palette-reset-v1">
+  html body {
+    background:#F6F2EC!important;
+    color:#25211D!important;
+  }
+  html body .topbar,
+  html body header,
+  html body .site-header {
+    background:#FFFDF9!important;
+    border-color:#E6DDD4!important;
+  }
+  html body .brand,
+  html body .brand-word,
+  html body .brand-area,
+  html body .brand-area-name,
+  html body .brand-no {
+    color:#25211D!important;
+  }
+  html body .brand-main {
+    color:#C65312!important;
+  }
+  html body .global-visual-proof {
+    width:min(1160px,calc(100% - 28px))!important;
+    margin:32px auto!important;
+    padding:28px!important;
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    border-radius:0!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .global-visual-proof-inner {
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 auto!important;
+  }
+  html body .global-visual-proof-head {
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+    max-width:940px!important;
+    margin:0 auto 18px!important;
+    text-align:center!important;
+    align-items:center!important;
+  }
+  html body .global-visual-proof-head h2 {
+    margin:0 auto!important;
+    max-width:860px!important;
+    color:#25211D!important;
+    text-align:center!important;
+  }
+  html body .global-visual-proof-head p {
+    margin:0 auto!important;
+    max-width:900px!important;
+    color:#5C544B!important;
+    text-align:center!important;
+  }
+  html body .global-visual-grid {
+    max-width:1100px!important;
+    margin:0 auto!important;
+  }
+  html body .section,
+  html body .card,
+  html body .area-box,
+  html body .pref-region-card,
+  html body .common-ba-card,
+  html body .flow-item,
+  html body .faq-item,
+  html body .price-card,
+  html body .service-card,
+  html body .compare-card,
+  html body .chart-box,
+  html body .pref-chart-box,
+  html body .pref-data-card,
+  html body .guide-panel>div,
+  html body .popular-area,
+  html body .price-teaser,
+  html body .intent-card,
+  html body .remaining-hand-card,
+  html body .admin-card,
+  html body .global-visual-card,
+  html body .global-strategy-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border-color:#E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
+  }
+  html body .section-title,
+  html body h2.section-title {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    color:#25211D!important;
+    border:1px solid #E5DDD3!important;
+    border-left:7px solid #C65312!important;
+    box-shadow:none!important;
+  }
+  html body h1,
+  html body h2,
+  html body h3,
+  html body .card strong {
+    color:#25211D!important;
+  }
+  html body p,
+  html body li,
+  html body .lead,
+  html body .area-box-lead,
+  html body .global-visual-body span,
+  html body .global-strategy-card span,
+  html body .muted {
+    color:#5C544B!important;
+  }
+  html body a,
+  html body nav a {
+    color:#9B3F0D!important;
+  }
+  html body .btn,
+  html body .button,
+  html body .cta,
+  html body .hero a:first-of-type,
+  html body .call {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .btn.secondary,
+  html body .button.secondary,
+  html body .hero a:not(:first-of-type),
+  html body .guide-actions a,
+  html body .popular-links a,
+  html body .ward-links a,
+  html body .area-tags a,
+  html body .pref-region-summary a,
+  html body .price-mini,
+  html body .intent-card {
+    background:#FFFDF9!important;
+    background-image:none!important;
+    border:1px solid #E5DDD3!important;
+    color:#25211D!important;
+    box-shadow:none!important;
+  }
+  html body .guide-actions a:hover,
+  html body .popular-links a:hover,
+  html body .ward-links a:hover,
+  html body .area-tags a:hover,
+  html body .pref-region-summary a:hover,
+  html body .price-mini:hover,
+  html body .intent-card:hover {
+    background:#FFF4E8!important;
+    border-color:#EBCFB7!important;
+    color:#8A3D11!important;
+    text-decoration:none!important;
+  }
+  html body .metric-label,
+  html body .region-head span,
+  html body .region-checks span,
+  html body .area-tags span {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:26px!important;
+    padding:4px 9px!important;
+    border-radius:999px!important;
+    background:#F1EEE8!important;
+    background-image:none!important;
+    border:1px solid #DDD4C9!important;
+    color:#4D4740!important;
+    font-size:12px!important;
+    line-height:1.35!important;
+    font-weight:900!important;
+    box-shadow:none!important;
+  }
+  html body .common-ba-label.after,
+  html body .common-ba-points span,
+  html body .global-visual-label {
+    background:#C65312!important;
+    background-image:none!important;
+    border-color:#C65312!important;
+    color:#fff!important;
+  }
+  html body .common-ba-label:not(.after) {
+    background:#3A342E!important;
+    color:#fff!important;
+  }
+  html body .bar-track,
+  html body .pref-bar-track,
+  html body .pref-data-track {
+    background:#ECE6DE!important;
+    box-shadow:inset 0 0 0 1px rgba(55,45,35,.05)!important;
+  }
+  html body .bar-fill,
+  html body .pref-bar-fill,
+  html body .pref-data-fill,
+  html body .kanto-national-fill,
+  html body .kyushu-bar-fill,
+  html body .cs-bar-fill,
+  html body .tokai-bar-fill {
+    background:#4F6F8F!important;
+    background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
+  }
+  html body .bar-fill.warm {
+    background:#D68A3A!important;
+    background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
+  }
+  html body .bar-fill.vacancy,
+  html body .bar-fill.total-vacant,
+  html body .pref-bar-fill.vacancy,
+  html body .pref-bar-fill.total-vacant {
+    background:#C65312!important;
+    background-image:linear-gradient(90deg,#C65312,#E99A57)!important;
+  }
+  html body .bar-fill.national,
+  html body .pref-bar-fill.national {
+    background:#807970!important;
+    background-image:linear-gradient(90deg,#807970,#B8B0A7)!important;
+  }
+  html body .bar-fill.aging,
+  html body .pref-bar-fill.aging {
+    background:#7756B5!important;
+    background-image:linear-gradient(90deg,#7756B5,#B59BE3)!important;
+  }
+  html body .bar-fill.blue,
+  html body .bar-fill.apartment,
+  html body .bar-fill.secondary-home,
+  html body .pref-bar-fill.apartment,
+  html body .pref-bar-fill.secondary,
+  html body .pref-data-fill.blue {
+    background:#2F6FA3!important;
+    background-image:linear-gradient(90deg,#2F6FA3,#7CB7DF)!important;
+  }
+  html body .bar-fill.other,
+  html body .bar-fill.other-vacant,
+  html body .bar-fill.risk,
+  html body .pref-bar-fill.other {
+    background:#A76A2D!important;
+    background-image:linear-gradient(90deg,#A76A2D,#D9A66B)!important;
+  }
+  html body .pref-data-card:nth-child(1) {border-top:4px solid #6C747D!important}
+  html body .pref-data-card:nth-child(2) {border-top:4px solid #8B7356!important}
+  html body .pref-data-card:nth-child(3),
+  html body .pref-data-card:nth-child(4) {border-top:4px solid #C65312!important}
+  html body .pref-data-card:nth-child(5) {border-top:4px solid #A76A2D!important}
+  html body .pref-data-card:nth-child(6) {border-top:4px solid #2F6FA3!important}
+  html body .pref-data-card:nth-child(7) {border-top:4px solid #7756B5!important}
+  html body .pref-data-card:nth-child(8) {border-top:4px solid #3E7892!important}
+  html body .pref-data-card:nth-child(1) b {color:#5D6670!important}
+  html body .pref-data-card:nth-child(2) b {color:#745C3F!important}
+  html body .pref-data-card:nth-child(3) b,
+  html body .pref-data-card:nth-child(4) b {color:#A94812!important}
+  html body .pref-data-card:nth-child(5) b {color:#8D5D2F!important}
+  html body .pref-data-card:nth-child(6) b {color:#2F6FA3!important}
+  html body .pref-data-card:nth-child(7) b {color:#6D4FA8!important}
+  html body .pref-data-card:nth-child(8) b {color:#3E7892!important}
+  html body table th {
+    background:#F4EEE6!important;
+    color:#25211D!important;
+  }
+  html body table td {
+    background:#FFFDF9!important;
+    color:#25211D!important;
+  }
+  html body .notice,
+  html body .check,
+  html body .source-note {
+    background:#FFF6EA!important;
+    border-color:#EAD8C1!important;
+    color:#4D4740!important;
+  }
+  html body .marker {
+    background:linear-gradient(transparent 62%,rgba(246,186,97,.38) 62%)!important;
+    color:inherit!important;
+  }
+  @media(max-width:900px){
+    html body .global-visual-proof {
+      padding:22px 16px!important;
+    }
+    html body .global-visual-proof-head {
+      text-align:left!important;
+    }
+    html body .global-visual-proof-head h2,
+    html body .global-visual-proof-head p {
+      text-align:left!important;
+    }
+  }
+</style>
+<script id="global-readable-palette-reset-script-v1">
+(function(){
+  function applyGlobalReadablePalette(){
+    document.querySelectorAll('.global-visual-proof').forEach(function(el){
+      el.style.setProperty('width','min(1160px,calc(100% - 28px))','important');
+      el.style.setProperty('margin','32px auto','important');
+      el.style.setProperty('padding','28px','important');
+      el.style.setProperty('background','#FFFDF9','important');
+      el.style.setProperty('border','1px solid #E5DDD3','important');
+      el.style.setProperty('box-shadow','0 14px 34px rgba(45,36,28,.06)','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head').forEach(function(el){
+      el.style.setProperty('grid-template-columns','1fr','important');
+      el.style.setProperty('max-width','940px','important');
+      el.style.setProperty('margin','0 auto 18px','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.global-visual-proof-head h2,.global-visual-proof-head p').forEach(function(el){
+      el.style.setProperty('margin-left','auto','important');
+      el.style.setProperty('margin-right','auto','important');
+      el.style.setProperty('text-align','center','important');
+    });
+    document.querySelectorAll('.metric-label,.region-head span,.region-checks span,.area-tags span').forEach(function(el){
+      el.style.setProperty('background','#F1EEE8','important');
+      el.style.setProperty('background-image','none','important');
+      el.style.setProperty('border','1px solid #DDD4C9','important');
+      el.style.setProperty('color','#4D4740','important');
+      el.style.setProperty('border-radius','999px','important');
+      el.style.setProperty('box-shadow','none','important');
+    });
+    document.querySelectorAll('.bar-fill,.pref-bar-fill,.pref-data-fill,.kanto-national-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill').forEach(function(el){
+      var color = ['#4F6F8F','#8EACC6'];
+      if (el.classList.contains('national')) color = ['#807970','#B8B0A7'];
+      else if (el.classList.contains('aging') || el.classList.contains('purple')) color = ['#7756B5','#B59BE3'];
+      else if (el.classList.contains('apartment') || el.classList.contains('blue') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) color = ['#2F6FA3','#7CB7DF'];
+      else if (el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) color = ['#A76A2D','#D9A66B'];
+      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#C65312','#E99A57'];
+      else if (el.classList.contains('warm')) color = ['#D68A3A','#EEC07E'];
+      el.style.setProperty('background', color[0], 'important');
+      el.style.setProperty('background-image', 'linear-gradient(90deg,' + color[0] + ',' + color[1] + ')', 'important');
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyGlobalReadablePalette);
+  else applyGlobalReadablePalette();
+  setTimeout(applyGlobalReadablePalette, 900);
+  setTimeout(applyGlobalReadablePalette, 1800);
+})();
+</script>
 </body>
 </html>
+
+
+
 
