@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.ihinseiri-seizenseiri.jp/sitemap.xml
