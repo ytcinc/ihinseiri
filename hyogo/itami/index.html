@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -817,20 +817,20 @@
   }
 </style>
 
-<style id="hyogo-report-style-v1">
-.hyogo-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
-.hyogo-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
-.hyogo-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
-.hyogo-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
-.hyogo-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
-.hyogo-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
-.hyogo-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
-.hyogo-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
-.hyogo-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
-.hyogo-report-table th,.hyogo-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
-.hyogo-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
-.hyogo-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
-@media(max-width:860px){.hyogo-report-grid{grid-template-columns:1fr}.hyogo-report-table th{width:120px}}
+
+<style id="hyogo-admin-unified-v1">
+  html body .admin-hotline-section.section{background:#fff;border-top:1px solid #eadfD2;border-bottom:1px solid #eadfd2;padding:clamp(36px,5vw,64px) 0;color:#2b2b2b}
+  html body .admin-hotline-section .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.03em;margin:0 0 8px}
+  html body .admin-hotline-section .lead{max-width:960px;color:#4f4a43;line-height:1.9}
+  html body .admin-hotline-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:22px}
+  html body .admin-card{background:#fff;border:1px solid #eadfd2;border-radius:8px;padding:18px;box-shadow:0 10px 24px rgba(84,54,25,.06)}
+  html body .admin-card h3{margin:0 0 10px;color:#2b2b2b;font-size:18px;line-height:1.45}
+  html body .admin-card p{margin:0 0 12px;color:#4a4a4a;line-height:1.85}
+  html body .admin-card a{color:#9f3e00;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+  html body .site-footer{background:#fff!important;color:#2b2b2b!important;border-top:1px solid #eadfd2}
+  html body .site-footer .footer-grid{display:grid!important;grid-template-columns:1fr!important;gap:0!important}
+  html body .site-footer .footer-col{background:#fff!important;color:#2b2b2b!important;border:0!important;box-shadow:none!important;padding:clamp(24px,4vw,40px) 0}
+  html body .site-footer a{color:#9f3e00!important}
 </style>
 
 </head>
@@ -1097,50 +1097,46 @@
 <section id="items" class="section"><h2 class="section-title">品目別の処分・買取・供養</h2><p class="lead">伊丹市の遺品整理では、処分する物、残す物、買取できる物、供養したい物を先に分けておくと見積もり内容が明確になります。</p><div class="grid cols3"><div class="card"><h3>家具・家電</h3><p>大型家具、冷蔵庫、洗濯機、エアコン、テレビは搬出経路とリサイクル対象を確認します。</p></div><div class="card"><h3>貴重品・書類</h3><p>通帳、印鑑、保険証券、権利書、写真、手紙は処分前に探索範囲を共有します。</p></div><div class="card"><h3>仏壇・供養品</h3><p>仏壇、位牌、遺影、人形、アルバムなどは、供養や返送の希望を見積もり時に伝えます。</p></div></div></section>
 <section id="compare" class="section"><h2 class="section-title">業者比較と見積もり前チェック</h2><p class="lead">見積もりは総額だけでなく、作業範囲、追加費用の条件、写真報告、買取査定、供養対応、作業後の清掃まで比較すると判断しやすくなります。</p><div class="grid cols3"><div class="card"><h3>見積書の内訳</h3><p>人件費、車両費、処分費、階段作業、養生、供養、買取相殺が分かれているか確認します。</p></div><div class="card"><h3>作業範囲</h3><p>室内だけか、ベランダ、物置、庭、共有部、簡易清掃まで含むかを合わせます。</p></div><div class="card"><h3>報告方法</h3><p>遠方家族の場合は、作業前後の写真、貴重品候補の確認、鍵返却方法まで決めておきます。</p></div></div><p class="section-note">「安いか」だけでなく、「どこまで任せられるか」をそろえて比較すると、追加請求や認識違いを防ぎやすくなります。</p></section>
 
-<section id="hyogo-report" class="section hyogo-report">
-  <div class="container">
-    <p class="section-kicker">兵庫県調査データ</p>
-    <h2 class="section-title">伊丹市に反映した兵庫県調査データ</h2>
-    <p class="lead">添付調査のうち、伊丹市で見積もり前に使いやすい廃棄物処理・空き家対策・高齢者支援の確認点を整理しました。料金は変更されるため、依頼前に必ず自治体公式サイトで最新条件を確認してください。</p>
-    <div class="hyogo-report-grid">
-      <div class="hyogo-report-card"><b>自己搬入・粗大ごみ</b><span>クリーンランド。105円/10kg。</span></div>
-      <div class="hyogo-report-card"><b>搬出条件</b><span>阪神間は駅近マンションと戸建てが混在し、EV予約、共用部養生、駐車位置の確認が重要です。</span></div>
-      <div class="hyogo-report-card"><b>空き家・生前整理</b><span>売却前、解体前、施設入居前の整理では、残す書類、仏壇、写真、貴重品、屋外品を分けて確認します。</span></div>
-      <div class="hyogo-report-card"><b>役所出典</b><span><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a>のみを出典として記載。</span></div>
-    </div>
-    <table class="hyogo-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ・自己搬入・高齢者支援は、事前予約、本人確認、搬入車両、受付日を公式サイトで確認します。</td></tr>
-      <tr><th>料金目安</th><td>105円/10kg。家電リサイクル品、危険物、事業系ごみ、解体材は別ルールになるため混ぜて見積もらないでください。</td></tr>
-      <tr><th>地域事情</th><td>阪神間は駅近マンションと戸建てが混在し、EV予約、共用部養生、駐車位置の確認が重要です。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a></td></tr>
-    </table>
-    <p class="hyogo-report-note">出典リンクは市役所・町役場の公式サイトのみです。民間まとめサイトや不確実な電話番号は出典欄に載せず、公式確認を前提にしています。</p>
-  </div>
-</section>
+
 
 <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、写真報告、残す品の事前共有を行えば、遠方のご家族でも進めやすくなります。</p></div><div class="card"><h3>見積もり前に何を用意すればよいですか？</h3><p>部屋全体、押入れ、物置、搬出経路、駐車位置の写真と、残したい品・探したい書類のリストがあるとスムーズです。</p></div><div class="card"><h3>伊丹市で見積もり前に地域事情として何を伝えるべきですか？</h3><p>阪神間・北摂では、同じ兵庫県内でも建物条件、荷物量、車両停車位置、作業時間が大きく変わります。見積もり前に地域写真とあわせて搬出条件を整理しておくと、追加確認を減らせます。</p></div><div class="card"><h3>伊丹市で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>伊丹市の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
-</main><section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">伊丹市の行政窓口・粗大ごみ・持込先確認</h2>
-  <p>伊丹市で遺品整理・生前整理を進める前に、行政収集で出す物、自己搬入できる物、専門業者に任せる物を分けます。受付日、料金、本人確認、搬入車両、家電4品目、危険物、処理困難物は変更される場合があるため、相談前に公式情報で確認してください。</p>
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>伊丹市役所</strong><br>伊丹市公式サイトで担当課、受付時間、窓口の場所を確認します。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>伊丹市の粗大ごみ・ごみ分別案内</strong><br>粗大ごみ、戸別収集、処理券・証紙、収集日、収集できない品目を確認します。屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>豊中市伊丹市クリーンランド</strong><br>伊丹市の粗大ごみ、自己搬入、集合住宅の搬出条件を確認。 自己搬入は、本人確認、予約要否、搬入日、車両条件、手数料、家電4品目・危険物・事業系ごみの扱いを公式情報で確認してください。</p><a href="/hyogo/" rel="noopener">府県ページの処理圏情報を見る</a></div>
-    <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare" rel="noopener">業者比較の確認へ</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local" rel="noopener">住宅特性・統計を見る</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出す物、豊中市伊丹市クリーンランドへ持ち込む物、業者が屋内搬出する物、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process" rel="noopener">相談の流れへ</a></div>
+
+<section id="admin" class="section admin-hotline-section">
+  <div class="container">
+    <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
+    <h2 class="section-title">伊丹市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p class="lead">伊丹市で遺品整理・生前整理を進める前に、自治体の粗大ごみで出すもの、持込施設へ持ち込むもの、業者が屋内から搬出するものを分けて整理します。退去期限、大型家具、家電4品目、仏壇・写真、貴重品探索の範囲を先に分けてください。</p>
+    <div class="admin-hotline-grid">
+      <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>伊丹市役所</strong><br>代表電話: 072-783-1234。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式情報を確認</a></div>
+      <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>伊丹市の粗大ごみ・ごみ分別案内</strong><br>粗大ごみの申込方法、手数料、収集日、持ち出し場所、出せない品目を伊丹市公式情報で確認します。 屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">粗大ごみ・ごみ分別を公式で確認</a></div>
+      <div class="admin-card"><h3>持込・処理施設</h3><p><strong>豊中市伊丹市クリーンランド</strong><br>持ち込みは予約要否、受付時間、本人確認、車両条件、手数料、家電4品目・危険物の扱いを公式情報で確認します。施設電話の目安は06-6841-5395、調査データ上の目安は105円/10kgです。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">持ち込み先の公式情報を確認</a></div>
+      <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare">業者比較の確認点へ</a></div>
+      <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local">住宅特性・統計を見る</a></div>
+      <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、豊中市伊丹市クリーンランドへ持ち込むもの、業者が屋内搬出するもの、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process">相談の流れへ</a></div>
+    </div>
+    <p class="source-note">出典：<a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a>、豊中市伊丹市クリーンランド公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
   </div>
-  <p class="source-note">出典：伊丹市公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
 </section>
+</main>
 <footer id="operator" class="site-footer" data-pref="hyogo" data-city="伊丹市">
   <div class="footer-grid">
-    <section class="footer-col"><h2>伊丹市ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
-    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>伊丹市役所</span><span>担当課・受付時間は公式情報で確認</span></li><li><b>粗大ごみ・収集の相談</b><span>伊丹市公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>豊中市伊丹市クリーンランド</span><span>伊丹市の粗大ごみ、自己搬入、集合住宅の搬出条件を確認。</span></li><li><b>ごみ出し支援</b><span>高齢者・障がい者などの支援制度は福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に伊丹市公式情報も確認してください。</p></section>
-    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a></li><li><a href="/hyogo/">兵庫県トップ</a></li></ul><p class="footer-note" id="operator">運営: 兵庫県伊丹市遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは伊丹市で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
+    <section class="footer-col">
+      <h2>運営者情報・ポリシー</h2>
+      <ul class="policy-list">
+        <li><a href="#operator">サイト運営者情報</a></li>
+        <li><a href="/privacy/">プライバシーポリシー</a></li>
+        <li><a href="/disclaimer/">免責事項</a></li>
+        <li><a href="/sitemap/">サイトマップ</a></li>
+        <li><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a></li>
+        <li><a href="/hyogo/">兵庫県トップ</a></li>
+      </ul>
+      <p class="footer-note" id="operator">運営: 兵庫県伊丹市遺品整理・生前整理.jp編集部</p>
+      <p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p>
+      <p class="footer-note" id="disclaimer">本サイトは伊丹市で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。行政制度や料金は変更されるため、相談前に公式情報を確認してください。</p>
+    </section>
   </div>
-  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">伊丹市情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
 </footer>
+
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
