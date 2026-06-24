@@ -18,7 +18,7 @@
     .hero{background:linear-gradient(90deg,rgba(18,24,26,.80) 0%,rgba(18,24,26,.56) 36%,rgba(18,24,26,.18) 66%,rgba(18,24,26,0) 100%),url("/assets/cv-hero-staff-photo.png?v=1");background-size:cover;background-position:center center;color:#fff}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:540px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:34px;align-items:center;padding:64px 0 72px}.eyebrow{display:inline-block;margin-bottom:14px;padding:5px 11px;border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.14);font-weight:900}.hero h1{margin:0 0 18px;max-width:820px;font-size:clamp(34px,5vw,58px);line-height:1.18;text-shadow:0 2px 18px rgba(0,0,0,.28)}.hero p{max-width:780px;margin:0 0 24px;color:rgba(255,255,255,.94);font-size:18px;font-weight:700}.hero-actions{display:flex;flex-wrap:wrap;gap:10px}.btn{min-height:48px;display:inline-grid;place-items:center;padding:0 18px;border-radius:4px;border:1px solid transparent;font-weight:900}.btn.primary{background:var(--orange);color:#fff}.btn.secondary{background:rgba(255,255,255,.92);border-color:rgba(255,255,255,.5);color:var(--orange-dark)}.hero-panel{background:rgba(255,255,255,.93);color:var(--ink);border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);padding:22px;backdrop-filter:blur(4px)}.hero-panel h2{margin:0 0 12px;font-size:20px}.hero-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}.hero-panel li{position:relative;padding-left:20px}.hero-panel li:before{content:"";position:absolute;left:0;top:.75em;width:8px;height:8px;border-radius:50%;background:var(--green)}
     .wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.section{margin-top:50px}.section+.section{margin-top:58px}.section-title{margin:0 0 24px;padding:11px 15px;background:var(--orange);border-left:7px solid var(--orange-dark);color:#fff;font-size:26px;line-height:1.45}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}.grid{display:grid;gap:22px}.grid.cols2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}.card,.area-box,.notice{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:24px}.card h3,.area-box h3{margin:0 0 10px;font-size:20px;line-height:1.5}.card p{margin:0;color:var(--muted);font-size:16px;line-height:1.8}.ward-links{display:flex;flex-wrap:wrap;gap:12px}.ward-links a{display:inline-block;padding:6px 12px;border:1px solid var(--line);background:#fff;color:#343a36;border-radius:999px;font-size:15px;font-weight:900}.ward-links a.featured{background:#fff1e6;border-color:#f2b48c;color:var(--orange-dark)}.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}.price-table th{background:#f1eee8;font-weight:900}.notice{background:#fff8e9;line-height:1.82}.footer{background:#26231f;color:#fff;margin-top:50px;padding:26px 0}.footer-inner{width:min(1160px,calc(100% - 28px));margin:0 auto;color:#f3ece4;font-size:14px}
     @media(max-width:820px){.hero-inner{grid-template-columns:1fr;min-height:auto;padding:48px 0 56px}.wrap{margin:30px auto 78px}.grid.cols2,.grid.cols3{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}.hero h1{font-size:34px}.price-table{min-width:680px}.table-wrap{overflow-x:auto}}
-  
+
     /* national-local-uniform-v1: 全国市区町村ページの共通見た目調整 */
     body{background:#F7F5F0;color:#2B2B2B;font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;font-size:18px;line-height:1.78;letter-spacing:0}
     .topbar{background:#fff;border-bottom:1px solid #e5ded5;box-shadow:0 2px 12px rgba(34,28,22,.04)}
@@ -841,20 +841,57 @@
   }
 </style>
 
-<style id="hyogo-report-style-v1">
-.hyogo-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
-.hyogo-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
-.hyogo-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
-.hyogo-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
-.hyogo-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
-.hyogo-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
-.hyogo-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
-.hyogo-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
-.hyogo-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
-.hyogo-report-table th,.hyogo-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
-.hyogo-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
-.hyogo-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
-@media(max-width:860px){.hyogo-report-grid{grid-template-columns:1fr}.hyogo-report-table th{width:120px}}
+<style id="kobe-ward-one-column-admin-v1">
+  .page-shell{display:block!important;grid-template-columns:1fr!important}
+  .page-shell>aside,.sidebar,.side-card,.sidebar-card,.local-memo,.official-link-card{display:none!important}
+  .wrap{max-width:1120px!important}
+  .kobe-admin-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 22px}
+  .kobe-admin-summary .stat{background:#fff;border:1px solid #e5ded5;box-shadow:0 10px 24px rgba(34,28,22,.06);padding:16px}
+  .kobe-admin-summary .stat span{display:block;color:#9F3E00;font-size:14px;font-weight:900}
+  .kobe-admin-summary .stat strong{display:block;color:#2B2B2B;font-size:20px;line-height:1.45;margin-top:4px}
+  .kobe-admin-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.75;margin-top:16px}
+  .kobe-admin-table th,.kobe-admin-table td{border:1px solid #ddd7d0;padding:15px;text-align:left;vertical-align:top}
+  .kobe-admin-table th{width:210px;background:#fff4e8;color:#8c3d00;font-weight:900}
+  .kobe-admin-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .kobe-admin-links a{display:inline-flex;align-items:center;min-height:38px;padding:6px 12px;border:1px solid #e5ded5;background:#fff;color:#286f94;font-size:15px;font-weight:900}
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  @media(max-width:820px){.kobe-admin-summary{grid-template-columns:1fr}.kobe-admin-table{display:block;overflow-x:auto}.site-footer .footer-grid{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="kobe-footer-policy-thick-v1">
+  .site-footer .policy-list{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 16px;padding:0;list-style:none}
+  .site-footer .policy-list a{display:inline-flex;align-items:center;min-height:34px;padding:5px 10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#ffd7bd;font-weight:900}
+  .site-footer .policy-detail{display:grid;gap:12px;margin-top:12px}
+  .site-footer .policy-detail-card{padding:14px 15px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.055)}
+  .site-footer .policy-detail-card b{display:block;margin-bottom:5px;color:#fff;font-size:15px;line-height:1.5}
+  .site-footer .policy-detail-card p{margin:0;color:#f3ece4;font-size:14px;line-height:1.85}
+  .site-footer .policy-source{margin-top:12px;padding:12px 14px;border-left:4px solid #D05300;background:rgba(208,83,0,.12);color:#f8eee4;font-size:13px;line-height:1.8}
+</style>
+
+
+<style id="kobe-footer-guide-reset-v1">
+  .site-footer{background:#26231f!important;color:#fff!important;padding:34px 0!important}
+  .site-footer .footer-grid{width:min(1120px,calc(100% - 28px))!important;margin:0 auto!important;display:grid!important;grid-template-columns:0.82fr 1.18fr!important;gap:18px!important;align-items:start!important}
+  .site-footer .footer-col{margin:0!important;padding:18px!important;border:1px solid rgba(255,255,255,.16)!important;background:rgba(255,255,255,.055)!important;box-shadow:none!important;color:#f8eee4!important}
+  .site-footer .footer-col h2{margin:0 0 14px!important;padding:0 0 10px!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.18)!important;background:transparent!important;color:#fff!important;font-size:18px!important;line-height:1.5!important}
+  .site-footer .footer-links{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;margin:0!important;padding:0!important;list-style:none!important}
+  .site-footer .footer-links li{margin:0!important;padding:0!important;list-style:none!important;background:transparent!important;border:0!important}
+  .site-footer .footer-links a{display:flex!important;align-items:center!important;min-height:38px!important;padding:7px 10px!important;border:1px solid rgba(255,255,255,.18)!important;background:rgba(255,255,255,.06)!important;color:#ffd7bd!important;font-size:14px!important;font-weight:900!important;line-height:1.45!important;text-decoration:none!important}
+  .site-footer .footer-links a:hover,.site-footer .policy-list a:hover{background:rgba(208,83,0,.22)!important;border-color:rgba(255,215,189,.38)!important}
+  @media(max-width:820px){.site-footer .footer-grid{grid-template-columns:1fr!important}.site-footer .footer-links{grid-template-columns:1fr!important}}
+</style>
+
+
+<style id="kobe-policy-link-cards-v1">
+  .site-footer .policy-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin:0 0 16px!important;padding:0!important;list-style:none!important}
+  .site-footer .policy-list li{margin:0!important;padding:0!important;list-style:none!important}
+  .site-footer .policy-list a{display:grid!important;align-content:start!important;min-height:86px!important;padding:13px 14px!important;border:1px solid rgba(255,215,189,.28)!important;background:rgba(208,83,0,.14)!important;color:#fff!important;text-decoration:none!important;font-weight:900!important;line-height:1.45!important}
+  .site-footer .policy-list a strong{display:block!important;color:#fff!important;font-size:15px!important;line-height:1.45!important}
+  .site-footer .policy-list a span{display:block!important;margin-top:5px!important;color:#f3d8c6!important;font-size:12px!important;font-weight:700!important;line-height:1.55!important}
+  .site-footer .policy-list a:hover{background:rgba(208,83,0,.28)!important;border-color:rgba(255,215,189,.5)!important}
+  .site-footer .policy-list .policy-home-link{background:rgba(255,255,255,.06)!important;color:#ffd7bd!important}
+  @media(max-width:820px){.site-footer .policy-list{grid-template-columns:1fr!important}.site-footer .policy-list a{min-height:auto!important}}
 </style>
 
 </head>
@@ -1007,22 +1044,55 @@
   <div class="notice" style="margin-top:18px"><b>灘区の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
 </section>
     <section id="local" class="section"><h2 class="section-title">灘区で遺品整理・生前整理が必要になりやすい住宅特性</h2><p class="lead">六甲・王子公園・摩耶周辺は、駅近マンション、山手の坂道住宅、古い戸建てが近接します。階段搬出や駐車位置、管理会社への連絡、書類・貴重品探索の範囲を先に決めておくと安心です。</p><div class="kobe-research-panel"><h3>神戸市の統計で見る、灘区の整理相談の背景</h3><p>神戸市は人口が都心へ集まる一方で、郊外ニュータウンや下町密集市街地では高齢化・単身化・空き家化が進んでいます。灘区では「文教住宅地・坂道集合住宅型」として、間取りだけでなく建物の種類、坂道、車両位置、管理規約、遠方家族の立会い可否まで確認することが大切です。</p><div class="kobe-data-grid"><div class="kobe-data-card"><b>1,525,152人</b><span>令和2年国勢調査の神戸市人口。2015年比で12,120人、0.8%減少。</span></div><div class="kobe-data-card"><b>766,349世帯</b><span>神戸市の世帯数。平均世帯人員は1.95人で、単身化が進んでいます。</span></div><div class="kobe-data-card"><b>約1.7倍</b><span>神戸市の単独世帯は2000年から2020年で大きく増加。立会い不要・写真報告の需要につながります。</span></div><div class="kobe-data-card"><b>471,928世帯</b><span>共同住宅に住む世帯。マンション・団地では養生、搬出届、エレベーター予約が重要です。</span></div></div><div class="kobe-ward-focus"><div class="card"><h3>灘区の注目データ</h3><p><strong>文教地区として増加傾向を維持</strong><br>六甲山麓の坂道住宅、王子公園・六甲道周辺の集合住宅、古い下町住宅が近接。学生・単身・高齢世帯が混ざるため、短期整理と実家じまいの両方が起きます。</p></div><div class="card"><h3>整理で費用差が出やすい理由</h3><p>山手の階段搬出、駅前マンションの養生、古い木造住宅の長距離手運びを分けて見積もる必要があります。</p></div></div><div class="grid cols3 kobe-original-points"><div class="card"><h3>地域で見たい条件</h3><p>六甲・摩耶山麓では坂道と階段が多く、家具の分解や小運搬の有無が費用に影響します。</p></div><div class="card"><h3>地域で見たい条件</h3><p>六甲道・王子公園周辺の集合住宅は、管理会社連絡と共用部養生を先に決めます。</p></div><div class="card"><h3>地域で見たい条件</h3><p>灘区東部・西部の古い住宅では、近隣配慮と作業時間、貴重品探索の範囲を明確にします。</p></div></div><p class="kobe-source-note">出典・反映内容：添付資料「神戸市における生前整理・遺品整理と生活環境インフラに関わる地域特性と構造的課題の総合分析」（令和2年国勢調査、神戸市の環境事業所、大型ごみ、すまいるネット、アキカツカウンター等の整理情報）をページ向けに要約。</p></div><div class="notice"><b>見積もり前のコツ</b><br>「探してほしいもの」「残したいもの」「買取してほしいもの」「供養したいもの」を先にメモしておくと、作業当日の判断が速くなり、誤処分のリスクも下がります。</div></section>
-    <section id="towns" class="section"><h2 class="section-title">灘区の対応町名・駅周辺</h2><p class="lead">灘区は同じ区内でも、駅周辺の集合住宅、山手・郊外の戸建て、古い建物、団地で搬出条件が変わります。町名と建物種別を先に共有しておくと、見積もり時に「管理会社への届出」「停車位置」「書類探索の範囲」まで確認しやすくなります。</p><div class="kobe-area-tags"><span>六甲</span><span>王子公園</span><span>摩耶</span><span>灘駅周辺</span><span>水道筋</span></div><table><thead><tr><th>地域の見方</th><th>灘区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead><tbody><tr><td>六甲・阪急沿線</td><td>マンション整理、施設入居前の生前整理。</td><td>エレベーター予約、養生範囲、管理会社への連絡。</td></tr><tr><td>摩耶・王子公園周辺</td><td>古い建物や階段搬出を伴う片付け。</td><td>階段幅、搬出時間、近隣店舗・住宅への配慮。</td></tr><tr><td>水道筋周辺</td><td>商店街近くの住宅、店舗併用住宅の整理。</td><td>前面道路、停車可否、什器と家財の分別。</td></tr><tr><td>山手住宅地</td><td>坂道や狭い道の戸建て整理。</td><td>車両位置、大型家具、物置、庭まわり。</td></tr></tbody></table><div class="notice"><b>灘区で特に確認したいこと</b><br>灘区では、駅近集合住宅、山手の坂道、古い戸建ての条件で、同じ間取りでも作業時間や車両台数が変わります。管理会社の搬出届、作業可能時間、駐車位置、鍵の受け渡し、写真報告の方法を見積もり時に確認しておくと安心です。</div></section><section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">灘区の行政窓口・粗大ごみ・持込先確認</h2>
-  <p>灘区で遺品整理・生前整理を進める前に、行政収集で出す物、自己搬入できる物、専門業者に任せる物を分けます。受付日、料金、本人確認、搬入車両、家電4品目、危険物、処理困難物は変更される場合があるため、相談前に公式情報で確認してください。</p>
+    <section id="towns" class="section"><h2 class="section-title">灘区の対応町名・駅周辺</h2><p class="lead">灘区は同じ区内でも、駅周辺の集合住宅、山手・郊外の戸建て、古い建物、団地で搬出条件が変わります。町名と建物種別を先に共有しておくと、見積もり時に「管理会社への届出」「停車位置」「書類探索の範囲」まで確認しやすくなります。</p><div class="kobe-area-tags"><span>六甲</span><span>王子公園</span><span>摩耶</span><span>灘駅周辺</span><span>水道筋</span></div><table><thead><tr><th>地域の見方</th><th>灘区で起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead><tbody><tr><td>六甲・阪急沿線</td><td>マンション整理、施設入居前の生前整理。</td><td>エレベーター予約、養生範囲、管理会社への連絡。</td></tr><tr><td>摩耶・王子公園周辺</td><td>古い建物や階段搬出を伴う片付け。</td><td>階段幅、搬出時間、近隣店舗・住宅への配慮。</td></tr><tr><td>水道筋周辺</td><td>商店街近くの住宅、店舗併用住宅の整理。</td><td>前面道路、停車可否、什器と家財の分別。</td></tr><tr><td>山手住宅地</td><td>坂道や狭い道の戸建て整理。</td><td>車両位置、大型家具、物置、庭まわり。</td></tr></tbody></table><div class="notice"><b>灘区で特に確認したいこと</b><br>灘区では、駅近集合住宅、山手の坂道、古い戸建ての条件で、同じ間取りでも作業時間や車両台数が変わります。管理会社の搬出届、作業可能時間、駐車位置、鍵の受け渡し、写真報告の方法を見積もり時に確認しておくと安心です。</div></section><section id="admin" class="section admin-hotline-section">
+  <p class="section-kicker">行政窓口・大型ごみ・持ち込み先</p>
+  <h2 class="section-title">灘区の行政窓口・大型ごみ・持ち込み先</h2>
+  <p class="lead">灘区で遺品整理・生前整理を進める前に、神戸市の大型ごみで出すもの、環境局事業所へ相談するもの、布施畑環境センターやクリーンセンターへ持ち込むもの、業者が屋内から搬出するものを分けて整理します。六甲・摩耶周辺の坂道住宅、水道筋・王子公園周辺の集合住宅では、階段幅、前面道路、搬出距離、近隣への作業時間配慮を分けて確認します。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>灘区役所</strong><br>灘区公式サイトで担当課、受付時間、窓口の場所を確認します。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">灘区公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>灘区の粗大ごみ・ごみ分別案内</strong><br>粗大ごみ、戸別収集、処理券・証紙、収集日、収集できない品目を確認します。屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>神戸市大型ごみ受付センター・神戸市の環境センター</strong><br>神戸市の大型ごみ受付、自己搬入、区ごとの管理会社対応を確認。 自己搬入は、本人確認、予約要否、搬入日、車両条件、手数料、家電4品目・危険物・事業系ごみの扱いを公式情報で確認してください。</p><a href="/hyogo/" rel="noopener">府県ページの処理圏情報を見る</a></div>
-    <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare" rel="noopener">業者比較の確認へ</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local" rel="noopener">住宅特性・統計を見る</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出す物、神戸市大型ごみ受付センター・神戸市の環境センターへ持ち込む物、業者が屋内搬出する物、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process" rel="noopener">相談の流れへ</a></div>
+    <div class="card admin-card">
+      <h3>自治体・関連窓口</h3>
+      <p><strong>灘区役所</strong><br>区役所の所在地、代表電話、開庁時間、戸籍・福祉・空き家・住まいの担当窓口は公式ページで確認します。住所変更、相続関係の書類、福祉相談、住まい相談は担当課が分かれるため、見積もり前に必要な窓口を整理してください。</p>
+      <a href="https://www.city.kobe.lg.jp/ward/kuyakusho/nada/" target="_blank" rel="noopener">灘区役所公式情報を確認</a>
+    </div>
+    <div class="card admin-card">
+      <h3>家庭ごみ・分別の相談</h3>
+      <p><strong>灘事業所</strong><br>住所：灘区琵琶町2-1-2<br>電話：078-871-1081 / FAX：078-871-1083<br>受付：平日 8:00〜16:30（年末年始除く）<br>家庭ごみの収集、クリーンステーション、分別ルールの確認先です。</p>
+      <a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/garbage/dashikata/toiawase.html" target="_blank" rel="noopener">神戸市 お問い合わせ窓口（家庭ごみ）</a>
+    </div>
+    <div class="card admin-card">
+      <h3>大型ごみの申込み</h3>
+      <p><strong>神戸市大型ごみ受付センター</strong><br>電話：078-392-7953 / FAX：078-392-5500<br>受付：月〜金曜日 9:00〜16:00（祝日含む、年末年始除く）<br>インターネット申込み：24時間365日。収集は1世帯1日1回5点まで。収集日当日の5:00〜8:00に指定場所へ出す案内です。</p>
+      <a href="https://www.ogatagomi.city.kobe.lg.jp/eco/view/kobe/top.html" target="_blank" rel="noopener">大型ごみインターネット受付</a>
+    </div>
+    <div class="card admin-card">
+      <h3>大型ごみ・燃えないごみの持ち込み</h3>
+      <p><strong>布施畑環境センター</strong><br>住所：西区伊川谷町布施畑字丸畑1172-2<br>電話：078-974-1501 / 持ち込みに関すること：078-974-2411<br>大型ごみはシール券を貼らずに持ち込みます。持ち込めない品目もあるため、必ず数日前までに公式ページと電話で確認してください。</p>
+      <a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/garbage/dashikata/mochikomi.html" target="_blank" rel="noopener">神戸市 ごみを自分で持ち込む場合</a>
+    </div>
+    <div class="card admin-card">
+      <h3>燃えるごみ・資源ごみの持ち込み</h3>
+      <p><strong>東クリーンセンター</strong> 078-452-4100 / 東灘区魚崎浜町1-7<br><strong>港島クリーンセンター</strong> 078-304-0530 / 中央区港島9-12-1<br><strong>西クリーンセンター</strong> 078-974-2005 / 西区伊川谷町井吹字三番鬮74-1<br>受付：月〜金 10:00〜12:00、13:00〜15:30（土日祝・12月29日〜1月3日除く）。品目により持ち込み先が変わります。</p>
+      <a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/garbage/dashikata/mochikomi.html" target="_blank" rel="noopener">持ち込み先を確認</a>
+    </div>
+    <div class="card admin-card">
+      <h3>木質系大型ごみ・資源ごみ</h3>
+      <p><strong>港島クリーンセンター</strong> 078-304-0530<br>木質系廃棄物：月〜金 9:00〜12:00、13:00〜15:00（土日祝・年末年始除く）。<br><strong>資源リサイクルセンター</strong> 078-995-3323 / 西区見津が丘1-9<br>缶・びん・ペットボトル：月〜金 8:30〜12:00、13:00〜16:00（土日祝・年末年始除く）。</p>
+      <a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/garbage/dashikata/mochikomi.html" target="_blank" rel="noopener">品目別の持ち込み条件を確認</a>
+    </div>
+    <div class="card admin-card">
+      <h3>住まい・空き家・片付け支援</h3>
+      <p><strong>神戸市すまいの安心支援センター「すまいるネット」</strong><br>電話：078-647-9900<br>大型ごみとして処分する前に、リユース、買取、片付け支援サービス事業者の選定支援も確認できます。</p>
+      <a href="https://www.smilenet.kobe-rma.or.jp/" target="_blank" rel="noopener">すまいるネットを確認</a>
+    </div>
+    <div class="card admin-card">
+      <h3>業者へ伝えること</h3>
+      <p>退去期限、管理会社への届出、エレベーター予約、共用部養生、駐車位置、神戸市大型ごみで出すもの、持ち込みを検討するもの、業者が屋内搬出するもの、家電4品目、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+      <a href="/hyogo/kobe/">神戸市区別ページへ戻る</a>
+    </div>
   </div>
-  <p class="source-note">出典：灘区公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典：神戸市「お問い合わせ窓口（家庭ごみ）」「神戸市大型ごみインターネット受付」「ごみを自分で持ち込む場合（有料）」「ひまわり収集」、神戸市すまいの安心支援センター。電話番号、受付時間、施設の受け入れ状況は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
 </section>
-    <section id="service" class="section"><h2 class="section-title">任せられる整理内容</h2><div class="grid cols2"><div class="card"><h3>遺品整理・家財整理</h3><p>家具、家電、衣類、書類、生活用品を仕分け、必要品・貴重品・供養品・処分品に分けます。</p></div><div class="card"><h3>生前整理・実家じまい</h3><p>施設入居、住み替え、空き家化の前に、残す荷物と手放す荷物を家族で確認しながら進めます。</p></div><div class="card"><h3>貴重品探索・写真報告</h3><p>通帳、印鑑、権利書、保険証券、写真、形見分け品などを探索し、立会いが難しい場合も写真で報告します。</p></div><div class="card"><h3>供養・買取・処分相談</h3><p>仏壇、神棚、写真、人形などの供養相談や、状態の良い家電・貴金属・趣味用品の査定確認にも対応します。</p></div></div></section>
-    <section id="cases" class="section common-kita-ba">
+<section id="cases" class="section common-kita-ba">
   <h2 class="section-title">灘区の遺品整理ビフォーアフター事例</h2>
   <p class="common-ba-lead"><span class="marker">写真で作業前後を確認できる</span>と、どこまで片付くのか、どの程度の荷物量なのかをイメージしやすくなります。見積もり前に仕上がりを判断しやすいよう、灘区の遺品整理のビフォーアフター写真を掲載しています。</p>
   <div class="common-ba-guide" aria-label="ビフォーアフターの見方">
@@ -1073,7 +1143,7 @@
     </div>
   </div>
 </div></div><div class="notice">実際の費用は荷物量、搬出距離、階段作業、車両停車位置、処分品の内容で変わります。写真だけで確定せず、現地確認または詳細なオンライン確認で内訳を見てください。</div></section>
-    
+
 <section id="kodokushi-cost" class="section kodokushi-cost">
   <h2 class="section-title">孤独死後に重くなりやすい費用</h2>
   <p class="lead">発見が遅れると、遺品整理だけでなく特殊清掃、脱臭、床材や壁紙の修繕が必要になることがあります。賃貸では退去期限も重なり、残された家族や連帯保証人の金銭的・精神的負担が一気に大きくなります。</p>
@@ -1132,36 +1202,29 @@
 <section id="process" class="section"><h2 class="section-title">相談前に準備すると進めやすいもの</h2><div class="grid cols3"><div class="card"><h3>部屋全体の写真</h3><p>各部屋、押入れ、納戸、ベランダ、物置、庭を撮影して荷物量を共有します。</p></div><div class="card"><h3>建物条件</h3><p>階数、エレベーター、駐車位置、前面道路、管理会社への連絡要否を確認します。</p></div><div class="card"><h3>残したいもの</h3><p>貴重品、写真、仏壇、形見分け品、買取候補品を処分前に探すリストとして共有します。</p></div></div></section>
     <section id="items" class="section"><h2 class="section-title">品目別の処分・買取・供養</h2><div class="grid cols3"><div class="card"><h3>貴重品・重要書類</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙は処分前に探索範囲として共有します。</p></div><div class="card"><h3>買取できる品</h3><p>貴金属、時計、カメラ、工具、家電、趣味用品は査定できるか確認します。</p></div><div class="card"><h3>供養したい品</h3><p>仏壇、位牌、写真、人形、手紙などは通常処分と分けて相談します。</p></div></div></section>
 <section id="compare" class="section"><h2 class="section-title">業者比較と見積もり前チェック</h2><div class="section-note">灘区で比較するときは、総額だけでなく、作業人数、作業時間、追加料金、買取相殺、供養、写真報告、キャンセル条件まで同じ条件で見比べてください。</div></section>
-<section id="hyogo-report" class="section hyogo-report">
-  <div class="container">
-    <p class="section-kicker">兵庫県調査データ</p>
-    <h2 class="section-title">灘区に反映した兵庫県調査データ</h2>
-    <p class="lead">添付調査のうち、灘区で見積もり前に使いやすい廃棄物処理・空き家対策・高齢者支援の確認点を整理しました。料金は変更されるため、依頼前に必ず自治体公式サイトで最新条件を確認してください。</p>
-    <div class="hyogo-report-grid">
-      <div class="hyogo-report-card"><b>自己搬入・粗大ごみ</b><span>神戸市クリーンセンター等。燃えるごみ80円/10kg、燃えないごみ140円/10kg。</span></div>
-      <div class="hyogo-report-card"><b>搬出条件</b><span>神戸市内は坂道、高層マンション、防災センター確認、管理規約の有無で作業時間が変わります。</span></div>
-      <div class="hyogo-report-card"><b>空き家・生前整理</b><span>売却前、解体前、施設入居前の整理では、残す書類、仏壇、写真、貴重品、屋外品を分けて確認します。</span></div>
-      <div class="hyogo-report-card"><b>役所出典</b><span><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">神戸市公式サイト</a>のみを出典として記載。</span></div>
-    </div>
-    <table class="hyogo-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ・自己搬入・高齢者支援は、事前予約、本人確認、搬入車両、受付日を公式サイトで確認します。</td></tr>
-      <tr><th>料金目安</th><td>燃えるごみ80円/10kg、燃えないごみ140円/10kg。家電リサイクル品、危険物、事業系ごみ、解体材は別ルールになるため混ぜて見積もらないでください。</td></tr>
-      <tr><th>地域事情</th><td>神戸市内は坂道、高層マンション、防災センター確認、管理規約の有無で作業時間が変わります。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">神戸市公式サイト</a></td></tr>
-    </table>
-    <p class="hyogo-report-note">出典リンクは市役所・町役場の公式サイトのみです。民間まとめサイトや不確実な電話番号は出典欄に載せず、公式確認を前提にしています。</p>
-  </div>
-</section>
-
 <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>灘区で立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、作業前後の写真報告、貴重品返却、支払い方法を事前に決めれば進めやすくなります。</p></div><div class="card"><h3>粗大ごみと業者依頼はどちらがよいですか？</h3><p>少量なら自治体制度を確認し、大量家財、屋内搬出、短納期、供養・買取・探索が必要な場合は業者見積もりを比較してください。</p></div><div class="card"><h3>灘区で見積もり前に地域事情として何を伝えるべきですか？</h3><p>六甲・王子公園・摩耶周辺は、駅近マンション、山手の坂道住宅、古い戸建てが近接します。階段搬出や駐車位置、管理会社への連絡、書類・貴重品探索の範囲を先に決めておくと安心です。</p></div><div class="card"><h3>灘区で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>灘区の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section>
   </main>
+
+
   <footer id="operator" class="site-footer" data-pref="hyogo" data-city="灘区">
-  <div class="footer-grid">
-    <section class="footer-col"><h2>灘区ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
-    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>灘区役所</span><span>担当課・受付時間は公式情報で確認</span></li><li><b>粗大ごみ・収集の相談</b><span>灘区公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>神戸市大型ごみ受付センター・神戸市の環境センター</span><span>神戸市の大型ごみ受付、自己搬入、区ごとの管理会社対応を確認。</span></li><li><b>ごみ出し支援</b><span>高齢者・障がい者などの支援制度は福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に灘区公式情報も確認してください。</p></section>
-    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">灘区公式サイト</a></li><li><a href="/hyogo/">兵庫県トップ</a></li></ul><p class="footer-note" id="operator">運営: 兵庫県灘区遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは灘区で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
+  <div class="footer-grid" style="grid-template-columns:1fr">
+    <section class="footer-col">
+      <h2>運営者情報・ポリシー</h2>
+      <ul class="policy-list">
+        <li><a href="#operator">サイト運営者情報</a></li>
+        <li><a href="/privacy/">プライバシーポリシー</a></li>
+        <li><a href="/disclaimer/">免責事項</a></li>
+        <li><a href="/sitemap/">サイトマップ</a></li>
+        <li><a href="https://www.city.kobe.lg.jp/ward/kuyakusho/nada/" target="_blank" rel="noopener">灘区役所公式情報</a></li>
+        <li><a href="https://www.ogatagomi.city.kobe.lg.jp/eco/view/kobe/top.html" target="_blank" rel="noopener">神戸市大型ごみ受付</a></li>
+        <li><a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/garbage/dashikata/mochikomi.html" target="_blank" rel="noopener">神戸市 ごみの持ち込み</a></li>
+        <li><a href="/hyogo/kobe/">神戸市区別ページ</a></li>
+      </ul>
+      <p class="footer-note" id="operator">運営: 兵庫県灘区遺品整理・生前整理.jp編集部</p>
+      <p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p>
+      <p class="footer-note" id="disclaimer">本サイトは灘区で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p>
+    </section>
   </div>
-  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">灘区情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
 </footer>
 <script id="common-kita-before-after-script">
   (() => {
