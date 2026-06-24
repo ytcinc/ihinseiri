@@ -245,7 +245,7 @@
       gap: 28px;
       align-items: start;
     }
-    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:22px; align-items:start; }
+    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr); gap:22px; align-items:start; }
     main.page { width:auto; margin:0; }
     aside { position:sticky; top:84px; display:grid; gap:16px; }
     .side-card { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); padding:17px; }
@@ -1109,7 +1109,7 @@
 
     @media (max-width: 980px) {
       .hero-inner, .page { grid-template-columns: 1fr; }
-    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:22px; align-items:start; }
+    .page-shell { width:min(1160px,calc(100% - 28px)); margin:28px auto 80px; display:grid; grid-template-columns:minmax(0,1fr); gap:22px; align-items:start; }
     main.page { width:auto; margin:0; }
     aside { position:sticky; top:84px; display:grid; gap:16px; }
     .side-card { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); padding:17px; }
@@ -1311,12 +1311,12 @@
     .nav{gap:14px}.nav a{color:#333}.nav-cta,.call{background:#D05300!important;color:#fff!important;border-radius:4px}
     .breadcrumb,.breadcrumb-inner{background:#fffdf3}.breadcrumb{border-bottom:1px solid #eadfd4}.breadcrumb a{color:#8a6b18;font-weight:900}
     .hero{min-height:auto;background-size:cover;background-position:center center}.hero-inner{width:min(1160px,calc(100% - 28px));min-height:520px;padding:64px 0 72px;gap:34px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.18}.hero-lead,.hero p{font-size:18px;line-height:1.82}.hero-panel{border:1px solid rgba(255,255,255,.62);box-shadow:0 18px 46px rgba(0,0,0,.18);border-radius:0}.hero-badges{gap:12px}.badge{border:1px solid rgba(255,255,255,.58);border-radius:0}
-    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;align-items:start}.page-shell main{min-width:0}
+    .page,.page-shell,.wrap{width:min(1160px,calc(100% - 28px));margin:44px auto 100px}.page{padding:30px;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08)}.page-shell{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start}.page-shell main{min-width:0}
     section,.section{margin-top:50px}section+section,.section+.section{margin-top:58px}.section-kicker{margin:0 0 8px;color:#9F3E00;font-size:14px;font-weight:900;letter-spacing:0}.section-title{margin:0 0 24px;padding:11px 15px;background:#D05300!important;border-left:7px solid #9F3E00!important;color:#fff!important;font-size:26px;line-height:1.45;font-weight:900}.lead{margin:0 0 26px;color:#414743;font-size:18px;line-height:1.82}.marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
     .cards,.stats,.flow,.grid{gap:22px}.card,.case,.notice,.nearby-wards,.search-intent,.cta-band,.sidebar-card,.area-box,.chart-box{border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);border-radius:0;background:#fff}.card,.notice,.nearby-wards,.search-intent,.area-box,.chart-box{padding:24px}.card h3,.case h3,.area-box h3,.chart-box h3{font-size:20px;line-height:1.5}.card p,.case p,.notice p{font-size:16px;line-height:1.8;color:#555f59}
     table,.price-table{width:100%;border-collapse:collapse;background:#fff;font-size:16px;line-height:1.72}th,td,.price-table th,.price-table td{border:1px solid #ddd7d0;padding:16px;text-align:left;vertical-align:top}th,.price-table th{background:#f1eee8;font-weight:900}
     details{border:1px solid #e5ded5;background:#fff;padding:16px;margin:12px 0;box-shadow:0 8px 22px rgba(34,28,22,.05)}summary{cursor:pointer;font-weight:900;color:#2B2B2B}
-    .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
+    .footer,.site-footer{background:#f8f6f2;color:#2e332f}.footer-inner{color:#5f645f}
     @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
   <style id="osaka-local-compare-style">
     .osaka-local-compare {
@@ -2270,22 +2270,6 @@
   }
 </style>
 
-<style id="osaka-report-style-v1">
-.osaka-report{background:#fffaf4;border-top:1px solid #eadbc8;border-bottom:1px solid #eadbc8;padding:clamp(34px,5vw,62px) 0;color:#2b2b2b}
-.osaka-report .section-kicker{color:#9f3e00;font-weight:900;letter-spacing:.02em;margin:0 0 8px}
-.osaka-report .section-title{font-size:clamp(25px,3vw,38px);line-height:1.35;margin:0 0 14px;color:#2b2b2b}
-.osaka-report .lead{max-width:980px;margin:0 0 22px;color:#4f4a43;font-size:17px;line-height:1.85}
-.osaka-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
-.osaka-report-card{background:#fff;border:1px solid #eadbc8;border-radius:10px;padding:16px;box-shadow:0 10px 24px rgba(70,48,24,.07)}
-.osaka-report-card b{display:block;color:#9f3e00;font-size:15px;margin-bottom:6px}
-.osaka-report-card span{display:block;color:#3f3a34;line-height:1.75;font-size:15px}
-.osaka-report-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #eadbc8;border-radius:10px;overflow:hidden}
-.osaka-report-table th,.osaka-report-table td{border-bottom:1px solid #f0e2d3;padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
-.osaka-report-table th{width:180px;background:#fff4e7;color:#8b3900;font-weight:900}
-.osaka-report-note{margin:14px 0 0;color:#665d54;font-size:14px;line-height:1.8}
-@media(max-width:860px){.osaka-report-grid{grid-template-columns:1fr}.osaka-report-table th{width:120px}}
-</style>
-
 </head>
 <body>
   <header class="topbar">
@@ -2828,27 +2812,6 @@
         </div>
       </section>
     
-<section id="osaka-report" class="section osaka-report">
-  <div class="container">
-    <p class="section-kicker">大阪府調査データ</p>
-    <h2 class="section-title">大阪市天王寺区に反映した大阪府調査データ</h2>
-    <p class="lead">添付調査から、大阪市天王寺区で遺品整理・生前整理を進める前に確認したい廃棄物処理、住環境、高齢者支援の要点を整理しました。料金・受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
-    <div class="osaka-report-grid">
-      <div class="osaka-report-card"><b>自己搬入・粗大ごみ</b><span>中部環境事業センターで収集・処理券を確認し、直接搬入は大阪広域環境施設組合 平野工場（平野区瓜破南1-3-14）の条件を確認します。</span></div>
-      <div class="osaka-report-card"><b>搬出条件</b><span>大阪市内は高層マンション、単身賃貸、狭い搬出経路、管理会社届出、時間指定、駐車位置で条件が変わります。</span></div>
-      <div class="osaka-report-card"><b>終活・高齢者支援</b><span>エンディングノート、ごみ出し支援、空き家相談は、対象要件と事前申請を自治体公式で確認します。</span></div>
-      <div class="osaka-report-card"><b>役所出典</b><span><a href="https://www.city.osaka.lg.jp/" target="_blank" rel="noopener">大阪市公式サイト</a>のみを出典として記載。</span></div>
-    </div>
-    <table class="osaka-report-table">
-      <tr><th>受付確認</th><td>天王寺区では粗大ごみ収集、直接搬入、家電リサイクル、事業系ごみを分けて確認します。中部環境事業センター、大阪広域環境施設組合 平野工場、自治体公式窓口の順に確認してください。</td></tr>
-      <tr><th>料金目安</th><td>粗大ごみ受付センター、各区担当の環境事業センター 自己搬入は事前予約制、手数料は10kgにつき90円が目安。 家電4品目、危険物、事業系ごみ、解体材、供養希望品は別ルールとして分けてください。</td></tr>
-      <tr><th>地域事情</th><td>大阪市内は高層マンション、単身賃貸、狭い搬出経路、管理会社届出、時間指定、駐車位置で条件が変わります。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.osaka.lg.jp/" target="_blank" rel="noopener">大阪市公式サイト</a></td></tr>
-    </table>
-    <p class="osaka-report-note">出典リンクは市役所・町役場・村役場の公式サイトのみです。民間まとめサイトや不確実な電話番号は出典欄に載せず、公式確認を前提にしています。</p>
-  </div>
-</section>
-
 <section id="faq">
       <h2 class="section-title">よくある質問</h2>
       <div class="faq">
@@ -2875,63 +2838,31 @@
       <div><h2>天王寺区の遺品整理は、文教地区と寺社周辺の配慮まで確認</h2><p>上本町・四天王寺・玉造・寺田町・真法院町周辺では、マンション、戸建て、寺社近くの住宅で確認点が変わります。供養したい品、残す書類、買取査定したい品を先に分けると、家族の気持ちにも配慮して進めやすくなります。</p></div>
       <a class="btn primary" href="#process">見積もり相談の準備をする</a>
     </section>
-          <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
+    <section id="admin" class="admin-hotline-section">
   <h2 class="section-title">天王寺区の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>天王寺区で遺品整理・生前整理を進める前に、行政収集で出すもの、処理施設へ直接持ち込むもの、業者が屋内搬出するものを分けて整理します。送付資料の大阪府調査では、天王寺区の処理圏は「大阪広域環境施設組合 平野工場」を確認する流れです。退去期限、大型家具、家電4品目、物置・庭まわり、貴重品探索の範囲を先に分けてください。</p>
+  <p>天王寺区で遺品整理・生前整理を進める前に、行政収集で出すもの、平野工場へ持ち込むもの、業者が屋内搬出するものを分けて整理します。上本町・四天王寺・玉造・寺田町周辺では、マンション、寺社近くの住宅、坂のある戸建てで搬出条件が変わるため、供養品、搬出時間、駐車位置、貴重品探索の範囲を先に分けてください。</p>
   <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>先に分ける判断軸</h3><p>少量で自力搬出できるものは行政収集、自己搬入を検討するものは平野工場の予約条件、屋内搬出・大量家財・貴重品探索・供養品は業者作業として分けます。</p></div>
+    <div class="admin-card"><h3>天王寺区の地域事情</h3><p>上本町・四天王寺周辺はマンションと寺社近くの住宅、玉造・寺田町周辺は戸建てや坂道の搬出が出やすい地域です。静音搬出、仏壇・写真の供養、停車位置を確認します。</p></div>
+    <div class="admin-card"><h3>分けて確認する品目</h3><p>家電4品目、危険物、事業系ごみ、解体材、仏壇・位牌・写真などの供養希望品は、通常の粗大ごみと別ルールになりやすいため見積もり前に仕分けます。</p></div>
+    <div class="admin-card"><h3>高齢者支援・住まい相談</h3><p>ごみ出し支援、地域包括支援、空き家相談は、対象要件と事前申請の有無を公式窓口で確認します。生前整理ではケアマネジャーや親族の立会い可否も整理します。</p></div>
     <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>天王寺区役所</strong><br>天王寺区公式サイトで担当課、受付時間、窓口の場所を確認します。住所変更、戸籍、福祉、空き家、住まいの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.osaka.lg.jp/tennoji/" target="_blank" rel="noopener">天王寺区公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>中部環境事業センター</strong><br>粗大ごみ受付センター、各区担当の環境事業センター 不燃ごみ・粗大ごみは、予約、処理券・証紙、排出場所、1回あたりの点数、収集できない品目を確認します。屋内からの搬出が必要な家具は行政収集と業者作業を分けて考えます。</p><a href="#admin" rel="noopener">見積もり前の確認事項</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>大阪広域環境施設組合 平野工場</strong><br>所在地・処理圏: 平野区瓜破南1-3-14<br>自己搬入は事前予約制、手数料は10kgにつき90円が目安。 本人確認、搬入日、予約要否、車両条件、家電4品目・危険物・事業系ごみの扱いは公式情報で確認してください。</p><a href="/osaka/" target="_blank" rel="noopener">大阪府ページの処理圏情報を見る</a></div>
-    <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、地域包括支援センター、福祉窓口の対象条件を確認します。遺品整理前の生前整理では、ケアマネジャーや親族の立会い可否も整理します。</p><a href="#compare" rel="noopener">業者比較の確認点へ</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談は、自治体の空き家担当や住まい窓口で確認します。補助金は空き家バンク登録や市内業者利用など条件が付く場合があります。</p><a href="#local" rel="noopener">住宅特性・統計を見る</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、大阪広域環境施設組合 平野工場へ持ち込むもの、業者が屋内搬出するもの、家電4品目、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p><a href="/osaka/" target="_blank" rel="noopener">大阪府ページへ戻る</a></div>
+    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>中部環境事業センター</strong><br>電話: 06-6714-6411<br>開庁時間: 月〜土 8:00〜16:30（祝日を含む、年始を除く）<br><strong>粗大ごみ収集受付センター</strong><br>固定電話: 0120-79-0053<br>携帯電話: 06-6530-1530<br>受付: 月〜土 9:00〜17:00（祝日可、12月29日〜1月3日を除く）</p><a href="https://www.city.osaka.lg.jp/kankyo/page/0000009337.html" target="_blank" rel="noopener">大阪市 粗大ごみ・ごみの出し方</a></div>
+    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>大阪広域環境施設組合 平野工場</strong><br>所在地: 大阪市平野区瓜破南1-3-14<br>電話: 06-6707-3753<br>自己搬入は事前予約制です。本人確認、搬入日、車両条件、家電4品目・危険物・事業系ごみの扱いは公式情報で確認してください。</p><a href="https://www.osaka-env-paa.jp/kojo/hirano/" target="_blank" rel="noopener">平野工場を確認</a></div>
+    <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、地域包括支援センター、福祉窓口の対象条件を確認します。</p><a href="https://www.city.osaka.lg.jp/kankyo/page/0000009981.html" target="_blank" rel="noopener">環境事業センター一覧</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、平野工場へ持ち込むもの、業者が屋内搬出するもの、家電4品目、仏壇・位牌・写真、貴重品探索の範囲を分けて伝えてください。</p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></div>
   </div>
-  <p class="source-note">出典：大阪府調査資料と各自治体・広域処理組合の公式確認導線。電話番号、受付時間、対象条件、料金は変更される場合があります。相談前に自治体・広域処理組合の公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典：大阪市公式サイト、大阪市環境事業センター一覧、大阪市粗大ごみ・ごみの出し方、大阪広域環境施設組合 平野工場。電話番号、受付時間、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
 </section>
 <footer id="operator" class="site-footer" data-pref="osaka" data-city="天王寺区">
   <div class="footer-grid">
-    <section class="footer-col"><h2>天王寺区ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
-    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>自治体・関連窓口</b><span>天王寺区役所</span><span>担当課・受付時間は公式情報で確認</span></li><li><b>粗大ごみ・収集</b><span>中部環境事業センター</span><span>粗大ごみ受付センター、各区担当の環境事業センター</span></li><li><b>持込・処理施設</b><span>大阪広域環境施設組合 平野工場</span><span>平野区瓜破南1-3-14 / 自己搬入は事前予約制、手数料は10kgにつき90円が目安。</span></li><li><b>ごみ出し支援</b><span>ふれあい収集・福祉窓口・地域包括支援センターの対象条件を確認。</span></li><li><b>空家・住まい相談</b><span>空家、解体、売却前整理、家財処分補助の条件を確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に天王寺区公式情報も確認してください。</p></section>
+    <section class="footer-col"><h2>天王寺区ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政窓口</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
     <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="#privacy">プライバシーポリシー</a></li><li><a href="#disclaimer">免責事項</a></li><li><a href="#sitemap">サイトマップ</a></li><li><a href="https://www.city.osaka.lg.jp/tennoji/" target="_blank" rel="noopener">天王寺区公式サイト</a></li><li><a href="/osaka/">大阪府トップ</a></li></ul><p class="footer-note" id="operator">運営: 大阪府天王寺区遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは天王寺区で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
   </div>
   <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">天王寺区情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
 </footer>
   </main>
-        <aside>
-      <div class="side-card">
-        <h2>天王寺区で重視すること</h2>
-        <ul class="side-list"><li>上本町・四天王寺周辺の搬出導線、駐車位置、作業時間</li><li>玉造周辺の文教地区のマンション・戸建て・寺社周辺住宅に合わせた共用部養生</li><li>寺田町・真法院町周辺の大型家具、物置、庭まわり整理</li><li>鍵預かり、写真報告、遠方親族への完了共有</li><li>仏壇や写真の供養、狭い道路での搬出、管理会社確認と行政回収・業者作業の使い分け</li></ul>
-      </div>
-      <div class="side-card">
-        <h2>行政・福祉リンク</h2>
-        <ul class="side-list">
-          <li>中部環境事業センター: 06-6714-6411</li>
-          <li>粗大ごみ受付: 0120-79-0053 / 06-6530-1530</li>
-          <li>ごみの持ち出しサービスは管轄センターへ相談</li>
-          <li><a href="https://www.city.osaka.lg.jp/tennoji/" target="_blank" rel="noopener">大阪市天王寺区公式サイト</a></li>
-          <li><a href="https://www.city.osaka.lg.jp/tennoji/soshiki_list.html" target="_blank" rel="noopener">天王寺区役所 窓口一覧</a></li>
-          <li><a href="https://www.city.osaka.lg.jp/kankyo/page/0000009337.html" target="_blank" rel="noopener">大阪市 粗大ごみ・ごみの出し方</a></li>
-          <li><a href="https://www.city.osaka.lg.jp/kankyo/page/0000009981.html" target="_blank" rel="noopener">環境事業センター一覧</a></li>
-          <li><a href="https://www.osaka-angenet.jp/" target="_blank" rel="noopener">大阪市立住まい情報センター</a></li>
-        </ul>
-      </div>
-      <div class="side-card">
-        <h2>ページ内メニュー</h2>
-        <ul class="side-list">
-          <li><a href="#trust">業者の選び方</a></li>
-          <li><a href="#local">住宅特性・統計</a></li>
-          <li><a href="#towns">対応町名・駅</a></li>
-          <li><a href="#service">任せられる内容</a></li>
-          <li><a href="#cases">ビフォーアフター</a></li>
-          <li><a href="#price">料金目安</a></li>
-          <li><a href="#items">品目別対応</a></li>
-          <li><a href="#process">相談の流れ</a></li>
-          <li><a href="#compare">業者比較</a></li>
-          <li><a href="#faq">よくある質問</a></li>
-        </ul>
-      </div>
-    </aside>  </div>
+  </div>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -3350,6 +3281,3 @@
 </script>
 </body>
 </html>
-
-
-
