@@ -833,6 +833,31 @@
   html body .site-footer a{color:#9f3e00!important}
 </style>
 
+
+<style id="itami-local-polish">
+  .itami-local-wrap{margin-top:22px}
+  .itami-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+  .itami-stat-card{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:16px;box-shadow:0 10px 24px rgba(154,86,34,.08)}
+  .itami-stat-card b{display:block;color:#c2410c;font-size:1.55rem;line-height:1.1;margin-bottom:8px}
+  .itami-stat-card span{display:block;color:#4b5563;font-size:.92rem;line-height:1.75}
+  .itami-area-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+  .itami-area-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+  .itami-area-card h3{margin:0 0 8px;color:#9a3412;font-size:1.08rem}
+  .itami-area-card p{margin:0;color:#374151;line-height:1.85}
+  .itami-check-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+  .itami-check-list li{list-style:none;background:#fff;border:1px solid #fed7aa;border-radius:999px;padding:10px 12px;color:#7c2d12;font-weight:700;text-align:center}
+  .itami-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+  .itami-admin-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+  .itami-admin-card h3{margin:0 0 8px;color:#9a3412}
+  .itami-admin-card p{margin:0 0 10px;line-height:1.8;color:#374151}
+  .itami-admin-card a{color:#c2410c;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  @media (max-width: 760px){
+    .itami-stat-grid,.itami-area-grid,.itami-admin-grid{grid-template-columns:1fr}
+    .itami-check-list{grid-template-columns:1fr 1fr}
+    .itami-stat-card b{font-size:1.35rem}
+  }
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">伊丹市の</span> 遺品整理・生前整理jp</span><br><span class="brand-sub">地域別の相談前チェックガイド</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/hyogo/">兵庫県</a><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="#local">地域特性</a><a href="#price">料金目安</a><a class="call" href="#process">相談準備</a></nav></div></header>
@@ -983,7 +1008,43 @@
   <div class="notice" style="margin-top:18px"><b>伊丹市の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
 </section>
 
-<section id="local" class="section"><h2 class="section-title">伊丹市の住宅特性と作業前チェック</h2><p class="lead"><span class="marker">阪神間・北摂</span>では、同じ兵庫県内でも建物条件、荷物量、車両停車位置、作業時間が大きく変わります。見積もり前に地域写真とあわせて搬出条件を整理しておくと、追加確認を減らせます。</p><div class="grid cols3"><div class="card"><h3>搬出条件</h3><p>階段幅、エレベーター、駐車位置、前面道路、庭や納屋からの搬出距離を確認します。</p></div><div class="card"><h3>遠方対応</h3><p>鍵預かり、作業前後の写真報告、貴重品探索、供養品確認を組み合わせると立会い負担を減らせます。</p></div><div class="card"><h3>仕分け範囲</h3><p>必要品、買取候補、供養品、処分品を先に分け、残したいものの見落としを防ぎます。</p></div></div></section>
+
+<section id="local" class="section">
+  <div class="container itami-local-wrap">
+    <p class="section-kicker">伊丹市の住宅特性と整理相談の背景</p>
+    <h2 class="section-title">伊丹市で遺品整理・生前整理が必要になりやすい住宅特性</h2>
+    <p class="lead">伊丹市は阪急伊丹・JR伊丹周辺の集合住宅、昆陽・瑞ヶ丘・荒牧方面の戸建て、空港周辺や幹線道路沿いの住宅が混在する阪神間の都市です。遺品整理・生前整理・実家じまいでは、マンションの管理規約、団地や戸建ての階段幅、前面道路、駐車位置、粗大ごみで出せる品と業者搬出が必要な品を分けて確認することが大切です。</p>
+
+    <div class="itami-stat-grid" aria-label="伊丹市の人口・世帯データ">
+      <div class="itami-stat-card"><b>195,027人</b><span>令和8年6月1日現在の伊丹市人口。市公式トップページで公表されている最新値です。</span></div>
+      <div class="itami-stat-card"><b>86,041世帯</b><span>令和8年6月1日現在の世帯数。単身・夫婦世帯の住み替えや施設入居前整理の相談にもつながります。</span></div>
+      <div class="itami-stat-card"><b>5点まで</b><span>粗大ごみは1回の申込みで収集できる点数が5点まで。大型家具が多い場合は業者搬出との切り分けが必要です。</span></div>
+      <div class="itami-stat-card"><b>10kgごと105円</b><span>豊中市伊丹市クリーンランドへ臨時家庭ごみを持ち込む場合の施設使用料です。</span></div>
+    </div>
+
+    <div class="itami-area-grid">
+      <div class="itami-area-card"><h3>阪急伊丹・JR伊丹周辺</h3><p>駅近マンションや集合住宅では、管理会社への届出、エレベーター予約、共用部養生、収集車が横づけできる排出場所の確認が重要です。</p></div>
+      <div class="itami-area-card"><h3>昆陽・瑞ヶ丘・千僧周辺</h3><p>戸建てや団地、古い住宅では、階段幅、前面道路、庭・物置、押入れの量、貴重品探索の範囲を写真で共有しておくと見積もりが安定します。</p></div>
+      <div class="itami-area-card"><h3>荒牧・鴻池・北野方面</h3><p>宝塚・川西方面にも近い住宅地では、車両位置、家具搬出経路、施設入居前の生前整理、遠方家族への写真報告を先に決めておくと進めやすくなります。</p></div>
+      <div class="itami-area-card"><h3>空港・工業地域に近い住まい</h3><p>店舗併用住宅や事業所に近い住まいでは、家庭ごみと事業系ごみの区分、工具・什器・屋外用品の扱いを見積もり前に確認します。</p></div>
+    </div>
+
+    <ul class="itami-check-list" aria-label="伊丹市で見積もり前に確認したいこと">
+      <li>管理会社届出</li>
+      <li>EV予約</li>
+      <li>駐車位置</li>
+      <li>排出場所</li>
+      <li>庭・物置</li>
+      <li>粗大ごみ5点制限</li>
+    </ul>
+
+    <div class="local-tip">
+      <strong>見積もり前のコツ</strong>
+      <p>伊丹市で「遺品整理」「生前整理」「実家じまい」を相談する場合は、部屋全体、収納、玄関、階段、エレベーター、駐車位置、粗大ごみ置き場の写真を共有してください。粗大ごみで出す品、クリーンランドへ持ち込む品、買取査定したい品、供養したい品を分けておくと、追加費用と当日の行き違いを防ぎやすくなります。</p>
+    </div>
+  </div>
+</section>
+
 <section id="service" class="section"><h2 class="section-title">任せられる整理内容</h2><div class="grid cols2"><div class="card"><h3>遺品整理・家財整理</h3><p>家具、家電、衣類、書類、生活用品を必要品・買取品・供養品・処分品に分けて整理します。</p></div><div class="card"><h3>空き家整理・実家じまい</h3><p>施設入居、住み替え、相続前後の空き家化に合わせ、屋内外の残置物まで範囲を決めて進めます。</p></div><div class="card"><h3>貴重品探索・写真報告</h3><p>通帳、印鑑、権利書、保険証券、写真、形見品などを探し、必要に応じて写真で報告します。</p></div><div class="card"><h3>供養・買取・処分相談</h3><p>仏壇、神棚、人形、写真などの供養相談や、状態の良い家電・貴金属・趣味用品の査定確認にも対応できます。</p></div></div></section>
 <section id="cases" class="section common-kita-ba">
   <h2 class="section-title">伊丹市の遺品整理ビフォーアフター事例</h2>
@@ -1101,26 +1162,23 @@
 
 <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、写真報告、残す品の事前共有を行えば、遠方のご家族でも進めやすくなります。</p></div><div class="card"><h3>見積もり前に何を用意すればよいですか？</h3><p>部屋全体、押入れ、物置、搬出経路、駐車位置の写真と、残したい品・探したい書類のリストがあるとスムーズです。</p></div><div class="card"><h3>伊丹市で見積もり前に地域事情として何を伝えるべきですか？</h3><p>阪神間・北摂では、同じ兵庫県内でも建物条件、荷物量、車両停車位置、作業時間が大きく変わります。見積もり前に地域写真とあわせて搬出条件を整理しておくと、追加確認を減らせます。</p></div><div class="card"><h3>伊丹市で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>伊丹市の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
-<section id="admin" class="section admin-hotline-section">
+
+<section id="admin" class="section">
   <div class="container">
-    <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
-    <h2 class="section-title">伊丹市の行政窓口・粗大ごみ・持ち込み先</h2>
-    <p class="lead">伊丹市で遺品整理・生前整理を進める前に、自治体の粗大ごみで出すもの、持込施設へ持ち込むもの、業者が屋内から搬出するものを分けて整理します。退去期限、大型家具、家電4品目、仏壇・写真、貴重品探索の範囲を先に分けてください。</p>
-    <div class="admin-hotline-grid">
-      <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>伊丹市役所</strong><br>代表電話: 072-783-1234。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式情報を確認</a></div>
-      <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>伊丹市の粗大ごみ・ごみ分別案内</strong><br>粗大ごみの申込方法、手数料、収集日、持ち出し場所、出せない品目を伊丹市公式情報で確認します。 屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">粗大ごみ・ごみ分別を公式で確認</a></div>
-      <div class="admin-card"><h3>持込・処理施設</h3><p><strong>豊中市伊丹市クリーンランド</strong><br>持ち込みは予約要否、受付時間、本人確認、車両条件、手数料、家電4品目・危険物の扱いを公式情報で確認します。施設電話の目安は06-6841-5395、調査データ上の目安は105円/10kgです。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">持ち込み先の公式情報を確認</a></div>
-      <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare">業者比較の確認点へ</a></div>
-      <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local">住宅特性・統計を見る</a></div>
-      <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、豊中市伊丹市クリーンランドへ持ち込むもの、業者が屋内搬出するもの、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process">相談の流れへ</a></div>
+    <p class="section-kicker">伊丹市の行政・ごみ出し確認</p>
+    <h2 class="section-title">伊丹市の粗大ごみ・持込み・行政窓口</h2>
+    <p class="lead">伊丹市で遺品整理・生前整理を進める前に、粗大ごみ予約で出すもの、豊中市伊丹市クリーンランドへ臨時持込みするもの、専門業者が屋内から搬出するものを分けておくと、費用と作業範囲が整理しやすくなります。</p>
+
+    <div class="itami-admin-grid">
+      <div class="itami-admin-card"><h3>伊丹市役所</h3><p><strong>代表: 072-783-1234</strong><br>所在地: 伊丹市千僧1-1。開庁時間は午前9時から午後5時30分まで。おくやみ、住まい、福祉、空き家、相続後の行政手続きは市役所の案内から確認します。</p><a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイトを確認</a></div>
+      <div class="itami-admin-card"><h3>粗大ごみ収集の予約</h3><p><strong>粗大ごみ受付センター: 072-769-5380</strong><br>粗大ごみはインターネットまたは電話による事前申込み制です。電話受付は月〜金（祝日含む・年末年始除く）8:30〜17:30。1回の申込みで収集できるのは5点までで、収集員は建物内へ入りません。</p><a href="https://www.city.itami.lg.jp/SOSIKI/SHIMIN/KANKYOC/GOMI_BUNBETU_DASIKATA/1470619330123.html" target="_blank" rel="noopener">粗大ごみ申込み方法を確認</a></div>
+      <div class="itami-admin-card"><h3>臨時家庭ごみの持込み</h3><p><strong>伊丹市の予約電話: 072-782-3641</strong><br>豊中市伊丹市クリーンランドへの直接持込みは完全予約制です。電話予約は月〜土（年末年始を除く祝日含む）9:00〜17:00。持込みは排出者本人または家族が原則です。</p><a href="https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/tel/mochikomi.html" target="_blank" rel="noopener">電話予約による持込みを確認</a></div>
+      <div class="itami-admin-card"><h3>豊中市伊丹市クリーンランド</h3><p><strong>所在地: 豊中市原田西町2番1号</strong><br>施設使用料はごみの重さ10kgまでごとに105円。可燃ごみ・不燃ごみを分別して搬入し、荷下ろしは自身で行います。家電4品目やパソコンなど持ち込めない品があります。</p><a href="https://www.city.toyonaka.osaka.jp/kurashi/gomi_risaikuru_bika/cleanland/mochikomi/index.html" target="_blank" rel="noopener">クリーンランドの持込み案内</a></div>
     </div>
-    <p class="source-note">出典：<a href="https://www.city.itami.lg.jp/" target="_blank" rel="noopener">伊丹市公式サイト</a>、豊中市伊丹市クリーンランド公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
   </div>
 </section>
-</main>
-<footer id="operator" class="site-footer" data-pref="hyogo" data-city="伊丹市">
-  <div class="footer-grid">
-    <section class="footer-col">
+
+<section class="footer-col">
       <h2>運営者情報・ポリシー</h2>
       <ul class="policy-list">
         <li><a href="#operator">サイト運営者情報</a></li>
@@ -1553,6 +1611,41 @@
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+<style id="hyogo-final-orange-title-and-panel-fix-v1">
+  html body .section-title,
+  html body h2.section-title {
+    background:#D05300!important;
+    background-image:none!important;
+    color:#fff!important;
+    border:0!important;
+    border-left:7px solid #9F3E00!important;
+    box-shadow:none!important;
+  }
+  html body .section-title::before,
+  html body h2.section-title::before {
+    background:#fff!important;
+  }
+  html body .kobe-research-panel,
+  html body .global-visual-proof,
+  html body .prefecture-100-panel {
+    background:#FFF7EC!important;
+    background-image:none!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-data-card,
+  html body .kobe-chart-box,
+  html body .kobe-local-stat,
+  html body .kobe-admin-card {
+    background:#FFFDF9!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-admin-card strong,
+  html body .guide-check b,
+  html body .impact-card .metric-label,
+  html body .impact-card .metric-sub {
+    color:#9F3E00!important;
+  }
+</style>
 </body>
 </html>
 

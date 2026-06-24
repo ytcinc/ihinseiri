@@ -1700,6 +1700,78 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="wakayama-final-municipality-cards-v1">
+  html body #municipalities .grid.cols3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    align-items: stretch !important;
+  }
+  html body #municipalities .wakayama-final-region-card {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    padding: 22px !important;
+    background: #FFFDF9 !important;
+    border: 1px solid #E5DDD3 !important;
+    border-top: 6px solid #C65312 !important;
+    box-shadow: 0 14px 34px rgba(45,36,28,.06) !important;
+  }
+  html body #municipalities .wakayama-final-region-card .region-head {
+    margin: 0 !important;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid #EADFD4 !important;
+  }
+  html body #municipalities .wakayama-final-region-card .area-box-lead {
+    margin: 0 !important;
+    color: #5C544B !important;
+    line-height: 1.82 !important;
+  }
+  html body #municipalities .wakayama-card-subhead {
+    width: fit-content !important;
+    padding: 4px 10px !important;
+    border-radius: 999px !important;
+    background: #FFF1E6 !important;
+    border: 1px solid #EBCFB7 !important;
+    color: #9B3F0D !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    line-height: 1.35 !important;
+  }
+  html body #municipalities .wakayama-card-subhead.link-head {
+    background: #F1EEE8 !important;
+    border-color: #DDD4C9 !important;
+    color: #4D4740 !important;
+  }
+  html body #municipalities .wakayama-region-pref-compare {
+    margin: 0 !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    background: #fffaf5 !important;
+  }
+  html body #municipalities .wakayama-region-pref-metrics {
+    grid-template-columns: 1fr !important;
+  }
+  html body #municipalities .wakayama-region-pref-metrics span {
+    min-height: auto !important;
+  }
+  html body #municipalities .region-checks {
+    margin: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+  html body #municipalities .ward-links {
+    margin: 0 !important;
+    gap: 8px !important;
+  }
+  @media(max-width: 980px) {
+    html body #municipalities .grid.cols3 {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1983,9 +2055,9 @@
       <h2 class="section-title">和歌山県内の市町村から探す</h2>
       <p class="lead">作業場所に近い市町村ページを選ぶと、住宅特性、搬出時の注意点、行政窓口、見積もり前に確認したいことを確認できます。</p>
       <div class="grid cols3">
-        <div class="area-box"><h3>和歌山・海草・那賀・伊都</h3><div class="ward-links"><a href="/wakayama/wakayama/">和歌山市</a><a href="/wakayama/kainan/">海南市</a><a href="/wakayama/hashimoto/">橋本市</a><a href="/wakayama/kinokawa/">紀の川市</a><a href="/wakayama/iwade/">岩出市</a><a href="/wakayama/kimino/">紀美野町</a><a href="/wakayama/katsuragi/">かつらぎ町</a><a href="/wakayama/kudoyama/">九度山町</a><a href="/wakayama/koya/">高野町</a></div></div>
-        <div class="area-box"><h3>有田・日高</h3><div class="ward-links"><a href="/wakayama/arida/">有田市</a><a href="/wakayama/yuasa/">湯浅町</a><a href="/wakayama/hirogawa/">広川町</a><a href="/wakayama/aridagawa/">有田川町</a><a href="/wakayama/gobo/">御坊市</a><a href="/wakayama/mihama/">美浜町</a><a href="/wakayama/hidaka/">日高町</a><a href="/wakayama/yura/">由良町</a><a href="/wakayama/inami/">印南町</a><a href="/wakayama/minabe/">みなべ町</a><a href="/wakayama/hidakagawa/">日高川町</a></div></div>
-        <div class="area-box"><h3>西牟婁・東牟婁</h3><div class="ward-links"><a href="/wakayama/tanabe/">田辺市</a><a href="/wakayama/shingu/">新宮市</a><a href="/wakayama/shirahama/">白浜町</a><a href="/wakayama/kamitonda/">上富田町</a><a href="/wakayama/susami/">すさみ町</a><a href="/wakayama/nachikatsuura/">那智勝浦町</a><a href="/wakayama/taiji/">太地町</a><a href="/wakayama/kozagawa/">古座川町</a><a href="/wakayama/kitayama/">北山村</a><a href="/wakayama/kushimoto/">串本町</a></div></div>
+        <div class="area-box pref-region-card wakayama-final-region-card" data-pref-region-ready="1" data-pref-region-readable-ready="1"><div class="region-head"><h3>和歌山・海草・那賀・伊都</h3><span>9市町</span></div><p class="area-box-lead">和歌山市・岩出市の都市型整理と、橋本・高野方面の山手住宅が混在します。駅周辺は退去期限・搬出時間・管理会社対応、山手や戸建ては坂道・仏壇・物置を先に確認します。</p><div class="wakayama-card-subhead">地域データ</div><div class="wakayama-region-pref-compare"><p>和歌山市周辺の市街地と、紀北・伊都の山手住宅では、同じ間取りでも搬出条件が変わります。</p><div class="wakayama-region-pref-metrics"><span>地域人口<b>609,748人</b><small>県全域の66.1%</small></span><span>人口密度<b>521.9</b><small>県195.3人/km2と比較して県平均より高め</small></span><span>高齢化率<b>32.0%</b><small>県33.9%と比較して県平均より低め</small></span></div><p>密度の高い市町: 和歌山市 1,708.1人/km2。高齢化率の高い市町: 紀美野町 48.6%。</p></div><div class="wakayama-card-subhead">見積もり前に見ること</div><div class="region-checks"><span>駅近退去</span><span>坂道搬出</span><span>仏壇・納戸</span><span>管理会社対応</span><span>駐車位置</span></div><div class="wakayama-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/wakayama/wakayama/">和歌山市</a><a href="/wakayama/kainan/">海南市</a><a href="/wakayama/hashimoto/">橋本市</a><a href="/wakayama/kinokawa/">紀の川市</a><a href="/wakayama/iwade/">岩出市</a><a href="/wakayama/kimino/">紀美野町</a><a href="/wakayama/katsuragi/">かつらぎ町</a><a href="/wakayama/kudoyama/">九度山町</a><a href="/wakayama/koya/">高野町</a></div></div>
+        <div class="area-box pref-region-card wakayama-final-region-card" data-pref-region-ready="1" data-pref-region-readable-ready="1"><div class="region-head"><h3>有田・日高</h3><span>11市町</span></div><p class="area-box-lead">有田・日高は農家住宅、海沿い戸建て、倉庫付きの実家じまいが多い地域です。母屋だけでなく、納屋、農機具、屋外品、みかん畑周辺の道幅まで範囲を分けると見積もりが具体化します。</p><div class="wakayama-card-subhead">地域データ</div><div class="wakayama-region-pref-compare"><p>農家住宅、海沿い戸建て、倉庫付きの実家じまいでは、室内と屋外品を分けて確認します。</p><div class="wakayama-region-pref-metrics"><span>地域人口<b>141,841人</b><small>県全域の15.4%</small></span><span>人口密度<b>120.8</b><small>県195.3人/km2と比較して県平均より低め</small></span><span>高齢化率<b>34.5%</b><small>県33.9%と比較して県平均より高め</small></span></div><p>密度の高い市町: 有田市 720.6人/km2。高齢化率の高い市町: 由良町 39.3%。</p></div><div class="wakayama-card-subhead">見積もり前に見ること</div><div class="region-checks"><span>農家住宅</span><span>倉庫・農機具</span><span>海沿い戸建て</span><span>納屋・屋外品</span><span>車両進入</span></div><div class="wakayama-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/wakayama/arida/">有田市</a><a href="/wakayama/yuasa/">湯浅町</a><a href="/wakayama/hirogawa/">広川町</a><a href="/wakayama/aridagawa/">有田川町</a><a href="/wakayama/gobo/">御坊市</a><a href="/wakayama/mihama/">美浜町</a><a href="/wakayama/hidaka/">日高町</a><a href="/wakayama/yura/">由良町</a><a href="/wakayama/inami/">印南町</a><a href="/wakayama/minabe/">みなべ町</a><a href="/wakayama/hidakagawa/">日高川町</a></div></div>
+        <div class="area-box pref-region-card wakayama-final-region-card" data-pref-region-ready="1" data-pref-region-readable-ready="1"><div class="region-head"><h3>西牟婁・東牟婁</h3><span>10市町村</span></div><p class="area-box-lead">田辺・白浜・新宮・串本方面は移動距離と日程調整が費用に出やすい地域です。遠方家族は、鍵預かり、写真報告、台風時期の予備日、残す品の返送方法まで先に決めると進めやすくなります。</p><div class="wakayama-card-subhead">地域データ</div><div class="wakayama-region-pref-compare"><p>紀南の空き家・別荘・山間部住宅では、移動距離と候補日の余裕が見積もりの大事な条件です。</p><div class="wakayama-region-pref-metrics"><span>地域人口<b>170,995人</b><small>県全域の18.5%</small></span><span>人口密度<b>71.7</b><small>県195.3人/km2と比較して県平均より低め</small></span><span>高齢化率<b>37.6%</b><small>県33.9%と比較して県平均より高め</small></span></div><p>密度の高い市町: 太地町 480.4人/km2。高齢化率の高い市町: 古座川町 55.2%。</p></div><div class="wakayama-card-subhead">見積もり前に見ること</div><div class="region-checks"><span>遠方立会い</span><span>鍵預かり</span><span>空き家・別荘</span><span>台風時期</span><span>写真報告</span></div><div class="wakayama-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/wakayama/tanabe/">田辺市</a><a href="/wakayama/shingu/">新宮市</a><a href="/wakayama/shirahama/">白浜町</a><a href="/wakayama/kamitonda/">上富田町</a><a href="/wakayama/susami/">すさみ町</a><a href="/wakayama/nachikatsuura/">那智勝浦町</a><a href="/wakayama/taiji/">太地町</a><a href="/wakayama/kozagawa/">古座川町</a><a href="/wakayama/kitayama/">北山村</a><a href="/wakayama/kushimoto/">串本町</a></div></div>
       </div>
     </section>
 
@@ -2240,7 +2312,7 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、料金目安、立会い不要対応を確認できる情報サイト</div></footer>
+  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、料金目安、立会い不要対応を確認できる情報サイト</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a></div></footer>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -3169,6 +3241,491 @@ document.addEventListener('DOMContentLoaded', function(){
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+
+<style id="wakayama-top-47-polish-v1">
+  :root{
+    --wk-orange:#d45a1b;
+    --wk-orange-dark:#9f3e00;
+    --wk-blue:#2f6fa3;
+    --wk-navy:#244d83;
+    --wk-purple:#7357b8;
+    --wk-brown:#9a6736;
+    --wk-gray:#7a828a;
+    --wk-red:#b9414b;
+    --wk-ink:#2f2b27;
+    --wk-muted:#5f6468;
+    --wk-line:#e6ded4;
+    --wk-soft:#fff8f1;
+    --wk-shadow:0 14px 34px rgba(36,31,26,.075);
+  }
+
+  html body .section-title::before,
+  html body section .section-title::before,
+  html body .wakayama-report .section-title::before,
+  html body .common-kita-ba .section-title::before{
+    display:none!important;
+    content:none!important;
+    width:0!important;
+    height:0!important;
+    margin:0!important;
+  }
+  html body .section-title{
+    gap:0!important;
+  }
+  html body #towns{
+    display:none!important;
+  }
+
+  html body #municipalities .section-title,
+  html body #wakayama-local-original-guide .section-title,
+  html body #wakayama-data .section-title,
+  html body #wakayama-impact .section-title,
+  html body #wakayama-estimate-check .section-title,
+  html body #pref-official-stats .section-title,
+  html body #pref-facility-directory .section-title,
+  html body #wakayama-report-insights .section-title,
+  html body #kita-before-after-cases .section-title,
+  html body #price .section-title,
+  html body #faq .section-title{
+    display:block!important;
+    width:100%!important;
+    margin:0 0 22px!important;
+    padding:0 0 12px 18px!important;
+    background:#fff!important;
+    color:var(--wk-ink)!important;
+    border:0!important;
+    border-left:8px solid var(--wk-orange)!important;
+    border-bottom:1px solid var(--wk-line)!important;
+    box-shadow:none!important;
+    border-radius:0!important;
+    font-size:clamp(24px,3vw,34px)!important;
+    line-height:1.38!important;
+    letter-spacing:0!important;
+  }
+
+  html body #municipalities{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:12px!important;
+    padding:clamp(22px,3.6vw,34px)!important;
+    box-shadow:var(--wk-shadow)!important;
+  }
+  html body #municipalities .grid.cols3{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:18px!important;
+  }
+  html body #municipalities .area-box{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-top:6px solid var(--wk-orange)!important;
+    border-radius:8px!important;
+    padding:20px!important;
+    box-shadow:0 10px 26px rgba(36,31,26,.06)!important;
+  }
+  html body #municipalities .area-box:nth-child(2){border-top-color:var(--wk-blue)!important}
+  html body #municipalities .area-box:nth-child(3){border-top-color:var(--wk-brown)!important}
+  html body #municipalities .area-box h3{
+    display:block!important;
+    margin:0 0 14px!important;
+    color:var(--wk-ink)!important;
+    font-size:21px!important;
+    line-height:1.45!important;
+  }
+  html body #municipalities .area-box h3::before{display:none!important;content:none!important}
+  html body #municipalities .ward-links{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:9px!important;
+  }
+  html body #municipalities .ward-links a{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:40px!important;
+    padding:8px 12px!important;
+    background:#fff!important;
+    color:#333!important;
+    border:1px solid #ded6cd!important;
+    border-radius:6px!important;
+    box-shadow:none!important;
+    font-size:15px!important;
+    font-weight:900!important;
+    line-height:1.35!important;
+    text-decoration:none!important;
+  }
+  html body #municipalities .ward-links a:hover{
+    background:#fff3ea!important;
+    border-color:#e6a16d!important;
+    color:var(--wk-orange-dark)!important;
+  }
+
+  html body .wakayama-region-pref-compare{
+    margin:14px 0 0!important;
+    padding:14px!important;
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:8px!important;
+    box-shadow:none!important;
+  }
+  html body .wakayama-region-pref-metrics span{
+    background:#fbfaf8!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:7px!important;
+  }
+  html body .wakayama-region-pref-metrics b{color:var(--wk-orange-dark)!important}
+  html body .wakayama-region-pref-points span{
+    background:#fff3ea!important;
+    border-color:#f0c8ad!important;
+    color:var(--wk-orange-dark)!important;
+    border-radius:999px!important;
+  }
+
+  html body #wakayama-local-original-guide{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:12px!important;
+    padding:clamp(22px,3.6vw,34px)!important;
+    box-shadow:var(--wk-shadow)!important;
+  }
+  html body .wakayama-decision-board{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr)!important;
+    gap:18px!important;
+  }
+  html body .wakayama-decision-main,
+  html body .wakayama-decision-side,
+  html body .wakayama-region-card,
+  html body .wakayama-check-card{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:8px!important;
+    box-shadow:0 10px 24px rgba(36,31,26,.055)!important;
+  }
+  html body .wakayama-decision-main{border-top:6px solid var(--wk-orange)!important}
+  html body .wakayama-decision-side{border-top:6px solid var(--wk-blue)!important}
+  html body .wakayama-region-grid,
+  html body .wakayama-check-grid{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:16px!important;
+  }
+  html body .wakayama-region-card:nth-child(1),
+  html body .wakayama-check-card:nth-child(1){border-top:6px solid var(--wk-orange)!important}
+  html body .wakayama-region-card:nth-child(2),
+  html body .wakayama-check-card:nth-child(2){border-top:6px solid var(--wk-blue)!important}
+  html body .wakayama-region-card:nth-child(3),
+  html body .wakayama-check-card:nth-child(3){border-top:6px solid var(--wk-brown)!important}
+  html body .wakayama-region-card:nth-child(4),
+  html body .wakayama-check-card:nth-child(4){border-top:6px solid var(--wk-navy)!important}
+  html body .wakayama-tags span,
+  html body .wakayama-mini-metrics span{
+    background:#fbfaf8!important;
+    border:1px solid var(--wk-line)!important;
+    color:var(--wk-ink)!important;
+    border-radius:999px!important;
+  }
+  html body .wakayama-mini-metrics strong{color:var(--wk-orange-dark)!important}
+
+  html body #wakayama-estimate-check{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:12px!important;
+    padding:clamp(22px,3.6vw,34px)!important;
+    box-shadow:var(--wk-shadow)!important;
+  }
+
+  html body #pref-official-stats,
+  html body #wakayama-data,
+  html body #wakayama-impact{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:12px!important;
+    padding:clamp(22px,3.6vw,36px)!important;
+    box-shadow:var(--wk-shadow)!important;
+  }
+  html body #pref-official-stats .pref-data-card,
+  html body #pref-official-stats .metric-card,
+  html body #wakayama-data .card,
+  html body #wakayama-data .metric-card,
+  html body #wakayama-data .chart-box,
+  html body #wakayama-impact .card,
+  html body #wakayama-impact .metric-card,
+  html body #wakayama-impact .chart-box,
+  html body #wakayama-impact .impact-card{
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-top:6px solid var(--wk-gray)!important;
+    border-radius:8px!important;
+    box-shadow:0 10px 24px rgba(36,31,26,.055)!important;
+  }
+  html body .data-population{border-top-color:var(--wk-gray)!important}
+  html body .data-housing,
+  html body .data-other{border-top-color:var(--wk-brown)!important}
+  html body .data-vacant,
+  html body .data-vacant-rate{border-top-color:var(--wk-orange)!important}
+  html body .data-secondary{border-top-color:var(--wk-navy)!important}
+  html body .data-aging{border-top-color:var(--wk-purple)!important}
+  html body .data-apartment{border-top-color:var(--wk-blue)!important}
+
+  html body #pref-official-stats b,
+  html body #wakayama-data b,
+  html body #wakayama-impact b{
+    color:var(--wk-ink)!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  html body #pref-official-stats .metric-label,
+  html body #wakayama-data .metric-label,
+  html body #wakayama-impact .metric-label{
+    background:transparent!important;
+    color:var(--wk-muted)!important;
+    padding:0!important;
+    border-radius:0!important;
+  }
+  html body #pref-official-stats .lead,
+  html body #wakayama-data .lead,
+  html body #wakayama-impact .lead,
+  html body #pref-official-stats p,
+  html body #wakayama-data p,
+  html body #wakayama-impact p{
+    color:var(--wk-muted)!important;
+  }
+
+  html body .bar-row{
+    border-bottom:1px solid #eee6de!important;
+  }
+  html body .bar-track{
+    background:#f1ece6!important;
+  }
+  html body .bar-fill{
+    background:linear-gradient(90deg,var(--wk-orange),#f0a35f)!important;
+  }
+  html body .bar-fill.national{background:linear-gradient(90deg,var(--wk-gray),#b8bfc4)!important}
+  html body .bar-fill.aging{background:linear-gradient(90deg,var(--wk-purple),#a998d8)!important}
+  html body .bar-fill.apartment,
+  html body .bar-fill.blue{background:linear-gradient(90deg,var(--wk-blue),#78aeda)!important}
+  html body .bar-fill.other{background:linear-gradient(90deg,var(--wk-brown),#c69663)!important}
+  html body .bar-fill.secondary{background:linear-gradient(90deg,var(--wk-navy),#6688b8)!important}
+
+  html body .wakayama-color-legend{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:0 0 22px!important;
+  }
+  html body .wakayama-color-legend span{
+    display:inline-flex!important;
+    align-items:center!important;
+    min-height:32px!important;
+    padding:6px 10px!important;
+    background:#fff!important;
+    border:1px solid var(--wk-line)!important;
+    border-radius:999px!important;
+    color:var(--wk-ink)!important;
+    font-size:13px!important;
+    font-weight:900!important;
+    line-height:1.35!important;
+  }
+  html body .wakayama-color-legend i{
+    width:10px!important;
+    height:10px!important;
+    margin-right:7px!important;
+    border-radius:50%!important;
+    display:inline-block!important;
+    background:var(--legend-color)!important;
+  }
+
+  @media(max-width:900px){
+    html body #municipalities .grid.cols3,
+    html body .wakayama-decision-board,
+    html body .wakayama-region-grid,
+    html body .wakayama-check-grid{
+      grid-template-columns:1fr!important;
+    }
+    html body #municipalities .ward-links a{
+      width:100%!important;
+    }
+  }
+</style>
+
+
+<script id="wakayama-top-47-polish-script-v1">
+(function(){
+  function addClassByText(root){
+    if(!root) return;
+    root.querySelectorAll('.pref-data-card,.metric-card,.card,.chart-box,.impact-card').forEach(function(card){
+      var t = (card.textContent || '').replace(/\s+/g,' ');
+      card.classList.remove('data-population','data-housing','data-vacant','data-vacant-rate','data-other','data-secondary','data-aging','data-apartment');
+      if(/その他空き家|その他の住宅|放置空き家/.test(t)) card.classList.add('data-other');
+      else if(/二次的住宅|別荘|季節/.test(t)) card.classList.add('data-secondary');
+      else if(/空き家率/.test(t)) card.classList.add('data-vacant-rate');
+      else if(/空き家数|空き家総数/.test(t)) card.classList.add('data-vacant');
+      else if(/65歳|高齢|単身|独居/.test(t)) card.classList.add('data-aging');
+      else if(/マンション|共同住宅|集合住宅|借家|EV|持ち家|一戸建て|居住室/.test(t)) card.classList.add('data-apartment');
+      else if(/総住宅|住宅数|世帯/.test(t)) card.classList.add('data-housing');
+      else if(/人口|死亡/.test(t)) card.classList.add('data-population');
+    });
+  }
+
+  function colorBars(root){
+    if(!root) return;
+    root.querySelectorAll('.bar-row').forEach(function(row){
+      var label = (row.querySelector('span') || row).textContent || '';
+      var fill = row.querySelector('.bar-fill');
+      if(!fill) return;
+      fill.classList.remove('national','aging','apartment','other','secondary','blue');
+      if(/全国/.test(label)) fill.classList.add('national');
+      else if(/その他空き家|その他の住宅|放置空き家/.test(label)) fill.classList.add('other');
+      else if(/二次的住宅|別荘|季節/.test(label)) fill.classList.add('secondary');
+      else if(/高齢|独居|単身/.test(label)) fill.classList.add('aging');
+      else if(/共同住宅|マンション|集合住宅|借家|持ち家|一戸建て|居住室/.test(label)) fill.classList.add('apartment');
+      else if(/人口|世帯|死亡/.test(label)) fill.classList.add('blue');
+    });
+  }
+
+  function addLegend(root){
+    if(!root || root.querySelector('.wakayama-color-legend')) return;
+    var lead = root.querySelector('.lead') || root.querySelector('p');
+    var legend = document.createElement('div');
+    legend.className = 'wakayama-color-legend';
+    legend.innerHTML =
+      '<span><i style="--legend-color:#d45a1b"></i>空き家・実家整理</span>' +
+      '<span><i style="--legend-color:#7a828a"></i>全国平均</span>' +
+      '<span><i style="--legend-color:#7357b8"></i>高齢・単身</span>' +
+      '<span><i style="--legend-color:#2f6fa3"></i>共同住宅・住まい</span>' +
+      '<span><i style="--legend-color:#9a6736"></i>その他空き家</span>' +
+      '<span><i style="--legend-color:#244d83"></i>二次的住宅</span>';
+    if(lead && lead.parentNode) lead.parentNode.insertBefore(legend, lead.nextSibling);
+    else root.insertBefore(legend, root.firstChild);
+  }
+
+  ['pref-official-stats','wakayama-data','wakayama-impact'].forEach(function(id){
+    var root = document.getElementById(id);
+    addClassByText(root);
+    colorBars(root);
+    addLegend(root);
+  });
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="wakayama-bar-outline-reset-v1">
+  html body #wakayama-data .bar-fill,
+  html body #wakayama-data .pref-bar-fill,
+  html body #wakayama-impact .bar-fill,
+  html body #wakayama-impact .pref-bar-fill,
+  html body #pref-official-stats .bar-fill,
+  html body #pref-official-stats .pref-bar-fill,
+  html body #wakayama-data .pref-data-fill,
+  html body #wakayama-impact .pref-data-fill,
+  html body #pref-official-stats .pref-data-fill{
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    min-width:0!important;
+  }
+  html body #wakayama-data .bar-track,
+  html body #wakayama-data .pref-bar-track,
+  html body #wakayama-impact .bar-track,
+  html body #wakayama-impact .pref-bar-track,
+  html body #pref-official-stats .bar-track,
+  html body #pref-official-stats .pref-bar-track,
+  html body #wakayama-data .pref-data-track,
+  html body #wakayama-impact .pref-data-track,
+  html body #pref-official-stats .pref-data-track{
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    background:#f1ece6!important;
+  }
+  html body #wakayama-data .bar-fill.blue,
+  html body #wakayama-impact .bar-fill.blue,
+  html body #pref-official-stats .bar-fill.blue{
+    background:linear-gradient(90deg,#2f6fa3,#78aeda)!important;
+  }
+  html body #wakayama-data .pref-data-fill.blue,
+  html body #wakayama-impact .pref-data-fill.blue,
+  html body #pref-official-stats .pref-data-fill.blue,
+  html body #wakayama-data .pref-data-fill.apartment,
+  html body #wakayama-impact .pref-data-fill.apartment,
+  html body #pref-official-stats .pref-data-fill.apartment{
+    background:linear-gradient(90deg,#2f6fa3,#78aeda)!important;
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+  }
+  html body #wakayama-data .bar-fill.warm,
+  html body #wakayama-impact .bar-fill.warm,
+  html body #pref-official-stats .bar-fill.warm{
+    background:linear-gradient(90deg,#7357b8,#a998d8)!important;
+  }
+  html body #wakayama-data .pref-data-fill,
+  html body #wakayama-impact .pref-data-fill,
+  html body #pref-official-stats .pref-data-fill{
+    border-color:transparent!important;
+  }
+</style>
+
+
+<script id="wakayama-bar-outline-reset-script-v1">
+(function(){
+  function resetBarInline(){
+    document.querySelectorAll('#wakayama-data .bar-fill,#wakayama-data .pref-bar-fill,#wakayama-data .pref-data-fill,#wakayama-impact .bar-fill,#wakayama-impact .pref-bar-fill,#wakayama-impact .pref-data-fill,#pref-official-stats .bar-fill,#pref-official-stats .pref-bar-fill,#pref-official-stats .pref-data-fill').forEach(function(el){
+      el.style.setProperty('border','0','important');
+      el.style.setProperty('outline','0','important');
+      el.style.setProperty('box-shadow','none','important');
+      var from = '#d45a1b', to = '#f0a35f';
+      if(el.classList.contains('national')) { from = '#7a828a'; to = '#b8bfc4'; }
+      else if(el.classList.contains('aging') || el.classList.contains('purple')) { from = '#7357b8'; to = '#a998d8'; }
+      else if(el.classList.contains('blue') || el.classList.contains('apartment') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) { from = '#2f6fa3'; to = '#78aeda'; }
+      else if(el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) { from = '#9a6736'; to = '#c69663'; }
+      else if(el.classList.contains('warm')) { from = '#d45a1b'; to = '#f0a35f'; }
+      el.style.setProperty('background', from, 'important');
+      el.style.setProperty('background-image','linear-gradient(90deg,' + from + ',' + to + ')','important');
+    });
+    document.querySelectorAll('#wakayama-data .bar-track,#wakayama-data .pref-bar-track,#wakayama-data .pref-data-track,#wakayama-impact .bar-track,#wakayama-impact .pref-bar-track,#wakayama-impact .pref-data-track,#pref-official-stats .bar-track,#pref-official-stats .pref-bar-track,#pref-official-stats .pref-data-track').forEach(function(el){
+      el.style.setProperty('border','0','important');
+      el.style.setProperty('outline','0','important');
+      el.style.setProperty('box-shadow','none','important');
+    });
+  }
+  resetBarInline();
+  requestAnimationFrame(resetBarInline);
+  setTimeout(resetBarInline, 250);
+  setTimeout(resetBarInline, 950);
+  setTimeout(resetBarInline, 1900);
+  setTimeout(resetBarInline, 2300);
+})();
+</script>
+
+<style id="global-policy-links-style-v1">
+  .global-policy-links{width:min(1160px,calc(100% - 28px));margin:38px auto;padding:24px;border:1px solid #e5ddd3;border-radius:8px;background:#fffdf9;color:#25211d;box-shadow:0 14px 34px rgba(45,36,28,.06)}
+  .global-policy-links h2{margin:0 0 14px;color:#25211d;font-size:20px;line-height:1.45}
+  .global-policy-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+  .global-policy-links a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #ded5cc;background:#fff;color:#a94812;font-weight:900;line-height:1.45;text-decoration:none}
+  .global-policy-links a:hover{border-color:#c65312;color:#8c3d00}
+</style>
+<section class="global-policy-links" id="operator" aria-label="運営者情報・ポリシー">
+  <h2>運営者情報・ポリシー</h2>
+  <ul>
+    <li><a href="#operator">サイト運営者情報</a></li>
+    <li><a href="/privacy/">プライバシーポリシー</a></li>
+    <li><a href="/disclaimer/">免責事項</a></li>
+    <li><a href="/sitemap/">サイトマップ</a></li>
+  </ul>
+</section>
+
 </body>
 </html>
 

@@ -1413,6 +1413,84 @@
     background:linear-gradient(90deg,#d05300,#f2b766)!important;
   }
 </style>
+
+<style id="shiga-municipality-cards-final-v1">
+  html body #municipalities .area-box {
+    padding: 22px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  html body #municipalities .area-box h3 {
+    margin-bottom: 0 !important;
+    color: #2f312f !important;
+  }
+  html body #municipalities .shiga-region-note {
+    margin: 0 !important;
+    color: #42484d !important;
+    line-height: 1.78 !important;
+  }
+  html body #municipalities .shiga-card-subhead {
+    display: inline-flex !important;
+    width: fit-content !important;
+    align-items: center !important;
+    min-height: 28px !important;
+    padding: 3px 10px !important;
+    margin-top: 2px !important;
+    border-radius: 999px !important;
+    background: #fff1e6 !important;
+    border: 1px solid #efc797 !important;
+    color: #8c3d00 !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    line-height: 1.35 !important;
+  }
+  html body #municipalities .shiga-card-subhead.link-head {
+    background: #f6f3ee !important;
+    border-color: #e2d8ce !important;
+    color: #4a4038 !important;
+  }
+  html body #municipalities .shiga-region-pref-compare {
+    margin: 0 !important;
+    gap: 10px !important;
+  }
+  html body #municipalities .shiga-region-pref-compare span {
+    min-height: 74px !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    background: #fffaf3 !important;
+    color: #4d5751 !important;
+    line-height: 1.55 !important;
+  }
+  html body #municipalities .shiga-region-pref-compare b {
+    display: block !important;
+    margin-bottom: 4px !important;
+    font-size: 18px !important;
+    color: #D05300 !important;
+  }
+  html body #municipalities .shiga-region-checks {
+    margin: 0 !important;
+    gap: 8px !important;
+  }
+  html body #municipalities .ward-links {
+    margin-top: 0 !important;
+    gap: 9px !important;
+  }
+  html body #municipalities .ward-links a {
+    border-radius: 999px !important;
+    min-height: 36px !important;
+    padding: 7px 12px !important;
+  }
+  @media (max-width: 820px) {
+    html body #municipalities .grid.cols2 {
+      grid-template-columns: 1fr !important;
+    }
+    html body #municipalities .shiga-region-pref-compare {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">滋賀県の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/#prefectures">都道府県</a><a href="/shiga/">滋賀県</a><a href="#municipalities">市町村</a><a href="#data">統計</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
@@ -1669,10 +1747,10 @@
   <div class="notice" style="margin-top:18px"><b>滋賀県で見積もり前にそろえること</b><br>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置・仏壇の写真を用意し、探してほしい通帳・印鑑・権利書・写真・形見分け品を先に共有してください。</div>
 </section>
 
-    <section id="municipalities" class="section"><h2 class="section-title">滋賀県内の市町村から探す</h2><p class="lead">19市町の地域ページを、実家や作業場所に近い市町村から選べます。滋賀県は、南部の駅近マンション、甲賀・東近江の戸建て、湖東・湖北の納屋や仏壇、高島の積雪・遠方対応で見積もり条件が変わります。</p><div class="grid cols2"><div class="area-box"><h3>大津・南部</h3><p class="shiga-region-note">大津市・草津市・守山市・栗東市・野洲市は、JR沿線や駅近の集合住宅、賃貸退去前整理、共働き家族からの短期相談が多い地域です。管理会社届出、エレベーター予約、共用部養生、駐車位置を早めに確認します。</p><div class="shiga-region-pref-compare"><span><b>草津54.5%</b>共同住宅は県30.3%より高め</span><span><b>大津742.9人/km²</b>人口密度は県351.9人/km²を上回る</span></div><div class="shiga-region-checks"><span>駅近集合住宅</span><span>管理会社届出</span><span>駐車位置</span></div><div class="ward-links"><a href="/shiga/otsu/">大津市</a><a href="/shiga/kusatsu/">草津市</a><a href="/shiga/moriyama/">守山市</a><a href="/shiga/ritto/">栗東市</a><a href="/shiga/yasu/">野洲市</a></div></div>
-<div class="area-box"><h3>甲賀・東近江</h3><p class="shiga-region-note">甲賀市・湖南市・近江八幡市・東近江市・日野町・竜王町は、戸建て、庭、物置、車庫、農機具まで作業範囲が広がりやすい地域です。母屋だけでなく屋外品と車両進入を写真で共有すると見積もりが具体化します。</p><div class="shiga-region-pref-compare"><span><b>甲賀18.9%</b>共同住宅は県30.3%より低め</span><span><b>東近江290.5人/km²</b>人口密度は県351.9人/km²より低め</span></div><div class="shiga-region-checks"><span>戸建て・庭</span><span>物置・農機具</span><span>車両進入</span></div><div class="ward-links"><a href="/shiga/koka/">甲賀市</a><a href="/shiga/konan/">湖南市</a><a href="/shiga/omihachiman/">近江八幡市</a><a href="/shiga/higashiomi/">東近江市</a><a href="/shiga/hino/">日野町</a><a href="/shiga/ryuo/">竜王町</a></div></div>
-<div class="area-box"><h3>湖東・湖北</h3><p class="shiga-region-note">彦根市・長浜市・米原市と湖東の町域は、空き家化した実家、仏壇のある和室、納屋や車庫の長期保管品が残りやすい地域です。冬場の日程、道路幅、権利書探索、仏壇・写真の扱いを先に整理します。</p><div class="shiga-region-pref-compare"><span><b>米原148.7人/km²</b>県351.9人/km²より低く車両移動を確認</span><span><b>彦根34.1%</b>共同住宅は県30.3%をやや上回る</span></div><div class="shiga-region-checks"><span>仏壇・和室</span><span>納屋・車庫</span><span>冬場日程</span></div><div class="ward-links"><a href="/shiga/hikone/">彦根市</a><a href="/shiga/aisho/">愛荘町</a><a href="/shiga/toyosato/">豊郷町</a><a href="/shiga/kora/">甲良町</a><a href="/shiga/taga/">多賀町</a><a href="/shiga/nagahama/">長浜市</a><a href="/shiga/maibara/">米原市</a></div></div>
-<div class="area-box"><h3>高島</h3><p class="shiga-region-note">高島市は湖西・山手・積雪期の条件で、同じ戸建てでも作業日程と車両位置が変わります。遠方家族は鍵預かり、写真報告、残す品の返送、積雪時期を避けた予備日まで決めておくと安心です。</p><div class="shiga-region-pref-compare"><span><b>高島66.9人/km²</b>県351.9人/km²より低く遠方対応が重要</span><span><b>高島11.2%</b>共同住宅は県30.3%より低め</span></div><div class="shiga-region-checks"><span>積雪配慮</span><span>鍵預かり</span><span>写真報告</span></div><div class="ward-links"><a href="/shiga/takashima/">高島市</a></div></div></div></section>
+    <section id="municipalities" class="section"><h2 class="section-title">滋賀県内の市町村から探す</h2><p class="lead">19市町の地域ページを、実家や作業場所に近い市町村から選べます。滋賀県は、南部の駅近マンション、甲賀・東近江の戸建て、湖東・湖北の納屋や仏壇、高島の積雪・遠方対応で見積もり条件が変わります。</p><div class="grid cols2"><div class="area-box"><h3>大津・南部</h3><p class="shiga-region-note">大津市・草津市・守山市・栗東市・野洲市は、JR沿線や駅近の集合住宅、賃貸退去前整理、共働き家族からの短期相談が多い地域です。管理会社届出、エレベーター予約、共用部養生、駐車位置を早めに確認します。</p><div class="shiga-card-subhead">県平均と比べた特徴</div><div class="shiga-region-pref-compare"><span><b>草津 54.5%</b>共同住宅は県30.3%より高め</span><span><b>大津 742.9人/km²</b>人口密度は県351.9人/km²を上回る</span></div><div class="shiga-card-subhead">見積もり前に見ること</div><div class="shiga-region-checks"><span>駅近集合住宅</span><span>管理会社届出</span><span>駐車位置</span><span>EV予約</span><span>共用部養生</span></div><div class="shiga-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/shiga/otsu/">大津市</a><a href="/shiga/kusatsu/">草津市</a><a href="/shiga/moriyama/">守山市</a><a href="/shiga/ritto/">栗東市</a><a href="/shiga/yasu/">野洲市</a></div></div>
+<div class="area-box"><h3>甲賀・東近江</h3><p class="shiga-region-note">甲賀市・湖南市・近江八幡市・東近江市・日野町・竜王町は、戸建て、庭、物置、車庫、農機具まで作業範囲が広がりやすい地域です。母屋だけでなく屋外品と車両進入を写真で共有すると見積もりが具体化します。</p><div class="shiga-card-subhead">県平均と比べた特徴</div><div class="shiga-region-pref-compare"><span><b>甲賀 18.9%</b>共同住宅は県30.3%より低め</span><span><b>東近江 290.5人/km²</b>人口密度は県351.9人/km²より低め</span></div><div class="shiga-card-subhead">見積もり前に見ること</div><div class="shiga-region-checks"><span>戸建て・庭</span><span>物置・農機具</span><span>車両進入</span><span>前面道路</span><span>大型家具</span></div><div class="shiga-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/shiga/koka/">甲賀市</a><a href="/shiga/konan/">湖南市</a><a href="/shiga/omihachiman/">近江八幡市</a><a href="/shiga/higashiomi/">東近江市</a><a href="/shiga/hino/">日野町</a><a href="/shiga/ryuo/">竜王町</a></div></div>
+<div class="area-box"><h3>湖東・湖北</h3><p class="shiga-region-note">彦根市・長浜市・米原市と湖東の町域は、空き家化した実家、仏壇のある和室、納屋や車庫の長期保管品が残りやすい地域です。冬場の日程、道路幅、権利書探索、仏壇・写真の扱いを先に整理します。</p><div class="shiga-card-subhead">県平均と比べた特徴</div><div class="shiga-region-pref-compare"><span><b>米原 148.7人/km²</b>県351.9人/km²より低く車両移動を確認</span><span><b>彦根 34.1%</b>共同住宅は県30.3%をやや上回る</span></div><div class="shiga-card-subhead">見積もり前に見ること</div><div class="shiga-region-checks"><span>仏壇・和室</span><span>納屋・車庫</span><span>冬場日程</span><span>前面道路</span><span>大型家具</span></div><div class="shiga-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/shiga/hikone/">彦根市</a><a href="/shiga/aisho/">愛荘町</a><a href="/shiga/toyosato/">豊郷町</a><a href="/shiga/kora/">甲良町</a><a href="/shiga/taga/">多賀町</a><a href="/shiga/nagahama/">長浜市</a><a href="/shiga/maibara/">米原市</a></div></div>
+<div class="area-box"><h3>高島</h3><p class="shiga-region-note">高島市は湖西・山手・積雪期の条件で、同じ戸建てでも作業日程と車両位置が変わります。遠方家族は鍵預かり、写真報告、残す品の返送、積雪時期を避けた予備日まで決めておくと安心です。</p><div class="shiga-card-subhead">県平均と比べた特徴</div><div class="shiga-region-pref-compare"><span><b>高島 66.9人/km²</b>県351.9人/km²より低く遠方対応が重要</span><span><b>高島 11.2%</b>共同住宅は県30.3%より低め</span></div><div class="shiga-card-subhead">見積もり前に見ること</div><div class="shiga-region-checks"><span>積雪配慮</span><span>鍵預かり</span><span>写真報告</span><span>冬季日程</span><span>車両位置</span></div><div class="shiga-card-subhead link-head">市町村ページ</div><div class="ward-links"><a href="/shiga/takashima/">高島市</a></div></div></div></section>
 
 <section id="shiga-local-original-guide" class="section">
   <h2 class="section-title">滋賀県で見積もり前に分けたい地域別チェック</h2>
@@ -1784,7 +1862,7 @@
 
 <section id="faq" class="section"><h2 class="section-title">滋賀県の遺品整理でよくある質問</h2><div class="grid cols3"><div class="card"><h3>大津・草津など南部のマンション整理は何を先に確認しますか？</h3><p>大津駅・草津駅周辺の集合住宅は、管理会社への届出、エレベーター予約、共用部養生、退去期限、作業車両を停める位置を先にそろえると見積もりが具体化します。</p></div><div class="card"><h3>湖東・湖北の戸建て実家ではどこまで見積もりに入れますか？</h3><p>彦根市、長浜市、東近江市周辺の戸建ては、母屋だけでなく庭、物置、車庫、納屋、仏壇、古い工具や農機具、権利書・保険証券の探索範囲まで伝えてください。</p></div><div class="card"><h3>高島市や湖北で冬場に相談するときの注意点は？</h3><p>高島市、長浜市、米原市などは積雪や路面状況で作業日が変わることがあります。鍵預かり、写真報告、予備日、車両が入れる場所を早めに確認しましょう。</p></div><div class="card"><h3>滋賀県外に住んでいて立会いできない場合はどう進めますか？</h3><p>鍵の受け渡し、作業前後の写真、残す品の返送、振込精算を決めれば遠方からでも相談できます。大津・草津の退去前整理は期限、湖東・湖北の空き家整理は日程に余裕を持たせます。</p></div><div class="card"><h3>滋賀県の空き家整理で「その他空き家」を見る理由は？</h3><p>滋賀県は賃貸や売却用ではない空き家が48,500戸、空き家全体の59.4%を占めます。家財が残ったままの実家、相続後の空き家、売却前の片付け相談ではこの層に近い条件を確認します。</p></div><div class="card"><h3>買取・供養で滋賀県らしく確認したい品は？</h3><p>仏壇、位牌、写真、人形は供養希望品として分け、湖東・湖北の納屋や車庫にある工具、農機具、古い家電、趣味用品は買取・再利用候補として写真を撮っておくと判断しやすくなります。</p></div></div></section>
   </main>
-  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、粗大ごみ相談先、見積もり前チェックを整理する情報サイト</div></footer>
+  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 地域別の住宅特性、行政窓口、粗大ごみ相談先、見積もり前チェックを整理する情報サイト</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a></div></footer>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -2652,6 +2730,483 @@
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+
+<style id="shiga-top-47-polish-v1">
+  html body {
+    --shiga-ink:#272a2d;
+    --shiga-muted:#5f666b;
+    --shiga-line:#e4ded6;
+    --shiga-orange:#d45a1b;
+    --shiga-orange-dark:#9f3e00;
+    --shiga-blue:#2f6fa3;
+    --shiga-navy:#244d83;
+    --shiga-purple:#7357b8;
+    --shiga-brown:#9a6736;
+    --shiga-gray:#7a828a;
+    --shiga-red:#b9414b;
+    --shiga-shadow:0 14px 34px rgba(35,30,25,.08);
+  }
+  html body .section-title::before {
+    display:none!important;
+    content:none!important;
+  }
+  html body .section-title {
+    gap:0!important;
+  }
+  html body #shiga-report-insights,
+  html body #pref-facility-directory,
+  html body #pref-official-stats,
+  html body #shiga-handmade-guide,
+  html body #pref-original-guide,
+  html body #municipalities,
+  html body #shiga-local-original-guide,
+  html body #data,
+  html body #shiga-impact,
+  html body #shiga-estimate-check {
+    font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif!important;
+    color:var(--shiga-ink)!important;
+  }
+  html body #shiga-report-insights .section-title,
+  html body #pref-facility-directory .section-title,
+  html body #pref-official-stats .section-title,
+  html body #shiga-handmade-guide .section-title,
+  html body #pref-original-guide .section-title,
+  html body #municipalities .section-title,
+  html body #shiga-local-original-guide .section-title,
+  html body #data .section-title,
+  html body #shiga-impact .section-title,
+  html body #shiga-estimate-check .section-title {
+    background:#fff!important;
+    color:var(--shiga-ink)!important;
+    border:1px solid var(--shiga-line)!important;
+    border-left:8px solid var(--shiga-orange)!important;
+    box-shadow:none!important;
+  }
+  html body #shiga-report-insights .lead,
+  html body #pref-facility-directory .lead,
+  html body #pref-official-stats .lead,
+  html body #shiga-handmade-guide .lead,
+  html body #pref-original-guide .lead,
+  html body #municipalities .lead,
+  html body #shiga-local-original-guide .lead,
+  html body #data .lead,
+  html body #shiga-impact .lead,
+  html body #shiga-estimate-check .lead {
+    color:#42484d!important;
+    font-size:18px!important;
+    line-height:1.86!important;
+  }
+  html body #towns {
+    display:none!important;
+  }
+  html body #municipalities .grid.cols2 {
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:22px!important;
+  }
+  html body #municipalities .area-box,
+  html body #shiga-local-original-guide .shiga-decision-main,
+  html body #shiga-local-original-guide .shiga-decision-side,
+  html body #shiga-local-original-guide .shiga-region-guide,
+  html body #pref-original-guide .card,
+  html body #shiga-estimate-check .shiga-check-panel,
+  html body #pref-facility-directory .card,
+  html body #shiga-report-insights .shiga-report-card {
+    background:#fff!important;
+    border:1px solid var(--shiga-line)!important;
+    border-radius:8px!important;
+    box-shadow:var(--shiga-shadow)!important;
+  }
+  html body #municipalities .area-box {
+    border-top:6px solid var(--shiga-orange)!important;
+    padding:24px!important;
+  }
+  html body #municipalities .area-box:nth-child(2) {border-top-color:var(--shiga-blue)!important;}
+  html body #municipalities .area-box:nth-child(3) {border-top-color:var(--shiga-brown)!important;}
+  html body #municipalities .area-box:nth-child(4) {border-top-color:var(--shiga-navy)!important;}
+  html body #municipalities .area-box h3,
+  html body #shiga-local-original-guide h3,
+  html body #pref-original-guide .card h3 {
+    color:var(--shiga-ink)!important;
+    font-size:21px!important;
+    line-height:1.45!important;
+  }
+  html body #municipalities .area-box h3::before {
+    display:none!important;
+    content:none!important;
+  }
+  html body #municipalities .shiga-region-note,
+  html body #shiga-local-original-guide p,
+  html body #pref-original-guide .card p {
+    color:#454b50!important;
+    font-size:16px!important;
+    line-height:1.82!important;
+  }
+  html body #municipalities .shiga-region-pref-compare {
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    margin:12px 0!important;
+  }
+  html body #municipalities .shiga-region-pref-compare span {
+    background:#fff!important;
+    border:1px solid var(--shiga-line)!important;
+    border-radius:6px!important;
+    color:#4a5055!important;
+  }
+  html body #municipalities .shiga-region-pref-compare b {
+    color:var(--shiga-orange-dark)!important;
+  }
+  html body #municipalities .shiga-region-checks,
+  html body #shiga-local-original-guide .shiga-region-tags {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:0 0 12px!important;
+  }
+  html body #municipalities .shiga-region-checks span,
+  html body #shiga-local-original-guide .shiga-region-tags span {
+    display:inline-flex!important;
+    align-items:center!important;
+    min-height:32px!important;
+    padding:5px 10px!important;
+    background:#fff8f1!important;
+    border:1px solid #edd4c2!important;
+    border-radius:999px!important;
+    color:#573f2d!important;
+    font-size:13px!important;
+    font-weight:900!important;
+  }
+  html body #municipalities .ward-links {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:10px!important;
+  }
+  html body #municipalities .ward-links a {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:40px!important;
+    padding:8px 13px!important;
+    background:#fff!important;
+    border:1px solid #ded7cf!important;
+    border-radius:6px!important;
+    box-shadow:none!important;
+    color:#2d3338!important;
+    font-size:15px!important;
+    font-weight:900!important;
+    text-align:center!important;
+  }
+  html body #municipalities .ward-links a:hover {
+    background:#fff0e4!important;
+    border-color:var(--shiga-orange)!important;
+    color:var(--shiga-orange-dark)!important;
+    text-decoration:none!important;
+  }
+  html body #shiga-local-original-guide .shiga-decision-board,
+  html body #shiga-local-original-guide .shiga-region-guide-grid,
+  html body #shiga-estimate-check .shiga-check-grid {
+    display:grid!important;
+    gap:18px!important;
+  }
+  html body #shiga-local-original-guide .shiga-decision-board {
+    grid-template-columns:1.2fr .8fr!important;
+  }
+  html body #shiga-local-original-guide .shiga-region-guide-grid,
+  html body #shiga-estimate-check .shiga-check-grid {
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  }
+  html body #shiga-local-original-guide .shiga-decision-main,
+  html body #shiga-local-original-guide .shiga-decision-side,
+  html body #shiga-local-original-guide .shiga-region-guide,
+  html body #shiga-estimate-check .shiga-check-panel {
+    padding:20px!important;
+    border-top:5px solid var(--shiga-orange)!important;
+  }
+  html body #shiga-local-original-guide .shiga-region-guide:nth-child(2),
+  html body #shiga-estimate-check .shiga-check-panel:nth-child(2) {border-top-color:var(--shiga-blue)!important;}
+  html body #shiga-local-original-guide .shiga-region-guide:nth-child(3),
+  html body #shiga-estimate-check .shiga-check-panel:nth-child(3) {border-top-color:var(--shiga-brown)!important;}
+  html body #shiga-local-original-guide .shiga-region-guide:nth-child(4),
+  html body #shiga-estimate-check .shiga-check-panel:nth-child(4) {border-top-color:var(--shiga-navy)!important;}
+  html body #pref-official-stats .pref-data-card,
+  html body #data .pref-data-card,
+  html body #data .metric-card,
+  html body #pref-official-stats .chart-box,
+  html body #pref-official-stats .pref-chart-box,
+  html body #data .chart-box,
+  html body #shiga-impact .chart-box,
+  html body #shiga-impact .card {
+    background:#fff!important;
+    border:1px solid var(--shiga-line)!important;
+    border-top:5px solid var(--shiga-gray)!important;
+    border-radius:8px!important;
+    box-shadow:var(--shiga-shadow)!important;
+  }
+  html body #pref-official-stats .pref-data-card b,
+  html body #data .pref-data-card b,
+  html body #data .metric-card b,
+  html body #shiga-impact .metric-card b {
+    font-size:38px!important;
+    line-height:1.12!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  html body #pref-official-stats .pref-data-card span,
+  html body #data .pref-data-card span,
+  html body #data .metric-label,
+  html body #shiga-impact .metric-label {
+    color:#2f363b!important;
+    background:transparent!important;
+    border:0!important;
+    padding:0!important;
+    font-size:15px!important;
+    font-weight:900!important;
+  }
+  html body #pref-official-stats .pref-data-card p,
+  html body #data .pref-data-card p,
+  html body #data .metric-note,
+  html body #shiga-impact .metric-note,
+  html body #shiga-impact .metric-sub {
+    color:var(--shiga-muted)!important;
+    font-size:15px!important;
+    line-height:1.72!important;
+  }
+  html body #pref-official-stats .data-population,
+  html body #data .data-population {border-top-color:var(--shiga-gray)!important;}
+  html body #pref-official-stats .data-housing,
+  html body #data .data-housing {border-top-color:var(--shiga-brown)!important;}
+  html body #pref-official-stats .data-vacant,
+  html body #pref-official-stats .data-vacant-rate,
+  html body #pref-official-stats .data-vacancy,
+  html body #data .data-vacant,
+  html body #data .data-vacant-rate,
+  html body #data .data-vacancy {border-top-color:var(--shiga-orange)!important;}
+  html body #pref-official-stats .data-other,
+  html body #data .data-other {border-top-color:var(--shiga-brown)!important;}
+  html body #pref-official-stats .data-secondary,
+  html body #data .data-secondary {border-top-color:var(--shiga-navy)!important;}
+  html body #pref-official-stats .data-aging,
+  html body #data .data-aging {border-top-color:var(--shiga-purple)!important;}
+  html body #pref-official-stats .data-apartment,
+  html body #data .data-apartment {border-top-color:var(--shiga-blue)!important;}
+  html body #pref-official-stats .data-population b,
+  html body #data .data-population b {color:#5f6770!important;}
+  html body #pref-official-stats .data-housing b,
+  html body #data .data-housing b {color:#84613b!important;}
+  html body #pref-official-stats .data-vacant b,
+  html body #pref-official-stats .data-vacant-rate b,
+  html body #pref-official-stats .data-vacancy b,
+  html body #data .data-vacant b,
+  html body #data .data-vacant-rate b,
+  html body #data .data-vacancy b {color:#bd4f16!important;}
+  html body #pref-official-stats .data-other b,
+  html body #data .data-other b {color:#8a572d!important;}
+  html body #pref-official-stats .data-secondary b,
+  html body #data .data-secondary b {color:var(--shiga-navy)!important;}
+  html body #pref-official-stats .data-aging b,
+  html body #data .data-aging b {color:var(--shiga-purple)!important;}
+  html body #pref-official-stats .data-apartment b,
+  html body #data .data-apartment b {color:var(--shiga-blue)!important;}
+  html body #pref-official-stats .bar-track,
+  html body #pref-official-stats .pref-bar-track,
+  html body #data .bar-track,
+  html body #data .pref-bar-track,
+  html body #shiga-impact .bar-track {
+    height:22px!important;
+    background:#f0ece7!important;
+    border-radius:999px!important;
+    overflow:hidden!important;
+  }
+  html body #pref-official-stats .bar-fill,
+  html body #pref-official-stats .pref-bar-fill,
+  html body #data .bar-fill,
+  html body #data .pref-bar-fill,
+  html body #shiga-impact .bar-fill {
+    border-radius:999px!important;
+    box-shadow:inset 0 -2px 0 rgba(0,0,0,.08)!important;
+  }
+  html body #pref-official-stats .bar-fill.vacancy,
+  html body #pref-official-stats .pref-bar-fill.vacancy,
+  html body #pref-official-stats .bar-fill.total-vacant,
+  html body #pref-official-stats .pref-bar-fill.total-vacant,
+  html body #data .bar-fill.vacancy,
+  html body #data .pref-bar-fill.vacancy,
+  html body #data .bar-fill.total-vacant,
+  html body #data .pref-bar-fill.total-vacant {
+    background:linear-gradient(90deg,#f4a261,var(--shiga-orange))!important;
+  }
+  html body #pref-official-stats .bar-fill.national,
+  html body #pref-official-stats .pref-bar-fill.national,
+  html body #data .bar-fill.national,
+  html body #data .pref-bar-fill.national {
+    background:linear-gradient(90deg,#a5adb5,var(--shiga-gray))!important;
+  }
+  html body #pref-official-stats .bar-fill.aging,
+  html body #pref-official-stats .bar-fill.warm.aging,
+  html body #pref-official-stats .pref-bar-fill.aging,
+  html body #data .bar-fill.aging,
+  html body #data .bar-fill.warm.aging,
+  html body #data .pref-bar-fill.aging,
+  html body #shiga-impact .bar-fill.aging {
+    background:linear-gradient(90deg,#a78be2,var(--shiga-purple))!important;
+  }
+  html body #pref-official-stats .bar-fill.apartment,
+  html body #pref-official-stats .bar-fill.blue,
+  html body #pref-official-stats .pref-bar-fill.apartment,
+  html body #data .bar-fill.apartment,
+  html body #data .bar-fill.blue,
+  html body #data .pref-bar-fill.apartment,
+  html body #shiga-impact .bar-fill.blue {
+    background:linear-gradient(90deg,#72a8d4,var(--shiga-blue))!important;
+  }
+  html body #pref-official-stats .bar-fill.other,
+  html body #pref-official-stats .bar-fill.other-vacant,
+  html body #pref-official-stats .pref-bar-fill.other,
+  html body #data .bar-fill.other,
+  html body #data .bar-fill.other-vacant,
+  html body #data .pref-bar-fill.other {
+    background:linear-gradient(90deg,#c58b55,var(--shiga-brown))!important;
+  }
+  html body #pref-official-stats .bar-fill.secondary,
+  html body #pref-official-stats .bar-fill.secondary-home,
+  html body #pref-official-stats .pref-bar-fill.secondary,
+  html body #data .bar-fill.secondary,
+  html body #data .bar-fill.secondary-home,
+  html body #data .pref-bar-fill.secondary {
+    background:linear-gradient(90deg,#6b96ca,var(--shiga-navy))!important;
+  }
+  html body #pref-official-stats .bar-row,
+  html body #pref-official-stats .pref-bar-row,
+  html body #data .bar-row,
+  html body #data .pref-bar-row {
+    grid-template-columns:150px 1fr 118px!important;
+    gap:12px!important;
+    color:#2f363b!important;
+  }
+  html body #pref-official-stats .bar-row b,
+  html body #pref-official-stats .pref-bar-row b,
+  html body #data .bar-row b,
+  html body #data .pref-bar-row b {
+    color:#2f363b!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  html body .shiga-color-legend {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:0 0 18px!important;
+  }
+  html body .shiga-color-legend span {
+    display:inline-flex!important;
+    align-items:center!important;
+    min-height:32px!important;
+    gap:7px!important;
+    padding:5px 10px!important;
+    background:#fff!important;
+    border:1px solid var(--shiga-line)!important;
+    border-radius:999px!important;
+    color:#30363b!important;
+    font-size:13px!important;
+    font-weight:900!important;
+  }
+  html body .shiga-color-legend i {
+    width:11px!important;
+    height:11px!important;
+    border-radius:999px!important;
+    display:inline-block!important;
+  }
+  html body #shiga-impact .bar-fill {background:linear-gradient(90deg,#f4a261,var(--shiga-orange))!important;}
+  html body #shiga-impact .bar-fill.warm {background:linear-gradient(90deg,#a78be2,var(--shiga-purple))!important;}
+  @media(max-width:900px){
+    html body #municipalities .grid.cols2,
+    html body #shiga-local-original-guide .shiga-decision-board,
+    html body #shiga-local-original-guide .shiga-region-guide-grid,
+    html body #shiga-estimate-check .shiga-check-grid{grid-template-columns:1fr!important;}
+  }
+  @media(max-width:820px){
+    html body #pref-official-stats .bar-row,
+    html body #pref-official-stats .pref-bar-row,
+    html body #data .bar-row,
+    html body #data .pref-bar-row{grid-template-columns:96px 1fr 82px!important;}
+  }
+</style>
+
+
+<script id="shiga-top-47-polish-script-v1">
+(function(){
+  function classifyCard(card){
+    var text = card.textContent || "";
+    card.classList.remove("data-population","data-housing","data-vacant","data-vacancy","data-vacant-rate","data-other","data-secondary","data-aging","data-apartment","data-national","data-risk");
+    if(/人口|死亡/.test(text)) card.classList.add("data-population");
+    else if(/総住宅|住宅数|世帯|持ち家|共同住宅|居住室|延べ面積/.test(text)) card.classList.add("data-housing");
+    else if(/その他空き家|その他の住宅|放置空き家/.test(text)) card.classList.add("data-other");
+    else if(/二次的住宅|別荘|季節/.test(text)) card.classList.add("data-secondary");
+    else if(/空き家率/.test(text)) card.classList.add("data-vacant-rate");
+    else if(/空き家数|空き家総数/.test(text)) card.classList.add("data-vacant");
+    else if(/65歳|高齢|単身|独居/.test(text)) card.classList.add("data-aging");
+    else if(/マンション|集合住宅|借家|EV/.test(text)) card.classList.add("data-apartment");
+  }
+  function classifyBar(row){
+    var label = (row.querySelector("span") || row).textContent || "";
+    var fills = row.querySelectorAll(".bar-fill,.pref-bar-fill");
+    fills.forEach(function(fill){
+      fill.classList.remove("vacancy","total-vacant","national","aging","apartment","blue","warm","other","other-vacant","secondary","secondary-home");
+      if(/全国/.test(label)) fill.classList.add("national");
+      else if(/その他空き家|その他の住宅|放置空き家/.test(label)) fill.classList.add("other");
+      else if(/二次的住宅|別荘|季節/.test(label)) fill.classList.add("secondary");
+      else if(/空き家総数|空き家数/.test(label)) fill.classList.add("total-vacant");
+      else if(/空き家率/.test(label)) fill.classList.add("vacancy");
+      else if(/高齢|独居|単身/.test(label)) fill.classList.add("aging");
+      else if(/共同住宅|マンション|集合住宅|借家|持ち家/.test(label)) fill.classList.add("apartment");
+      else if(/人口|世帯|死亡/.test(label)) fill.classList.add("blue");
+    });
+  }
+  function addLegend(root){
+    if(!root || root.querySelector(".shiga-color-legend")) return;
+    var legend = document.createElement("div");
+    legend.className = "shiga-color-legend";
+    legend.innerHTML = [
+      '<span><i style="background:#d45a1b"></i>空き家・実家整理</span>',
+      '<span><i style="background:#7a828a"></i>全国平均</span>',
+      '<span><i style="background:#7357b8"></i>高齢・単身</span>',
+      '<span><i style="background:#2f6fa3"></i>共同住宅・持ち家</span>',
+      '<span><i style="background:#9a6736"></i>その他空き家</span>',
+      '<span><i style="background:#244d83"></i>二次的住宅</span>'
+    ].join("");
+    var lead = root.querySelector(".lead");
+    if(lead && lead.parentNode) lead.parentNode.insertBefore(legend, lead.nextSibling);
+  }
+  function run(){
+    ["pref-official-stats","data"].forEach(function(id){
+      var root = document.getElementById(id);
+      if(!root) return;
+      root.querySelectorAll(".pref-data-card,.metric-card").forEach(classifyCard);
+      root.querySelectorAll(".bar-row,.pref-bar-row").forEach(classifyBar);
+      addLegend(root);
+    });
+  }
+  run();
+  setTimeout(run, 300);
+  setTimeout(run, 1200);
+})();
+</script>
+
+<style id="global-policy-links-style-v1">
+  .global-policy-links{width:min(1160px,calc(100% - 28px));margin:38px auto;padding:24px;border:1px solid #e5ddd3;border-radius:8px;background:#fffdf9;color:#25211d;box-shadow:0 14px 34px rgba(45,36,28,.06)}
+  .global-policy-links h2{margin:0 0 14px;color:#25211d;font-size:20px;line-height:1.45}
+  .global-policy-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+  .global-policy-links a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #ded5cc;background:#fff;color:#a94812;font-weight:900;line-height:1.45;text-decoration:none}
+  .global-policy-links a:hover{border-color:#c65312;color:#8c3d00}
+</style>
+<section class="global-policy-links" id="operator" aria-label="運営者情報・ポリシー">
+  <h2>運営者情報・ポリシー</h2>
+  <ul>
+    <li><a href="#operator">サイト運営者情報</a></li>
+    <li><a href="/privacy/">プライバシーポリシー</a></li>
+    <li><a href="/disclaimer/">免責事項</a></li>
+    <li><a href="/sitemap/">サイトマップ</a></li>
+  </ul>
+</section>
+
 </body>
 </html>
 

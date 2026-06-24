@@ -2319,7 +2319,7 @@
     <a href="#flow">準備を見る</a>
   </div>
 
-  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 兵庫県の住宅特性、行政窓口、粗大ごみ相談、見積もり前チェックを整理する情報サイト</div></footer>
+  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 兵庫県の住宅特性、行政窓口、粗大ごみ相談、見積もり前チェックを整理する情報サイト</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a></div></footer>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -3243,6 +3243,403 @@
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+
+<style id="hyogo-top-47-polish-v1">
+  html body {
+    --hyogo-ink:#272a2d;
+    --hyogo-muted:#5f666b;
+    --hyogo-line:#e4ded6;
+    --hyogo-paper:#fff;
+    --hyogo-soft:#fbf7f2;
+    --hyogo-orange:#d45a1b;
+    --hyogo-orange-dark:#9f3e00;
+    --hyogo-blue:#2f6fa3;
+    --hyogo-navy:#244d83;
+    --hyogo-purple:#7357b8;
+    --hyogo-brown:#9a6736;
+    --hyogo-gray:#7a828a;
+    --hyogo-red:#b9414b;
+    --hyogo-shadow:0 14px 34px rgba(35,30,25,.08);
+  }
+  html body #hyogo-area,
+  html body #hyogo-data,
+  html body #hyogo-kodokushi,
+  html body #hyogo-impact {
+    font-family:"BIZ UDPGothic","BIZ UDPゴシック","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif!important;
+    color:var(--hyogo-ink)!important;
+  }
+  html body #hyogo-area .section-title,
+  html body #hyogo-data .section-title,
+  html body #hyogo-kodokushi .section-title,
+  html body #hyogo-impact .section-title {
+    background:#fff!important;
+    color:var(--hyogo-ink)!important;
+    border:1px solid var(--hyogo-line)!important;
+    border-left:8px solid var(--hyogo-orange)!important;
+    box-shadow:none!important;
+  }
+  html body #hyogo-area .section-title::before,
+  html body #hyogo-data .section-title::before,
+  html body #hyogo-kodokushi .section-title::before,
+  html body #hyogo-impact .section-title::before {
+    display:none!important;
+  }
+  html body #hyogo-area .lead,
+  html body #hyogo-data .lead,
+  html body #hyogo-kodokushi .lead,
+  html body #hyogo-impact .lead {
+    color:#42484d!important;
+    font-size:18px!important;
+    line-height:1.86!important;
+  }
+  html body #hyogo-area .hyogo-area-picker {
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:22px!important;
+  }
+  html body #hyogo-area .hyogo-area-card {
+    position:relative!important;
+    overflow:hidden!important;
+    background:#fff!important;
+    border:1px solid var(--hyogo-line)!important;
+    border-top:6px solid var(--hyogo-orange)!important;
+    border-radius:8px!important;
+    box-shadow:var(--hyogo-shadow)!important;
+    padding:24px!important;
+  }
+  html body #hyogo-area .hyogo-area-card:nth-child(2) {border-top-color:var(--hyogo-blue)!important;}
+  html body #hyogo-area .hyogo-area-card:nth-child(3) {border-top-color:var(--hyogo-brown)!important;}
+  html body #hyogo-area .hyogo-area-card:nth-child(4) {border-top-color:var(--hyogo-navy)!important;}
+  html body #hyogo-area .hyogo-area-head h3 {
+    color:var(--hyogo-ink)!important;
+    font-size:22px!important;
+    line-height:1.45!important;
+  }
+  html body #hyogo-area .hyogo-area-count {
+    background:#fff!important;
+    border:1px solid #efcfbd!important;
+    border-radius:999px!important;
+    color:var(--hyogo-orange-dark)!important;
+  }
+  html body #hyogo-area .hyogo-area-note {
+    color:#454b50!important;
+    font-size:16px!important;
+    line-height:1.82!important;
+  }
+  html body #hyogo-area .hyogo-area-point {
+    background:#fff8f1!important;
+    border:1px solid #edd4c2!important;
+    border-left:5px solid var(--hyogo-orange)!important;
+    border-radius:6px!important;
+    color:#573f2d!important;
+    font-size:15px!important;
+    line-height:1.72!important;
+  }
+  html body #hyogo-area .hyogo-area-links {
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  html body #hyogo-area .hyogo-area-card.is-wide .hyogo-area-links {
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  }
+  html body #hyogo-area .hyogo-area-links a {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:42px!important;
+    padding:8px 12px!important;
+    background:#fff!important;
+    border:1px solid #ded7cf!important;
+    border-radius:6px!important;
+    box-shadow:none!important;
+    color:#2d3338!important;
+    font-size:15px!important;
+    font-weight:900!important;
+    text-align:center!important;
+  }
+  html body #hyogo-area .hyogo-area-links a.priority {
+    background:#fff6ef!important;
+    border-color:#e8bea1!important;
+    color:var(--hyogo-orange-dark)!important;
+  }
+  html body #hyogo-area .hyogo-area-links a:hover {
+    background:#fff0e4!important;
+    border-color:var(--hyogo-orange)!important;
+    color:var(--hyogo-orange-dark)!important;
+    text-decoration:none!important;
+  }
+  html body #hyogo-data .pref-data-dashboard,
+  html body #hyogo-data .grid,
+  html body #hyogo-data .metric-grid {
+    gap:18px!important;
+  }
+  html body #hyogo-data .pref-data-card,
+  html body #hyogo-data .metric-card,
+  html body #hyogo-data .chart-box,
+  html body #hyogo-kodokushi .chart-box,
+  html body #hyogo-impact .chart-box,
+  html body #hyogo-kodokushi .card,
+  html body #hyogo-impact .card {
+    background:#fff!important;
+    border:1px solid var(--hyogo-line)!important;
+    border-top:5px solid var(--hyogo-gray)!important;
+    border-radius:8px!important;
+    box-shadow:var(--hyogo-shadow)!important;
+  }
+  html body #hyogo-data .pref-data-card b,
+  html body #hyogo-data .metric-card b {
+    font-size:38px!important;
+    line-height:1.12!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  html body #hyogo-data .pref-data-card span,
+  html body #hyogo-data .metric-label {
+    color:#2f363b!important;
+    background:transparent!important;
+    border:0!important;
+    padding:0!important;
+    font-size:15px!important;
+    font-weight:900!important;
+  }
+  html body #hyogo-data .pref-data-card p,
+  html body #hyogo-data .metric-note,
+  html body #hyogo-data .metric-sub {
+    color:var(--hyogo-muted)!important;
+    font-size:15px!important;
+    line-height:1.72!important;
+  }
+  html body #hyogo-data .data-population {border-top-color:var(--hyogo-gray)!important;}
+  html body #hyogo-data .data-housing {border-top-color:var(--hyogo-brown)!important;}
+  html body #hyogo-data .data-vacant,
+  html body #hyogo-data .data-vacancy {border-top-color:var(--hyogo-orange)!important;}
+  html body #hyogo-data .data-other,
+  html body #hyogo-data .data-risk {border-top-color:var(--hyogo-brown)!important;}
+  html body #hyogo-data .data-secondary {border-top-color:var(--hyogo-navy)!important;}
+  html body #hyogo-data .data-aging {border-top-color:var(--hyogo-purple)!important;}
+  html body #hyogo-data .data-apartment {border-top-color:var(--hyogo-blue)!important;}
+  html body #hyogo-data .data-population b {color:#5f6770!important;}
+  html body #hyogo-data .data-housing b {color:#84613b!important;}
+  html body #hyogo-data .data-vacant b,
+  html body #hyogo-data .data-vacancy b {color:#bd4f16!important;}
+  html body #hyogo-data .data-other b,
+  html body #hyogo-data .data-risk b {color:#8a572d!important;}
+  html body #hyogo-data .data-secondary b {color:var(--hyogo-navy)!important;}
+  html body #hyogo-data .data-aging b {color:var(--hyogo-purple)!important;}
+  html body #hyogo-data .data-apartment b {color:var(--hyogo-blue)!important;}
+  html body #hyogo-data .bar-track,
+  html body #hyogo-data .pref-bar-track,
+  html body #hyogo-kodokushi .bar-track,
+  html body #hyogo-impact .bar-track {
+    height:22px!important;
+    background:#f0ece7!important;
+    border-radius:999px!important;
+    overflow:hidden!important;
+  }
+  html body #hyogo-data .bar-fill,
+  html body #hyogo-data .pref-bar-fill,
+  html body #hyogo-kodokushi .bar-fill,
+  html body #hyogo-impact .bar-fill {
+    border-radius:999px!important;
+    box-shadow:inset 0 -2px 0 rgba(0,0,0,.08)!important;
+  }
+  html body #hyogo-data .bar-fill.vacancy,
+  html body #hyogo-data .pref-bar-fill.vacancy,
+  html body #hyogo-data .bar-fill.total-vacant,
+  html body #hyogo-data .pref-bar-fill.total-vacant {
+    background:linear-gradient(90deg,#f4a261,var(--hyogo-orange))!important;
+  }
+  html body #hyogo-data .bar-fill.national,
+  html body #hyogo-data .pref-bar-fill.national {
+    background:linear-gradient(90deg,#a5adb5,var(--hyogo-gray))!important;
+  }
+  html body #hyogo-data .bar-fill.aging,
+  html body #hyogo-data .bar-fill.warm.aging,
+  html body #hyogo-data .pref-bar-fill.aging {
+    background:linear-gradient(90deg,#a78be2,var(--hyogo-purple))!important;
+  }
+  html body #hyogo-data .bar-fill.apartment,
+  html body #hyogo-data .bar-fill.blue,
+  html body #hyogo-data .pref-bar-fill.apartment {
+    background:linear-gradient(90deg,#72a8d4,var(--hyogo-blue))!important;
+  }
+  html body #hyogo-data .bar-fill.other,
+  html body #hyogo-data .bar-fill.other-vacant,
+  html body #hyogo-data .pref-bar-fill.other {
+    background:linear-gradient(90deg,#c58b55,var(--hyogo-brown))!important;
+  }
+  html body #hyogo-data .bar-fill.secondary,
+  html body #hyogo-data .bar-fill.secondary-home,
+  html body #hyogo-data .pref-bar-fill.secondary {
+    background:linear-gradient(90deg,#6b96ca,var(--hyogo-navy))!important;
+  }
+  html body #hyogo-data .bar-row,
+  html body #hyogo-data .pref-bar-row {
+    grid-template-columns:150px 1fr 118px!important;
+    gap:12px!important;
+    color:#2f363b!important;
+  }
+  html body #hyogo-data .bar-row b,
+  html body #hyogo-data .pref-bar-row b {
+    color:#2f363b!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  html body .hyogo-color-legend {
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+    margin:0 0 18px!important;
+  }
+  html body .hyogo-color-legend span {
+    display:inline-flex!important;
+    align-items:center!important;
+    min-height:32px!important;
+    gap:7px!important;
+    padding:5px 10px!important;
+    background:#fff!important;
+    border:1px solid var(--hyogo-line)!important;
+    border-radius:999px!important;
+    color:#30363b!important;
+    font-size:13px!important;
+    font-weight:900!important;
+  }
+  html body .hyogo-color-legend i {
+    width:11px!important;
+    height:11px!important;
+    border-radius:999px!important;
+    display:inline-block!important;
+  }
+  html body #hyogo-kodokushi .bar-fill,
+  html body #hyogo-impact .bar-fill {background:linear-gradient(90deg,#f4a261,var(--hyogo-orange))!important;}
+  html body #hyogo-kodokushi .bar-fill.warm,
+  html body #hyogo-kodokushi .bar-fill.total-cost {background:linear-gradient(90deg,#d85f72,var(--hyogo-red))!important;}
+  html body #hyogo-kodokushi .bar-fill.blue,
+  html body #hyogo-impact .bar-fill.blue {background:linear-gradient(90deg,#72a8d4,var(--hyogo-blue))!important;}
+  html body #hyogo-impact .bar-fill.warm {background:linear-gradient(90deg,#a78be2,var(--hyogo-purple))!important;}
+  html body #hyogo-kodokushi .chart-box,
+  html body #hyogo-impact .chart-box {
+    border-left:0!important;
+  }
+  @media(max-width:820px){
+    html body #hyogo-area .hyogo-area-picker{grid-template-columns:1fr!important;}
+    html body #hyogo-area .hyogo-area-links,
+    html body #hyogo-area .hyogo-area-card.is-wide .hyogo-area-links{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+    html body #hyogo-data .bar-row,
+    html body #hyogo-data .pref-bar-row{grid-template-columns:96px 1fr 82px!important;}
+  }
+</style>
+
+
+<script id="hyogo-top-47-polish-script-v1">
+(function(){
+  function classifyCard(card){
+    var text = card.textContent || "";
+    card.classList.remove("data-population","data-housing","data-vacant","data-vacancy","data-other","data-secondary","data-aging","data-apartment","data-national","data-risk");
+    if(/人口/.test(text)) card.classList.add("data-population");
+    else if(/総住宅|住宅数|世帯/.test(text)) card.classList.add("data-housing");
+    else if(/その他空き家|放置空き家/.test(text)) card.classList.add("data-other");
+    else if(/二次的住宅|別荘|季節/.test(text)) card.classList.add("data-secondary");
+    else if(/空き家率|空き家数|空き家総数/.test(text)) card.classList.add("data-vacant");
+    else if(/65歳|高齢|単身/.test(text)) card.classList.add("data-aging");
+    else if(/共同住宅|マンション|集合住宅|EV/.test(text)) card.classList.add("data-apartment");
+  }
+  function classifyBar(row){
+    var label = (row.querySelector("span") || row).textContent || "";
+    var fills = row.querySelectorAll(".bar-fill,.pref-bar-fill");
+    fills.forEach(function(fill){
+      fill.classList.remove("vacancy","total-vacant","national","aging","apartment","blue","warm","other","other-vacant","secondary","secondary-home");
+      if(/全国/.test(label)) fill.classList.add("national");
+      else if(/その他空き家|放置空き家/.test(label)) fill.classList.add("other");
+      else if(/二次的住宅|別荘|季節/.test(label)) fill.classList.add("secondary");
+      else if(/空き家総数|空き家数|地方部空き家/.test(label)) fill.classList.add("total-vacant");
+      else if(/空き家率|淡路|但馬/.test(label)) fill.classList.add("vacancy");
+      else if(/高齢|独居|単身/.test(label)) fill.classList.add("aging");
+      else if(/共同住宅|マンション|集合住宅|借家|都市部/.test(label)) fill.classList.add("apartment");
+      else if(/人口|世帯|死亡/.test(label)) fill.classList.add("blue");
+    });
+  }
+  function addLegend(){
+    var data = document.getElementById("hyogo-data");
+    if(!data || data.querySelector(".hyogo-color-legend")) return;
+    var legend = document.createElement("div");
+    legend.className = "hyogo-color-legend";
+    legend.innerHTML = [
+      '<span><i style="background:#d45a1b"></i>空き家・実家整理</span>',
+      '<span><i style="background:#7a828a"></i>全国平均</span>',
+      '<span><i style="background:#7357b8"></i>高齢・単身</span>',
+      '<span><i style="background:#2f6fa3"></i>共同住宅</span>',
+      '<span><i style="background:#9a6736"></i>その他空き家</span>',
+      '<span><i style="background:#244d83"></i>二次的住宅</span>'
+    ].join("");
+    var lead = data.querySelector(".lead");
+    if(lead && lead.parentNode) lead.parentNode.insertBefore(legend, lead.nextSibling);
+  }
+  function run(){
+    var root = document.getElementById("hyogo-data");
+    if(root){
+      root.querySelectorAll(".pref-data-card,.metric-card").forEach(classifyCard);
+      root.querySelectorAll(".bar-row,.pref-bar-row").forEach(classifyBar);
+      addLegend();
+    }
+  }
+  run();
+  setTimeout(run, 300);
+  setTimeout(run, 1200);
+})();
+</script>
+
+<style id="hyogo-final-orange-title-and-panel-fix-v1">
+  html body .section-title,
+  html body h2.section-title {
+    background:#D05300!important;
+    background-image:none!important;
+    color:#fff!important;
+    border:0!important;
+    border-left:7px solid #9F3E00!important;
+    box-shadow:none!important;
+  }
+  html body .section-title::before,
+  html body h2.section-title::before {
+    background:#fff!important;
+  }
+  html body .kobe-research-panel,
+  html body .global-visual-proof,
+  html body .prefecture-100-panel {
+    background:#FFF7EC!important;
+    background-image:none!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-data-card,
+  html body .kobe-chart-box,
+  html body .kobe-local-stat,
+  html body .kobe-admin-card {
+    background:#FFFDF9!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-admin-card strong,
+  html body .guide-check b,
+  html body .impact-card .metric-label,
+  html body .impact-card .metric-sub {
+    color:#9F3E00!important;
+  }
+</style>
+<style id="global-policy-links-style-v1">
+  .global-policy-links{width:min(1160px,calc(100% - 28px));margin:38px auto;padding:24px;border:1px solid #e5ddd3;border-radius:8px;background:#fffdf9;color:#25211d;box-shadow:0 14px 34px rgba(45,36,28,.06)}
+  .global-policy-links h2{margin:0 0 14px;color:#25211d;font-size:20px;line-height:1.45}
+  .global-policy-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+  .global-policy-links a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #ded5cc;background:#fff;color:#a94812;font-weight:900;line-height:1.45;text-decoration:none}
+  .global-policy-links a:hover{border-color:#c65312;color:#8c3d00}
+</style>
+<section class="global-policy-links" id="operator" aria-label="運営者情報・ポリシー">
+  <h2>運営者情報・ポリシー</h2>
+  <ul>
+    <li><a href="#operator">サイト運営者情報</a></li>
+    <li><a href="/privacy/">プライバシーポリシー</a></li>
+    <li><a href="/disclaimer/">免責事項</a></li>
+    <li><a href="/sitemap/">サイトマップ</a></li>
+  </ul>
+</section>
+
 </body>
 </html>
 

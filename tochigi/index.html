@@ -2931,6 +2931,265 @@
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+
+<style id="tochigi-top-honki-polish-v1">
+  :root{
+    --tc-orange:#d45a1b;--tc-orange-dark:#9f3e00;--tc-blue:#2f6fa3;--tc-navy:#1f456f;
+    --tc-purple:#7357b8;--tc-brown:#9a6736;--tc-gray:#7a828a;--tc-ink:#2f2b27;
+    --tc-muted:#5f6468;--tc-line:#e6ded4;--tc-soft:#fff8f1;--tc-shadow:0 14px 34px rgba(36,31,26,.075);
+  }
+  html body .section-title::before,
+  html body section .section-title::before,
+  html body .tochigi-report .section-title::before,
+  html body .common-kita-ba .section-title::before{display:none!important;content:none!important;width:0!important;height:0!important;margin:0!important}
+  html body .section-title{gap:0!important}
+  html body #towns{display:none!important}
+
+  html body #area-keyword-guide,
+  html body #tochigi-report-insights,
+  html body #pref-facility-directory,
+  html body #pref-official-stats,
+  html body #pref-original-guide,
+  html body #tochigi-handmade-guide,
+  html body #tochigi-regions,
+  html body #tochigi-data,
+  html body #kanto-national-compare,
+  html body #kita-before-after-cases,
+  html body #pref-impact,
+  html body #faq{
+    background:#fff!important;background-image:none!important;border:1px solid var(--tc-line)!important;border-radius:12px!important;
+    padding:clamp(22px,3.6vw,38px)!important;box-shadow:var(--tc-shadow)!important;
+  }
+  html body #area-keyword-guide .section-title,
+  html body #tochigi-report-insights .section-title,
+  html body #pref-facility-directory .section-title,
+  html body #pref-official-stats .section-title,
+  html body #pref-original-guide .section-title,
+  html body #tochigi-handmade-guide .section-title,
+  html body #tochigi-regions .section-title,
+  html body #tochigi-data .section-title,
+  html body #kanto-national-compare .section-title,
+  html body #kita-before-after-cases .section-title,
+  html body #pref-impact .section-title,
+  html body #faq .section-title{
+    display:block!important;width:100%!important;margin:0 0 22px!important;padding:0 0 12px 18px!important;
+    background:#fff!important;background-image:none!important;color:var(--tc-ink)!important;border:0!important;
+    border-left:8px solid var(--tc-orange)!important;border-bottom:1px solid var(--tc-line)!important;
+    box-shadow:none!important;border-radius:0!important;font-size:clamp(24px,3vw,34px)!important;
+    line-height:1.38!important;letter-spacing:0!important;
+  }
+  html body .section-kicker{color:var(--tc-orange-dark)!important;background:transparent!important}
+  html body .lead,
+  html body .tochigi-report-lead,
+  html body .tochigi-data-lead,
+  html body .kanto-national-lead,
+  html body #pref-impact .lead{color:var(--tc-muted)!important;font-size:18px!important;line-height:1.85!important}
+
+  html body .tochigi-report-grid,
+  html body .pref-data-grid,
+  html body .tochigi-kpis,
+  html body .kanto-national-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:14px!important}
+  html body .tochigi-region-grid,
+  html body .tochigi-compare-grid,
+  html body .kanto-national-charts,
+  html body .pref-chart-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+  html body .kanto-national-charts,
+  html body .pref-chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+
+  html body .tochigi-report-card,
+  html body .pref-data-card,
+  html body .pref-chart-box,
+  html body .tochigi-region-card,
+  html body .tochigi-region-stat,
+  html body .tochigi-kpi,
+  html body .tochigi-compare-card,
+  html body .kanto-national-card,
+  html body .kanto-national-chart,
+  html body #pref-original-guide .card,
+  html body #tochigi-handmade-guide .kanto-handmade-actions a,
+  html body #tochigi-handmade-guide .kanto-handmade-checks div,
+  html body #pref-impact .metric-card,
+  html body #pref-impact .chart-box,
+  html body #pref-impact .risk-list>div,
+  html body #faq .card{
+    background:#fff!important;background-image:none!important;border:1px solid var(--tc-line)!important;border-top:6px solid var(--tc-orange)!important;
+    border-left:1px solid var(--tc-line)!important;border-radius:8px!important;box-shadow:0 10px 24px rgba(36,31,26,.055)!important;
+  }
+  html body .tochigi-region-card:nth-child(2),html body .tochigi-report-card:nth-child(2),html body .tochigi-compare-card:nth-child(2),html body .kanto-national-card:nth-child(2),html body #pref-original-guide .card:nth-child(2){border-top-color:var(--tc-blue)!important}
+  html body .tochigi-region-card:nth-child(3),html body .tochigi-report-card:nth-child(3),html body .tochigi-compare-card:nth-child(3),html body .kanto-national-card:nth-child(3),html body #pref-original-guide .card:nth-child(3){border-top-color:var(--tc-brown)!important}
+  html body .tochigi-report-card:nth-child(4),html body .kanto-national-card:nth-child(4){border-top-color:var(--tc-navy)!important}
+
+  html body .tochigi-report-card b,
+  html body .pref-data-card b,
+  html body .tochigi-region-stat b,
+  html body .tochigi-kpi b,
+  html body .kanto-national-card b,
+  html body #pref-impact .metric-card b{color:var(--tc-ink)!important;font-variant-numeric:tabular-nums!important}
+  html body .tochigi-report-card span,
+  html body .tochigi-region-card p,
+  html body .tochigi-compare-card p,
+  html body .kanto-national-card p,
+  html body .kanto-national-chart p,
+  html body #pref-impact p{color:var(--tc-muted)!important}
+  html body .tochigi-region-card h3,
+  html body .tochigi-compare-card h3,
+  html body .kanto-national-chart h3{color:var(--tc-ink)!important}
+
+  html body .region-head{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin:0 0 10px!important;padding-bottom:12px!important;border-bottom:1px solid var(--tc-line)!important}
+  html body .region-count{
+    background:#fff4eb!important;border:1px solid #efc6a8!important;color:var(--tc-orange-dark)!important;border-radius:999px!important;
+    min-height:28px!important;padding:4px 10px!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;
+  }
+  html body .region-checks,
+  html body .tochigi-compare-meta,
+  html body .common-ba-guide,
+  html body .common-ba-points{display:flex!important;flex-wrap:wrap!important;gap:7px!important}
+  html body .region-checks span,
+  html body .tochigi-compare-meta span,
+  html body .common-ba-guide span,
+  html body .common-ba-points span{
+    display:inline-flex!important;align-items:center!important;min-height:28px!important;padding:5px 9px!important;
+    background:#f7f5f2!important;border:1px solid var(--tc-line)!important;border-radius:999px!important;color:var(--tc-muted)!important;
+    font-size:13px!important;font-weight:900!important;line-height:1.3!important;
+  }
+  html body .ward-links{display:flex!important;flex-wrap:wrap!important;gap:9px!important}
+  html body .ward-links a{
+    display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:40px!important;padding:8px 12px!important;
+    background:#fff!important;color:#333!important;border:1px solid #ded6cd!important;border-radius:6px!important;box-shadow:none!important;
+    font-size:15px!important;font-weight:900!important;line-height:1.35!important;text-decoration:none!important;
+  }
+  html body .ward-links a:hover{background:#fff3ea!important;border-color:#e6a16d!important;color:var(--tc-orange-dark)!important}
+  html body .tochigi-report-note,
+  html body .tochigi-source,
+  html body .kanto-national-source,
+  html body .tochigi-local-compare,
+  html body #pref-original-guide .notice{
+    background:var(--tc-soft)!important;border:1px solid #efd3bd!important;border-left:6px solid var(--tc-orange)!important;
+    color:var(--tc-ink)!important;border-radius:8px!important;padding:14px 16px!important;
+  }
+  html body .tochigi-report-table th{background:#f7f5f2!important;color:var(--tc-ink)!important}
+  html body .tochigi-report-table th,
+  html body .tochigi-report-table td{border:1px solid var(--tc-line)!important}
+  html body #tochigi-handmade-guide{--kanto-main:var(--tc-orange)!important;--kanto-soft:#fff8f1!important}
+  html body #tochigi-handmade-guide .kanto-handmade-actions a:nth-child(2){border-top-color:var(--tc-blue)!important}
+  html body #tochigi-handmade-guide .kanto-handmade-actions a:nth-child(3){border-top-color:var(--tc-brown)!important}
+  html body #tochigi-handmade-guide .kanto-handmade-actions a:nth-child(4){border-top-color:var(--tc-navy)!important}
+  html body #tochigi-handmade-guide strong{color:var(--tc-orange-dark)!important}
+
+  html body .data-population{border-top-color:var(--tc-gray)!important}
+  html body .data-housing,html body .data-other{border-top-color:var(--tc-brown)!important}
+  html body .data-vacant,html body .data-vacant-rate{border-top-color:var(--tc-orange)!important}
+  html body .data-secondary{border-top-color:var(--tc-navy)!important}
+  html body .data-aging{border-top-color:var(--tc-purple)!important}
+  html body .data-apartment{border-top-color:var(--tc-blue)!important}
+  html body .bar-track,
+  html body .pref-bar-track,
+  html body .pref-data-track,
+  html body .tochigi-track,
+  html body .tochigi-local-track,
+  html body .kanto-national-track{border:0!important;outline:0!important;box-shadow:none!important;background:#f1ece6!important}
+  html body .bar-fill,
+  html body .pref-bar-fill,
+  html body .pref-data-fill,
+  html body .tochigi-fill,
+  html body .tochigi-local-fill,
+  html body .kanto-national-fill{border:0!important;outline:0!important;box-shadow:none!important;background:linear-gradient(90deg,var(--tc-orange),#f0a35f)!important}
+  html body .bar-fill.national,
+  html body .pref-bar-fill.national,
+  html body .pref-data-fill.national,
+  html body .kanto-national-fill.national{background:linear-gradient(90deg,var(--tc-gray),#b8bfc4)!important}
+  html body .bar-fill.aging,
+  html body .pref-bar-fill.aging,
+  html body .pref-data-fill.aging{background:linear-gradient(90deg,var(--tc-purple),#a998d8)!important}
+  html body .bar-fill.apartment,
+  html body .bar-fill.blue,
+  html body .pref-bar-fill.apartment,
+  html body .pref-data-fill.blue{background:linear-gradient(90deg,var(--tc-blue),#78aeda)!important}
+  html body .bar-fill.other,
+  html body .bar-fill.other-vacant,
+  html body .bar-fill.warm,
+  html body .bar-fill.green,
+  html body .pref-bar-fill.other,
+  html body .pref-data-fill.other,
+  html body .kanto-national-fill.warm{background:linear-gradient(90deg,var(--tc-brown),#c69663)!important}
+  html body .bar-fill.secondary,
+  html body .pref-bar-fill.secondary,
+  html body .pref-data-fill.secondary{background:linear-gradient(90deg,var(--tc-navy),#6688b8)!important}
+  html body .tc-color-legend{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:0 0 22px!important}
+  html body .tc-color-legend span{display:inline-flex!important;align-items:center!important;min-height:32px!important;padding:6px 10px!important;background:#fff!important;border:1px solid var(--tc-line)!important;border-radius:999px!important;color:var(--tc-ink)!important;font-size:13px!important;font-weight:900!important;line-height:1.35!important}
+  html body .tc-color-legend i{width:10px!important;height:10px!important;margin-right:7px!important;border-radius:50%!important;display:inline-block!important;background:var(--legend-color)!important}
+  @media(max-width:1000px){
+    html body .tochigi-report-grid,html body .pref-data-grid,html body .tochigi-kpis,html body .kanto-national-grid,
+    html body .tochigi-region-grid,html body .tochigi-compare-grid,html body .kanto-national-charts,html body .pref-chart-grid{grid-template-columns:1fr!important}
+    html body .ward-links a{width:100%!important;justify-content:flex-start!important}
+  }
+</style>
+
+
+
+<script id="tochigi-top-honki-polish-script-v1">
+(function(){
+  function legend(root){
+    if(!root||root.querySelector('.tc-color-legend')) return;
+    var lead=root.querySelector('.lead')||root.querySelector('.kanto-national-lead')||root.querySelector('.tochigi-data-lead')||root.querySelector('p');
+    var div=document.createElement('div');div.className='tc-color-legend';
+    div.innerHTML='<span><i style="--legend-color:#d45a1b"></i>空き家・退去前整理</span><span><i style="--legend-color:#7a828a"></i>全国平均・人口</span><span><i style="--legend-color:#7357b8"></i>高齢化・単身</span><span><i style="--legend-color:#2f6fa3"></i>集合住宅・宇都宮</span><span><i style="--legend-color:#9a6736"></i>戸建て・農家住宅</span><span><i style="--legend-color:#244d83"></i>那須・日光方面</span>';
+    if(lead&&lead.parentNode) lead.parentNode.insertBefore(div,lead.nextSibling); else root.insertBefore(div,root.firstChild);
+  }
+  function resetUi(){
+    document.querySelectorAll('#area-keyword-guide .section-title,#tochigi-report-insights .section-title,#pref-facility-directory .section-title,#pref-official-stats .section-title,#pref-original-guide .section-title,#tochigi-handmade-guide .section-title,#tochigi-regions .section-title,#tochigi-data .section-title,#kanto-national-compare .section-title,#kita-before-after-cases .section-title,#pref-impact .section-title,#faq .section-title').forEach(function(el){
+      el.style.setProperty('background','#fff','important');
+      el.style.setProperty('background-image','none','important');
+      el.style.setProperty('color','#2f2b27','important');
+      el.style.setProperty('border','0','important');
+      el.style.setProperty('border-left','8px solid #d45a1b','important');
+      el.style.setProperty('border-bottom','1px solid #e6ded4','important');
+      el.style.setProperty('border-radius','0','important');
+      el.style.setProperty('box-shadow','none','important');
+      el.style.setProperty('padding','0 0 12px 18px','important');
+    });
+    document.querySelectorAll('#pref-official-stats .bar-fill,#pref-official-stats .pref-bar-fill,#pref-official-stats .pref-data-fill,#tochigi-data .tochigi-fill,#tochigi-data .tochigi-local-fill,#kanto-national-compare .kanto-national-fill,#pref-impact .bar-fill').forEach(function(el){
+      var from='#d45a1b',to='#f0a35f';
+      if(el.classList.contains('national')){from='#7a828a';to='#b8bfc4';}
+      else if(el.classList.contains('aging')||el.classList.contains('purple')){from='#7357b8';to='#a998d8';}
+      else if(el.classList.contains('blue')||el.classList.contains('apartment')){from='#2f6fa3';to='#78aeda';}
+      else if(el.classList.contains('other')||el.classList.contains('other-vacant')||el.classList.contains('warm')||el.classList.contains('green')){from='#9a6736';to='#c69663';}
+      else if(el.classList.contains('secondary')||el.classList.contains('secondary-home')){from='#244d83';to='#6688b8';}
+      el.style.setProperty('border','0','important');
+      el.style.setProperty('outline','0','important');
+      el.style.setProperty('box-shadow','none','important');
+      el.style.setProperty('background',from,'important');
+      el.style.setProperty('background-image','linear-gradient(90deg,'+from+','+to+')','important');
+    });
+    document.querySelectorAll('.bar-track,.pref-bar-track,.pref-data-track,.tochigi-track,.tochigi-local-track,.kanto-national-track').forEach(function(el){
+      el.style.setProperty('border','0','important');
+      el.style.setProperty('outline','0','important');
+      el.style.setProperty('box-shadow','none','important');
+      el.style.setProperty('background','#f1ece6','important');
+    });
+  }
+  ['pref-official-stats','tochigi-data','kanto-national-compare','pref-impact'].forEach(function(id){legend(document.getElementById(id));});
+  resetUi();requestAnimationFrame(resetUi);setTimeout(resetUi,250);setTimeout(resetUi,950);setTimeout(resetUi,1900);setTimeout(resetUi,2300);setTimeout(resetUi,3200);
+})();
+</script>
+
+<style id="global-policy-links-style-v1">
+  .global-policy-links{width:min(1160px,calc(100% - 28px));margin:38px auto;padding:24px;border:1px solid #e5ddd3;border-radius:8px;background:#fffdf9;color:#25211d;box-shadow:0 14px 34px rgba(45,36,28,.06)}
+  .global-policy-links h2{margin:0 0 14px;color:#25211d;font-size:20px;line-height:1.45}
+  .global-policy-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
+  .global-policy-links a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #ded5cc;background:#fff;color:#a94812;font-weight:900;line-height:1.45;text-decoration:none}
+  .global-policy-links a:hover{border-color:#c65312;color:#8c3d00}
+</style>
+<section class="global-policy-links" id="operator" aria-label="運営者情報・ポリシー">
+  <h2>運営者情報・ポリシー</h2>
+  <ul>
+    <li><a href="#operator">サイト運営者情報</a></li>
+    <li><a href="/privacy/">プライバシーポリシー</a></li>
+    <li><a href="/disclaimer/">免責事項</a></li>
+    <li><a href="/sitemap/">サイトマップ</a></li>
+  </ul>
+</section>
+
 </body>
 </html>
 

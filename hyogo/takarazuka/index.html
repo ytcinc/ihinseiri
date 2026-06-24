@@ -833,6 +833,31 @@
   html body .site-footer a{color:#9f3e00!important}
 </style>
 
+
+<style id="takarazuka-local-polish">
+  .takarazuka-local-wrap{margin-top:22px}
+  .takarazuka-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+  .takarazuka-stat-card{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:16px;box-shadow:0 10px 24px rgba(154,86,34,.08)}
+  .takarazuka-stat-card b{display:block;color:#c2410c;font-size:1.55rem;line-height:1.1;margin-bottom:8px}
+  .takarazuka-stat-card span{display:block;color:#4b5563;font-size:.92rem;line-height:1.75}
+  .takarazuka-area-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
+  .takarazuka-area-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+  .takarazuka-area-card h3{margin:0 0 8px;color:#9a3412;font-size:1.08rem}
+  .takarazuka-area-card p{margin:0;color:#374151;line-height:1.85}
+  .takarazuka-check-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}
+  .takarazuka-check-list li{list-style:none;background:#fff;border:1px solid #fed7aa;border-radius:999px;padding:10px 12px;color:#7c2d12;font-weight:700;text-align:center}
+  .takarazuka-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+  .takarazuka-admin-card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px}
+  .takarazuka-admin-card h3{margin:0 0 8px;color:#9a3412}
+  .takarazuka-admin-card p{margin:0 0 10px;line-height:1.8;color:#374151}
+  .takarazuka-admin-card a{color:#c2410c;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  @media (max-width: 760px){
+    .takarazuka-stat-grid,.takarazuka-area-grid,.takarazuka-admin-grid{grid-template-columns:1fr}
+    .takarazuka-check-list{grid-template-columns:1fr 1fr}
+    .takarazuka-stat-card b{font-size:1.35rem}
+  }
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">宝塚市の</span> 遺品整理・生前整理jp</span><br><span class="brand-sub">地域別の相談前チェックガイド</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/hyogo/">兵庫県</a><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="#local">地域特性</a><a href="#price">料金目安</a><a class="call" href="#process">相談準備</a></nav></div></header>
@@ -983,7 +1008,51 @@
   <div class="notice" style="margin-top:18px"><b>宝塚市の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
 </section>
 
-<section id="local" class="section"><h2 class="section-title">宝塚市の住宅特性と作業前チェック</h2><p class="lead"><span class="marker">阪神間・北摂</span>では、同じ兵庫県内でも建物条件、荷物量、車両停車位置、作業時間が大きく変わります。見積もり前に地域写真とあわせて搬出条件を整理しておくと、追加確認を減らせます。</p><div class="grid cols3"><div class="card"><h3>搬出条件</h3><p>階段幅、エレベーター、駐車位置、前面道路、庭や納屋からの搬出距離を確認します。</p></div><div class="card"><h3>遠方対応</h3><p>鍵預かり、作業前後の写真報告、貴重品探索、供養品確認を組み合わせると立会い負担を減らせます。</p></div><div class="card"><h3>仕分け範囲</h3><p>必要品、買取候補、供養品、処分品を先に分け、残したいものの見落としを防ぎます。</p></div></div></section>
+
+<section id="local" class="section takarazuka-local-polish">
+  <div class="container takarazuka-local-wrap">
+    <p class="section-kicker">宝塚市の住宅特性・行政ルール</p>
+    <h2 class="section-title">宝塚市で遺品整理・生前整理が必要になりやすい住宅特性</h2>
+    <p class="lead">宝塚市は、宝塚・宝塚南口・逆瀬川周辺の駅近マンション、仁川・小林・中山寺方面の戸建てと集合住宅、山本・雲雀丘・中山台方面の山手住宅、西谷など北部地域の広い敷地の実家まで、搬出条件が大きく変わります。遺品整理・生前整理・実家じまいでは、坂道、前面道路、駐車位置、階段幅、庭・物置、粗大ごみの予約や持ち込み可否を先に確認しておくことが大切です。</p>
+
+    <div class="takarazuka-stat-grid" aria-label="宝塚市の人口・世帯データ">
+      <div class="takarazuka-stat-card"><b>227,645人</b><span>令和6年12月末の住民基本台帳人口。宝塚市の年齢別人口Excelより確認。</span></div>
+      <div class="takarazuka-stat-card"><b>107,265世帯</b><span>令和6年12月末の町丁・字別人口Excelに掲載された世帯数。</span></div>
+      <div class="takarazuka-stat-card"><b>66,152人</b><span>65歳以上人口。生前整理・福祉整理・遠方親族対応につながりやすい層です。</span></div>
+      <div class="takarazuka-stat-card"><b>29.1%</b><span>65歳以上人口割合。施設入居前整理や実家じまいの相談背景になります。</span></div>
+    </div>
+
+    <div class="local-age-box">
+      <h3>令和6年12月末 年齢別人口の目安</h3>
+      <div class="local-age-bars">
+        <div><span>15歳未満</span><strong>27,197人</strong></div>
+        <div><span>15〜64歳</span><strong>134,296人</strong></div>
+        <div><span>75歳以上</span><strong>39,716人</strong></div>
+      </div>
+    </div>
+
+    <div class="takarazuka-area-grid">
+      <div class="takarazuka-area-card"><h3>宝塚・宝塚南口・逆瀬川周辺</h3><p>駅近マンションや集合住宅では、管理会社への届出、エレベーター予約、共用部養生、搬出時間の指定を見積もり前に確認します。</p></div>
+      <div class="takarazuka-area-card"><h3>小林・仁川・中山寺方面</h3><p>戸建てと集合住宅が混在し、階段幅、前面道路、駐車位置、押入れ・納戸の物量、施設入居前の短期整理が相談になりやすい地域です。</p></div>
+      <div class="takarazuka-area-card"><h3>山本・雲雀丘・中山台方面</h3><p>山手住宅や坂道のある住まいでは、作業車を停められる場所、大型家具の搬出経路、庭・物置・車庫の残置物を先に写真で共有します。</p></div>
+      <div class="takarazuka-area-card"><h3>西谷・北部地域</h3><p>敷地の広い戸建て、農具・屋外用品、物置、植木ごみなどが出やすく、クリーンセンター持ち込みと専門業者搬出の切り分けが重要です。</p></div>
+    </div>
+
+    <ul class="takarazuka-check-list" aria-label="宝塚市で見積もり前に確認したいこと">
+      <li>坂道・前面道路</li>
+      <li>駐車位置</li>
+      <li>EV予約</li>
+      <li>庭・物置</li>
+      <li>粗大ごみ予約</li>
+      <li>運び出し可否</li>
+    </ul>
+
+    <div class="local-tip">
+      <strong>見積もり前のコツ</strong>
+      <p>室内、収納、玄関、階段、駐車位置、庭、物置、粗大ごみ置き場の写真を共有してください。粗大ごみ収集で出す品、クリーンセンターへ持ち込む品、買取査定したい品、供養したい品を分けると、費用と作業範囲が明確になります。</p>
+    </div>
+  </div>
+</section>
 <section id="service" class="section"><h2 class="section-title">任せられる整理内容</h2><div class="grid cols2"><div class="card"><h3>遺品整理・家財整理</h3><p>家具、家電、衣類、書類、生活用品を必要品・買取品・供養品・処分品に分けて整理します。</p></div><div class="card"><h3>空き家整理・実家じまい</h3><p>施設入居、住み替え、相続前後の空き家化に合わせ、屋内外の残置物まで範囲を決めて進めます。</p></div><div class="card"><h3>貴重品探索・写真報告</h3><p>通帳、印鑑、権利書、保険証券、写真、形見品などを探し、必要に応じて写真で報告します。</p></div><div class="card"><h3>供養・買取・処分相談</h3><p>仏壇、神棚、人形、写真などの供養相談や、状態の良い家電・貴金属・趣味用品の査定確認にも対応できます。</p></div></div></section>
 <section id="cases" class="section common-kita-ba">
   <h2 class="section-title">宝塚市の遺品整理ビフォーアフター事例</h2>
@@ -1099,25 +1168,36 @@
 
 
 
-<section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、写真報告、残す品の事前共有を行えば、遠方のご家族でも進めやすくなります。</p></div><div class="card"><h3>見積もり前に何を用意すればよいですか？</h3><p>部屋全体、押入れ、物置、搬出経路、駐車位置の写真と、残したい品・探したい書類のリストがあるとスムーズです。</p></div><div class="card"><h3>宝塚市で見積もり前に地域事情として何を伝えるべきですか？</h3><p>阪神間・北摂では、同じ兵庫県内でも建物条件、荷物量、車両停車位置、作業時間が大きく変わります。見積もり前に地域写真とあわせて搬出条件を整理しておくと、追加確認を減らせます。</p></div><div class="card"><h3>宝塚市で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>宝塚市の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
+<section id="faq" class="section">
+  <h2 class="section-title">宝塚市の遺品整理・生前整理でよくある質問</h2>
+  <div class="grid cols2">
+    <div class="card"><h3>宝塚市で立会いなしの遺品整理はできますか？</h3><p>できます。鍵の受け渡し、作業前後の写真報告、残す品・探す書類の共有を決めておくと、駅近マンションでも山手の戸建てでも遠方のご家族が進めやすくなります。</p></div>
+    <div class="card"><h3>見積もり前にどんな写真を用意すればよいですか？</h3><p>部屋全体、押入れ、階段、玄関、駐車位置、前面道路に加えて、庭、物置、車庫がある場合は屋外の写真も用意してください。坂道や前面道路の幅で搬出条件が変わります。</p></div>
+    <div class="card"><h3>宝塚・逆瀬川周辺のマンション整理で注意することは？</h3><p>管理会社への届出、エレベーター予約、共用部養生、搬出可能時間、鍵返却日を確認します。退去期限が近い場合は、行政回収で出す品と業者が屋内搬出する品を分けて見積もりましょう。</p></div>
+    <div class="card"><h3>雲雀丘・中山台など山手住宅で注意することは？</h3><p>坂道、車両の停車位置、階段幅、二階家具、庭・物置・車庫の残置物を確認します。大型家具や仏壇がある場合は、搬出経路の写真があると判断しやすくなります。</p></div>
+    <div class="card"><h3>西谷・北部地域の実家じまいで注意することは？</h3><p>室内だけでなく、物置、農具、植木ごみ、屋外用品、長く使っていない残置物を確認してください。作業車両が近くまで入れるか、雨天時に搬出できるかも重要です。</p></div>
+    <div class="card"><h3>宝塚市クリーンセンターへ持ち込む場合の注意点は？</h3><p>粗大ごみの持ち込みは予約が必要で、持ち込みは予約者本人または家族が行います。屋内からの大型家具搬出や大量家財の仕分けは行政持ち込みだけでは完結しないため、持ち込む品と業者に任せる品を分けて相談してください。</p></div>
+  </div>
+</section>
+
+<section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 <section id="admin" class="section admin-hotline-section">
   <div class="container">
-    <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
-    <h2 class="section-title">宝塚市の行政窓口・粗大ごみ・持ち込み先</h2>
-    <p class="lead">宝塚市で遺品整理・生前整理を進める前に、自治体の粗大ごみで出すもの、持込施設へ持ち込むもの、業者が屋内から搬出するものを分けて整理します。退去期限、大型家具、家電4品目、仏壇・写真、貴重品探索の範囲を先に分けてください。</p>
-    <div class="admin-hotline-grid">
-      <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>宝塚市役所</strong><br>代表電話: 0797-71-1141。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">宝塚市公式情報を確認</a></div>
-      <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>宝塚市の粗大ごみ・ごみ分別案内</strong><br>粗大ごみの申込方法、収集日、手数料、持ち出し場所、出せない品目を宝塚市公式情報で確認します。 屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">粗大ごみ・ごみ分別を公式で確認</a></div>
-      <div class="admin-card"><h3>持込・処理施設</h3><p><strong>宝塚市クリーンセンター</strong><br>自己搬入は、予約要否、受付時間、本人確認、車両条件、手数料、家電4品目・危険物の扱いを公式情報で確認します。調査データ上の目安は90円/10kgです。</p><a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">持ち込み先の公式情報を確認</a></div>
-      <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare">業者比較の確認点へ</a></div>
-      <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local">住宅特性・統計を見る</a></div>
-      <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、宝塚市クリーンセンターへ持ち込むもの、業者が屋内搬出するもの、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process">相談の流れへ</a></div>
+    <p class="section-kicker">宝塚市の行政窓口・ごみの捨て方</p>
+    <h2 class="section-title">宝塚市で遺品整理前に確認したい粗大ごみ・持ち込み先</h2>
+    <p class="lead">宝塚市で遺品整理・生前整理を進める前に、粗大ごみ収集で出すもの、クリーンセンターへ持ち込むもの、専門業者が屋内から搬出するものを分けておくと、費用と作業範囲が整理しやすくなります。</p>
+    <div class="takarazuka-admin-grid">
+      <div class="takarazuka-admin-card"><h3>宝塚市役所</h3><p><strong>代表: 0797-71-1141</strong><br>所在地: 宝塚市東洋町1番1号。業務時間は午前9時から午後5時まで。おくやみ、住まい、福祉、空き家、相続後の行政手続きは市役所の案内から確認します。</p><a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">宝塚市公式サイトを確認</a></div>
+      <div class="takarazuka-admin-card"><h3>粗大ごみ収集・持ち込み予約</h3><p><strong>予約・受付センター: 0797-87-3363</strong><br>粗大ごみはネットまたは電話で予約します。電話受付は年末年始を除く年中無休、9:00〜17:00。戸別収集は前日正午まで、持ち込みは前日17:00までの申込みが必要です。</p><a href="https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1002040.html" target="_blank" rel="noopener">粗大ごみの収集・持ち込み方法</a></div>
+      <div class="takarazuka-admin-card"><h3>宝塚市クリーンセンター</h3><p><strong>所在地: 宝塚市小浜1丁目2番15号</strong><br>粗大ごみの持ち込みは予約者本人または家族が行います。持ち込み日は月〜金曜日と毎月第3回目の土曜日、搬入時間は8:00〜11:00、12:00〜15:00です。</p><a href="https://www.city.takarazuka.hyogo.jp/cleancenter/index.html" target="_blank" rel="noopener">クリーンセンターを確認</a></div>
+      <div class="takarazuka-admin-card"><h3>持ち込み料金・運び出し支援</h3><p><strong>家庭系粗大ごみ: 10kgあたり90円</strong><br>支払いは現金のみです。ひとり暮らしの高齢者・障がい者で条件に該当する場合は、粗大ごみの運び出し収集も確認できます。</p><a href="https://www.city.takarazuka.hyogo.jp/cleancenter/household_garbage/1015366.html" target="_blank" rel="noopener">粗大ごみ運び出し収集</a></div>
     </div>
-    <p class="source-note">出典：<a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">宝塚市公式サイト</a>、宝塚市クリーンセンター公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+    <p class="source-note">出典：宝塚市公式サイト「住民基本台帳による人口」「令和2年国勢調査」「クリーンセンターのページ」「粗大ごみの収集・持ち込み方法」を確認して作成しています。</p>
   </div>
 </section>
 </main>
+
 <footer id="operator" class="site-footer" data-pref="hyogo" data-city="宝塚市">
   <div class="footer-grid">
     <section class="footer-col">
@@ -1130,9 +1210,8 @@
         <li><a href="https://www.city.takarazuka.hyogo.jp/" target="_blank" rel="noopener">宝塚市公式サイト</a></li>
         <li><a href="/hyogo/">兵庫県トップ</a></li>
       </ul>
-      <p class="footer-note" id="operator">運営: 兵庫県宝塚市遺品整理・生前整理.jp編集部</p>
-      <p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p>
-      <p class="footer-note" id="disclaimer">本サイトは宝塚市で遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。行政制度や料金は変更されるため、相談前に公式情報を確認してください。</p>
+      <p class="footer-note">運営: 兵庫県宝塚市の遺品整理・生前整理.jp編集部</p>
+      <p class="footer-note">本ページは、宝塚市で遺品整理・生前整理・実家じまいを検討する方向けに、公式情報と相談前チェックを整理した地域ガイドです。</p>
     </section>
   </div>
 </footer>
@@ -1553,6 +1632,41 @@
   setTimeout(applyGlobalReadablePalette, 1800);
 })();
 </script>
+<style id="hyogo-final-orange-title-and-panel-fix-v1">
+  html body .section-title,
+  html body h2.section-title {
+    background:#D05300!important;
+    background-image:none!important;
+    color:#fff!important;
+    border:0!important;
+    border-left:7px solid #9F3E00!important;
+    box-shadow:none!important;
+  }
+  html body .section-title::before,
+  html body h2.section-title::before {
+    background:#fff!important;
+  }
+  html body .kobe-research-panel,
+  html body .global-visual-proof,
+  html body .prefecture-100-panel {
+    background:#FFF7EC!important;
+    background-image:none!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-data-card,
+  html body .kobe-chart-box,
+  html body .kobe-local-stat,
+  html body .kobe-admin-card {
+    background:#FFFDF9!important;
+    border-color:#EAD8C1!important;
+  }
+  html body .kobe-admin-card strong,
+  html body .guide-check b,
+  html body .impact-card .metric-label,
+  html body .impact-card .metric-sub {
+    color:#9F3E00!important;
+  }
+</style>
 </body>
 </html>
 
