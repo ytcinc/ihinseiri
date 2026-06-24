@@ -6,3 +6,4 @@ node_modules/
 assets/city-heroes/
 tmp/
 *.log
+/work/
