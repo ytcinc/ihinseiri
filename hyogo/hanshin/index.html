@@ -1,885 +1,136 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=/hyogo/">
-  <title>兵庫県ページへ移動します</title>
-  <script>location.replace("/hyogo/");</script>
-  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
-  <style id="common-kita-before-after-style">
-    .common-kita-ba{margin:34px 0;padding:28px;background:#fff;border:1px solid #eadfd0;box-shadow:0 12px 28px rgba(34,28,22,.06)}
-    .common-kita-ba .section-title{margin:0 0 18px;padding:0 0 12px;border:0;border-bottom:3px solid #eadfc9;border-radius:0;box-shadow:none;background:transparent;color:#2B2B2B;font-size:24px;line-height:1.45}
-    .common-kita-ba .section-title::before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#D05300;border-radius:2px;vertical-align:middle}
-    .common-kita-ba .common-ba-lead{margin:0 0 16px;color:#414743;font-size:16px;line-height:1.85}
-    .common-kita-ba .marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%);font-weight:900}
-    .common-ba-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 18px}
-    .common-ba-guide span{display:block;padding:11px 13px;background:#fff8ea;border:1px solid #ead8b7;color:#5b4630;font-size:14px;font-weight:900;line-height:1.65}
-    .common-ba-slider{position:relative;padding:0 58px}
-    .common-ba-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 0 12px}
-    .common-ba-track::-webkit-scrollbar{display:none}
-    .common-ba-card{flex:0 0 100%;scroll-snap-align:start;border:1px solid #e5ded5;background:#fff;padding:18px;box-shadow:0 10px 24px rgba(34,28,22,.055)}
-    .common-ba-card h3{margin:0 0 14px;padding:10px 12px;background:#fff7df;color:#8c3d00;font-size:18px;line-height:1.45}
-    .common-ba-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;position:relative;align-items:stretch;padding:10px;background:#f7f3e7;border:1px solid #eadfd4}
-    .common-ba-photos::after{content:"→";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:#fff;color:#D05300;border:3px solid #D05300;box-shadow:0 8px 20px rgba(34,28,22,.18);font-size:28px;font-weight:900;z-index:3}
-    .common-ba-photo{position:relative;overflow:hidden;margin:0;border:2px solid #d9d1c6;background:#f3f0ea;aspect-ratio:4/3;box-shadow:0 8px 18px rgba(34,28,22,.08)}
-    .common-ba-photo img{display:block;width:100%;height:100%;object-fit:cover}
-    .common-ba-label{position:absolute;left:0;right:0;top:0;display:grid;place-items:center;min-height:38px;padding:0 12px;background:rgba(126,50,28,.94);color:#fff;font-size:15px;font-weight:900}
-    .common-ba-label.after{background:rgba(208,83,0,.96)}
-    .common-ba-detail{margin-top:14px;padding:14px 16px;background:#fffdf8;border:1px solid #eadfd4}
-    .common-ba-detail p{margin:0 0 8px;color:#464c47;font-size:15px;line-height:1.75}
-    .common-ba-detail p:first-child{font-weight:900;color:#333}
-    .common-ba-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-    .common-ba-points span{display:inline-grid;place-items:center;min-height:28px;padding:0 10px;background:#fff7ec;border:1px solid #ead8c1;color:#d05300;font-size:13px;font-weight:900}
-    .common-ba-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;display:grid;place-items:center;border:1px solid #dcbf9c;background:#fff;color:#8c3d00;border-radius:50%;box-shadow:0 10px 24px rgba(34,28,22,.18);font-size:28px;font-weight:900;line-height:1;cursor:pointer;z-index:4}
-    .common-ba-btn:hover{background:#fff1e6;border-color:#D05300}
-    .common-ba-btn[data-common-ba-prev]{left:0}
-    .common-ba-btn[data-common-ba-next]{right:0}
-    @media(max-width:820px){.common-kita-ba{padding:20px}.common-ba-guide{grid-template-columns:1fr}.common-ba-slider{padding:0 38px}.common-ba-card{padding:12px}.common-ba-photos{grid-template-columns:1fr;gap:10px}.common-ba-photos::after{width:34px;height:34px;font-size:22px;border-width:2px}.common-ba-btn{width:42px;height:42px;font-size:24px}.common-kita-ba .section-title{font-size:21px}}
-  </style>
-
-<style id="global-top-hub-style">
-  .global-top-score-strip,
-  .global-trust-alert-hub,
-  .global-visual-proof,
-  .global-strategy-strip {
-    width: min(1120px, calc(100% - 32px));
-    margin: 28px auto;
-    font-family: inherit;
-  }
-  .hero .btn.ghost {
-    background: rgba(255,255,255,.16) !important;
-    color: #fff !important;
-    border-color: rgba(255,255,255,.48) !important;
-  }
-  .global-top-score-strip {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-  }
-  .global-top-score-card {
-    display: block;
-    min-height: 154px;
-    padding: 18px;
-    border-radius: 18px;
-    background: #fff;
-    border: 1px solid #e2e7df;
-    color: #26362d;
-    text-decoration: none;
-    box-shadow: 0 14px 30px rgba(34,28,22,.08);
-  }
-  .global-top-score-card b {
-    display: block;
-    margin-bottom: 8px;
-    color: #9f3e00;
-    font-size: 18px;
-    line-height: 1.45;
-  }
-  .global-top-score-card span {
-    display: block;
-    color: #536158;
-    font-size: 14px;
-    line-height: 1.8;
-  }
-  .global-trust-alert-hub {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
-    gap: 18px;
-    align-items: center;
-    padding: 24px;
-    border-radius: 22px;
-    background: #fff8e7;
-    border: 1px solid #efd79d;
-    box-shadow: 0 14px 32px rgba(104,78,24,.08);
-  }
-  .global-trust-alert-hub h2 {
-    margin: 0 0 10px;
-    color: #6d3f00;
-    font-size: clamp(22px, 3vw, 32px);
-    line-height: 1.35;
-  }
-  .global-trust-alert-hub p {
-    margin: 0;
-    color: #4f4430;
-    font-size: 16px;
-    line-height: 1.9;
-  }
-  .global-trust-badges {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .global-trust-badges span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 9px 12px;
-    border-radius: 12px;
-    background: #fff;
-    border: 1px solid #ead6a6;
-    color: #674412;
-    font-size: 14px;
-    font-weight: 800;
-    text-align: center;
-  }
-  .global-visual-proof {
-    padding: 28px 0;
-    border-top: 1px solid #e7e0d3;
-    border-bottom: 1px solid #e7e0d3;
-  }
-  .global-visual-proof-inner {
-    display: grid;
-    gap: 18px;
-  }
-  .global-visual-proof-head {
-    display: grid;
-    grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
-    gap: 20px;
-    align-items: end;
-  }
-  .global-visual-proof-head h2 {
-    margin: 0;
-    color: #26362d;
-    font-size: clamp(24px, 3.2vw, 36px);
-    line-height: 1.35;
-  }
-  .global-visual-proof-head p {
-    margin: 0;
-    color: #526056;
-    font-size: 16px;
-    line-height: 1.9;
-  }
-  .global-visual-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-  }
-  .global-visual-card {
-    overflow: hidden;
-    display: block;
-    border-radius: 18px;
-    background: #fff;
-    border: 1px solid #e2e7df;
-    color: #26362d;
-    text-decoration: none;
-    box-shadow: 0 14px 30px rgba(34,28,22,.08);
-  }
-  .global-visual-media {
-    position: relative;
-    min-height: 190px;
-    background: #f5f2ee;
-  }
-  .global-visual-media img {
-    display: block;
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-  }
-  .global-visual-media.two-up {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .global-visual-media.two-up img {
-    height: 220px;
-  }
-  .global-visual-label {
-    position: absolute;
-    left: 12px;
-    top: 12px;
-    z-index: 2;
-    padding: 5px 10px;
-    border-radius: 999px;
-    background: rgba(126,50,28,.86);
-    color: #fff;
-    font-size: 13px;
-    font-weight: 900;
-  }
-  .global-visual-body {
-    padding: 17px;
-  }
-  .global-visual-body b {
-    display: block;
-    margin-bottom: 7px;
-    color: #9f3e00;
-    font-size: 17px;
-    line-height: 1.45;
-  }
-  .global-visual-body span {
-    display: block;
-    color: #536158;
-    font-size: 14px;
-    line-height: 1.8;
-  }
-  .global-strategy-strip {
-    padding: 26px;
-    border-radius: 24px;
-    background: linear-gradient(135deg, #fff7ec 0%, #fff 58%, #fff7e8 100%);
-    border: 1px solid #ead8c1;
-  }
-  .global-strategy-head h2 {
-    margin: 0 0 10px;
-    color: #2b2b2b;
-    font-size: clamp(24px, 3vw, 34px);
-    line-height: 1.35;
-  }
-  .global-strategy-head p {
-    margin: 0 0 18px;
-    color: #4f5f55;
-    font-size: 16px;
-    line-height: 1.9;
-  }
-  .global-strategy-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-  }
-  .global-strategy-card {
-    padding: 18px;
-    border-radius: 18px;
-    background: rgba(255,255,255,.92);
-    border: 1px solid #ead8c1;
-    box-shadow: 0 12px 24px rgba(208,83,0,.07);
-  }
-  .global-strategy-card b {
-    display: block;
-    margin-bottom: 8px;
-    color: #9f3e00;
-    font-size: 17px;
-  }
-  .global-strategy-card span {
-    display: block;
-    color: #4f5f55;
-    font-size: 14px;
-    line-height: 1.8;
-  }
-  .global-strategy-card strong {
-    color: #26362d;
-  }
-  @media (max-width: 900px) {
-    .global-top-score-strip,
-    .global-trust-alert-hub,
-    .global-visual-proof-head,
-    .global-visual-grid,
-    .global-strategy-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  @media (max-width: 560px) {
-    .global-top-score-strip,
-    .global-trust-alert-hub,
-    .global-visual-proof,
-    .global-strategy-strip {
-      width: min(100% - 22px, 1120px);
-      margin: 18px auto;
-    }
-    .global-trust-alert-hub,
-    .global-strategy-strip {
-      padding: 18px;
-      border-radius: 18px;
-    }
-    .global-top-score-card {
-      min-height: auto;
-      padding: 16px;
-    }
-    .global-visual-media img,
-    .global-visual-media.two-up img {
-      height: 180px;
-    }
-  }
-</style>
-
-
-<style id="global-orange-brand-style">
-  .brand-main,
-  .brand-main .brand-area-name,
-  .brand-area,
-  .brand-no,
-  body.structure-layout .brand-no,
-  body.structure-layout .brand-main,
-  body.structure-layout .brand-main::first-letter {
-    color: #D05300 !important;
-  }
-  .brand-symbol,
-  body.structure-layout .brand-symbol {
-    background: #D05300 !important;
-  }
-  body.structure-layout .section-title,
-  body.structure-layout .top-search-head h2,
-  body.structure-layout .panel-heading h2,
-  .engagement-refresh .section-title,
-  .common-kita-ba .section-title,
-  .global-top-score-card b,
-  .global-visual-body b,
-  .global-strategy-card b,
-  .service-hub-card b,
-  .streamlined-top .assurance-inner b,
-  .streamlined-top .strategy-card b,
-  .streamlined-top .quick-card b,
-  .streamlined-top .area-shortcuts a {
-    color: #D05300 !important;
-  }
-  body.structure-layout .section-title::before,
-  body.structure-layout .top-search-head h2::before,
-  .engagement-refresh .section-title::before,
-  .common-kita-ba .section-title::before {
-    background: #D05300 !important;
-  }
-  body.structure-layout .search-chips .primary-chip,
-  .prefecture-100-actions a:first-child {
-    background: #D05300 !important;
-    border-color: #D05300 !important;
-    color: #fff !important;
-  }
-  body.structure-layout .pill,
-  #prefectures .pref-toggle,
-  body.structure-layout #prefectures .pref-toggle,
-  body.structure-layout #prefectures .pref-toggle::after {
-    color: #D05300 !important;
-  }
-  .common-ba-points span {
-    color: #D05300 !important;
-    border-color: #f0c7ad !important;
-    background: #fff6ef !important;
-  }
-  .impact-card,
-  body.structure-layout .impact-card {
-    border-top-color: #D05300 !important;
-  }
-  .impact-card .metric-label,
-  body.structure-layout .impact-card .metric-label {
-    background: #D05300 !important;
-    border-color: #D05300 !important;
-    color: #fff !important;
-  }
-  .impact-card .metric-sub,
-  body.structure-layout .impact-card .metric-sub {
-    color: #D05300 !important;
-  }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>阪神間・北摂の遺品整理・生前整理を市町から探す | 兵庫県の遺品整理・生前整理.jp</title>
+  <meta name="description" content="尼崎市・西宮市・芦屋市・伊丹市・宝塚市・川西市・三田市・猪名川町で、遺品整理・生前整理の地域ページを選ぶための搬出条件、住宅事情、見積もり前の確認点を整理します。">
   <link rel="canonical" href="https://www.ihinseiri-seizenseiri.jp/hyogo/hanshin/">
-  <style id="schema-meta-style">.last-updated{width:min(1160px,calc(100% - 28px));margin:28px auto;color:#6f6a62;font-size:13px;line-height:1.7;text-align:right}@media(max-width:720px){.last-updated{text-align:left}}</style>
-  <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "遺品整理・生前整理.jp",
-        "item": "https://www.ihinseiri-seizenseiri.jp/"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "遺品整理・生前整理.jp",
-    "description": "",
-    "inLanguage": "ja",
-    "publisher": {
-      "@type": "Organization",
-      "name": "遺品整理・生前整理.jp"
-    },
-    "datePublished": "2026-06-25",
-    "dateModified": "2026-06-25",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.ihinseiri-seizenseiri.jp/hyogo/hanshin/"
-    }
-  }
-]
-  </script>
+  <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://www.ihinseiri-seizenseiri.jp/"}, {"@type": "ListItem", "position": 2, "name": "兵庫県", "item": "https://www.ihinseiri-seizenseiri.jp/hyogo/"}, {"@type": "ListItem", "position": 3, "name": "阪神間・北摂の遺品整理・生前整理を市町から探す", "item": "https://www.ihinseiri-seizenseiri.jp/hyogo/hanshin/"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "阪神間・北摂の遺品整理・生前整理を市町から探す", "description": "尼崎市・西宮市・芦屋市・伊丹市・宝塚市・川西市・三田市・猪名川町で、遺品整理・生前整理の地域ページを選ぶための搬出条件、住宅事情、見積もり前の確認点を整理します。", "inLanguage": "ja", "datePublished": "2026-06-25", "dateModified": "2026-06-25", "publisher": {"@type": "Organization", "name": "遺品整理・生前整理.jp"}, "mainEntityOfPage": "https://www.ihinseiri-seizenseiri.jp/hyogo/hanshin/"}</script>
+  <style>
+    body{margin:0;background:#fff;color:#2b2b2b;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+    .wrap{max-width:1080px;margin:0 auto;padding:26px 18px 60px}
+    .breadcrumb{font-size:14px;color:#7b5a49;margin-bottom:20px}
+    .breadcrumb a{color:#9a3f18;text-decoration:none}
+    .hero{padding:36px 0 26px;border-bottom:1px solid #eadfd6}
+    .eyebrow{display:inline-block;color:#b64a1c;font-weight:800;font-size:14px;margin-bottom:10px}
+    h1{font-size:clamp(30px,4vw,44px);line-height:1.35;margin:0 0 16px;color:#261610;letter-spacing:0}
+    .lead{font-size:18px;max-width:900px;margin:0;color:#413831}
+    .panel{margin:28px 0;padding:24px;border:1px solid #eadfd6;border-radius:16px;background:#fffaf6}
+    .panel h2{font-size:24px;margin:0 0 12px;color:#422012}
+    .panel p{font-size:17px;margin:0;color:#473c35}
+    .area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:18px 0 0}
+    .area-link{display:block;padding:12px 14px;border:1px solid #eadfd6;border-radius:12px;background:#fff;color:#9a3f18;font-weight:800;text-decoration:none}
+    .major-seo-local{margin:48px 0;padding:0;background:#fff;border:1px solid #eadfd6;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(49,32,20,.06)}
+    .major-seo-local__head{padding:28px 30px 18px;border-bottom:1px solid #f0e7df;background:#fffaf6}
+    .major-seo-local__kicker{margin:0 0 8px;color:#b64a1c;font-weight:800;font-size:14px;letter-spacing:.04em}
+    .major-seo-local h2{margin:0;color:#422012;font-size:clamp(24px,3vw,34px);line-height:1.45;letter-spacing:0}
+    .major-seo-local__lead{margin:14px 0 0;color:#473c35;font-size:18px;line-height:1.9}
+    .major-seo-local__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:22px 30px}
+    .major-seo-local__card{border:1px solid #eee0d5;border-radius:14px;padding:16px;background:#fff}
+    .major-seo-local__card b{display:block;color:#b64a1c;font-size:16px;margin-bottom:8px}
+    .major-seo-local__card span{display:block;color:#3f332b;font-size:15px;line-height:1.75}
+    .major-seo-local__table-wrap{padding:0 30px 28px;overflow-x:auto}
+    .major-seo-local table{width:100%;border-collapse:collapse;font-size:16px;background:#fff}
+    .major-seo-local th,.major-seo-local td{border-bottom:1px solid #eee0d5;padding:14px 12px;text-align:left;vertical-align:top;line-height:1.8}
+    .major-seo-local th{color:#7b3218;background:#fff7f0;font-weight:800}
+    .major-seo-local__note{margin:16px 30px 28px;padding:14px 16px;border-left:4px solid #d85b22;background:#fff;color:#3f332b;font-size:16px;line-height:1.85}
+    .last-updated{font-size:13px;color:#7a6d65;margin-top:32px}
+    @media (max-width:760px){.major-seo-local__grid{grid-template-columns:1fr}.major-seo-local__head,.major-seo-local__grid,.major-seo-local__table-wrap{padding-left:18px;padding-right:18px}}
+  </style>
+  <meta property="og:title" content="阪神間・北摂の遺品整理・生前整理を市町から探す | 兵庫県の遺品整理・生前整理.jp">
+  <meta name="twitter:title" content="阪神間・北摂の遺品整理・生前整理を市町から探す | 兵庫県の遺品整理・生前整理.jp">
+  <meta property="og:description" content="尼崎市・西宮市・芦屋市・伊丹市・宝塚市・川西市・三田市・猪名川町で、遺品整理・生前整理の地域ページを選ぶための搬出条件、住宅事情、見積もり前の確認点を整理します。">
+      <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ihinseiri-seizenseiri.jp/hyogo/hanshin/">
+<meta name="twitter:description" content="尼崎市・西宮市・芦屋市・伊丹市・宝塚市・川西市・三田市・猪名川町で、遺品整理・生前整理の地域ページを選ぶための搬出条件、住宅事情、見積もり前の確認点を整理します。">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:site_name" content="遺品整理・生前整理.jp">
+  <meta property="og:image" content="https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png">
+  <meta property="og:image:alt" content="遺品整理・生前整理.jpの遺品整理・生前整理ガイド">
+  <meta name="twitter:image" content="https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png">
+  <meta name="theme-color" content="#D05300">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <main class="wrap">
+    <nav class="breadcrumb"><a href="/">TOP</a> / <a href="/hyogo/">兵庫県</a> / 阪神間・北摂の遺品整理・生前整理を市町から探す</nav>
+    <section class="hero">
+      <span class="eyebrow">兵庫県・阪神間北摂の地域ガイド</span>
+      <h1>阪神間・北摂の遺品整理・生前整理を市町から探す</h1>
+      <p class="lead">阪神間・北摂は、都市部の集合住宅と山手・郊外の戸建て整理が近い距離で混在する地域です。尼崎・西宮・芦屋は退去期限や管理会社対応、宝塚・川西・三田・猪名川は坂道、前面道路、庭や物置の有無を写真で共有すると、見積もりが安定しやすくなります。</p>
+    </section>
+    <section class="panel" id="areas">
+      <h2>作業場所に近いページを選ぶ</h2>
+      <p>実家や作業場所が決まっている場合は、先に市区町ページを開くと、行政窓口、粗大ごみ、搬出条件、料金が変わりやすいポイントを確認しやすくなります。</p>
+      <div class="area-grid">
+        <a class="area-link" href="/hyogo/amagasaki/">尼崎市</a>
+        <a class="area-link" href="/hyogo/nishinomiya/">西宮市</a>
+        <a class="area-link" href="/hyogo/ashiya/">芦屋市</a>
+        <a class="area-link" href="/hyogo/itami/">伊丹市</a>
+        <a class="area-link" href="/hyogo/takarazuka/">宝塚市</a>
+        <a class="area-link" href="/hyogo/kawanishi/">川西市</a>
+        <a class="area-link" href="/hyogo/sanda/">三田市</a>
+        <a class="area-link" href="/hyogo/inagawa/">猪名川町</a>
+      </div>
+    </section>
+    <section class="major-seo-local" id="major-local-guide">
+      <div class="major-seo-local__head">
+        <p class="major-seo-local__kicker">地域別に見る整理の注意点</p>
+        <h2>阪神間・北摂で見積もり前に分けること</h2>
+        <p class="major-seo-local__lead">同じ阪神間でも、駅近の集合住宅、山手住宅、郊外戸建て、ニュータウンの団地で作業条件は変わります。自治体の粗大ごみで出せる物、専門業者に任せる物、買取・供養・探索が必要な物を分けて考えると進めやすくなります。</p>
+      </div>
+      <div class="major-seo-local__grid">
+        <div class="major-seo-local__card"><b>都市部マンション</b><span>尼崎市・西宮市・伊丹市では、退去日、管理規約、エレベーター予約、共用部養生を確認します。</span></div>
+        <div class="major-seo-local__card"><b>山手・坂道住宅</b><span>芦屋市・宝塚市・川西市では、前面道路、階段、駐車位置、搬出距離が重要です。</span></div>
+        <div class="major-seo-local__card"><b>郊外戸建て</b><span>三田市・猪名川町では、庭、物置、車庫、屋外品、農具や大型家具まで範囲を分けます。</span></div>
+        <div class="major-seo-local__card"><b>遠方家族対応</b><span>鍵預かり、写真報告、返送品、供養品、貴重品探索を事前に決めると家族間の確認が楽になります。</span></div>
+      </div>
+      <div class="major-seo-local__table-wrap">
+        <table>
+          <thead><tr><th>地域</th><th>起きやすい相談</th><th>見積もり前に確認したいこと</th></tr></thead>
+          <tbody>
+            <tr><td>尼崎市・伊丹市</td><td>集合住宅、長屋、退去前の短期整理が多く、搬出時間の調整が重要。</td><td>退去日、管理会社、共用部養生、駐車位置。</td></tr>
+            <tr><td>西宮市・芦屋市</td><td>駅近マンションと山手住宅が混在し、建物規約と坂道条件を両方見ます。</td><td>EV予約、前面道路、階段幅、残す品、供養品。</td></tr>
+            <tr><td>宝塚市・川西市</td><td>坂道住宅、戸建て、団地、広めの家財整理で作業人数が変わります。</td><td>搬出距離、庭・物置、車両進入、写真報告。</td></tr>
+            <tr><td>三田市・猪名川町</td><td>郊外戸建て、実家じまい、空き家整理で敷地全体の確認が必要です。</td><td>母屋、納屋、車庫、屋外品、立会い可否。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="major-seo-local__note">このページは地域選びの入口です。具体的な料金、行政ルール、粗大ごみ、持ち込み先、対応町名、相談の流れは、各市区町ページで確認してください。家族だけで判断しにくい場合は、残す品、処分する品、買取・供養・返送したい品を分けてから相談すると、見積もりのズレを減らしやすくなります。</p>
+    </section>
 
-<section class="global-top-score-strip" aria-label="最初に確認すること">
-  <a class="global-top-score-card" href="#prefectures"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
-  <a class="global-top-score-card" href="#price"><b>料金の目安を見る</b><span>間取り、荷物量、階段、供養、買取の条件を整理</span></a>
-  <a class="global-top-score-card" href="#flow"><b>相談前の準備をする</b><span>写真、退去期限、残す品、探す書類をメモ</span></a>
-  <a class="global-top-score-card" href="#vendor"><b>危ない業者を避ける</b><span>極端に安い見積もり、書面なし、即決要求を確認</span></a>
-</section>
+    <section class="panel" id="local-detail">
+      <h2>阪神間・北摂で相談前に整理したいこと</h2>
+      <p>尼崎市、西宮市、芦屋市、伊丹市は、集合住宅や駅近物件の相談が多く、退去期限、管理会社への作業届、エレベーター予約、共用部養生の有無が見積もりに影響します。まずは賃貸か持ち家か、退去日が決まっているか、搬出できる時間帯に制限があるかを確認してください。</p>
+      <p>宝塚市、川西市、三田市、猪名川町では、坂道、前面道路、駐車位置、庭や物置、車庫の有無を写真で共有すると話が早くなります。屋外品や大型家具が多い場合は、家の中だけでなく敷地全体を整理範囲として伝えることが重要です。</p>
+      <p>相続や売却が近い場合は、権利書、固定資産税関係書類、保険証券、通帳、印鑑、写真類を処分前に探す対象として分けます。家族だけで価値判断しにくい骨董品、時計、カメラ、趣味用品は、捨てる前に買取・再利用の確認を入れると費用面でも安心です。</p>
+    </section>
 
-<section class="global-trust-alert-hub" aria-label="違法業者への注意と安心材料">
-  <div>
-    <h2>安すぎる見積もり・当日追加請求に注意。</h2>
-    <p>「一式」「コミコミ」だけで決めると、当日に階段作業、家電リサイクル、車両追加、供養費が加算されることがあります。相談前に、書面見積もり、追加費用条件、買取査定、写真報告の有無を確認しましょう。</p>
-  </div>
-  <div class="global-trust-badges" aria-label="確認したい安心材料">
-    <span>書面見積もり</span><span>追加費用条件</span><span>古物商許可</span><span>損害保険</span>
-  </div>
-</section>
 
-<section class="global-visual-proof" aria-label="写真と料金で確認する">
-  <div class="global-visual-proof-inner">
-    <div class="global-visual-proof-head">
-      <h2>写真・料金・注意点を先に見て、依頼の不安を減らす。</h2>
-      <p>遺品整理は、片付け後の状態、費用の目安、危ない業者の見分け方を先に確認すると、相談がかなり楽になります。</p>
-    </div>
-    <div class="global-visual-grid">
-      <a class="global-visual-card" href="#before-after">
-        <div class="global-visual-media two-up"><span class="global-visual-label">作業前後</span><img src="/assets/before-after/before-00.jpg" alt="遺品整理の作業前写真"><img src="/assets/before-after/after-00.jpg" alt="遺品整理の作業後写真"></div>
-        <div class="global-visual-body"><b>ビフォーアフターで片付け後を具体的に確認</b><span>部屋、収納、通路、家具搬出後の状態を写真で見て、作業後のイメージを持てます。</span></div>
-      </a>
-      <a class="global-visual-card price" href="#price">
-        <div class="global-visual-media"><span class="global-visual-label">料金</span><img src="/assets/price-overview-bg.png?v=4" alt="遺品整理の料金目安を確認するイメージ"></div>
-        <div class="global-visual-body"><b>間取りだけでなく追加条件まで料金を確認</b><span>階段作業、搬出距離、供養品、買取品の有無で金額が変わる理由を整理します。</span></div>
-      </a>
-      <a class="global-visual-card warning" href="#vendor">
-        <div class="global-visual-media"><span class="global-visual-label">注意</span><img src="/assets/avoid-bad-vendors-banner.png?v=2" alt="悪質な遺品整理業者に注意する画像"></div>
-        <div class="global-visual-body"><b>安すぎる見積もりと当日追加請求を避ける</b><span>書面なし、即決要求、説明のない追加費用など、契約前に見るべき点を確認できます。</span></div>
-      </a>
-    </div>
-  </div>
-</section>
+    <section class="panel" id="estimate-check">
+      <h2>阪神間・北摂で見積もりが変わりやすい条件</h2>
+      <p>阪神間・北摂では、駅近マンション、山手住宅、郊外戸建て、ニュータウンの団地で見積もり前に見る場所が変わります。マンションでは退去日、エレベーター予約、共用部養生、管理会社への届出、搬出できる曜日や時間帯を確認します。戸建てでは、庭、物置、車庫、屋外品、階段幅、前面道路、車両の停車位置が重要です。</p>
+      <p>尼崎市や伊丹市のように市街地の住宅が多い地域では、近隣配慮と短時間搬出が大切になります。西宮市、芦屋市、宝塚市、川西市では、坂道や高低差、駐車位置、玄関までの距離が作業負担に影響します。三田市や猪名川町では、家財量に加えて庭や倉庫の整理まで含まれることがあるため、写真で範囲を見せると判断しやすくなります。</p>
+      <p>相続や売却の前に整理する場合は、処分スピードだけでなく、通帳、印鑑、権利書、保険証券、写真、手紙、貴金属の探索を優先してください。捨てる前に確認する物を決めておくことで、作業後の後悔を減らせます。買取できる可能性がある家電、時計、カメラ、趣味用品も、処分品と混ぜずに分けておくと費用の見通しを立てやすくなります。</p>
+    </section>
 
-<section class="global-strategy-strip" aria-label="データで見る整理相談の背景">
-  <div class="global-strategy-inner">
-    <div class="global-strategy-head">
-      <h2>数字で見る、遺品整理・生前整理を先延ばしにしない理由</h2>
-      <p>実家の片付けは、物量、時間、心理的負担、業者選びの不安が重なりやすい作業です。まずは全体像を知ることで、家族だけで抱え込むか、専門業者へ相談するかを判断しやすくなります。</p>
-    </div>
-    <div class="global-strategy-grid">
-      <div class="global-strategy-card"><b>生前整理の必要性</b><span><strong>約89.7%が必要性を実感。</strong>元気なうちに、銀行口座、家具、不動産、写真・手紙などを少しずつ確認しておくことが家族の負担軽減につながります。</span></div>
-      <div class="global-strategy-card"><b>荷物量の壁</b><span><strong>10箱以上が7割超。</strong>遺品整理では段ボール10箱以上の荷物になるケースが多く、大型家具・家電の搬出で手が止まりやすくなります。</span></div>
-      <div class="global-strategy-card"><b>追加請求の不安</b><span><strong>見積後の追加請求経験は約47.2%。</strong>安いパック料金だけで決めず、処分費、車両費、家電リサイクル、階段作業の条件を確認しましょう。</span></div>
-      <div class="global-strategy-card"><b>困る物の変化</b><span><strong>デジタル遺産も重要。</strong>スマホ、PC、ネット口座、サブスク、写真データなど、物理的な家財以外も整理対象として家族で共有しておくと安心です。</span></div>
-    </div>
-  </div>
-</section>
-<p><a href="/hyogo/">兵庫県ページへ移動します</a></p><script id="common-kita-before-after-script">
-  (() => {
-    document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
-      if (track.dataset.commonBaReady) return;
-      track.dataset.commonBaReady = '1';
-      const wrap = track.closest('.common-ba-slider');
-      const prev = wrap?.querySelector('[data-common-ba-prev]');
-      const next = wrap?.querySelector('[data-common-ba-next]');
-      const move = (direction) => {
-        const slide = track.querySelector('.common-ba-card');
-        const amount = slide ? slide.getBoundingClientRect().width + 18 : track.clientWidth;
-        track.scrollBy({ left: direction * amount, behavior: 'smooth' });
-      };
-      prev?.addEventListener('click', () => move(-1));
-      next?.addEventListener('click', () => move(1));
-    });
-  })();
-</script>
 
-<style id="global-brand-color-uniform-v2">
-  html body .brand,
-  html body .brand:visited,
-  html body .brand:hover {
-    color:#2B2B2B!important;
-    text-decoration:none!important;
-  }
-  html body .brand-word {
-    color:#2B2B2B!important;
-  }
-  html body .brand-area,
-  html body .brand-area-name,
-  html body .brand-no,
-  html body .brand-main .brand-area-name,
-  html body.structure-layout .brand-area,
-  html body.structure-layout .brand-area-name,
-  html body.structure-layout .brand-no,
-  html body.structure-layout .brand-main .brand-area-name {
-    color:#2B2B2B!important;
-  }
-  html body .brand-main,
-  html body.structure-layout .brand-main {
-    color:#D05300!important;
-  }
-  html body .brand-symbol,
-  html body.structure-layout .brand-symbol {
-    background:#D05300!important;
-    color:#fff!important;
-  }
-</style>
-<style id="global-readable-palette-reset-v1">
-  html body {
-    background:#F6F2EC!important;
-    color:#25211D!important;
-  }
-  html body .topbar,
-  html body header,
-  html body .site-header {
-    background:#FFFDF9!important;
-    border-color:#E6DDD4!important;
-  }
-  html body .brand,
-  html body .brand-word,
-  html body .brand-area,
-  html body .brand-area-name,
-  html body .brand-no {
-    color:#25211D!important;
-  }
-  html body .brand-main {
-    color:#C65312!important;
-  }
-  html body .global-visual-proof {
-    width:min(1160px,calc(100% - 28px))!important;
-    margin:32px auto!important;
-    padding:28px!important;
-    background:#FFFDF9!important;
-    background-image:none!important;
-    border:1px solid #E5DDD3!important;
-    border-radius:0!important;
-    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
-  }
-  html body .global-visual-proof-inner {
-    width:100%!important;
-    max-width:100%!important;
-    margin:0 auto!important;
-  }
-  html body .global-visual-proof-head {
-    display:grid!important;
-    grid-template-columns:1fr!important;
-    gap:10px!important;
-    max-width:940px!important;
-    margin:0 auto 18px!important;
-    text-align:center!important;
-    align-items:center!important;
-  }
-  html body .global-visual-proof-head h2 {
-    margin:0 auto!important;
-    max-width:860px!important;
-    color:#25211D!important;
-    text-align:center!important;
-  }
-  html body .global-visual-proof-head p {
-    margin:0 auto!important;
-    max-width:900px!important;
-    color:#5C544B!important;
-    text-align:center!important;
-  }
-  html body .global-visual-grid {
-    max-width:1100px!important;
-    margin:0 auto!important;
-  }
-  html body .section,
-  html body .card,
-  html body .area-box,
-  html body .pref-region-card,
-  html body .common-ba-card,
-  html body .flow-item,
-  html body .faq-item,
-  html body .price-card,
-  html body .service-card,
-  html body .compare-card,
-  html body .chart-box,
-  html body .pref-chart-box,
-  html body .pref-data-card,
-  html body .guide-panel>div,
-  html body .popular-area,
-  html body .price-teaser,
-  html body .intent-card,
-  html body .remaining-hand-card,
-  html body .admin-card,
-  html body .global-visual-card,
-  html body .global-strategy-card {
-    background:#FFFDF9!important;
-    background-image:none!important;
-    border-color:#E5DDD3!important;
-    color:#25211D!important;
-    box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
-  }
-  html body .section-title,
-  html body h2.section-title {
-    background:#FFFDF9!important;
-    background-image:none!important;
-    color:#25211D!important;
-    border:1px solid #E5DDD3!important;
-    border-left:7px solid #C65312!important;
-    box-shadow:none!important;
-  }
-  html body h1,
-  html body h2,
-  html body h3,
-  html body .card strong {
-    color:#25211D!important;
-  }
-  html body p,
-  html body li,
-  html body .lead,
-  html body .area-box-lead,
-  html body .global-visual-body span,
-  html body .global-strategy-card span,
-  html body .muted {
-    color:#5C544B!important;
-  }
-  html body a,
-  html body nav a {
-    color:#9B3F0D!important;
-  }
-  html body .btn,
-  html body .button,
-  html body .cta,
-  html body .hero a:first-of-type,
-  html body .call {
-    background:#C65312!important;
-    background-image:none!important;
-    border-color:#C65312!important;
-    color:#fff!important;
-  }
-  html body .btn.secondary,
-  html body .button.secondary,
-  html body .hero a:not(:first-of-type),
-  html body .guide-actions a,
-  html body .popular-links a,
-  html body .ward-links a,
-  html body .area-tags a,
-  html body .pref-region-summary a,
-  html body .price-mini,
-  html body .intent-card {
-    background:#FFFDF9!important;
-    background-image:none!important;
-    border:1px solid #E5DDD3!important;
-    color:#25211D!important;
-    box-shadow:none!important;
-  }
-  html body .guide-actions a:hover,
-  html body .popular-links a:hover,
-  html body .ward-links a:hover,
-  html body .area-tags a:hover,
-  html body .pref-region-summary a:hover,
-  html body .price-mini:hover,
-  html body .intent-card:hover {
-    background:#FFF4E8!important;
-    border-color:#EBCFB7!important;
-    color:#8A3D11!important;
-    text-decoration:none!important;
-  }
-  html body .metric-label,
-  html body .region-head span,
-  html body .region-checks span,
-  html body .area-tags span {
-    display:inline-flex!important;
-    align-items:center!important;
-    justify-content:center!important;
-    min-height:26px!important;
-    padding:4px 9px!important;
-    border-radius:999px!important;
-    background:#F1EEE8!important;
-    background-image:none!important;
-    border:1px solid #DDD4C9!important;
-    color:#4D4740!important;
-    font-size:12px!important;
-    line-height:1.35!important;
-    font-weight:900!important;
-    box-shadow:none!important;
-  }
-  html body .common-ba-label.after,
-  html body .common-ba-points span,
-  html body .global-visual-label {
-    background:#C65312!important;
-    background-image:none!important;
-    border-color:#C65312!important;
-    color:#fff!important;
-  }
-  html body .common-ba-label:not(.after) {
-    background:#3A342E!important;
-    color:#fff!important;
-  }
-  html body .bar-track,
-  html body .pref-bar-track,
-  html body .pref-data-track {
-    background:#ECE6DE!important;
-    box-shadow:inset 0 0 0 1px rgba(55,45,35,.05)!important;
-  }
-  html body .bar-fill,
-  html body .pref-bar-fill,
-  html body .pref-data-fill,
-  html body .kanto-national-fill,
-  html body .kyushu-bar-fill,
-  html body .cs-bar-fill,
-  html body .tokai-bar-fill {
-    background:#4F6F8F!important;
-    background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
-  }
-  html body .bar-fill.warm {
-    background:#D68A3A!important;
-    background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
-  }
-  html body .bar-fill.vacancy,
-  html body .bar-fill.total-vacant,
-  html body .pref-bar-fill.vacancy,
-  html body .pref-bar-fill.total-vacant {
-    background:#C65312!important;
-    background-image:linear-gradient(90deg,#C65312,#E99A57)!important;
-  }
-  html body .bar-fill.national,
-  html body .pref-bar-fill.national {
-    background:#807970!important;
-    background-image:linear-gradient(90deg,#807970,#B8B0A7)!important;
-  }
-  html body .bar-fill.aging,
-  html body .pref-bar-fill.aging {
-    background:#7756B5!important;
-    background-image:linear-gradient(90deg,#7756B5,#B59BE3)!important;
-  }
-  html body .bar-fill.blue,
-  html body .bar-fill.apartment,
-  html body .bar-fill.secondary-home,
-  html body .pref-bar-fill.apartment,
-  html body .pref-bar-fill.secondary,
-  html body .pref-data-fill.blue {
-    background:#2F6FA3!important;
-    background-image:linear-gradient(90deg,#2F6FA3,#7CB7DF)!important;
-  }
-  html body .bar-fill.other,
-  html body .bar-fill.other-vacant,
-  html body .bar-fill.risk,
-  html body .pref-bar-fill.other {
-    background:#A76A2D!important;
-    background-image:linear-gradient(90deg,#A76A2D,#D9A66B)!important;
-  }
-  html body .pref-data-card:nth-child(1) {border-top:4px solid #6C747D!important}
-  html body .pref-data-card:nth-child(2) {border-top:4px solid #8B7356!important}
-  html body .pref-data-card:nth-child(3),
-  html body .pref-data-card:nth-child(4) {border-top:4px solid #C65312!important}
-  html body .pref-data-card:nth-child(5) {border-top:4px solid #A76A2D!important}
-  html body .pref-data-card:nth-child(6) {border-top:4px solid #2F6FA3!important}
-  html body .pref-data-card:nth-child(7) {border-top:4px solid #7756B5!important}
-  html body .pref-data-card:nth-child(8) {border-top:4px solid #3E7892!important}
-  html body .pref-data-card:nth-child(1) b {color:#5D6670!important}
-  html body .pref-data-card:nth-child(2) b {color:#745C3F!important}
-  html body .pref-data-card:nth-child(3) b,
-  html body .pref-data-card:nth-child(4) b {color:#A94812!important}
-  html body .pref-data-card:nth-child(5) b {color:#8D5D2F!important}
-  html body .pref-data-card:nth-child(6) b {color:#2F6FA3!important}
-  html body .pref-data-card:nth-child(7) b {color:#6D4FA8!important}
-  html body .pref-data-card:nth-child(8) b {color:#3E7892!important}
-  html body table th {
-    background:#F4EEE6!important;
-    color:#25211D!important;
-  }
-  html body table td {
-    background:#FFFDF9!important;
-    color:#25211D!important;
-  }
-  html body .notice,
-  html body .check,
-  html body .source-note {
-    background:#FFF6EA!important;
-    border-color:#EAD8C1!important;
-    color:#4D4740!important;
-  }
-  html body .marker {
-    background:linear-gradient(transparent 62%,rgba(246,186,97,.38) 62%)!important;
-    color:inherit!important;
-  }
-  @media(max-width:900px){
-    html body .global-visual-proof {
-      padding:22px 16px!important;
-    }
-    html body .global-visual-proof-head {
-      text-align:left!important;
-    }
-    html body .global-visual-proof-head h2,
-    html body .global-visual-proof-head p {
-      text-align:left!important;
-    }
-  }
-</style>
-<script id="global-readable-palette-reset-script-v1">
-(function(){
-  function applyGlobalReadablePalette(){
-    document.querySelectorAll('.global-visual-proof').forEach(function(el){
-      el.style.setProperty('width','min(1160px,calc(100% - 28px))','important');
-      el.style.setProperty('margin','32px auto','important');
-      el.style.setProperty('padding','28px','important');
-      el.style.setProperty('background','#FFFDF9','important');
-      el.style.setProperty('border','1px solid #E5DDD3','important');
-      el.style.setProperty('box-shadow','0 14px 34px rgba(45,36,28,.06)','important');
-    });
-    document.querySelectorAll('.global-visual-proof-head').forEach(function(el){
-      el.style.setProperty('grid-template-columns','1fr','important');
-      el.style.setProperty('max-width','940px','important');
-      el.style.setProperty('margin','0 auto 18px','important');
-      el.style.setProperty('text-align','center','important');
-    });
-    document.querySelectorAll('.global-visual-proof-head h2,.global-visual-proof-head p').forEach(function(el){
-      el.style.setProperty('margin-left','auto','important');
-      el.style.setProperty('margin-right','auto','important');
-      el.style.setProperty('text-align','center','important');
-    });
-    document.querySelectorAll('.metric-label,.region-head span,.region-checks span,.area-tags span').forEach(function(el){
-      el.style.setProperty('background','#F1EEE8','important');
-      el.style.setProperty('background-image','none','important');
-      el.style.setProperty('border','1px solid #DDD4C9','important');
-      el.style.setProperty('color','#4D4740','important');
-      el.style.setProperty('border-radius','999px','important');
-      el.style.setProperty('box-shadow','none','important');
-    });
-    document.querySelectorAll('.bar-fill,.pref-bar-fill,.pref-data-fill,.kanto-national-fill,.kyushu-bar-fill,.cs-bar-fill,.tokai-bar-fill').forEach(function(el){
-      var color = ['#4F6F8F','#8EACC6'];
-      if (el.classList.contains('national')) color = ['#807970','#B8B0A7'];
-      else if (el.classList.contains('aging') || el.classList.contains('purple')) color = ['#7756B5','#B59BE3'];
-      else if (el.classList.contains('apartment') || el.classList.contains('blue') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) color = ['#2F6FA3','#7CB7DF'];
-      else if (el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) color = ['#A76A2D','#D9A66B'];
-      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#C65312','#E99A57'];
-      else if (el.classList.contains('warm')) color = ['#D68A3A','#EEC07E'];
-      el.style.setProperty('background', color[0], 'important');
-      el.style.setProperty('background-image', 'linear-gradient(90deg,' + color[0] + ',' + color[1] + ')', 'important');
-    });
-  }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyGlobalReadablePalette);
-  else applyGlobalReadablePalette();
-  setTimeout(applyGlobalReadablePalette, 900);
-  setTimeout(applyGlobalReadablePalette, 1800);
-})();
-</script>
-<footer id="operator" class="site-footer" data-pref="hyogo" data-city="阪神間地域ガイド">
-  <div class="footer-grid">
-    <section class="footer-col"><h2>阪神間地域ガイドメニュー</h2><ul class="footer-links"><li><a href="#trust">業者の見分け方</a></li><li><a href="#local">住宅特性・統計</a></li><li><a href="#towns">対応エリア</a></li><li><a href="#service">サービス</a></li><li><a href="#cases">ビフォーアフター</a></li><li><a href="#price">料金目安</a></li><li><a href="#admin">行政・福祉ホットライン</a></li><li><a href="#faq">よくある質問</a></li></ul></section>
-    <section class="footer-col"><h2>行政・福祉ホットライン</h2><ul class="hotline-list"><li><b>地域の確認先</b><span>阪神間地域ガイド</span><span>各市区町村ページで公式窓口を確認</span></li><li><b>粗大ごみ・収集の相談</b><span>作業場所の市区町村公式サイトで受付方法・手数料・収集日を確認。</span></li><li><b>持込・処理施設</b><span>尼崎市クリーンセンター、西宮市西部・東部総合処理センター、芦屋市環境処理センター、豊中市伊丹市クリーンランド、宝塚市クリーンセンター、国崎クリーンセンター、三田市クリーンセンターを確認します。</span></li><li><b>ごみ出し支援</b><span>高齢者・障がい者などの支援制度は、各市区町村の福祉・環境窓口で確認。</span></li><li><b>空家・住まいの相談</b><span>空家、解体、住まい、地域包括支援の相談先を各市区町村ページで確認。</span></li></ul><p class="footer-note">行政制度、受付時間、対象条件は変更される場合があります。相談前に各市区町村の公式情報も確認してください。</p></section>
-    <section class="footer-col"><h2>運営者情報・ポリシー</h2><ul class="policy-list"><li><a href="#operator">サイト運営者情報</a></li><li><a href="/privacy/">プライバシーポリシー</a></li><li><a href="/disclaimer/">免責事項</a></li><li><a href="/sitemap/">サイトマップ</a></li><li><a href="https://web.pref.hyogo.lg.jp/" target="_blank" rel="noopener">公的確認ページ</a></li><li><a href="/hyogo/">兵庫県トップ</a></li></ul><p class="footer-note" id="operator">運営: 阪神間地域ガイド遺品整理・生前整理.jp編集部</p><p class="footer-note" id="privacy">個人情報は問い合わせ対応・見積もり連絡・相談内容の確認目的に限って取り扱う想定です。</p><p class="footer-note" id="disclaimer">本サイトは阪神間地域ガイドで遺品整理・生前整理・実家じまいを考える方に向けた情報提供サイトです。</p></section>
-  </div>
-  <div class="footer-bottom" id="sitemap">サイトマップ: <a href="#trust">業者の選び方</a> / <a href="#local">阪神間地域ガイド情報</a> / <a href="#towns">対応エリア</a> / <a href="#service">サービス</a> / <a href="#cases">事例</a> / <a href="#price">料金</a> / <a href="#admin">行政</a> / <a href="#faq">FAQ</a></div>
-</footer>
-<style id="hyogo-final-orange-title-and-panel-fix-v1">
-  html body .section-title,
-  html body h2.section-title {
-    background:#D05300!important;
-    background-image:none!important;
-    color:#fff!important;
-    border:0!important;
-    border-left:7px solid #9F3E00!important;
-    box-shadow:none!important;
-  }
-  html body .section-title::before,
-  html body h2.section-title::before {
-    background:#fff!important;
-  }
-  html body .kobe-research-panel,
-  html body .global-visual-proof,
-  html body .prefecture-100-panel {
-    background:#FFF7EC!important;
-    background-image:none!important;
-    border-color:#EAD8C1!important;
-  }
-  html body .kobe-data-card,
-  html body .kobe-chart-box,
-  html body .kobe-local-stat,
-  html body .kobe-admin-card {
-    background:#FFFDF9!important;
-    border-color:#EAD8C1!important;
-  }
-  html body .kobe-admin-card strong,
-  html body .guide-check b,
-  html body .impact-card .metric-label,
-  html body .impact-card .metric-sub {
-    color:#9F3E00!important;
-  }
-</style>
-  <p class="last-updated" data-schema-injected="true">最終更新日：2026-06-25</p>
+    <section class="panel" id="next-action">
+      <h2>迷った時の進め方</h2>
+      <p>まず、住所に一番近い市区町ページを開き、建物種別、階数、退去期限、駐車位置、残す品を確認します。次に、自治体で処分できる少量ごみと、屋内搬出から任せたい大型家具や大量家財を分けます。最後に、通帳、印鑑、権利書、保険証券、写真、貴金属、仏壇、位牌など、処分前に確認したい品を家族で共有してください。</p>
+      <p>見積もり前に写真を送る場合は、部屋の全体、押し入れ、台所、玄関、階段、エレベーター、建物前の道路、駐車できそうな場所、庭、物置、車庫を撮ると判断しやすくなります。量が多い場合でも、先に範囲を分けておけば、必要な作業だけを相談できます。</p>
+    </section>
+
+
+    <section class="panel" id="compare-vendors">
+      <h2>業者比較で見るポイント</h2>
+      <p>複数社を比べる時は、総額だけでなく、仕分け、袋詰め、搬出、車両費、階段作業、供養、買取、写真報告、追加料金の条件を同じ項目で確認します。安く見える見積もりでも、当日の追加費用や処分できない品が多いと負担が増えます。見積書に作業範囲、人数、車両、作業日、キャンセル条件が書かれているかを確認してください。</p>
+    </section>
+
+    <p class="last-updated" data-schema-injected="true">最終更新日：2026-06-25</p>
+  </main>
 </body>
 </html>
-
-
-
-
-
-
-
