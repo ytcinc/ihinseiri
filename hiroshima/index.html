@@ -1216,18 +1216,6 @@
     font-weight: 900;
     line-height: 1.2;
   }
-  html body .hiroshima-priority-card .route-link {
-    display: inline-flex;
-    width: fit-content;
-    margin-bottom: 8px;
-    color: #a23f08;
-    text-decoration: none;
-  }
-  html body .hiroshima-priority-card .route-link:hover {
-    color: #c65312;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
   html body .hiroshima-priority-card b {
     display: block;
     color: #a23f08;
@@ -1277,6 +1265,33 @@
     line-height: 1.25;
   }
   html body .hiroshima-ward-shortcuts a:hover {
+    border-color: #c65312;
+    background: #fff3e8;
+    color: #a23f08;
+    text-decoration: none;
+  }
+  html body .hiroshima-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  html body .hiroshima-card-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 6px 11px;
+    border: 1px solid #ead8c6;
+    border-radius: 6px;
+    background: #fff;
+    color: #7a3108;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.25;
+  }
+  html body .hiroshima-card-actions a:hover {
     border-color: #c65312;
     background: #fff3e8;
     color: #a23f08;
@@ -1800,12 +1815,12 @@
   <h2 class="section-title">広島県で相談が多い主要エリア</h2>
   <p class="lead">広島県TOPでは、広島市8区に加えて、福山市・呉市・東広島市・尾道市へすぐ進める導線を強くしています。作業場所が決まっている場合は、近い市町ページで搬出条件、行政ごみ、持ち込み先を先に確認してください。</p>
   <div class="hiroshima-priority-grid">
-    <div class="hiroshima-priority-card"><a class="route-link" href="#hiroshima-city"><b>広島市8区</b></a><span>中区・東区・南区など、作業場所の区ページへ直接進めます。</span><div class="hiroshima-mini-labels"><em>EV予約</em><em>共用部養生</em><em>退去期限</em></div><div class="hiroshima-ward-shortcuts"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></div>
-    <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/fukuyama/"><b>福山市</b></a><span>戸建て、実家じまい、庭・物置、仏壇や大型家具を含む整理で、作業範囲を先に決めたい地域です。</span><div class="hiroshima-mini-labels"><em>戸建て</em><em>物置</em><em>仏壇</em></div></div>
-    <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/kure/"><b>呉市</b></a><span>坂道、狭い道路、階段搬出が費用に影響しやすいため、車両位置と玄関までの距離を写真で共有します。</span><div class="hiroshima-mini-labels"><em>坂道</em><em>階段幅</em><em>車両位置</em></div></div>
-    <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/onomichi/"><b>尾道市</b></a><span>坂道住宅、古い戸建て、海沿い住宅の整理では、搬出導線と近隣配慮を先に確認します。</span><div class="hiroshima-mini-labels"><em>坂道住宅</em><em>古い家屋</em><em>海沿い</em></div></div>
-    <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/higashihiroshima/"><b>東広島市</b></a><span>市街地の集合住宅、大学周辺の単身整理、郊外戸建ての実家整理で条件が分かれます。</span><div class="hiroshima-mini-labels"><em>単身整理</em><em>郊外戸建て</em><em>写真報告</em></div></div>
-    <div class="hiroshima-priority-card"><a class="route-link" href="/hiroshima/etajima/"><b>江田島市・島しょ部</b></a><span>船便、候補日、鍵預かり、返送品の扱いを先に決めると、遠方家族でも進めやすくなります。</span><div class="hiroshima-mini-labels"><em>船便</em><em>鍵預かり</em><em>返送品</em></div></div>
+    <div class="hiroshima-priority-card featured"><b>広島市8区</b><span>中区・東区・南区など、作業場所の区ページへ直接進めます。</span><div class="hiroshima-mini-labels"><em>EV予約</em><em>共用部養生</em><em>退去期限</em></div><div class="hiroshima-ward-shortcuts"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></div>
+    <div class="hiroshima-priority-card featured"><b>福山市</b><span>戸建て、実家じまい、庭・物置、仏壇や大型家具を含む整理で、作業範囲を先に決めたい地域です。</span><div class="hiroshima-mini-labels"><em>戸建て</em><em>物置</em><em>仏壇</em></div><div class="hiroshima-card-actions"><a href="/hiroshima/fukuyama/">福山市</a></div></div>
+    <div class="hiroshima-priority-card featured"><b>呉市</b><span>坂道、狭い道路、階段搬出が費用に影響しやすいため、車両位置と玄関までの距離を写真で共有します。</span><div class="hiroshima-mini-labels"><em>坂道</em><em>階段幅</em><em>車両位置</em></div><div class="hiroshima-card-actions"><a href="/hiroshima/kure/">呉市</a></div></div>
+    <div class="hiroshima-priority-card featured"><b>尾道市</b><span>坂道住宅、古い戸建て、海沿い住宅の整理では、搬出導線と近隣配慮を先に確認します。</span><div class="hiroshima-mini-labels"><em>坂道住宅</em><em>古い家屋</em><em>海沿い</em></div><div class="hiroshima-card-actions"><a href="/hiroshima/onomichi/">尾道市</a></div></div>
+    <div class="hiroshima-priority-card featured"><b>東広島市</b><span>市街地の集合住宅、大学周辺の単身整理、郊外戸建ての実家整理で条件が分かれます。</span><div class="hiroshima-mini-labels"><em>単身整理</em><em>郊外戸建て</em><em>写真報告</em></div><div class="hiroshima-card-actions"><a href="/hiroshima/higashihiroshima/">東広島市</a></div></div>
+    <div class="hiroshima-priority-card"><b>江田島市・島しょ部</b><span>船便、候補日、鍵預かり、返送品の扱いを先に決めると、遠方家族でも進めやすくなります。</span><div class="hiroshima-mini-labels"><em>船便</em><em>鍵預かり</em><em>返送品</em></div><div class="hiroshima-card-actions"><a href="/hiroshima/etajima/">江田島市</a></div></div>
   </div>
 </section>
 
@@ -1999,15 +2014,67 @@
   </div>
 </section>
 
-<section id="municipalities"><p class="eyebrow">市区町村一覧</p><h2 class="section-title">広島県の市区町村から探す</h2><p>広島県は14市・9町の23市町です。広島市の区ページは <code>/hiroshima/hiroshima/{区slug}/</code> にネストしています。作業場所に近いページから、住宅条件、行政窓口、粗大ごみ、見積もり前チェックを確認できます。</p><div class="grid cols2"><div class="area-box"><h3>広島市</h3><p>政令指定都市の8区を区別に整理しています。中心部はマンション退去、北部・西部は戸建てや団地整理も多い地域です。</p><div class="ward-links"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></div>
-<div class="area-box"><h3>広島都市圏</h3><p>府中町・海田町・熊野町・坂町は広島市近郊の住宅地です。集合住宅、戸建て、狭い道路、退去期限を確認します。</p><div class="ward-links"><a href="/hiroshima/fuchu-town/">府中町</a><a href="/hiroshima/kaita/">海田町</a><a href="/hiroshima/kumano/">熊野町</a><a href="/hiroshima/saka/">坂町</a></div></div>
-<div class="area-box"><h3>広島西部</h3><p>大竹市・廿日市市は沿岸部、山手、宮島方面で条件が変わります。車両位置、観光地周辺の時間帯、戸建て物置を見ます。</p><div class="ward-links"><a href="/hiroshima/otake/">大竹市</a><a href="/hiroshima/hatsukaichi/">廿日市市</a></div></div>
-<div class="area-box"><h3>呉・江田島</h3><p>呉市・江田島市は坂道、港、島しょ部の移動が見積もりに影響します。軽車両、階段搬出、船便・日程調整を確認します。</p><div class="ward-links"><a href="/hiroshima/kure/">呉市</a><a href="/hiroshima/etajima/">江田島市</a></div></div>
-<div class="area-box"><h3>芸北地域</h3><p>安芸高田市・安芸太田町・北広島町は山間部の戸建て、空き家、納屋、農具、冬季道路を確認します。</p><div class="ward-links"><a href="/hiroshima/akitakata/">安芸高田市</a><a href="/hiroshima/akiota/">安芸太田町</a><a href="/hiroshima/kitahiroshima/">北広島町</a></div></div>
-<div class="area-box"><h3>広島中央地域</h3><p>竹原市・東広島市・大崎上島町は市街地、大学周辺、郊外戸建て、島しょ部で条件が変わります。</p><div class="ward-links"><a href="/hiroshima/takehara/">竹原市</a><a href="/hiroshima/higashihiroshima/">東広島市</a><a href="/hiroshima/osakikamijima/">大崎上島町</a></div></div>
-<div class="area-box"><h3>尾三地域</h3><p>三原市・尾道市・世羅町は沿岸部、坂道、古い戸建て、農村部の納屋整理まで確認します。</p><div class="ward-links"><a href="/hiroshima/mihara/">三原市</a><a href="/hiroshima/onomichi/">尾道市</a><a href="/hiroshima/sera/">世羅町</a></div></div>
-<div class="area-box"><h3>福山・府中地域</h3><p>福山市・府中市・神石高原町は都市部の退去整理と山間部の戸建て整理が分かれます。駐車位置、庭、物置、遠方対応を確認します。</p><div class="ward-links"><a href="/hiroshima/fukuyama/">福山市</a><a href="/hiroshima/fuchu/">府中市</a><a href="/hiroshima/jinsekikogen/">神石高原町</a></div></div>
-<div class="area-box"><h3>備北地域</h3><p>三次市・庄原市は県北の戸建て、納屋、空き家整理が多く、家財量と屋外残置物を分けて確認します。</p><div class="ward-links"><a href="/hiroshima/miyoshi/">三次市</a><a href="/hiroshima/shobara/">庄原市</a></div></div></div></section>
+<section id="municipalities" class="pref-region-directory">
+  <p class="eyebrow">市区町村一覧</p>
+  <h2 class="section-title">広島県の市区町村から探す</h2>
+  <p>広島県は14市・9町の23市町です。広島市は8区へ直接進み、その他の市町は広島都市圏、沿岸部、県北、備後など地域ごとに確認できます。</p>
+  <div class="grid cols2 pref-region-summary">
+    <div class="area-box pref-region-card" id="pref-region-hiroshima-city">
+      <div class="region-head"><h3>広島市8区</h3><span>8区</span></div>
+      <p class="area-box-lead">中区・南区の駅近マンション、東区・安芸区の坂道住宅、安佐南区・安佐北区・佐伯区の郊外戸建てで確認点が変わります。退去期限、管理会社対応、EV予約、共用部養生、駐車位置を先に見ます。</p>
+      <div class="region-checks"><span>駅近集合住宅</span><span>EV予約</span><span>共用部養生</span></div>
+      <div class="ward-links"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-hiroshima-metro">
+      <div class="region-head"><h3>広島都市圏</h3><span>4町</span></div>
+      <p class="area-box-lead">府中町は広島市隣接の集合住宅・戸建て、海田町は駅周辺と沿岸部、熊野町は坂道や戸建て、坂町は沿岸住宅や浸水・搬出経路の確認が重要です。広島市近郊でも町ごとに搬出条件が違います。</p>
+      <div class="region-checks"><span>広島市近郊</span><span>集合住宅・戸建て</span><span>狭い道路</span></div>
+      <div class="ward-links"><a href="/hiroshima/fuchu-town/">府中町</a><a href="/hiroshima/kaita/">海田町</a><a href="/hiroshima/kumano/">熊野町</a><a href="/hiroshima/saka/">坂町</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-hiroshima-west">
+      <div class="region-head"><h3>広島西部</h3><span>2市</span></div>
+      <p class="area-box-lead">大竹市は工業地域と沿岸部、廿日市市は市街地、山手、宮島方面で条件が変わります。島しょ部だけに寄せず、観光地周辺の時間帯、山手住宅、戸建て物置、駐車位置を分けて確認します。</p>
+      <div class="region-checks"><span>沿岸・山手</span><span>観光地周辺</span><span>戸建て物置</span></div>
+      <div class="ward-links"><a href="/hiroshima/otake/">大竹市</a><a href="/hiroshima/hatsukaichi/">廿日市市</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-kure-etajima">
+      <div class="region-head"><h3>呉・江田島</h3><span>2市</span></div>
+      <p class="area-box-lead">呉市は坂道、狭い道路、階段搬出、古い戸建てで車両位置が重要です。江田島市は港、船便、島内移動、鍵預かり、写真報告の段取りが見積もりに影響します。</p>
+      <div class="region-checks"><span>呉の坂道</span><span>江田島の船便</span><span>階段搬出</span></div>
+      <div class="ward-links"><a href="/hiroshima/kure/">呉市</a><a href="/hiroshima/etajima/">江田島市</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-geihoku">
+      <div class="region-head"><h3>芸北地域</h3><span>3市町</span></div>
+      <p class="area-box-lead">安芸高田市、安芸太田町、北広島町は山間部の戸建て、空き家、納屋、蔵、農具、冬季道路が中心です。海沿いではなく、前面道路、車両進入、雪・凍結、屋外残置物を先に確認します。</p>
+      <div class="region-checks"><span>山間部住宅</span><span>納屋・農具</span><span>冬季道路</span></div>
+      <div class="ward-links"><a href="/hiroshima/akitakata/">安芸高田市</a><a href="/hiroshima/akiota/">安芸太田町</a><a href="/hiroshima/kitahiroshima/">北広島町</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-hiroshima-central">
+      <div class="region-head"><h3>広島中央地域</h3><span>3市町</span></div>
+      <p class="area-box-lead">竹原市は古い町家や沿岸部、東広島市は大学周辺の単身整理と郊外戸建て、大崎上島町は島しょ部の船便・遠方対応が重要です。同じ地域でも都市型、町家、島しょ部で分けて見ます。</p>
+      <div class="region-checks"><span>竹原の町家</span><span>東広島の大学周辺</span><span>大崎上島の船便</span></div>
+      <div class="ward-links"><a href="/hiroshima/takehara/">竹原市</a><a href="/hiroshima/higashihiroshima/">東広島市</a><a href="/hiroshima/osakikamijima/">大崎上島町</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-bisan">
+      <div class="region-head"><h3>尾三地域</h3><span>3市町</span></div>
+      <p class="area-box-lead">三原市は沿岸部と市街地、尾道市は坂道住宅と古い家屋、世羅町は農村部の戸建て・納屋整理が中心です。階段搬出、車両停車位置、庭・物置・農具の有無を写真で共有します。</p>
+      <div class="region-checks"><span>三原の沿岸部</span><span>尾道の坂道</span><span>世羅の納屋</span></div>
+      <div class="ward-links"><a href="/hiroshima/mihara/">三原市</a><a href="/hiroshima/onomichi/">尾道市</a><a href="/hiroshima/sera/">世羅町</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-fukuyama-fuchu">
+      <div class="region-head"><h3>福山・府中地域</h3><span>3市町</span></div>
+      <p class="area-box-lead">福山市は都市部の集合住宅、郊外戸建て、工業地周辺の住まいが混在します。府中市は古い戸建てや家具量、神石高原町は山間部の空き家・納屋・農具を確認します。</p>
+      <div class="region-checks"><span>福山の都市・戸建て</span><span>府中の古い家屋</span><span>神石高原の山間部</span></div>
+      <div class="ward-links"><a href="/hiroshima/fukuyama/">福山市</a><a href="/hiroshima/fuchu/">府中市</a><a href="/hiroshima/jinsekikogen/">神石高原町</a></div>
+    </div>
+    <div class="area-box pref-region-card" id="pref-region-bihoku">
+      <div class="region-head"><h3>備北地域</h3><span>2市</span></div>
+      <p class="area-box-lead">三次市・庄原市は県北の戸建て、納屋、蔵、空き家整理が多い地域です。家財量、屋外残置物、冬季道路、前面道路、車両進入、遠方家族の鍵預かりを分けて確認します。</p>
+      <div class="region-checks"><span>県北空き家</span><span>納屋・蔵</span><span>車両進入</span></div>
+      <div class="ward-links"><a href="/hiroshima/miyoshi/">三次市</a><a href="/hiroshima/shobara/">庄原市</a></div>
+    </div>
+  </div>
+</section>
 
 <section id="hiroshima-city"><p class="eyebrow">政令指定都市</p><h2 class="section-title">広島市8区のページ</h2><p>広島市内は区ごとに、集合住宅、団地、戸建て、坂道、駐車位置、管理規約が変わります。大型ごみ・粗大ごみ受付は広島市のルールを確認し、屋内搬出や大量家財は業者作業として分けてください。</p><div class="ward-links"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></section>
 
@@ -2104,108 +2171,7 @@
 
 
 
-<script id="prefecture-region-readable-script">
-(function(){
-  const genericPatterns = [
-    /公式ページの地域区分に沿って/,
-    /地域区分に沿って/,
-    /作成済みの市町村ページへ移動できます/,
-    /統計はe-Stat/,
-    /公式確認が必要な電話番号/
-  ];
-  const stripTitle = (text) => (text || '')
-    .replace(/エリアから探す/g,'')
-    .replace(/の市町村ページ一覧/g,'')
-    .replace(/から探す/g,'')
-    .replace(/\s+/g,' ')
-    .trim();
-  const linkNames = (card) => Array.from(card.querySelectorAll('.ward-links a,.area-tags a')).map(a => a.textContent.trim()).filter(Boolean);
-  const countLabel = (names) => {
-    const count = names.length;
-    if (names.length && names.every(n => /区$/.test(n))) return count + '区';
-    return count + '市町村';
-  };
-  const tagsFor = (title, names, lead) => {
-    const text = [title, names.join('、'), lead].join(' ');
-    if (/札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本|区/.test(text)) return ['集合住宅','管理会社対応','退去期限'];
-    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) return ['海沿い住宅','遠方立会いなし','車両導線'];
-    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) return ['山間部住宅','冬季道路','物置・納屋'];
-    if (/北摂|北河内|阪神|尾張|三河|県央|中越|筑豊|筑後|央|都市|市/.test(text)) return ['戸建て・集合住宅','前面道路','大型家具'];
-    return ['搬出経路','駐車位置','写真報告'];
-  };
-  const leadFor = (title, names, oldLead) => {
-    if (oldLead && !genericPatterns.some((pattern) => pattern.test(oldLead)) && oldLead.length > 35) return oldLead;
-    const sample = names.slice(0, 3).join('、');
-    const text = [title, names.join('、')].join(' ');
-    if (/区|札幌|仙台|東京|横浜|川崎|相模原|さいたま|千葉|名古屋|京都|大阪|堺|神戸|広島|岡山|福岡|北九州|熊本/.test(text)) {
-      return `${sample}方面は、集合住宅、駅近物件、戸建てが混在します。退去期限、管理会社対応、エレベーター予約、共用部養生、駐車位置を先に確認します。`;
-    }
-    if (/海|湾|港|島|離島|佐渡|淡路|隠岐|対馬|壱岐|五島|天草|奄美|沖縄|石垣|宮古/.test(text)) {
-      return `${sample}方面は、海沿い住宅、離島・半島部、遠方家族からの相談が多くなります。鍵預かり、写真報告、車両導線、候補日調整を確認します。`;
-    }
-    if (/山|奥|飛騨|木曽|魚沼|上越|会津|阿蘇|吉野|紀伊|但馬|丹波|中山間/.test(text)) {
-      return `${sample}方面は、山間部の戸建て、空き家、物置・納屋を含む整理が多くなります。冬季道路、前面道路、車両進入、大型家具の搬出を確認します。`;
-    }
-    return `${sample}方面は、戸建て、集合住宅、郊外住宅が混在します。退去期限、前面道路、階段作業、物置・庭の有無を写真で共有すると見積もりが早くなります。`;
-  };
-  const candidates = Array.from(document.querySelectorAll('section,.area-box,.ward-area,.card')).filter((node) => {
-    if (node.dataset.prefRegionReadableReady) return false;
-    const links = node.querySelectorAll(':scope .ward-links a,:scope .area-tags a');
-    if (links.length < 3) return false;
-    const heading = node.querySelector(':scope h3,:scope h2,:scope strong');
-    if (!heading) return false;
-    if (node.closest('.common-kita-ba,.hero,.footer,.site-footer,.global-price-sim')) return false;
-    const childRegionCards = node.querySelectorAll(':scope .area-box .ward-links a,:scope .ward-area .ward-links a,:scope .card .ward-links a,:scope .area-box .area-tags a,:scope .ward-area .area-tags a,:scope .card .area-tags a');
-    if (node.matches('section') && childRegionCards.length >= 3) return false;
-    return true;
-  });
-  candidates.forEach((card, index) => {
-    card.dataset.prefRegionReadableReady = '1';
-    card.classList.add('pref-region-card');
-    if (!card.id) card.id = 'pref-region-readable-' + (index + 1);
-    const names = linkNames(card);
-    const heading = card.querySelector(':scope h3,:scope h2,:scope strong');
-    const title = stripTitle(heading ? heading.textContent : '地域');
-    if (!card.querySelector(':scope > .region-head')) {
-      const head = document.createElement('div');
-      head.className = 'region-head';
-      const h3 = document.createElement('h3');
-      h3.textContent = title || '地域';
-      const count = document.createElement('span');
-      count.textContent = countLabel(names);
-      head.appendChild(h3);
-      head.appendChild(count);
-      card.insertBefore(head, card.firstChild);
-    }
-    const leadNode = Array.from(card.querySelectorAll(':scope > p')).find(p => !p.classList.contains('section-kicker'));
-    const oldLead = leadNode ? leadNode.textContent.trim() : '';
-    const newLead = leadFor(title, names, oldLead);
-    if (leadNode) {
-      leadNode.classList.add('area-box-lead');
-      if (newLead !== oldLead) leadNode.textContent = newLead;
-    } else {
-      const p = document.createElement('p');
-      p.className = 'area-box-lead';
-      p.textContent = newLead;
-      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
-      card.insertBefore(p, linkBox || null);
-    }
-    if (!card.querySelector(':scope > .region-checks')) {
-      const checks = document.createElement('div');
-      checks.className = 'region-checks';
-      tagsFor(title, names, newLead).forEach((label) => {
-        const item = document.createElement('span');
-        item.textContent = label;
-        checks.appendChild(item);
-      });
-      const linkBox = card.querySelector(':scope .ward-links,:scope .area-tags');
-      card.insertBefore(checks, linkBox || null);
-    }
-  });
-  // 広島県ページは上部に主要エリア導線を手作業で置いているため、
-  // 自動生成の地域ショートカットは重複表示しない。
-})();
-</script>
+<script id="prefecture-region-readable-script">/* Hiroshima uses hand-written region cards. */</script>
 
 
 <script id="niigata-like-prefecture-data-script-v2">
@@ -2241,99 +2207,7 @@
 </script>
 
 
-<script id="pref-region-niigata-like-script-v2">
-document.addEventListener('DOMContentLoaded', () => {
-  const cleanTitle = (raw) => (raw || '')
-    .replace(/エリアから探す/g,'')
-    .replace(/のページ一覧/g,'')
-    .replace(/から探す/g,'')
-    .replace(/市区町村一覧/g,'')
-    .replace(/県の市区町村/g,'')
-    .replace(/県の市町村/g,'')
-    .replace(/ページ/g,'')
-    .trim();
-  const namesOf = (box) => Array.from(box.querySelectorAll('.ward-links a,.area-tags a')).map(a => a.textContent.trim()).filter(Boolean);
-  const countLabel = (title, names) => {
-    const count = names.filter(n => !/トップ$|トップ）$|（.*区.*）$/.test(n)).length;
-    if (/広島市/.test(title) && names.some(n => /区$/.test(n))) return `${count}区`;
-    return `${count}市町村`;
-  };
-  const tagsFor = (title, names) => {
-    const text = `${title} ${names.join(' ')}`;
-    if (/札幌|仙台|広島市|岡山市|福岡市|北九州|熊本市|市街|都市|中央|博多|小倉|中区/.test(text)) return ['集合住宅','管理会社対応','退去期限'];
-    if (/島|離島|佐渡|壱岐|対馬|五島|天草|沖縄|宮古|八重山|隠岐|瀬戸|沿岸|海|湾|港|釧路|函館|青森|下関|萩|松山|高松|長崎/.test(text)) return ['海沿い住宅','遠方立会いなし','車両導線'];
-    if (/山|奥|北|内陸|阿蘇|霧島|日田|大洲|美作|備北|中山間|津山|十勝|上川|会津|置賜|最上|県北|県央|県西|山間/.test(text)) return ['山間部住宅','冬季道路','物置・納屋'];
-    if (/筑豊|筑後|県南|南部|久留米|大牟田|足利|倉敷|福山|宇部|米子|郡山|盛岡|秋田|山形|大分|宮崎|鹿児島/.test(text)) return ['戸建て・集合住宅','前面道路','大型家具'];
-    return ['戸建て整理','物置・車庫','前面道路'];
-  };
-  const leadFor = (pref, title, names) => {
-    const sample = names.filter(n => !/トップ|（.*区/.test(n)).slice(0, 3).join('、') || title;
-    const text = `${title} ${names.join(' ')}`;
-    if (/札幌|仙台|広島市|岡山市|福岡市|北九州|熊本市|都市|市街|中央|博多|小倉/.test(text)) {
-      return `${sample}方面は、駅近の集合住宅、単身整理、退去期限のある住まいが多い地域です。管理会社対応、エレベーター予約、共用部養生、駐車位置を先に確認します。`;
-    }
-    if (/島|離島|佐渡|壱岐|対馬|五島|天草|沖縄|宮古|八重山|隠岐|瀬戸|沿岸|海|湾|港|下関|萩|松山|高松|長崎/.test(text)) {
-      return `${sample}方面は、海沿い住宅、島しょ部、遠方家族からの相談で作業計画が変わります。鍵預かり、写真報告、車両導線、候補日調整を確認します。`;
-    }
-    if (/山|奥|北|内陸|阿蘇|霧島|日田|大洲|美作|備北|中山間|津山|十勝|上川|会津|置賜|最上|県北|山間/.test(text)) {
-      return `${sample}方面は、山間部の戸建て、空き家、物置・納屋を含む整理が多くなります。冬季道路、前面道路、車両進入、大型家具の搬出を確認します。`;
-    }
-    return `${sample}方面は、戸建て、集合住宅、郊外住宅が混在します。退去期限、前面道路、階段作業、物置・庭の有無を写真で共有すると見積もりが早くなります。`;
-  };
-  const shouldSkip = (section) => {
-    const text = section.textContent || '';
-    if (!section.querySelector('.ward-links a,.area-tags a')) return true;
-    if (section.closest('footer,.site-footer,.nearby-wards,.toc')) return true;
-    if (/ページ内メニュー|行政・福祉|このページ|FAQ|よくある質問/.test(text)) return true;
-    return false;
-  };
-  const boxes = Array.from(document.querySelectorAll('section,.area-box,.card')).filter(node => !shouldSkip(node));
-  boxes.forEach((box) => {
-    if (box.dataset.niigataLikeReady) return;
-    const linkBox = box.querySelector(':scope > .ward-links,:scope > .area-tags');
-    if (!linkBox) return;
-    Array.from(linkBox.querySelectorAll('a')).forEach((a) => {
-      if (/トップ$|トップ）$/.test(a.textContent.trim())) a.remove();
-    });
-    const names = namesOf(box);
-    if (names.length < 2) return;
-    const heading = box.querySelector(':scope h3,:scope h2,:scope strong');
-    const rawTitle = heading ? heading.textContent.trim() : '';
-    const title = cleanTitle(rawTitle) || names.slice(0,2).join('・');
-    const oldLead = box.querySelector(':scope p');
-    const pref = (document.querySelector('.brand-area') || document.querySelector('h1') || {}).textContent || '';
-    const lead = leadFor(pref, title, names);
-    box.classList.add('pref-region-card');
-    box.dataset.niigataLikeReady = '1';
-    if (heading) heading.remove();
-    if (oldLead) oldLead.remove();
-    const existingChecks = box.querySelector(':scope .region-checks');
-    if (existingChecks) existingChecks.remove();
-    const head = document.createElement('div');
-    head.className = 'region-head';
-    head.innerHTML = `<h3>${title}</h3><span>${countLabel(title, names)}</span>`;
-    const p = document.createElement('p');
-    p.className = 'area-box-lead';
-    p.textContent = lead;
-    const checks = document.createElement('div');
-    checks.className = 'region-checks';
-    tagsFor(title, names).forEach(t => {
-      const s = document.createElement('span');
-      s.textContent = t;
-      checks.appendChild(s);
-    });
-    box.insertBefore(head, box.firstChild);
-    box.insertBefore(p, linkBox);
-    box.insertBefore(checks, linkBox);
-  });
-  document.querySelectorAll('.grid.cols2,.cards').forEach((grid) => {
-    if (grid.querySelector(':scope > .pref-region-card')) grid.classList.add('pref-region-summary');
-  });
-  document.querySelectorAll('section').forEach((section) => {
-    if (section.querySelector(':scope > .pref-region-summary')) section.classList.add('pref-region-directory');
-  });
-});
-</script>
+<script id="pref-region-niigata-like-script-v2">/* Disabled on Hiroshima to preserve hand-written regional content. */</script>
 
 <style id="prefecture-region-heading-orange-v2">
   section:has(> .ward-links) > .section-title,
