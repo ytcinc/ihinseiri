@@ -1579,6 +1579,115 @@
 </style>
 
 
+
+<style id="aichi-remaining-depth-style-v1">
+  .aichi-remaining-depth {
+    margin: 34px 0;
+    padding: 28px;
+    border: 1px solid #f1d1bc;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fffaf5 0%, #fff 64%);
+    box-shadow: 0 18px 42px rgba(128, 66, 28, .08);
+  }
+  .aichi-remaining-depth__kicker {
+    margin: 0 0 8px;
+    color: #c7501b;
+    font-weight: 800;
+    letter-spacing: .04em;
+  }
+  .aichi-remaining-depth h2 {
+    margin: 0 0 12px;
+    color: #2d211a;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    line-height: 1.35;
+  }
+  .aichi-remaining-depth__lead {
+    margin: 0 0 18px;
+    color: #51453c;
+    line-height: 1.9;
+    font-size: 1.02rem;
+  }
+  .aichi-remaining-depth__grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin: 18px 0 22px;
+  }
+  .aichi-remaining-depth__card {
+    background: #fff;
+    border: 1px solid #f0d8c9;
+    border-radius: 14px;
+    padding: 15px;
+  }
+  .aichi-remaining-depth__card b {
+    display: block;
+    color: #b94718;
+    margin-bottom: 7px;
+    font-size: .98rem;
+  }
+  .aichi-remaining-depth__card span {
+    display: block;
+    color: #4d433b;
+    line-height: 1.75;
+    font-size: .94rem;
+  }
+  .aichi-remaining-depth__scenes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0 22px;
+  }
+  .aichi-remaining-depth__scene {
+    background: #fff7ef;
+    border-left: 5px solid #df6b25;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .aichi-remaining-depth__scene b {
+    display: block;
+    color: #2f261f;
+    margin-bottom: 7px;
+  }
+  .aichi-remaining-depth__scene p {
+    margin: 0;
+    color: #51453c;
+    line-height: 1.8;
+  }
+  .aichi-remaining-depth table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 14px;
+    font-size: .96rem;
+  }
+  .aichi-remaining-depth th,
+  .aichi-remaining-depth td {
+    border: 1px solid #efd7c8;
+    padding: 13px 14px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.75;
+  }
+  .aichi-remaining-depth th {
+    width: 24%;
+    color: #a64016;
+    background: #fff2e8;
+  }
+  .aichi-remaining-depth__note {
+    margin: 14px 0 0;
+    color: #6a5a4f;
+    line-height: 1.8;
+    font-size: .92rem;
+  }
+  @media (max-width: 900px) {
+    .aichi-remaining-depth { padding: 20px; border-radius: 14px; }
+    .aichi-remaining-depth__grid,
+    .aichi-remaining-depth__scenes { grid-template-columns: 1fr; }
+    .aichi-remaining-depth th,
+    .aichi-remaining-depth td { display: block; width: auto; }
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1965,6 +2074,34 @@
   </table>
   <p class="aichi-report-note">出典：市区町村公式サイト、各市区町村のごみ・環境部局、広域処理組合、愛知県および市区町村の空き家対策・高齢者支援の公式情報。民間サイトの電話番号・料金は出典にしていません。</p>
 </section>
+
+<section id="aichi-remaining-original-guide" class="aichi-remaining-depth">
+  <p class="aichi-remaining-depth__kicker">豊橋市の地域特化ポイント</p>
+  <h2>豊橋市で遺品整理・生前整理・実家じまいを相談する前に見ること</h2>
+  <p class="aichi-remaining-depth__lead">豊橋市は豊橋駅周辺の集合住宅、郊外戸建て、農家住宅、表浜・海沿いの住宅で確認点が変わります。資源化センターや大きなごみ戸別収集の公式案内を確認し、自治体処分と業者作業を分けます。</p>
+  <div class="aichi-remaining-depth__grid">
+    <div class="aichi-remaining-depth__card"><b>住宅特性</b><span>駅周辺集合住宅、郊外戸建て、農家住宅、海沿い住宅。</span></div>
+    <div class="aichi-remaining-depth__card"><b>搬出条件</b><span>納屋、農機具、前面道路、車両進入、屋外品、EV予約を確認。</span></div>
+    <div class="aichi-remaining-depth__card"><b>行政ごみ確認</b><span>豊橋市公式サイトで、資源化センター、大きなごみ戸別収集、分別、自己搬入条件を確認。</span></div>
+    <div class="aichi-remaining-depth__card"><b>よくある相談</b><span>農家住宅の実家じまい、駅近退去整理、遠方写真報告。</span></div>
+    <div class="aichi-remaining-depth__card"><b>町名・駅周辺</b><span>豊橋駅、二川、南栄、岩田、牟呂、表浜周辺。</span></div>
+  </div>
+  <div class="aichi-remaining-depth__scenes">
+    <article class="aichi-remaining-depth__scene"><b>農家住宅の整理</b><p>納屋、農機具、庭、仏壇、屋外品を室内と分けます。</p></article>
+    <article class="aichi-remaining-depth__scene"><b>駅周辺集合住宅</b><p>EV予約、管理会社届出、駐車位置、退去期限を確認します。</p></article>
+    <article class="aichi-remaining-depth__scene"><b>海沿い住宅の片付け</b><p>湿気劣化家具、屋外品、車両導線を写真で共有します。</p></article>
+  </div>
+  <table>
+    <tbody>
+      <tr><th>処理施設・粗大ごみ</th><td>豊橋市資源化センター、大きなごみ戸別収集、家庭ごみコールセンター等の公式案内を公式ページで確認します。受付日、手数料、予約要否、搬入できない品目は変更されるため、見積もり前に最新情報を確認してください。</td></tr>
+      <tr><th>業者に任せる範囲</th><td>屋内からの大型家具搬出、階段作業、養生、貴重品探索、仏壇・写真の供養、買取査定、作業前後の写真報告は見積書で分けて確認します。</td></tr>
+      <tr><th>写真で共有するもの</th><td>玄関、廊下、階段、各部屋、押入れ、物置、庭、車庫、前面道路、駐車位置、残す品、探す書類を先に撮影して共有します。</td></tr>
+      <tr><th>公式確認先</th><td><a href="https://www.city.toyohashi.lg.jp/" target="_blank" rel="noopener">豊橋市公式サイトでごみ・リサイクル、粗大ごみ、自己搬入、空き家・福祉相談を確認する</a></td></tr>
+    </tbody>
+  </table>
+  <p class="aichi-remaining-depth__note">電話番号、受付時間、手数料、搬入条件は年度や施設運用で変わるため、このページでは未確認の実値を作らず、自治体・広域処理組合の公式情報で確認する導線を優先しています。</p>
+</section>
+
 <section id="admin" class="admin-hotline-section">
   <p class="section-kicker">行政・福祉ホットライン</p>
   <h2 class="section-title">豊橋市の行政窓口・粗大ごみ・住まい相談</h2>

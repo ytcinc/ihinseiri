@@ -49,6 +49,32 @@
     .source-note{margin:14px 0 0;padding:12px 14px;background:#fff8e9;border:1px solid #ead8c1;color:#5c544b;font-size:13px;line-height:1.8;font-weight:700}
     .footer{margin-top:56px;padding:34px 0;background:var(--dark);color:#fff7ef} .footer-inner{width:min(1120px,calc(100% - 28px));margin:auto;font-size:14px;line-height:1.9;font-weight:700} .footer a{color:#fff7ef;font-weight:900}
     @media(max-width:900px){.topbar-inner{align-items:flex-start;flex-direction:column;padding:12px 0}.hero{background-image:linear-gradient(180deg,rgba(28,24,20,.96),rgba(28,24,20,.88),rgba(28,24,20,.72)),url('/assets/cv-hero-staff-photo.png?v=1');background-size:cover,auto 42%;background-position:center,right bottom}.hero-inner{display:block;min-height:auto;padding:34px 0 42px}h1{font-size:31px;line-height:1.34}.hero-lead{font-size:15px;line-height:1.8}.hero-actions{display:grid;grid-template-columns:1fr}.btn{width:100%}section{padding:22px 16px;margin:30px 0}.score-strip,.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}.bar-row{grid-template-columns:92px 1fr 70px;font-size:14px}th,td{display:block;width:100%}}
+
+  .aichi-top-polish {
+    margin: 26px 0 34px;
+    padding: 26px;
+    border-radius: 18px;
+    background: #fff7ef;
+    border: 1px solid #f1d1bc;
+  }
+  .aichi-top-polish h2 { margin: 0 0 10px; color: #2d211a; }
+  .aichi-top-polish p { margin: 0; color: #51453c; line-height: 1.9; }
+  .aichi-top-polish__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .aichi-top-polish__grid div {
+    background: #fff;
+    border: 1px solid #f0d8c9;
+    border-radius: 14px;
+    padding: 15px;
+  }
+  .aichi-top-polish__grid b { display:block; color:#c7501b; margin-bottom:6px; }
+  .aichi-top-polish__grid span { color:#4d433b; line-height:1.75; font-size:.94rem; }
+  @media (max-width: 900px) { .aichi-top-polish__grid { grid-template-columns: 1fr; } }
+
   </style>
 </head>
 <body>
@@ -157,6 +183,18 @@
         </div>
       </div>
       <p class="source-note">出典：愛知県「令和7年国勢調査結果速報－市町村別人口及び世帯数－（2025年10月1日現在）」「あいちの人口（2026年5月1日現在） 愛知県人口動向調査結果 月報」、総務省統計局「令和5年住宅・土地統計調査」。</p>
+    </section>
+
+
+    <section id="aichi-consult-map" class="aichi-top-polish">
+      <h2>愛知県は、地域ごとに「先に見る条件」が変わります</h2>
+      <p>名古屋市内は集合住宅の管理会社対応、尾張は郊外戸建て、知多・海部は海沿い住宅や広域処理施設、西三河は車庫・工具・工業地帯近接、東三河は農家住宅・山間部・納屋まで確認すると、見積もり前の不安を減らせます。</p>
+      <div class="aichi-top-polish__grid">
+        <div><b>名古屋市16区</b><span>EV予約、共用部養生、退去期限、駐車位置を先に確認。</span></div>
+        <div><b>尾張・名古屋近郊</b><span>庭、物置、車庫、郊外戸建て、駅近集合住宅を分けて確認。</span></div>
+        <div><b>知多・海部</b><span>海沿い住宅、広域処理施設、屋外品、倉庫・車庫の有無を確認。</span></div>
+        <div><b>三河全域</b><span>工具、農具、納屋、山間部、遠方立会いなし対応を確認。</span></div>
+      </div>
     </section>
 
     <section id="areas">
