@@ -1256,6 +1256,32 @@
     font-size: 13px;
     font-weight: 800;
   }
+  html body .hiroshima-ward-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+    margin-top: 14px;
+  }
+  html body .hiroshima-ward-shortcuts a {
+    display: grid;
+    place-items: center;
+    min-height: 34px;
+    padding: 6px 8px;
+    border: 1px solid #ead8c6;
+    border-radius: 6px;
+    background: #fff;
+    color: #7a3108;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 1.25;
+  }
+  html body .hiroshima-ward-shortcuts a:hover {
+    border-color: #c65312;
+    background: #fff3e8;
+    color: #a23f08;
+    text-decoration: none;
+  }
   html body .hiroshima-terrain-chart {
     display: grid;
     grid-template-columns: 1.08fr .92fr;
@@ -1774,7 +1800,7 @@
   <h2 class="section-title">広島県で相談が多い主要エリア</h2>
   <p class="lead">広島県TOPでは、広島市8区に加えて、福山市・呉市・東広島市・尾道市へすぐ進める導線を強くしています。作業場所が決まっている場合は、近い市町ページで搬出条件、行政ごみ、持ち込み先を先に確認してください。</p>
   <div class="hiroshima-priority-grid">
-    <div class="hiroshima-priority-card"><a class="route-link" href="#hiroshima-city"><b>広島市8区</b></a><span>中区・東区・南区など、作業場所の区ページへ直接進めます。</span><div class="hiroshima-mini-labels"><em>EV予約</em><em>共用部養生</em><em>退去期限</em></div></div>
+    <div class="hiroshima-priority-card"><a class="route-link" href="#hiroshima-city"><b>広島市8区</b></a><span>中区・東区・南区など、作業場所の区ページへ直接進めます。</span><div class="hiroshima-mini-labels"><em>EV予約</em><em>共用部養生</em><em>退去期限</em></div><div class="hiroshima-ward-shortcuts"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></div>
     <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/fukuyama/"><b>福山市</b></a><span>戸建て、実家じまい、庭・物置、仏壇や大型家具を含む整理で、作業範囲を先に決めたい地域です。</span><div class="hiroshima-mini-labels"><em>戸建て</em><em>物置</em><em>仏壇</em></div></div>
     <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/kure/"><b>呉市</b></a><span>坂道、狭い道路、階段搬出が費用に影響しやすいため、車両位置と玄関までの距離を写真で共有します。</span><div class="hiroshima-mini-labels"><em>坂道</em><em>階段幅</em><em>車両位置</em></div></div>
     <div class="hiroshima-priority-card featured"><a class="route-link" href="/hiroshima/onomichi/"><b>尾道市</b></a><span>坂道住宅、古い戸建て、海沿い住宅の整理では、搬出導線と近隣配慮を先に確認します。</span><div class="hiroshima-mini-labels"><em>坂道住宅</em><em>古い家屋</em><em>海沿い</em></div></div>
