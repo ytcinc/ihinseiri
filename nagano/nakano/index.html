@@ -1282,19 +1282,22 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fffaf6;border:1px solid #eee0d5;box-shadow:none;border-radius:10px;padding:16px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:18px;line-height:1.45;color:#422012}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 10px;font-size:15.8px;line-height:1.8;color:#3f332b}
+    .manual-admin-card a,.admin-deep-card a{display:inline-block;margin:4px 10px 0 0;font-weight:800;color:#b64a1c;text-decoration:underline;text-underline-offset:3px;background:transparent}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
+    .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid,.contact-check-list{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1697,52 @@
 </style>
 
 
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1721,6 +1770,25 @@
         </div>
       </div>
       <div class="hero-panel"><h2>中野市で特に多い相談</h2><ul class="quick-list"><li>中野市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="中野市の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>中野市は市街地マンションと果樹園地帯の農家住宅で対応が分かれます</h2>
+    <div class="local-landmark-prose">
+      <p>中野市は信州中野駅周辺の市街地と、延徳・高丘・豊田方面の果樹園地帯で住まい方が大きく変わります。市街地ではアパート・マンション、郊外では広い敷地の戸建てや農家住宅の相談が多くなります。</p>
+      <p>集合住宅では、エレベーターの有無、階段幅、共用部養生、搬出時間、駐車位置を管理ルールに合わせます。エレベーターなしの上階から大型家具を下ろす場合は、作業人数と養生が見積もりに影響します。</p>
+      <p>果樹園に近い一軒家では、母屋の家財だけでなく、物置、農具、支柱、コンテナ、屋外用品まで含むかを確認します。家庭ごみとして出せないものは、処分方法や買取可否を分けて考えます。</p>
+      <p>信州中野駅、中野松川駅、上今井駅、替佐駅などの最寄りや、一本木公園・記念館周辺など近くの目印を共有すると、市街地型か農家住宅型かを判断しやすくなります。</p>
     </div>
   </section>
 
@@ -2160,8 +2228,8 @@
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">中野市に反映した長野県調査データ</h2>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">中野市で整理前に確認したい行政・地域データ</h2>
     <p class="lead">中野市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に中野市公式サイトで最新条件を確認してください。</p>
     <div class="nagano-report-grid">
       <div class="nagano-report-card"><b>処理圏</b><span>岳北地域。中野市・飯山市の指定処理施設など</span></div>
@@ -2647,6 +2715,5 @@
 <footer class="footer"><div class="footer-inner">中野市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
 
 

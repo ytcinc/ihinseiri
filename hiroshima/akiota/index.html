@@ -847,6 +847,333 @@
 </style>
 
 
+
+<style id="hiroshima-municipal-depth-style">
+  html body .hiroshima-municipal-depth {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 12px 28px rgba(34,28,22,.06) !important;
+    margin-top: 24px !important;
+    padding: 28px !important;
+  }
+  html body .hiroshima-municipal-depth .lead {
+    max-width: 880px !important;
+    color: #414743 !important;
+    font-size: 18px !important;
+    line-height: 1.95 !important;
+  }
+  html body .hiroshima-depth-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    margin: 20px 0 !important;
+  }
+  html body .hiroshima-depth-card {
+    background: linear-gradient(180deg, #fff 0%, #fff8ef 100%) !important;
+    border: 1px solid #eadfd0 !important;
+    border-top: 5px solid #d05300 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-depth-card:nth-child(2) {
+    background: linear-gradient(180deg, #fff 0%, #f1f7fb 100%) !important;
+    border-top-color: #4378a8 !important;
+  }
+  html body .hiroshima-depth-card:nth-child(3) {
+    background: linear-gradient(180deg, #fff 0%, #f1faf5 100%) !important;
+    border-top-color: #2f6f63 !important;
+  }
+  html body .hiroshima-depth-card b {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #2f312d !important;
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+  }
+  html body .hiroshima-depth-card span {
+    display: block !important;
+    color: #555f59 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+  }
+  html body .hiroshima-municipal-depth table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 16px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-municipal-depth th,
+  html body .hiroshima-municipal-depth td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-municipal-depth th {
+    background: #fff3e8 !important;
+    color: #7b3700 !important;
+    font-weight: 900 !important;
+  }
+  html body .hiroshima-depth-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #d05300 !important;
+    background: #fffaf5 !important;
+    color: #4f5f55 !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+  @media (max-width: 820px) {
+    html body .hiroshima-depth-grid { grid-template-columns: 1fr !important; }
+    html body .hiroshima-municipal-depth { padding: 20px !important; }
+  }
+</style>
+
+
+<style id="hiroshima-admin-depth-style">
+  html body .hiroshima-admin-depth .admin-card h3 {
+    color: #2f312d !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+  html body .hiroshima-admin-depth .admin-card p {
+    color: #414743 !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-depth .admin-card strong {
+    color: #8c3d00 !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table th,
+  html body .hiroshima-admin-depth .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7b3700 !important;
+    font-weight: 900 !important;
+  }
+  html body .hiroshima-admin-depth .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    background: #fffaf5 !important;
+    border-left: 5px solid #d05300 !important;
+    color: #4f5f55 !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-strict-admin-style">
+  html body .hiroshima-strict-admin {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-strict-admin .lead {
+    color: #3f463f !important;
+    font-size: 17px !important;
+    line-height: 1.9 !important;
+  }
+  html body .hiroshima-strict-admin .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-strict-admin .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-strict-admin .admin-card p {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-strict-admin .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-strict-admin .admin-card a {
+    display: inline-flex !important;
+    margin-top: 10px !important;
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table th,
+  html body .hiroshima-strict-admin .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+  }
+  html body .hiroshima-strict-admin .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-admin-utf8-style">
+  html body .hiroshima-admin-utf8 {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-admin-utf8 .lead,
+  html body .hiroshima-admin-utf8 .admin-card p,
+  html body .hiroshima-admin-utf8 .admin-detail-table td {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card a {
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table th,
+  html body .hiroshima-admin-utf8 .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+    font-size: 16px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-admin-strict-style">
+  html body .hiroshima-admin-strict {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-admin-strict .lead,
+  html body .hiroshima-admin-strict .admin-card p,
+  html body .hiroshima-admin-strict .admin-detail-table td {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-strict .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-admin-strict .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-admin-strict .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-admin-strict .admin-card a {
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table th,
+  html body .hiroshima-admin-strict .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+    font-size: 16px !important;
+  }
+  html body .hiroshima-admin-strict .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1264,20 +1591,91 @@
         </div>
       </section>
 
-      <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">安芸太田町の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>安芸太田町で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>安芸太田町役場</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.akiota.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>安芸太田町のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.akiota.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.akiota.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.akiota.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.akiota.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/hiroshima/" target="_blank" rel="noopener">広島県ページへ戻る</a></div>
+
+
+<section id="hiroshima-local-depth" class="hiroshima-municipal-depth">
+  <p class="eyebrow">地域別の整理ポイント</p>
+  <h2 class="section-title">安芸太田町で見積もり前に見る搬出条件・ごみ確認・相談パターン</h2>
+  <p class="lead">安芸太田町は山間部の空き家、広い敷地、冬季道路、納屋・蔵を含む整理が中心になります。現地確認の候補日、車両進入、屋外品の量を先に共有してください。</p>
+  <div class="hiroshima-depth-grid">
+    <div class="hiroshima-depth-card"><b>山間部の搬出</b><span>前面道路、冬季道路、駐車位置、玄関までの距離を見ます。</span></div>
+    <div class="hiroshima-depth-card"><b>納屋・屋外品</b><span>農具、古い家電、タイヤ、木材、物置を室内と分けて確認します。</span></div>
+    <div class="hiroshima-depth-card"><b>空き家管理</b><span>解体・売却・草木管理の予定も一緒に整理します。</span></div>
   </div>
-  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <table>
+    <thead><tr><th>安芸太田町で起きやすい場所・状況</th><th>相談内容の傾向</th><th>見積もり前に伝えること</th></tr></thead>
+    <tbody>
+        <tr><td>山間部住宅</td><td>車両進入や冬季条件で作業日程が変わる。</td><td>道路幅、駐車位置、除雪状況、候補日。</td></tr>
+        <tr><td>広い敷地</td><td>母屋以外の納屋・蔵・庭まで広がる。</td><td>範囲写真、屋外品、農具、木材。</td></tr>
+        <tr><td>遠方家族</td><td>現地に通いにくい実家整理。</td><td>鍵預かり、写真報告、返送品、立会い可否。</td></tr>
+    </tbody>
+  </table>
+  <p class="hiroshima-depth-note">安芸太田町では、少量ごみ、粗大ごみ、自己搬入、福祉支援、空き家相談を分けて確認します。下の行政窓口欄で、自治体収集で済むものと、屋内搬出・大量家財・供養・買取査定として業者に任せるものを切り分けてください。</p>
 </section>
+
+
+<section id="admin" class="admin-hotline-section hiroshima-admin-strict">
+  <p class="section-kicker">行政・ごみ処理の確認先</p>
+  <h2 class="section-title">安芸太田町の行政窓口・粗大ごみ・大型ごみ・自己搬入</h2>
+  <p class="lead">安芸太田町で遺品整理・生前整理を進める前に、自治体収集で出せるもの、自己搬入で確認するもの、屋内搬出や大量家財として業者に任せるものを分けます。ここでは自治体ページで確認できる代表窓口、担当ページ、関連制度への導線だけを整理します。</p>
+  <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>安芸太田町役場</strong><br>代表: 0826-28-2111<br>〒731-3810 広島県山県郡安芸太田町大字戸河内784番地1。開庁日時は月曜〜金曜8時30分〜17時15分。ごみ・持込はポックルくろだおクリーンセンター衛生対策室 0826-23-1120 を確認します。</p><a href="https://www.akiota.jp/soshiki/13/2397.html" target="_blank" rel="noopener">ごみの分別収集と処理</a></div>
+    <div class="admin-card"><h3>分別・収集日</h3><p>安芸太田町の家庭ごみは、燃えるごみ、資源ごみ、燃えないごみ、プラスチックごみ、粗大ごみ、家電4品目に分けます。収集場所へ出す場合は指定袋、粗大ごみは粗大ごみ券を使い、決められた収集日に地域の決められた場所へ出します。袋詰め前に通帳・印鑑・権利書・写真・貴金属を別箱にしてください。</p><a href="https://www.akiota.jp/soshiki/13/2397.html" target="_blank" rel="noopener">ごみ分別区分を見る</a></div>
+    <div class="admin-card"><h3>粗大ごみ・大型家具</h3><p>粗大ごみ、畳、布団、ベッドマットレス、カーペット、農業に伴う廃棄物、珪藻土製品などは町の出し方ガイドと注意資料を確認します。大型家具、仏壇、納屋の工具、屋外品は、自治体収集、持込、許可業者、屋内搬出を分けて見積もりに反映します。</p><a href="https://www.akiota.jp/soshiki/13/4408.html" target="_blank" rel="noopener">家庭ごみ分別五十音事典</a></div>
+    <div class="admin-card"><h3>自己搬入・処理施設</h3><p><strong>ポックルくろだおクリーンセンター</strong><br>安芸太田町大字穴1456番地1 / 0826-23-1120。持込時間は月曜〜金曜、9時〜12時、13時〜16時30分。祝日・祭日を除き、年末年始は確認が必要です。持込時は分別区分ごとに分別し、飛散・流出しないように運搬します。</p><a href="https://www.akiota.jp/soshiki/13/2397.html" target="_blank" rel="noopener">持ち込みごみについて</a></div>
+    <div class="admin-card"><h3>事業ごみ・一時多量ごみ</h3><p>事業ごみは、町が許可した一般廃棄物収集運搬業者へ依頼するか、事業所自らポックルくろだおクリーンセンターへ持ち込みます。許可業者として西部環境有限会社、有限会社西部パブリックが掲載されています。家の片付けで大量に出る場合も、少量ごみと分けて相談します。</p><a href="https://www.akiota.jp/soshiki/13/2397.html" target="_blank" rel="noopener">事業ごみ・持込料金を見る</a></div>
+    <div class="admin-card"><h3>福祉・ごみ出し支援</h3><p>高齢者だけの世帯、施設入居前、身体的にごみ出しが難しい世帯は、地域包括支援センター 0826-22-2031、健康福祉課 0826-22-0686、社会福祉協議会本所 0826-32-2226、加計支所 0826-25-0250 などを確認します。自治体制度で出せる少量ごみと、屋内搬出・大量家財として業者に任せる作業を分けます。</p><a href="https://www.akiota.jp/life/1/2/4" target="_blank" rel="noopener">高齢・福祉</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>安芸太田町は空き家バンク、移住・定住、住まい関連情報を掲載しています。空き家の売却・賃貸、家財整理、解体、草木管理、冬季道路、山間部の車両進入を、契約前に整理します。空き家バンク掲載物件や補助制度は、安芸太田町定住サイトの案内から確認します。</p><a href="https://www.akiota.jp/soshiki/list5-1.html" target="_blank" rel="noopener">空き家バンク情報</a></div>
+  </div>
+  <table class="admin-detail-table">
+    <thead><tr><th>確認項目</th><th>安芸太田町で見ること</th><th>業者へ伝えること</th></tr></thead>
+    <tbody>
+      <tr><td>自治体で出せるもの</td><td>指定袋、粗大ごみ券、家庭ごみ収集カレンダー、ポックルくろだおクリーンセンターへの持込、許可業者、空き家バンク。</td><td>袋詰め済みか、粗大ごみ券が必要か、持込か、納屋・農具・庭木・冬季道路まで含むか。</td></tr>
+      <tr><td>業者作業になるもの</td><td>屋内搬出、大型家具、大量家財、仏壇・写真の供養、買取査定、遠方家族への写真報告。</td><td>階数、玄関幅、駐車位置、搬出距離、残す品、探す書類、返送品。</td></tr>
+      <tr><td>地域特有の注意点</td><td>作業日は積雪や道路状況を見て調整し、庭・物置・車庫まで含めるかを先に決めます。</td><td>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置の写真。</td></tr>
+    </tbody>
+  </table>
+  <p class="admin-note">制度、受付時間、対象品目、料金は年度や品目で変わることがあります。上記リンク先の自治体情報を確認し、自治体で出すものと業者に任せるものを分けてから見積もりに進んでください。</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section class="major-seo-local" id="major-local-guide">
@@ -1288,7 +1686,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 建物と搬出条件</b><span>住所、建物種別、階数、エレベーター、前面道路、駐車位置を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を分別・持ち込み情報で確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -1768,7 +2166,6 @@
 <footer class="footer"><div class="footer-inner">安芸太田町の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
 
 
 

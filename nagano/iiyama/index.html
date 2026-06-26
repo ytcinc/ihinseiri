@@ -1282,19 +1282,23 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .manual-admin-card a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:7px 12px;margin:4px 6px 0 0;background:#fff7ed;border:1px solid #efc9a6;color:#9a4518;text-decoration:none;font-weight:800}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:22px;margin-top:28px}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#231f1a}
+    #contact.contact-check-card p{margin:0 0 14px;color:#4c4439;line-height:1.8}
+    .contact-check-list{margin:0;padding-left:1.2em;line-height:1.85;color:#3f332b}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1698,52 @@
 </style>
 
 
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1721,6 +1771,25 @@
         </div>
       </div>
       <div class="hero-panel"><h2>飯山市で特に多い相談</h2><ul class="quick-list"><li>飯山市の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="飯山市の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>飯山市は豪雪住宅と空き家バンク前の実家じまいに備えます</h2>
+    <div class="local-landmark-prose">
+      <p>飯山市は全国的にも雪が多い地域で、飯山駅周辺の市街地と、戸狩・木島・常盤・瑞穂・岡山方面の戸建てや空き家で作業条件が大きく変わります。</p>
+      <p>高床式の住宅や一階が車庫・物置になっている家では、二階からの搬出、階段作業、大型家具の荷下ろしが中心になります。雪深い時期は除雪状況や道路の入りやすさも費用と日程に関わります。</p>
+      <p>人口減少に伴い、売却前、解体前、空き家バンク登録前の家財一括整理の相談も多くなります。春から秋のうちに片付けを終える提案や、冬前に危険な荷物を減らす生前整理が役立ちます。</p>
+      <p>飯山駅、戸狩野沢温泉駅、斑尾高原、菜の花公園周辺など地域の位置関係を伝え、除雪状況、物置、車庫、屋外保管品、鍵の受け渡し方法を写真で共有しておくと段取りがスムーズです。</p>
     </div>
   </section>
 
@@ -2083,16 +2152,7 @@
           <h3>飯山市で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅が県平均より大きい</td><td>空き家化、相続後の実家じまい、長期間未使用の家財整理。</td><td>売却・解体予定、管理状態、庭・物置・納屋の範囲。</td></tr><tr><td>人口密度が低め</td><td>山間部、集落部、広い敷地、車両進入に制限がある整理。</td><td>現地までの道路、車両進入可否、庭・物置・納屋の写真。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>飯山市で最初にそろえる確認材料</h3>
-          <p>飯山市では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>山間部・広い敷地の進入経路を確認</b><span>道幅、坂道、車両進入、庭・物置・納屋まで作業範囲に入るかを見ます。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>空き家化前後の出口を決める</b><span>売却、解体、空き家管理、相続手続きのどれに進むかで、残す品と処分範囲が変わります。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+        <div class="regional-original">
           <h3>飯山市ならではの整理メモ</h3>
           <p class="regional-lead">飯山市は北信地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,23 +2205,31 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">飯山市の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>飯山市で確認したい自治体情報</h2>
-    <p>飯山市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、飯山市公式サイトで最新情報を確認してください。</p>
+    <h2>飯山市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>飯山市で整理を進める前に、行政収集で出すもの、エコパーク寒川へ直接持ち込むもの、専門業者が屋内から搬出するものを分けます。雪深い戸建て、飯山駅周辺の集合住宅、岡山・瑞穂・常盤方面の空き家や物置では、作業時期と車両導線の確認が特に重要です。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>飯山市役所</strong><br>代表電話: 0269-62-3111<br>所在地: 〒389-2292 飯山市大字飯山1110-1<br>FAX: 0269-62-5990</p><a href="https://www.city.iiyama.nagano.jp/" target="_blank" rel="noopener">飯山市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>飯山市公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.city.iiyama.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>北信地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.city.iiyama.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>飯山市で特に確認したいこと</h3><p>豪雪地域の戸建て・空き家整理では、除雪状況、作業時期、車両位置、屋根雪・庭周りの安全確認が重要です。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>ごみ・資源物収集カレンダー、ごみの分け方・出し方、エコパーク寒川、家電4品目、パソコン、資源物の扱いを飯山市の案内で確認します。少量ごみと一時多量ごみを混ぜないことが大切です。</p></div>
+    <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>室内搬出、階段作業、駐車位置、除雪状況、庭・物置、仏壇・写真、通帳・権利書などの探索、山沿い住宅や狭い生活道路の車両導線を写真で共有します。</p></div>
+    <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>高齢者介護保険係、地域包括支援センター、移住定住推進課の空き家対策係を分けて確認します。施設入居前や空き家バンク活用前は、家財の処分範囲を先に整理します。</p></div>
+    <div class="admin-deep-card"><h3>確認に使う公式ページ</h3><p>ごみは市民環境課 生活環境係とエコパーク寒川、福祉は保健福祉課・地域包括支援センター、空き家は移住定住推進課 空き家対策係を確認します。</p><a href="https://www.city.iiyama.nagano.jp/" target="_blank" rel="noopener">飯山市公式サイト</a><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/" target="_blank" rel="noopener">生活環境係</a><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/gominodasikata/clean.c.htm" target="_blank" rel="noopener">エコパーク寒川</a></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>飯山市役所</strong><br>所在地: 〒389-2292 長野県飯山市大字飯山1110番地1号<br>代表電話: 0269-62-3111<br>FAX: 0269-62-5990<br><strong>市民環境課 生活環境係</strong><br>課代表電話: 0269-67-0726 / FAX: 0269-62-3127<br>環境保全、環境美化、ごみ処理、公害防止、自然保護、墓地管理などを担当します。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/" target="_blank" rel="noopener">組織一覧</a><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/" target="_blank" rel="noopener">生活環境係</a></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・大型ごみ</h3><p>引越し、大掃除などで一時的に多量に出るごみや、ごみステーションで収集できない粗大ごみ等は、エコパーク寒川へ直接持ち込んで処分できる案内があります。粗大ごみは有料です。畳、自転車、ストーブ、温風ヒーター、家具類、スキー、こたつ、ステレオ、掃除機、スノーダンプなどは粗大ごみとして例示されています。布団、じゅうたん、カーペット、木製家具などの可燃性粗大ごみは扱いを分けて確認します。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/gominodasikata/gominowakekatadasikata.htm" target="_blank" rel="noopener">ごみの分け方・出し方</a><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/gominodasikata/calendar" target="_blank" rel="noopener">ごみ・資源物収集カレンダー</a></div>
+    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>エコパーク寒川</strong><br>所在地: 飯山市大字照岡2600番地1（岡山地区・藤沢）<br>電話: 0269-69-1085<br>搬入時間: 月〜金 9:00〜12:00、13:00〜16:30<br>休日: 土曜、日曜、祝日（振替休日を含む）、お盆、年末年始<br>粗大ごみの処理料金は10kgにつき520円です。ごみステーションで収集できるごみは料金欄が「—」とされています。資源物は持ち込めないため、収集・資源物回収ステーションと分けます。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/gominodasikata/clean.c.htm" target="_blank" rel="noopener">エコパーク寒川の利用</a></div>
+    <div class="manual-admin-card"><h3>家電4品目・処理困難物</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・乾燥機、エアコン、パソコンは、リサイクル方法が定められているためエコパーク寒川へ持ち込めない案内があります。古タイヤ、農業用マルチ・ビニールシート、農業用機器、薬品、ガスボンベ、消火器、農薬、大型家具・大型電気製品、スプリング類、がれき類、バイク、バッテリーなども通常ごみと分けます。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/recycle/kaden_4hinmoku" target="_blank" rel="noopener">家電4品目の出し方</a><a href="https://www.city.iiyama.nagano.jp/soshiki/shiminkankyou/seikatukankyou/recycle/PCrecycle" target="_blank" rel="noopener">家庭用パソコンの出し方</a></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p><strong>保健福祉課 高齢者介護保険係</strong><br>課代表電話: 0269-67-0727<br><strong>地域包括支援センター</strong><br>課代表電話: 0269-67-0728<br>地域包括支援センターは、介護予防、総合相談、高齢者の権利擁護、集落サロン、高齢者自立支援などを担当します。施設入居前の生前整理や、ごみ出しが難しい世帯では、福祉側の相談と業者の屋内搬出を分けて考えます。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/hokenfukushi/kaigo/" target="_blank" rel="noopener">高齢者介護保険係</a><a href="https://www.city.iiyama.nagano.jp/soshiki/tiiki/" target="_blank" rel="noopener">地域包括支援センター</a></div>
+    <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p><strong>移住定住推進課 空き家対策係</strong><br>課代表電話: 0269-67-0740<br>空き家対策係では、空き家対策を担当します。公式ページには、飯山市の空き家バンク情報、空家の適正管理、住まいの終活ノート、空き家バンク物件の不要家財処分に関する補助案内などが掲載されています。売却・解体・管理の前に、家財、権利書、保険証券、仏壇・写真の扱いを分けます。</p><a href="https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/54286/" target="_blank" rel="noopener">空き家対策係</a><a href="https://www.city.iiyama.nagano.jp/soshiki/ijyuteijyusuisinka/54286/news/akiya_katsuyo" target="_blank" rel="noopener">不要家財の処分補助</a></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>飯山駅周辺、市街地の集合住宅、木島・常盤・瑞穂方面の戸建て、岡山地区や山沿いの空き家では、家庭ごみ、粗大ごみ、屋外保管品、農業用品、屋内搬出が必要な家財を分けて見積もりに出します。</p><ul class="manual-admin-list"><li>行政: 分別、収集カレンダー、エコパーク寒川自己搬入、家電4品目・パソコンの別処理、福祉・空き家制度の相談</li><li>業者: 室内搬出、大型家具の階段作業、庭・物置、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、作業後写真報告</li></ul></div>
   </div>
 </section>
 
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">飯山市に反映した長野県調査データ</h2>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">飯山市で整理前に確認したい行政・地域データ</h2>
     <p class="lead">飯山市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に飯山市公式サイトで最新条件を確認してください。</p>
     <div class="nagano-report-grid">
       <div class="nagano-report-card"><b>処理圏</b><span>岳北地域。中野市・飯山市の指定処理施設など</span></div>
@@ -2188,7 +2256,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>収集カレンダー、ごみの分け方・出し方、エコパーク寒川、家電4品目、処理困難物を飯山市の案内で確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -2219,10 +2287,16 @@
         <div class="ward-links"><a href="/nagano/yamanouchi/">山ノ内町</a><a href="/nagano/nakano/">中野市</a><a href="/nagano/kijimadaira/">木島平村</a><a href="/nagano/sakae/">栄村</a></div>
       </section>
 
-<section id="contact" class="cta-band">
+<section id="contact" class="contact-check-card">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>飯山市の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>飯山市では、雪の時期、エコパーク寒川への自己搬入、庭・物置、空き家バンクや家財処分補助の確認が見積もりに影響します。行政で出すもの、家族で残すもの、専門業者に任せるものを分けておくと、作業範囲を決めやすくなります。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、搬出経路、除雪状況、駐車位置を写真で共有する</li>
+          <li>エコパーク寒川へ持ち込むもの、行政収集に出すもの、屋内搬出が必要なものを分ける</li>
+          <li>通帳、印鑑、権利書、保険証券、写真、貴金属、仏壇の扱いを決める</li>
+          <li>空き家バンク、不要家財処分補助、施設入居前の福祉相談を先に確認する</li>
+        </ul>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
@@ -2647,6 +2721,3 @@
 <footer class="footer"><div class="footer-inner">飯山市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-

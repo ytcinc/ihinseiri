@@ -1283,18 +1283,23 @@
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
     .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-card,.manual-admin-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+    .manual-admin-card a{display:inline-flex;margin:6px 8px 0 0;padding:8px 12px;background:#fff7ed;border:1px solid #e7c7a7;color:#8c3d00;text-decoration:none;font-weight:800;font-size:14px}
+    .manual-admin-list{margin:8px 0 0;padding-left:1.2em;color:#4c4439;line-height:1.85}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{margin-top:38px;padding:24px;background:#fff;border:1px solid #eadfd0;border-left:6px solid #d05300;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2b2b2b}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#2b2b2b}
+    #contact.contact-check-card p{color:#4c4439;line-height:1.85}
+    .contact-check-list{margin:14px 0 18px;padding-left:1.2em;line-height:1.85;color:#4c4439}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1699,52 @@
 </style>
 
 
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1721,6 +1772,25 @@
         </div>
       </div>
       <div class="hero-panel"><h2>山ノ内町で特に多い相談</h2><ul class="quick-list"><li>山ノ内町の別荘・二地域居住の家財、鍵預かり、管理会社連絡まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="山ノ内町の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>山ノ内町は旅館・民宿・温泉街の残置物整理まで想定します</h2>
+    <div class="local-landmark-prose">
+      <p>山ノ内町は湯田中渋温泉郷、志賀高原、夜間瀬方面を抱える観光地で、一般住宅だけでなく、旅館、民宿、ペンション、宿泊施設併用住宅の片付け相談が出やすい地域です。</p>
+      <p>温泉街では道路が細く、車両の停車位置や搬出時間に配慮が必要です。集合住宅や宿泊施設に近い建物では、共用部や通行人への配慮、近隣への声かけも重要になります。</p>
+      <p>廃業した宿泊施設や元民宿では、大量の布団、食器、客室家具、業務用厨房機器、備品が残っていることがあります。家庭ごみとは量も種類も違うため、一般ごみ、専門処分、買取可能品を分けた見積もりが必要です。</p>
+      <p>地獄谷野猿公苑、志賀高原、渋温泉、湯田中温泉周辺では観光客が多い時間帯や冬季道路を考えて日程を組みます。鍵預かりや写真報告で進める場合は、電気水道の状態も確認します。</p>
     </div>
   </section>
 
@@ -2083,16 +2153,7 @@
           <h3>山ノ内町で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅が県平均より大きい</td><td>空き家化、相続後の実家じまい、長期間未使用の家財整理。</td><td>売却・解体予定、管理状態、庭・物置・納屋の範囲。</td></tr><tr><td>人口密度が低め</td><td>山間部、集落部、広い敷地、車両進入に制限がある整理。</td><td>現地までの道路、車両進入可否、庭・物置・納屋の写真。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>山ノ内町で最初にそろえる確認材料</h3>
-          <p>山ノ内町では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>山間部・広い敷地の進入経路を確認</b><span>道幅、坂道、車両進入、庭・物置・納屋まで作業範囲に入るかを見ます。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>空き家化前後の出口を決める</b><span>売却、解体、空き家管理、相続手続きのどれに進むかで、残す品と処分範囲が変わります。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+        <div class="regional-original">
           <h3>山ノ内町ならではの整理メモ</h3>
           <p class="regional-lead">山ノ内町は北信地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,37 +2206,101 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">山ノ内町の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>山ノ内町で確認したい自治体情報</h2>
-    <p>山ノ内町で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、山ノ内町公式サイトで最新情報を確認してください。</p>
+    <h2>山ノ内町の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>山ノ内町で整理を進める前に、集積所へ出す家庭ごみ、年2回の粗大ごみ、北信保健衛生施設組合への直接搬入、専門業者が屋内から搬出する家財を分けます。湯田中渋温泉郷、志賀高原、北志賀高原、夜間瀬方面では、家庭ごみと旅館・事業用品、冬季道路、坂道、駐車位置を先に整理すると見積もりが安定します。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>山ノ内町役場</strong><br>代表電話: 0269-33-3111<br>所在地: 〒381-0498 下高井郡山ノ内町大字平穏3352-1<br>FAX: 0269-33-4527</p><a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">山ノ内町公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>山ノ内町公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>北信地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>山ノ内町で特に確認したいこと</h3><p>温泉地・山手住宅・旅館併用建物では、家庭用品と事業用品、搬出時間、駐車位置を分けて確認します。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card">
+      <h3>行政で先に確認</h3>
+      <p>山ノ内町は家庭ごみを可燃ごみ、プラスチック製容器包装、埋立てごみ、資源ごみ、有害ごみ、粗大ごみに分けます。収集日、分別冊子、粗大ごみチラシ、家電リサイクル対象品、パソコン・小型家電の扱いを住民税務課の案内で確認します。</p>
+    </div>
+    <div class="admin-deep-card">
+      <h3>業者見積もりで確認</h3>
+      <p>タンス、ソファー、ベッド、スプリング入りマットレス、スキー用品、温泉地の備品、物置・庭まわりは、屋内搬出、階段作業、車両進入、冬季道路、事業用品との混在を写真で共有します。</p>
+    </div>
+    <div class="admin-deep-card">
+      <h3>福祉・空き家相談</h3>
+      <p>高齢者世帯や施設入居前は健康福祉課、介護保険係・介護支援係、地域包括支援センターを確認します。空き家活用、移住定住、住まいの相談は未来創造課の移住国際交流係が入口になります。</p>
+    </div>
+    <div class="admin-deep-card">
+      <h3>確認に使う公式ページ</h3>
+      <p>山ノ内町公式サイト、各課の業務とお問い合わせ先、ごみの出し方、ごみの詳しい分別と収集、パソコンや小型家電の宅配便回収、高齢者・介護、引越し・住まいを確認します。</p>
+    </div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card">
+      <h3>自治体・関連窓口</h3>
+      <p><strong>山ノ内町役場</strong><br>所在地: 〒381-0498 長野県下高井郡山ノ内町大字平穏3352-1<br>代表電話: 0269-33-3111<br>FAX: 0269-33-4527</p>
+      <p>ごみ・廃棄物処理は住民税務課 住民環境係で確認します。各課の業務ページでは、住民税務課の電話番号として0269-33-3118が掲載されています。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">山ノ内町公式サイト</a>
+      <a href="https://www.town.yamanouchi.nagano.jp/gyosei_joho/yakusho_madoguchi/3432.html" target="_blank" rel="noopener">各課の業務とお問い合わせ先</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>粗大ごみ・大型ごみ</h3>
+      <p>山ノ内町の粗大ごみは有料で、タンス、ソファー、机、自転車、電子レンジ、ストーブ、炊飯器、扇風機、健康器具、ミシン、こたつ、ベッド、タイヤなどが例示されています。収集は年2回、例年7月・11月に指定場所へ出す案内です。</p>
+      <p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、パソコン、携帯電話機、産業廃棄物は粗大ごみ収集の対象外として分けます。屋内からの運び出し、2階からの階段作業、雪道の搬出は業者作業として見積もりに入れます。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/1234.html" target="_blank" rel="noopener">ごみの出し方</a>
+      <a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/1235.html" target="_blank" rel="noopener">ごみの詳しい分別と収集</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>持ち込み・自己搬入</h3>
+      <p>引っ越しなどで出た多量のごみは、北信保健衛生施設組合へ直接搬入する導線が案内されています。可燃ごみと粗大ごみは10kgにつき180円、金属ごみは10kgにつき45円の手数料が掲載されています。</p>
+      <p>対象物として、指定袋に入らないもの、畳、木製家具、金属製粗大ごみなどが示されています。搬入前に分別、発生場所、家庭ごみか事業系に近い残置物かを分け、温泉地・旅館併用建物の備品は通常の家庭ごみと混ぜないよう確認します。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/1234.html" target="_blank" rel="noopener">多量ごみ・直接搬入を確認</a>
+      <a href="https://hokushin-eisei.jp/shisetsu.php" target="_blank" rel="noopener">北信保健衛生施設組合</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>家電4品目・処理困難物</h3>
+      <p>家電リサイクル法対象品のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は町の粗大ごみ収集へ出せません。パソコン、携帯電話機、産業廃棄物も対象外として分けます。</p>
+      <p>有害ごみは使用済乾電池、蛍光管、白熱電球、鏡、水銀使用体温計、コイン電池、ボタン電池、小型充電式電池などが案内されています。電池類は絶縁が必要なため、片付け前に別箱へ分けてください。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/2302.html" target="_blank" rel="noopener">パソコン・小型家電の宅配便回収</a>
+      <a href="https://www.rkc.aeha.or.jp/" target="_blank" rel="noopener">家電リサイクル券センター</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>福祉・高齢者相談</h3>
+      <p><strong>健康福祉課</strong>: 0269-33-3116<br><strong>介護保険係・介護支援係</strong>: 0269-33-8411</p>
+      <p>介護支援係は地域包括支援センターとして、介護予防事業、予防ケアプラン作成、認知症等相談、虐待相談などを担当します。高齢者だけの世帯、施設入居前、ごみ出しが難しい世帯は、整理作業と福祉相談を分けて進めます。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/life_scene/korei_kaigo/index.html" target="_blank" rel="noopener">高齢者・介護</a>
+      <a href="https://www.town.yamanouchi.nagano.jp/life_scene/korei_kaigo/1577.html" target="_blank" rel="noopener">お問い合わせ・ご相談窓口</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>空き家・住まい相談</h3>
+      <p><strong>未来創造課</strong>: 0269-33-3113<br>移住国際交流係は、移住定住の促進、空き家等の有効活用、国際交流などを担当します。</p>
+      <p>山ノ内町の実家じまいでは、売却、賃貸、空き家活用、解体、草木管理、冬季の管理を家財整理と同時に考えます。契約前に空き家活用の窓口を確認し、権利書、保険証券、通帳、写真、仏壇を処分前に分けます。</p>
+      <a href="https://www.town.yamanouchi.nagano.jp/life_scene/hikkoshi/index.html" target="_blank" rel="noopener">引越し・住まい</a>
+      <a href="https://www.town.yamanouchi.nagano.jp/gyosei_joho/yakusho_madoguchi/3432.html" target="_blank" rel="noopener">未来創造課の業務</a>
+    </div>
+    <div class="manual-admin-card">
+      <h3>行政でできること・業者に任せること</h3>
+      <p>湯田中駅周辺、渋温泉、平穏、佐野、夜間瀬、志賀高原、北志賀高原方面では、集合住宅、温泉地の住宅、山手戸建て、旅館併用建物、冬季閉鎖に近い住まいで確認点が変わります。</p>
+      <ul class="manual-admin-list">
+        <li>行政: 分別、収集日、指定場所、粗大ごみ、直接搬入、家電4品目、高齢者・介護、空き家活用の相談</li>
+        <li>業者: 室内搬出、大型家具の階段作業、庭・物置、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、写真報告</li>
+        <li>見積もり前: 冬季道路、除雪状況、車両進入、旅館・事業用品の混在、返送品、立会い可否を先に共有</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">山ノ内町に反映した長野県調査データ</h2>
-    <p class="lead">山ノ内町で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に山ノ内町公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">山ノ内町でごみ処理・空き家整理を分けて考えるポイント</h2>
+    <p class="lead">山ノ内町は温泉地、山手住宅、観光施設に近い住まい、冬季道路の影響を受けるエリアが混在します。家庭ごみとして出せるもの、粗大ごみ・直接搬入で確認するもの、屋内搬出や事業用品混在として業者に任せるものを分けます。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>岳北地域。中野市・飯山市の指定処理施設など</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">山ノ内町公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>分別</b><span>可燃ごみ、プラスチック製容器包装、埋立てごみ、資源ごみ、有害ごみ、粗大ごみに分けて確認します。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>年2回、例年7月・11月に指定場所へ出す案内。家電4品目・パソコン・産業廃棄物は対象外です。</span></div>
+      <div class="nagano-report-card"><b>直接搬入</b><span>多量ごみは北信保健衛生施設組合への直接搬入を確認。可燃・粗大は10kg180円、金属ごみは10kg45円。</span></div>
+      <div class="nagano-report-card"><b>地域特性</b><span>湯田中渋温泉郷、志賀高原、夜間瀬方面では冬季道路、坂道、事業用品混在、駐車位置を先に見ます。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</td></tr>
-      <tr><th>見積もり前</th><td>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.town.yamanouchi.nagano.jp/" target="_blank" rel="noopener">山ノ内町公式サイト</a></td></tr>
+      <tr><th>行政で見ること</th><td>ごみカレンダー、分別冊子、粗大ごみチラシ、有害ごみ、パソコン・小型家電の宅配便回収、家電リサイクル対象品を確認します。</td></tr>
+      <tr><th>費用に影響すること</th><td>屋内搬出、2階作業、冬季の除雪、坂道、車両進入、旅館・事業用品に近い残置物、スプリング入りマットレスやタイヤの扱いを分けます。</td></tr>
+      <tr><th>見積もり前</th><td>部屋全体、収納、玄関、階段、駐車位置、除雪状況、庭・物置・仏壇の写真を用意し、残す品・探す書類・返送品を先に共有します。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/1234.html" target="_blank" rel="noopener">ごみの出し方</a> / <a href="https://www.town.yamanouchi.nagano.jp/kurashi/gomi/1235.html" target="_blank" rel="noopener">ごみの詳しい分別と収集</a> / <a href="https://www.town.yamanouchi.nagano.jp/gyosei_joho/yakusho_madoguchi/3432.html" target="_blank" rel="noopener">各課の業務とお問い合わせ先</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">電話番号、手数料、収集対象、直接搬入の条件は変更される場合があります。申込み前に山ノ内町と受付先で確認してください。</p>
   </div>
 </section>
 
@@ -2188,7 +2313,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>可燃・資源・埋立・有害・粗大の分別、年2回の粗大ごみ、北信保健衛生施設組合への直接搬入、家電4品目を分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -2219,10 +2344,16 @@
         <div class="ward-links"><a href="/nagano/kijimadaira/">木島平村</a><a href="/nagano/iiyama/">飯山市</a><a href="/nagano/nozawaonsen/">野沢温泉村</a><a href="/nagano/nakano/">中野市</a></div>
       </section>
 
-<section id="contact" class="cta-band">
+<section id="contact" class="contact-check-card">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>山ノ内町の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>山ノ内町では、温泉地・山手住宅・旅館併用建物・冬季道路・坂道で搬出条件が変わります。行政で出せるごみ、直接搬入する多量ごみ、屋内搬出を任せる家財を先に分けてください。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、搬出経路、冬季道路、除雪状況、駐車位置を写真で共有する。</li>
+          <li>可燃・資源・埋立・有害・粗大、直接搬入、家電4品目、パソコンを分ける。</li>
+          <li>通帳、印鑑、権利書、保険証券、写真、貴金属、返送品を処分前に別箱へ分ける。</li>
+          <li>高齢者・介護、空き家活用、売却・解体予定、鍵預かり、写真報告の希望を先に決める。</li>
+        </ul>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
@@ -2647,6 +2778,3 @@
 <footer class="footer"><div class="footer-inner">山ノ内町の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-

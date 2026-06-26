@@ -847,6 +847,333 @@
 </style>
 
 
+
+<style id="hiroshima-municipal-depth-style">
+  html body .hiroshima-municipal-depth {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 12px 28px rgba(34,28,22,.06) !important;
+    margin-top: 24px !important;
+    padding: 28px !important;
+  }
+  html body .hiroshima-municipal-depth .lead {
+    max-width: 880px !important;
+    color: #414743 !important;
+    font-size: 18px !important;
+    line-height: 1.95 !important;
+  }
+  html body .hiroshima-depth-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+    margin: 20px 0 !important;
+  }
+  html body .hiroshima-depth-card {
+    background: linear-gradient(180deg, #fff 0%, #fff8ef 100%) !important;
+    border: 1px solid #eadfd0 !important;
+    border-top: 5px solid #d05300 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-depth-card:nth-child(2) {
+    background: linear-gradient(180deg, #fff 0%, #f1f7fb 100%) !important;
+    border-top-color: #4378a8 !important;
+  }
+  html body .hiroshima-depth-card:nth-child(3) {
+    background: linear-gradient(180deg, #fff 0%, #f1faf5 100%) !important;
+    border-top-color: #2f6f63 !important;
+  }
+  html body .hiroshima-depth-card b {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #2f312d !important;
+    font-size: 17px !important;
+    line-height: 1.45 !important;
+  }
+  html body .hiroshima-depth-card span {
+    display: block !important;
+    color: #555f59 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+  }
+  html body .hiroshima-municipal-depth table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 16px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-municipal-depth th,
+  html body .hiroshima-municipal-depth td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-municipal-depth th {
+    background: #fff3e8 !important;
+    color: #7b3700 !important;
+    font-weight: 900 !important;
+  }
+  html body .hiroshima-depth-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #d05300 !important;
+    background: #fffaf5 !important;
+    color: #4f5f55 !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+  @media (max-width: 820px) {
+    html body .hiroshima-depth-grid { grid-template-columns: 1fr !important; }
+    html body .hiroshima-municipal-depth { padding: 20px !important; }
+  }
+</style>
+
+
+<style id="hiroshima-admin-depth-style">
+  html body .hiroshima-admin-depth .admin-card h3 {
+    color: #2f312d !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+  html body .hiroshima-admin-depth .admin-card p {
+    color: #414743 !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-depth .admin-card strong {
+    color: #8c3d00 !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table th,
+  html body .hiroshima-admin-depth .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-depth .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7b3700 !important;
+    font-weight: 900 !important;
+  }
+  html body .hiroshima-admin-depth .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    background: #fffaf5 !important;
+    border-left: 5px solid #d05300 !important;
+    color: #4f5f55 !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-strict-admin-style">
+  html body .hiroshima-strict-admin {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-strict-admin .lead {
+    color: #3f463f !important;
+    font-size: 17px !important;
+    line-height: 1.9 !important;
+  }
+  html body .hiroshima-strict-admin .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-strict-admin .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-strict-admin .admin-card p {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-strict-admin .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-strict-admin .admin-card a {
+    display: inline-flex !important;
+    margin-top: 10px !important;
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table th,
+  html body .hiroshima-strict-admin .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-strict-admin .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+  }
+  html body .hiroshima-strict-admin .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-admin-utf8-style">
+  html body .hiroshima-admin-utf8 {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-admin-utf8 .lead,
+  html body .hiroshima-admin-utf8 .admin-card p,
+  html body .hiroshima-admin-utf8 .admin-detail-table td {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-card a {
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table th,
+  html body .hiroshima-admin-utf8 .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+    font-size: 16px !important;
+  }
+  html body .hiroshima-admin-utf8 .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
+
+<style id="hiroshima-admin-strict-style">
+  html body .hiroshima-admin-strict {
+    background: #fff !important;
+    border: 1px solid #eadfd0 !important;
+    border-radius: 8px !important;
+    padding: clamp(24px, 4vw, 42px) !important;
+  }
+  html body .hiroshima-admin-strict .lead,
+  html body .hiroshima-admin-strict .admin-card p,
+  html body .hiroshima-admin-strict .admin-detail-table td {
+    color: #3f463f !important;
+    font-size: 16px !important;
+    line-height: 1.85 !important;
+  }
+  html body .hiroshima-admin-strict .admin-card {
+    background: #fffaf5 !important;
+    border: 1px solid #ead8c5 !important;
+    border-radius: 8px !important;
+    padding: 18px !important;
+  }
+  html body .hiroshima-admin-strict .admin-card h3 {
+    color: #7a3500 !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+  html body .hiroshima-admin-strict .admin-card strong {
+    color: #1f3d4a !important;
+  }
+  html body .hiroshima-admin-strict .admin-card a {
+    color: #9a3e00 !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 3px !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 18px !important;
+    background: #fff !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table th,
+  html body .hiroshima-admin-strict .admin-detail-table td {
+    border: 1px solid #eadfd0 !important;
+    padding: 14px !important;
+    vertical-align: top !important;
+  }
+  html body .hiroshima-admin-strict .admin-detail-table th {
+    background: #fff3e8 !important;
+    color: #7a3500 !important;
+    font-size: 16px !important;
+  }
+  html body .hiroshima-admin-strict .admin-note {
+    margin-top: 16px !important;
+    padding: 14px 16px !important;
+    border-left: 5px solid #c85400 !important;
+    background: #fff !important;
+    color: #48524b !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -1264,20 +1591,110 @@
         </div>
       </section>
 
-      <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">庄原市の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>庄原市で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>庄原市役所</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.shobara.hiroshima.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>庄原市のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.shobara.hiroshima.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.city.shobara.hiroshima.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.city.shobara.hiroshima.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.city.shobara.hiroshima.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/hiroshima/" target="_blank" rel="noopener">広島県ページへ戻る</a></div>
+
+
+<section id="hiroshima-local-depth" class="hiroshima-municipal-depth">
+  <p class="eyebrow">地域別の整理ポイント</p>
+  <h2 class="section-title">庄原市で見積もり前に見る搬出条件・ごみ確認・相談パターン</h2>
+  <p class="lead">庄原市は広い敷地、山間部の空き家、納屋・蔵・農具、冬季道路が見積もりの中心になります。母屋だけでなく、屋外や別棟まで含めて整理範囲を決めます。</p>
+  <div class="hiroshima-depth-grid">
+    <div class="hiroshima-depth-card"><b>広い敷地</b><span>母屋、納屋、蔵、車庫、庭を分けて写真で共有します。</span></div>
+    <div class="hiroshima-depth-card"><b>冬季道路</b><span>積雪・凍結で作業日や車両が変わるため、候補日を早めに決めます。</span></div>
+    <div class="hiroshima-depth-card"><b>農具・大型品</b><span>農機具、工具、木材、タイヤ、古い家電は通常家財と分けます。</span></div>
   </div>
-  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <table>
+    <thead><tr><th>庄原市で起きやすい場所・状況</th><th>相談内容の傾向</th><th>見積もり前に伝えること</th></tr></thead>
+    <tbody>
+        <tr><td>山間部住宅</td><td>空き家、広い敷地、車両進入が重要。</td><td>道路幅、除雪、駐車位置、玄関までの距離。</td></tr>
+        <tr><td>納屋・蔵</td><td>農具、古い家具、屋外品が多い。</td><td>母屋と別棟の範囲、処分品・残す品。</td></tr>
+        <tr><td>遠方家族</td><td>立会いが難しい実家じまい。</td><td>鍵預かり、写真報告、探索品、返送品。</td></tr>
+    </tbody>
+  </table>
+  <p class="hiroshima-depth-note">庄原市では、少量ごみ、粗大ごみ、自己搬入、福祉支援、空き家相談を分けて確認します。下の行政窓口欄で、自治体収集で済むものと、屋内搬出・大量家財・供養・買取査定として業者に任せるものを切り分けてください。</p>
 </section>
+
+
+
+<section id="shobara-original-guide" class="hiroshima-municipal-depth">
+  <p class="eyebrow">庄原市ならでは</p>
+  <h2 class="section-title">庄原市で実家じまいが長引きやすい理由と、先に決めること</h2>
+  <p class="lead">庄原市は、母屋だけでなく納屋、蔵、車庫、庭、農具、山手の空き家まで整理範囲が広がりやすい地域です。市街地の退去前整理とは違い、現地確認、車両導線、季節条件、屋外残置物を早めに分けるほど、見積もりと作業日程が安定します。</p>
+  <div class="hiroshima-depth-grid">
+    <div class="hiroshima-depth-card"><b>母屋だけで終わらない</b><span>押入れ、仏壇、婚礼家具に加えて、納屋・蔵・車庫・庭の残置物まで確認します。作業範囲を「母屋」「屋外」「別棟」で分けると判断しやすくなります。</span></div>
+    <div class="hiroshima-depth-card"><b>冬季道路で日程が変わる</b><span>積雪、凍結、山手の道路、軽トラックの進入可否で候補日が変わります。冬前、売却前、解体前のどこで片付けるかを先に決めます。</span></div>
+    <div class="hiroshima-depth-card"><b>農具・大型品を別枠にする</b><span>農具、工具、木材、タイヤ、古い家電、金属類は通常の家財と分けて写真を撮ります。買取・処分・残す品の判断も分けやすくなります。</span></div>
+  </div>
+  <table>
+    <thead><tr><th>庄原市で多い相談</th><th>放置すると起きやすいこと</th><th>相談前に決めること</th></tr></thead>
+    <tbody>
+      <tr><td>県外に住む家族が、空き家になった実家を整理したい</td><td>鍵、現地確認、写真報告、返送品の判断が後回しになり、何度も往復が必要になる。</td><td>鍵の受け渡し方法、探す書類、残す写真、返送先、立会い可否を決める。</td></tr>
+      <tr><td>納屋・蔵・車庫まで物が多い</td><td>母屋だけの見積もりでは足りず、追加作業、車両追加、作業日延長になりやすい。</td><td>母屋、納屋、蔵、庭、車庫を分けて写真を撮り、整理範囲を線引きする。</td></tr>
+      <tr><td>冬前・解体前・売却前に片付けたい</td><td>積雪や凍結、解体日、売却予定が重なると候補日が少なくなる。</td><td>希望完了日、車両進入、除雪状況、前面道路、近隣連絡の有無を確認する。</td></tr>
+      <tr><td>仏壇・写真・権利書を処分前に探したい</td><td>家財と一緒に重要書類や形見分け品を処分してしまう不安が残る。</td><td>通帳、印鑑、権利書、保険証券、写真、位牌、貴金属を探索リストにする。</td></tr>
+    </tbody>
+  </table>
+  <p class="hiroshima-depth-note">庄原市ページでは、料金目安を見る前に「母屋だけか、納屋・蔵・庭まで含むか」「冬前に終える必要があるか」「探す書類や形見分け品があるか」を決めると、家族だけで抱え込む範囲と専門業者に任せる範囲を分けやすくなります。</p>
+</section>
+
+
+<section id="admin" class="admin-hotline-section hiroshima-admin-strict">
+  <p class="section-kicker">行政・ごみ処理の確認先</p>
+  <h2 class="section-title">庄原市の行政窓口・粗大ごみ・大型ごみ・自己搬入</h2>
+  <p class="lead">庄原市で遺品整理・生前整理を進める前に、自治体収集で出せるもの、自己搬入で確認するもの、屋内搬出や大量家財として業者に任せるものを分けます。ここでは自治体ページで確認できる代表窓口、担当ページ、関連制度への導線だけを整理します。</p>
+  <div class="grid cols2 admin-hotline-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>庄原市役所</strong><br>代表: 0824-73-1111<br>所在地: 〒727-8501 広島県庄原市中本町一丁目10-1。環境政策課は環境政策係・施設管理係ともに0824-74-6253、備北クリーンセンターは0824-72-2044です。東城地域の持込は東城ストックヤード（08477-2-0214）も確認します。</p><a href="https://www.city.shobara.hiroshima.jp/main/life/waste/post_500.html" target="_blank" rel="noopener">ごみの持ち込み</a></div>
+    <div class="admin-card"><h3>分別・収集日</h3><p>庄原市は13種類のごみ分別です。「家庭ごみの正しい出し方」「ごみの分け方ガイド」と、品名で検索できる分別辞典サイト「ごみサク」で確認します。燃えるごみは50cm四方以下、木くずなどは直径5cm以内、スプレー缶は使い切って穴をあけるなど、袋詰め前にサイズと危険物を分けてください。家電リサイクル法対象はエアコン、テレビ、洗濯機、衣類乾燥機、冷蔵庫、冷凍庫です。</p><a href="https://www.city.shobara.hiroshima.jp/main/life/waste/post_502.html" target="_blank" rel="noopener">ごみの分別</a></div>
+    <div class="admin-card"><h3>粗大ごみ・大型家具</h3><p>粗大ごみは地域のごみ集積所では収集されません。毎月1回の戸別収集を利用する場合は、環境政策課（リサイクルプラザ）または各支所へ、氏名、住所、電話番号、ごみの種類、個数、自宅周辺の道路状況を伝えて申し込みます。申込期限は収集月の10日までで、20日以降の平日に日程調整して収集。収集当日は立会いが必要で、粗大ごみは軒先まで出します。手数料は収集手数料が粗大ごみ3点ごとに520円、処理手数料が10kgまでごとに60円です。</p><a href="https://www.city.shobara.hiroshima.jp/main/life/waste/post_501.html" target="_blank" rel="noopener">ごみの収集</a></div>
+    <div class="admin-card"><h3>自己搬入・処理施設</h3><p><strong>リサイクルプラザ</strong>（庄原市是松町20-25、0824-74-6253）は燃えるごみ以外、月曜から金曜と第2・第4日曜の9時から15時まで受入、12時から13時は持込不可です。<strong>備北クリーンセンター</strong>（庄原市一木町5263-5、0824-72-2044）は燃えるごみ、同じ曜日で9時から16時まで受入。<strong>東城ストックヤード</strong>（庄原市東城町久代6671-2、08477-2-0214）は東城地域向けで9時から16時まで受入です。家庭ごみは指定袋なら無料、粗大ごみ・指定袋に入らない大きなごみは10kgあたり60円が目安です。</p><a href="https://www.city.shobara.hiroshima.jp/main/life/waste/post_500.html" target="_blank" rel="noopener">ごみの持ち込み</a></div>
+    <div class="admin-card"><h3>福祉・高齢者支援</h3><p>庄原市地域包括支援センターは本庁・高齢者福祉課内、電話0824-73-1165です。西城0824-82-2202、東城08477-2-5131、口和0824-87-2112、高野0824-86-2115、比和0824-85-3001、総領0824-88-3063のサブセンターもあります。在宅生活支援では、食の自立支援、寝具類乾燥消毒、高齢者世帯等雪下ろし・生活道除雪支援補助金、よろず相談365などが掲載されています。</p><a href="https://www.city.shobara.hiroshima.jp/main/health/koreisha/cat04/post_2014.html" target="_blank" rel="noopener">地域包括支援センター</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>庄原市の空き家・実家じまいでは、定住カテゴリの空き家バンク、すまいカテゴリの空き家家財道具等処分支援補助金、老朽危険建築物除却促進事業補助金、住宅リフォーム支援事業補助金を確認します。家財処分、解体、売却、草木管理を同じ作業にせず、補助申請の前後関係と、残す書類・写真・仏壇の扱いを先に分けます。</p><a href="https://www.city.shobara.hiroshima.jp/main/life/" target="_blank" rel="noopener">くらし・環境</a></div>
+  </div>
+  <table class="admin-detail-table">
+    <thead><tr><th>確認項目</th><th>庄原市で見ること</th><th>業者へ伝えること</th></tr></thead>
+    <tbody>
+      <tr><td>自治体で出せるもの</td><td>13種類分別、午前8時までの集積所排出、粗大ごみ戸別収集、リサイクルプラザ、備北クリーンセンター、東城ストックヤード、家電リサイクル法対象品目。</td><td>袋詰め済みか、戸別収集申込済みか、施設持込か、屋内搬出・納屋・蔵・農具・大量家財として業者に任せる品目か。</td></tr>
+      <tr><td>業者作業になるもの</td><td>屋内搬出、大型家具、大量家財、仏壇・写真の供養、買取査定、遠方家族への写真報告。</td><td>階数、玄関幅、駐車位置、搬出距離、残す品、探す書類、返送品。</td></tr>
+      <tr><td>地域特有の注意点</td><td>部屋全体、収納、駐車位置、車両進入、庭・納屋・仏壇の写真をまとめて共有します。</td><td>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置の写真。</td></tr>
+    </tbody>
+  </table>
+  <p class="admin-note">制度、受付時間、対象品目、料金は年度や品目で変わることがあります。上記リンク先の自治体情報を確認し、自治体で出すものと業者に任せるものを分けてから見積もりに進んでください。</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <section class="major-seo-local" id="major-local-guide">
@@ -1288,7 +1705,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 建物と搬出条件</b><span>住所、建物種別、階数、エレベーター、前面道路、駐車位置を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を分別・持ち込み情報で確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -1768,7 +2185,6 @@
 <footer class="footer"><div class="footer-inner">庄原市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
 
 
 

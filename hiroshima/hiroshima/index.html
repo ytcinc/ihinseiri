@@ -913,7 +913,7 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">広島市で失敗しないための地域特化チェック</h2>
-  <p class="lead">広島市の区ページでは、同じ市単位の大型ごみ・粗大ごみ受付情報を確認します。公式確認が必要な電話番号や受付時間は推測で掲載しません。</p>
+  <p class="lead">広島市の区ページでは、市単位の大型ごみ・自己搬入情報と、区ごとの搬出条件を分けて確認します。大型ごみ受付、自己搬入、区役所窓口、管理会社対応を先に見ます。</p>
   <div class="grid cols3">
     <div class="card"><h3>建物条件を先に分ける</h3><p>沿岸部や島しょ部では、屋外品の劣化、港や移動日程、鍵預かり、写真報告の流れを先に決めます。</p></div>
     <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、広島市の作業範囲を判断しやすくなります。</p></div>
@@ -923,20 +923,44 @@
 </section>
     <section id="wards"><p class="eyebrow">広島市8区</p><h2 class="section-title">区別ページから探す</h2><p>政令指定都市の区は <code>/hiroshima/hiroshima/{区slug}/</code> にネストし、パンくずも「TOP › 広島県 › 広島市 › 区」で統一しています。</p><div class="ward-links"><a href="/hiroshima/hiroshima/naka/">中区</a><a href="/hiroshima/hiroshima/higashi/">東区</a><a href="/hiroshima/hiroshima/minami/">南区</a><a href="/hiroshima/hiroshima/nishi/">西区</a><a href="/hiroshima/hiroshima/asaminami/">安佐南区</a><a href="/hiroshima/hiroshima/asakita/">安佐北区</a><a href="/hiroshima/hiroshima/aki/">安芸区</a><a href="/hiroshima/hiroshima/saeki/">佐伯区</a></div></section>
     <section id="local"><p class="eyebrow">広島市統計</p><h2 class="section-title">広島市全体の住宅特性・統計</h2><div class="stats"><div class="stat"><b>1,200,754人</b><span>令和2年国勢調査人口</span></div><div class="stat"><b>57.1%</b><span>共同住宅居住率</span></div><div class="stat"><b>40.5%</b><span>単身者世帯比率</span></div><div class="stat"><b>25.8%</b><span>65歳以上人口割合</span></div></div><p class="source-note">出典：e-Stat 令和2年国勢調査。区別ページでは区コードの実値を掲載しています。</p></section>
-    <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">広島市全体の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>広島市全体で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+    <section id="admin" class="admin-hotline-section hiroshima-admin-depth official-detail-strong">
+  <p class="section-kicker">行政・ごみ処理の確認先</p>
+  <h2 class="section-title">広島市の大型ごみ・自己搬入・区役所窓口</h2>
+  <p>広島市内の遺品整理では、区役所で確認する手続き、大型ごみ受付、自己搬入、マンションの管理規約を分けて確認します。区ごとの搬出条件は違いますが、ごみ制度は広島市の公式案内を確認するのが基本です。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>広島市全体役所・役場</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>広島市全体のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/hiroshima/" target="_blank" rel="noopener">広島県ページへ戻る</a></div>
+    <div class="admin-card">
+      <h3>広島市役所・区役所</h3>
+      <p><strong>広島市代表</strong><br>所在地: 〒730-8586 広島市中区国泰寺町一丁目6番34号<br>電話: 082-245-2111（代表）<br>各区役所では住所変更、福祉、空き家、生活相談などの担当窓口を確認します。</p>
+      <a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">広島市公式サイト</a>
+    </div>
+    <div class="admin-card">
+      <h3>大型ごみ受付センター</h3>
+      <p><strong>大型ごみの予約・収集確認</strong><br>広島市の大型ごみは、事前申込み、収集日、手数料、出す場所、収集できない品目を確認します。屋内からの運び出しは自治体収集ではなく、業者作業として分けます。</p>
+      <a href="https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021277/1021279/index.html" target="_blank" rel="noopener">大型ごみの案内を確認</a>
+    </div>
+    <div class="admin-card">
+      <h3>自己搬入・処理施設</h3>
+      <p>自己搬入は、品目、搬入先、受付時間、本人確認、車両条件、手数料を事前に確認します。大量家財、家電4品目、危険物、事業系残置物は通常の家庭ごみと分けて扱います。</p>
+      <a href="https://www.city.hiroshima.lg.jp/living/gomi/" target="_blank" rel="noopener">広島市ごみ情報を確認</a>
+    </div>
+    <div class="admin-card">
+      <h3>区別の見積もり注意点</h3>
+      <p>中区・南区・西区は集合住宅や退去期限、東区・安佐南区・安佐北区は坂道や郊外戸建て、安芸区・佐伯区は車両導線や大型家具が見積もりに影響しやすいです。写真で搬出経路を共有してください。</p>
+      <a href="/hiroshima/#hiroshima-city" target="_blank" rel="noopener">広島市8区を見る</a>
+    </div>
   </div>
-  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <table class="admin-detail-table">
+    <thead><tr><th>確認項目</th><th>広島市で見ること</th><th>業者へ伝えること</th></tr></thead>
+    <tbody>
+      <tr><td>大型ごみ</td><td>申込み方法、収集日、手数料、排出場所、対象外品目。</td><td>屋内搬出が必要か、何点あるか、エレベーター・階段条件。</td></tr>
+      <tr><td>自己搬入</td><td>搬入先、受付時間、本人確認、車両条件、手数料。</td><td>少量ごみと大量家財を分け、処理困難物を事前に共有。</td></tr>
+      <tr><td>集合住宅</td><td>管理会社の作業届、共用部養生、搬出時間、駐車位置。</td><td>退去期限、鍵、残す品、探す書類、写真報告の希望。</td></tr>
+    </tbody>
+  </table>
+  <p class="admin-note">大型ごみ、自己搬入、受付時間、手数料は変更されることがあります。作業前に広島市公式サイトで最新情報を確認してください。</p>
 </section>
+
+
 
 <section id="kodokushi-cost" class="section kodokushi-cost">
   <h2 class="section-title">孤独死後に重くなりやすい費用</h2>
@@ -1003,7 +1027,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 建物と搬出条件</b><span>住所、建物種別、階数、エレベーター、前面道路、駐車位置を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を分別・持ち込み情報で確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -1430,7 +1454,6 @@
 <footer class="footer"><div class="footer-inner">広島市の遺品整理・生前整理・実家じまいを区から探す</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
 
 
 

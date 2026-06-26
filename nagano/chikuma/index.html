@@ -1282,19 +1282,29 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fffaf6;border:1px solid #eee0d5;box-shadow:none;border-radius:10px;padding:16px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:18px;line-height:1.45;color:#422012}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 10px;font-size:15.8px;line-height:1.8;color:#3f332b}
+    .manual-admin-card a,.admin-deep-card a{display:inline-block;margin:4px 10px 0 0;font-weight:800;color:#b64a1c;text-decoration:underline;text-underline-offset:3px;background:transparent}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{margin:28px 0 0;padding:24px;background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2f261d;display:block}
+    #contact.contact-check-card .section-kicker{margin:0 0 6px;color:#b64a1c;font-weight:900}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#231f1a}
+    #contact.contact-check-card p{margin:0 0 16px;color:#4c4439;font-size:16px;line-height:1.85}
+    .contact-check-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 18px;padding:0;list-style:none}
+    .contact-check-list li{position:relative;padding:12px 14px 12px 34px;background:#fffaf6;border:1px solid #eee0d5;color:#3f332b;font-weight:700;line-height:1.6}
+    .contact-check-list li:before{content:"";position:absolute;left:14px;top:1.05em;width:8px;height:8px;border-radius:50%;background:#d77a22}
+    #contact.contact-check-card .hero-actions{margin:0;gap:10px}
+    #contact.contact-check-card .btn{box-shadow:none}
+    #contact.contact-check-card .btn.secondary{background:#fff;color:#8c3d00;border:1px solid #d9c7b5}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}#contact.contact-check-card{padding:18px}.contact-check-list{grid-template-columns:1fr}#contact.contact-check-card h2{font-size:21px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1704,80 @@
 </style>
 
 
+<style id="local-cv-boost-style-v1">
+  .local-cv-boost{width:min(1120px,calc(100% - 32px));margin:-34px auto 28px;position:relative;z-index:3;background:#fffdf9;border:1px solid #eadfd0;border-top:6px solid #d05300;box-shadow:0 18px 42px rgba(48,38,29,.12);padding:26px}
+  .local-cv-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.68fr);gap:18px;align-items:end;margin-bottom:18px}
+  .local-cv-head .section-kicker{grid-column:1/-1;margin:0 0 -8px;color:#9f3e00;font-size:14px;font-weight:900}
+  .local-cv-head h2{margin:0;color:#2f2b27;font-size:clamp(24px,3vw,34px);line-height:1.42;font-weight:900}
+  .local-cv-head p{margin:0;color:#4f5953;font-size:16px;line-height:1.82;font-weight:700}
+  .local-cv-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .local-cv-card{background:#fff7ef;border:1px solid #ead8c4;padding:15px;min-height:152px}
+  .local-cv-card b{display:block;margin-bottom:8px;color:#a9420b;font-size:17px;line-height:1.45}
+  .local-cv-card span{display:block;color:#4f4a43;font-size:14px;line-height:1.75;font-weight:700}
+  .local-original-box{display:grid;grid-template-columns:220px 1fr;gap:16px;align-items:center;margin-top:16px;padding:15px 18px;background:#f3f8f5;border:1px solid #d9e7df}
+  .local-original-box b{color:#174f3f;font-size:18px;line-height:1.45}
+  .local-original-box span{color:#3d4a44;font-size:15px;line-height:1.78;font-weight:700}
+  .local-official-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
+  .local-official-link{display:block;padding:13px 14px;background:#fff;border:1px solid #d8e3dc;color:#214d40;text-decoration:none;font-weight:900;line-height:1.5}
+  .local-official-link:hover{background:#f4fbf7;border-color:#b9d3c7;text-decoration:none}
+  .local-official-link small{display:block;margin-top:4px;color:#5b665f;font-size:12px;line-height:1.55;font-weight:700}
+  .local-cv-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .local-cv-actions .btn{min-height:46px}
+  @media(max-width:900px){
+    .local-cv-boost{width:min(calc(100% - 24px),390px);margin:18px auto 24px;padding:18px}
+    .local-cv-head,.local-original-box{grid-template-columns:1fr;gap:10px}
+    .local-cv-grid,.local-official-links{grid-template-columns:1fr}
+    .local-cv-card{min-height:auto;padding:14px}
+    .local-cv-actions{display:grid;grid-template-columns:1fr}
+    .local-cv-actions .btn{width:100%}
+  }
+</style>
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1712,7 +1796,7 @@
         <span class="eyebrow">長野県千曲市で遺品整理・生前整理を探している方へ</span>
         <h1>千曲市で遺品整理・生前整理を相談する前に確認したいこと</h1>
         <p class="hero-lead">千曲市で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p>
-        <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
+        <div class="hero-actions"><a class="btn primary" href="#chikuma-estimate">写真で概算見積もり</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn ghost" href="#admin">公式ルールを確認</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
           <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
@@ -1721,6 +1805,54 @@
         </div>
       </div>
       <div class="hero-panel"><h2>千曲市で特に多い相談</h2><ul class="quick-list"><li>千曲市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+  <section id="chikuma-estimate" class="local-cv-boost" aria-label="千曲市で見積もり前に確認する公式情報">
+    <div class="local-cv-head">
+      <p class="section-kicker">千曲市の見積もり導線</p>
+      <h2>写真・搬出条件・公式ルールをそろえると、千曲市の概算が出しやすくなります</h2>
+      <p>千曲市は屋代駅・戸倉駅周辺、戸倉上山田温泉、千曲川沿い、姨捨・更級方面で搬出条件が変わります。行政ごみ、自己搬入、空き家相談、業者作業を先に分けると、見積もりのズレを減らせます。</p>
+    </div>
+    <div class="local-cv-grid">
+      <div class="local-cv-card"><b>1. 室内・外まわり写真</b><span>玄関、通路、各部屋、押入れ、物置、庭、車庫を撮影。荷物量と搬出距離を判断しやすくします。</span></div>
+      <div class="local-cv-card"><b>2. 千曲市の搬出条件</b><span>千曲川沿い、温泉地周辺、旧道沿い、坂道、駐車位置、冬季道路を見積もり前に共有します。</span></div>
+      <div class="local-cv-card"><b>3. 行政ごみとの分担</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物、業者が屋内搬出するものを分けます。</span></div>
+      <div class="local-cv-card"><b>4. 期限と残す品</b><span>退去日、売却前、残す家具、形見分け品、供養品、買取候補を先に整理します。</span></div>
+    </div>
+    <div class="local-original-box">
+      <b>千曲市ならではの確認</b>
+      <span>戸倉上山田温泉周辺は宿泊施設・集合住宅・旧道沿いの建物が混在します。千曲川沿いは駐車位置や搬出距離、姨捨・更級方面は坂道や冬季道路も確認しておくと安心です。</span>
+    </div>
+    <div class="local-official-links" aria-label="千曲市公式リンク">
+      <a class="local-official-link" href="https://www.city.chikuma.lg.jp/kurashi_tetsuzuki/gomi_recycle/kateigomi/search.html" target="_blank" rel="noopener">ごみ分別検索<small>品目別の分別、粗大ごみの扱いを確認</small></a>
+      <a class="local-official-link" href="https://www.city.chikuma.lg.jp/kurashi_tetsuzuki/gomi_recycle/index.html" target="_blank" rel="noopener">ごみ・リサイクル<small>自己搬入、家電4品目、処理困難物を確認</small></a>
+      <a class="local-official-link" href="https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html" target="_blank" rel="noopener">空き家相談<small>適正管理、相談、補助制度の入口</small></a>
+      <a class="local-official-link" href="https://akiya.city.chikuma.lg.jp/" target="_blank" rel="noopener">空き家バンク<small>売却・活用前の家財整理とあわせて確認</small></a>
+    </div>
+    <div class="local-cv-actions">
+      <a class="btn primary" href="#contact">見積もり前チェックへ進む</a>
+      <a class="btn secondary" href="#price">千曲市の料金目安を見る</a>
+      <a class="btn secondary" href="#admin">行政窓口を確認する</a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="千曲市の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>千曲市は温泉街・店舗兼住宅・坂道の整理条件が分かれます</h2>
+    <div class="local-landmark-prose">
+      <p>千曲市は屋代・戸倉の市街地、戸倉上山田温泉、千曲川沿い、姨捨・更級方面で住宅環境が変わります。温泉街では一般住宅だけでなく、店舗兼住宅や元飲食店、宿泊関連の残置物整理が出ることがあります。</p>
+      <p>集合住宅では共用部養生や駐車位置を確認し、温泉街や商店街では作業時間帯と通行の妨げにならない搬出方法を考えます。戸建てでは庭、物置、車庫、古い家具まで含めて作業量を見る必要があります。</p>
+      <p>戸倉上山田温泉周辺では、大型家具、布団、食器、店舗備品など家庭ごみだけでは済まない量になることがあります。自己搬入や粗大ごみの制度で対応できるものと、業者が搬出・分別するものを切り分けると判断しやすくなります。</p>
+      <p>姨捨方面や山側の住宅では坂道、冬季道路、駐車場所が費用に影響します。屋代駅、戸倉駅、姨捨駅のどの方面か、温泉街か戸建てかを最初に共有すると見積もりの精度が上がります。</p>
     </div>
   </section>
 
@@ -2083,16 +2215,7 @@
           <h3>千曲市で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅は県平均より小さい</td><td>住み替え、退去前整理、相続後の部分整理が混在。</td><td>建物種別、退去日、駐車位置、写真報告の有無。</td></tr><tr><td>人口密度が県全体より高い</td><td>駅近、住宅密集地、短時間搬出、駐車位置の制限。</td><td>前面道路、駐車位置、建物入口、搬出距離。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>千曲市で最初にそろえる確認材料</h3>
-          <p>千曲市では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>駐車位置と短時間搬出を先に確認</b><span>前面道路、建物入口、車両を停められる位置、搬出距離を写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>自治体制度と業者作業を分ける</b><span>粗大ごみで出すもの、屋内搬出が必要なもの、供養・買取を相談するものを分けます。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+        <div class="regional-original">
           <h3>千曲市ならではの整理メモ</h3>
           <p class="regional-lead">千曲市は長野地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,59 +2268,68 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">千曲市の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>千曲市で確認したい自治体情報</h2>
-    <p>千曲市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、千曲市公式サイトで最新情報を確認してください。</p>
+    <p class="section-kicker">行政窓口・ごみ・空き家相談</p>
+    <h2>千曲市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>千曲市では、収集所に出す家庭ごみ、月1回の粗大ごみ拠点回収、千曲資源リサイクル事業協同組合への持ち込み、ちくま環境エネルギーセンター・葛尾組合への直接搬入、専門業者が屋内から搬出する家財を分けると、見積もりの範囲が明確になります。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>千曲市役所</strong><br>代表電話: 026-273-1111<br>所在地: 〒387-8511 千曲市大字杭瀬下2丁目-1<br>FAX: 026-273-1004</p><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>千曲市公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>長野地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>千曲市で特に確認したいこと</h3><p>戸倉上山田周辺の住宅、集合住宅、郊外戸建てで搬出条件が変わるため、階段幅、駐車位置、退去期限を確認します。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>ごみ分別検索、家庭ごみの出し方、可燃・不燃ごみの直接搬入、粗大ごみ、家電4品目、処理困難物を品目別に確認します。袋詰めを始める前に、通帳・印鑑・権利書・保険証券・写真・貴金属を別箱に分けてください。</p></div>
+    <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>屋代駅・戸倉駅・上山田温泉周辺、千曲川沿い、姨捨・更級方面では、住宅密集地、旧道沿い、坂道、庭・物置付き戸建てで搬出条件が変わります。駐車位置、玄関幅、階段幅、搬出距離を写真で共有します。</p></div>
+    <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>高齢者だけの世帯、施設入居前、空き家化した実家では、高齢福祉課、建築課空き家対策係、空き家バンク、解体・跡地活用補助の入口を分けて確認します。</p></div>
+    <div class="admin-deep-card"><h3>出典導線</h3><p>千曲市公式サイト、環境課、ごみの出し方・分け方、直接搬入、粗大ごみ、家電リサイクル、空き家関連ページをもとに、確認できる情報だけを掲載します。</p><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市公式サイト</a><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/826.html" target="_blank" rel="noopener">環境課の業務概要</a><a href="https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html" target="_blank" rel="noopener">空き家</a><a href="https://akiya.city.chikuma.lg.jp/" target="_blank" rel="noopener">空き家バンク</a></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>千曲市役所</strong><br>所在地: 〒387-8511 長野県千曲市杭瀬下二丁目1番地<br>代表電話: 026-273-1111<br>FAX: 026-273-1004<br>開庁時間: 午前8時30分から午後5時15分まで<br><strong>環境課</strong><br>電話: 026-273-1111 / FAX: 026-273-1924<br>リサイクル推進係は、ごみ減量、資源化、ごみ収集計画、指定ごみ袋、一般廃棄物の適正処理相談、家電リサイクル、処理組合との連絡調整を扱います。</p><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市公式サイト</a><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/826.html" target="_blank" rel="noopener">環境課の業務概要</a></div>
+    <div class="manual-admin-card"><h3>分別・収集日</h3><p>千曲市の家庭ごみは、ごみ分別検索と「ごみの出し方・分け方」で確認します。可燃ごみは毎週2回収集で、指定袋は55リットル・25リットル、袋の重さは5kg以下、世帯主名の記入が必要です。ペットボトル・びん・缶などの資源物は月2回収集です。引越しや実家じまいでは、通常収集で出すものと直接搬入に回すものを分けてください。</p><a href="https://www.city.chikuma.lg.jp/kurashi_tetsuzuki/gomi_recycle/kateigomi/search.html" target="_blank" rel="noopener">家庭ごみの出し方検索</a><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/2156.html" target="_blank" rel="noopener">ごみの出し方・分け方</a></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・大型家具</h3><p>千曲市の粗大ごみは、原則として指定ごみ袋に入らない大きさ、または1個の重さが5kgを超えるものです。出し方は、月1回の拠点回収、千曲資源リサイクル事業協同組合への直接持ち込み、許可業者への戸別回収依頼の3通りです。処理手数料は大きさ・材質で変わるため、持ち込み前に確認します。屋内からの運び出し、2階からの階段搬出、物置解体は業者作業として分けます。<br><strong>千曲資源リサイクル事業協同組合</strong><br>所在地: 千曲市大字屋代2384-1<br>電話: 026-273-8813 / FAX: 026-273-8814</p><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/8906.html" target="_blank" rel="noopener">粗大ごみの出し方</a></div>
+    <div class="manual-admin-card"><h3>可燃ごみの直接搬入</h3><p><strong>長野広域連合 ちくま環境エネルギーセンター</strong><br>所在地: 千曲市大字屋代3088<br>電話: 026-214-9017<br>搬入時間: 月曜から金曜 8:30〜11:30 / 13:00〜16:30、土曜 8:30〜11:30<br>休み: 日曜、祝日、施設の休業日<br>手数料: 10kgまで190円、以後10kgごとに190円加算。引越し・大掃除・実家整理で大量に出る可燃ごみは、収集所に出さず直接搬入を検討します。枝などは大きさ制限があるため事前確認が必要です。</p><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/1720.html" target="_blank" rel="noopener">可燃ごみ・不燃ごみの直接搬入</a></div>
+    <div class="manual-admin-card"><h3>不燃ごみの直接搬入</h3><p><strong>葛尾組合不燃ごみ処理施設</strong><br>所在地: 千曲市大字上山田3813-100<br>電話: 026-275-2349<br>搬入時間: 月曜から金曜 8:30〜12:00 / 13:00〜16:00<br>休み: 土曜、日曜、祝日、施設の休業日<br>手数料: 20kgまで400円、以後10kgごとに200円加算。不燃ごみ指定袋に入っていて1袋5kg以内の場合は無料扱いです。指定袋に入らないもの、5kgを超えるものは粗大ごみとして扱います。</p><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/1720.html" target="_blank" rel="noopener">直接搬入の条件を見る</a></div>
+    <div class="manual-admin-card"><h3>家電4品目・処理困難物</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコンは家電リサイクル法の対象です。購入店・買替店に相談するか、郵便局でリサイクル券を購入し、指定引取場所へ持ち込みます。<br><strong>指定引取場所: 信濃陸送株式会社</strong><br>所在地: 千曲市大字雨宮650-1<br>電話: 026-273-3601<br>農薬びん、農業用マルチ、注射針、薬品、塗料、プロパンボンベ、消火器、建設廃材、産業廃棄物は通常収集と分け、購入店・専門窓口・許可業者に確認します。</p><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/2157.html" target="_blank" rel="noopener">家電リサイクル法対象品目の処分</a><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/2156.html" target="_blank" rel="noopener">市では収集できないごみ</a></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p><strong>高齢福祉課</strong><br>電話: 026-273-1111（千曲市代表）<br>高齢者だけの世帯、施設入居前、介護が必要な家族の片付けでは、高齢者福祉・介護、相談窓口、地域包括支援、在宅生活支援の入口を確認します。ごみ出しが難しい場合も、行政の福祉相談と、専門業者が行う屋内搬出・仕分け・写真報告を分けて考えます。</p><a href="https://www.city.chikuma.lg.jp/soshiki/koreifukushi/index.html" target="_blank" rel="noopener">高齢福祉課</a></div>
+    <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p><strong>建築課 空き家対策係</strong><br>電話: 026-273-1111（千曲市代表）<br>千曲市の空き家ページでは、適正管理、相談会、空き家等解体・跡地利活用促進事業補助金、空き家バンクなどを確認できます。空き家バンクは、千曲市経済部ふるさと振興課移住定住推進係が入口で、長野県宅地建物取引業協会上田支部との連携により運用されています。売却・解体・相続の前に、権利書、保険証券、通帳、写真、仏壇を処分前に分けます。</p><a href="https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html" target="_blank" rel="noopener">空き家</a><a href="https://www.city.chikuma.lg.jp/soshiki/kenchiku/5611.html" target="_blank" rel="noopener">空き家インフォメーション</a><a href="https://akiya.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市空き家バンク</a></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>行政で確認することは、分別、収集日、粗大ごみ拠点回収、可燃・不燃ごみの直接搬入、家電4品目、空き家・福祉相談です。業者に任せることは、室内からの大型家具搬出、階段作業、庭・物置・車庫の片付け、仏壇・写真の供養、買取査定、通帳・権利書探索、鍵預かり、作業前後の写真報告です。上山田温泉周辺や旧道沿いでは、観光・生活道路への停車時間も見積もり前に共有してください。</p></div>
   </div>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">千曲市に反映した長野県調査データ</h2>
-    <p class="lead">千曲市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に千曲市公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">千曲市の公式情報で整理する確認表</p>
+    <h2 class="section-title">千曲市でごみ処分と家財整理を分けるポイント</h2>
+    <p class="lead">千曲市は、市街地の集合住宅、戸倉上山田温泉周辺の住まい、千曲川沿いの戸建て、姨捨・更級方面の坂道住宅で搬出条件が変わります。行政処分で済むものと、専門業者の屋内搬出・探索・供養が必要なものを分けて確認します。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>長野広域連合。ながの環境エネルギーセンター、ちくま環境エネルギーセンター、須坂市清掃センターなど</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>通常収集</b><span>可燃ごみは指定袋・重量・収集日を確認。資源物は月2回収集で、袋詰め前に貴重品を分けます。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>袋に入らないもの、5kg超のものは粗大ごみ。拠点回収、直接持込、許可業者の戸別回収を比較します。</span></div>
+      <div class="nagano-report-card"><b>直接搬入</b><span>可燃はちくま環境エネルギーセンター、不燃は葛尾組合不燃ごみ処理施設。受付時間と料金を分けて確認します。</span></div>
+      <div class="nagano-report-card"><b>空き家整理</b><span>空き家バンク、解体・跡地活用、適正管理の相談と、家財整理・貴重品探索を同時に進めます。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</td></tr>
-      <tr><th>見積もり前</th><td>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.chikuma.lg.jp/" target="_blank" rel="noopener">千曲市公式サイト</a></td></tr>
+      <tr><th>行政で見ること</th><td>分別検索、家庭ごみの出し方、粗大ごみ、直接搬入、家電リサイクル、処理困難物、空き家・高齢福祉相談。</td></tr>
+      <tr><th>費用が変わること</th><td>可燃ごみ直接搬入は10kgまで190円、不燃ごみ直接搬入は20kgまで400円。粗大ごみは大きさ・材質で手数料が変わります。</td></tr>
+      <tr><th>業者見積もりで見ること</th><td>屋内搬出、階段作業、駐車位置、庭・物置、仏壇・写真、通帳・権利書探索、鍵預かり、作業後写真報告。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/2156.html" target="_blank" rel="noopener">ごみの出し方・分け方</a> / <a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/1720.html" target="_blank" rel="noopener">直接搬入</a> / <a href="https://www.city.chikuma.lg.jp/soshiki/kankyo/gomi_recycle/1/8906.html" target="_blank" rel="noopener">粗大ごみ</a> / <a href="https://www.city.chikuma.lg.jp/soshiki/kenchiku/akiya/index.html" target="_blank" rel="noopener">空き家</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">電話番号、受付時間、料金、対象条件は変更される場合があります。申込み前に千曲市と各受付先で最新条件を確認してください。</p>
   </div>
 </section>
-
 
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
     <p class="major-seo-local__kicker">千曲市で失敗しない整理導線</p>
     <h2>千曲市で遺品整理・生前整理を相談する前に見るポイント</h2>
-    <p class="major-seo-local__lead">戸建て、温泉地周辺の住まい、郊外の実家整理で、車両位置と作業時間が変わります。 駐車位置、前面道路、坂道、庭・物置、仏壇・写真、売却予定を整理します。</p>
+    <p class="major-seo-local__lead">戸建て、温泉地周辺、千曲川沿い、姨捨・更級方面の坂道住宅では、車両位置と作業時間が変わります。駐車位置、前面道路、庭・物置、仏壇・写真、売却予定を整理します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>町名、集合住宅か戸建てか、階数、エレベーター、前面道路、坂道、駐車位置を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>通常収集、粗大ごみ拠点回収、可燃・不燃の直接搬入、家電4品目を分けて確認します。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、車庫、庭、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
       <thead><tr><th>検索している状況</th><th>千曲市で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
       <tbody>
         <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
-        <tr><td>行政ごみと業者作業を分けたい</td><td>自治体で出せる少量ごみと、屋内搬出・大量家財・供養・買取を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
+        <tr><td>行政ごみと業者作業を分けたい</td><td>収集所に出すもの、粗大ごみ拠点回収、直接搬入、屋内搬出・大量家財を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
         <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、写真報告、残す品、返送品、立会い可否を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
         <tr><td>悪質業者を避けたい</td><td>見積書の内訳、追加料金条件、許可・提携先、買取査定の説明、契約前のキャンセル条件を見る。</td><td>業者の見分け方・比較表</td></tr>
       </tbody>
@@ -2219,10 +2351,16 @@
         <div class="ward-links"><a href="/nagano/sakaki/">坂城町</a><a href="/nagano/suzaka/">須坂市</a><a href="/nagano/obuse/">小布施町</a><a href="/nagano/nagano/">長野市</a></div>
       </section>
 
-<section id="contact" class="cta-band">
+<section id="contact" class="contact-check-card">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>千曲市の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>粗大ごみで出せるもの、直接搬入するもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。千曲市では、温泉地周辺、市街地、千曲川沿い、郊外戸建てで搬出条件が変わります。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、エレベーター、坂道、駐車位置</li>
+          <li>収集所に出すもの、粗大ごみ、直接搬入、家電4品目、業者搬出</li>
+          <li>通帳、印鑑、権利書、保険証券、写真、貴金属、仏壇</li>
+          <li>退去日、売却予定日、鍵の受け渡し、写真報告、返送品</li>
+        </ul>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
@@ -2510,6 +2648,14 @@
     background:#4F6F8F!important;
     background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
   }
+  html body .local-compare .compare-duo .bar-row.city .bar-fill {
+    background:#E8752A!important;
+    background-image:linear-gradient(90deg,#E8752A,#F5B36E)!important;
+  }
+  html body .local-compare .compare-duo .bar-row.pref .bar-fill {
+    background:#2D7DD2!important;
+    background-image:linear-gradient(90deg,#2D7DD2,#85B8E8)!important;
+  }
   html body .bar-fill.warm {
     background:#D68A3A!important;
     background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
@@ -2647,6 +2793,3 @@
 <footer class="footer"><div class="footer-inner">千曲市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-

@@ -572,7 +572,103 @@
     .footer,.site-footer{background:#26231f;color:#fff}.footer-inner{color:#f3ece4}
     @media(max-width:900px){.page-shell,.hero-inner{grid-template-columns:1fr}.page,.page-shell,.wrap{margin:30px auto 78px}.hero-inner{min-height:auto;padding:48px 0 56px}.cards,.stats,.flow,.grid.cols2,.grid.cols3,.grid.cols4{grid-template-columns:1fr}.topbar-inner{align-items:flex-start;flex-direction:column;padding:10px 0}table,.price-table{display:block;overflow-x:auto;white-space:nowrap}}
 
-  </style>
+
+  /* dense admin decision block */
+  .admin-deep-check {
+    margin-top:18px;
+    padding:18px;
+    background:#fff8ef;
+    border:1px solid #f2d6b9;
+    border-left:5px solid #d05300;
+    border-radius:8px;
+  }
+  .admin-deep-check h3 {
+    margin:0 0 10px;
+    font-size:20px;
+    line-height:1.45;
+    color:#7a2f00;
+  }
+  .admin-deep-check__grid {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;
+  }
+  .admin-deep-check__item {
+    background:#fff;
+    border:1px solid #eadfd0;
+    border-radius:8px;
+    padding:14px;
+    box-shadow:0 8px 18px rgba(34,28,22,.04);
+  }
+  .admin-deep-check__item b {
+    display:block;
+    margin-bottom:6px;
+    color:#2b2118;
+    font-size:15px;
+  }
+  .admin-deep-check__item span {
+    display:block;
+    color:#564b42;
+    font-size:14px;
+    line-height:1.75;
+  }
+  .admin-deep-check__note {
+    margin:12px 0 0;
+    color:#604f42;
+    font-size:14px;
+    line-height:1.8;
+  }
+  @media (max-width:760px) {
+    .admin-deep-check__grid {
+      grid-template-columns:1fr;
+    }
+  }
+
+
+  /* official lookup detail */
+  .admin-official-lookup {
+    margin-top:14px;
+    background:#fff;
+    border:1px solid #eadfd0;
+    border-radius:8px;
+    padding:16px;
+  }
+  .admin-official-lookup h4 {
+    margin:0 0 10px;
+    color:#7a2f00;
+    font-size:17px;
+    line-height:1.45;
+  }
+  .admin-official-lookup__grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+  .admin-official-lookup__grid div {
+    background:#fff8ef;
+    border:1px solid #f1d7bb;
+    border-radius:8px;
+    padding:12px;
+  }
+  .admin-official-lookup__grid b {
+    display:block;
+    color:#2b2118;
+    margin-bottom:4px;
+    font-size:14px;
+  }
+  .admin-official-lookup__grid span {
+    display:block;
+    color:#5a4b40;
+    font-size:13.5px;
+    line-height:1.7;
+  }
+  @media (max-width:760px) {
+    .admin-official-lookup__grid {
+      grid-template-columns:1fr;
+    }
+  }
+
+</style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-top-hero-match">
     .hero{
@@ -1674,26 +1770,44 @@
 <section id="aichi-report-insights" class="section aichi-report">
   <h2 class="section-title">名古屋市の環境衛生・高齢者支援・空き家整理で確認したいこと</h2>
   <p class="aichi-report-lead">名古屋市16区は駅近マンション、高層住宅、戸建て、商店併用住宅が混在します。粗大ごみ受付と管理会社対応を分けます。 名古屋市は各区の環境事業所、粗大ごみ受付センター、大江破砕工場などの搬入・受付条件を確認し、集合住宅の管理会社対応を分けて見ます。 遺品整理・生前整理では、行政で出せる品、専門業者に任せる品、残す書類や貴重品を分けると、追加費用と作業漏れを抑えやすくなります。</p>
-  <div class="aichi-report-grid"><div class="aichi-report-card"><b>区の環境事業所</b><span>各区の環境事業所、粗大ごみ受付センター、自己搬入先を名古屋市公式情報で確認します。</span></div><div class="aichi-report-card"><b>集合住宅</b><span>EV予約、共用部養生、防災センター、搬出可能時間、駐車位置を確認します。</span></div><div class="aichi-report-card"><b>退去期限</b><span>賃貸退去・施設入居前整理では、鍵返却日と残す品を先に決めます。</span></div><div class="aichi-report-card"><b>大型家具</b><span>家電4品目、ベッド、タンス、金庫などを通常ごみと分けます。</span></div></div>
+  <div class="aichi-report-grid"><div class="aichi-report-card"><b>区の環境事業所</b><span>各区の環境事業所、粗大ごみ受付センター、自己搬入先を名古屋市ページ内のリンク先と本文の実値を照らして分けます。</span></div><div class="aichi-report-card"><b>集合住宅</b><span>EV予約、共用部養生、防災センター、搬出可能時間、駐車位置を確認します。</span></div><div class="aichi-report-card"><b>退去期限</b><span>賃貸退去・施設入居前整理では、鍵返却日と残す品を先に決めます。</span></div><div class="aichi-report-card"><b>大型家具</b><span>家電4品目、ベッド、タンス、金庫などを通常ごみと分けます。</span></div></div>
   <table class="aichi-report-table">
     <thead><tr><th>確認項目</th><th>名古屋で見積もり前に整理すること</th></tr></thead>
-    <tbody><tr><th>行政で先に確認</th><td>粗大ごみの戸別収集、自己搬入、処理施設、手数料、指定袋、家電リサイクル品、処理困難物を市区町村公式サイトで確認します。</td></tr><tr><th>業者見積もりで確認</th><td>大型家具、階段、前面道路、車両停車位置、物置・庭、貴重品探索、供養品、買取候補を写真で共有します。</td></tr><tr><th>空き家・高齢者支援</th><td>ごみ出し支援、空き家バンク、家財処分、除却・改修補助は、対象者・年度・事前申請の有無を確認します。</td></tr></tbody>
+    <tbody><tr><th>行政で先に確認</th><td>粗大ごみの戸別収集、自己搬入、処理施設、手数料、指定袋、家電リサイクル品、処理困難物を自治体の収集・自己搬入の対象に分けます。</td></tr><tr><th>業者見積もりで確認</th><td>大型家具、階段、前面道路、車両停車位置、物置・庭、貴重品探索、供養品、買取候補を写真で共有します。</td></tr><tr><th>空き家・高齢者支援</th><td>ごみ出し支援、空き家バンク、家財処分、除却・改修補助は、対象者・年度・事前申請の有無を確認します。</td></tr></tbody>
   </table>
   <p class="aichi-report-note">出典：市区町村公式サイト、各市区町村のごみ・環境部局、広域処理組合、愛知県および市区町村の空き家対策・高齢者支援の公式情報。民間サイトの電話番号・料金は出典にしていません。</p>
 </section>
 <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">名古屋市全体の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>名古屋市全体で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+  <p class="section-kicker">行政・粗大ごみ・住まい相談</p>
+  <h2 class="section-title">名古屋市の行政窓口・粗大ごみ・住まい相談</h2>
+  <p>名古屋市で遺品整理・生前整理を進める前に、自治体で確認することと専門業者に任せることを分けて整理します。粗大ごみ、自己搬入、持ち出し支援、空き家相談は条件が変わることがあるため、見積もり前に公式情報を確認してください。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>名古屋市全体役所・役場</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>名古屋市全体のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>清掃センター、環境センター、広域処理組合、自己搬入の可否を確認します。本人確認、搬入日、車両条件、予約要否は公式情報で確認してください。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>ごみの持ち出しサービス</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別収集、福祉窓口の対象条件を確認してください。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空家相談、改修・除却、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1035058/1012184/1046468/1046635.html" target="_blank" rel="noopener">公式ページで確認</a></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>名古屋市役所・各区環境事業所</strong><br>名古屋市代表電話: 052-961-1111<br>粗大ごみ、自己搬入、収集日、家庭ごみの相談は、作業場所の区を担当する環境事業所と名古屋市公式案内を確認します。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012278/index.html" target="_blank" rel="noopener">各区の環境事業所を確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ・大量ごみの相談</h3><p><strong>名古屋市の粗大ごみ・一時多量ごみ</strong><br>引越し、退去、遺品整理で一度に多量に出るごみは、通常収集と分けて確認します。粗大ごみ、家電リサイクル、市で収集しない品目、室内搬出が必要な大型家具を先に整理してください。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012410/1012415.html" target="_blank" rel="noopener">一時多量ごみの処理を確認</a></div>
+    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>自己搬入は環境事業所で受付後、処理施設へ</strong><br>名古屋市の自己搬入は、搬入前にごみが発生する区の環境事業所で受付を行う案内です。可燃ごみ、不燃・粗大ごみ、破砕困難物等で搬入先が分かれるため、受付時間、手数料、搬入できない品目を確認します。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1033991.html" target="_blank" rel="noopener">自己搬入の方法を確認</a></div>
+    <div class="admin-card"><h3>ごみの持ち出し・福祉相談</h3><p><strong>なごやか収集</strong><br>高齢者や障がいのある方など、自分でごみ・資源を排出することが難しい場合は、名古屋市の「なごやか収集」を確認します。大型家具の室内搬出や貴重品探索は業者作業と分けます。</p><a href="https://www.city.nagoya.jp/kurashi/gomi/1012183/1012252.html" target="_blank" rel="noopener">なごやか収集を確認</a></div>
+    <div class="admin-card"><h3>空家・住まいの相談</h3><p><strong>名古屋市の住まい・空き家相談</strong><br>相続後の空き家、売却前、解体前、施設入居前の整理では、住まい相談、空き家、住宅関連制度を確認します。家財整理の前に残す書類、屋外品、処理困難物を分けてください。</p><a href="https://www.city.nagoya.jp/kurashi/juutaku/1034736/1034737.html" target="_blank" rel="noopener">住まい・空き家関連情報を確認</a></div>
     <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。</p><a href="/aichi/" target="_blank" rel="noopener">愛知県ページへ戻る</a></div>
   </div>
-  <p class="source-note">出典リンクは市区町村・都道府県・広域組合など公的機関の公式情報を優先します。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <div class="admin-deep-check">
+    <h3>名古屋市で見積もり前に分けること</h3>
+    <div class="admin-deep-check__grid">
+      <div class="admin-deep-check__item"><b>自治体で確認するもの</b><span>少量の家庭ごみ、粗大ごみ受付、自己搬入、収集できない品目、福祉的な支援を分け、自治体で済むものと専門業者へ任せるものを切り分けます。</span></div>
+      <div class="admin-deep-check__item"><b>業者へ任せるもの</b><span>屋内からの大型家具搬出、階段作業、共用部養生、仏壇・写真の扱い、買取査定、退去期限がある一括整理を分けます。</span></div>
+      <div class="admin-deep-check__item"><b>写真で共有するもの</b><span>玄関、部屋全体、押入れ、物置、駐車位置、前面道路、階段幅、エレベーターを撮ると追加費用の判断が早くなります。</span></div>
+    </div>
+    <div class="admin-official-lookup">
+      <h4>名古屋市公式ページで確認したい項目</h4>
+      <div class="admin-official-lookup__grid">
+        <div><b>粗大ごみ・大型ごみ</b><span>申込方法、収集日、手数料、戸別収集の有無、収集できない品目を確認します。</span></div>
+        <div><b>自己搬入・持込施設</b><span>搬入先、受付日、受付時間、予約要否、本人確認、車両条件、支払い方法を確認します。</span></div>
+        <div><b>家電・処理困難物</b><span>テレビ、冷蔵庫、洗濯機、エアコン、消火器、金庫、タイヤ、事業ごみの扱いを分けます。</span></div>
+        <div><b>福祉・空家相談</b><span>高齢者のごみ出し支援、地域包括支援センター、空家相談、解体・売却前の制度を確認します。</span></div>
+      </div>
+    </div>
+    <p class="admin-deep-check__note">自治体処分だけで済ませる品と、専門業者が搬出・分別・探索まで行う品を先に分けると、見積書の範囲、追加費用条件、当日の作業時間を確認しやすくなります。</p>
+  </div>
+  <p class="source-note">出典：名古屋市公式ウェブサイト、名古屋市粗大ごみ受付センター案内。各カードのリンク先を出典として整理しています。電話番号・料金・受付時間は、ページ上で確認できたものだけ本文に記載しています。</p>
 </section>
   <section id="kita-before-after-cases" class="section common-kita-ba">
   <h2 class="section-title">名古屋市の遺品整理ビフォーアフター事例</h2>

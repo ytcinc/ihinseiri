@@ -2433,11 +2433,173 @@
       text-decoration:underline!important;
     }
   </style>
+  <style id="nagano-top-cv-polish-v1">
+    .breadcrumb {
+      margin: 0 !important;
+      background: #fffaf3 !important;
+    }
+    .breadcrumb-inner {
+      min-height: 44px !important;
+      display: flex !important;
+      align-items: center !important;
+    }
+    .hero {
+      margin-top: 0 !important;
+      background-image:
+        linear-gradient(90deg, rgba(18,24,26,.84) 0%, rgba(18,24,26,.62) 36%, rgba(18,24,26,.24) 62%, rgba(18,24,26,.06) 100%),
+        url("/assets/cv-hero-staff-photo.png?v=1") !important;
+    }
+    .hero .hero-inner {
+      min-height: 510px !important;
+      padding: 42px 0 50px !important;
+      align-items: center !important;
+    }
+    .hero .hero-actions {
+      margin-top: 18px !important;
+    }
+    .hero .hero-panel {
+      border-left: 6px solid #D05300 !important;
+    }
+    .hero .hero-highlights span {
+      backdrop-filter: blur(3px);
+    }
+    .global-top-score-strip {
+      margin-top: 20px !important;
+    }
+    @media (max-width: 820px) {
+      .topbar {
+        position: sticky !important;
+      }
+      .topbar-inner {
+        min-height: auto !important;
+        gap: 8px !important;
+        padding: 10px 0 8px !important;
+      }
+      .brand-word {
+        width: 100% !important;
+      }
+      .brand-area {
+        font-size: 20px !important;
+      }
+      .brand-no {
+        font-size: 13px !important;
+      }
+      .brand-main {
+        font-size: 18px !important;
+      }
+      .nav {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        gap: 6px !important;
+        overflow: visible !important;
+        font-size: 12px !important;
+      }
+      .nav a {
+        min-height: 34px !important;
+        display: grid !important;
+        place-items: center !important;
+        padding: 0 4px !important;
+        background: #fff8ef !important;
+        border: 1px solid #ead7c8 !important;
+        border-radius: 4px !important;
+        color: #7b3218 !important;
+      }
+      .nav a:nth-child(1),
+      .nav a:nth-child(3),
+      .nav a:nth-child(7) {
+        display: none !important;
+      }
+      .breadcrumb-inner {
+        min-height: 38px !important;
+        font-size: 12px !important;
+      }
+      .hero {
+        background-image:
+          linear-gradient(180deg, rgba(31,39,35,.99) 0%, rgba(31,39,35,.96) 52%, rgba(31,39,35,.82) 78%, rgba(31,39,35,.66) 100%),
+          url("/assets/cv-hero-staff-photo.png?v=1") !important;
+        background-size: cover, auto 39% !important;
+        background-position: center, calc(100% + 26px) bottom !important;
+      }
+      .hero .hero-inner {
+        width: min(calc(100% - 24px), 390px) !important;
+        max-width: min(calc(100% - 24px), 390px) !important;
+        margin: 0 auto !important;
+        padding: 22px 0 24px !important;
+      }
+      .hero .eyebrow {
+        margin-bottom: 9px !important;
+        padding: 4px 10px !important;
+      }
+      .hero h1 {
+        margin-bottom: 10px !important;
+        font-size: clamp(27px, 7.6vw, 32px) !important;
+        line-height: 1.24 !important;
+        word-break: keep-all !important;
+        overflow-wrap: anywhere !important;
+      }
+      .hero h1::after {
+        margin-top: 10px !important;
+      }
+      .hero p,
+      .hero .hero-lead {
+        margin-bottom: 12px !important;
+        font-size: 15px !important;
+        line-height: 1.68 !important;
+      }
+      .hero .hero-actions {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 8px !important;
+        margin-top: 14px !important;
+      }
+      .hero .hero-actions .primary {
+        grid-column: 1 / -1 !important;
+        min-height: 48px !important;
+      }
+      .hero .hero-actions .secondary,
+      .hero .hero-actions .ghost {
+        min-height: 42px !important;
+        font-size: 13px !important;
+      }
+      .hero .hero-highlights {
+        margin-top: 12px !important;
+        gap: 6px !important;
+      }
+      .hero .hero-highlights span {
+        min-height: 36px !important;
+        padding: 6px 8px !important;
+        font-size: 12px !important;
+      }
+      .hero .hero-panel {
+        margin-top: 14px !important;
+        padding: 14px !important;
+      }
+      .hero .hero-panel h2 {
+        font-size: 17px !important;
+      }
+      .quick-list {
+        gap: 7px !important;
+      }
+      .quick-list li {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+      }
+      .global-top-score-strip {
+        grid-template-columns: 1fr !important;
+        width: min(calc(100% - 24px), 390px) !important;
+        margin-top: 18px !important;
+      }
+      .global-top-score-card {
+        min-height: auto !important;
+        padding: 14px 16px !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-word"><span class="brand-area">長野県</span><span class="brand-no">の</span><span class="brand-main">遺品整理・生前整理.jp</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#towns">市町村</a><a href="#local">地域特性</a><a href="#nagano-data">データ</a><a href="#price">料金</a><a href="#online-plan">立会いなし</a><a href="#faq">Q&A</a></nav></div></header>
   <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span>長野県</div></nav>
-  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">長野県で遺品整理・生前整理を探す</span><h1>広い県土の別荘も農家も。地域ごとの事情に合わせて。</h1><p class="hero-lead">長野県の遺品整理・生前整理は、市街地のマンションから、郊外の戸建て、農家住宅、別荘、山間部の空き家まで条件が大きく変わります。北信・東信・中信・南信それぞれの住宅事情、雪や坂道、納屋・物置、県外家族の立会い負担まで、作業場所に近い市町村ページで確認できます。</p><div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div><div class="hero-highlights" aria-label="長野県ページで確認できること"><span>市町村別ページ</span><span>行政窓口</span><span>料金目安</span><span>立会いなし相談</span></div></div><div class="hero-panel"><h2>長野県で相談が多い整理条件</h2><ul class="quick-list"><li>北信の雪対策・郊外戸建て整理</li><li>東信の別荘・空き家・山手住宅整理</li><li>南信の農家住宅・広い敷地の整理</li><li>遠方家族向けの鍵預かり・写真報告</li></ul></div></div></section>
+  <section class="hero"><div class="hero-inner"><div><span class="eyebrow">長野県で遺品整理・生前整理を探す</span><h1>別荘も農家住宅も、地域事情に合わせて。</h1><p class="hero-lead">長野県の遺品整理・生前整理は、市街地のマンションから、郊外の戸建て、農家住宅、別荘、山間部の空き家まで条件が大きく変わります。北信・東信・中信・南信それぞれの住宅事情、雪や坂道、納屋・物置、県外家族の立会い負担まで、作業場所に近い市町村ページで確認できます。</p><div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div><div class="hero-highlights" aria-label="長野県ページで確認できること"><span>市町村別ページ</span><span>行政窓口</span><span>料金目安</span><span>立会いなし相談</span></div></div><div class="hero-panel"><h2>長野県で相談が多い整理条件</h2><ul class="quick-list"><li>北信の雪対策・郊外戸建て整理</li><li>東信の別荘・空き家・山手住宅整理</li><li>南信の農家住宅・広い敷地の整理</li><li>遠方家族向けの鍵預かり・写真報告</li></ul></div></div></section>
 
 <section class="global-top-score-strip" aria-label="最初に確認すること">
   <a class="global-top-score-card" href="#towns"><b>作業場所から探す</b><span>都道府県・市区町村ページで地域の注意点を確認</span></a>
@@ -2816,9 +2978,9 @@
     </div>
     <div class="admin-card nagano-region-card" id="nagano-south">
       <div class="region-head"><h3>南信</h3><span>28市町村</span></div>
-      <p>諏訪・伊那・飯田方面は、農家住宅、広い敷地、山間部の空き家、冬季や坂道での搬出条件が見積もりに影響しやすい地域です。</p>
-      <div class="region-checks"><span>農家住宅</span><span>納屋・蔵</span><span>広い敷地</span></div>
-      <div class="ward-links"><a href="/nagano/okaya/">岡谷市</a><a href="/nagano/suwa/">諏訪市</a><a href="/nagano/chino/">茅野市</a><a href="/nagano/shimosuwa/">下諏訪町</a><a href="/nagano/fujimi/">富士見町</a><a href="/nagano/hara/">原村</a><a href="/nagano/ina/">伊那市</a><a href="/nagano/komagane/">駒ヶ根市</a><a href="/nagano/tatsuno/">辰野町</a><a href="/nagano/minowa/">箕輪町</a><a href="/nagano/iijima/">飯島町</a><a href="/nagano/minamiminowa/">南箕輪村</a><a href="/nagano/nakagawa/">中川村</a><a href="/nagano/miyada/">宮田村</a><a href="/nagano/iida/">飯田市</a><a href="/nagano/matsukawa/">松川町</a><a href="/nagano/takamori/">高森町</a><a href="/nagano/anan/">阿南町</a><a href="/nagano/achi/">阿智村</a><a href="/nagano/hiraya/">平谷村</a><a href="/nagano/neba/">根羽村</a><a href="/nagano/shimojo/">下條村</a><a href="/nagano/urugi/">売木村</a><a href="/nagano/tenryu/">天龍村</a><a href="/nagano/yasuoka/">泰阜村</a><a href="/nagano/takagi/">喬木村</a><a href="/nagano/toyooka/">豊丘村</a><a href="/nagano/oshika/">大鹿村</a></div>
+      <p>諏訪・伊那・飯田方面は、農家住宅、広い敷地、山間部の空き家に加えて、阿智村の昼神温泉周辺にある宿泊施設整理、山側一軒家の納屋・物置整理など、地域ごとに見積もり条件が変わりやすい地域です。</p>
+      <div class="region-checks"><span>農家住宅</span><span>昼神温泉周辺</span><span>納屋・蔵</span><span>山側一軒家</span></div>
+      <div class="ward-links"><a href="/nagano/okaya/">岡谷市</a><a href="/nagano/suwa/">諏訪市</a><a href="/nagano/chino/">茅野市</a><a href="/nagano/shimosuwa/">下諏訪町</a><a href="/nagano/fujimi/">富士見町</a><a href="/nagano/hara/">原村</a><a href="/nagano/ina/">伊那市</a><a href="/nagano/komagane/">駒ヶ根市</a><a href="/nagano/tatsuno/">辰野町</a><a href="/nagano/minowa/">箕輪町</a><a href="/nagano/iijima/">飯島町</a><a href="/nagano/minamiminowa/">南箕輪村</a><a href="/nagano/nakagawa/">中川村</a><a href="/nagano/miyada/">宮田村</a><a href="/nagano/iida/">飯田市</a><a href="/nagano/matsukawa/">松川町</a><a href="/nagano/takamori/">高森町</a><a href="/nagano/anan/">阿南町</a><a href="/nagano/achi/">阿智村</a><a href="/nagano/hiraya/">平谷村</a><a href="/nagano/neba/">根羽村</a><a href="/nagano/shimojo/">下條村</a><a href="/nagano/urugi/">売木村</a><a href="/nagano/tenryu/">天龍村</a><a href="/nagano/yasuoka/">泰阜村</a><a href="/nagano/takagi/">喬木村</a><a href="/nagano/toyooka/">豊丘村</a><a href="/nagano/oshika/">大鹿村</a></div><p class="area-box-lead"><a href="/nagano/achi/">阿智村の遺品整理・生前整理</a>では、昼神温泉周辺の旅館・民宿の片付け、山側の一軒家整理、遠方家族の鍵預かり相談まで確認できます。</p>
     </div>
   </div>
   <div class="area-assist"><b>市町村が分からない場合</b>住所が曖昧な場合や別荘地・山間部で市町村が分かりにくい場合は、北信・東信・中信・南信の地域ブロックから近いページを確認できます。県外に住むご家族は、作業場所の写真、固定資産税通知、郵便物の住所を先に確認すると相談が早く進みます。</div>
@@ -4540,6 +4702,3 @@
 <footer class="footer"><div class="footer-inner">長野県の遺品整理・生前整理・実家じまいを市町村から確認</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-

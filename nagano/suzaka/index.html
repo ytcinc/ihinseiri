@@ -1282,19 +1282,29 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fffaf6;border:1px solid #eee0d5;box-shadow:none;border-radius:10px;padding:16px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:18px;line-height:1.45;color:#422012}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 10px;font-size:15.8px;line-height:1.8;color:#3f332b}
+    .manual-admin-card a,.admin-deep-card a{display:inline-block;margin:4px 10px 0 0;font-weight:800;color:#b64a1c;text-decoration:underline;text-underline-offset:3px;background:transparent}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{margin:28px 0 0;padding:24px;background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2f261d;display:block}
+    #contact.contact-check-card .section-kicker{margin:0 0 6px;color:#b64a1c;font-weight:900}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#231f1a}
+    #contact.contact-check-card p{margin:0 0 16px;color:#4c4439;font-size:16px;line-height:1.85}
+    .contact-check-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 18px;padding:0;list-style:none}
+    .contact-check-list li{position:relative;padding:12px 14px 12px 34px;background:#fffaf6;border:1px solid #eee0d5;color:#3f332b;font-weight:700;line-height:1.6}
+    .contact-check-list li:before{content:"";position:absolute;left:14px;top:1.05em;width:8px;height:8px;border-radius:50%;background:#d77a22}
+    #contact.contact-check-card .hero-actions{margin:0;gap:10px}
+    #contact.contact-check-card .btn{box-shadow:none}
+    #contact.contact-check-card .btn.secondary{background:#fff;color:#8c3d00;border:1px solid #d9c7b5}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}#contact.contact-check-card{padding:18px}.contact-check-list{grid-template-columns:1fr}#contact.contact-check-card h2{font-size:21px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1704,206 @@
 </style>
 
 
+<style id="suzaka-estimate-boost-style-v1">
+  .suzaka-estimate-boost {
+    width: min(1120px, calc(100% - 32px));
+    margin: -34px auto 28px;
+    position: relative;
+    z-index: 3;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-top: 6px solid #d05300;
+    box-shadow: 0 18px 42px rgba(48, 38, 29, .12);
+    padding: 26px;
+  }
+  .suzaka-estimate-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+  .suzaka-estimate-head .section-kicker {
+    grid-column: 1 / -1;
+    margin: 0 0 -8px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .suzaka-estimate-head h2 {
+    margin: 0;
+    color: #2f2b27;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.42;
+    font-weight: 900;
+  }
+  .suzaka-estimate-head p {
+    margin: 0;
+    color: #4f5953;
+    font-size: 16px;
+    line-height: 1.82;
+    font-weight: 700;
+  }
+  .suzaka-estimate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .suzaka-estimate-card {
+    background: #fff7ef;
+    border: 1px solid #ead8c4;
+    padding: 15px;
+    min-height: 152px;
+  }
+  .suzaka-estimate-card b {
+    display: block;
+    margin-bottom: 8px;
+    color: #a9420b;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  .suzaka-estimate-card span {
+    display: block;
+    color: #4f4a43;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 700;
+  }
+  .suzaka-local-proof {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+    padding: 15px 18px;
+    background: #f3f8f5;
+    border: 1px solid #d9e7df;
+  }
+  .suzaka-local-proof b {
+    color: #174f3f;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .suzaka-local-proof span {
+    color: #3d4a44;
+    font-size: 15px;
+    line-height: 1.78;
+    font-weight: 700;
+  }
+  .suzaka-official-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .suzaka-official-link {
+    display: block;
+    padding: 13px 14px;
+    background: #fff;
+    border: 1px solid #d8e3dc;
+    color: #214d40;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  .suzaka-official-link:hover {
+    background: #f4fbf7;
+    border-color: #b9d3c7;
+    text-decoration: none;
+  }
+  .suzaka-official-link small {
+    display: block;
+    margin-top: 4px;
+    color: #5b665f;
+    font-size: 12px;
+    line-height: 1.55;
+    font-weight: 700;
+  }
+  .suzaka-estimate-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .suzaka-estimate-actions .btn {
+    min-height: 46px;
+  }
+  @media (max-width: 900px) {
+    .suzaka-estimate-boost {
+      width: min(calc(100% - 24px), 390px);
+      margin: 18px auto 24px;
+      padding: 18px;
+    }
+    .suzaka-estimate-head,
+    .suzaka-local-proof {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .suzaka-estimate-grid {
+      grid-template-columns: 1fr;
+    }
+    .suzaka-official-links {
+      grid-template-columns: 1fr;
+    }
+    .suzaka-estimate-card {
+      min-height: auto;
+      padding: 14px;
+    }
+    .suzaka-estimate-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .suzaka-estimate-actions .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1712,7 +1922,7 @@
         <span class="eyebrow">長野県須坂市で遺品整理・生前整理を探している方へ</span>
         <h1>須坂市で遺品整理・生前整理を相談する前に確認したいこと</h1>
         <p class="hero-lead">須坂市で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p>
-        <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
+        <div class="hero-actions"><a class="btn primary" href="#contact">写真で概算見積もり</a><a class="btn secondary" href="#suzaka-estimate">見積もり前チェック</a><a class="btn ghost" href="#local">須坂市のルールを見る</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
           <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
@@ -1721,6 +1931,53 @@
         </div>
       </div>
       <div class="hero-panel"><h2>須坂市で特に多い相談</h2><ul class="quick-list"><li>須坂市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+  <section id="suzaka-estimate" class="suzaka-estimate-boost" aria-label="須坂市で見積もり前にそろえる情報">
+    <div class="suzaka-estimate-head">
+      <p class="section-kicker">須坂市の見積もり導線</p>
+      <h2>写真・住所条件・期限をそろえると、須坂市の概算が出しやすくなります</h2>
+      <p>須坂市は駅周辺の集合住宅、市街地の戸建て、郊外・山間部の空き家で搬出条件が変わります。相談前に下の4点をそろえると、料金差が出やすい部分を先に確認できます。</p>
+    </div>
+    <div class="suzaka-estimate-grid">
+      <div class="suzaka-estimate-card"><b>1. 室内写真</b><span>玄関、通路、各部屋、押入れ、物置、庭、車庫を撮影。荷物量と搬出距離を判断しやすくします。</span></div>
+      <div class="suzaka-estimate-card"><b>2. 建物条件</b><span>集合住宅、戸建て、階数、エレベーター、駐車位置、坂道・積雪時の車両導線を共有します。</span></div>
+      <div class="suzaka-estimate-card"><b>3. 期限と立会い</b><span>退去日、売却前、施設入居前、県外家族の立会い可否、鍵預かり・写真報告の希望を整理します。</span></div>
+      <div class="suzaka-estimate-card"><b>4. 残す品・探す品</b><span>通帳、印鑑、権利書、写真、供養品、買取候補を処分前に分け、見積書に作業範囲を残します。</span></div>
+    </div>
+    <div class="suzaka-local-proof">
+      <b>須坂市で特に確認したいこと</b>
+      <span>粗大ごみ・持込制度で出せるものと、屋内搬出・大量家財・仏壇供養・買取査定など業者に任せる範囲を分けると、費用と作業日の見通しが立ちやすくなります。</span>
+    </div>
+    <div class="suzaka-official-links" aria-label="須坂市公式リンク">
+      <a class="suzaka-official-link" href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">粗大ごみ・分別<small>須坂市 生活環境課の公式案内で確認</small></a>
+      <a class="suzaka-official-link" href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">自己搬入・清掃センター<small>受付日、搬入条件、料金は公式情報を確認</small></a>
+      <a class="suzaka-official-link" href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">空き家・住まい相談<small>まちづくり課、空き家対策の窓口を確認</small></a>
+    </div>
+    <div class="suzaka-estimate-actions">
+      <a class="btn primary" href="#contact">見積もり前チェックへ進む</a>
+      <a class="btn secondary" href="#price">須坂市の料金目安を見る</a>
+      <a class="btn secondary" href="#admin">行政窓口を確認する</a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="須坂市の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>須坂市は蔵の町並みと果樹農家の片付けに配慮が必要です</h2>
+    <div class="local-landmark-prose">
+      <p>須坂市は蔵の町として知られ、旧市街地には古い家屋や土蔵が残っています。前面道路が狭い場所では大型車を横付けできないことがあり、軽トラックでの小分け搬出や近隣への声かけが必要になります。</p>
+      <p>市街地の集合住宅では階段幅、駐車場所、共用部養生を確認しますが、郊外の戸建てでは母屋だけでなく、蔵、離れ、農業用倉庫、車庫まで整理範囲に入ることがあります。</p>
+      <p>りんごやぶどうなど果樹栽培が盛んな地域では、農機具、ビニールハウス資材、肥料袋、支柱、コンテナ、古い農業用品が残っていることもあります。家庭ごみとして扱えないものは、処分方法や買取可否を分けて見積もる必要があります。</p>
+      <p>臥竜公園、蔵の町並み、米子方面など地域の位置関係を把握したうえで、作業車の大きさ、搬出距離、冬季道路、屋外品の量を写真で共有しておくと、現地での追加確認を減らせます。</p>
     </div>
   </section>
 
@@ -2083,16 +2340,7 @@
           <h3>須坂市で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅は県平均より小さい</td><td>住み替え、退去前整理、相続後の部分整理が混在。</td><td>建物種別、退去日、駐車位置、写真報告の有無。</td></tr><tr><td>人口密度が県全体より高い</td><td>駅近、住宅密集地、短時間搬出、駐車位置の制限。</td><td>前面道路、駐車位置、建物入口、搬出距離。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>須坂市で最初にそろえる確認材料</h3>
-          <p>須坂市では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>駐車位置と短時間搬出を先に確認</b><span>前面道路、建物入口、車両を停められる位置、搬出距離を写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>自治体制度と業者作業を分ける</b><span>粗大ごみで出すもの、屋内搬出が必要なもの、供養・買取を相談するものを分けます。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+        <div class="regional-original">
           <h3>須坂市ならではの整理メモ</h3>
           <p class="regional-lead">須坂市は長野地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,33 +2393,41 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">須坂市の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>須坂市で確認したい自治体情報</h2>
-    <p>須坂市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、須坂市公式サイトで最新情報を確認してください。</p>
+    <h2>須坂市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>須坂市で整理を進める前に、行政収集で出すもの、清掃センターへ自己搬入するもの、専門業者が屋内から搬出するものを分けます。市街地の住宅、果樹園周辺の戸建て、郊外の空き家・物置で確認点が変わるため、最初に窓口・品目・搬出範囲をそろえると見積もりが安定します。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>須坂市役所</strong><br>代表電話: 026-245-1400<br>所在地: 〒382-8511 須坂市大字須坂1528-1<br>FAX: 026-246-0750</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>須坂市公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>長野地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>須坂市で特に確認したいこと</h3><p>市街地の住宅と郊外戸建て、果樹園周辺の物置が混在するため、屋外品、車両位置、買取品を先に分けます。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>ごみ収集日、分別、指定袋・ごみシール、粗大ごみ、自己搬入、家電4品目、処理困難物を分けます。少量ごみと一時多量ごみを混ぜないことが大切です。</p></div>
+    <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>室内搬出、階段作業、駐車位置、庭・物置、仏壇・写真、通帳・権利書などの探索、果樹園周辺や山手側の道路幅を写真で共有します。</p></div>
+    <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>高齢者福祉課、地域包括支援センター、まちづくり課の空き家対策を分けて確認します。施設入居前や売却・解体前は先に相談先を整理します。</p></div>
+    <div class="admin-deep-card"><h3>確認に使う公式ページ</h3><p>ごみは生活環境課・清掃センター、福祉は高齢者福祉課・地域包括支援センター、空き家はまちづくり課を確認します。番号は須坂市の業務案内に掲載されているものを使います。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a><a href="https://www.city.suzaka.nagano.jp/mokuteki/koreisha_kaigo/index.html" target="_blank" rel="noopener">高齢者・介護</a></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>須坂市役所</strong><br>所在地: 〒382-8511 長野県須坂市大字須坂1528番地の1<br>代表電話: 026-245-1400<br>FAX: 026-246-0750<br>ごみ、福祉、空き家、住まい相談は担当課が分かれます。ごみは市民環境部 生活環境課、福祉は健康福祉部 高齢者福祉課、空き家はまちづくり推進部 まちづくり課を確認します。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・大型ごみ</h3><p><strong>市民環境部 生活環境課</strong><br>電話: 026-248-9019 / FAX: 026-251-2459<br>一般廃棄物、ごみシール、ごみ処理の広域化、清掃センターを担当します。タンス、ベッド、マットレス、布団、仏壇、屋外用品、古い家電は、自治体収集で出せるもの、自己搬入に回すもの、業者が屋内から搬出するものを分けます。大型家具の室内搬出、2階からの階段作業、物置の解体を伴う場合は、行政収集だけで考えず業者作業として見積もりに入れます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">生活環境課を確認</a></div>
+    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>生活環境課 清掃センター</strong><br>所在地: 長野県須坂市大字米子1218番地4<br>電話: 026-246-9000 / FAX: 026-246-9093<br>管理運営、ごみの収集運搬、不燃ごみの破砕処分、その他廃棄物の処分を担当します。自己搬入を考える場合は、受付日、本人確認、車両条件、分別、料金を公式案内で確認し、室内から運び出す作業とは別に考えます。果樹園周辺や郊外戸建てでは、庭木、物置、農具、タイヤ、処理困難物を通常ごみと分けてください。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">清掃センターを確認</a></div>
+    <div class="manual-admin-card"><h3>家電4品目・処理困難物</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコン、パソコン、消火器、タイヤ、農薬、バッテリー、事業系に近い残置物は通常の家庭ごみと分けます。購入店、指定引取、専門処理、業者搬出のどれに回すかを、品目ごとに確認します。処分方法が分からない品目は生活環境課または清掃センターに確認してから見積もりに入れます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">生活環境課・清掃センター</a></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p><strong>高齢者福祉課</strong><br>電話: 026-248-9020 / FAX: 026-248-7208<br><strong>地域包括支援センター</strong><br>電話: 026-245-4566 / FAX: 026-248-1119<br>高齢者だけの世帯、施設入居前、介護が必要な家族の片付けでは、高齢者福祉課と地域包括支援センターの相談範囲を確認します。ごみ出しが難しい場合も、まず福祉側の相談窓口と整理作業の範囲を分けて見ます。</p><a href="https://www.city.suzaka.nagano.jp/mokuteki/koreisha_kaigo/index.html" target="_blank" rel="noopener">高齢者・介護</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a></div>
+    <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p><strong>まちづくり推進部 まちづくり課</strong><br>電話: 026-248-9007 / FAX: 026-248-9040<br>都市計画、公園、市営住宅、歴史的町並み、景観育成、空き家対策、耐震診断・改修、空き家バンクなどを担当します。須坂市の実家じまいでは、売却、解体、相続、空き家管理、草木管理、近隣対応を家財整理と同時に考えます。契約前に空き家相談や補助制度の対象になるかを確認し、通帳、権利書、保険証券、写真、仏壇を処分前に分けます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">まちづくり課を確認</a></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>須坂駅周辺、市役所周辺、村山・日滝・豊洲・井上方面では、集合住宅、戸建て、果樹園近くの物置付き住宅が混在します。家庭ごみ、屋外保管品、事業系に近い残置物、屋内搬出が必要な家財を分けて見積もりに出します。</p><ul class="manual-admin-list"><li>行政: 分別、収集日、指定袋・ごみシール、清掃センター自己搬入、福祉・空き家制度の相談</li><li>業者: 室内搬出、大型家具の階段作業、庭・物置、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、作業後写真報告</li></ul></div>
   </div>
 </section>
 
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">須坂市に反映した長野県調査データ</h2>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">須坂市で整理前に確認したい行政・地域データ</h2>
     <p class="lead">須坂市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に須坂市公式サイトで最新条件を確認してください。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>長野広域連合。ながの環境エネルギーセンター、ちくま環境エネルギーセンター、須坂市清掃センターなど</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</span></div>
+      <div class="nagano-report-card"><b>処理圏</b><span>長野広域連合の処理圏として、可燃ごみ、不燃ごみ、資源物、処理困難物を品目別に確認します。</span></div>
+      <div class="nagano-report-card"><b>料金確認</b><span>自己搬入や粗大ごみの料金は、品目、搬入先、年度で変わるため、作業前に須坂市公式のごみ案内で確認します。</span></div>
       <div class="nagano-report-card"><b>地域特性</b><span>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。</span></div>
       <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a>のみを出典として記載。</span></div>
     </div>
     <table class="nagano-report-table">
       <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</td></tr>
+      <tr><th>料金確認</th><td>自己搬入、粗大ごみ、家電4品目、処理困難物は、品目と搬入先で扱いが変わります。料金を作らず、須坂市公式のごみ案内で確認します。</td></tr>
       <tr><th>見積もり前</th><td>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
       <tr><th>出典</th><td><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a></td></tr>
     </table>
@@ -2188,7 +2444,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を須坂市のごみ案内で確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -2219,11 +2475,17 @@
         <div class="ward-links"><a href="/nagano/chikuma/">千曲市</a><a href="/nagano/nagano/">長野市</a><a href="/nagano/sakaki/">坂城町</a><a href="/nagano/ogawa/">小川村</a></div>
       </section>
 
-<section id="contact" class="cta-band">
-        <p class="section-kicker">見積もり前チェック</p>
-        <h2>須坂市の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
-        <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
+<section id="contact" class="contact-check-card">
+        <p class="section-kicker">写真で概算見積もり</p>
+        <h2>須坂市で見積もりを取る前に、写真と作業条件をそろえる</h2>
+        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。須坂市では、市街地住宅、郊外戸建て、果樹園周辺の物置・屋外品、坂道、冬季道路、駐車位置、鍵預かり、写真報告の希望まで先に共有すると、追加費用の条件を確認しやすくなります。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、エレベーターの有無</li>
+          <li>退去日、売却予定日、鍵の受け渡し方法</li>
+          <li>残したい品、探したい書類、供養したい品</li>
+          <li>自治体で出すもの、業者が屋内搬出するもの</li>
+        </ul>
+        <div class="hero-actions"><a class="btn primary" href="#process">相談前の流れを見る</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
   </div>
@@ -2510,6 +2772,14 @@
     background:#4F6F8F!important;
     background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
   }
+  html body .local-compare .compare-duo .bar-row.city .bar-fill {
+    background:#E8752A!important;
+    background-image:linear-gradient(90deg,#E8752A,#F5B36E)!important;
+  }
+  html body .local-compare .compare-duo .bar-row.pref .bar-fill {
+    background:#2D7DD2!important;
+    background-image:linear-gradient(90deg,#2D7DD2,#85B8E8)!important;
+  }
   html body .bar-fill.warm {
     background:#D68A3A!important;
     background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
@@ -2647,6 +2917,3 @@
 <footer class="footer"><div class="footer-inner">須坂市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-

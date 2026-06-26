@@ -75,6 +75,18 @@
   .aichi-top-polish__grid span { color:#4d433b; line-height:1.75; font-size:.94rem; }
   @media (max-width: 900px) { .aichi-top-polish__grid { grid-template-columns: 1fr; } }
 
+
+    .aichi-perfect-check{background:#fff8ef;border:1px solid #f1d7bb;border-left:6px solid var(--orange)}
+    .aichi-perfect-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:16px}
+    .aichi-perfect-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;box-shadow:0 10px 22px rgba(43,33,24,.05)}
+    .aichi-perfect-card b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
+    .aichi-perfect-card span{display:block;color:#56483d;font-weight:750;line-height:1.75;font-size:15px}
+    .aichi-photo-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:14px}
+    .aichi-photo-grid span{background:#fff;border:1px solid #efcfb4;border-radius:999px;padding:7px 10px;text-align:center;color:#8a3a0c;font-weight:900;font-size:13px}
+    .aichi-perfect-note{margin:16px 0 0;padding:14px 16px;background:#2f241d;color:#fff7ef;border-radius:8px;font-weight:850;line-height:1.8}
+    @media(max-width:900px){.aichi-perfect-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.aichi-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:640px){.aichi-perfect-grid,.aichi-photo-grid{grid-template-columns:1fr}.aichi-perfect-card{padding:16px}}
+
   </style>
 </head>
 <body>
@@ -126,6 +138,23 @@
         <a class="quick-card" href="#rules"><b>ごみ処分を分ける</b><span>自治体回収、自己搬入、業者作業を確認</span></a>
         <a class="quick-card" href="#vendor"><b>危ない業者を避ける</b><span>極端に安い見積もり、書面なしを確認</span></a>
       </div>
+    </section>
+
+
+    <section id="aichi-consult-perfect" class="aichi-perfect-check">
+      <p class="kicker">100点に近づける相談前チェック</p>
+      <h2 class="section-title">愛知県で失敗しないために、地域・建物・写真・処分方法を先に分ける</h2>
+      <p class="lead">愛知県ページは、名古屋市の集合住宅、尾張の郊外戸建て、西三河の車庫・工具、東三河の農家住宅、知多・海部の海沿い住宅まで、作業条件が大きく変わる前提で使うと分かりやすくなります。見積もり前に下の4点を整理しておくと、追加費用や当日の行き違いを防ぎやすくなります。</p>
+      <div class="aichi-perfect-grid">
+        <div class="aichi-perfect-card"><b>1. 作業場所を決める</b><span>まず市区町村ページを開きます。名古屋市内、尾張、知多・海部、西三河、東三河で、搬出条件と行政ごみの確認先が変わります。</span></div>
+        <div class="aichi-perfect-card"><b>2. 建物条件を分ける</b><span>マンションは管理会社届出・EV予約・共用部養生、戸建ては前面道路・駐車位置・庭や物置の有無を先に見ます。</span></div>
+        <div class="aichi-perfect-card"><b>3. 残す品を決める</b><span>通帳、印鑑、権利書、写真、手紙、仏壇、貴金属、工具、趣味用品など、探す物と残す物を処分前に共有します。</span></div>
+        <div class="aichi-perfect-card"><b>4. 自治体処分と業者作業を分ける</b><span>少量ごみや粗大ごみで済む品と、屋内搬出・分別・供養・買取・写真報告まで任せる品を分けます。</span></div>
+      </div>
+      <div class="aichi-photo-grid">
+        <span>玄関</span><span>部屋全体</span><span>押入れ</span><span>物置</span><span>駐車位置</span><span>前面道路</span>
+      </div>
+      <p class="aichi-perfect-note">迷ったら、写真を撮って市区町村ページの行政窓口・料金目安・業者選びの順に確認してください。料金だけで判断せず、書面見積もり、追加費用条件、写真報告、買取査定、供養品の扱いまで確認するのが安全です。</p>
     </section>
 
     <section id="aichi-impact">
@@ -272,12 +301,12 @@
       <h2 class="section-title">公式ごみ情報を確認して、自治体処分と業者作業を分ける</h2>
       <p class="lead">愛知県内でも、粗大ごみの申込方法、自己搬入の可否、処理施設、手数料、収集できない品目は市町村ごとに異なります。遺品整理・生前整理では、自治体で処分できる品と、屋内搬出・仕分け・供養・買取査定を含む業者作業を分けて確認すると、見積もりの精度が上がります。</p>
       <div class="grid-3">
-        <article class="info-card"><b>自治体で確認するもの</b><p>粗大ごみ受付、収集日、自己搬入、手数料、家電リサイクル対象品、市で収集しない品目、一時多量ごみの扱いを公式ページで確認します。</p></article>
+        <article class="info-card"><b>自治体で確認するもの</b><p>粗大ごみ受付、収集日、自己搬入、手数料、家電リサイクル対象品、市で収集しない品目、一時多量ごみの扱いを自治体の該当案内に沿って分けます。</p></article>
         <article class="info-card"><b>業者に任せる作業</b><p>室内からの大型家具搬出、貴重品探索、形見分け、仏壇・写真の供養、車庫・物置の整理、作業前後の写真報告は見積もり範囲に入れます。</p></article>
         <article class="info-card"><b>見積もり前に共有</b><p>部屋全体、押入れ、物置、駐車位置、搬出経路、エレベーター、階段幅、残す品、探す書類を写真で共有すると、自治体処分と業者作業を切り分けやすくなります。</p></article>
       </div>
       <table>
-        <thead><tr><th>自治体</th><th>公式情報で確認できる主な項目</th><th>遺品整理・生前整理での見方</th></tr></thead>
+        <thead><tr><th>自治体</th><th>掲載している主な確認項目</th><th>遺品整理・生前整理での見方</th></tr></thead>
         <tbody>
           <tr><td>名古屋市</td><td>家庭ごみ・資源の分け方、収集日検索、粗大ごみの事前申込、自己搬入、市で収集しないもの、一時多量ごみ。</td><td>マンション整理では粗大ごみ予約だけでなく、家電リサイクル品、処理困難物、引越し・片付けで一度に出るごみを先に分けます。</td></tr>
           <tr><td>豊田市</td><td>資源やごみの分け方、清掃施設への搬入、本人確認、渡刈クリーンセンター、藤岡プラント、不燃物処分場など。</td><td>戸建て・車庫・物置の整理では、可燃、不燃、資源、自己搬入、業者搬出の範囲を分けると費用判断がしやすくなります。</td></tr>
@@ -292,7 +321,7 @@
         <a class="chip" href="https://www.city.okazaki.lg.jp/kurashi/gomi/1012430/1002188/index.html">岡崎市 分別ルール</a>
         <a class="chip" href="https://www.city.toyohashi.lg.jp/61182.htm">豊橋市 ごみの出し方</a>
       </div>
-      <p class="source-note">出典：名古屋市、豊田市、岡崎市、豊橋市の公式ごみ・リサイクル案内を確認。電話番号、受付時間、手数料、施設の受入条件は変更される場合があるため、見積もり前に各公式ページで最新情報を確認してください。未確認の電話番号や受付時間は掲載していません。</p>
+      <p class="source-note">出典：名古屋市、豊田市、岡崎市、豊橋市のごみ・リサイクル関連ページ。電話番号、受付時間、手数料、施設の受入条件は、確認できたページだけ本文に記載しています。</p>
     </section>
 
     <section id="cases">

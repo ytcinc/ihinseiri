@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8">
@@ -1282,19 +1282,22 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fffaf6;border:1px solid #eee0d5;box-shadow:none;border-radius:10px;padding:16px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:18px;line-height:1.45;color:#422012}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 10px;font-size:15.8px;line-height:1.8;color:#3f332b}
+    .manual-admin-card a,.admin-deep-card a{display:inline-block;margin:4px 10px 0 0;font-weight:800;color:#b64a1c;text-decoration:underline;text-underline-offset:3px;background:transparent}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
+    .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid,.contact-check-list{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1697,52 @@
 </style>
 
 
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1721,6 +1770,25 @@
         </div>
       </div>
       <div class="hero-panel"><h2>飯綱町で特に多い相談</h2><ul class="quick-list"><li>飯綱町の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="飯綱町の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>飯綱町は果樹農家の大きな家と離れ・作業小屋の整理が中心です</h2>
+    <div class="local-landmark-prose">
+      <p>飯綱町は牟礼・三水・飯綱東高原など、果樹園に近い戸建てや広い敷地の住宅が多い地域です。母屋だけでなく、離れ、作業小屋、複数の物置を含む実家じまいになることがあります。</p>
+      <p>三世代で住んできた家では、数十年分の家財、衣類、贈答品、農具、脚立、コンテナ、屋外用品が蓄積していることがあります。2t車だけで収まらない大規模整理になる可能性も見ておく必要があります。</p>
+      <p>果樹園に近い家では、農業用品と家庭用品を分け、自治体のごみで出せるもの、自己搬入するもの、専門処分や買取査定に回すものを整理します。残す品、探す書類、供養品も早めに分けると作業が進みます。</p>
+      <p>飯綱東高原や霊仙寺湖方面では冬季道路や坂道も見積もりに関わります。写真を送るときは、室内、玄関、駐車場所、庭、物置、作業小屋を分けて撮るのがおすすめです。</p>
     </div>
   </section>
 
@@ -2083,16 +2151,7 @@
           <h3>飯綱町で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅が県平均より大きい</td><td>空き家化、相続後の実家じまい、長期間未使用の家財整理。</td><td>売却・解体予定、管理状態、庭・物置・納屋の範囲。</td></tr><tr><td>市街地と郊外が混在</td><td>戸建て、集合住宅、郊外空き家で作業条件が変わる。</td><td>道路幅、駐車位置、玄関までの距離、階段の有無。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>飯綱町で最初にそろえる確認材料</h3>
-          <p>飯綱町では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>市街地と郊外で搬出条件を分ける</b><span>集合住宅か戸建てか、道路幅、階段、玄関から車両までの距離を確認します。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>空き家化前後の出口を決める</b><span>売却、解体、空き家管理、相続手続きのどれに進むかで、残す品と処分範囲が変わります。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+        <div class="regional-original">
           <h3>飯綱町ならではの整理メモ</h3>
           <p class="regional-lead">飯綱町は長野地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,65 +2204,73 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">飯綱町の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>飯綱町で確認したい自治体情報</h2>
-    <p>飯綱町で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、飯綱町公式サイトで最新情報を確認してください。</p>
+    <h2>飯綱町の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>飯綱町では、牟礼・三水方面の戸建て、果樹園に近い住宅、山沿いの空き家、物置・納屋を含む整理で確認点が変わります。通常収集で出すもの、ながの環境エネルギーセンターへ直接搬入する可燃ごみ・可燃性粗大ごみ、専門業者が屋内から搬出する家財を分けると、見積もり範囲が明確になります。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>飯綱町役場</strong><br>代表電話: 026-253-2511<br>所在地: 〒389-1293 上水内郡飯綱町大字牟礼2795-1<br>FAX: 026-253-6887</p><a href="https://www.town.iizuna.nagano.jp/" target="_blank" rel="noopener">飯綱町公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>飯綱町公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.town.iizuna.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>長野地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.town.iizuna.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>飯綱町で特に確認したいこと</h3><p>戸建て、別荘、果樹園周辺の物置では、屋外品、納屋、車両進入、冬季日程を写真で共有します。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に見ること</h3><p>牟礼地区・三水地区の分別収集カレンダー、可燃ごみ・可燃性粗大ごみ、家電4品目、パソコン、ライター、町指定袋を確認します。袋詰め前に通帳・印鑑・権利書・写真を別箱に分けると、処分後の探し直しを防げます。</p></div>
+    <div class="admin-deep-card"><h3>自己搬入と大量家財</h3><p>引っ越しや実家じまいで可燃ごみ・可燃性粗大ごみが多い場合は、ながの環境エネルギーセンターへの直接搬入を検討します。不燃物・資源物は同施設で受け取れないため、品目ごとに出し方を分けます。</p></div>
+    <div class="admin-deep-card"><h3>福祉・高齢者支援</h3><p>地域包括支援センターは介護・認知症・成年後見など高齢者の暮らしに関する相談窓口です。雪下ろし・住宅周りの除雪は、要件を満たす世帯向けの軽度生活援助サービスがあります。</p></div>
+    <div class="admin-deep-card"><h3>空き家の家財処分</h3><p>飯綱町空き家・空き地バンクへ登録する空き家では、家財道具等処分費の補助制度があります。ごみ処理手数料、収集・運搬、廃棄物処分委託、家電リサイクル料金、清掃費が対象に含まれます。</p></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>飯綱町役場</strong><br>所在地: 〒389-1293 長野県上水内郡飯綱町大字牟礼2795-1<br>代表電話: 026-253-2511<br>開庁時間: 月曜〜金曜 8:30〜17:15（祝日・年末年始を除く）<br>ごみは住民環境課 生活環境係（電話: 026-253-4762 / FAX: 026-253-6887 / seikan@town.iizuna.nagano.jp）、福祉は保健福祉課、空き家は制度内容に応じて住まい・土地や環境部門の案内を確認します。</p><a href="https://www.town.iizuna.nagano.jp/docs/872.html" target="_blank" rel="noopener">各課ご案内</a></div>
+    <div class="manual-admin-card"><h3>分別・収集日</h3><p>飯綱町は牟礼地区・三水地区ごとに分別収集カレンダーを公開しています。可燃ごみ、資源物、埋立ごみ、乾電池類、蛍光管類、小型家電など、品目を分けて出します。ガスが残ったライターは収集車火災につながるため、ガス抜き後に金属部分を分別し、埋立ごみとして扱う案内があります。</p><a href="https://www.town.iizuna.nagano.jp/docs/8577.html" target="_blank" rel="noopener">ごみの分別収集カレンダー</a></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・大型家具</h3><p>可燃性粗大ごみや一度に大量に出る可燃ごみは、ながの環境エネルギーセンターへ直接搬入できます。タンス、ベッド、布団、仏壇、木製家具などは、可燃性か不燃性か、屋内からの搬出が必要かを分けます。2階からの階段搬出、物置・納屋の整理、庭木や屋外品は業者作業として見積もりに入れます。</p><a href="https://www.town.iizuna.nagano.jp/docs/572.html" target="_blank" rel="noopener">可燃性粗大ごみ</a></div>
+    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>ながの環境エネルギーセンター</strong><br>所在地: 長野市松岡二丁目27番1号<br>電話: 026-222-5301 / FAX: 026-222-5302<br>受入時間: 月曜〜金曜 8:30〜11:30・13:00〜16:30、土曜 8:30〜11:30<br>休み: 日曜・祝日・年始（1月1日〜1月3日）<br>手数料: 10kgまでごとに170円。受付でごみ処理申込書を提出し、本人確認書類を持参します。不燃物・資源物は持ち込めません。</p><a href="https://www.town.iizuna.nagano.jp/docs/2285.html" target="_blank" rel="noopener">可燃ごみ・可燃性粗大ごみの処理施設</a></div>
+    <div class="manual-admin-card"><h3>家電4品目・パソコン</h3><p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法に基づく処分になります。パソコンはメーカー回収等の案内を分別カレンダー側で分けています。リサイクル対象品、タイヤ、農薬、バッテリー、農機具、事業系に近い残置物は、通常の家庭ごみと混ぜず品目名・型番・台数を整理して相談します。</p><a href="https://www.town.iizuna.nagano.jp/docs/3974.html" target="_blank" rel="noopener">家電リサイクル法について</a></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p><strong>飯綱町地域包括支援センター</strong><br>電話: 026-253-2485 / FAX: 026-253-6887 / houkatsu@town.iizuna.nagano.jp<br>介護、認知症、成年後見制度など高齢者の暮らしに関する相談を受けています。土曜窓口は毎月第3土曜日、飯綱町役場第一庁舎1階 保健福祉課窓口で8:30〜12:00に開設する案内があります。</p><a href="https://www.town.iizuna.nagano.jp/docs/8932.html" target="_blank" rel="noopener">地域包括支援センター土曜日窓口</a></div>
+    <div class="manual-admin-card"><h3>除雪・住宅改良などの生活支援</h3><p>高齢者にやさしい住宅改良促進事業は補助対象経費限度額70万円、補助割合9/10（最高63万円）で、手すり、段差解消、滑り防止、扉取替え、洋式便器への取替えなどが対象です。軽度生活援助サービスは、65歳以上のみの世帯などを対象に、屋根の雪下ろしや住宅周りの除雪等の作業料を所得区分に応じて援助します。</p><a href="https://www.town.iizuna.nagano.jp/docs/799.html" target="_blank" rel="noopener">高齢者のための生活支援</a></div>
+    <div class="manual-admin-card"><h3>空き家・家財処分補助</h3><p>飯綱町空き家家財道具等処分支援補助は、空き家・空き地バンク登録を前提に、補助対象経費の1/2以内、上限20万円です。対象経費には、ごみ処理手数料、ごみの収集・運搬料金、廃棄物処分業者への委託費、特定家庭用機器リサイクル料金、空き家内外の清掃費が含まれます。申請時は見積書、家財道具の写真などを用意します。</p><a href="https://www.town.iizuna.nagano.jp/docs/2663.html" target="_blank" rel="noopener">空き家家財道具等処分支援補助</a></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>牟礼駅周辺、三水、飯綱東高原、りんご畑に近い戸建てでは、家庭用品、農具、物置、屋外保管品が混在しやすいです。行政は分別、収集日、可燃ごみ・可燃性粗大ごみの搬入、福祉・空き家制度の相談。業者は屋内搬出、大型家具の階段作業、庭・物置、供養、買取、鍵預かり、作業後写真報告を担当範囲として分けます。</p></div>
   </div>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">飯綱町に反映した長野県調査データ</h2>
-    <p class="lead">飯綱町で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に飯綱町公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">飯綱町で整理前に確認したい行政・地域データ</h2>
+    <p class="lead">飯綱町は牟礼・三水の分別収集、ながの環境エネルギーセンターへの可燃ごみ・可燃性粗大ごみ搬入、空き家家財処分補助、高齢者向け生活支援を組み合わせて考える地域です。家財整理では、自治体制度で対応するものと、屋内搬出・仕分け・探索を伴う業者作業を分けます。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>長野広域連合。ながの環境エネルギーセンター、ちくま環境エネルギーセンター、須坂市清掃センターなど</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.town.iizuna.nagano.jp/" target="_blank" rel="noopener">飯綱町公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>ごみ窓口</b><span>住民環境課 生活環境係: 026-253-4762。牟礼地区・三水地区の収集カレンダー、指定袋、分別区分を確認します。</span></div>
+      <div class="nagano-report-card"><b>直接搬入</b><span>ながの環境エネルギーセンター: 長野市松岡二丁目27番1号、026-222-5301。10kgまでごとに170円。不燃物・資源物は不可。</span></div>
+      <div class="nagano-report-card"><b>福祉支援</b><span>地域包括支援センター: 026-253-2485。介護・認知症・成年後見の相談、土曜午前窓口、除雪・住宅改良の生活支援を確認します。</span></div>
+      <div class="nagano-report-card"><b>空き家補助</b><span>空き家・空き地バンク登録を前提に、家財道具等処分費の1/2、上限20万円。見積書と処分前写真を用意します。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</td></tr>
-      <tr><th>見積もり前</th><td>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.town.iizuna.nagano.jp/" target="_blank" rel="noopener">飯綱町公式サイト</a></td></tr>
+      <tr><th>収集・分別</th><td>牟礼地区・三水地区のカレンダーを確認し、袋詰め前に通帳、印鑑、権利書、保険証券、写真、貴金属を別に保管します。</td></tr>
+      <tr><th>搬入・料金</th><td>可燃ごみ・可燃性粗大ごみはながの環境エネルギーセンターで、月曜〜金曜 8:30〜11:30・13:00〜16:30、土曜 8:30〜11:30。手数料は10kgまでごとに170円です。</td></tr>
+      <tr><th>見積もり前</th><td>室内、収納、玄関、階段、駐車位置、庭、物置、納屋、除雪状況の写真を用意し、残す品・供養品・買取候補・返送品を先に決めます。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.town.iizuna.nagano.jp/kurashi/gomi/" target="_blank" rel="noopener">飯綱町 環境・ごみ</a> / <a href="https://www.town.iizuna.nagano.jp/docs/872.html" target="_blank" rel="noopener">各課ご案内</a> / <a href="https://www.town.iizuna.nagano.jp/docs/2663.html" target="_blank" rel="noopener">空き家家財道具等処分支援補助</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">電話番号、受付時間、料金、対象条件は制度改定で変わる場合があります。申込み前に飯綱町、長野広域連合の各受付先で最新条件を確認してください。</p>
   </div>
 </section>
-
 
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
     <p class="major-seo-local__kicker">飯綱町で失敗しない整理導線</p>
     <h2>飯綱町で遺品整理・生前整理を相談する前に見るポイント</h2>
-    <p class="major-seo-local__lead">郊外戸建て、山手住宅、空き家整理で、積雪期と屋外品の量が見積もりに影響します。 冬季道路、車両進入、庭・納屋、仏壇・写真、鍵預かり、写真報告を確認します。</p>
+    <p class="major-seo-local__lead">牟礼・三水の戸建て、果樹園周辺の住宅、飯綱東高原側の空き家では、冬季道路、庭・物置・納屋、可燃性粗大ごみの搬入、空き家家財処分補助を一緒に確認すると進めやすくなります。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>牟礼・三水、戸建てか集合住宅か、階数、前面道路、除雪状況、駐車位置を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>2. 行政ルール</b><span>牟礼地区・三水地区の分別カレンダー、可燃性粗大ごみ、家電4品目、パソコン、ライターの出し方を確認します。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>部屋全体、押入れ、玄関、階段、物置、納屋、庭、車両位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
       <thead><tr><th>検索している状況</th><th>飯綱町で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
       <tbody>
-        <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
-        <tr><td>行政ごみと業者作業を分けたい</td><td>自治体で出せる少量ごみと、屋内搬出・大量家財・供養・買取を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
-        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、写真報告、残す品、返送品、立会い可否を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
+        <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、物置・納屋、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
+        <tr><td>行政ごみと業者作業を分けたい</td><td>分別収集で出す少量ごみ、ながの環境エネルギーセンターへ搬入する可燃性粗大ごみ、屋内搬出が必要な家財を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
+        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、作業前後の写真報告、残す品、返送品、空き家バンク・家財処分補助の対象確認を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
         <tr><td>悪質業者を避けたい</td><td>見積書の内訳、追加料金条件、許可・提携先、買取査定の説明、契約前のキャンセル条件を見る。</td><td>業者の見分け方・比較表</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="major-seo-local__note">飯綱町では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
+  <p class="major-seo-local__note">飯綱町では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担が見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
 </section>
 
 <section id="faq" class="faq">
@@ -2219,10 +2286,16 @@
         <div class="ward-links"><a href="/nagano/ogawa/">小川村</a><a href="/nagano/shinano/">信濃町</a><a href="/nagano/nagano/">長野市</a><a href="/nagano/takayama/">高山村</a></div>
       </section>
 
-<section id="contact" class="cta-band">
+<section id="contact" class="contact-check-card">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>飯綱町の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>飯綱町では、牟礼・三水方面の戸建て、果樹園周辺、別荘・空き家、物置・納屋・屋外品まで範囲を先に決めると進めやすくなります。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、エレベーターの有無</li>
+          <li>退去日、売却予定日、鍵の受け渡し方法</li>
+          <li>残したい品、探したい書類、供養したい品</li>
+          <li>自治体で出すもの、業者が屋内搬出するもの</li>
+        </ul>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
@@ -2510,6 +2583,14 @@
     background:#4F6F8F!important;
     background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
   }
+  html body .local-compare .compare-duo .bar-row.city .bar-fill {
+    background:#E8752A!important;
+    background-image:linear-gradient(90deg,#E8752A,#F5B36E)!important;
+  }
+  html body .local-compare .compare-duo .bar-row.pref .bar-fill {
+    background:#2D7DD2!important;
+    background-image:linear-gradient(90deg,#2D7DD2,#85B8E8)!important;
+  }
   html body .bar-fill.warm {
     background:#D68A3A!important;
     background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
@@ -2647,6 +2728,4 @@
 <footer class="footer"><div class="footer-inner">飯綱町の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
 

@@ -1283,18 +1283,23 @@
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
     .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-card,.manual-admin-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+    .manual-admin-card a{display:inline-flex;margin:6px 8px 0 0;padding:8px 12px;background:#fff7ed;border:1px solid #e7c7a7;color:#8c3d00;text-decoration:none;font-weight:800;font-size:14px}
+    .manual-admin-list{margin:8px 0 0;padding-left:1.2em;color:#4c4439;line-height:1.85}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    #contact.contact-check-card{margin-top:38px;padding:24px;background:#fff;border:1px solid #eadfd0;border-left:6px solid #d05300;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2b2b2b}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#2b2b2b}
+    #contact.contact-check-card p{color:#4c4439;line-height:1.85}
+    .contact-check-list{margin:14px 0 18px;padding-left:1.2em;line-height:1.85;color:#4c4439}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1694,6 +1699,52 @@
 </style>
 
 
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1721,6 +1772,25 @@
         </div>
       </div>
       <div class="hero-panel"><h2>野沢温泉村で特に多い相談</h2><ul class="quick-list"><li>野沢温泉村の別荘・二地域居住の家財、鍵預かり、管理会社連絡まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="野沢温泉村の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>野沢温泉村は坂道の温泉街で小型車両と手運びの段取りが重要です</h2>
+    <div class="local-landmark-prose">
+      <p>野沢温泉村は温泉街、野沢温泉スキー場周辺、豊郷・前坂方面で搬出条件が変わります。中心部は坂道や細い路地が多く、2t車以上が入りにくい場所もあります。</p>
+      <p>温泉街では、車をどこに停めるか、外湯めぐりの通行を妨げないか、観光客が多い時間帯を避けられるかが重要です。融雪道路や冬季の積雪がある時期は、搬出方法と安全対策も確認します。</p>
+      <p>村内に鉄道駅はないため、飯山駅や戸狩野沢温泉駅方面から車で向かう想定になります。一軒家や空き家では、鍵預かり、写真報告、物置、屋外保管品、電気水道の状態まで確認します。</p>
+      <p>大湯、麻釜、外湯めぐり、スキー場周辺の住宅では、小型車両、台車、手運びを組み合わせて段取りすることがあります。「温泉街の中でも対応できるか」という不安に答えられる内容が重要です。</p>
     </div>
   </section>
 
@@ -2083,16 +2153,7 @@
           <h3>野沢温泉村で見積もり前に見るポイント</h3>
           <table><thead><tr><th>数字から分かること</th><th>起きやすい相談</th><th>事前に共有したい写真・情報</th></tr></thead><tbody><tr><td>人口減少幅が県平均より大きい</td><td>空き家化、相続後の実家じまい、長期間未使用の家財整理。</td><td>売却・解体予定、管理状態、庭・物置・納屋の範囲。</td></tr><tr><td>人口密度が低め</td><td>山間部、集落部、広い敷地、車両進入に制限がある整理。</td><td>現地までの道路、車両進入可否、庭・物置・納屋の写真。</td></tr><tr><td>共同住宅より戸建て比率が高め</td><td>大型家具、庭まわり、物置、仏壇を含む実家じまい。</td><td>各部屋、押入れ、庭、物置、車庫、仏壇の写真。</td></tr><tr><td>家族世帯・戸建て整理も多い</td><td>家財量が多く、形見分けや残す品の判断に時間がかかる。</td><td>残す家具、形見分け品、供養品、買取希望品。</td></tr><tr><td>65歳以上割合が県平均以上</td><td>施設入居前の生前整理、相続前の貴重品探索、仏壇・写真の供養。</td><td>通帳、印鑑、権利書、写真、貴金属の探索範囲。</td></tr></tbody></table>
         </div>
-        <div class="local-priority">
-          <h3>野沢温泉村で最初にそろえる確認材料</h3>
-          <p>野沢温泉村では、統計の数字だけでなく、現地写真と行政確認をセットで見ると見積もりのズレを減らせます。</p>
-          <div class="priority-grid">
-            <div class="priority-card"><span class="priority-tag">搬出</span><b>山間部・広い敷地の進入経路を確認</b><span>道幅、坂道、車両進入、庭・物置・納屋まで作業範囲に入るかを見ます。</span></div>
-            <div class="priority-card"><span class="priority-tag">行政</span><b>空き家化前後の出口を決める</b><span>売却、解体、空き家管理、相続手続きのどれに進むかで、残す品と処分範囲が変わります。</span></div>
-            <div class="priority-card"><span class="priority-tag">建物</span><b>戸建て・物置・庭まで確認</b><span>室内だけでなく、押入れ、仏壇、物置、車庫、庭まわりまで写真で共有します。</span></div>
-            <div class="priority-card"><span class="priority-tag">家族</span><b>貴重品探索と写真報告を決める</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属を処分前に探す範囲を決めます。</span></div>
-          </div>
-        </div>        <div class="regional-original">
+                <div class="regional-original">
           <h3>野沢温泉村ならではの整理メモ</h3>
           <p class="regional-lead">野沢温泉村は北信地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
@@ -2145,65 +2206,72 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">野沢温泉村の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>野沢温泉村で確認したい自治体情報</h2>
-    <p>野沢温泉村で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、野沢温泉村公式サイトで最新情報を確認してください。</p>
+    <p class="eyebrow">行政窓口・ごみ・空き家相談</p>
+    <h2>野沢温泉村の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>野沢温泉村で整理を進める前に、村のごみ収集カレンダーで出すもの、分別ガイド・ごみ分別アプリで確認するもの、家電4品目・パソコン回収に回すもの、専門業者が屋内から搬出する大型家財を分けます。温泉街、前坂、坪山、北部、スキー場・宿泊施設併用住宅では、観光シーズン、積雪、坂道、駐車位置も先に確認します。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>野沢温泉村役場</strong><br>代表電話: 0269-85-3111<br>所在地: 〒389-2592 下高井郡野沢温泉村大字豊郷9817<br>FAX: 0269-85-3913</p><a href="https://www.vill.nozawaonsen.nagano.jp/" target="_blank" rel="noopener">野沢温泉村公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>野沢温泉村公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.vill.nozawaonsen.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>北信地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.vill.nozawaonsen.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>野沢温泉村で特に確認したいこと</h3><p>温泉地・豪雪地の整理では、作業時期、駐車場所、宿泊施設併用の残置物、鍵の受け渡しを先に決めます。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>令和8年度ごみ収集カレンダー、豊郷・前坂／重地原・坪山・北部の地区区分、分別ガイド、50音別一覧、ごみ分別アプリ「さんあ〜る」、家電4品目、パソコン無料回収を確認します。</p></div>
+    <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>室内搬出、階段作業、坂道、積雪期の車両位置、温泉街の搬出時間、宿泊施設併用住宅の備品、事業用品に近い残置物を家庭ごみと分けて写真で共有します。</p></div>
+    <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>高齢者世帯や施設入居前は民生課福祉係・地域包括支援センター、空き家や移住定住向け住宅は建設水道課移住定住係で入口を確認します。</p></div>
+    <div class="admin-deep-card"><h3>確認に使う公式ページ</h3><p>野沢温泉村の窓口案内、ごみの出し方、家電4品目、パソコン無料回収、福祉サービス、空き家バンクをもとに、確認できた情報だけを掲載します。</p></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>野沢温泉村役場</strong><br>所在地: 〒389-2592 長野県下高井郡野沢温泉村大字豊郷9817<br>代表・総務課: 0269-85-3111 / FAX 0269-85-3913<br>ごみ・廃棄物は民生課 住民係（電話: 0269-85-3112 / FAX: 0269-85-4760）が担当します。福祉係も同じ民生課内で、高齢者福祉・介護保険・地域包括支援センターを扱います。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/window/index.html" target="_blank" rel="noopener">野沢温泉村 窓口案内</a></p></div>
+    <div class="manual-admin-card"><h3>分別・収集日</h3><p>野沢温泉村は、令和8年度ごみ収集カレンダーを豊郷・前坂地区、重地原・坪山・北部地区などに分けて公開しています。ごみは正しく分別されていないと収集されず、ステーションに残って近隣の迷惑になるため、袋詰め前に通帳・印鑑・権利書・保険証券・写真・貴金属を別箱に分けてください。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000018/index.html" target="_blank" rel="noopener">ごみの出し方・収集カレンダー</a></p></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・大型家具</h3><p>タンス、ベッド、マットレス、布団、仏壇、スキー用品、宿泊施設の備品、屋外品は、村の分別ガイドと50音別一覧で出し方を確認します。屋内からの運び出し、2階からの階段作業、雪囲い・物置・車庫の整理は、行政収集ではなく業者作業として見積もりに分けます。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000018/index.html" target="_blank" rel="noopener">ごみ分別ガイド・50音別一覧</a></p></div>
+    <div class="manual-admin-card"><h3>分別アプリ・多量ごみの確認</h3><p>ごみ分別アプリ「さんあ〜る」では、品目検索、分別ルール、収集日カレンダー、アラーム通知を日本語・英語で確認できます。空き家整理や引っ越しで一度に量が出る場合は、民生課住民係に品目・量・発生場所を伝え、通常収集に出すものと別手配に回すものを切り分けます。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000017/index.html" target="_blank" rel="noopener">ごみ分別アプリ さんあ〜る</a></p></div>
+    <div class="manual-admin-card"><h3>家電4品目・パソコン</h3><p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象です。購入店・買替店に相談するほか、村協力店のながや電気（0269-85-2343、前坂8157-3）、みつのでんき（0269-85-2134、豊郷894-2）も掲載されています。リネットジャパンリサイクル／SGムービングの自宅回収はSG-ARK事務局（0570-056-006、10:00〜17:00）で確認します。パソコンはリネットジャパンリサイクルとの協定により、本体を含む1箱は回収料金無料の案内があります。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1672202129705/index.html" target="_blank" rel="noopener">家電4品目の処分</a> <a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000021/index.html" target="_blank" rel="noopener">パソコン無料回収</a></p></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p>施設入居前、ひとり暮らし高齢者、身体的にごみ出しや片付けが難しい世帯は、民生課福祉係（0269-85-3112）と地域包括支援センター窓口（0269-85-4701）で相談先を確認します。福祉サービス一覧には、軽度生活援助（家内外の整理整頓など）、配食サービス、緊急通報体制、寝具類等洗濯乾燥消毒などが掲載されています。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000098/index.html" target="_blank" rel="noopener">介護予防・日常生活支援総合事業</a> <a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000105/index.html" target="_blank" rel="noopener">福祉サービス一覧</a></p></div>
+    <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p>空き家バンク、移住定住向け住宅、中古住宅購入等補助金、空き家情報提供制度は、建設水道課 移住定住係（0269-85-3113 / FAX 0269-85-3803）で確認します。空き家バンクの利用希望者は制度説明と注意事項を確認し、利用者登録申込書を提出してから物件確認に進みます。</p><p><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000007/index.html" target="_blank" rel="noopener">野沢温泉村 空き家バンク</a> <a href="https://www.vill.nozawaonsen.nagano.jp/www/genre/1000000000025/index.html" target="_blank" rel="noopener">移住・定住</a></p></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>豊郷、前坂、重地原、坪山、北部、温泉街、スキー場周辺、上ノ平別荘地では、観光シーズン、積雪、坂道、駐車位置、宿泊施設併用の残置物で作業計画が変わります。</p><ul class="manual-admin-list"><li>行政: 収集カレンダー、分別ガイド、50音別一覧、家電4品目、PC回収、福祉・空き家相談の入口確認</li><li>業者: 室内搬出、大型家具の階段作業、物置・車庫、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、写真報告</li><li>見積もり前: 地区名、建物種別、階数、坂道、除雪状況、駐車位置、返送品、観光シーズンの候補日を共有</li></ul></div>
   </div>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">野沢温泉村に反映した長野県調査データ</h2>
-    <p class="lead">野沢温泉村で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に野沢温泉村公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">野沢温泉村でごみ処理・空き家整理を分けて考えるポイント</h2>
+    <p class="lead">野沢温泉村は、温泉街の住宅、宿泊施設併用建物、前坂・坪山・北部の戸建て、スキー場周辺や別荘地の空き家で確認点が変わります。行政のごみ収集、家電・PC回収、福祉支援、空き家バンクを先に見て、屋内搬出や大量家財は業者見積もりに分けます。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>岳北地域。中野市・飯山市の指定処理施設など</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.vill.nozawaonsen.nagano.jp/" target="_blank" rel="noopener">野沢温泉村公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>収集カレンダー</b><span>豊郷・前坂、重地原・坪山・北部など、地区ごとの収集日を確認します。</span></div>
+      <div class="nagano-report-card"><b>分別アプリ</b><span>さんあ〜るで品目検索、収集日、分別ルール、アラーム通知を確認できます。</span></div>
+      <div class="nagano-report-card"><b>家電・PC</b><span>家電4品目は購入店・協力店・自宅回収、PCは協定回収を通常ごみと分けます。</span></div>
+      <div class="nagano-report-card"><b>福祉・空き家</b><span>地域包括支援センター、福祉サービス、空き家バンク、移住定住制度を確認します。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</td></tr>
-      <tr><th>見積もり前</th><td>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.vill.nozawaonsen.nagano.jp/" target="_blank" rel="noopener">野沢温泉村公式サイト</a></td></tr>
+      <tr><th>確認項目</th><th>野沢温泉村で見るポイント</th></tr>
+      <tr><td>行政で見ること</td><td>ごみの出し方、収集カレンダー、分別ガイド、50音別一覧、さんあ〜る、家電4品目、PC無料回収を確認します。</td></tr>
+      <tr><td>費用に影響すること</td><td>温泉街の搬出時間、積雪期の除雪、坂道、駐車位置、宿泊施設の備品、物置・車庫・屋外品の有無で作業人数と車両計画が変わります。</td></tr>
+      <tr><td>見積もり前</td><td>残す品、探す書類、供養品、買取候補、返送品、鍵預かり、写真報告、観光シーズンを避けたい候補日を共有します。</td></tr>
+      <tr><td>出典</td><td><a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000018/index.html" target="_blank" rel="noopener">ごみの出し方</a> / <a href="https://www.vill.nozawaonsen.nagano.jp/www/window/index.html" target="_blank" rel="noopener">窓口案内</a> / <a href="https://www.vill.nozawaonsen.nagano.jp/www/contents/1050000000007/index.html" target="_blank" rel="noopener">空き家バンク</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
   </div>
 </section>
 
-
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
-    <p class="major-seo-local__kicker">野沢温泉村で失敗しない整理導線</p>
+    <p class="major-seo-local__kicker">野沢温泉村で失敗しない整理準備</p>
     <h2>野沢温泉村で遺品整理・生前整理を相談する前に見るポイント</h2>
-    <p class="major-seo-local__lead">温泉地の住宅、山手の戸建て、空き家整理で、坂道・積雪・搬出時間の確認が大切です。 坂道、積雪、駐車位置、搬出時間、仏壇・写真、遠方写真報告を確認します。</p>
+    <p class="major-seo-local__lead">温泉街、坂道、積雪、宿泊施設併用住宅、上ノ平別荘地の空き家では、通常の戸建て整理よりも搬出日程と車両位置の確認が重要です。行政収集で出すもの、家電・PC回収に回すもの、業者が屋内から搬出するものを分けて相談しましょう。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
-    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>1. 地区と建物</b><span>豊郷、前坂、重地原、坪山、北部、温泉街、別荘地のどこか、戸建てか宿泊施設併用かを先に伝えます。</span></div>
+    <div class="major-seo-local__card"><b>2. 行政ルール</b><span>収集カレンダー、分別ガイド、さんあ〜る、家電4品目、PC回収を確認し、屋内搬出は業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、貴金属、仏壇、スキー用品、返送品は処分前に探索対象として伝えます。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、階段、坂道、駐車位置、除雪状況、物置、車庫、庭、客室備品を撮ると見積もりのズレを減らせます。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
-      <thead><tr><th>検索している状況</th><th>野沢温泉村で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
+      <thead><tr><th>相談内容</th><th>野沢温泉村で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
       <tbody>
-        <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
-        <tr><td>行政ごみと業者作業を分けたい</td><td>自治体で出せる少量ごみと、屋内搬出・大量家財・供養・買取を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
-        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、写真報告、残す品、返送品、立会い可否を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
-        <tr><td>悪質業者を避けたい</td><td>見積書の内訳、追加料金条件、許可・提携先、買取査定の説明、契約前のキャンセル条件を見る。</td><td>業者の見分け方・比較表</td></tr>
+        <tr><td>料金を早く知りたい</td><td>荷物量、階数、坂道、駐車位置、積雪、屋外品、宿泊備品、買取候補、供養品、期限をそろえます。</td><td>料金目安・見積もり前チェック</td></tr>
+        <tr><td>行政ごみと業者作業を分けたい</td><td>村の収集カレンダーで出すものと、屋内搬出・大量家財・家電4品目・PC回収に分けるものを確認します。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
+        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、作業前後の写真報告、残す品、返送品、立会い可否、候補日を先に決めます。</td><td>相談から作業完了までの流れ</td></tr>
+        <tr><td>空き家や別荘地を整理したい</td><td>空き家バンク、移住定住制度、売却・解体予定、草木管理、近隣対応を家財整理と同時に見ます。</td><td>空き家・住まい相談</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="major-seo-local__note">野沢温泉村では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
 </section>
 
 <section id="faq" class="faq">
@@ -2213,18 +2281,19 @@
       </section>
 
 <section id="links" class="nearby-wards">
-        <p class="section-kicker">周辺リンク</p>
-        <h2 class="section-title">野沢温泉村周辺のページも見る</h2>
-        <p>野沢温泉村で遺品整理・生前整理を検討している方が、同じ長野県内の近隣ページも確認できるよう、作成済みページだけを掲載しています。</p>
-        <div class="ward-links"><a href="/nagano/sakae/">栄村</a><a href="/nagano/kijimadaira/">木島平村</a><a href="/nagano/nakano/">中野市</a><a href="/nagano/yamanouchi/">山ノ内町</a></div>
-      </section>
+  <p class="section-kicker">周辺リンク</p>
+  <h2 class="section-title">野沢温泉村周辺のページも見る</h2>
+  <p>北信地域で遺品整理・生前整理を検討している方が、近隣市町村の行政ごみ・住宅条件・搬出条件も確認できるようにしています。</p>
+  <div class="ward-links"><a href="/nagano/sakae/">栄村</a><a href="/nagano/kijimadaira/">木島平村</a><a href="/nagano/nakano/">中野市</a><a href="/nagano/yamanouchi/">山ノ内町</a></div>
+</section>
 
-<section id="contact" class="cta-band">
-        <p class="section-kicker">見積もり前チェック</p>
-        <h2>野沢温泉村の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
-        <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
-      </section>
+<section id="contact" class="contact-check-card">
+  <p class="section-kicker">見積もり前チェック</p>
+  <h2>野沢温泉村の遺品整理・生前整理を相談する</h2>
+  <p>野沢温泉村では、温泉街・坂道・積雪・宿泊施設併用住宅・別荘地で搬出条件が変わります。次の情報をそろえておくと、見積もりと作業範囲が決めやすくなります。</p>
+  <ul class="contact-check-list"><li>住所、地区名、建物種別、階数、坂道、除雪状況、駐車位置</li><li>村の収集カレンダーで出すもの、家電4品目、PC回収、業者搬出に分けたいもの</li><li>通帳、印鑑、権利書、保険証券、写真、仏壇、貴金属、返送品</li><li>鍵預かり、写真報告、立会い可否、観光シーズンを避けたい候補日</li></ul>
+  <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
+</section>
     </main>
   </div>
 <script id="common-kita-before-after-script">

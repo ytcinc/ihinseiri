@@ -1294,19 +1294,30 @@
   </style>  <style id="admin-deep-v1">
     .admin-lead{font-size:17px;line-height:1.9;color:#4c4439;margin:0 0 18px}
     .admin-alert{margin:0 0 18px;padding:16px 18px;background:#fff7df;border-left:6px solid #d77a22;color:#3d3429;line-height:1.85}
-    .admin-deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
-    .admin-deep-card{background:#fff;border:1px solid #e1d8cb;box-shadow:0 12px 28px rgba(34,28,22,.06);padding:18px}
-    .admin-deep-card h3{margin:0 0 8px;font-size:19px;line-height:1.45;color:#231f1a}
-    .admin-deep-card p{margin:0 0 12px;font-size:15.8px;line-height:1.8;color:#4c4439}
+    .admin-deep-grid,.manual-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0 22px}
+    .admin-deep-card,.manual-admin-card{background:#fffaf6;border:1px solid #eee0d5;box-shadow:none;border-radius:10px;padding:16px}
+    .admin-deep-card h3,.manual-admin-card h3{margin:0 0 8px;font-size:18px;line-height:1.45;color:#422012}
+    .admin-deep-card p,.manual-admin-card p{margin:0 0 10px;font-size:15.8px;line-height:1.8;color:#3f332b}
+    .manual-admin-card a,.admin-deep-card a{display:inline-block;margin:4px 10px 0 0;font-weight:800;color:#b64a1c;text-decoration:underline;text-underline-offset:3px;background:transparent}
+    .manual-admin-list{margin:8px 0 10px;padding-left:1.2em;line-height:1.75;color:#3f332b}
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
     .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
     .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
     .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
-    .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-    .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
-    @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
+    @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
+    #contact.contact-check-card{margin:28px 0 0;padding:24px;background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2f261d;display:block}
+    #contact.contact-check-card .section-kicker{margin:0 0 6px;color:#b64a1c;font-weight:900}
+    #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#231f1a}
+    #contact.contact-check-card p{margin:0 0 16px;color:#4c4439;font-size:16px;line-height:1.85}
+    .contact-check-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 18px;padding:0;list-style:none}
+    .contact-check-list li{position:relative;padding:12px 14px 12px 34px;background:#fffaf6;border:1px solid #eee0d5;color:#3f332b;font-weight:700;line-height:1.6}
+    .contact-check-list li:before{content:"";position:absolute;left:14px;top:1.05em;width:8px;height:8px;border-radius:50%;background:#d77a22}
+    #contact.contact-check-card .hero-actions{margin:0;gap:10px}
+    #contact.contact-check-card .btn{box-shadow:none}
+    #contact.contact-check-card .btn.secondary{background:#fff;color:#8c3d00;border:1px solid #d9c7b5}
+    @media(max-width:760px){#contact.contact-check-card{padding:18px}.contact-check-list{grid-template-columns:1fr}#contact.contact-check-card h2{font-size:21px}}
   </style>  <style id="nagano-order-fix-v1">
     .page main, main.page, main.wrap{display:flex;flex-direction:column}
     #area-keyword-guide{order:1}
@@ -1706,6 +1717,292 @@
 </style>
 
 
+<style id="nagano-city-estimate-boost-style-v1">
+  .nagano-city-estimate-boost {
+    width: min(1120px, calc(100% - 32px));
+    margin: -34px auto 28px;
+    position: relative;
+    z-index: 3;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-top: 6px solid #d05300;
+    box-shadow: 0 18px 42px rgba(48, 38, 29, .12);
+    padding: 26px;
+  }
+  .nagano-city-estimate-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .68fr);
+    gap: 18px;
+    align-items: end;
+    margin-bottom: 18px;
+  }
+  .nagano-city-estimate-head .section-kicker {
+    grid-column: 1 / -1;
+    margin: 0 0 -8px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .nagano-city-estimate-head h2 {
+    margin: 0;
+    color: #2f2b27;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1.42;
+    font-weight: 900;
+  }
+  .nagano-city-estimate-head p {
+    margin: 0;
+    color: #4f5953;
+    font-size: 16px;
+    line-height: 1.82;
+    font-weight: 700;
+  }
+  .nagano-city-estimate-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .nagano-city-estimate-card {
+    background: #fff7ef;
+    border: 1px solid #ead8c4;
+    padding: 15px;
+    min-height: 152px;
+  }
+  .nagano-city-estimate-card b {
+    display: block;
+    margin-bottom: 8px;
+    color: #a9420b;
+    font-size: 17px;
+    line-height: 1.45;
+  }
+  .nagano-city-estimate-card span {
+    display: block;
+    color: #4f4a43;
+    font-size: 14px;
+    line-height: 1.75;
+    font-weight: 700;
+  }
+  .nagano-city-official-box {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+    padding: 15px 18px;
+    background: #f3f8f5;
+    border: 1px solid #d9e7df;
+  }
+  .nagano-city-official-box b {
+    color: #174f3f;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .nagano-city-official-box span {
+    color: #3d4a44;
+    font-size: 15px;
+    line-height: 1.78;
+    font-weight: 700;
+  }
+  .nagano-city-official-links {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .nagano-city-official-link {
+    display: block;
+    padding: 13px 14px;
+    background: #fff;
+    border: 1px solid #d8e3dc;
+    color: #214d40;
+    text-decoration: none;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+  .nagano-city-official-link:hover {
+    background: #f4fbf7;
+    border-color: #b9d3c7;
+    text-decoration: none;
+  }
+  .nagano-city-official-link small {
+    display: block;
+    margin-top: 4px;
+    color: #5b665f;
+    font-size: 12px;
+    line-height: 1.55;
+    font-weight: 700;
+  }
+  .nagano-city-estimate-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .nagano-city-estimate-actions .btn {
+    min-height: 46px;
+  }
+  @media (max-width: 900px) {
+    .nagano-city-estimate-boost {
+      width: min(calc(100% - 24px), 390px);
+      margin: 18px auto 24px;
+      padding: 18px;
+    }
+    .nagano-city-estimate-head,
+    .nagano-city-official-box {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .nagano-city-estimate-grid,
+    .nagano-city-official-links {
+      grid-template-columns: 1fr;
+    }
+    .nagano-city-estimate-card {
+      min-height: auto;
+      padding: 14px;
+    }
+    .nagano-city-estimate-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .nagano-city-estimate-actions .btn {
+      width: 100%;
+    }
+  }
+</style>
+<style id="nagano-city-priority-color-reset-v1">
+  .local-priority {
+    margin-top: 22px;
+  }
+  .local-priority h3 {
+    color: #fff7ea !important;
+    border-left-color: #d05300 !important;
+  }
+  .local-priority > p {
+    color: rgba(255,247,234,.88) !important;
+    font-weight: 700 !important;
+  }
+  .local-priority .priority-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .local-priority .priority-card {
+    background: #fff !important;
+    border: 1px solid #e5ded5 !important;
+    border-top: 5px solid #4f6f8f !important;
+    box-shadow: 0 10px 24px rgba(45,36,28,.06) !important;
+    color: #2b2b2b !important;
+    padding: 16px !important;
+    min-height: 176px;
+  }
+  .local-priority .priority-card:nth-child(2) {
+    border-top-color: #3f8067 !important;
+  }
+  .local-priority .priority-card:nth-child(3) {
+    border-top-color: #7756b5 !important;
+  }
+  .local-priority .priority-card:nth-child(4) {
+    border-top-color: #c65312 !important;
+  }
+  .local-priority .priority-tag {
+    display: inline-flex !important;
+    align-items: center !important;
+    min-height: 28px !important;
+    margin-bottom: 10px !important;
+    padding: 4px 10px !important;
+    border-radius: 999px !important;
+    background: #eef5fb !important;
+    border: 1px solid #c9dceb !important;
+    color: #315f88 !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    line-height: 1.35 !important;
+  }
+  .local-priority .priority-card:nth-child(2) .priority-tag {
+    background: #edf8f2 !important;
+    border-color: #c9e4d5 !important;
+    color: #2f6f57 !important;
+  }
+  .local-priority .priority-card:nth-child(3) .priority-tag {
+    background: #f3effb !important;
+    border-color: #d9cdec !important;
+    color: #6547a3 !important;
+  }
+  .local-priority .priority-card:nth-child(4) .priority-tag {
+    background: #fff3e8 !important;
+    border-color: #efcfb8 !important;
+    color: #a9420b !important;
+  }
+  .local-priority .priority-card b {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #25211d !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+  .local-priority .priority-card > span:not(.priority-tag) {
+    display: block !important;
+    color: #514a43 !important;
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+    font-weight: 700 !important;
+  }
+  @media (max-width: 900px) {
+    .local-priority .priority-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .local-priority .priority-card {
+      min-height: auto;
+    }
+  }
+</style>
+
+<style id="local-landmark-original-style-v1">
+  .local-landmark-original-v1 {
+    width: min(1120px, calc(100% - 32px));
+    margin: 28px auto;
+    padding: 26px;
+    background: #fffdf9;
+    border: 1px solid #eadfd0;
+    border-left: 7px solid #d05300;
+    box-shadow: 0 14px 34px rgba(45,36,28,.08);
+  }
+  .local-landmark-original-v1 .section-kicker {
+    margin: 0 0 6px;
+    color: #9f3e00;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .local-landmark-original-v1 h2 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(23px, 3vw, 34px);
+    line-height: 1.45;
+    font-weight: 900;
+  }
+  .local-landmark-prose {
+    display: grid;
+    gap: 12px;
+  }
+  .local-landmark-prose p {
+    margin: 0;
+    color: #514a43;
+    font-size: 15.5px;
+    line-height: 1.9;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .local-landmark-original-v1 {
+      width: min(calc(100% - 24px), 390px);
+      padding: 18px;
+    }
+  }
+</style>
+
+
+
+
 </head>
 <body>
   <header class="topbar">
@@ -1724,7 +2021,7 @@
         <span class="eyebrow">長野県長野市で遺品整理・生前整理を探している方へ</span>
         <h1>長野市で遺品整理・生前整理を相談する前に確認したいこと</h1>
         <p class="hero-lead">長野市で遺品整理・生前整理を検討している方へ。家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいまで、見積もり前に知っておきたい料金・作業内容・行政ルールを地域別にまとめました。</p>
-        <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
+        <div class="hero-actions"><a class="btn primary" href="#nagano-city-estimate">写真で概算見積もり</a><a class="btn secondary" href="#price">料金目安を見る</a><a class="btn ghost" href="#admin">公式ルールを確認</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
           <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
@@ -1733,6 +2030,54 @@
         </div>
       </div>
       <div class="hero-panel"><h2>長野市で特に多い相談</h2><ul class="quick-list"><li>長野市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>粗大ごみ・持込制度に加えて、EV予約、共用部養生、搬出時間を確認したい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+    </div>
+  </section>
+
+  <section id="nagano-city-estimate" class="nagano-city-estimate-boost" aria-label="長野市で見積もり前に確認する公式情報">
+    <div class="nagano-city-estimate-head">
+      <p class="section-kicker">長野市の見積もり導線</p>
+      <h2>写真・搬出条件・公式ルールをそろえると、長野市の概算が出しやすくなります</h2>
+      <p>長野市は駅周辺の集合住宅、郊外戸建て、山沿い住宅で搬出条件が変わります。粗大ごみ、一時多量ごみ、自己搬入、空き家相談を先に分けると、業者に任せる範囲と費用を比較しやすくなります。</p>
+    </div>
+    <div class="nagano-city-estimate-grid">
+      <div class="nagano-city-estimate-card"><b>1. 室内・外まわり写真</b><span>玄関、通路、各部屋、押入れ、物置、庭、車庫を撮影。荷物量と搬出距離を判断しやすくします。</span></div>
+      <div class="nagano-city-estimate-card"><b>2. 集合住宅の条件</b><span>階数、エレベーター、共用部養生、作業時間、管理会社への届出、車両位置を確認します。</span></div>
+      <div class="nagano-city-estimate-card"><b>3. 行政ごみとの分担</b><span>集積所に出すもの、自己搬入するもの、一時多量ごみ、業者が屋内搬出するものを分けます。</span></div>
+      <div class="nagano-city-estimate-card"><b>4. 期限と立会い</b><span>退去日、売却前、県外家族の立会い可否、鍵預かり、作業前後の写真報告を整理します。</span></div>
+    </div>
+    <div class="nagano-city-official-box">
+      <b>長野市公式で先に確認</b>
+      <span>粗大ごみシール、一時多量ごみ、資源再生センターへの自己搬入、空き家対策は条件が変わりやすいため、見積もり前に公式情報を確認します。</span>
+    </div>
+    <div class="nagano-city-official-links" aria-label="長野市公式リンク">
+      <a class="nagano-city-official-link" href="https://www.city.nagano.nagano.jp/gomi/index.html" target="_blank" rel="noopener">ごみ・リサイクル<small>分別、粗大ごみ、集積所に出せないもの</small></a>
+      <a class="nagano-city-official-link" href="https://www.city.nagano.nagano.jp/n121515/contents/p000605.html" target="_blank" rel="noopener">自己搬入・資源再生センター<small>受付時間、搬入方法、処理手数料</small></a>
+      <a class="nagano-city-official-link" href="https://www.city.nagano.nagano.jp/n121515/contents/p000533.html" target="_blank" rel="noopener">一時多量ごみ収集<small>引っ越し・片付け時の予約制収集</small></a>
+      <a class="nagano-city-official-link" href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策<small>相談窓口、空き家管理、解体補助</small></a>
+    </div>
+    <div class="nagano-city-estimate-actions">
+      <a class="btn primary" href="#contact">見積もり前チェックへ進む</a>
+      <a class="btn secondary" href="#price">長野市の料金目安を見る</a>
+      <a class="btn secondary" href="#admin">行政窓口を確認する</a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="長野市の地域事情と搬出条件">
+    <p class="section-kicker">地域オリジナル情報</p>
+    <h2>長野市はマンション整理と蔵・山沿い住宅で段取りが変わります</h2>
+    <div class="local-landmark-prose">
+      <p>長野市は県庁所在地として駅周辺のマンション・集合住宅が多い一方で、善光寺周辺の旧市街地、篠ノ井・川中島・松代の戸建て、戸隠・鬼無里・大岡方面の中山間住宅まで面積が広く、同じ市内でも整理の進め方が大きく変わります。</p>
+      <p>長野駅や権堂に近い集合住宅では、管理会社への作業届、エレベーター予約、共用廊下の養生、短時間での搬出が重要です。戸建てや旧家では、室内の家財だけでなく、蔵、物置、庭、車庫、仏壇、古い書類まで範囲に入ることが多くなります。</p>
+      <p>長野市はごみ分別、粗大ごみ、一時多量ごみ、自己搬入など行政側で確認すべき制度が多いため、自治体で出せるものと業者が屋内から搬出するものを分けて考えると費用を比較しやすくなります。</p>
+      <p>遠方の家族が新幹線で長野駅まで来て短期間で実家を片付ける相談も多いため、鍵預かり、写真報告、残す品のリスト化、短期集中作業の段取りまで最初に決めておくと安心です。</p>
     </div>
   </section>
 
@@ -2157,37 +2502,45 @@
 
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
-    <p class="eyebrow">長野市の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>長野市で確認したい自治体情報</h2>
-    <p>長野市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、長野市公式サイトで最新情報を確認してください。</p>
+    <h2>長野市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p>長野市では、集積所に出せるごみ、資源再生センター・ながの環境エネルギーセンターへ自己搬入するごみ、一時多量ごみ収集制度を使うごみ、専門業者が屋内から搬出する家財を分けると、見積もりの範囲が明確になります。駅周辺の集合住宅、郊外戸建て、山沿い住宅では、EV予約、駐車位置、冬季道路、物置・庭まわりも一緒に確認します。</p>
   </div>
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>長野市役所</strong><br>代表電話: 026-226-4911<br>所在地: 〒380-8512 長野市大字鶴賀緑町1613<br>FAX: 026-224-5100</p><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">長野市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>長野市公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>長野地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>長野市で特に確認したいこと</h3><p>県庁所在地で集合住宅、郊外戸建て、山沿い住宅が混在します。管理会社対応、前面道路、雪の時期、遠方家族の写真報告を分けて確認します。</p></div>
+  <div class="admin-deep-grid">
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>地域別収集日、ごみ分別簡単検索、ごみの出し方・分け方、集積所に出せないもの、粗大ごみシール、資源再生センターへの自己搬入、一時多量ごみ収集制度を確認します。</p></div>
+    <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>室内搬出、階段作業、エレベーター予約、共用部養生、駐車位置、雪の時期、物置、仏壇・写真、通帳・権利書などの貴重品探索を分けます。</p></div>
+    <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>地域包括支援センター、在宅介護支援センター、高齢者支援事業、空き家対策、解体補助金、空き家管理、住まいのエンディングノートの順番を整理します。</p></div>
+    <div class="admin-deep-card"><h3>出典導線</h3><p>長野市公式のごみ・リサイクル、資源再生センター、収集依頼、地域包括支援センター、空き家対策ページをもとに、確認できた電話番号・受付時間・料金だけを掲載します。</p><a href="https://www.city.nagano.nagano.jp/gomi/index.html" target="_blank" rel="noopener">ごみ・リサイクル</a><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000605.html" target="_blank" rel="noopener">資源再生センター</a><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000533.html" target="_blank" rel="noopener">一時多量ごみ収集</a><a href="https://www.city.nagano.nagano.jp/n101200/contents/p006066.html" target="_blank" rel="noopener">地域包括支援センター</a><a href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策</a></div>
+  </div>
+  <div class="manual-admin-grid">
+    <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>長野市役所</strong><br>所在地: 〒380-8512 長野市大字鶴賀緑町1613番地<br>代表電話: 026-226-4911<br>業務時間: 8時30分から17時15分（土日祝・年末年始を除く）<br>ごみ指定袋・粗大ごみシールは生活環境課ごみ収集・啓発担当（第二庁舎3階、電話026-224-7635）で案内しています。</p><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">長野市公式サイト</a><a href="https://www.city.nagano.nagano.jp/n121500/contents/p000519.html" target="_blank" rel="noopener">ごみ指定袋・粗大ごみシール</a></div>
+    <div class="manual-admin-card"><h3>粗大ごみ・一時多量ごみ</h3><p>粗大ごみシールは1枚40円です。引っ越しなどで一時的に多量のごみが出る場合は、資源再生センターに収集依頼できます。実施日は毎週月曜・水曜の午前/午後各1件の予約制で、予約は資源再生センター（026-221-5316）へ電話。予約受付は平日8時30分から17時15分です。手数料は2t車1台相当28,100円、2分の1台相当17,700円、4分の1台相当12,300円。玄関先または集合住宅1階出入口外まで出し、当日は立会いが必要です。</p><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000533.html" target="_blank" rel="noopener">一時多量ごみ収集</a><a href="https://www.city.nagano.nagano.jp/gomi/index.html" target="_blank" rel="noopener">ごみ・リサイクル</a></div>
+    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>資源再生センター</strong>は長野市松岡2丁目42番1号、電話026-221-5316。不燃ごみ・資源物を受け入れます。可燃ごみは隣接するながの環境エネルギーセンターへ搬入します。受付は平日8時30分から11時30分、13時から16時30分、土曜は8時30分から11時30分のみ。日曜祝日と12月31日から1月3日は受入不可です。手数料は可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円、剪定枝葉等は無料です。</p><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000605.html" target="_blank" rel="noopener">資源再生センター</a><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000605.html" target="_blank" rel="noopener">搬入方法と処理手数料</a></div>
+    <div class="manual-admin-card"><h3>処理困難物・家電4品目</h3><p>集積所に出せないものは、水銀体温計・蛍光灯、ソファやマットレス、家電4品目、消火器、パソコン、二輪車、処理困難物に分けて確認します。ストックヤードは資源再生センター敷地内で、処理施設で処理できない指定品目を家庭から本人が自己搬入する場合に限り受け入れます。開設は毎月第2・第4土曜8時30分から11時30分、電話026-221-5316で事前予約、定員は各30人です。</p><a href="https://www.city.nagano.nagano.jp/n121515/contents/p000534.html" target="_blank" rel="noopener">ストックヤードへの自己搬入</a><a href="https://www.city.nagano.nagano.jp/gomi/index.html" target="_blank" rel="noopener">収集できない品目を確認</a></div>
+    <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p>地域包括支援センターは介護、医療、福祉の総合相談窓口です。中部地域包括支援センターは第二庁舎1階、電話026-224-7174。一般的な業務時間は8時30分から17時15分（土日祝・年末年始を除く）です。高齢者支援では、日常生活支援、家族介護支援、在宅福祉介護料、訪問理容・美容、緊急通報装置などの制度入口を確認します。</p><a href="https://www.city.nagano.nagano.jp/n101200/contents/p006066.html" target="_blank" rel="noopener">地域包括支援センター</a><a href="https://www.city.nagano.nagano.jp/soshiki/5/2/2/index.html" target="_blank" rel="noopener">高齢者支援</a></div>
+    <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p>空き家対策は建築指導課空き家対策室（第二庁舎7階、電話026-224-8901、FAX026-224-5124）で確認します。長野市は空き家対策の支援策として、相談窓口、相談会、空き家バンク等、管理事業者紹介、解体補助金、解体跡地活用補助などを整理しています。冬期は水道管の凍結、屋根・雪止め、落雪、雪下ろしも空き家管理の重要項目です。</p><a href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策</a><a href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策（支援策等）</a></div>
+    <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>長野駅周辺、権堂・善光寺周辺、篠ノ井・川中島・松代、若穂・豊野・戸隠方面では、集合住宅、戸建て、山沿い住宅、物置付き住宅が混在します。行政は分別、集積所排出、自己搬入、一時多量ごみ、空き家・福祉相談。業者は室内搬出、大型家具の階段作業、物置・庭、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、作業後写真報告を担当範囲として分けます。</p></div>
   </div>
 </section>
 
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">長野県調査データ</p>
-    <h2 class="section-title">長野市に反映した長野県調査データ</h2>
+    <p class="section-kicker">行政・地域データ</p>
+    <h2 class="section-title">長野市で整理前に確認したい行政・地域データ</h2>
     <p class="lead">長野市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に長野市公式サイトで最新条件を確認してください。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>長野広域連合。ながの環境エネルギーセンター、ちくま環境エネルギーセンター、須坂市清掃センターなど</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</span></div>
+      <div class="nagano-report-card"><b>処理圏</b><span>長野市の家庭ごみは、資源再生センター、ながの環境エネルギーセンター、ストックヤード、一時多量ごみ収集制度を品目別に使い分けます。</span></div>
+      <div class="nagano-report-card"><b>料金目安</b><span>長野市の自己搬入では、可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安です。剪定枝葉等は無料です。</span></div>
       <div class="nagano-report-card"><b>地域特性</b><span>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。</span></div>
       <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">長野市公式サイト</a>のみを出典として記載。</span></div>
     </div>
     <table class="nagano-report-table">
       <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安。須坂市清掃センターの不燃は10kg150円目安です。</td></tr>
+      <tr><th>料金目安</th><td>長野市の自己搬入では、可燃ごみ10kgまでごと190円、不燃ごみ10kgまでごと200円、資源物10kgまでごと30円が目安です。剪定枝葉等は無料です。</td></tr>
       <tr><th>見積もり前</th><td>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
       <tr><th>出典</th><td><a href="https://www.city.nagano.nagano.jp/" target="_blank" rel="noopener">長野市公式サイト</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">民間まとめサイトではなく、長野市公式で確認できる窓口、受付時間、料金、対象条件を優先して整理しています。</p>
   </div>
 </section>
 
@@ -2200,7 +2553,7 @@
   </div>
   <div class="major-seo-local__grid">
     <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみシール、一時多量ごみ、自己搬入、家電4品目、処理困難物を長野市の制度に沿って分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -2231,10 +2584,16 @@
         <div class="ward-links"><a href="/nagano/suzaka/">須坂市</a><a href="/nagano/ogawa/">小川村</a><a href="/nagano/chikuma/">千曲市</a><a href="/nagano/iizuna/">飯綱町</a></div>
       </section>
 
-<section id="contact" class="cta-band">
+<section id="contact" class="contact-check-card">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>長野市の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。長野市では、自己搬入・一時多量ごみ・屋内搬出の切り分けを先に見ると無駄が減ります。</p>
+        <ul class="contact-check-list">
+          <li>住所、建物種別、階数、エレベーターの有無</li>
+          <li>退去日、売却予定日、鍵の受け渡し方法</li>
+          <li>残したい品、探したい書類、供養したい品</li>
+          <li>自治体で出すもの、業者が屋内搬出するもの</li>
+        </ul>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>
@@ -2522,6 +2881,14 @@
     background:#4F6F8F!important;
     background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
   }
+  html body .local-compare .compare-duo .bar-row.city .bar-fill {
+    background:#E8752A!important;
+    background-image:linear-gradient(90deg,#E8752A,#F5B36E)!important;
+  }
+  html body .local-compare .compare-duo .bar-row.pref .bar-fill {
+    background:#2D7DD2!important;
+    background-image:linear-gradient(90deg,#2D7DD2,#85B8E8)!important;
+  }
   html body .bar-fill.warm {
     background:#D68A3A!important;
     background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
@@ -2659,6 +3026,3 @@
 <footer class="footer"><div class="footer-inner">長野市の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 </body>
 </html>
-
-
-
