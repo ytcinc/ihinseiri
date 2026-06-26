@@ -1157,6 +1157,35 @@
   <meta name="twitter:image" content="https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png">
   <meta name="theme-color" content="#D05300">
   <meta name="format-detection" content="telephone=no">
+  <style id="global-footer-links-unified-v1">
+    .footer{
+      background:#2b231d!important;
+      color:#fff7ea!important;
+      margin-top:60px!important;
+      padding:34px 0!important;
+    }
+    .footer-inner,
+    .common-legal-links{
+      width:min(1120px,calc(100% - 28px))!important;
+      margin:0 auto!important;
+      color:#fff7ea!important;
+      font-size:14px!important;
+      line-height:1.8!important;
+    }
+    .common-legal-links{
+      margin-top:10px!important;
+      font-weight:700!important;
+    }
+    .common-legal-links a{
+      color:#fff7ea!important;
+      text-decoration:none!important;
+      font-weight:900!important;
+    }
+    .common-legal-links a:hover{
+      color:#ffd7a8!important;
+      text-decoration:underline!important;
+    }
+  </style>
 </head>
 <body>
   <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">秋田県の</span> 遺品整理・生前整理.jp</span><br><span class="brand-sub">地域別の相談前情報を確認</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#municipalities">市町村</a><a href="#faq">FAQ</a><a class="call" href="#flow">見積もり準備</a></nav></div></header>
@@ -1317,7 +1346,6 @@
 @media (max-width:560px){.pref-data-grid{grid-template-columns:1fr}.pref-bar-row{grid-template-columns:92px 1fr 72px;font-size:14px}.pref-data-card{min-height:auto}}
 </style>
 <section id="pref-facility-directory" class="pref-facility-directory">
-  <p class="section-kicker">行政確認</p>
   <h2 class="section-title">秋田県内の主な処分センター・広域処理施設の確認</h2>
   <p>秋田県では、市区町村直営の清掃センター、環境センター、クリーンセンター、一部事務組合・広域連合の処理施設など、地域によって粗大ごみ・自己搬入の確認先が変わります。県ページでは県内全体の確認方針をまとめ、市区町村ページでは該当自治体の窓口を確認できるようにしています。</p>
   <div class="grid cols3 pref-facility-grid">
@@ -1329,7 +1357,6 @@
 </section>
 <section id="pref-official-stats" class="section pref-official-stats">
   <div class="section-inner">
-    <p class="section-kicker">人口・世帯・住宅で見る秋田県</p>
     <h2 class="section-title">秋田県の公式統計と全国比較で見る整理相談の背景</h2>
     <p class="lead">秋田市周辺の集合住宅と、県北・県南の戸建て、雪国の空き家整理で作業条件が変わります。冬季道路、納屋、車庫、庭まわりを先に確認します。ここでは令和2年国勢調査と令和5年住宅・土地統計調査を合わせて、見積もり前に見るべき住宅事情を整理します。</p>
     <div class="pref-data-grid" aria-label="秋田県の統計概要">
@@ -1401,7 +1428,6 @@
 </section>
 
 <section id="akita-handmade-guide" class="section remaining-hand-guide" style="--area-main:#9a4f76;--area-soft:#fff0f4">
-  <p class="section-kicker">最初に見るところ</p>
   <h2 class="section-title">秋田県で遺品整理・生前整理を探す前に</h2>
   <p class="lead">秋田市の市街地、県北・県南の戸建てや空き家整理で作業量が変わります。雪、広い敷地、仏壇・写真、車庫・物置を見積もり前に確認します。</p>
   <div class="remaining-hand-actions"><a href="#cities"><b>秋田市を見る</b><span>市街地・集合住宅</span></a><a href="#cities"><b>県北を見る</b><span>雪・戸建て</span></a><a href="#cities"><b>県南を見る</b><span>広い敷地・納屋</span></a><a href="#avoid-bad-vendors"><b>業者確認を見る</b><span>追加費用・許可</span></a></div>
@@ -1412,18 +1438,143 @@
   </div>
 </section>
 
+
+<style id="akita-perfect-original-v1">
+#akita-local-depth{background:#fffdf9;border-top:1px solid #efe1d2;border-bottom:1px solid #efe1d2}
+#akita-local-depth .akita-depth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#akita-local-depth .akita-depth-card{background:#fff;border:1px solid #ead9c6;border-radius:14px;padding:22px;box-shadow:0 14px 34px rgba(60,42,26,.07)}
+#akita-local-depth .akita-depth-card h3{margin:0 0 10px;color:#8f3b12;font-size:22px;line-height:1.45}
+#akita-local-depth .akita-depth-card p{margin:0;color:#4d463f;line-height:1.9;font-size:17px}
+#akita-local-depth .akita-season{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+#akita-local-depth .akita-season div{background:#fff7ef;border:1px solid #efd1b3;border-radius:12px;padding:16px}
+#akita-local-depth .akita-season b{display:block;color:#9f3e00;font-size:17px;margin-bottom:6px}
+#akita-local-depth .akita-season span{display:block;color:#5c5148;line-height:1.7;font-size:15px}
+#municipalities .akita-region-card{position:relative;overflow:hidden;border:1px solid #ead9c6;border-radius:16px;background:#fff;padding:22px;box-shadow:0 14px 34px rgba(60,42,26,.07)}
+#municipalities .akita-region-card::before{content:"";position:absolute;inset:0 auto 0 0;width:7px;background:var(--region,#c75b17)}
+#municipalities .akita-region-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:10px}
+#municipalities .akita-region-head h3{margin:0;color:#2d2118;font-size:22px;line-height:1.35}
+#municipalities .akita-region-count{display:inline-flex;white-space:nowrap;border-radius:999px;background:var(--region-soft,#fff2e8);color:var(--region,#9f3e00);border:1px solid #efd1b3;padding:5px 10px;font-size:14px;font-weight:800}
+#municipalities .akita-region-card p{margin:0 0 14px;color:#514940;font-size:16.5px;line-height:1.85}
+#municipalities .akita-region-tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+#municipalities .akita-region-tags span{background:#f7f2ec;border:1px solid #ead9c6;border-radius:999px;padding:6px 10px;color:#5b4a3a;font-weight:800;font-size:14px}
+#municipalities .akita-region-card .pref-links a{background:#fff;border:1px solid #e7d7c7;color:#3a3027}
+#municipalities .akita-region-card .pref-links a:hover{background:var(--region-soft,#fff2e8);border-color:var(--region,#c75b17);color:var(--region,#9f3e00)}
+#municipalities .akita-region-card:nth-child(1){--region:#b84b18;--region-soft:#fff2e8}
+#municipalities .akita-region-card:nth-child(2){--region:#2f6f8f;--region-soft:#eef8fc}
+#municipalities .akita-region-card:nth-child(3){--region:#7a5a20;--region-soft:#fff7df}
+#municipalities .akita-region-card:nth-child(4){--region:#8f3b12;--region-soft:#fff0e6}
+#municipalities .akita-region-card:nth-child(5){--region:#23706b;--region-soft:#eaf8f6}
+#municipalities .akita-region-card:nth-child(6){--region:#6e5aa8;--region-soft:#f3efff}
+#municipalities .akita-region-card:nth-child(7){--region:#9a314e;--region-soft:#fff0f4}
+#municipalities .akita-region-card:nth-child(8){--region:#405a76;--region-soft:#eef4fb}
+.pref-original-guide .akita-check-table{width:100%;border-collapse:separate;border-spacing:0;margin-top:18px;border:1px solid #ead9c6;border-radius:14px;overflow:hidden;background:#fff}
+.pref-original-guide .akita-check-table th,.pref-original-guide .akita-check-table td{padding:14px 16px;border-bottom:1px solid #ead9c6;text-align:left;vertical-align:top;line-height:1.75}
+.pref-original-guide .akita-check-table th{background:#fff5eb;color:#8f3b12;font-size:15px}
+.pref-original-guide .akita-check-table tr:last-child td{border-bottom:0}
+@media(max-width:900px){#akita-local-depth .akita-depth-grid,#akita-local-depth .akita-season{grid-template-columns:1fr!important}#municipalities .akita-region-head{display:block}#municipalities .akita-region-count{margin-top:8px}}
+</style>
+
 <section id="pref-original-guide" class="section pref-original-guide">
   <h2 class="section-title">秋田県で失敗しないための地域特化チェック</h2>
-  <p class="lead">秋田県は秋田市周辺の住宅地と、県北・県南の広い戸建て、雪の時期の空き家整理で段取りが変わります。屋根雪・除雪、車庫、物置、農具、仏壇など、室外の確認が重要です。</p>
+  <p class="lead">秋田県は、秋田市周辺の市街地整理、県北・県南の広い戸建て、豪雪地域の空き家、納屋・車庫・農具を含む実家じまいで段取りが大きく変わります。見積もり前に「室内だけか、外回りまで含むか」「降雪前に終えるか」「行政処分と業者搬出をどう分けるか」を決めておくと、費用と作業日数のブレを抑えやすくなります。</p>
   <div class="grid cols3">
-    <div class="card"><h3>冬季作業の確認</h3><p>除雪状況、駐車位置、玄関までの動線、作業日程の余裕を先に見ます。</p></div>
-    <div class="card"><h3>戸建て・納屋つき住宅</h3><p>納屋、車庫、庭、農具、古い家電、灯油まわりを室内家財と分けて確認します。</p></div>
-    <div class="card"><h3>空き家化前の生前整理</h3><p>使わない部屋、二階、押入れから段階的に減らすと家族の負担を抑えられます。</p></div>
+    <div class="card"><h3>秋田市・中央地域の市街地整理</h3><p>駅周辺や集合住宅では、退去期限、管理会社への作業届、エレベーター予約、共用部養生、駐車位置を先に確認します。戸建てでは庭・車庫・物置の有無で作業人数が変わります。</p></div>
+    <div class="card"><h3>県北・鹿角・大館・北秋田の豪雪地域</h3><p>冬季は玄関前の除雪、前面道路の幅、車両進入、屋根雪・落雪リスクを見ます。山間部の空き家は、鍵預かり、写真報告、作業候補日の予備を多めに取ると安心です。</p></div>
+    <div class="card"><h3>県南・由利・仙北・雄勝の戸建て整理</h3><p>農家住宅、納屋、車庫、仏壇、古い家電、農具、解体前の残置物まで広がりやすい地域です。家財処分補助や空き家相談の対象になる場合は、契約前に行政確認を行います。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>秋田県で見積もり前にそろえること</b><br>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置・仏壇の写真を用意し、探してほしい通帳・印鑑・権利書・写真・形見分け品を先に共有してください。</div>
+  <table class="akita-check-table">
+    <thead><tr><th>地域</th><th>起きやすい相談</th><th>見積もり前に写真で共有したいもの</th></tr></thead>
+    <tbody>
+      <tr><td>秋田市・中央地域</td><td>市街地マンション、退去前整理、湖沼周辺の戸建て整理。</td><td>階段・EV、駐車位置、共用部、庭、物置、管理会社の条件。</td></tr>
+      <tr><td>鹿角・北秋田</td><td>豪雪地域の空き家、山間部住宅、車庫・納屋付きの整理。</td><td>除雪状況、前面道路、玄関前、車庫、物置、作業車両の停車場所。</td></tr>
+      <tr><td>能代山本・由利</td><td>海沿い住宅、風雪の影響を受けた空き家、遠方家族の実家整理。</td><td>屋外品、庭木、古い家電、仏壇、搬出経路、近隣との距離。</td></tr>
+      <tr><td>仙北・平鹿・雄勝</td><td>農家住宅、納屋、蔵、解体前の大量家財、冬季前の整理。</td><td>納屋・蔵の内部、農具、タイヤ、危険物、解体予定、残したい書類。</td></tr>
+    </tbody>
+  </table>
+  <div class="notice" style="margin-top:18px"><b>秋田県で見積もり前にそろえること</b><br>部屋全体、収納、玄関、搬出経路、駐車位置、庭・物置・納屋・仏壇の写真を用意し、探してほしい通帳・印鑑・権利書・保険証券・写真・形見分け品を先に共有してください。冬季は除雪状況と作業可能日も重要です。</div>
 </section>
 
-    <section id="municipalities" class="section"><h2 class="section-title">秋田県内の市町村から探す</h2><p class="lead">秋田県公式サイトの「県内市町村のウェブサイト」に掲載された地域振興局区分で整理しています。市町村名を選ぶと、個別の遺品整理・生前整理ガイドに進みます。</p><div class="grid cols2"><div class="area-box"><h3>鹿角地域</h3><div class="pref-links"><a href="/akita/kazuno/">鹿角市</a><a href="/akita/kosaka/">小坂町</a></div></div><div class="area-box"><h3>北秋田地域</h3><div class="pref-links"><a href="/akita/odate/">大館市</a><a href="/akita/kitaakita/">北秋田市</a><a href="/akita/kamikoani/">上小阿仁村</a></div></div><div class="area-box"><h3>山本地域</h3><div class="pref-links"><a href="/akita/noshiro/">能代市</a><a href="/akita/fujisato/">藤里町</a><a href="/akita/mitane/">三種町</a><a href="/akita/happo/">八峰町</a></div></div><div class="area-box"><h3>秋田地域</h3><div class="pref-links"><a href="/akita/akita/">秋田市</a><a href="/akita/oga/">男鹿市</a><a href="/akita/katagami/">潟上市</a><a href="/akita/gojome/">五城目町</a><a href="/akita/hachirogata/">八郎潟町</a><a href="/akita/ikawa/">井川町</a><a href="/akita/ogata/">大潟村</a></div></div><div class="area-box"><h3>由利地域</h3><div class="pref-links"><a href="/akita/yurihonjo/">由利本荘市</a><a href="/akita/nikaho/">にかほ市</a></div></div><div class="area-box"><h3>仙北地域</h3><div class="pref-links"><a href="/akita/daisen/">大仙市</a><a href="/akita/semboku/">仙北市</a><a href="/akita/misato/">美郷町</a></div></div><div class="area-box"><h3>平鹿地域</h3><div class="pref-links"><a href="/akita/yokote/">横手市</a></div></div><div class="area-box"><h3>雄勝地域</h3><div class="pref-links"><a href="/akita/yuzawa/">湯沢市</a><a href="/akita/ugo/">羽後町</a><a href="/akita/higashinaruse/">東成瀬村</a></div></div></div><p class="source-note">出典：秋田県「県内市町村のウェブサイト」（2024年11月15日更新）。</p></section>
+<section id="akita-local-depth" class="section">
+  <h2 class="section-title">秋田県は「雪」「一戸建て」「空き家補助」で整理方法が変わります</h2>
+  <p class="lead">同じ秋田県内でも、秋田市周辺の集合住宅、県北の豪雪地帯、沿岸部の戸建て、県南の農家住宅では、見積もり前に見る場所が違います。ここでは市町村ページへ進む前に、相談内容を分けるための地域別ポイントを整理します。</p>
+  <div class="akita-depth-grid">
+    <div class="akita-depth-card"><h3>秋田市・男鹿・潟上・南秋</h3><p>市街地では退去期限と管理会社対応、郊外では庭・物置・車庫の家財量がポイントです。八郎潟・大潟周辺は敷地が広く、屋外品の確認を忘れないようにします。</p></div>
+    <div class="akita-depth-card"><h3>鹿角・大館・北秋田</h3><p>豪雪、山間部、長距離移動が重なりやすい地域です。冬に入る前の現地確認、除雪後の搬出、車両が家の前まで入れるかを先に見ます。</p></div>
+    <div class="akita-depth-card"><h3>能代山本・由利本荘・にかほ</h3><p>沿岸部の戸建て、風雪を受けた空き家、遠方家族の鍵預かり整理が多くなります。家電4品目、屋外品、仏壇、写真類を分けると作業範囲が明確です。</p></div>
+    <div class="akita-depth-card"><h3>大仙・仙北・横手・湯沢</h3><p>農家住宅、納屋、蔵、車庫、農具、解体前の残置物がまとまって出やすい地域です。空き家補助・家財処分補助の対象になる可能性がある場合は、作業前に自治体へ確認します。</p></div>
+  </div>
+  <div class="akita-season" aria-label="秋田県の季節別確認">
+    <div><b>春</b><span>雪解け後に屋外品、物置、屋根雪被害、雨漏りを確認。</span></div>
+    <div><b>夏</b><span>帰省時に残す品、通帳、権利書、写真、仏壇の扱いを家族で確認。</span></div>
+    <div><b>秋</b><span>降雪前の最重要時期。庭・納屋・粗大ごみ・解体前整理を進める。</span></div>
+    <div><b>冬</b><span>除雪、道路幅、作業時間、予備日、暖房停止後の室内状態を確認。</span></div>
+  </div>
+</section>
+
+<style id="akita-original-story-v1">
+#akita-original-story{background:#fffaf4;border-top:1px solid #ead9c6;border-bottom:1px solid #ead9c6}
+#akita-original-story .akita-story-lead{max-width:980px;color:#4d463f;font-size:18px;line-height:1.9;margin:0 0 22px}
+#akita-original-story .akita-story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#akita-original-story .akita-story-card{background:#fff;border:1px solid #ead9c6;border-radius:16px;padding:22px;box-shadow:0 14px 34px rgba(60,42,26,.07)}
+#akita-original-story .akita-story-card h3{margin:0 0 10px;color:#8f3b12;font-size:22px;line-height:1.45}
+#akita-original-story .akita-story-card p{margin:0;color:#514940;line-height:1.85;font-size:16.5px}
+#akita-original-story .akita-story-card ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+#akita-original-story .akita-story-card li{position:relative;padding-left:18px;color:#3f352d;line-height:1.65;font-weight:700}
+#akita-original-story .akita-story-card li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:999px;background:#c75b17}
+#akita-original-story .akita-story-table{width:100%;border-collapse:separate;border-spacing:0;margin-top:20px;background:#fff;border:1px solid #ead9c6;border-radius:16px;overflow:hidden}
+#akita-original-story .akita-story-table th,#akita-original-story .akita-story-table td{padding:15px 16px;border-bottom:1px solid #ead9c6;text-align:left;vertical-align:top;line-height:1.75}
+#akita-original-story .akita-story-table th{background:#fff2e8;color:#8f3b12;font-size:15px}
+#akita-original-story .akita-story-table tr:last-child td{border-bottom:0}
+#akita-original-story .akita-story-note{margin-top:18px;background:#fff;border-left:6px solid #c75b17;border-radius:12px;padding:18px;color:#4d463f;line-height:1.9}
+@media(max-width:900px){#akita-original-story .akita-story-grid{grid-template-columns:1fr!important}}
+</style>
+<section id="akita-original-story" class="section">
+  <h2 class="section-title">秋田県ならではの整理相談は、家の外まで見ると分かりやすい</h2>
+  <p class="akita-story-lead">秋田県の遺品整理・生前整理は、室内の片付けだけで終わらないケースが多いのが特徴です。一戸建て率が高く、納屋、蔵、車庫、庭、農機具、冬囲い、灯油タンクまわりまで確認が必要になりやすいため、最初の見積もりで「どこまで片付けるか」を分けておくと失敗しにくくなります。</p>
+  <div class="akita-story-grid">
+    <div class="akita-story-card">
+      <h3>空き家化した実家</h3>
+      <p>親が施設へ入居したあと、冬を越す前に家財・通帳・権利書・写真を確認したい相談です。</p>
+      <ul><li>鍵の所在と立会い可否</li><li>水道・電気・暖房の停止状況</li><li>雪害前に見る外回り</li></ul>
+    </div>
+    <div class="akita-story-card">
+      <h3>納屋・蔵つきの戸建て</h3>
+      <p>室内よりも、納屋・車庫・庭の残置物で作業量が増える相談です。農機具やタイヤは通常ごみと分けます。</p>
+      <ul><li>納屋と蔵の中の写真</li><li>農具・古い家電・危険物</li><li>解体予定の有無</li></ul>
+    </div>
+    <div class="akita-story-card">
+      <h3>遠方家族の一括整理</h3>
+      <p>県外から何度も通えない家族向けに、写真報告、貴重品探索、残す品の発送まで段取りします。</p>
+      <ul><li>探す品リスト</li><li>写真報告の範囲</li><li>形見分け品の返送先</li></ul>
+    </div>
+  </div>
+  <table class="akita-story-table">
+    <thead><tr><th>秋田で起きやすい状況</th><th>放置すると困ること</th><th>先に決めること</th></tr></thead>
+    <tbody>
+      <tr><td>冬前に空き家を確認できていない</td><td>雪で現地確認が遅れ、屋根雪、雨漏り、倒壊、近隣への迷惑に気づきにくくなります。</td><td>秋までに外回り、車庫、納屋、玄関前、屋根まわりの写真を撮る。</td></tr>
+      <tr><td>納屋・蔵・車庫に何があるか分からない</td><td>農機具、タイヤ、灯油缶、古い家電、危険物が後から見つかり、追加費用になりやすいです。</td><td>室内、納屋、蔵、車庫、庭を別々に見積もり範囲へ入れる。</td></tr>
+      <tr><td>相続書類や保険証券の場所が不明</td><td>売却、解体、名義変更、口座手続きが止まり、家財整理も進みにくくなります。</td><td>通帳、印鑑、権利書、保険証券、年金書類、写真を探索品として共有する。</td></tr>
+      <tr><td>家族が県外に住んでいる</td><td>立会い日が限られ、確認漏れがあると何度も秋田へ戻る負担が出ます。</td><td>鍵預かり、作業前後写真、残す品の発送、オンライン確認を先に決める。</td></tr>
+    </tbody>
+  </table>
+  <div class="akita-story-note"><b>秋田県ページで特に伝えたいこと</b><br>秋田では「家の中を片付ける」だけではなく、「雪が来る前に外回りまで確認する」「納屋・蔵・車庫を別枠で見る」「遠方家族が通わずに判断できる写真を残す」ことが、費用と手間を抑える近道です。</div>
+</section>
+
+<section id="municipalities" class="section">
+  <h2 class="section-title">秋田県内の市町村から探す</h2>
+  <p class="lead">秋田県の25市町村を、県の地域振興局区分に沿って整理しました。作業場所が決まっている場合は、近い市町村ページから粗大ごみ、持ち込み、空き家相談、搬出条件を確認してください。</p>
+  <div class="grid cols2">
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>鹿角地域</h3><span class="akita-region-count">2市町</span></div><p>鹿角市・小坂町は豪雪、山間部住宅、車両導線の確認が重要です。冬季前に玄関前、車庫、物置の状態を見ます。</p><div class="akita-region-tags"><span>豪雪</span><span>山間部住宅</span><span>車両導線</span></div><div class="pref-links"><a href="/akita/kazuno/">鹿角市</a><a href="/akita/kosaka/">小坂町</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>北秋田地域</h3><span class="akita-region-count">3市村</span></div><p>大館市・北秋田市・上小阿仁村は広い戸建て、空き家、冬季道路で段取りが変わります。納屋・車庫・屋外品を室内と分けて確認します。</p><div class="akita-region-tags"><span>空き家整理</span><span>冬季道路</span><span>物置・車庫</span></div><div class="pref-links"><a href="/akita/odate/">大館市</a><a href="/akita/kitaakita/">北秋田市</a><a href="/akita/kamikoani/">上小阿仁村</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>山本地域</h3><span class="akita-region-count">4市町</span></div><p>能代市・藤里町・三種町・八峰町は海沿い住宅、風雪、戸建て整理が多い地域です。屋外品、古い家電、庭木、搬出車両の位置を見ます。</p><div class="akita-region-tags"><span>海沿い住宅</span><span>風雪</span><span>戸建て整理</span></div><div class="pref-links"><a href="/akita/noshiro/">能代市</a><a href="/akita/fujisato/">藤里町</a><a href="/akita/mitane/">三種町</a><a href="/akita/happo/">八峰町</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>秋田地域</h3><span class="akita-region-count">7市町村</span></div><p>秋田市、男鹿市、潟上市、南秋地域は市街地マンションと郊外戸建てが混在します。退去期限、EV予約、共用部養生、庭・物置を分けて確認します。</p><div class="akita-region-tags"><span>市街地</span><span>集合住宅</span><span>退去期限</span></div><div class="pref-links"><a href="/akita/akita/">秋田市</a><a href="/akita/oga/">男鹿市</a><a href="/akita/katagami/">潟上市</a><a href="/akita/gojome/">五城目町</a><a href="/akita/hachirogata/">八郎潟町</a><a href="/akita/ikawa/">井川町</a><a href="/akita/ogata/">大潟村</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>由利地域</h3><span class="akita-region-count">2市</span></div><p>由利本荘市・にかほ市は沿岸部の戸建て、空き家、遠方家族からの整理相談が多くなります。鍵預かり、写真報告、仏壇・写真の扱いを決めます。</p><div class="akita-region-tags"><span>海沿い</span><span>写真報告</span><span>仏壇・写真</span></div><div class="pref-links"><a href="/akita/yurihonjo/">由利本荘市</a><a href="/akita/nikaho/">にかほ市</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>仙北地域</h3><span class="akita-region-count">3市町</span></div><p>大仙市・仙北市・美郷町は農家住宅、観光地周辺の空き家、納屋・蔵を含む整理が出やすい地域です。解体予定と残す品を先に分けます。</p><div class="akita-region-tags"><span>農家住宅</span><span>納屋・蔵</span><span>解体前整理</span></div><div class="pref-links"><a href="/akita/daisen/">大仙市</a><a href="/akita/semboku/">仙北市</a><a href="/akita/misato/">美郷町</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>平鹿地域</h3><span class="akita-region-count">1市</span></div><p>横手市は豪雪、広い戸建て、車庫・物置付きの実家じまいで確認点が増えます。降雪前の片付け、作業予備日、車両停車位置を見ます。</p><div class="akita-region-tags"><span>横手市</span><span>豪雪</span><span>実家じまい</span></div><div class="pref-links"><a href="/akita/yokote/">横手市</a></div></div>
+    <div class="area-box akita-region-card"><div class="akita-region-head"><h3>雄勝地域</h3><span class="akita-region-count">3市町村</span></div><p>湯沢市・羽後町・東成瀬村は山間部、雪、空き家補助、納屋整理を確認したい地域です。農具・タイヤ・危険物は通常ごみと分けます。</p><div class="akita-region-tags"><span>山間部</span><span>雪</span><span>空き家補助</span></div><div class="pref-links"><a href="/akita/yuzawa/">湯沢市</a><a href="/akita/ugo/">羽後町</a><a href="/akita/higashinaruse/">東成瀬村</a></div></div>
+  </div>
+  <p class="source-note">地域区分と市町村名は秋田県公式「県内市町村のウェブサイト」をもとに整理しています。粗大ごみ、持ち込み、補助制度は各市町村ページで確認してください。</p>
+</section>
 <section id="stats" class="section"><h2 class="section-title">データで見る秋田県の遺品整理・生前整理需要</h2><p class="lead">秋田県では、人口減少と広域移動、冬季の作業条件、空き家化した実家の整理が重なりやすく、相談前に市町村単位で作業条件を分けて確認することが重要です。</p><div class="grid cols4"><div class="card stat-card"><b>878,798人</b><span>令和7年10月1日現在の県人口。</span></div><div class="card stat-card"><b>-8.4%</b><span>令和2年国勢調査人口からの増減率。</span></div><div class="card stat-card"><b>382,231世帯</b><span>令和7年10月1日現在の県世帯数。</span></div><div class="card stat-card"><b>11,637.69</b><span>県総面積（平方キロメートル）。</span></div></div><div class="notice" style="margin-top:16px"><b>秋田県公式統計から見る相談背景</b><br>秋田県勢要覧の市町村勢編では、市町村別の人口、国勢調査人口、世帯数、人口密度が確認できます。個別ページでは取得できた実値のみを掲載し、共同住宅率・単身者世帯比率・年齢3区分など未検証の細目は &mdash; としています。</div><p class="source-note">出典：秋田県「秋田県勢要覧（令和8年版）」市町村勢編。</p></section>
     <section id="flow" class="section"><h2 class="section-title">秋田県で相談前に整理したいこと</h2><div class="flow"><div><b>地域を選ぶ</b>作業場所の市町村ページへ進みます。</div><div><b>建物条件を確認</b>階数、物置・納屋、駐車位置、冬季作業を確認します。</div><div><b>残す品を整理</b>通帳、権利書、買取品、供養品をリスト化します。</div><div><b>行政窓口を確認</b>大型ごみ、持込先、空家相談を公式サイトで確認します。</div></div></section>
 <section id="kita-before-after-cases" class="section common-kita-ba">
@@ -1447,47 +1598,85 @@
   </div>
 </section>
 
+
+<style id="akita-macro-readable-v1">
+#akita-macro-data .akita-focus-box{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:20px;margin:22px 0}
+#akita-macro-data .akita-focus-main{background:#fff;border:1px solid #ead9c6;border-radius:18px;padding:26px;box-shadow:0 18px 42px rgba(60,42,26,.08)}
+#akita-macro-data .akita-focus-main b{display:block;font-size:clamp(44px,7vw,76px);line-height:1;color:#a64213;margin:8px 0}
+#akita-macro-data .akita-focus-main span{display:inline-flex;border-radius:999px;background:#fff1e8;color:#9f3e00;border:1px solid #edc7a8;padding:6px 12px;font-weight:900}
+#akita-macro-data .akita-focus-main p{margin:12px 0 0;color:#4d463f;font-size:18px;line-height:1.9}
+#akita-macro-data .akita-focus-side{display:grid;gap:12px}
+#akita-macro-data .akita-focus-side div{background:#fff;border:1px solid #ead9c6;border-radius:14px;padding:16px}
+#akita-macro-data .akita-focus-side strong{display:block;color:#2d2118;font-size:26px;line-height:1.2}
+#akita-macro-data .akita-focus-side span{display:block;color:#665b50;font-size:14px;margin-top:5px;line-height:1.65}
+#akita-macro-data .akita-data-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+#akita-macro-data .akita-data-card{background:#fff;border:1px solid #ead9c6;border-top:6px solid var(--tone,#c75b17);border-radius:14px;padding:18px;box-shadow:0 12px 28px rgba(60,42,26,.06)}
+#akita-macro-data .akita-data-card strong{display:block;color:#2d2118;font-size:30px;line-height:1.2}
+#akita-macro-data .akita-data-card b{display:block;color:var(--tone,#c75b17);font-size:15px;margin-bottom:8px}
+#akita-macro-data .akita-data-card span{display:block;color:#5a5148;line-height:1.7;font-size:15px}
+#akita-macro-data .akita-data-card:nth-child(2){--tone:#7a5a20}
+#akita-macro-data .akita-data-card:nth-child(3){--tone:#c45b18}
+#akita-macro-data .akita-data-card:nth-child(4){--tone:#405a76}
+#akita-macro-data .akita-data-card:nth-child(5){--tone:#8d3d4f}
+#akita-macro-data .akita-data-card:nth-child(6){--tone:#23706b}
+#akita-macro-data .akita-meaning{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+#akita-macro-data .akita-meaning div{background:#fff8f1;border:1px solid #efd1b3;border-radius:14px;padding:18px}
+#akita-macro-data .akita-meaning h3{margin:0 0 8px;color:#8f3b12;font-size:20px}
+#akita-macro-data .akita-meaning p{margin:0;color:#514940;line-height:1.8}
+@media(max-width:900px){#akita-macro-data .akita-focus-box,#akita-macro-data .akita-data-grid,#akita-macro-data .akita-meaning{grid-template-columns:1fr!important}}
+</style>
+
 <section id="akita-macro-data" class="section macro-data-section">
-  <p class="section-kicker">全国比較</p>
-  <h2 class="section-title">データで見る秋田県の遺品整理・生前整理</h2>
-  <p class="lead">秋田県は一戸建て率が非常に高く、遺品整理では家財量、納屋、蔵、農機具、屋外残置物の確認が大きな比重を占めます。マンション整理よりも、実家丸ごとの一括整理が起きやすい地域です。</p>
-  <div class="grid cols3">
-    <div class="card stat-card metric-card"><span class="metric-label">年間死亡数</span><b>17,421人</b><p class="metric-note">2024年確定数。県内で多くの整理需要が発生。</p></div>
-    <div class="card stat-card metric-card"><span class="metric-label">総住宅数</span><b>44.1万戸</b><p class="metric-note">2018年比で1.1%減少。</p></div>
-    <div class="card stat-card metric-card"><span class="metric-label">空き家数</span><b>7.0万戸</b><p class="metric-note">2018年比で14.3%増と急増傾向。</p></div>
-    <div class="card stat-card metric-card"><span class="metric-label">空き家率</span><b>15.8%</b><p class="metric-note">全国平均13.8%を上回ります。</p></div>
-    <div class="card stat-card metric-card"><span class="metric-label">男鹿市</span><b>23.16%</b><p class="metric-note">空き家率が特に高い地域の一つ。</p></div>
-    <div class="card stat-card metric-card"><span class="metric-label">一戸建て率</span><b>77.1%</b><p class="metric-note">居住世帯のある住宅に占める割合。全国第1位。</p></div>
+  <h2 class="section-title">秋田県の実家整理は「一戸建て率77.1%」を見ると分かりやすい</h2>
+  <p class="lead">秋田県は一戸建て率が非常に高く、遺品整理では家財量、納屋、蔵、農機具、屋外残置物の確認が大きな比重を占めます。マンション退去前整理よりも、実家丸ごとの一括整理、解体前の家財整理、降雪前の外回り確認が起きやすい地域です。</p>
+
+  <div class="akita-focus-box">
+    <div class="akita-focus-main">
+      <span>全国第1位の住宅特性</span>
+      <b>77.1%</b>
+      <p>居住世帯のある住宅に占める一戸建て率です。秋田県では、室内の家財だけでなく、車庫、納屋、蔵、庭、農機具、古い家電、タイヤ、仏壇まで見積もり範囲に入りやすくなります。</p>
+    </div>
+    <div class="akita-focus-side">
+      <div><strong>17,421人</strong><span>2024年の年間死亡数。相続後の実家整理、生前整理、施設入居前整理の相談背景になります。</span></div>
+      <div><strong>7.0万戸</strong><span>空き家数。2018年比で14.3%増えており、放置前の片付け判断が重要です。</span></div>
+      <div><strong>23.16%</strong><span>男鹿市の空き家率。県内でも空き家整理の優先度が高い地域として見ます。</span></div>
+    </div>
   </div>
+
+  <div class="akita-data-grid" aria-label="秋田県で見積もり前に見たい主要指標">
+    <div class="akita-data-card"><b>年間死亡数</b><strong>17,421人</strong><span>県内で毎年発生する整理需要の母数。遠方家族の相談にもつながります。</span></div>
+    <div class="akita-data-card"><b>総住宅数</b><strong>44.1万戸</strong><span>2018年比で1.1%減少。住宅数が減る一方、空き家は増えています。</span></div>
+    <div class="akita-data-card"><b>空き家数</b><strong>7.0万戸</strong><span>2018年比で14.3%増。売却前・解体前・相続後整理と直結します。</span></div>
+    <div class="akita-data-card"><b>空き家率</b><strong>15.8%</strong><span>全国平均13.8%を上回ります。空き家管理と家財整理を同時に考える数字です。</span></div>
+    <div class="akita-data-card"><b>男鹿市</b><strong>23.16%</strong><span>空き家率が特に高い地域の一つ。海沿い・郊外戸建ての整理条件を確認します。</span></div>
+    <div class="akita-data-card"><b>一戸建て率</b><strong>77.1%</strong><span>全国第1位。納屋・蔵・庭・農機具まで含む見積もりが重要です。</span></div>
+  </div>
+
   <div class="grid cols2" style="margin-top:18px">
     <div class="chart-box compare-card">
-      <h3>空き家率を全国平均と比較</h3>
-      <div class="bar-row"><span>秋田県</span><div class="bar-track"><div class="bar-fill" style="width:79%"></div></div><b>15.8%</b></div>
-      <div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill blue national" style="width:69%"></div></div><b>13.8%</b></div>
-      <p>秋田県の空き家率は15.8%で、全国平均より2.0ポイント高い水準です。空き家数は7.0万戸。遺品整理・生前整理では、家財量だけでなく売却・解体・空き家管理の予定まで確認します。</p>
+      <h3>空き家率を全国平均・県内高水準地域と比較</h3>
+      <div class="bar-row"><span>男鹿市</span><div class="bar-track"><div class="bar-fill warm" style="width:100%"></div></div><b>23.16%</b></div>
+      <div class="bar-row"><span>秋田県</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><b>15.8%</b></div>
+      <div class="bar-row"><span>全国平均</span><div class="bar-track"><div class="bar-fill blue" style="width:60%"></div></div><b>13.8%</b></div>
+      <p>秋田県全体でも全国平均を上回り、男鹿市など一部地域ではさらに高くなります。空き家では、家財整理だけでなく、解体・売却・近隣管理まで確認します。</p>
     </div>
     <div class="chart-box compare-card">
-      <h3>全国で見る孤立死と放置空き家</h3>
-      <div class="bar-row"><span>孤立死・自宅死亡</span><div class="bar-track"><div class="bar-fill warm" style="width:76%"></div></div><b>76,020人</b></div>
-      <div class="bar-row"><span>65歳以上</span><div class="bar-track"><div class="bar-fill aging" style="width:58%"></div></div><b>58,044人</b></div>
-      <div class="bar-row"><span>空き家総数</span><div class="bar-track"><div class="bar-fill blue total-vacant" style="width:90%"></div></div><b>900.2万戸</b></div>
-      <p>発見が遅れた孤立死では、遺品整理だけでなく特殊清掃、脱臭、原状回復が重なります。空き家化する前に、生前整理で重要書類と残す品を分けることが大切です。</p>
+      <h3>一戸建て整理で見落としやすい場所</h3>
+      <div class="bar-row"><span>室内家財</span><div class="bar-track"><div class="bar-fill warm" style="width:92%"></div></div><b>多い</b></div>
+      <div class="bar-row"><span>納屋・蔵</span><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><b>要確認</b></div>
+      <div class="bar-row"><span>農機具</span><div class="bar-track"><div class="bar-fill blue" style="width:72%"></div></div><b>別枠</b></div>
+      <p>秋田県では「部屋だけ片付ける」より、家まるごと、外回り、車庫、農具、仏壇まで含めて整理範囲を決める方が見積もりが安定します。</p>
     </div>
   </div>
-  <div class="table-wrap" style="margin-top:18px">
-    <table class="price-table">
-      <thead><tr><th>秋田県で起きやすい状況</th><th>見積もり前に見ること</th></tr></thead>
-      <tbody>
-      <tr><td>実家丸ごと一括整理</td><td>母屋、納屋、蔵、車庫、庭まで範囲が広がりやすい。</td></tr>
-      <tr><td>農機具・古い家電</td><td>一般ごみで出せない物が混ざり、分別と処分先確認が必要。</td></tr>
-      <tr><td>先延ばしになった空き家</td><td>売却・解体前に残置物量が増え、見積もりが重くなりやすい。</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="notice" style="margin-top:16px"><b>秋田県で数字を見る意味</b><br>秋田県では、一戸建て率の高さがそのまま作業量に反映されます。室内だけでなく、屋外・納屋・蔵まで写真で共有すると、見積もり精度が上がります。</div>
-  <p class="source-note">出典・参考：添付資料「データで見る北海道・東北6県の遺品整理・生前整理」、総務省統計局 令和5年住宅・土地統計調査、警察庁 2024年孤独死・孤立死関連集計。人口など一部指標は資料内の推計値をページ向けに再構成しています。</p>
-</section>
 
+  <div class="akita-meaning">
+    <div><h3>家財量</h3><p>押入れ、納戸、仏間、車庫まで荷物が分散しやすく、写真の枚数が見積もり精度を左右します。</p></div>
+    <div><h3>屋外残置物</h3><p>タイヤ、農具、古い家電、灯油缶、庭まわりは通常の粗大ごみと扱いが分かれることがあります。</p></div>
+    <div><h3>降雪前の判断</h3><p>冬に入ると搬出経路、駐車位置、作業日程が制限されます。秋までに外回りだけでも確認すると安心です。</p></div>
+  </div>
+
+  <div class="notice" style="margin-top:18px"><b>秋田県で数字を見る意味</b><br>一戸建て率の高さは、そのまま作業範囲の広さにつながります。室内、納屋、蔵、車庫、庭、仏壇、農機具、屋外残置物を分けて写真で共有すると、見積もりの抜け漏れを防ぎやすくなります。</div>
+</section>
 <section id="pref-impact" class="section">
         <h2 class="section-title">実家片付けの大変さがわかるインパクト数字</h2>
         <p class="lead">秋田県で遺品整理・生前整理を検討するときは、料金だけでなく、<span class="marker">家財の量、家族だけでかかる時間、親子の気持ちのずれ</span>を先に知っておくことが大切です。<span class="marker">数字で見ると、プロに相談する理由がはっきりします。</span></p>
@@ -1542,8 +1731,8 @@
       </section>
 
       
-      <section id="towns" class="section"><p class="section-kicker">対応エリア</p><h2 class="section-title">日本一の高齢化県で、ご実家の整理に寄り添います。の対応エリア</h2>
-        <p>日本一の高齢化県で、ご実家の整理に寄り添います。全域の遺品整理・生前整理・実家じまいに対応します。町名、駅名、団地名、建物名、階数、駐車位置を見積もり前に共有すると、搬出経路と作業時間を判断しやすくなります。</p>
+      <section id="towns" class="section"><p class="section-kicker">対応エリア</p><h2 class="section-title">秋田県全域の対応エリア</h2>
+        <p>秋田市、県北、県南、沿岸・山間部まで、作業場所の市町村・町名・建物条件に合わせて確認します。階数、駐車位置、物置・納屋・仏壇、冬季道路を見積もり前に共有すると、搬出経路と作業時間を判断しやすくなります。</p>
       </section>
 
 
@@ -1573,9 +1762,19 @@
   <p class="major-seo-local__note">秋田県では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
 </section>
 
-<section id="faq" class="section"><h2 class="section-title">秋田県ページのよくある質問</h2><div class="grid cols2"><div class="card"><h3>秋田県内の全市町村がありますか？</h3><p>県公式の地域振興局区分に沿って、13市9町3村の25市町村を掲載しています。</p></div><div class="card"><h3>行政窓口の電話番号は掲載していますか？</h3><p>公式確認が必要な電話番号は推測で入れず &mdash; とし、各自治体公式サイトへのリンクで確認できるようにしています。</p></div><div class="card"><h3>町村ページはSEO公開されていますか？</h3><p>人口が小さく行政窓口の細目が公式確認が必要な町村は、地域ページとして 地域ページ を設定しています。</p></div><div class="card"><h3>どのページから見ればよいですか？</h3><p>まず作業場所の市町村ページを開き、住宅条件、行政窓口の確認先、見積もり前チェックを順に確認してください。</p></div><div class="card"><h3>立会いなしの遺品整理は相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、オンライン確認、振込精算を組み合わせると遠方家族でも進めやすくなります。</p></div><div class="card"><h3>空き家になった実家も整理できますか？</h3><p>整理できます。相続後の家財整理、売却前整理、権利書や保険証券の探索、仏壇・写真の供養などをまとめて確認しましょう。</p></div></div></section>
+<section id="faq" class="section">
+  <h2 class="section-title">秋田県で遺品整理・生前整理を進めるときのよくある質問</h2>
+  <div class="grid cols2">
+    <div class="card"><h3>秋田県では、冬でも遺品整理を依頼できますか？</h3><p>依頼はできます。ただし積雪期は、玄関前の除雪、前面道路の幅、駐車位置、作業車両が家の前まで入れるかで作業時間が変わります。降雪前に写真を共有できると、見積もりと日程調整がしやすくなります。</p></div>
+    <div class="card"><h3>一戸建ての実家は、どこまで見積もりに入れればいいですか？</h3><p>秋田県は一戸建て率が高いため、室内だけでなく、納屋、蔵、車庫、庭、仏壇、農機具、古い家電、タイヤ、屋外残置物まで分けて伝えるのがおすすめです。写真を場所ごとに撮ると、追加費用の発生を抑えやすくなります。</p></div>
+    <div class="card"><h3>県外に住んでいても、立会いなしで相談できますか？</h3><p>相談できます。鍵の受け渡し、作業前後の写真報告、残す品の確認、通帳・権利書・写真などの探索、形見分け品の発送先を先に決めると、秋田へ何度も戻らずに進めやすくなります。</p></div>
+    <div class="card"><h3>空き家になった実家は、いつ片付けるのがよいですか？</h3><p>秋田県では降雪前の確認が特に大切です。冬に入ると屋外品、車庫、納屋、搬出経路、屋根雪や雨漏りの確認が難しくなるため、秋までに残す品、処分する品、解体・売却予定を整理しておくと安心です。</p></div>
+    <div class="card"><h3>農機具や灯油缶、タイヤも一緒に処分できますか？</h3><p>品目によっては通常の粗大ごみとは扱いが分かれます。農機具、灯油缶、タイヤ、消火器、農薬、スプリング入りマットレス、家電4品目などは、市町村や処理施設のルール確認が必要です。見積もり時に写真と数量を共有してください。</p></div>
+    <div class="card"><h3>費用を抑えるには何を準備すればいいですか？</h3><p>残す品、探したい書類、供養したい品、買取査定したい品を先に分けると作業が短くなります。秋田県の戸建て整理では、室内・納屋・車庫・庭を別々に写真で共有し、自治体で出せるものと業者に任せるものを分けるのが効果的です。</p></div>
+  </div>
+</section>
   </main>
-  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 秋田県の市町村別の住宅特性、行政窓口、見積もり前チェックを整理する情報サイト</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a></div></footer>
+  <footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 秋田県の市町村別の住宅特性、行政窓口、見積もり前チェックを整理する情報サイト</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {
@@ -1605,6 +1804,7 @@
     return ['搬出経路','駐車位置','見積もり写真'];
   };
   const cards = Array.from(document.querySelectorAll('.admin-card,.area-box,.ward-area,.card')).filter((card) => {
+    if (card.closest('#municipalities')) return false;
     const links = card.querySelectorAll('.ward-links a,.area-tags a');
     return links.length >= 3 && card.querySelector('h3');
   });
@@ -1845,6 +2045,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const shouldSkip = (section) => {
     const text = section.textContent || '';
     if (!section.querySelector('.ward-links a,.area-tags a')) return true;
+    if (section.closest('#municipalities')) return true;
     if (section.closest('footer,.site-footer,.nearby-wards,.toc')) return true;
     if (/ページ内メニュー|行政・福祉|このページ|FAQ|よくある質問/.test(text)) return true;
     return false;
@@ -2878,22 +3079,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 </script>
 
-<style id="global-policy-links-style-v1">
-  .global-policy-links{width:min(1160px,calc(100% - 28px));margin:38px auto;padding:24px;border:1px solid #e5ddd3;border-radius:8px;background:#fffdf9;color:#25211d;box-shadow:0 14px 34px rgba(45,36,28,.06)}
-  .global-policy-links h2{margin:0 0 14px;color:#25211d;font-size:20px;line-height:1.45}
-  .global-policy-links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}
-  .global-policy-links a{display:flex;align-items:center;min-height:44px;padding:9px 12px;border:1px solid #ded5cc;background:#fff;color:#a94812;font-weight:900;line-height:1.45;text-decoration:none}
-  .global-policy-links a:hover{border-color:#c65312;color:#8c3d00}
-</style>
-<section class="global-policy-links" id="operator" aria-label="運営者情報・ポリシー">
-  <h2>運営者情報・ポリシー</h2>
-  <ul>
-    <li><a href="#operator">サイト運営者情報</a></li>
-    <li><a href="/privacy/">プライバシーポリシー</a></li>
-    <li><a href="/disclaimer/">免責事項</a></li>
-    <li><a href="/sitemap/">サイトマップ</a></li>
-  </ul>
-</section>
+
+
   <p class="last-updated" data-schema-injected="true">最終更新日：2026-06-25</p>
 </body>
 </html>
