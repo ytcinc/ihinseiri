@@ -658,13 +658,7 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "広島市",
-        "item": "https://www.ihinseiri-seizenseiri.jp/hiroshima/hiroshima/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "東区",
+        "name": "広島市東区",
         "item": "https://www.ihinseiri-seizenseiri.jp/hiroshima/hiroshima/higashi/"
       }
     ]
@@ -787,6 +781,199 @@
       text-decoration:underline!important;
     }
   </style>
+<style id="city-readable-width-unified-v1">
+  html body .page,
+  html body .page-shell,
+  html body .wrap,
+  html body .layout {
+    width:min(1120px,calc(100% - 28px))!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body #faq,
+  html body section.faq,
+  html body .faq,
+  html body .area-keyword-details,
+  html body #area-keyword-guide .area-keyword-details {
+    width:100%!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body #faq details,
+  html body section.faq details,
+  html body .faq details,
+  html body .area-keyword-details details {
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  html body .footer,
+  html body .site-footer,
+  html body footer {
+    width:100%!important;
+  }
+  html body .footer-inner,
+  html body .common-legal-links,
+  html body .footer-bottom,
+  html body .footer-grid,
+  html body .footer-note {
+    width:min(1120px,calc(100% - 28px))!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body .common-legal-links {
+    display:block!important;
+    padding-top:8px!important;
+    line-height:1.9!important;
+  }
+  @media(max-width:640px){
+    html body .page,
+    html body .page-shell,
+    html body .wrap,
+    html body .layout,
+    html body .footer-inner,
+    html body .common-legal-links,
+    html body .footer-bottom,
+    html body .footer-grid,
+    html body .footer-note {
+      width:calc(100% - 28px)!important;
+      max-width:calc(100% - 28px)!important;
+    }
+  }
+</style>
+
+
+
+<style id="hiroshima-8ward-local-polish">
+  html body .hiroshima-ward-logistics,
+  html body .hiroshima-ward-patterns,
+  html body .hiroshima-ward-official-gomi {
+    margin: 26px 0;
+    padding: 22px;
+    border: 1px solid #eadfd4;
+    border-radius: 8px;
+    background: #fffdf9;
+    box-shadow: 0 14px 32px rgba(45,36,28,.06);
+  }
+  html body .hiroshima-ward-logistics h2,
+  html body .hiroshima-ward-patterns h2,
+  html body .hiroshima-ward-official-gomi h3 {
+    margin: 0 0 14px;
+    color: #25211d;
+    font-size: clamp(22px,2.6vw,30px);
+    line-height: 1.45;
+  }
+  html body .hiroshima-ward-logistics .lead,
+  html body .hiroshima-ward-patterns .lead {
+    margin: 0 0 16px;
+    color: #4d4640;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+  html body .hiroshima-ward-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #eadfd4;
+    border-radius: 8px;
+    background: #fff;
+  }
+  html body .hiroshima-ward-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  html body .hiroshima-ward-table-wrap th,
+  html body .hiroshima-ward-table-wrap td {
+    padding: 13px 12px;
+    border-bottom: 1px solid #eadfd4;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.75;
+  }
+  html body .hiroshima-ward-table-wrap th {
+    color: #8a3d11;
+    background: #fff6ed;
+    font-weight: 900;
+  }
+  html body .hiroshima-ward-pattern-grid,
+  html body .hiroshima-ward-gomi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+  html body .hiroshima-ward-gomi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  html body .hiroshima-ward-pattern-card,
+  html body .hiroshima-ward-gomi-grid div {
+    padding: 16px;
+    border: 1px solid #eadfd4;
+    border-left: 5px solid #c65312;
+    border-radius: 8px;
+    background: #fff;
+  }
+  html body .hiroshima-ward-pattern-card b,
+  html body .hiroshima-ward-gomi-grid b {
+    display: block;
+    margin-bottom: 7px;
+    color: #a23f08;
+    font-size: 16px;
+  }
+  html body .hiroshima-ward-pattern-card p,
+  html body .hiroshima-ward-gomi-grid p,
+  html body .hiroshima-ward-source {
+    margin: 0;
+    color: #4d4640;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+  html body .hiroshima-ward-source {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-left: 4px solid #c65312;
+    background: #fff7ef;
+  }
+  @media (max-width: 760px) {
+    html body .hiroshima-ward-logistics,
+    html body .hiroshima-ward-patterns,
+    html body .hiroshima-ward-official-gomi {
+      padding: 18px;
+    }
+    html body .hiroshima-ward-pattern-grid,
+    html body .hiroshima-ward-gomi-grid {
+      grid-template-columns: 1fr;
+    }
+    html body .hiroshima-ward-table-wrap table,
+    html body .hiroshima-ward-table-wrap thead,
+    html body .hiroshima-ward-table-wrap tbody,
+    html body .hiroshima-ward-table-wrap tr,
+    html body .hiroshima-ward-table-wrap th,
+    html body .hiroshima-ward-table-wrap td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+    html body .hiroshima-ward-table-wrap thead { display: none; }
+    html body .hiroshima-ward-table-wrap tr {
+      padding: 12px 0;
+      border-bottom: 1px solid #eadfd4;
+    }
+    html body .hiroshima-ward-table-wrap td {
+      border-bottom: 0;
+      padding: 5px 12px;
+    }
+    html body .hiroshima-ward-table-wrap td:first-child {
+      color: #8a3d11;
+      font-weight: 900;
+    }
+  }
+</style>
+
 </head>
 <body>
   <header class="topbar">
@@ -797,7 +984,7 @@
       </nav>
     </div>
   </header>
-  <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/hiroshima/">広島県</a><span>›</span><a href="/hiroshima/hiroshima/">広島市</a><span>›</span>東区</div></nav>
+  <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/hiroshima/">広島県</a><span>›</span>広島市東区</div></nav>
 
   <section class="hero" style="background-image:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),url('/assets/cv-hero-staff-photo.png?v=1')">
     <div class="hero-inner">
@@ -1006,6 +1193,35 @@
         <p class="source-note">出典：e-Stat 令和2年国勢調査。人口・面積・人口密度・人口増減率は人口等基本集計、年齢3区分・世帯・住宅の各表を基に算出。 人口 119,353人、面積 39.42km2、人口密度 3,027.7人/km2。</p>
       </section>
 
+<section id="ward-logistics" class="hiroshima-ward-logistics">
+  <p class="section-kicker">地域別の搬出条件</p>
+  <h2>東区で見積もり前に見る搬出条件</h2>
+  <p class="lead">東区は広島駅北側の集合住宅、牛田・戸坂方面の住宅地、山手の戸建てが混在し、坂道と車両位置の確認が重要です。</p>
+  <div class="hiroshima-ward-table-wrap">
+    <table>
+      <thead><tr><th>住まいのタイプ</th><th>見積もり前に見ること</th><th>業者へ伝えること</th></tr></thead>
+      <tbody>
+        <tr><td>山手・坂道住宅</td><td>玄関までの距離、階段幅、台車利用可否、軽車両の停車位置。</td><td>坂道写真、前面道路、搬出する大型家具。</td></tr>
+<tr><td>駅北・集合住宅</td><td>EV予約、共用部養生、搬出時間、管理会社への作業届。</td><td>退去期限、鍵、残す品、家電リサイクル品。</td></tr>
+<tr><td>古い戸建て</td><td>押入れ、納戸、物置、仏壇、長年残った書類を部屋別に確認します。</td><td>庭・物置の範囲、買取希望品、供養品。</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<section id="ward-consult-patterns" class="hiroshima-ward-patterns">
+  <p class="section-kicker">よくある相談パターン</p>
+  <h2>東区で相談が多い遺品整理・生前整理</h2>
+  <p class="lead">同じ広島市内でも、区ごとに集合住宅、坂道、郊外戸建て、団地、庭・物置の有無が変わります。東区では次の相談が多くなります。</p>
+  <div class="hiroshima-ward-pattern-grid">
+    <div class="hiroshima-ward-pattern-card"><b>坂道戸建ての搬出相談</b><p>車両を家の前に寄せられない場合、搬出距離と階段作業を見積もりに反映します。</p></div>
+<div class="hiroshima-ward-pattern-card"><b>施設入居前の生前整理</b><p>生活動線を確保しながら、残す家具、処分する家電、探す書類を分けます。</p></div>
+<div class="hiroshima-ward-pattern-card"><b>相続後の書類探索</b><p>権利書、通帳、印鑑、保険証券、写真類を処分前に探索対象として指定します。</p></div>
+  </div>
+</section>
+
+
       <section id="towns">
         <p class="eyebrow">対応町名・駅</p>
         <h2 class="section-title">東区の対応町名・駅周辺</h2>
@@ -1208,6 +1424,19 @@
   <p class="section-kicker">行政・福祉ホットライン</p>
   <h2 class="section-title">東区の行政窓口・粗大ごみ・住まい相談</h2>
   <p>東区で遺品整理・生前整理を進める前に、自治体で確認することと業者に任せることを分けて整理します。電話番号・受付時間・手数料は変更される場合があるため、未確認の実値は作らず公式情報への確認導線を掲載しています。</p>
+
+<section class="hiroshima-ward-official-gomi">
+  <p class="section-kicker">公式ごみ情報</p>
+  <h3>広島市の大型ごみ・自己搬入で先に確認すること</h3>
+  <div class="hiroshima-ward-gomi-grid">
+    <div><b>大型ごみ受付</b><p>大型ごみ受付センター：0570-082530 / 082-544-5300。受付は月曜から金曜の9時から18時まで。土曜・日曜、祝日、年末年始、8月6日は休みです。</p></div>
+    <div><b>申込期限</b><p>電話申込は収集日の3日前まで、インターネット・ウェブチャット・FAXは5日前までが目安です。収集日朝8時30分までに指定場所へ出します。</p></div>
+    <div><b>処理券</b><p>大型ごみ納付券は250円券と1,000円券があります。品目ごとの手数料を確認し、必要枚数を貼って出します。</p></div>
+    <div><b>自己搬入</b><p>大型ごみは安佐南工場大型ごみ破砕処理施設へ自己搬入できます。受付は月曜から金曜の9時から16時まで。電話：082-848-1114。</p></div>
+  </div>
+  <p class="hiroshima-ward-source">出典：広島市公式「大型ごみの出し方」「大型ごみの自己搬入」。年度・品目で条件が変わるため、申込前に公式ページで最新情報を確認してください。</p>
+</section>
+
   <div class="grid cols2 admin-hotline-grid">
     <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>東区役所</strong><br>電話: 公式サイトで確認<br>担当課、受付時間、窓口の場所は公式サイトで確認してください。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
     <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>東区のごみ・リサイクル案内</strong><br>粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内搬出が必要な大型家具は業者作業と分けて考えます。</p><a href="https://www.city.hiroshima.lg.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>

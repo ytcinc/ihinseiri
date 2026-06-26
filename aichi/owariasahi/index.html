@@ -1513,6 +1513,95 @@
       text-decoration:underline!important;
     }
   </style>
+<style id="city-readable-width-unified-v1">
+  html body .page,
+  html body .page-shell,
+  html body .wrap,
+  html body .layout {
+    width:min(1120px,calc(100% - 28px))!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body #faq,
+  html body section.faq,
+  html body .faq,
+  html body .area-keyword-details,
+  html body #area-keyword-guide .area-keyword-details {
+    width:100%!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body #faq details,
+  html body section.faq details,
+  html body .faq details,
+  html body .area-keyword-details details {
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  html body .footer,
+  html body .site-footer,
+  html body footer {
+    width:100%!important;
+  }
+  html body .footer-inner,
+  html body .common-legal-links,
+  html body .footer-bottom,
+  html body .footer-grid,
+  html body .footer-note {
+    width:min(1120px,calc(100% - 28px))!important;
+    max-width:1120px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  html body .common-legal-links {
+    display:block!important;
+    padding-top:8px!important;
+    line-height:1.9!important;
+  }
+  @media(max-width:640px){
+    html body .page,
+    html body .page-shell,
+    html body .wrap,
+    html body .layout,
+    html body .footer-inner,
+    html body .common-legal-links,
+    html body .footer-bottom,
+    html body .footer-grid,
+    html body .footer-note {
+      width:calc(100% - 28px)!important;
+      max-width:calc(100% - 28px)!important;
+    }
+  }
+</style>
+
+
+<style id="owari-city-depth-style-v1">
+.owari-city-depth{margin:34px 0!important;padding:30px!important;background:#fff!important;border:1px solid #eadfd0!important;border-left:7px solid #d05300!important;border-radius:8px!important;box-shadow:0 14px 32px rgba(34,28,22,.07)!important}
+.owari-city-depth__kicker{margin:0 0 8px!important;color:#9f3e00!important;font-size:14px!important;font-weight:900!important}
+.owari-city-depth h2{margin:0 0 14px!important;color:#2b231d!important;font-size:clamp(23px,3vw,32px)!important;line-height:1.45!important}
+.owari-city-depth__lead{margin:0 0 20px!important;color:#414743!important;font-size:17px!important;line-height:1.9!important;font-weight:750!important}
+.owari-city-depth__grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important;margin:18px 0!important}
+.owari-city-depth__card{padding:16px!important;background:#fffaf6!important;border:1px solid #eadfd0!important;border-top:5px solid #d05300!important;border-radius:6px!important}
+.owari-city-depth__card b{display:block!important;margin-bottom:7px!important;color:#2b231d!important;font-size:16px!important}
+.owari-city-depth__card span{display:block!important;color:#463a31!important;font-size:15px!important;line-height:1.75!important;font-weight:750!important}
+.owari-city-depth__scenario{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin:16px 0!important}
+.owari-city-depth__scenario article{padding:16px!important;background:#fff!important;border:1px solid #eadfd0!important;border-radius:6px!important}
+.owari-city-depth__scenario b{display:block!important;color:#9f3e00!important;margin-bottom:6px!important}
+.owari-city-depth__scenario p{margin:0!important;color:#3f332b!important;line-height:1.75!important;font-weight:720!important}
+.owari-city-depth table{width:100%!important;border-collapse:collapse!important;margin-top:16px!important;background:#fff!important}
+.owari-city-depth th,.owari-city-depth td{border:1px solid #e5d8ca!important;padding:13px 12px!important;text-align:left!important;vertical-align:top!important;line-height:1.8!important}
+.owari-city-depth th{background:#fff3e6!important;color:#7b3218!important;font-weight:900!important}
+.owari-city-depth td{color:#3f332b!important;font-weight:720!important}
+.owari-city-depth__note{margin:16px 0 0!important;padding:13px 15px!important;background:#fff8e9!important;border:1px solid #ead8c1!important;color:#4b4037!important;line-height:1.85!important;font-weight:750!important}
+.owari-city-depth__links{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin-top:14px!important}
+.owari-city-depth__links a{display:inline-flex!important;align-items:center!important;min-height:34px!important;padding:7px 11px!important;background:#fff3e6!important;border:1px solid #efcfb4!important;color:#8a3a0c!important;border-radius:999px!important;text-decoration:none!important;font-weight:900!important;font-size:13px!important}
+@media(max-width:1000px){.owari-city-depth__grid{grid-template-columns:1fr 1fr!important}.owari-city-depth__scenario{grid-template-columns:1fr!important}}
+@media(max-width:640px){.owari-city-depth{padding:20px!important}.owari-city-depth__grid{grid-template-columns:1fr!important}.owari-city-depth table{display:block!important;overflow-x:auto!important;white-space:nowrap!important}}
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -1666,7 +1755,31 @@
   }
 </style>
 
-<section id="area-keyword-guide" class="section area-keyword-guide">
+<section id="owari-city-original-guide" class="owari-city-depth">
+  <p class="owari-city-depth__kicker">尾張旭市の地域特化ポイント</p>
+  <h2>尾張旭市で遺品整理・生前整理・実家じまいを進める前に確認したいこと</h2>
+  <p class="owari-city-depth__lead">旭前・尾張旭・三郷周辺は名古屋近郊の住宅地で、戸建て、分譲マンション、坂道や駐車条件の確認が必要です。</p>
+  <div class="owari-city-depth__grid">
+    <div class="owari-city-depth__card"><b>住宅特性</b><span>名古屋近郊住宅地、戸建て、分譲マンション、坂道住宅。</span></div>
+    <div class="owari-city-depth__card"><b>搬出条件</b><span>管理規約、駐車位置、前面道路、庭・物置、階段幅。</span></div>
+    <div class="owari-city-depth__card"><b>行政ごみ確認</b><span>尾張旭市公式サイトで、ごみ・リサイクル、粗大ごみを確認。</span></div>
+    <div class="owari-city-depth__card"><b>よくある相談</b><span>住み替え前整理、戸建て実家じまい、遠方家族の写真報告。</span></div>
+    <div class="owari-city-depth__card"><b>町名・駅周辺</b><span>旭前、尾張旭、三郷、印場、晴丘周辺。</span></div>
+  </div>
+  <div class="owari-city-depth__scenario">
+    <article><b>分譲マンション</b><p>管理規約、EV予約、共用部養生、駐車位置を確認。</p></article>
+    <article><b>戸建て住宅</b><p>庭、物置、大型家具、仏壇、前面道路を写真共有。</p></article>
+    <article><b>住み替え・生前整理</b><p>残す家具、買取品、供養品を先に分ける。</p></article>
+  </div>
+  <table><thead><tr><th>確認項目</th><th>尾張旭市で見積もり前に見ること</th></tr></thead><tbody>
+    <tr><td>行政ごみ確認</td><td>自治体公式のごみ・資源、粗大ごみ、自己搬入、収集できない品目を確認し、屋内搬出が必要な大型家具や大量家財は業者作業と分けます。</td></tr>
+    <tr><td>建物・搬出経路</td><td>階数、エレベーター、階段幅、廊下幅、前面道路、駐車位置、搬出できる時間帯を写真で共有します。</td></tr>
+    <tr><td>残す品・探す品</td><td>通帳、印鑑、保険証券、権利書、写真、手紙、貴金属、形見分け品、供養品を処分前に探索対象として伝えます。</td></tr>
+    <tr><td>見積もり前チェック</td><td>料金だけでなく、追加費用条件、買取査定、供養、写真報告、鍵預かり、作業後の簡易清掃まで書面で確認します。</td></tr>
+  </tbody></table>
+  <div class="owari-city-depth__links"><a href="https://www.city.owariasahi.lg.jp/" target="_blank" rel="noopener">尾張旭市公式サイト</a></div>
+  <p class="owari-city-depth__note">尾張旭市では、自治体で出せるごみと、専門業者に任せる仕分け・搬出・探索・供養を分けるだけで、費用と作業範囲が見えやすくなります。電話番号・受付時間・手数料は変更される場合があるため、公式ページで最新情報を確認してください。</p>
+</section><section id="area-keyword-guide" class="section area-keyword-guide">
   <h2 class="section-title">尾張旭市で遺品整理・生前整理・実家じまいを検討している方へ</h2>
   <p class="lead">尾張旭市の遺品整理は、故人の住まいを片付けるだけでなく、貴重品の捜索、形見分け、供養品の確認、退去日や売却前の期限整理まで同時に考える必要があります。尾張旭市で生前整理を始めたい方、相続後の実家じまいを進めたい方も、作業場所の状況を先に整理しておくと見積もり内容を比べやすくなります。尾張旭市で実家じまいを進める場合は、売却・解体・空き家管理の予定も一緒に確認しましょう。</p>
   <div class="faq area-keyword-details">
