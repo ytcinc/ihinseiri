@@ -87,6 +87,19 @@
       color: #fff;
     }
 
+    .hero .eyebrow {
+      color: #fff !important;
+    }
+
+    .hero h1 {
+      color: #fff !important;
+    }
+
+    .hero p,
+    .hero .hero-lead {
+      color: rgba(255,255,255,.95) !important;
+    }
+
     .hero-inner {
       width: min(1160px, calc(100% - 28px));
       margin: 0 auto;
