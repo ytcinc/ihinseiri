@@ -3205,58 +3205,210 @@
         </div>
         <a class="btn primary" href="#process">見積もり相談の準備をする</a>
       </section>
-            <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
+            <style id="tadaoka-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    border: 2px solid #1f6fb2;
+    background: #f7fbff;
+    border-radius: 12px;
+    padding: clamp(22px, 4vw, 36px);
+    box-shadow: 0 10px 24px rgba(31, 111, 178, 0.12);
+  }
+  #admin .section-title {
+    margin-bottom: 14px;
+  }
+  #admin .admin-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #e5f1fb;
+    color: #164f86;
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+  #admin .admin-lead {
+    margin: 0 0 16px;
+    line-height: 1.9;
+    font-size: 1.02rem;
+  }
+  #admin .admin-note {
+    margin: 0 0 20px;
+    padding: 14px 16px;
+    border-left: 5px solid #1f6fb2;
+    background: #ffffff;
+    border-radius: 8px;
+    line-height: 1.85;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    gap: 14px;
+    margin: 18px 0;
+  }
+  #admin .admin-quick-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #admin .admin-box,
+  #admin .admin-block {
+    background: #ffffff;
+    border: 1px solid #c7dff2;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  #admin .admin-box h3,
+  #admin .admin-block h3 {
+    margin: 0 0 10px;
+    color: #164f86;
+    font-size: 1.05rem;
+  }
+  #admin .admin-box p,
+  #admin .admin-block p {
+    margin: 0;
+    line-height: 1.85;
+  }
+  #admin .admin-strong {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #1b3550;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 8px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 9px 13px;
+    border-radius: 999px;
+    background: #1f6fb2;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  #admin .source-note {
+    margin-top: 14px;
+    color: #526273;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  @media (max-width: 820px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<section id="admin" class="admin-hotline-section">
+  <p class="admin-kicker">忠岡町の公式確認ポイント</p>
   <h2 class="section-title">忠岡町の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>忠岡町で遺品整理・生前整理を進める前に、<strong>戸別収集で出す粗大ごみ</strong>、<strong>忠岡クリーンセンターへ自分で持ち込むもの</strong>、<strong>許可業者・家財整理業者に任せるもの</strong>を先に分けておくと、退去日までの段取りが組みやすくなります。忠岡駅周辺の集合住宅、忠岡東・忠岡中・忠岡南の住宅地、高月北・高月南の戸建て、新浜・北出方面の車庫・物置付き住宅では、搬出経路、前面道路、駐車位置、管理会社への届出で作業条件が変わります。</p>
+  <p class="admin-lead">忠岡町で遺品整理・生前整理を進める前に、<strong>戸別収集で出す粗大ごみ</strong>、<strong>臨時ごみ・忠岡クリーンセンターへ持ち込むもの</strong>、<strong>業者が屋内から搬出する家財</strong>を分けます。忠岡駅周辺の集合住宅、忠岡東・忠岡中・忠岡南の住宅地、高月北・高月南の戸建て、新浜・北出方面の車庫・物置付き住宅では、搬出経路、前面道路、駐車位置、管理会社への届出で条件が変わります。</p>
+  <p class="admin-note">忠岡町公式ページでは、粗大ごみを「戸別収集」「臨時ごみ」「クリーンセンターへの持ち込み」に分けて案内しています。少量で屋外へ出せるものは戸別収集、退去日が近い大量家財や屋内搬出が必要なものは業者作業、車で運ぶ場合は忠岡クリーンセンターへ事前電話してから持ち込み可否を確認する流れにすると迷いにくくなります。</p>
 
-  <div class="admin-note">
-    <strong>最初に見るポイント</strong>
-    <p>忠岡町の粗大ごみは、公式ページで「戸別収集」「臨時ごみ」「クリーンセンターへの持ち込み」の3通りに分かれています。少量で屋外まで出せるものは戸別収集、大量・引っ越し片付けは臨時ごみや業者相談、車で運べるものは事前電話のうえ持ち込み、屋内搬出・階段作業・貴重品探索・供養品は業者作業として整理します。</p>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 戸別収集で出すもの</h3>
+      <p>家具、布団、椅子、小型収納など、家族で屋外の指定場所まで出せるもの。粗大ごみ申込センターへ品目、寸法、数量を伝え、手数料、収集日、受付番号、排出場所を控えます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 臨時ごみ・持ち込み</h3>
+      <p>引越し、退去、実家じまいで一時的に量が多いもの。忠岡クリーンセンター（ごみ中継施設）へ持ち込む場合は、必ず事前に電話し、搬入日、車両条件、手数料、持ち込めない品目を確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業に分けるもの</h3>
+      <p>屋内から出せないタンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、物置内の工具類、貴重品探索、供養品、短い退去期限がある片付けは、見積もり時に業者作業として分けます。</p>
+    </div>
   </div>
 
-  <div class="admin-check-grid">
-    <div class="admin-check-card"><h3>□ 粗大ごみで出すもの</h3><p>家具、布団、椅子、小型の収納など、家族で屋外の指定場所まで出せるもの。粗大ごみ申込センターに品目・寸法・数量を伝え、手数料、収集日、排出場所を控えます。</p></div>
-    <div class="admin-check-card"><h3>□ 持ち込みを検討するもの</h3><p>収集日まで待てないもの、車に積める家具・家財、退去期限が近い片付け。忠岡クリーンセンター（ごみ中継施設）へ必ず事前電話して、搬入日、車両条件、手数料、持ち込めない品目を確認します。</p></div>
-    <div class="admin-check-card"><h3>□ 業者へ任せるもの</h3><p>タンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、物置内の工具類など、屋内搬出や分解が必要なもの。階段、狭い廊下、共用部養生、駐車位置、貴重品探索の範囲も一緒に伝えます。</p></div>
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>自治体・関連窓口</h3>
+      <p><span class="admin-strong">忠岡町役場</span>所在地: 〒595-0805 大阪府泉北郡忠岡町忠岡東1丁目34番1号<br>代表電話: 0725-22-1122<br>FAX: 0725-22-0364<br>開庁時間: 平日 9:00〜17:00<br>住所変更、戸籍、福祉、空家、ごみの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p>
+    </div>
+    <div class="admin-block">
+      <h3>粗大ごみ・戸別収集</h3>
+      <p><span class="admin-strong">忠岡町 粗大ごみ申込センター</span>電話: 072-493-4600<br>FAX: 072-493-4601<br>申し込み時は、住所、氏名、電話番号、品目、寸法、数量を伝えます。収集日、受付番号、処理券の金額、出す場所を控え、集合住宅では管理会社の置き場指定も確認します。</p>
+    </div>
+    <div class="admin-block">
+      <h3>持ち込み・処理施設</h3>
+      <p><span class="admin-strong">忠岡クリーンセンター（ごみ中継施設）</span>電話: 072-423-2663<br>令和6年4月から、従来のごみ焼却施設に代わり、ごみ中継施設による中継処理が始まっています。直接持ち込みは事前電話が必要です。</p>
+    </div>
+    <div class="admin-block">
+      <h3>料金・点数・出す時間</h3>
+      <p><span class="admin-strong">戸別収集の主な確認点</span>粗大ごみ処理券は500円券の1種類。申込1回につき10点まで、月2回まで。収集日や収集時間の指定はできません。収集日当日の午前8時までに、処理券へ収集日と受付番号を書いて指定場所へ出します。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">忠岡町で先に分ける判断軸</h3>
-  <div class="admin-check-grid">
-    <div class="admin-check-card"><h3>□ 戸別収集</h3><p>粗大ごみ申込センターへ電話し、住所、氏名、電話番号、品目、寸法、数量を伝えます。公式情報では、処理券は500円券の1種類、申込1回につき10点まで、月2回まで、収集日当日の午前8時までに指定場所へ出す流れです。</p></div>
-    <div class="admin-check-card"><h3>□ 臨時ごみ</h3><p>引っ越し、実家じまい、家の整理で一時的に大量に出るごみは、通常の粗大ごみと分けて考えます。町が許可する収集運搬許可業者への依頼や、家財整理業者の屋内搬出を比較してください。</p></div>
-    <div class="admin-check-card"><h3>□ 直接持ち込み</h3><p>忠岡クリーンセンター（ごみ中継施設）へ自分で持ち込む場合は、粗大ごみ処理券を貼らず、必ず事前に電話（072-423-2663）で申し込みます。搬入経路、受付時間、手数料、持ち込めないものを公式ページで確認します。</p></div>
+  <div class="admin-local-grid">
+    <div class="admin-box">
+      <h3>□ 直接持ち込みの注意</h3>
+      <p>忠岡クリーンセンターへ自分で持ち込む場合は、粗大ごみ処理券を貼らずに、事前電話で申し込みます。本人確認、搬入経路、受付時間、手数料、荷下ろし方法、持ち込めないものを確認してから積み込みます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 別ルールになりやすい品目</h3>
+      <p>家電4品目、パソコン、消火器、バッテリー、灯油、塗料、スプレー缶、金庫、事業系ごみ、解体材、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。家電リサイクル対象品は町の収集・持ち込み対象外として扱います。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 忠岡町の地域事情</h3>
+      <p>駅周辺の集合住宅は搬出時間、共用部養生、管理会社への届出を確認します。戸建てや長屋では、庭、物置、車庫、ベランダ、押入れ、納戸の残置物まで写真で残すと、当日の追加作業を減らせます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 退去日が近い場合</h3>
+      <p>戸別収集は収集日を指定できないため、退去期限、鍵返却日、立会い可能日が近い場合は、行政収集で出すものと業者がまとめて搬出するものを先に分けます。処理券購入前に数量と搬出場所を固めてください。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">忠岡町の地域事情</h3>
-  <p>忠岡駅周辺のマンションや賃貸では、退去日、鍵返却、管理会社への届出、共用部養生、エレベーター利用時間を確認します。忠岡東・忠岡中・忠岡南の戸建てでは、庭、物置、車庫、納戸、押入れの残置物まで確認すると追加作業を減らせます。高月北・高月南、北出、新浜方面では、前面道路の幅、トラックの停車位置、工場・倉庫まわりの事業系ごみ混在にも注意します。</p>
-
-  <h3 class="admin-subtitle">見積もり前に分けて確認する品目</h3>
-  <div class="admin-check-grid">
-    <div class="admin-check-card"><h3>□ 家電4品目</h3><p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象です。粗大ごみや通常持ち込みと混ぜず、リサイクル料金、収集運搬、家電販売店・指定引取場所・業者対応を分けて確認します。</p></div>
-    <div class="admin-check-card"><h3>□ 危険物・処理困難物</h3><p>消火器、バッテリー、灯油、塗料、農薬、ガスボンベ、スプレー缶、タイヤ、建築廃材などは、町で収集や持ち込みができない場合があります。分別辞典と公式ページで受け入れ可否を確認してください。</p></div>
-    <div class="admin-check-card"><h3>□ 供養品・重要品</h3><p>仏壇、位牌、写真、手紙、通帳、印鑑、権利証、保険証券、貴金属は処分品と混ぜないようにします。探す範囲を「押入れ、仏壇まわり、机、金庫、衣装ケース」など具体的に決めておきます。</p></div>
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>ごみ出し支援・高齢者支援</h3>
+      <p>高齢者・障がい者など、自力でごみ置き場まで出しにくい世帯は、忠岡町役場の福祉窓口、地域包括支援センター、介護保険担当へ対象条件を確認します。生前整理では、本人の同意、ケアマネジャーや親族の立会い、残す薬・介護用品・重要書類の扱いも先に決めます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>空家・住まいの相談</h3>
+      <p>売却前整理、解体前整理、長期不在の家、相続後の実家じまいは、忠岡町役場で空家・住まい・固定資産・建築関係の相談先を分けて確認します。補助制度は対象建物、所有者、申請時期、工事前申請などの条件が付く場合があります。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">写真で伝えると分かりやすい場所</h3>
-  <p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫、道路幅の写真を用意します。大型家具は正面だけでなく、横幅、高さ、搬出経路の曲がり角、階段幅が分かる写真があると、人数、車両、養生、分解搬出の要否を判断しやすくなります。</p>
-
-  <h3 class="admin-subtitle">高齢者支援・住まい相談</h3>
-  <p>高齢者世帯や遠方家族の実家じまいでは、福祉課、地域包括支援センター、住まい・空き家相談、介護保険の担当窓口と、ごみ・環境の担当窓口が分かれる場合があります。制度でできる支援、行政ごみで出せる範囲、業者へ任せる範囲を分け、鍵預かり、立会い可否、写真報告の方法も先に決めてください。</p>
-
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>忠岡町役場</strong><br>所在地: 大阪府泉北郡忠岡町忠岡東1丁目34番1号<br>代表電話: 0725-22-1122<br>ファックス: 0725-22-0364<br>開庁: 平日9:00〜17:00（土曜・日曜・祝日・年末年始を除く）<br>住所変更、戸籍、福祉、空き家、住まい、ごみの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.town.tadaoka.osaka.jp/" target="_blank" rel="noopener">忠岡町公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>忠岡町 粗大ごみ申込センター</strong><br>電話: 072-493-4600<br>ファックス: 072-493-4601<br>戸別収集は、品目、寸法、数量、排出場所を伝えて申し込みます。粗大ごみ処理券、収集日、受付番号、出す場所、収集できない品目を公式ページで確認してください。</p><a href="https://www.town.tadaoka.osaka.jp/kurashi/gomi_kankyou_petto/katei_gomi/2851.html" target="_blank" rel="noopener">粗大ごみの出し方を確認</a></div>
-    <div class="admin-card"><h3>直接持ち込み・処理施設</h3><p><strong>忠岡クリーンセンター（ごみ中継施設）</strong><br>電話: 072-423-2663<br>令和6年4月から、従来の忠岡町クリーンセンター（ごみ焼却施設）に代わり、ごみ中継施設による中継処理が開始されています。直接持ち込みは、事前電話、搬入経路、手数料、持ち込めない品目を確認します。</p><a href="https://www.town.tadaoka.osaka.jp/kurashi/gomi_kankyou_petto/gomi_shisetu/2828.html" target="_blank" rel="noopener">忠岡町のごみ処理施設を確認</a></div>
-    <div class="admin-card"><h3>広域処理施設の確認</h3><p><strong>岸和田市貝塚市クリーンセンター</strong><br>所在地: 岸和田市岸之浦町1番地の2<br>電話: 072-436-5389<br>受入: 月〜金（祝日含む）13:00〜17:00、できるだけ16:30までに入場<br>料金: 70kg以下は一律1,000円。70kgを超える場合は、超える重量10kgごとに150円加算。一般廃棄物搬入申請書、現金、本人確認、車両条件を確認します。</p><a href="https://www.kishikai-cleancenter.or.jp/hannyu/details.html" target="_blank" rel="noopener">広域処理施設の搬入方法を確認</a></div>
+  <div class="admin-local-grid">
+    <div class="admin-box">
+      <h3>見積もり前の写真ポイント</h3>
+      <p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、曲がり角、階段幅が分かる写真があると、人数、車両、分解搬出、養生の要否を判断しやすくなります。</p>
+    </div>
+    <div class="admin-box">
+      <h3>業者へ伝えること</h3>
+      <p>退去期限、立会い可否、鍵の受け渡し、戸別収集で出すもの、忠岡クリーンセンターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+    </div>
+    <div class="admin-box">
+      <h3>当日の判断ミスを減らす分け方</h3>
+      <p>残す品、探してほしい通帳・権利書・保険証券、供養したい写真や仏具、買取希望品、行政で出す予定の品を紙やマスキングテープで分けます。処理券を貼る品と持ち込む品を混ぜないことが大切です。</p>
+    </div>
+    <div class="admin-box">
+      <h3>遠方から依頼する場合</h3>
+      <p>鍵の受け渡し、作業前後の写真報告、残す品の確認方法、郵送する書類、近隣や管理会社への連絡先をまとめます。親族が立ち会えない場合は、探索範囲と廃棄判断のルールを事前に決めてください。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">業者へ伝えること</h3>
-  <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、忠岡クリーンセンターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p>
+  <div class="admin-link-row">
+    <a href="https://www.town.tadaoka.osaka.jp/" target="_blank" rel="noopener">忠岡町公式サイト</a>
+    <a href="https://www.town.tadaoka.osaka.jp/soshiki/seikatsu_kankyo/1/eisei/sodaigomi/1216.html" target="_blank" rel="noopener">粗大ごみの出し方</a>
+    <a href="https://www.town.tadaoka.osaka.jp/soshiki/seikatsu_kankyo/1/eisei/gomisyorisisetsu/571.html" target="_blank" rel="noopener">ごみ処理施設</a>
+    <a href="/osaka/">大阪府ページへ戻る</a>
+  </div>
+  <p class="source-note">出典: 忠岡町公式サイト、忠岡町 粗大ごみ、忠岡町 ごみ処理施設の案内。電話番号、受付時間、料金、対象品目、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+</section>
 
-  <p><a href="/osaka/">大阪府ページへ戻る</a></p>
-  <p class="admin-source">出典：忠岡町公式サイト、忠岡町 粗大ごみの出し方（収集・持ち込み）、忠岡町のごみ処理施設、岸和田市貝塚市広域事務組合 ごみ搬入の方法。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-      </section>
 </main>
   </div>
 <script id="common-kita-before-after-script">

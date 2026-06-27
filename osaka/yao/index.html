@@ -3152,38 +3152,238 @@
         <div><h2>八尾市の遺品整理・生前整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを分けると、費用も作業範囲も判断しやすくなります。</p></div>
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
-            <section id="admin" class="admin-hotline-section">
+            <style id="yao-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    background: #f7fbff;
+    border: 1px solid #cfe0f5;
+    border-radius: 12px;
+    padding: clamp(22px, 4vw, 42px);
+    margin-top: 34px;
+  }
+  #admin .admin-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    color: #23619f;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  #admin .admin-lead {
+    font-size: 1.02rem;
+    line-height: 1.95;
+    margin: 0 0 18px;
+  }
+  #admin .admin-note {
+    background: #fff;
+    border: 1px solid #dbe8f7;
+    border-left: 5px solid #2d75bd;
+    border-radius: 10px;
+    padding: 14px 16px;
+    line-height: 1.85;
+    margin: 16px 0 22px;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  #admin .admin-box {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 8px 22px rgba(35, 97, 159, 0.07);
+  }
+  #admin .admin-box h3,
+  #admin .admin-box h4 {
+    margin: 0 0 8px;
+    color: #174b80;
+    font-size: 1.03rem;
+    line-height: 1.45;
+  }
+  #admin .admin-box p,
+  #admin .admin-box li {
+    line-height: 1.82;
+  }
+  #admin .admin-box ul {
+    margin: 8px 0 0;
+    padding-left: 1.15em;
+  }
+  #admin .admin-block {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 12px;
+    padding: clamp(16px, 3vw, 24px);
+    margin: 18px 0;
+  }
+  #admin .admin-block h3 {
+    margin: 0 0 12px;
+    color: #123f6d;
+    font-size: 1.18rem;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border-radius: 8px;
+    padding: 9px 13px;
+    background: #1f6fb2;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #admin .admin-link-row a.secondary {
+    background: #eef5fc;
+    color: #174b80;
+    border: 1px solid #cfe0f5;
+  }
+  #admin .source-note {
+    color: #526477;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-top: 18px;
+  }
+  @media (max-width: 860px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<section id="admin" class="admin-hotline-section admin-section">
+  <p class="admin-kicker">粗大ごみ予約 / 臨時ごみ収集 / 環境事業課 / 高齢者支援 / 住まい相談</p>
   <h2 class="section-title">八尾市の行政窓口・粗大ごみ・臨時ごみの相談先</h2>
-  <p>八尾市で遺品整理・生前整理を進めるときは、最初に「粗大ごみで出すもの」「臨時ごみとして相談するもの」「業者が屋内から搬出するもの」を分けてください。八尾市の粗大ごみは予約制・有料で、指定袋に入らない大きなごみが中心です。家財の量、退去期限、屋外まで出せる人手、住居内からの搬出が必要かを先に確認すると判断しやすくなります。</p>
-  <p>近鉄八尾・JR久宝寺周辺のマンション、河内山本・高安方面の戸建て、旧集落や工場併設住宅の細い道路では、エレベーター、階段、前面道路、駐車位置、管理会社への届出、庭・物置・車庫まわりの有無で作業条件が変わります。大型家具、家電4品目、仏壇・写真、重要書類、貴重品探索の範囲は見積もり前に分けておくと、行政でできる範囲と業者作業の範囲が見えやすくなります。</p>
+  <p class="admin-lead">八尾市で遺品整理・生前整理を進めるときは、粗大ごみで出すもの、引越しなどに伴う臨時ごみとして相談するもの、専門業者が屋内から搬出する家財を分けます。近鉄八尾・JR久宝寺の駅前マンション、河内山本から高安山麓の戸建て、旧集落の細い生活道路では、管理会社への届出、前面道路、駐車位置、階段、庭・物置の有無で段取りが変わります。</p>
+  <p class="admin-note"><strong>先に決めること：</strong>退去期限、鍵返却日、粗大ごみに出す品、臨時ごみとして相談する量、屋内搬出が必要な家具、家電4品目、仏壇・写真、重要書類、貴重品探索、庭・物置・車庫まわりを分けると、行政利用と業者作業の境目が見えやすくなります。</p>
 
-  <div class="admin-decision-table">
-    <table>
-      <thead><tr><th>まず決めること</th><th>向いているもの</th><th>確認先・注意点</th></tr></thead>
-      <tbody>
-        <tr><td>粗大ごみで出す</td><td>指定袋に入らない家具・電化製品などで、家族が指定場所へ出せるもの。</td><td>八尾市粗大ごみ受付センターへ予約。1世帯1回8点まで。</td></tr>
-        <tr><td>臨時ごみで相談する</td><td>引越しや片付けで一時的に多量に出るごみ。</td><td>電話予約制・有料。住居内からの持ち出しは行わないため、搬出人手を別に考える。</td></tr>
-        <tr><td>業者搬出に分ける</td><td>タンス、食器棚、ベッド、仏壇、金庫、物置内の工具など、屋内搬出が必要なもの。</td><td>階段作業、分解搬出、養生、車両導線、貴重品探索、供養の有無を伝える。</td></tr>
-        <tr><td>別ルール品を分ける</td><td>家電4品目、危険物、事業系ごみ、解体材、石油ストーブ、処理困難物。</td><td>通常の粗大ごみに混ぜず、公式ページや専門回収先で扱いを確認。</td></tr>
-      </tbody>
-    </table>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 粗大ごみで出す目安</h3>
+      <p>指定袋に入らない大きなごみで、電化製品（リサイクル家電を除く）や家具類などが対象です。事前申込みが必要で、1世帯1回につき8点まで申し込みできます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 臨時ごみの目安</h3>
+      <p>引越しなどに伴うごみ、一時的にたくさん出るごみは臨時ごみを確認します。定期収集で出せるものは、できるだけ事前に分けて出す流れです。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業の目安</h3>
+      <p>大型家具の屋内搬出、階段作業、分解搬出、物置・車庫整理、供養品、貴重品探索、短い退去期限がある片付けは業者見積もりに分けます。</p>
+    </div>
   </div>
 
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>1. 粗大ごみで出すもの</h3><p>八尾市の粗大ごみは、指定袋に入らない大きなごみで、電化製品（リサイクル家電を除く）や家具類などが対象です。1点につき400円、3辺（高さ・幅・奥行き）の合計が3メートルを超えるものは1点につき800円が基本ですが、一部例外品目があります。1世帯から1回につき8点まで申し込み可能です。申し込み前に品目、個数、3辺の長さ、排出場所を控えてください。</p><a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003135/1003137.html" target="_blank" rel="noopener">八尾市の粗大ごみの出し方を確認</a></div>
-    <div class="admin-card"><h3>2. 臨時ごみで相談するもの</h3><p>引越しや片付けに伴って一時的にたくさん出るごみは、臨時ごみとして電話予約制・有料で相談します。収集運搬料金は2トン収集車1台につき20,000円が目安です。会社・商店・工場など事業所のごみは対象外で、住居内からの持ち出しは行われません。当日立会いも必要なため、屋内から外へ出す作業は家族でできるか、業者搬出に分けるかを先に決めてください。</p><a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003109/1003146.html" target="_blank" rel="noopener">八尾市の臨時ごみの出し方を確認</a></div>
-    <div class="admin-card"><h3>3. 業者搬出に分けるもの</h3><p>タンス、食器棚、ベッド、重い家電、仏壇、金庫、物置内の工具類、庭・車庫まわりの残置物は、行政収集だけで進めると詰まりやすい品目です。階段、エレベーター、共用部養生、駐車位置、分解搬出、退去期限をまとめて伝え、行政で出せるものと業者が運ぶものを分けて見積もりしてください。</p></div>
-    <div class="admin-card"><h3>4. 別ルールになりやすい品</h3><p>リサイクル家電、危険物、事業系ごみ、解体材、消火器、バッテリー、塗料、灯油、農薬、石油ストーブなどは通常の粗大ごみと別確認にします。石油ストーブは灯油を必ず抜くなど、火災防止の注意も必要です。仏壇・写真・人形など供養希望品は、処分方法とは別に扱いを決めてください。</p></div>
-    <div class="admin-card"><h3>八尾市の地域事情</h3><p>近鉄八尾周辺はマンションの搬出時間や管理会社への届出、JR久宝寺周辺は退去日と鍵返却、高安山麓や河内山本方面は坂道・戸建て・庭まわり、旧集落や工場併設住宅では前面道路と車両導線を確認します。集合住宅では指定置き場まで出せるか、戸建てでは押入れ、納戸、ベランダ、物置、車庫まで範囲に入れるかを先に決めてください。</p></div>
-    <div class="admin-card"><h3>見積もり前の写真ポイント</h3><p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、搬出経路の曲がり角、階段幅、エレベーター内寸が分かる写真があると、人数、車両、養生、分解作業の要否を判断しやすくなります。</p></div>
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>八尾市役所</strong><br>所在地: 〒581-0003 大阪府八尾市本町一丁目1番1号<br>代表電話: 072-991-3881<br>開庁時間: 月〜金 8:45〜17:15（祝日・年末年始を除く）<br>戸籍、住所変更、福祉、空き家、住まいの相談先は担当課が分かれるため、相続後の実家じまいでは必要な窓口を先に整理します。</p><a href="https://www.city.yao.osaka.jp/" target="_blank" rel="noopener">八尾市公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・臨時ごみの相談</h3><p><strong>八尾市粗大ごみ受付センター</strong><br>通話料無料: 0800-222-9966<br>携帯電話・一部IP電話: 072-923-9966<br>FAX: 072-923-0030<br>受付: 月〜金 9:00〜17:00（祝祭日可、年末年始を除く）<br>追加・品目変更は収集予定日の4日前（土日・年末年始を除く）まで、取消しは前日（土日・年末年始を除く）までに連絡します。</p><a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003135/1003137.html" target="_blank" rel="noopener">粗大ごみ受付センターの案内を確認</a></div>
-    <div class="admin-card"><h3>環境部の確認先</h3><p><strong>環境事業課</strong><br>所在地: 〒581-0017 大阪府八尾市高美町5-2-2<br>電話: 072-991-6254<br>FAX: 072-999-4625<br><strong>循環型社会推進課</strong><br>電話: 072-924-3866<br>FAX: 072-923-7135<br>分別、粗大ごみ、臨時ごみ、リサイクル家電、処理できない品目は、内容によって確認先が分かれます。</p><a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003109/1003146.html" target="_blank" rel="noopener">臨時ごみの相談先を確認</a></div>
-    <div class="admin-card"><h3>高齢者支援・住まい相談</h3><p>自力でごみ出しや屋外搬出が難しい世帯は、福祉窓口、地域包括支援センター、ケアマネジャー、住まい・空き家相談の対象条件を確認します。行政収集でできる範囲と、家財整理業者に任せる範囲を分け、申請や立会いが必要なものは作業日より前に確認してください。</p></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、粗大ごみで出すもの、臨時ごみで相談するもの、業者が屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></div>
+  <div class="admin-block">
+    <h3>ごみの分け方を先に整理</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>粗大ごみで出すもの</h4>
+        <p>品目、個数、高さ・幅・奥行きの3辺、排出場所を控えます。1点につき400円、3辺の合計が3メートルを超えるものは1点につき800円が基本です。</p>
+      </div>
+      <div class="admin-box">
+        <h4>臨時ごみで相談するもの</h4>
+        <p>一時的に多量のごみが出る場合は、住所、氏名、電話番号、出すごみの種類、個数、大きさ、収集車が家の前まで入れるかを伝えます。</p>
+      </div>
+      <div class="admin-box">
+        <h4>業者作業に分けるもの</h4>
+        <p>タンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、工具類など、屋内搬出や分解作業が必要なものは見積もりに入れます。</p>
+      </div>
+    </div>
   </div>
+
+  <div class="admin-block">
+    <h3>自治体・粗大ごみ・臨時ごみの連絡先</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 八尾市役所</h4>
+        <p>所在地: 〒581-0003 大阪府八尾市本町一丁目1番1号<br>代表電話: 072-991-3881<br>開庁時間: 月〜金 8:45〜17:15（祝日・年末年始を除く）</p>
+        <p>住所変更、戸籍、福祉、空家、住まい、ごみの相談先は担当課が分かれるため、最初に相談先を整理します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 八尾市粗大ごみ受付センター</h4>
+        <p>通話料無料: 0800-222-9966<br>携帯電話・一部IP電話: 072-923-9966<br>FAX: 072-923-0030<br>受付: 月〜金 9:00〜17:00（祝祭日可、年末年始を除く）</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 環境部の確認先</h4>
+        <p>環境事業課: 072-991-6254 / FAX 072-999-4625<br>循環型社会推進課: 072-924-3866 / FAX 072-923-7135<br>所在地: 〒581-0017 大阪府八尾市高美町5-2-2</p>
+      </div>
+    </div>
+    <div class="admin-box">
+      <h4>□ 料金・変更期限の目安</h4>
+      <p>粗大ごみ: 1点につき400円、3辺合計3メートル超は1点につき800円<br>臨時ごみ収集運搬料金: 2トン収集車1台につき20,000円</p>
+      <p>粗大ごみの追加・品目変更は収集予定日の4日前（土曜・日曜、年末年始を除く）まで、取消しは前日（土曜・日曜、年末年始を除く）までに受付センターへ連絡します。</p>
+    </div>
+    <div class="admin-link-row">
+      <a href="https://www.city.yao.osaka.jp/" target="_blank" rel="noopener">八尾市公式情報</a>
+      <a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003135/1003137.html" target="_blank" rel="noopener">粗大ごみの出し方</a>
+      <a href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003109/1003146.html" target="_blank" rel="noopener">臨時ごみの出し方</a>
+      <a class="secondary" href="https://www.city.yao.osaka.jp/kurashi_tetsuzuki/gomi_recycle/1003102/1003109/1003146.html" target="_blank" rel="noopener">循環型社会推進課</a>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>別ルールになりやすい品目</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 通常の粗大ごみと分けるもの</h4>
+        <p>リサイクル家電、危険物、事業系ごみ、解体材、消火器、バッテリー、塗料、灯油、農薬、石油ストーブ、処理困難物は別確認にします。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 庭・物置・車庫まわり</h4>
+        <p>工具、園芸用品、塗料、灯油、部材、屋外収納、古い家電は混ぜずに仕分けます。行政確認、臨時ごみ確認、業者相談に分けます。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 供養品・残す品</h4>
+        <p>仏壇、位牌、写真、手紙、人形、アルバムは処分品と混ぜずに一か所へまとめます。残す品、探してほしい書類、買取希望品も先に分けます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>八尾市の地域事情と見積もり準備</h3>
+    <div class="admin-local-grid">
+      <div class="admin-box">
+        <h4>近鉄八尾・JR久宝寺周辺</h4>
+        <p>駅前マンションや集合住宅では、管理会社への届出、搬出時間、エレベーター養生、駐車位置、鍵返却日を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>河内山本・高安山麓</h4>
+        <p>戸建てや坂のある住宅では、車両導線、玄関までの距離、庭・物置・車庫、長尺物の分解可否を写真で共有します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>旧集落・細い生活道路</h4>
+        <p>前面道路が狭い住宅では、収集車や作業車が家の前まで入れるか、近隣配慮、一時置き場所、搬出経路の曲がり角を確認します。</p>
+      </div>
+    </div>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ ごみ出し支援・高齢者支援</h4>
+        <p>自力でごみ出しや屋外搬出が難しい世帯は、福祉窓口、地域包括支援センター、ケアマネジャーと相談し、行政収集でできる範囲と家財整理業者に任せる範囲を分けます。入口は八尾市役所（072-991-3881）で確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 空家・住まいの相談</h4>
+        <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、空家・住まい担当の制度確認と家財整理を分けます。八尾市役所（072-991-3881）で担当課、申請時期、補助制度の有無を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 業者へ伝えること</h4>
+        <p>退去期限、立会い可否、鍵の受け渡し、粗大ごみに出すもの、臨時ごみで相談するもの、屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+      </div>
+    </div>
+  </div>
+
   <p class="source-note">出典：八尾市公式サイト、粗大ごみの出し方、臨時ごみの出し方、八尾市役所公式情報。電話番号、受付時間、対象条件、料金、収集条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-      </section>
+</section>
+
 </main>
   </div>
 <script id="common-kita-before-after-script">

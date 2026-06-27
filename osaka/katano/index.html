@@ -3153,46 +3153,207 @@
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
 
-      <section id="admin" class="admin-hotline-section">
+      
+<style id="katano-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    margin: 48px 0;
+    padding: clamp(22px, 4vw, 38px);
+    border: 1px solid #cfe0f5;
+    border-radius: 12px;
+    background: #f7fbff;
+    box-shadow: 0 12px 30px rgba(22, 67, 118, 0.08);
+  }
+  #admin .admin-kicker {
+    margin: 0 0 8px;
+    color: #2563a8;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  #admin .admin-lead,
+  #admin .admin-note {
+    max-width: 980px;
+    line-height: 1.9;
+  }
+  #admin .admin-note {
+    padding: 12px 14px;
+    border-left: 4px solid #2f80ed;
+    background: #fff;
+    color: #334155;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 22px 0;
+  }
+  #admin .admin-contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #admin .admin-box,
+  #admin .admin-block {
+    padding: 18px;
+    border: 1px solid #d7e4f4;
+    border-radius: 10px;
+    background: #fff;
+  }
+  #admin .admin-box h3,
+  #admin .admin-block h3 {
+    margin: 0 0 10px;
+    color: #123b67;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+  #admin .admin-box p,
+  #admin .admin-block p {
+    margin: 0;
+    line-height: 1.85;
+  }
+  #admin .admin-strong {
+    display: inline-block;
+    margin: 4px 0;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #e8f2ff;
+    color: #174f86;
+    font-weight: 700;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 6px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #bfd5ee;
+    border-radius: 999px;
+    background: #fff;
+    color: #1e5f9f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #admin .source-note {
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  @media (max-width: 860px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section id="admin" class="admin-hotline-section">
+  <p class="admin-kicker">粗大ごみ / 有料粗大ごみ / 月1回5点まで / 300円・600円・900円 / 環境事業課確認</p>
   <h2 class="section-title">交野市の行政窓口・粗大ごみ・有料粗大ごみ・持ち込み確認先</h2>
-  <p>交野市で遺品整理・生前整理を進める前に、まず「粗大ごみ・有料粗大ごみとして申し込むもの」「市で収集・処理できないもの」「環境事業課へ確認するもの」「業者が屋内から搬出するもの」に分けます。交野市駅・河内磐船周辺の住宅地、星田・私市方面の戸建て、郡津・倉治の集合住宅、山手や坂道のある住まいでは、搬出経路、階段、前面道路、駐車位置、庭・物置・車庫まわりの確認が見積もりに影響します。</p>
-  <p>交野市の粗大ごみ・有料粗大ごみは、事前申込みが必要です。電話とインターネットで申し込めますが、インターネットは過去の電話申込み実績や登録情報の条件があります。月1回5点までの点数制限、受付期限、処理券の金額、家電4品目、退去日、貴重品探索、供養品の有無を先に分けてください。</p>
+  <p class="admin-lead">交野市で遺品整理・生前整理を進める前に、まず「粗大ごみ・有料粗大ごみとして申し込むもの」「市で収集・処理できないもの」「環境事業課へ確認するもの」「専門業者が屋内から搬出するもの」に分けます。交野市駅・河内磐船周辺の住宅地、星田・私市方面の戸建て、郡津・倉治の集合住宅、山手や坂道のある住まいでは、搬出経路、階段、前面道路、駐車位置、庭・物置・車庫まわりの確認が見積もりに影響します。</p>
+  <p class="admin-note">交野市の粗大ごみ・有料粗大ごみは事前申込み制です。電話とインターネットで申し込めますが、インターネット受付は過去の電話申込み実績など条件があります。月1回5点までの点数制限、受付期間、処理券の金額、家電4品目、退去日、貴重品探索、供養品の有無を先に分けてください。</p>
 
-  <table>
-    <thead><tr><th>最初に決めること</th><th>向いているもの</th><th>確認先・注意点</th></tr></thead>
-    <tbody>
-      <tr><td>粗大ごみで出す</td><td>1m未満で、指定品目ではない食器・調理器具、日用品、寝具、小型家電など</td><td>事前申込みが必要。月1回5点まで。受付番号と氏名を書いた紙を貼って出します。</td></tr>
-      <tr><td>有料粗大ごみに分ける</td><td>高さ・幅・奥行きのいずれかが1m以上のもの、または指定品目</td><td>粗大ごみ処理券が必要です。1辺以上1mなら300円、2辺なら600円、3辺なら900円が目安です。</td></tr>
-      <tr><td>市で収集できないものを分ける</td><td>家電4品目、パソコン、処理困難物、危険物、事業系ごみ、解体材など</td><td>通常の粗大ごみとは別ルールです。販売店、専門回収、公式窓口、業者見積もりで確認します。</td></tr>
-      <tr><td>業者搬出に分ける</td><td>大型家具、階段作業、大量家財、物置、庭まわり、仏壇、貴重品探索を伴うもの</td><td>行政収集は屋内搬出や探索を行わないため、搬出・分別・供養・買取は業者作業として見積もります。</td></tr>
-    </tbody>
-  </table>
-
-  <div class="admin-grid">
-    <div class="admin-card"><h3>1. 粗大ごみの申込み</h3><p>粗大ごみ・有料粗大ごみは、電話またはインターネットで事前に申し込みます。月1回5点まで排出できます。申し込み前に、品目、数量、大きさ、排出場所、収集日、処理券の要否を確認してください。大量家財がある実家じまいでは、行政で出す5点と業者が搬出するものを先に分けると段取りが明確になります。</p><a href="https://www.city.katano.osaka.jp/docs/2022111400058/" target="_blank" rel="noopener">交野市の粗大ごみ・有料粗大ごみを確認</a></div>
-    <div class="admin-card"><h3>2. 粗大ごみ予約受付センター</h3><p><strong>交野市 粗大ごみ予約受付センター</strong><br>電話: 072-891-5374<br>電話受付: 月〜金 9:00〜17:00（祝日可）<br>受付期間: 収集日の1か月前の水曜9:00から、1週間前の水曜17:00まで<br>年末年始は変更になる場合があります。退去日が決まっている場合は早めに申し込みます。</p></div>
-    <div class="admin-card"><h3>3. インターネット申込み</h3><p>インターネット受付は、受付期間中であれば24時間利用できます。ただし、交野市に居住し、2019年4月1日以降に電話で粗大ごみ収集を申し込んだ実績がある方など、利用条件があります。初めて申し込む方、住所・氏名・電話番号が変わった方、前回と違う場所に出す方は電話申込みを使います。</p><a href="https://sodai.city.katano.osaka.jp" target="_blank" rel="noopener">交野市 粗大ごみインターネット受付</a></div>
-    <div class="admin-card"><h3>4. 無料の粗大ごみ</h3><p>排出時の大きさ・長さが1m未満で、指定品目以外のものは無料の粗大ごみに分けられます。45リットル以下の無色透明または白色半透明の袋に入れるか、長さ1.5m以下のひもでくくって出します。紙などに受付番号・氏名を大きく書いて貼ります。電化製品類は電池・バッテリーを抜いてください。</p></div>
-    <div class="admin-card"><h3>5. 有料粗大ごみの料金</h3><p>高さ・幅・奥行きのいずれかが1m以上のものは有料粗大ごみです。1辺が1m以上なら300円、2辺が1m以上なら600円、3辺が1m以上なら900円分の粗大ごみ処理券が必要です。指定品目は品目により300円から1,800円分の処理券が必要な場合があります。</p><a href="https://www.city.katano.osaka.jp/docs/2022112200039/" target="_blank" rel="noopener">有料粗大ごみ一覧を確認</a></div>
-    <div class="admin-card"><h3>6. 処理券の貼り方</h3><p>有料粗大ごみには、粗大ごみ処理券に受付番号、氏名、品目を油性ペンで大きく書いて貼ります。指定品目は、原則としてポリ袋に入れず、解体しないで出すよう案内されています。処理券の再発行や払い戻し・交換はできないため、金額と品目を確認してから購入します。</p></div>
-    <div class="admin-card"><h3>7. 解体して出す場合</h3><p>解体して出す場合は、長さ1.5m以下のひもでくくります。ただし、指定品目は1m以下に解体した場合でも手数料が必要です。タンス、ベッド、物置、家庭用温室、卓球台などは、解体済みか原型かで扱いが変わることがあるため、申し込み時に状態を伝えてください。</p></div>
-    <div class="admin-card"><h3>8. 収集・処理できないもの</h3><p>家電リサイクル法対象品目のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、パソコン、その他処理困難物は、市では収集しないものとして案内されています。販売店または処理業者への相談、専門回収、業者見積もりに分けて確認してください。</p><a href="https://www.city.katano.osaka.jp/docs/2022112100032/" target="_blank" rel="noopener">収集できないものを確認</a></div>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 粗大ごみで出す目安</h3>
+      <p>排出時の大きさ・長さが1m未満で、指定品目ではない食器・調理器具、日用品、寝具、小型家電など。<strong>月1回5点まで</strong>排出できます。45リットル以下の透明・半透明袋に入れるか、長さ1.5m以下のひもでくくって出します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 有料粗大ごみの目安</h3>
+      <p>高さ・幅・奥行きのいずれかが1m以上のもの、または指定品目は有料粗大ごみです。<span class="admin-strong">1辺以上1m: 300円</span> <span class="admin-strong">2辺以上1m: 600円</span> <span class="admin-strong">3辺以上1m: 900円</span></p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業へ分ける目安</h3>
+      <p>屋内からの搬出、大型家具の階段作業、大量家財、物置・庭まわり、仏壇・写真の供養、貴重品探索、短い退去期限がある場合は、行政収集だけで進めず業者作業に分けます。</p>
+    </div>
   </div>
 
-  <div class="admin-grid">
-    <div class="admin-card"><h3>持ち込み・大量ごみを考える場合</h3><p>交野市の公式案内では、粗大ごみは電話・インターネットによる申込収集が中心です。大量の片付け、臨時ごみ、自己搬入や持ち込みを検討する場合は、環境事業課へ事前に確認し、受付条件、予約の要否、本人確認、料金、持ち込めない品目を確認してください。退去期限が短い場合は、業者搬出も同時に見積もります。</p></div>
-    <div class="admin-card"><h3>交野市の地域事情</h3><p>交野市駅・河内磐船周辺では、駅近の住宅地や集合住宅の搬出時間、駐車位置、管理会社への届出を確認します。星田・私市方面は戸建て、庭、物置、坂道、車両導線が見積もりに影響します。郡津・倉治では集合住宅、長屋、前面道路の幅、階段搬出を写真で共有します。</p></div>
-    <div class="admin-card"><h3>見積もり前の写真ポイント</h3><p>玄関、廊下、階段、エレベーター、前面道路、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、搬出経路の曲がり角、階段幅が分かる写真があると、行政収集で出すものと業者搬出に分けるものを判断しやすくなります。</p></div>
-    <div class="admin-card"><h3>家電4品目・供養品</h3><p>テレビ、冷蔵庫、洗濯機・衣類乾燥機、エアコンは家電リサイクル法の対象です。仏壇、位牌、写真、人形、手紙など供養を希望する品は通常の粗大ごみと分けて保管します。通帳、印鑑、権利書、保険証券、貴金属、鍵、写真の探索範囲も見積もり時に伝えます。</p></div>
-    <div class="admin-card"><h3>リユース・買取も先に確認</h3><p>まだ使える家具、家電、工具、趣味用品、ブランド品、貴金属は、処分前に買取や譲渡の可能性を分けます。型番、年式、傷、付属品が分かる写真を残すと査定しやすくなります。粗大ごみとして出す前に、残す品・売る品・供養品・処分品を分けると費用を抑えられる場合があります。</p></div>
-    <div class="admin-card"><h3>無許可回収に注意</h3><p>遺品整理では、安さだけで依頼すると、処分ルートが不明な回収や高額請求につながる不安があります。業者に依頼する場合は、見積書に搬出、分別、買取、供養、一般廃棄物の扱い、許可業者との連携、追加料金条件が書かれているか確認してください。</p></div>
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>交野市役所</strong><br>所在地: 〒576-8501 大阪府交野市私部1丁目1番1号<br>代表電話: 072-892-0121<br>開庁時間: 9:00〜17:00（土曜・日曜・祝日・休日・年末年始を除く）<br>住所変更、戸籍、福祉、空き家、住まい、ごみの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.katano.osaka.jp/" target="_blank" rel="noopener">交野市公式情報を確認</a></div>
-    <div class="admin-card"><h3>ごみ・環境事業の相談先</h3><p><strong>交野市 環境事業課</strong><br>電話: 072-892-0121<br>E-mail: jigyousyo@city.katano.osaka.jp<br><strong>環境事業所</strong><br>所在地: 交野市私部西3丁目3番1号<br>粗大ごみの申込みは、粗大ごみ予約受付センターまたはインターネット受付で行います。</p></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、粗大ごみ・有料粗大ごみで出すもの、市で収集できないため別確認するもの、業者が屋内搬出するもの、家電4品目、庭・物置、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にすると、作業中の判断ミスを減らせます。</p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></div>
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>□ 自治体・関連窓口</h3>
+      <p><strong>交野市役所</strong><br>所在地: 〒576-8501 大阪府交野市私部1丁目1番1号<br>代表電話: 072-892-0121<br>FAX: 072-891-5046<br>開庁時間: 9:00〜17:00（土曜・日曜・祝日・休日・年末年始を除く）<br>住所変更、戸籍、福祉、空家、住まい、ごみの相談先は担当課が分かれます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>□ 粗大ごみ予約受付センター</h3>
+      <p><strong>交野市 粗大ごみ予約受付センター</strong><br>電話: 072-891-5374<br>電話受付: 月〜金 9:00〜17:00（祝日可）<br>受付期間: 収集日の1か月前の水曜9:00から、1週間前の水曜17:00まで<br>年末年始は変更になる場合があります。退去日が決まっている場合は早めに申し込みます。</p>
+    </div>
+  </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>□ インターネット申込み</h3>
+      <p>インターネット受付は、受付期間中であれば24時間利用できます。ただし、交野市に居住し、2019年4月1日以降に電話で粗大ごみ収集を申し込んだ実績がある方など利用条件があります。初回、住所・氏名・電話番号変更、前回と違う場所に出す場合は電話申込みを使います。</p>
+    </div>
+    <div class="admin-block">
+      <h3>□ 処理券の貼り方</h3>
+      <p>無料の粗大ごみは、紙などに受付番号・氏名を大きく書いて貼ります。有料粗大ごみは、粗大ごみ処理券に受付番号、氏名、品目を油性ペンで大きく書いて貼ります。処理券の再発行、払い戻し、交換はできないため、金額と品目を確認してから購入します。</p>
+    </div>
+  </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>□ 市で収集・処理できないもの</h3>
+      <p>家電リサイクル法対象品目のエアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、パソコン、その他処理困難物、危険物、事業系ごみ、解体材などは通常の粗大ごみとは別確認です。販売店、専門回収、公式窓口、業者見積もりで分けます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>□ 持ち込み・大量ごみを考える場合</h3>
+      <p>交野市の公式案内では、粗大ごみは電話・インターネットによる申込収集が中心です。大量の片付け、臨時ごみ、自己搬入や持ち込みを検討する場合は、環境事業課へ事前に確認し、受付条件、予約の要否、本人確認、料金、持ち込めない品目を確認してください。</p>
+    </div>
+  </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>□ ごみ・環境事業の相談先</h3>
+      <p><strong>交野市 環境事業課</strong><br>電話: 072-892-0121<br>E-mail: jigyousyo@city.katano.osaka.jp<br><strong>環境事業所</strong><br>所在地: 交野市私部西3丁目3番1号<br>粗大ごみの申込みは、粗大ごみ予約受付センターまたはインターネット受付で行います。</p>
+    </div>
+    <div class="admin-block">
+      <h3>□ 家電4品目・供養品</h3>
+      <p>テレビ、冷蔵庫、洗濯機・衣類乾燥機、エアコンは家電リサイクル法の対象です。仏壇、位牌、写真、人形、手紙など供養を希望する品は通常の粗大ごみと分けて保管します。通帳、印鑑、権利書、保険証券、貴金属、鍵、写真の探索範囲も見積もり時に伝えます。</p>
+    </div>
+  </div>
+
+  <div class="admin-local-grid">
+    <div class="admin-box">
+      <h3>□ 交野市の地域事情</h3>
+      <p>交野市駅・河内磐船周辺は住宅地と集合住宅、星田・私市方面は自然に近い戸建てや坂道、郡津・倉治周辺は集合住宅や戸建てが混在します。前面道路、駐車位置、階段幅、庭・物置・車庫まわりを先に確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 写真で確認したい場所</h3>
+      <p>玄関、廊下、階段、エレベーター、前面道路、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、搬出経路の曲がり角、階段幅が分かる写真があると判断しやすくなります。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者へ伝えること</h3>
+      <p>退去期限、立会い可否、鍵の受け渡し、粗大ごみ・有料粗大ごみで出すもの、市で収集できないため別確認するもの、屋内搬出が必要な家財、家電4品目、庭・物置、車両導線、供養品、貴重品探索の範囲を分けて伝えます。</p>
+    </div>
+  </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>□ ごみ出し支援・高齢者支援</h3>
+      <p>高齢者・障がい者など、自力でごみ出しや大型品の屋外搬出が難しい世帯は、福祉窓口、地域包括支援センター、交野市役所代表（072-892-0121）で対象制度を確認します。生前整理では、本人同意、親族・ケアマネジャーの立会い、残す薬・介護用品・重要書類の扱いを先に決めます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>□ 空家・住まいの相談</h3>
+      <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、交野市役所代表（072-892-0121）から空家・住まい担当へ確認します。補助金や制度は建物状態、所有者、申請時期、工事前申請など条件が付く場合があるため、片付け前に相談先を分けます。</p>
+    </div>
+  </div>
+
+  <div class="admin-link-row">
+    <a href="https://www.city.katano.osaka.jp/" target="_blank" rel="noopener">交野市公式サイト</a>
+    <a href="https://www.city.katano.osaka.jp/docs/2022111400058/" target="_blank" rel="noopener">粗大ごみ・有料粗大ごみ</a>
+    <a href="https://www.city.katano.osaka.jp/docs/2022112200039/" target="_blank" rel="noopener">有料粗大ごみ一覧</a>
+    <a href="https://sodai.city.katano.osaka.jp" target="_blank" rel="noopener">粗大ごみインターネット受付</a>
+    <a href="/osaka/" rel="noopener">大阪府ページへ戻る</a>
   </div>
 
   <p class="source-note">出典：交野市公式サイト「粗大ごみ・有料粗大ごみ」、交野市「有料粗大ごみ一覧」、交野市「ごみに関すること」、交野市役所・環境事業課公式情報。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
 </section>
+
 </main>
   </div>
 

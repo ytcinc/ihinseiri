@@ -3152,39 +3152,232 @@
         <div><h2>東大阪市の遺品整理・生前整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを分けると、費用も作業範囲も判断しやすくなります。</p></div>
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
-            <section id="admin" class="admin-hotline-section">
+            <style id="higashiosaka-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    background: #f7fbff;
+    border: 1px solid #cfe0f5;
+    border-radius: 12px;
+    padding: clamp(22px, 4vw, 42px);
+    margin-top: 34px;
+  }
+  #admin .admin-kicker {
+    display: inline-flex;
+    margin: 0 0 10px;
+    color: #23619f;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  #admin .admin-lead {
+    font-size: 1.02rem;
+    line-height: 1.95;
+    margin: 0 0 18px;
+  }
+  #admin .admin-note {
+    background: #fff;
+    border: 1px solid #dbe8f7;
+    border-left: 5px solid #2d75bd;
+    border-radius: 10px;
+    padding: 14px 16px;
+    line-height: 1.85;
+    margin: 16px 0 22px;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  #admin .admin-box {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 8px 22px rgba(35, 97, 159, 0.07);
+  }
+  #admin .admin-box h3,
+  #admin .admin-box h4 {
+    margin: 0 0 8px;
+    color: #174b80;
+    font-size: 1.03rem;
+    line-height: 1.45;
+  }
+  #admin .admin-box p,
+  #admin .admin-box li {
+    line-height: 1.82;
+  }
+  #admin .admin-block {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 12px;
+    padding: clamp(16px, 3vw, 24px);
+    margin: 18px 0;
+  }
+  #admin .admin-block h3 {
+    margin: 0 0 12px;
+    color: #123f6d;
+    font-size: 1.18rem;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border-radius: 8px;
+    padding: 9px 13px;
+    background: #1f6fb2;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #admin .admin-link-row a.secondary {
+    background: #eef5fc;
+    color: #174b80;
+    border: 1px solid #cfe0f5;
+  }
+  #admin .source-note {
+    color: #526477;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-top: 18px;
+  }
+  @media (max-width: 860px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<section id="admin" class="admin-hotline-section admin-section">
+  <p class="admin-kicker">大型ごみ受付 / 通常収集 / 処理困難物確認 / 高齢者支援 / 住まい相談</p>
   <h2 class="section-title">東大阪市の行政窓口・大型ごみ・持ち込み確認</h2>
-  <p>東大阪市で遺品整理・生前整理を進めるときは、最初に「大型ごみで出すもの」「通常収集で分けるもの」「持ち込みや処理先を公式確認するもの」「業者が屋内から搬出するもの」を分けてください。東大阪市の大型ごみは電話申込みが基本で、処理券を購入し、収集日と受付番号を書いて指定場所へ出す流れです。</p>
-  <p>布施・河内小阪・長瀬周辺の高密度な市街地、花園・吉田方面の住宅地、石切・枚岡方面の坂道戸建て、工場・倉庫併用住宅では、前面道路、車両停車、階段幅、共用部養生、工具・事業用品、物置・車庫まわりの有無で搬出条件が変わります。退去期限、大型家具、家電4品目、仏壇・写真、重要書類、貴重品探索の範囲を先に分けてください。</p>
+  <p class="admin-lead">東大阪市で遺品整理・生前整理を進めるときは、大型ごみで出すもの、通常収集で分けるもの、処理先を公式確認するもの、専門業者が屋内から搬出する家財を分けます。布施・河内小阪・長瀬の高密度な市街地、花園・吉田の住宅地、石切・枚岡方面の坂のある戸建てでは、前面道路、駐車位置、階段、工場・店舗併用住宅かどうかで段取りが変わります。</p>
+  <p class="admin-note"><strong>先に決めること：</strong>退去期限、鍵返却日、大型ごみに出す品、通常収集で出す品、処理困難物、屋内搬出が必要な家具、家電4品目、工具・事業用品、仏壇・写真、重要書類、貴重品探索を分けると、行政利用と業者作業の境目が見えやすくなります。</p>
 
-  <div class="admin-decision-table">
-    <table>
-      <thead><tr><th>まず決めること</th><th>向いているもの</th><th>確認先・注意点</th></tr></thead>
-      <tbody>
-        <tr><td>大型ごみで出す</td><td>家具、寝具、自転車など、家族で指定場所へ出せる大型品。</td><td>大型ごみ受付センターへ申込み。1回10点まで、3辺合計で手数料が変わる。</td></tr>
-        <tr><td>通常収集で分ける</td><td>少量の可燃・不燃・資源ごみなど、普段の分別で出せるもの。</td><td>大型ごみに混ぜず、地域の収集日・分別を確認。</td></tr>
-        <tr><td>持ち込み・処理先を確認</td><td>収集日を待てないもの、処理困難物、家電4品目、事業系に見えるもの。</td><td>市公式・環境事業課で受け入れ可否を確認してから動く。</td></tr>
-        <tr><td>業者搬出に分ける</td><td>屋内から出せないタンス、食器棚、ベッド、金庫、仏壇、物置・工具類。</td><td>階段作業、分解搬出、養生、車両導線、貴重品探索、供養を見積もりに入れる。</td></tr>
-      </tbody>
-    </table>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 大型ごみで出す目安</h3>
+      <p>家具、寝具、自転車など、家族で指定場所まで出せる大型品は大型ごみ受付センターへ申し込みます。市役所や環境事業所では大型ごみの受付はできません。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 料金の目安</h3>
+      <p>3辺（縦・横・奥行き）の合計が3メートル以下は1点400円、3メートルを超えるものは1点800円です。1回の申込みは10点まで、畳は1回2枚までです。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業の目安</h3>
+      <p>屋内搬出、大量家財、階段作業、長屋・狭小道路、事業用品、供養品、貴重品探索、短い退去期限がある片付けは業者見積もりに分けます。</p>
+    </div>
   </div>
 
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>1. 大型ごみで出すもの</h3><p>東大阪市の大型ごみは、電話での申込みが必要です。申込み時は、住所、氏名、電話番号、大型ごみの品目・大きさ・数量を伝えます。受付センターから、ごみを出す場所、収集日、受付番号、手数料の合計、処理券の枚数などを案内されます。戸建住宅か集合住宅か、収集車が通れるかどうかも確認されるため、前面道路や指定場所を事前に見ておくとスムーズです。</p><a href="https://www.city.higashiosaka.lg.jp/0000000090.html" target="_blank" rel="noopener">東大阪市の大型ごみの出し方を確認</a></div>
-    <div class="admin-card"><h3>2. 料金と点数の目安</h3><p>大型ごみの手数料は、3辺（縦・横・奥行き）の長さの合計が3メートル以下なら1点400円、3メートルを超えるものは1点800円です。1回の申込みで受付可能な上限は10点までで、畳は1回2枚までです。寝具類は5枚まで、棒状のものは10本までなど、複数でも1点として扱う例外品目があります。</p></div>
-    <div class="admin-card"><h3>3. 申込み後の流れ</h3><p>申込後、市内の取扱店舗で大型ごみ処理券を購入し、1点ごとに収集日と受付番号を書いて貼り付けます。取扱店舗は市内指定のコンビニエンスストアなどです。収集日当日は朝9時までに、自宅前または申込み時に指定された場所へ出します。収集の立会いは不要ですが、指定場所にごみがない場合は再申込みが必要になります。</p></div>
-    <div class="admin-card"><h3>4. 変更・追加・ネット申込み</h3><p>申込内容の変更や追加は、収集日の3日前（土日を除く）まで大型ごみ受付センターで受け付けています。インターネット申込みは、過去（平成30年2月以降）に電話で申し込んだことがあり、その後住所・氏名などに変更がない方が対象です。初めて申し込む場合や前回と違う場所へ出したい場合は、電話で指定場所を確認してください。</p><a href="https://www.city.higashiosaka.lg.jp/0000023472.html" target="_blank" rel="noopener">大型ごみのインターネット受付を確認</a></div>
-    <div class="admin-card"><h3>5. 業者搬出に分けるもの</h3><p>タンス、食器棚、ベッド、重い家電、仏壇、金庫、物置内の工具類、工場・倉庫併用住宅の残置物は、行政収集だけで進めると詰まりやすい品目です。東大阪市は長屋、狭小路、集合住宅、事業用スペースが混在するため、屋内搬出、階段作業、分解、養生、車両停車位置を見積もりに入れてください。</p></div>
-    <div class="admin-card"><h3>6. 分けて確認する品目</h3><p>家電4品目、危険物、事業系ごみ、解体材、消火器、バッテリー、灯油、塗料、農薬、金庫、ピアノ、建築廃材、工場・店舗から出たものは、通常の大型ごみと別ルールになりやすい品目です。仏壇・写真・人形など供養希望品は、処分方法とは別に扱いを決めてください。</p></div>
-    <div class="admin-card"><h3>東大阪市の地域事情</h3><p>布施・河内小阪・長瀬周辺は集合住宅や狭い生活道路、花園・吉田方面は戸建てと事業所、石切・枚岡方面は坂道や階段、荒本・高井田方面は倉庫・工場併用住宅の確認が重要です。前面道路、停車位置、共用部養生、工具・資材・事業用品の混在を見積もり前に伝えてください。</p></div>
-    <div class="admin-card"><h3>見積もり前の写真ポイント</h3><p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫、作業場、倉庫を撮影します。大型家具は幅・高さ、搬出経路の曲がり角、階段幅、道路幅が分かる写真があると、人数、車両、養生、分解作業の要否を判断しやすくなります。</p></div>
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>東大阪市役所</strong><br>所在地: 〒577-8521 東大阪市荒本北一丁目1番1号<br>代表電話: 06-4309-3000<br>開庁時間: 月〜金 9:00〜17:30（祝休日、12月29日〜1月3日を除く）<br>戸籍、住所変更、福祉、空き家、住まい、ごみの相談先は担当課が分かれるため、相続後の実家じまいでは必要な窓口を先に整理します。</p><a href="https://www.city.higashiosaka.lg.jp/" target="_blank" rel="noopener">東大阪市公式情報を確認</a></div>
-    <div class="admin-card"><h3>大型ごみの相談</h3><p><strong>大型ごみ受付センター</strong><br>電話: 072-962-5374<br>FAX: 072-962-1673（聴覚に障害のある方）<br>受付: 日〜金 9:00〜17:00（祝日含む、土曜・年末年始は休み）<br>市役所環境事業課や環境事業所では大型ごみの受付はできないため、申込み先を間違えないよう確認してください。</p><a href="https://www.city.higashiosaka.lg.jp/0000000090.html" target="_blank" rel="noopener">大型ごみ受付センターの案内を確認</a></div>
-    <div class="admin-card"><h3>環境事業課・確認先</h3><p><strong>環境部 環境事業課</strong><br>電話: 06-4309-3200<br>FAX: 06-4309-3829<br>大型ごみの申込み自体は受付センターですが、分別、処理困難物、事業系ごみとの区分、家庭ごみの出し方などは公式情報で確認します。工場・店舗・事務所併用住宅では、家庭ごみと事業系ごみを必ず分けてください。</p></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、大型ごみで出すもの、処理先を確認するもの、業者が屋内搬出するもの、家電4品目、工具・事業用品、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></div>
+  <div class="admin-block">
+    <h3>ごみの分け方を先に整理</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>大型ごみで出すもの</h4>
+        <p>住所、氏名、電話番号、品目、大きさ、数量を控えます。受付時に、戸建住宅か集合住宅か、収集車が通れるか、ごみを出す場所、収集日、受付番号、手数料を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>通常収集で分けるもの</h4>
+        <p>少量の可燃ごみ、不燃ごみ、資源ごみは大型ごみに混ぜず、地域の収集日と分別を確認します。工具・部材・店舗用品が混じる場合は家庭ごみと事業系ごみを分けます。</p>
+      </div>
+      <div class="admin-box">
+        <h4>業者搬出に分けるもの</h4>
+        <p>タンス、食器棚、ベッド、重い家電、仏壇、金庫、物置内の工具類、庭・車庫まわりは、屋内搬出や分解作業の有無を見積もりに入れます。</p>
+      </div>
+    </div>
   </div>
+
+  <div class="admin-block">
+    <h3>自治体・大型ごみ・分別確認の連絡先</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 東大阪市役所</h4>
+        <p>所在地: 〒577-8521 東大阪市荒本北一丁目1番1号<br>代表電話: 06-4309-3000<br>開庁時間: 月〜金 9:00〜17:30（祝休日、12月29日〜1月3日を除く）</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 大型ごみ受付センター</h4>
+        <p>電話: 072-962-5374<br>FAX: 072-962-1673（聴覚に障害のある方）<br>受付: 日〜金 9:00〜17:00（祝日含む、土曜・年末年始は休み）</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 環境部 環境事業課</h4>
+        <p>電話: 06-4309-3200<br>FAX: 06-4309-3829</p>
+        <p>大型ごみの申込み自体は受付センターですが、分別、処理困難物、事業系ごみとの区分、家庭ごみの出し方は公式情報で確認します。</p>
+      </div>
+    </div>
+    <div class="admin-box">
+      <h4>□ 申込み後の流れ</h4>
+      <p>申込後、市内の取扱店舗で大型ごみ処理券を購入し、1点ごとに収集日と受付番号を書いて貼ります。収集日当日は朝9:00までに、自宅前または申込み時に指定された場所へ出します。収集の立会いは不要です。</p>
+      <p>変更・追加は収集日の3日前（土曜・日曜を除く）まで受付可能です。インターネット申込みは、平成30年2月以降に電話で申し込んだことがあり、その後住所・氏名などに変更がない方が対象です。</p>
+    </div>
+    <div class="admin-link-row">
+      <a href="https://www.city.higashiosaka.lg.jp/" target="_blank" rel="noopener">東大阪市公式情報</a>
+      <a href="https://www.city.higashiosaka.lg.jp/0000000090.html" target="_blank" rel="noopener">大型ごみの出し方</a>
+      <a href="https://www.city.higashiosaka.lg.jp/0000023472.html" target="_blank" rel="noopener">大型ごみインターネット受付</a>
+      <a class="secondary" href="https://www.city.higashiosaka.lg.jp/category/14-4-0-0-0-0-0-0-0-0.html" target="_blank" rel="noopener">ごみ・環境</a>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>別ルールになりやすい品目</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 通常の大型ごみと分けるもの</h4>
+        <p>家電4品目、危険物、事業系ごみ、解体材、消火器、バッテリー、灯油、塗料、農薬、金庫、ピアノ、建築廃材、工場・店舗から出たものは別確認にします。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 工具・事業用品・物置</h4>
+        <p>東大阪市は工場・店舗併用住宅も多いため、家庭用品と事業用品を混ぜないことが大切です。工具、資材、棚、什器、部材は処理先確認と業者相談に分けます。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 供養品・残す品</h4>
+        <p>仏壇、位牌、写真、手紙、人形、アルバムは処分品と混ぜずに一か所へまとめます。残す品、探してほしい書類、買取希望品も先に分けます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>東大阪市の地域事情と見積もり準備</h3>
+    <div class="admin-local-grid">
+      <div class="admin-box">
+        <h4>布施・河内小阪・長瀬</h4>
+        <p>高密度な市街地や集合住宅では、管理会社への届出、搬出時間、エレベーター養生、駐車位置、収集車が通れるかを確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>花園・吉田・住宅地</h4>
+        <p>戸建てや長屋では、前面道路、車両の停車位置、近隣配慮、庭・物置・車庫まわり、長尺物の分解可否を写真で共有します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>石切・枚岡方面</h4>
+        <p>坂のある戸建てでは、玄関までの距離、階段幅、搬出経路の曲がり角、車両導線で作業時間が変わります。</p>
+      </div>
+    </div>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ ごみ出し支援・高齢者支援</h4>
+        <p>自力でごみ出しや屋外搬出が難しい世帯は、福祉窓口、地域包括支援センター、ケアマネジャーと相談し、行政収集でできる範囲と家財整理業者に任せる範囲を分けます。入口は東大阪市役所（06-4309-3000）で確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 空家・住まいの相談</h4>
+        <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、空家・住まい担当の制度確認と家財整理を分けます。東大阪市役所（06-4309-3000）で担当課、申請時期、補助制度の有無を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 業者へ伝えること</h4>
+        <p>退去期限、立会い可否、鍵の受け渡し、大型ごみに出すもの、処理先を確認するもの、屋内搬出するもの、家電4品目、工具・事業用品、庭・物置・車庫、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+      </div>
+    </div>
+  </div>
+
   <p class="source-note">出典：東大阪市公式サイト、大型ごみの出し方、大型ごみインターネット受付、東大阪市役所公式情報。電話番号、受付時間、対象条件、料金、収集条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-      </section>
+</section>
+
 </main>
   </div>
 <script id="common-kita-before-after-script">

@@ -3152,42 +3152,240 @@
         <div><h2>高槻市の遺品整理・生前整理は、無理に抱え込まず任せられる範囲から相談を</h2><p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを分けると、費用も作業範囲も判断しやすくなります。</p></div>
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
-            <section id="admin" class="admin-hotline-section admin-section">
+            <style id="takatsuki-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    background: #f7fbff;
+    border: 1px solid #cfe0f5;
+    border-radius: 12px;
+    padding: clamp(22px, 4vw, 42px);
+    margin-top: 34px;
+  }
+  #admin .admin-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    color: #23619f;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  #admin .admin-lead {
+    font-size: 1.02rem;
+    line-height: 1.95;
+    margin: 0 0 18px;
+  }
+  #admin .admin-note {
+    background: #fff;
+    border: 1px solid #dbe8f7;
+    border-left: 5px solid #2d75bd;
+    border-radius: 10px;
+    padding: 14px 16px;
+    line-height: 1.85;
+    margin: 16px 0 22px;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  #admin .admin-box {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 8px 22px rgba(35, 97, 159, 0.07);
+  }
+  #admin .admin-box h3,
+  #admin .admin-box h4 {
+    margin: 0 0 8px;
+    color: #174b80;
+    font-size: 1.03rem;
+    line-height: 1.45;
+  }
+  #admin .admin-box p,
+  #admin .admin-box li {
+    line-height: 1.82;
+  }
+  #admin .admin-box ul {
+    margin: 8px 0 0;
+    padding-left: 1.15em;
+  }
+  #admin .admin-block {
+    background: #fff;
+    border: 1px solid #d8e6f5;
+    border-radius: 12px;
+    padding: clamp(16px, 3vw, 24px);
+    margin: 18px 0;
+  }
+  #admin .admin-block h3 {
+    margin: 0 0 12px;
+    color: #123f6d;
+    font-size: 1.18rem;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border-radius: 8px;
+    padding: 9px 13px;
+    background: #1f6fb2;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  #admin .admin-link-row a.secondary {
+    background: #eef5fc;
+    color: #174b80;
+    border: 1px solid #cfe0f5;
+  }
+  #admin .source-note {
+    color: #526477;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-top: 18px;
+  }
+  @media (max-width: 860px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<section id="admin" class="admin-hotline-section admin-section">
+  <p class="admin-kicker">行政収集 / ごみ分け方検索 / エネルギーセンター持ち込み / 高齢者等ごみ出し支援 / 住まい相談</p>
   <h2 class="section-title">高槻市の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>高槻市で遺品整理・生前整理を進めるときは、最初に「行政収集で出すもの」「エネルギーセンターへ持ち込むもの」「業者が屋内から搬出するもの」を分けます。特に退去期限がある場合は、収集日を待てる品と、すぐ搬出が必要な品を先に分けてください。</p>
-  <p>高槻駅・摂津富田周辺の集合住宅、芥川・富田周辺の戸建て、北部の坂道住宅、旧街道沿いの狭い道路では、建物種別、階数、エレベーター、前面道路、駐車位置、管理会社への届出で作業条件が変わります。大型家具、家電4品目、庭・物置、仏壇・写真、重要書類、貴重品探索の範囲を見積もり前に分けておくと、当日の追加作業を減らせます。</p>
+  <p class="admin-lead">高槻市で遺品整理・生前整理を進めるときは、行政収集で出すもの、エネルギーセンターへ持ち込むもの、専門業者が屋内から搬出する家財を分けます。JR高槻駅・阪急高槻市駅周辺の駅近マンション、摂津富田・芥川周辺の住宅地、北部丘陵や上牧方面の戸建てでは、階数、坂道、前面道路、駐車位置、庭・物置の有無で段取りが変わります。</p>
+  <p class="admin-note"><strong>先に決めること：</strong>退去期限、鍵返却日、収集日を待てる品、持ち込みできる品、屋内搬出が必要な家具、家電4品目、仏壇・写真、重要書類、貴重品探索、庭・物置・車庫まわりを分けると、行政利用と業者作業の境目が分かりやすくなります。</p>
 
-  <div class="decision-table-wrap">
-    <table class="decision-table">
-      <thead><tr><th>まず決めること</th><th>向いているもの</th><th>確認先・注意点</th></tr></thead>
-      <tbody>
-        <tr><td>行政収集で出す</td><td>家族で屋外の指定場所まで出せる家具、布団、小型収納、解体済みの棚</td><td>ごみ分け方検索で、大型可燃ごみ・不燃ごみ・リサイクルごみ・処理困難物を確認</td></tr>
-        <tr><td>エネルギーセンターへ持ち込む</td><td>収集日を待てず、車で運べる家庭ごみ</td><td>事前届出が必要。搬入希望日の前日正午までが目安。荷下ろしは搬入者が行う</td></tr>
-        <tr><td>業者へ任せる</td><td>屋内搬出、大型家具、大量家財、階段作業、分解搬出、庭・物置、貴重品探索、供養品</td><td>退去期限、鍵預かり、立会い可否、残す品、探す品、写真報告を伝える</td></tr>
-        <tr><td>支援制度を確認する</td><td>高齢・障がいなどで日常ごみを出しにくい世帯</td><td>高齢者等ごみ出し支援は日常ごみ中心。大型家具や一時的な大量片付けは別に相談</td></tr>
-      </tbody>
-    </table>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 行政収集で出す目安</h3>
+      <p>家族で屋外の指定場所まで出せる家具、布団、小型収納、解体済みの棚は、高槻市のごみ分け方検索で区分を確認します。大型可燃ごみ、不燃ごみ、リサイクルごみ、処理困難物を先に分けます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 持ち込みの目安</h3>
+      <p>収集日を待てず、車で運べる家庭ごみはエネルギーセンターへの持ち込みを検討します。事前届出が必要で、届出期限は持込希望日の前日正午が目安です。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業の目安</h3>
+      <p>大型家具の屋内搬出、階段作業、分解搬出、庭・物置、供養品、貴重品探索、短い退去期限がある片付けは業者見積もりに分けます。</p>
+    </div>
   </div>
 
-  <div class="admin-grid">
-    <div class="admin-card"><h3>1. 行政収集で出すもの</h3><p>単品の家具、布団、椅子、小型収納、解体済みの棚など、家族で屋外の指定場所まで出せるものは行政収集を確認します。高槻市のごみ分け方検索で、可燃ごみ、大型可燃ごみ、不燃ごみ、リサイクルごみ、家電リサイクル、パソコンリサイクル、処理困難物の区分を先に確認してください。</p><a href="https://www.city.takatsuki.osaka.jp/garbage-item/search/search.php" target="_blank" rel="noopener">高槻市のごみ分け方検索</a></div>
-    <div class="admin-card"><h3>2. 持ち込みで処理するもの</h3><p>退去日が近い、収集日を待てない、車で運べる家財がある場合は、エネルギーセンターへの持ち込みを検討します。家庭ごみの持ち込みは事前届出が必要で、搬入希望日の前日正午までの届出が目安です。土日祝日などをはさむ場合は、直前の平日正午までになる点も確認してください。</p></div>
-    <div class="admin-card"><h3>3. 業者搬出に分けるもの</h3><p>タンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、物置内の工具類など、屋内から動かす必要があるものは業者見積もりに入れます。階段作業、分解搬出、共用部養生、庭木・物置・車庫まわり、貴重品探索の有無を伝えると、費用と作業時間を判断しやすくなります。</p></div>
-    <div class="admin-card"><h3>4. 別ルールになりやすい品</h3><p>家電4品目、パソコン、消火器、バッテリー、スプレー缶、灯油、塗料、農薬、危険物、事業系ごみ、解体材、金庫、仏壇・写真などの供養希望品は、通常の粗大ごみと分けて確認します。「行政確認」「持ち込み確認」「業者相談」に分けると迷いにくくなります。</p></div>
-    <div class="admin-card"><h3>高槻市の地域事情</h3><p>高槻駅・摂津富田周辺はマンションの搬出時間や管理会社への届出、芥川・富田周辺の戸建ては庭・物置・車庫、北部の坂道住宅は車両の停車位置と積み込み距離、旧街道沿いは前面道路の幅と近隣配慮を確認します。</p></div>
-    <div class="admin-card"><h3>建物別の注意点</h3><p>マンションは搬出時間、エレベーター養生、共用部の一時置きを確認します。戸建ては庭、物置、車庫、ベランダ、押入れ、納戸まで写真を残します。坂道や狭い道路の住宅は、トラックが横付けできるか、階段や坂を何メートル運ぶかで人数と作業時間が変わります。</p></div>
-    <div class="admin-card"><h3>退去期限が近い場合</h3><p>鍵返却日や明け渡し日が近いときは、行政収集だけで完了できるかを先に判断します。収集日を待てない品は持ち込み、屋内に残る大型家具や大量家財は業者搬出、最後に掃き掃除や写真報告まで必要かを確認してください。</p></div>
-    <div class="admin-card"><h3>貴重品探索の範囲</h3><p>通帳、印鑑、権利証、保険証券、年金書類、現金、貴金属、写真、手紙、鍵、契約書類は、処分前に探す範囲を決めます。押入れ、タンス、仏壇まわり、机、食器棚、冷蔵庫上、物置、車庫を確認場所として業者へ伝えてください。</p></div>
-    <div class="admin-card"><h3>供養品・残す品</h3><p>仏壇、位牌、遺影、写真、手紙、人形、アルバムは、処分品と混ぜずに一か所へまとめます。供養を希望する品、親族に確認する品、残す家具、買取希望品を色テープやメモで分けておくと、遠方立会いでも判断ミスを減らせます。</p></div>
-    <div class="admin-card"><h3>写真で伝える場所</h3><p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫の写真を用意します。大型家具は幅・高さ、曲がり角、階段幅、トラックを停める場所が分かる写真があると見積もりが正確になります。</p></div>
-    <div class="admin-card"><h3>高槻市役所</h3><p><strong>高槻市役所</strong><br>所在地: 大阪府高槻市桃園町2番1号<br>執務時間: 8:45〜17:15<br>高槻市コールセンター: 072-674-7111<br>FAX: 072-674-7050<br>住所変更、戸籍、福祉、空き家、住まい、地域包括支援、ごみの相談先は担当課が分かれる場合があります。</p><a href="https://www.city.takatsuki.osaka.jp/" target="_blank" rel="noopener">高槻市公式情報</a></div>
-    <div class="admin-card"><h3>ごみ収集の相談</h3><p><strong>清掃業務課</strong><br>所在地: 高槻市前島3丁目8番1号（エネルギーセンター内）<br>電話: 072-669-1153<br>受付: 7:45〜16:15（土日・年末年始を除く）<br>品目名、サイズ、数量、排出場所、収集希望時期、屋内搬出が必要かを控えてから相談するとスムーズです。</p><a href="https://www.city.takatsuki.osaka.jp/garbage-item/search/search.php" target="_blank" rel="noopener">ごみ分け方検索</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>高槻市エネルギーセンター</strong><br>所在地: 高槻市前島3丁目8番1号<br>搬入時間: 9:00〜12:00、13:00〜16:00（土日祝日は休み）<br>手数料: 家庭ごみ 10kgにつき40円、事業系一般廃棄物 10kgにつき80円<br>ゴミ持込届出専用: 072-669-1950<br>FAX: 072-669-5985<br>荷下ろしは原則として搬入者が行います。重い家具や大量家財は無理に持ち込まず、業者搬出と分けてください。</p><a href="https://www.city.takatsuki.osaka.jp/soshiki/28/29023.html" target="_blank" rel="noopener">エネルギーセンターにごみを持ち込むには</a></div>
-    <div class="admin-card"><h3>高齢者等ごみ出し支援</h3><p>要介護状態や障がいなどで日常ごみを出しにくい世帯向けに、玄関先などでの戸別収集制度があります。主な窓口は長寿介護課 072-674-7166、障がい福祉課 072-674-7164、子ども保健課 072-648-3272、清掃業務課 072-669-1153です。大型家具や一時的な大量片付けは別に相談してください。</p><a href="https://www.city.takatsuki.osaka.jp/site/waiwai/166846.html" target="_blank" rel="noopener">高齢者等のごみ出し支援</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、エネルギーセンターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></div>
+  <div class="admin-block">
+    <h3>ごみの分け方を先に整理</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>行政収集で出すもの</h4>
+        <p>品目名、サイズ、数量、排出場所、収集希望時期を控えます。マンションでは管理会社や管理組合の置き場、搬出時間、共用部養生も確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>エネルギーセンターへ持ち込むもの</h4>
+        <p>退去日が近い、収集日を待てない、車で運べるものを分けます。届出後、搬入時間、手数料、持込不可品、荷下ろし方法を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>業者作業に分けるもの</h4>
+        <p>タンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、物置内の工具類など、屋内搬出や階段作業が必要なものは見積もりに入れます。</p>
+      </div>
+    </div>
   </div>
+
+  <div class="admin-block">
+    <h3>自治体・ごみ収集・持ち込みの連絡先</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 高槻市役所</h4>
+        <p>所在地: 〒569-0067 大阪府高槻市桃園町2番1号<br>代表電話: 072-674-7111<br>FAX: 072-674-7050</p>
+        <p>住所変更、戸籍、福祉、空家、住まい、ごみの相談先は担当課が分かれるため、最初に相談先を整理します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 清掃業務課</h4>
+        <p>所在地: 高槻市前島3丁目8番1号（エネルギーセンター内）<br>電話: 072-669-1153<br>受付: 7:45〜16:15（土曜・日曜、年末年始を除く）</p>
+        <p>行政収集、ごみ分別、収集に関する相談の入口です。品目名とサイズを控えてから相談するとスムーズです。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ エネルギーセンター持込届出</h4>
+        <p>所在地: 高槻市前島3丁目8番1号<br>ゴミ持込届出専用: 072-669-1950<br>FAX: 072-669-5985</p>
+        <p>家庭ごみの持ち込みには事前届出が必要です。ホームページ申込または一般廃棄物運搬届出書の提出方法を確認します。</p>
+      </div>
+    </div>
+    <div class="admin-box">
+      <h4>□ エネルギーセンターへの持ち込み条件</h4>
+      <p>届出期限: 持込希望日の前日正午（前日が土曜・日曜・祝日の場合は直前の平日正午）<br>搬入時間: 9:00〜12:00、13:00〜16:00<br>手数料: 家庭ごみ 10kgにつき40円、事業系一般廃棄物 10kgにつき80円</p>
+      <p>持ち込み前に分別が必要です。ごみの荷下ろしは原則として搬入者が行うため、重い家具や大量家財は無理に持ち込まず、業者搬出と分けてください。</p>
+    </div>
+    <div class="admin-link-row">
+      <a href="https://www.city.takatsuki.osaka.jp/" target="_blank" rel="noopener">高槻市公式情報</a>
+      <a href="https://www.city.takatsuki.osaka.jp/garbage-item/search/search.php" target="_blank" rel="noopener">ごみ分け方検索</a>
+      <a href="https://www.city.takatsuki.osaka.jp/soshiki/28/29023.html" target="_blank" rel="noopener">エネルギーセンター持ち込み</a>
+      <a class="secondary" href="https://www.city.takatsuki.osaka.jp/site/waiwai/166846.html" target="_blank" rel="noopener">高齢者等ごみ出し支援</a>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>別ルールになりやすい品目</h3>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 行政確認が必要なもの</h4>
+        <p>家電4品目、パソコン、消火器、バッテリー、スプレー缶、灯油、塗料、農薬、危険物、事業系ごみ、解体材、金庫、処理困難物は通常の収集と分けて確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 庭・物置・車庫まわり</h4>
+        <p>工具、園芸用品、塗料、部材、屋外収納、古い家電は混ぜずに仕分けます。行政確認、持ち込み確認、業者相談に分けると、当日の判断ミスを減らせます。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 供養品・残す品</h4>
+        <p>仏壇、位牌、写真、手紙、人形、アルバムは処分品と混ぜずに一か所へまとめます。残す品、探してほしい書類、買取希望品も先に分けます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-block">
+    <h3>高槻市の地域事情と見積もり準備</h3>
+    <div class="admin-local-grid">
+      <div class="admin-box">
+        <h4>高槻駅・阪急高槻市駅周辺</h4>
+        <p>駅近マンションでは、管理会社への届出、搬出時間、エレベーター養生、駐車位置、鍵返却日を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>摂津富田・芥川・富田</h4>
+        <p>住宅地や戸建てでは、前面道路、車両の停車位置、庭・物置・車庫まわり、古い家具の分解可否を写真で共有します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>北部丘陵・上牧方面</h4>
+        <p>坂道や敷地が広い住宅では、車両導線、玄関までの距離、階段幅、搬出経路の曲がり角で作業時間が変わります。</p>
+      </div>
+    </div>
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h4>□ 高齢者等ごみ出し支援</h4>
+        <p>要介護状態や障がいなどで日常ごみを出しにくい世帯向けに、玄関先などでの戸別収集制度があります。主な窓口は長寿介護課 072-674-7166、障がい福祉課 072-674-7164、子ども保健課 072-648-3272、清掃業務課 072-669-1153です。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 空家・住まいの相談</h4>
+        <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、空家・住まい担当の制度確認と家財整理を分けます。高槻市役所（072-674-7111）で担当課、申請時期、補助制度の有無を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h4>□ 業者へ伝えること</h4>
+        <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、エネルギーセンターへ持ち込むもの、屋内搬出するもの、家電4品目、庭・物置、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+      </div>
+    </div>
+  </div>
+
   <p class="source-note">出典：高槻市公式サイト、高槻市 ごみの分け方検索、高槻市 エネルギーセンターにごみを持ち込むには、高槻市 高齢者等のごみ出し支援。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-  </section>
+</section>
+
 </main>
   </div>
 <script id="common-kita-before-after-script">

@@ -3142,109 +3142,198 @@
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
 
+      <style id="hannan-admin-readable-style-v2">
+        #admin.admin-hotline-section {
+          border: 2px solid #1f6fb2;
+          background: #f7fbff;
+          border-radius: 12px;
+          padding: clamp(22px, 4vw, 38px);
+          box-shadow: 0 18px 45px rgba(31, 111, 178, 0.14);
+        }
+        #admin .admin-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          margin: 0 0 10px;
+          color: #155a91;
+          font-size: 0.92rem;
+          font-weight: 800;
+          letter-spacing: 0;
+        }
+        #admin .admin-lead {
+          margin: 12px 0 0;
+          font-size: 1.05rem;
+          line-height: 1.95;
+          color: #17324d;
+        }
+        #admin .admin-note {
+          margin: 16px 0 0;
+          padding: 14px 16px;
+          border-left: 5px solid #1f6fb2;
+          background: #ffffff;
+          color: #26445f;
+          line-height: 1.8;
+          font-weight: 700;
+        }
+        #admin .admin-quick-grid,
+        #admin .admin-contact-grid,
+        #admin .admin-local-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 14px;
+          margin-top: 20px;
+        }
+        #admin .admin-contact-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        #admin .admin-box,
+        #admin .admin-block {
+          background: #ffffff;
+          border: 1px solid #cfe2f3;
+          border-radius: 10px;
+          padding: 16px;
+        }
+        #admin .admin-box h3,
+        #admin .admin-block h3 {
+          margin: 0 0 8px;
+          color: #123f67;
+          font-size: 1.04rem;
+          line-height: 1.45;
+        }
+        #admin .admin-box p,
+        #admin .admin-block p {
+          margin: 0;
+          line-height: 1.85;
+          color: #263f55;
+        }
+        #admin .admin-strong {
+          display: block;
+          margin: 8px 0 3px;
+          color: #0f4f82;
+          font-weight: 800;
+        }
+        #admin .admin-link-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 20px;
+        }
+        #admin .admin-link-row a {
+          display: inline-flex;
+          align-items: center;
+          min-height: 42px;
+          padding: 9px 14px;
+          border-radius: 999px;
+          background: #155a91;
+          color: #ffffff;
+          font-weight: 800;
+          text-decoration: none;
+        }
+        #admin .source-note {
+          margin-top: 18px;
+          color: #526779;
+          font-size: 0.92rem;
+          line-height: 1.75;
+        }
+        @media (max-width: 820px) {
+          #admin .admin-quick-grid,
+          #admin .admin-contact-grid,
+          #admin .admin-local-grid {
+            grid-template-columns: 1fr;
+          }
+          #admin.admin-hotline-section {
+            padding: 20px;
+          }
+        }
+      </style>
       <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政窓口・粗大ごみ・直接搬入・処理困難品</p>
-  <h2 class="section-title">阪南市の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>阪南市で遺品整理・生前整理を進める前に、<strong>不燃ごみ・粗大ごみとして申し込むもの、泉南清掃事務組合（清掃工場）へ直接搬入するもの、業者が屋内から搬出するもの</strong>を分けて整理します。阪南市公式情報では、不燃ごみ・粗大ごみは電話・ファックス・インターネットで予約し、不燃ごみは市指定不燃ごみ専用袋、粗大ごみは粗大ごみ処理券を貼って出す流れです。</p>
-  <p>尾崎駅周辺の市街地、鳥取ノ荘・箱作の海側住宅、舞・光陽台の住宅地、山中渓方面の山手住宅では、前面道路、坂道、階段、駐車位置、庭・物置・車庫まわりの有無で搬出条件が変わります。退去期限、大型家具、家電4品目、仏壇・写真、重要書類、貴重品探索の範囲を先に分けてください。</p>
+        <p class="admin-kicker">阪南市の公式確認ポイント</p>
+        <h2>阪南市の行政窓口・粗大ごみ・持ち込み先</h2>
+        <p class="admin-lead">阪南市で遺品整理・生前整理を進める前に、「不燃ごみ・粗大ごみとして予約するもの」「泉南清掃事務組合（清掃工場）へ直接搬入を確認するもの」「専門業者が屋内から搬出するもの」に分けます。尾崎駅周辺の市街地、箱作・鳥取ノ荘の海側住宅、山中渓方面の戸建てでは、坂道、前面道路、駐車位置、庭・納屋・車庫まわり、遠方親族への写真報告の有無で搬出条件が変わります。</p>
+        <p class="admin-note">阪南市の不燃ごみ・粗大ごみは予約制です。電話・ファックス・インターネットで予約し、不燃ごみは市指定不燃ごみ専用袋、粗大ごみは粗大ごみ処理券を貼って出します。</p>
 
-  <div class="admin-table-wrap">
-    <table class="admin-table">
-      <tbody>
-        <tr><th>□ 不燃ごみ・粗大ごみ申込</th><td>自力で屋外へ出せる不燃ごみ・粗大ごみ。ごみ総合受付センターへ電話、ファックス、インターネットで予約し、収集日、処理券、出す場所を確認します。</td></tr>
-        <tr><th>□ 直接搬入</th><td>収集日を待てないもの、量はあるが車で運べるもの。泉南清掃事務組合（清掃工場）への持ち込み条件、手数料、受入時間、搬入できない品目を確認します。</td></tr>
-        <tr><th>□ 業者作業</th><td>屋内搬出、大量家財、階段作業、短い退去期限、庭・物置・車庫、貴重品探索、供養品は業者見積もりに分けます。</td></tr>
-        <tr><th>□ 別ルール品</th><td>家電4品目、パソコン、小型充電式電池、消火器、危険物、建築廃材、事業系ごみは通常の粗大ごみと別に確認します。</td></tr>
-      </tbody>
-    </table>
-  </div>
+        <div class="admin-quick-grid">
+          <div class="admin-box">
+            <h3>□ 不燃ごみ・粗大ごみで出すもの</h3>
+            <p>自力で屋外へ出せる不燃ごみ・粗大ごみは、ごみ総合受付センターへ予約します。品目、数量、サイズ、排出場所、予約日、処理券の必要枚数を整理します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 直接搬入に分けるもの</h3>
+            <p>収集日を待てないもの、車で運べる量のごみは泉南清掃事務組合（清掃工場）への持ち込み条件を確認します。手数料、受入時間、搬入できない品目を事前に確認します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 業者作業に分けるもの</h3>
+            <p>屋内からの大型家具搬出、階段作業、大量家財、短い退去期限、貴重品探索、仏壇・写真の供養、庭・納屋・車庫まわりは業者見積もりに入れます。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-card">
-      <h3>□ 粗大ごみ申込み</h3>
-      <p>阪南市の不燃ごみ・粗大ごみは、予約制です。電話・ファックス・インターネットで申し込み、不燃ごみは市指定不燃ごみ専用袋、粗大ごみは粗大ごみ処理券を貼り付けて出します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ ごみ総合受付センター</h3>
-      <p><strong>ごみ総合受付センター</strong><br>電話: 072-483-9200<br>受付: 9:00〜16:00<br>品目、数量、サイズ、排出場所、収集日、処理券、追加品の扱いを確認します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ インターネット申込</h3>
-      <p>インターネット申込は、申請受付メールが届いても受付完了ではありません。ごみ総合受付センターが内容確認後、収集日などを記載した受付処理完了メールを送信し、そのメールが届くと受付完了です。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 出す時間と注意点</h3>
-      <p>受付完了メールまたは電話で案内された収集日の当日午前8時までに出します。申し込んだ品物以外は収集できません。追加がある場合は再度申し込みます。処理券・不燃袋には予約日と申込者名を記入します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 粗大ごみ処理券</h3>
-      <p>指定袋に入らないものは粗大ごみです。粗大ごみは、縦・横・高さ・径の一番長いところを測り、3辺合計を確認して処理券の必要枚数を判断します。指定袋・処理券は阪南市指定の市内取扱店で購入します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 行政収集で出しやすいもの</h3>
-      <p>金属製の小物類、陶器類、小型家具、布団、自転車など、家族で屋外の指定場所まで出せるものは行政収集を検討します。タンス、食器棚、ベッド、金庫、仏壇など屋内搬出が必要なものは業者作業に分けます。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 直接搬入の基本</h3>
-      <p>泉南清掃事務組合（清掃工場）では、泉南市・阪南市からのごみの受け入れを行っています。持ち込みは有料扱いです。事故防止のため、透明または半透明袋での持ち込みが案内されています。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 持込・処理施設</h3>
-      <p><strong>泉南清掃事務組合（清掃工場）</strong><br>所在地: 阪南市尾崎町532番地<br>関連窓口: 阪南市 資源対策課 072-483-5876<br>開庁時間: 7:45〜16:15（土日祝・年末年始を除く）</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 持ち込み手数料</h3>
-      <p>阪南市公式情報では、清掃工場への1回の搬入手数料は400円、以降10kg増すごとに100円を加えた額と案内されています。受入時間、土曜受入、搬入できない品目は搬入前に公式情報で確認してください。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 家電4品目</h3>
-      <p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品です。購入店、買い替え店、指定引取場所、許可業者などの方法を確認し、粗大ごみ処理券とは分けて扱います。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 処理困難物</h3>
-      <p>消火器、バッテリー、タイヤ、薬品、塗料、建築廃材、事業系ごみ、危険物、処理施設で受け入れできないものは、行政収集や直接搬入と別に確認します。品目一覧や資源対策課で扱いを確認します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 阪南市の地域事情</h3>
-      <p>尾崎駅周辺は市街地の停車位置、鳥取ノ荘・箱作は海側道路や集合住宅、舞・光陽台は坂道と階段、山中渓方面は距離と車両導線を確認します。戸建てでは庭、物置、納屋、車庫まわりの残置物まで確認します。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ 写真で伝える場所</h3>
-      <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、曲がり角、階段幅が分かる写真があると見積もりが正確になります。</p>
-    </div>
-    <div class="admin-card">
-      <h3>□ ふれあい収集</h3>
-      <p>自力でごみ出しが難しい世帯は、阪南市のふれあい収集、福祉窓口、地域包括支援センターの対象条件を確認します。制度で対応できる範囲と、家財整理業者に任せる範囲を分けておくと進めやすくなります。</p>
-    </div>
-  </div>
+        <div class="admin-contact-grid">
+          <div class="admin-block">
+            <h3>自治体・関連窓口</h3>
+            <p><span class="admin-strong">阪南市役所</span>所在地: 〒599-0292 大阪府阪南市尾崎町35番地の1<br>代表電話: 072-471-5678<br><span class="admin-strong">市民部 資源対策課</span>所在地: 大阪府阪南市尾崎町532番地<br>電話: 072-483-5876<br>開庁時間: 7:45〜16:15（土曜・日曜・祝日・年末年始を除く）</p>
+          </div>
+          <div class="admin-block">
+            <h3>粗大ごみ・収集の相談</h3>
+            <p><span class="admin-strong">ごみ総合受付センター</span>電話: 072-483-9200（9:00〜16:00）<br>FAX: 072-483-8856（24時間受付）<br>電話、ファックス、インターネットで予約します。処理券・不燃袋には予約日と申込者氏名を記入し、予約日の朝に出します。</p>
+          </div>
+          <div class="admin-block">
+            <h3>持込・処理施設</h3>
+            <p><span class="admin-strong">泉南清掃事務組合（清掃工場）</span>所在地: 阪南市尾崎町532番地<br>関連窓口: 阪南市 資源対策課 072-483-5876<br>泉南市・阪南市からのごみを受け入れています。事故防止のため、透明または半透明袋での持ち込みが案内されています。</p>
+          </div>
+          <div class="admin-block">
+            <h3>直接搬入の料金目安</h3>
+            <p>阪南市公式情報では、清掃工場への1回の搬入手数料は400円、以降10kg増すごとに100円を加えた額と案内されています。受入時間、土曜受入、搬入できない品目は搬入前に公式情報で確認してください。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-card">
-      <h3>自治体・関連窓口</h3>
-      <p><strong>阪南市役所</strong><br>所在地: 大阪府阪南市尾崎町35番地の1<br>代表電話: 072-471-5678<br>開庁時間: 月〜金 8:45〜17:15（祝日・年末年始を除く）</p>
-      <p><strong>市民部 資源対策課</strong><br>所在地: 大阪府阪南市尾崎町532番地<br>電話: 072-483-5876<br>開庁時間: 7:45〜16:15</p>
-      <a href="https://www.city.hannan.lg.jp/" target="_blank" rel="noopener">阪南市公式情報を確認</a>
-    </div>
-    <div class="admin-card">
-      <h3>粗大ごみ・収集の相談</h3>
-      <p><strong>ごみ総合受付センター</strong><br>電話: 072-483-9200<br>受付: 9:00〜16:00</p>
-      <p>不燃ごみ・粗大ごみの申込、収集日、処理券、排出場所、収集できない品目を確認します。</p>
-      <a href="https://www.city.hannan.lg.jp/kakuka/shimin/shigen1/bunbetu/1526609414614.html" target="_blank" rel="noopener">不燃ごみ・粗大ごみの出し方を確認</a>
-    </div>
-    <div class="admin-card">
-      <h3>持込・処理施設</h3>
-      <p><strong>泉南清掃事務組合（清掃工場）</strong><br>所在地: 阪南市尾崎町532番地<br>関連窓口: 阪南市 資源対策課 072-483-5876<br>手数料: 1回400円、以降10kg増すごとに100円加算</p>
-      <a href="https://www.city.hannan.lg.jp/kakuka/shimin/shigen1/gomi/1548396935981.html" target="_blank" rel="noopener">持ち込み条件を確認</a>
-    </div>
-  </div>
+        <div class="admin-local-grid">
+          <div class="admin-box">
+            <h3>□ 粗大ごみ処理券の判断</h3>
+            <p>指定袋に入らないごみは粗大ごみです。粗大ごみの縦・横・高さ・径の一番長いところを測り、3辺合計が3m以下なら処理券1枚、3m超なら処理券2枚が目安です。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 別ルールになりやすい品目</h3>
+            <p>家電4品目、パソコン、小型充電式電池、消火器、バッテリー、タイヤ、薬品、塗料、建築廃材、事業系ごみ、危険物は通常の粗大ごみと別確認にします。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 阪南市の地域事情</h3>
+            <p>尾崎駅周辺は市街地の停車位置、箱作・鳥取ノ荘は海側住宅の屋外品、山中渓方面は坂道・庭・納屋・車庫まわりを確認します。遠方対応では鍵預かりと写真報告を決めます。</p>
+          </div>
+        </div>
 
-  <div class="admin-note">
-    <h3>業者へ伝えること</h3>
-    <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、泉南清掃事務組合へ持ち込み確認するもの、業者が屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p>
-  </div>
+        <div class="admin-contact-grid">
+          <div class="admin-block">
+            <h3>□ ごみ出し支援・高齢者支援</h3>
+            <p>自力でごみ置き場や搬出場所まで出しにくい世帯は、福祉窓口、地域包括支援センター、ケアマネジャーへ相談します。生前整理では、本人の同意、親族立会い、残す薬・介護用品・重要書類の扱いを先に決めます。</p>
+          </div>
+          <div class="admin-block">
+            <h3>□ 空家・住まいの相談</h3>
+            <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、空き家・建築・住まいの担当窓口で対象制度を確認します。補助金や支援制度は、所有者、建物状態、申請時期、市内業者利用など条件が付く場合があります。</p>
+          </div>
+        </div>
 
-  <p><a href="/osaka/" rel="noopener">大阪府ページへ戻る</a></p>
-  <p class="admin-source-note">出典：阪南市公式サイト、阪南市 不燃ごみ・粗大ごみの出し方、阪南市 不燃ごみ・粗大ごみインターネット申し込み、阪南市 泉南清掃事務組合（清掃工場）へのごみの持ち込み。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+        <div class="admin-local-grid">
+          <div class="admin-box">
+            <h3>□ 見積もり前の写真ポイント</h3>
+            <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、納屋、物置、車庫を撮影します。大型家具は幅・高さと搬出経路が分かる写真が有効です。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 業者へ伝えること</h3>
+            <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、泉南清掃事務組合へ持ち込み確認するもの、業者が屋内搬出するもの、家電4品目、庭・物置、仏壇・写真、貴重品探索の範囲を分けます。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 当日の判断ミスを減らす</h3>
+            <p>残す品、探してほしい通帳・権利書・保険証券、供養したい写真・仏具、買取希望品は別にしておきます。行政で出すものと業者が搬出するものを混ぜないことが大切です。</p>
+          </div>
+        </div>
+
+        <div class="admin-link-row">
+          <a href="https://www.city.hannan.lg.jp/">阪南市公式情報を確認</a>
+          <a href="https://www.city.hannan.lg.jp/kakuka/shimin/shigen1/bunbetu/1526609414614.html">不燃ごみ・粗大ごみの出し方を確認</a>
+          <a href="https://www.city.hannan.lg.jp/kakuka/shimin/shigen1/gomi/1548396935981.html">持ち込み条件を確認</a>
+          <a href="http://127.0.0.1:8788/osaka/">大阪府ページへ戻る</a>
+        </div>
+        <p class="source-note">出典: 阪南市公式サイト、阪南市「不燃ごみ・粗大ごみの出し方」「泉南清掃事務組合（清掃工場）へのごみの持ち込み」。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
       </section>
 </main>
   </div>

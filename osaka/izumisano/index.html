@@ -3142,113 +3142,199 @@
         <a class="btn primary" href="#process">チェックリストを見る</a>
       </section>
 
+      <style id="izumisano-admin-readable-style-v2">
+        #admin.admin-hotline-section {
+          border: 2px solid #1f6fb2;
+          background: #f7fbff;
+          border-radius: 12px;
+          padding: clamp(22px, 4vw, 38px);
+          box-shadow: 0 18px 45px rgba(31, 111, 178, 0.14);
+        }
+        #admin .admin-kicker {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          margin: 0 0 10px;
+          color: #155a91;
+          font-size: 0.92rem;
+          font-weight: 800;
+          letter-spacing: 0;
+        }
+        #admin .admin-lead {
+          margin: 12px 0 0;
+          font-size: 1.05rem;
+          line-height: 1.95;
+          color: #17324d;
+        }
+        #admin .admin-note {
+          margin: 16px 0 0;
+          padding: 14px 16px;
+          border-left: 5px solid #1f6fb2;
+          background: #ffffff;
+          color: #26445f;
+          line-height: 1.8;
+          font-weight: 700;
+        }
+        #admin .admin-quick-grid,
+        #admin .admin-contact-grid,
+        #admin .admin-local-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 14px;
+          margin-top: 20px;
+        }
+        #admin .admin-contact-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        #admin .admin-box,
+        #admin .admin-block {
+          background: #ffffff;
+          border: 1px solid #cfe2f3;
+          border-radius: 10px;
+          padding: 16px;
+        }
+        #admin .admin-box h3,
+        #admin .admin-block h3 {
+          margin: 0 0 8px;
+          color: #123f67;
+          font-size: 1.04rem;
+          line-height: 1.45;
+        }
+        #admin .admin-box p,
+        #admin .admin-block p {
+          margin: 0;
+          line-height: 1.85;
+          color: #263f55;
+        }
+        #admin .admin-strong {
+          display: block;
+          margin: 8px 0 3px;
+          color: #0f4f82;
+          font-weight: 800;
+        }
+        #admin .admin-link-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 20px;
+        }
+        #admin .admin-link-row a {
+          display: inline-flex;
+          align-items: center;
+          min-height: 42px;
+          padding: 9px 14px;
+          border-radius: 999px;
+          background: #155a91;
+          color: #ffffff;
+          font-weight: 800;
+          text-decoration: none;
+        }
+        #admin .source-note {
+          margin-top: 18px;
+          color: #526779;
+          font-size: 0.92rem;
+          line-height: 1.75;
+        }
+        @media (max-width: 820px) {
+          #admin .admin-quick-grid,
+          #admin .admin-contact-grid,
+          #admin .admin-local-grid {
+            grid-template-columns: 1fr;
+          }
+          #admin.admin-hotline-section {
+            padding: 20px;
+          }
+        }
+      </style>
       <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政窓口・粗大ごみ・臨時ごみ・直接搬入</p>
-  <h2 class="section-title">泉佐野市の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>泉佐野市で遺品整理・生前整理を進める前に、<strong>行政収集で出すもの、臨時ごみ・粗大ごみとして相談するもの、泉佐野市田尻町清掃施設組合へ直接搬入するもの、業者が屋内から搬出するもの</strong>を分けて整理します。直接搬入では廃棄物搬入証明書、受入日時、料金、車両条件の確認が大切です。</p>
-  <p>泉佐野駅・日根野駅周辺の住宅、りんくうタウン近くの集合住宅、長滝・上之郷・日根野方面の戸建てや農地まわり、空港周辺の転居では、建物種別、前面道路、駐車位置、管理会社への届出、退去期限で搬出条件が変わります。大型家具、家電4品目、庭・物置、仏壇・写真、重要書類、貴重品探索の範囲を先に分けてください。</p>
+        <p class="admin-kicker">泉佐野市の公式確認ポイント</p>
+        <h2>泉佐野市の行政窓口・粗大ごみ・持ち込み先</h2>
+        <p class="admin-lead">泉佐野市で遺品整理・生前整理を進める前に、「収集業者へ電話申込する粗大ごみ・臨時ごみ」「泉佐野市田尻町清掃施設組合 第二事業所へ直接搬入するもの」「専門業者が屋内から搬出するもの」に分けます。泉佐野駅・日根野駅周辺の集合住宅、りんくうタウン近くのマンション、長滝・上之郷方面の戸建てでは、駐車位置、階段、前面道路、退去期限、遠方親族の立会い可否で搬出条件が変わります。</p>
+        <p class="admin-note">直接搬入は、粗大ごみ・臨時ごみの収集業者への電話申込を利用できない場合に限り、搬入基準に合うものが対象です。泉佐野市環境衛生課が発行する「廃棄物搬入証明書」が必要です。</p>
 
-  <div class="admin-info-card">
-    <h3>先に分ける判断表</h3>
-    <table>
-      <tbody>
-        <tr><th>□ 行政収集</th><td>少量で自力搬出でき、通常の分別・収集日に出せるもの。品目ごとの出し方、指定場所、収集できない品目を市公式情報で確認します。</td></tr>
-        <tr><th>□ 粗大ごみ・臨時ごみ</th><td>大型家具、まとまった片付けごみ、退去前の一時的な大量ごみ。原則として収集業者への電話申込や、環境衛生課への確認が必要です。</td></tr>
-        <tr><th>□ 直接搬入</th><td>自分で車に積んで処理施設へ持ち込むもの。泉佐野市で廃棄物搬入証明書の発行を受け、第二事業所の受入時間・料金・車両条件を確認します。</td></tr>
-        <tr><th>□ 業者作業</th><td>屋内搬出が必要な家具、階段作業、短い退去期限、貴重品探索、供養品、庭・物置・車庫まわりは業者見積もりに分けます。</td></tr>
-      </tbody>
-    </table>
-  </div>
+        <div class="admin-quick-grid">
+          <div class="admin-box">
+            <h3>□ 粗大ごみ・臨時ごみ</h3>
+            <p>大型家具、布団、収納用品、退去前にまとまって出る片付けごみは、原則として収集業者への電話申込で確認します。品目名、数量、サイズ、排出場所、屋内搬出の有無を整理します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 直接搬入に分けるもの</h3>
+            <p>収集業者への申込を利用できない事情があり、搬入基準・搬入制限に適合するものは、第二事業所への直接搬入を確認します。事前に環境衛生課で廃棄物搬入証明書を取得します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 業者作業に分けるもの</h3>
+            <p>屋内からの大型家具搬出、階段作業、大量家財、短い退去期限、貴重品探索、仏壇・写真の供養、庭・物置・車庫まわりは業者見積もりに入れます。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-info-card">
-      <h3>□ 粗大ごみ・臨時ごみ</h3>
-      <p>粗大ごみ・臨時ごみは、普段の収集で出せる量や品目かを先に確認します。大型家具、布団、収納用品、物置内の工具類などは、品目名、数量、サイズ、屋外へ出せるかを整理して相談します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 収集業者への申込</h3>
-      <p>泉佐野市の既存案内では、粗大ごみ・臨時ごみは原則として収集業者への電話申込とされています。収集日、料金、排出場所、収集できない品目、屋内搬出の可否を申込時に確認します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 屋内搬出は別に考える</h3>
-      <p>行政収集や収集業者の回収では、室内からの搬出に対応しない場合があります。タンス、食器棚、ベッド、仏壇、金庫、2階からの搬出、分解が必要な家具は、業者作業として分けます。</p>
-    </div>
-  </div>
+        <div class="admin-contact-grid">
+          <div class="admin-block">
+            <h3>自治体・関連窓口</h3>
+            <p><span class="admin-strong">泉佐野市役所</span>所在地: 〒598-8550 大阪府泉佐野市市場東1丁目1番1号<br>電話: 072-463-1212 / FAX: 072-464-9314<br>ごみ、福祉、空き家、住まいの相談先は担当課が分かれるため、必要窓口を先に整理します。</p>
+          </div>
+          <div class="admin-block">
+            <h3>粗大ごみ・直接搬入の相談</h3>
+            <p><span class="admin-strong">泉佐野市 環境衛生課</span>電話: 072-463-1212（内線2281〜2288）<br>FAX: 072-464-9314<br>粗大ごみ、臨時ごみ、直接搬入、廃棄物搬入証明書、家電4品目、収集できない品目を確認します。</p>
+          </div>
+          <div class="admin-block">
+            <h3>持込・処理施設</h3>
+            <p><span class="admin-strong">泉佐野市田尻町清掃施設組合 第二事業所</span>所在地: 泉南郡田尻町嘉祥寺290-1<br>問い合わせ: 072-464-5211<br>搬入日: 月曜・水曜・木曜・土曜（火曜・金曜・日曜は搬入不可）<br>搬入は1日1車、最大積載量6.5tまでです。</p>
+          </div>
+          <div class="admin-block">
+            <h3>直接搬入の料金・証明書</h3>
+            <p>処分手数料は55kg未満が一律500円、以降10kg増すごとに100円を加算します。廃棄物搬入証明書は平日8:45〜17:15に発行され、本人確認書類が必要です。最大積載量2t以上の車両は登録番号の申請も必要です。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-info-card">
-      <h3>□ 直接搬入の流れ</h3>
-      <p>泉佐野市内の家庭ごみを直接搬入する場合は、市で廃棄物搬入証明書の発行を受けてから処理施設へ持ち込みます。1日1車両、本人確認、車両条件、受入不可品を事前に確認します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 搬入先</h3>
-      <p>搬入先は泉佐野市田尻町清掃施設組合 第二事業所です。所在地は泉南郡田尻町嘉祥寺290番地1、電話は072-464-5211です。搬入前に、廃棄物搬入証明書、車両条件、受入品目を確認してください。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 受入日時と料金</h3>
-      <p>既存公式案内では、受入は月・水・木・土の13:00〜16:00、火・金・日曜は搬入不可です。料金は55kg未満一律500円、55kg以上は10kgごとに100円加算とされています。</p>
-    </div>
-  </div>
+        <div class="admin-local-grid">
+          <div class="admin-box">
+            <h3>□ 搬入車両の注意点</h3>
+            <p>危険防止のため、搬入は四輪自動車に限られます。徒歩、二輪車、三輪、四輪バギー、牽引車など特殊車での搬入は禁止されています。可能な限り全長6m以下の車両で搬入します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 別ルールになりやすい品目</h3>
+            <p>家電4品目、パソコン、消火器、バッテリー、スプレー缶、灯油、塗料、農薬、金庫、事業系ごみ、解体材、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 泉佐野市の地域事情</h3>
+            <p>泉佐野駅・日根野駅周辺は集合住宅の搬出時間、りんくうタウン周辺は管理会社届出や駐車位置、長滝・上之郷方面は戸建て外まわり、物置、車庫、庭の残置物を確認します。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-info-card">
-      <h3>□ 家電4品目</h3>
-      <p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル対象品です。粗大ごみや直接搬入に混ぜず、購入店・買い替え店、指定引取場所、許可業者などを確認します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ パソコン・小型家電</h3>
-      <p>パソコンはメーカー回収や宅配回収など、通常の粗大ごみと別ルールになる場合があります。データ消去、モニター、プリンター、外付け機器、スマートフォンは処分先を分けて確認します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 危険物・処理困難物</h3>
-      <p>消火器、バッテリー、灯油、塗料、農薬、ガスボンベ、耐火金庫、建築廃材、事業系ごみは通常の粗大ごみと別扱いになりやすい品目です。見積もり前に行政確認、専門処理、業者相談に分けます。</p>
-    </div>
-  </div>
+        <div class="admin-contact-grid">
+          <div class="admin-block">
+            <h3>□ ごみ出し支援・高齢者支援</h3>
+            <p>自力でごみ置き場や搬出場所まで出しにくい世帯は、福祉窓口、地域包括支援センター、ケアマネジャーへ相談します。生前整理では、本人の同意、親族立会い、残す薬・介護用品・重要書類の扱いを先に決めます。</p>
+          </div>
+          <div class="admin-block">
+            <h3>□ 空家・住まいの相談</h3>
+            <p>売却前整理、解体前整理、長期不在の部屋、相続後の実家じまいは、空き家・建築・住まいの担当窓口で対象制度を確認します。補助金や支援制度は、所有者、建物状態、申請時期、市内業者利用など条件が付く場合があります。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-info-card">
-      <h3>□ 泉佐野市の地域事情</h3>
-      <p>泉佐野駅周辺は集合住宅の搬出時間や共用部養生、日根野駅周辺は退去日や鍵返却、りんくうタウン周辺は管理会社届出、長滝・上之郷方面は庭・物置・車庫、農具や屋外品を確認します。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 写真で伝える場所</h3>
-      <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、車庫の写真を用意します。大型家具は幅・高さ、搬出経路の曲がり角が分かる写真が有効です。</p>
-    </div>
-    <div class="admin-info-card">
-      <h3>□ 遠方対応</h3>
-      <p>空港周辺の転居や遠方親族の実家じまいでは、鍵の受け渡し、立会い可否、写真報告、残す品、探してほしい書類、供養品を先に決めます。行政収集で出すものと業者がまとめて搬出するものを分けます。</p>
-    </div>
-  </div>
+        <div class="admin-local-grid">
+          <div class="admin-box">
+            <h3>□ 見積もり前の写真ポイント</h3>
+            <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さと搬出経路の曲がり角が分かる写真が有効です。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 業者へ伝えること</h3>
+            <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、臨時ごみ・粗大ごみとして相談するもの、処理施設へ直接搬入するもの、業者が屋内搬出するもの、家電4品目、仏壇・写真、貴重品探索の範囲を分けます。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 当日の判断ミスを減らす</h3>
+            <p>残す品、探してほしい通帳・権利書・保険証券、供養したい写真・仏具、買取希望品は別にしておきます。行政で出すものと業者が搬出するものを混ぜないことが大切です。</p>
+          </div>
+        </div>
 
-  <div class="admin-card-grid">
-    <div class="admin-info-card">
-      <h3>自治体・関連窓口</h3>
-      <p><strong>泉佐野市役所</strong><br>所在地: 大阪府泉佐野市市場東1丁目1番1号<br>電話番号: 072-463-1212<br>FAX: 072-464-9314</p>
-      <p>住所変更、戸籍、福祉、空き家、住まい、ごみの相談先は担当課が分かれる場合があります。相続後の実家じまいでは、戸籍・固定資産・空き家・福祉・ごみの確認先を見積もり前に整理します。</p>
-      <p><a href="https://www.city.izumisano.lg.jp/" target="_blank" rel="noopener">泉佐野市公式情報を確認</a></p>
-    </div>
-    <div class="admin-info-card">
-      <h3>粗大ごみ・収集の相談</h3>
-      <p><strong>泉佐野市 環境衛生課</strong><br>電話: 072-463-1212（内線2281〜2288）</p>
-      <p>粗大ごみ、臨時ごみ、直接搬入、廃棄物搬入証明書、家電4品目、収集できない品目を確認します。品目名、サイズ、数量、屋外へ出せるか、集合住宅の置き場を控えておくと相談がスムーズです。</p>
-      <p><a href="https://www.city.izumisano.lg.jp/kakuka/seikatsu/kankyo/menu/gomi/gomi_tyokusetuhannnyuu/1438759319997.html" target="_blank" rel="noopener">粗大ごみ・直接搬入の条件を確認</a></p>
-    </div>
-    <div class="admin-info-card">
-      <h3>持込・処理施設</h3>
-      <p><strong>泉佐野市田尻町清掃施設組合 第二事業所</strong><br>所在地: 泉南郡田尻町嘉祥寺290番地1<br>電話: 072-464-5211<br>受入: 月・水・木・土 13:00〜16:00（火・金・日曜は搬入不可）</p>
-      <p>料金は55kg未満一律500円、55kg以上は10kgごとに100円加算です。廃棄物搬入証明書、本人確認、車両条件、受入不可品を確認してください。</p>
-      <p><a href="https://www.city.izumisano.lg.jp/kakuka/seikatsu/kankyo/menu/gomi/gomi_tyokusetuhannnyuu/1438759319997.html" target="_blank" rel="noopener">持ち込み条件を確認</a></p>
-    </div>
-  </div>
-
-  <div class="admin-info-card">
-    <h3>業者へ伝えること</h3>
-    <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、臨時ごみ・粗大ごみとして相談するもの、処理施設へ直接搬入するもの、業者が屋内搬出するもの、家電4品目、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
-  </div>
-
-  <p><a href="/osaka/">大阪府ページへ戻る</a></p>
-  <p class="admin-source-note">出典：泉佐野市公式サイト、泉佐野市 粗大ごみ・直接搬入案内、泉佐野市田尻町清掃施設組合関連情報。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-</section>
+        <div class="admin-link-row">
+          <a href="https://www.city.izumisano.lg.jp/">泉佐野市公式情報を確認</a>
+          <a href="https://www.city.izumisano.lg.jp/kakuka/seikatsu/kankyo/menu/gomi/index.html">ごみ情報を確認</a>
+          <a href="https://www.city.izumisano.lg.jp/kakuka/seikatsu/kankyo/menu/gomi/gomi_tyokusetuhannnyuu/1438759319997.html">直接搬入の条件を確認</a>
+          <a href="http://127.0.0.1:8788/osaka/">大阪府ページへ戻る</a>
+        </div>
+        <p class="source-note">出典: 泉佐野市公式サイト、泉佐野市「ごみの直接搬入について」、泉佐野市田尻町清掃施設組合関連情報。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+      </section>
 </main>
   </div>
 <script id="common-kita-before-after-script">

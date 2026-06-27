@@ -3222,56 +3222,202 @@
         </div>
         <a class="btn primary" href="#process">見積もり相談の準備をする</a>
       </section>
-            <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
+            <style id="kumatori-admin-readable-style-v2">
+  #admin.admin-hotline-section {
+    border: 2px solid #1f6fb2;
+    background: #f7fbff;
+    border-radius: 12px;
+    padding: clamp(22px, 4vw, 36px);
+    box-shadow: 0 10px 24px rgba(31, 111, 178, 0.12);
+  }
+  #admin .section-title { margin-bottom: 14px; }
+  #admin .admin-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #e5f1fb;
+    color: #164f86;
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+  #admin .admin-lead {
+    margin: 0 0 16px;
+    line-height: 1.9;
+    font-size: 1.02rem;
+  }
+  #admin .admin-note {
+    margin: 0 0 20px;
+    padding: 14px 16px;
+    border-left: 5px solid #1f6fb2;
+    background: #ffffff;
+    border-radius: 8px;
+    line-height: 1.85;
+  }
+  #admin .admin-quick-grid,
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid {
+    display: grid;
+    gap: 14px;
+    margin: 18px 0;
+  }
+  #admin .admin-quick-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #admin .admin-contact-grid,
+  #admin .admin-local-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #admin .admin-box,
+  #admin .admin-block {
+    background: #ffffff;
+    border: 1px solid #c7dff2;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  #admin .admin-box h3,
+  #admin .admin-block h3 {
+    margin: 0 0 10px;
+    color: #164f86;
+    font-size: 1.05rem;
+  }
+  #admin .admin-box p,
+  #admin .admin-block p {
+    margin: 0;
+    line-height: 1.85;
+  }
+  #admin .admin-strong {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #1b3550;
+  }
+  #admin .admin-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 8px;
+  }
+  #admin .admin-link-row a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 9px 13px;
+    border-radius: 999px;
+    background: #1f6fb2;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  #admin .source-note {
+    margin-top: 14px;
+    color: #526273;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  @media (max-width: 820px) {
+    #admin .admin-quick-grid,
+    #admin .admin-contact-grid,
+    #admin .admin-local-grid { grid-template-columns: 1fr; }
+  }
+</style>
+<section id="admin" class="admin-hotline-section">
+  <p class="admin-kicker">熊取町の公式確認ポイント</p>
   <h2 class="section-title">熊取町の行政窓口・粗大ごみ・持ち込み先</h2>
-  <p>熊取町で遺品整理・生前整理を進める前に、<strong>粗大・不燃ごみ収集に申し込むもの</strong>、<strong>環境センターへ直接持ち込むもの</strong>、<strong>業者が屋内から搬出するもの</strong>を分けて整理します。熊取駅・大久保周辺の集合住宅、野田・五門・紺屋周辺の住宅地、希望が丘・自由が丘・若葉などの戸建て、山手台・七山方面の坂道や敷地の広い住宅では、搬出経路、階段、前面道路、駐車位置、庭・物置の有無で条件が変わります。</p>
+  <p class="admin-lead">熊取町で遺品整理・生前整理を進める前に、<strong>粗大・不燃ごみ収集で出すもの</strong>、<strong>熊取町環境センターへ直接持ち込むもの</strong>、<strong>業者が屋内から搬出する家財</strong>を分けます。熊取駅・大久保周辺の集合住宅、野田・五門・紺屋周辺の住宅地、希望が丘・自由が丘・若葉の戸建て、山手台・七山方面の坂道や敷地の広い住宅では、階段、前面道路、駐車位置、庭・物置の有無で作業条件が変わります。</p>
+  <p class="admin-note">熊取町の粗大・不燃ごみは、専用電話またはインターネットで申し込みます。収集日まで待てないものや車で運べるものは環境センターへの直接搬入を確認し、屋内搬出、大量家財、分解が必要な家具、貴重品探索、供養品、家電4品目は業者作業として分けると、行政手続きと見積もり範囲が混ざりにくくなります。</p>
 
-  <div class="admin-note">
-    <strong>熊取町で最初に分けること</strong>
-    <p>少量で屋外まで出せる家具・不燃物は、専用電話またはインターネットで「粗大ごみ・不燃ごみ収集申込」を確認します。退去日が近い、大量にある、車で運べる場合は環境センターへの直接搬入を検討します。屋内搬出、階段作業、分解搬出、貴重品探索、供養品、家電4品目は業者作業として分けると、見積もりと行政手続きが混ざりにくくなります。</p>
+  <div class="admin-quick-grid">
+    <div class="admin-box">
+      <h3>□ 収集申込で出すもの</h3>
+      <p>家具、布団、椅子、小型収納、不燃ごみなど、家族で屋外の指定場所まで出せるもの。申し込み前に、品目、寸法、数量、排出場所、屋内搬出が必要かを控えておきます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 環境センターへ持ち込むもの</h3>
+      <p>退去日が近い、収集日まで待てない、車で運べる家財は直接搬入を検討します。搬入時間、料金、ごみ種、祝日の扱い、受付できない品目を確認してから積み込みます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 業者作業に分けるもの</h3>
+      <p>大型家具の屋内搬出、階段作業、分解搬出、庭・物置・車庫まわり、仏壇・写真、金庫、貴重品探索、短い退去期限がある片付けは、見積もり時に業者作業として伝えます。</p>
+    </div>
   </div>
 
-  <div class="admin-check-grid">
-    <div class="admin-check-card"><h3>□ 粗大・不燃ごみ収集</h3><p>熊取町の粗大・不燃ごみは、専用電話またはインターネットで申し込みできます。電話申し込みは専用電話072-496-0053、受付は平日9:00〜12:00、13:00〜17:00です。品目、寸法、数量、出す場所、収集希望の時期を控えて相談します。</p></div>
-    <div class="admin-check-card"><h3>□ 環境センター直接搬入</h3><p>環境センターへ持ち込む前に「ごみの分け方・出し方マニュアル」で確認します。搬入時間は平日8:30〜11:45、12:45〜16:00、土曜・祝日は8:30〜11:45です。ただし土曜・祝日に搬入できるごみ種は可燃ごみのみです。</p></div>
-    <div class="admin-check-card"><h3>□ 業者搬出</h3><p>タンス、食器棚、ベッド、仏壇、金庫、冷蔵庫まわり、物置の工具類など、屋内からの運び出しが必要なものは業者見積もりに入れます。分解搬出、共用部養生、車両位置、貴重品探索の範囲もまとめて伝えてください。</p></div>
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>自治体・関連窓口</h3>
+      <p><span class="admin-strong">熊取町役場</span>所在地: 〒590-0495 大阪府泉南郡熊取町野田1丁目1番1号<br>代表電話: 072-452-1001<br>FAX: 072-452-7103<br>開庁時間: 平日 9:00〜17:00（祝日・年末年始を除く）<br>住所変更、戸籍、福祉、空家、住まい、ごみの相談先は担当課が分かれるため、必要な窓口を先に分けます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>粗大・不燃ごみ収集</h3>
+      <p><span class="admin-strong">熊取町 粗大・不燃ごみ収集申込</span>専用電話: 072-496-0053<br>受付: 平日 9:00〜12:00、13:00〜17:00<br>インターネット受付フォームもあります。メール受信設定が必要な場合があるため、申込後の返信確認まで含めて段取りします。</p>
+    </div>
+    <div class="admin-block">
+      <h3>持ち込み・処理施設</h3>
+      <p><span class="admin-strong">熊取町環境センター</span>所在地: 〒590-0441 大阪府泉南郡熊取町大字久保2983-1<br>電話: 072-452-6200<br>FAX: 072-452-3010<br>搬入前に「ごみの分け方・出し方マニュアル」と受付できない品目を確認します。</p>
+    </div>
+    <div class="admin-block">
+      <h3>持ち込み時間・料金</h3>
+      <p><span class="admin-strong">環境センターの主な確認点</span>平日: 8:30〜11:45、12:45〜16:00。土曜・祝日: 8:30〜11:45。ただし土曜・祝日に搬入できるごみ種は可燃ごみのみです。料金は30kgまで300円、30kgを超える重量10kgごとに100円加算です。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">熊取町の地域事情</h3>
-  <p>熊取駅・大久保周辺の集合住宅では、管理会社への届出、エレベーターの利用時間、共用部養生、退去日と鍵返却を先に確認します。野田・五門・紺屋・小垣内周辺の住宅地では、前面道路の幅や一時駐車の可否が作業時間に影響します。希望が丘、自由が丘、若葉、山の手台、七山方面では坂道、庭、物置、車庫、納戸、ベランダの残置物まで確認すると、当日の追加作業を減らせます。</p>
-
-  <h3 class="admin-subtitle">行政収集で出しやすいもの</h3>
-  <p>単品の家具、小型の収納、椅子、布団、衣装ケース、不燃ごみなど、家族で屋外の指定場所まで出せるものは、粗大・不燃ごみ収集の申し込みを確認します。インターネット受付フォームと電話受付のどちらを使うか、収集日、手数料、排出場所、収集できない品目を事前に確認してください。</p>
-
-  <h3 class="admin-subtitle">持ち込みを検討するもの</h3>
-  <p>収集日まで待てないもの、量はあるが車で運べるもの、退去期限が近い片付けは、熊取町環境センターへの直接搬入を検討します。環境センターの処理手数料は、30kgまで300円、30kgをこえる重量10kgごとに100円加算です。搬入できるごみ種、受付時間、祝日の受付可否、処理できないごみを公式ページで確認します。</p>
-
-  <h3 class="admin-subtitle">分けて確認する品目</h3>
-  <div class="admin-check-grid">
-    <div class="admin-check-card"><h3>□ 家電4品目</h3><p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象です。粗大ごみや通常搬入と混ぜず、リサイクル料金、収集運搬、販売店・指定引取場所・業者対応を分けて確認します。</p></div>
-    <div class="admin-check-card"><h3>□ 処理困難物・危険物</h3><p>引火性、発火性、危険性、有害性があるもの、消火器、バッテリー、灯油、塗料、農薬、ガスボンベ、タイヤ、建築廃材などは環境センターで受付できない場合があります。搬入前に公式ページと環境センターへ確認します。</p></div>
-    <div class="admin-check-card"><h3>□ 供養品・重要品</h3><p>仏壇、位牌、写真、手紙、通帳、印鑑、権利証、保険証券、貴金属は処分品と混ぜないようにします。探す場所を「仏壇まわり、机、押入れ、金庫、衣装ケース」など具体的に決めます。</p></div>
+  <div class="admin-local-grid">
+    <div class="admin-box">
+      <h3>□ 直接搬入の注意</h3>
+      <p>環境センターへ持ち込む前に、搬入できるごみ種、受付時間、料金、本人確認、荷下ろし方法を確認します。土曜・祝日は可燃ごみのみのため、粗大・不燃ごみや資源ごみを混ぜて積み込まないようにします。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 別ルールになりやすい品目</h3>
+      <p>家電4品目、パソコン、バイク・自動車部品、タイヤ、バッテリー、消火器、塗料、廃油、ボンベ、農薬、建築廃材、土砂、コンクリート、耐火金庫、フロンガス使用製品などは、通常の粗大ごみや持ち込みと別確認にします。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 熊取町の地域事情</h3>
+      <p>駅周辺マンションは搬出時間、共用部養生、管理会社への届出を確認します。山手台・七山方面や坂道の住宅では、車両の停車位置、階段、坂道搬出、庭・物置・車庫まわりの量が見積もりに影響します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 退去日が近い場合</h3>
+      <p>収集申込、環境センター搬入、業者搬出を同じ日に詰め込むと判断ミスが起きやすくなります。鍵返却日、立会い可能日、処分したい量、残す品を先に分け、行政で間に合わない分を業者作業に回します。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">見積もり前の写真ポイント</h3>
-  <p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫、前面道路を撮影します。大型家具は幅・高さ、搬出経路の曲がり角、階段幅が分かる写真があると、人数、車両、養生、分解搬出の要否を判断しやすくなります。</p>
-
-  <h3 class="admin-subtitle">高齢者支援・住まい相談</h3>
-  <p>自力で粗大・不燃ごみを出しにくい世帯や遠方家族の実家じまいでは、環境課、環境センター、地域包括支援センター、介護・福祉、空き家相談の窓口を分けて確認します。制度で対応できる範囲、行政ごみで出せる範囲、家財整理業者に任せる範囲を整理し、鍵預かりや写真報告の方法も先に決めてください。</p>
-
-  <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>熊取町役場</strong><br>所在地: 大阪府泉南郡熊取町野田1丁目1番1号<br>電話: 072-452-1001<br>ファックス: 072-452-7103<br>開庁: 平日9:00〜17:00（祝日・年末年始を除く）<br>住所変更、戸籍、福祉、空き家、住まい、ごみの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.town.kumatori.lg.jp/" target="_blank" rel="noopener">熊取町公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大・不燃ごみ収集</h3><p><strong>熊取町 粗大ごみ・不燃ごみ収集申込</strong><br>専用電話: 072-496-0053<br>受付: 平日9:00〜12:00、13:00〜17:00<br>インターネット受付フォームもあります。申し込み前に、品目、寸法、数量、排出場所、屋内搬出の要否を控えておくと相談がスムーズです。</p><a href="https://www.town.kumatori.lg.jp/soshiki/kankyo/gyomu/kankyo_gomi/recycle/kateigomi/12932.html" target="_blank" rel="noopener">粗大・不燃ごみ収集申込を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>熊取町環境センター</strong><br>所在地: 大阪府泉南郡熊取町大字久保2983-1<br>電話: 072-452-6200<br>ファックス: 072-452-3010<br>搬入時間: 平日8:30〜11:45、12:45〜16:00。土曜・祝日は8:30〜11:45で可燃ごみのみ。料金は30kgまで300円、以後10kgごとに100円加算です。</p><a href="https://www.town.kumatori.lg.jp/soshiki/kankyo_center/gyomu/kankyo_gomi/shori/uketsuke/12658.html" target="_blank" rel="noopener">環境センターの受付を確認</a></div>
+  <div class="admin-contact-grid">
+    <div class="admin-block">
+      <h3>ごみ出し支援・高齢者支援</h3>
+      <p>高齢者・障がい者など、自力でごみ置き場まで出しにくい世帯は、熊取町役場の福祉窓口、地域包括支援センター、介護保険担当へ対象条件を確認します。生前整理では、本人の同意、ケアマネジャーや親族の立会い、残す薬・介護用品・重要書類の扱いも先に決めます。</p>
+    </div>
+    <div class="admin-block">
+      <h3>空家・住まいの相談</h3>
+      <p>売却前整理、解体前整理、長期不在の家、相続後の実家じまいは、熊取町役場で空家・住まい・固定資産・建築関係の相談先を分けて確認します。補助制度は対象建物、所有者、申請時期、工事前申請などの条件が付く場合があります。</p>
+    </div>
   </div>
 
-  <h3 class="admin-subtitle">業者へ伝えること</h3>
-  <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、環境センターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。残す品、探してほしい書類、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p>
+  <div class="admin-local-grid">
+    <div class="admin-box">
+      <h3>見積もり前の写真ポイント</h3>
+      <p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、曲がり角、階段幅が分かる写真があると、人数、車両、分解搬出、養生の要否を判断しやすくなります。</p>
+    </div>
+    <div class="admin-box">
+      <h3>業者へ伝えること</h3>
+      <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、環境センターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+    </div>
+    <div class="admin-box">
+      <h3>当日の判断ミスを減らす分け方</h3>
+      <p>残す品、探してほしい通帳・権利書・保険証券、供養したい写真や仏具、買取希望品、行政で出す予定の品を紙やマスキングテープで分けます。家電4品目や処理困難物を通常ごみに混ぜないことが大切です。</p>
+    </div>
+    <div class="admin-box">
+      <h3>遠方から依頼する場合</h3>
+      <p>鍵の受け渡し、作業前後の写真報告、残す品の確認方法、郵送する書類、近隣や管理会社への連絡先をまとめます。親族が立ち会えない場合は、探索範囲と廃棄判断のルールを事前に決めてください。</p>
+    </div>
+  </div>
 
-  <p><a href="/osaka/">大阪府ページへ戻る</a></p>
-  <p class="admin-source">出典：熊取町公式サイト、熊取町 粗大ごみ・不燃ごみ収集申込、熊取町環境センターでのごみの受付、令和8年度の祝日受付情報。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-      </section>
+  <div class="admin-link-row">
+    <a href="https://www.town.kumatori.lg.jp/" target="_blank" rel="noopener">熊取町公式サイト</a>
+    <a href="https://www.town.kumatori.lg.jp/soshiki/kankyo/gyomu/kankyo_gomi/recycle/kateigomi/12932.html" target="_blank" rel="noopener">粗大・不燃ごみ収集申込</a>
+    <a href="https://www.town.kumatori.lg.jp/soshiki/kankyo_center/gyomu/kankyo_gomi/shori/uketsuke/12658.html" target="_blank" rel="noopener">環境センター受付</a>
+    <a href="/osaka/">大阪府ページへ戻る</a>
+  </div>
+  <p class="source-note">出典: 熊取町公式サイト、熊取町 粗大ごみ・不燃ごみ収集申込、熊取町 環境センターでのごみの受付。電話番号、受付時間、料金、対象品目、持ち込み条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+</section>
+
 </main>
   </div>
 <script id="common-kita-before-after-script">
