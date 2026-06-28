@@ -461,16 +461,26 @@ def update_osaka_city_css(root: Path) -> tuple[bool, list[str]]:
         'font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;',
         f"font-family: {FONT};",
     )
-    new = re.sub(r"body\s*\{(.*?)\}", lambda m: "body {" + css_set_decl(css_set_decl(css_set_decl(m.group(1), "color", BODY_COLOR), "font-size", "18px"), "line-height", "1.78") + "}", new, count=1, flags=re.S)
+    new = re.sub(
+        r"(^\s*body\s*\{)(.*?)(^\s*\})",
+        lambda m: m.group(1)
+        + css_set_decl(
+            css_set_decl(css_set_decl(m.group(2), "color", BODY_COLOR), "font-size", "18px"),
+            "line-height",
+            "1.78",
+        )
+        + m.group(3),
+        new,
+        count=1,
+        flags=re.S | re.M,
+    )
     new = new.replace(
         'background:linear-gradient(90deg,rgba(18,24,26,.78) 0%,rgba(18,24,26,.50) 34%,rgba(18,24,26,.16) 58%,rgba(18,24,26,0) 100%),var(--hero-image, url("/assets/cv-hero-staff-photo.png?v=1"));',
         'background:' + CITY_GRAD + ',var(--hero-image, url("/assets/cv-hero-staff-photo.png?v=1"));',
     )
     new = re.sub(r"font-size:\s*clamp\(32px,\s*5vw,\s*52px\);", f"font-size: {CITY_H1};", new, count=1)
     new = re.sub(r"line-height:\s*1\.24;", "line-height: 1.18;", new, count=1)
-    new = re.sub(r"(\.hero-lead\s*\{[^{}]*?)font-size:\s*19px;", r"\1font-size: 18px;", new, count=1, flags=re.S)
-    if ".hero-lead" in new:
-        new = re.sub(r"(\.hero-lead\s*\{[^{}]*?font-size:\s*18px;)", r"\1\n      line-height: 1.82;", new, count=1, flags=re.S)
+    new, _ = set_rule_decls(new, r"\.hero-lead", [("font-size", "18px"), ("line-height", "1.82")])
     if new != text:
         write_text(path, new)
         return True, ["assets/osaka-city-page.css"]
