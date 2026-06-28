@@ -292,7 +292,7 @@ def update_west_tokai_city(text: str) -> tuple[str, list[str]]:
         )
         new = re.sub(
             r"(body\.west-tokai-city-quality \.hero-inner\{[^{}]*?)gap:\s*[^;]+;",
-            r"\1gap:34px;",
+            r"\1gap:34px!important;",
             new,
             count=1,
         )
