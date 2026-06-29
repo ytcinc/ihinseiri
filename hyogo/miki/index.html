@@ -1365,84 +1365,101 @@
 </section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 
+<style id="miki-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .admin-kicker { display:inline-flex; margin:0 0 10px; padding:6px 10px; border-radius:999px; background:#e5f1fb; color:#164f86; font-weight:800; font-size:.92rem; }
+#admin .section-title { margin-bottom:14px; }
+#admin .admin-lead { margin:0 0 16px; line-height:1.9; font-size:1.02rem; }
+#admin .admin-note { margin:0 0 20px; padding:14px 16px; border-left:5px solid #1f6fb2; background:#fff; border-radius:8px; line-height:1.85; }
+#admin .admin-grid, #admin .admin-contact-grid { display:grid; gap:14px; margin:18px 0; }
+#admin .admin-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+#admin .admin-contact-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+#admin .admin-box { background:#fff; border:1px solid #c7dff2; border-radius:10px; padding:16px; }
+#admin .admin-box h3 { margin:0 0 10px; color:#164f86; font-size:1.05rem; line-height:1.45; }
+#admin .admin-box p { margin:0; line-height:1.85; }
+#admin .admin-strong { display:block; margin-bottom:6px; font-weight:800; color:#1b3550; }
+#admin .admin-price { display:inline-block; margin:.2em 0; padding:5px 9px; border-radius:8px; background:#eaf4ff; color:#164f86; font-weight:800; }
+#admin .admin-link-row { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 8px; }
+#admin .admin-link-row a { display:inline-flex; align-items:center; justify-content:center; min-height:40px; padding:9px 13px; border-radius:999px; background:#1f6fb2; color:#fff; text-decoration:none; font-weight:800; }
+#admin .source-note { margin-top:14px; color:#526273; font-size:.92rem; line-height:1.7; }
+@media (max-width:820px) { #admin .admin-grid, #admin .admin-contact-grid { grid-template-columns:1fr; } }
+</style>
 <section id="admin" class="section admin-hotline-section">
-    <p class="section-kicker">三木市の行政窓口・粗大ごみ・持ち込み先</p>
-    <h2 class="section-title">三木市で遺品整理前に確認したい家庭ごみ持ち込み・一時多量ごみ・粗大ごみかけつけ隊</h2>
-    <p class="lead">三木市で遺品整理・生前整理を進めるときは、最初に「ごみステーションに出すもの」「清掃センターへ持ち込むもの」「一時多量ごみとして扱うもの」「粗大ごみかけつけ隊や許可業者を確認するもの」「業者が屋内から搬出するもの」を分けます。三木市中心部、緑が丘・自由が丘、志染・別所、吉川町方面では、集合住宅、戸建て、坂道、前面道路、車両導線、庭・物置・納屋の有無で搬出条件が変わります。</p>
-    <p class="lead">家庭ごみの持ち込み、粗大ごみ戸別収集、処理・収集できないごみ、受付時間、手数料、対象要件は変更される場合があります。退去日や見積もり前に、三木市公式サイトと三木市清掃センターの最新情報を確認してください。</p>
-    <div class="harima-admin-grid">
-      <div class="harima-admin-card">
-        <h3>□ まず分ける5つの箱</h3>
-        <p><strong>1. ステーションに出すもの</strong><br>通常の可燃ごみ、資源ごみ、あらごみ、埋立ごみなどは、収集日と分別辞典で確認します。令和8年4月以降、地区によって収集時間が変わる案内もあります。</p>
-        <p><strong>2. 清掃センターへ持ち込むもの</strong><br>家庭ごみを直接持ち込む場合は、分別して、発生場所が三木市内であることを確認できる書類を用意します。</p>
-        <p><strong>3. 一時多量ごみ</strong><br>引っ越し、退去、庭木の剪定などで4袋以上になる場合は、一時多量ごみとして扱います。</p>
-        <p><strong>4. 対象者限定の粗大ごみ</strong><br>高齢者・障がい者世帯など条件に合う場合は、粗大ごみかけつけ隊を確認します。</p>
-        <p><strong>5. 業者作業</strong><br>屋内搬出、大型家具、階段作業、貴重品探索、仏壇・写真、納屋・物置・庭まわりは業者見積もりに分けます。</p>
+    <p class="admin-kicker">行政窓口・清掃センター・粗大ごみかけつけ隊</p>
+    <h2 class="section-title">三木市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p class="admin-lead">三木市で遺品整理・生前整理を進める前に、ごみステーションへ出せるもの、三木市清掃センターへ持ち込むもの、4袋以上で一時多量ごみになるもの、粗大ごみかけつけ隊や許可業者を確認するもの、専門業者が屋内から搬出する家財を分けて整理します。</p>
+    <p class="admin-note">三木市中心部、緑が丘・自由が丘、志染・別所、吉川町方面では、集合住宅、戸建て、坂道、前面道路、車両導線、庭・物置・納屋の有無で搬出条件が変わります。家電4品目、パソコン、スプリング入りマットレス、畳、剪定枝、処理困難物は先に分けて確認してください。</p>
+
+    <div class="admin-grid">
+      <div class="admin-box">
+        <h3>□ まず5つに分ける</h3>
+        <p><span class="admin-strong">ステーション・持込・多量・制度・業者</span>少量ごみは収集日、持ち込めるものは清掃センター、4袋以上は一時多量ごみ、対象世帯は粗大ごみかけつけ隊、屋内搬出や大量家財は業者作業に分けます。</p>
       </div>
-      <div class="harima-admin-card">
-        <h3>□ 三木市役所・基本窓口</h3>
-        <p><strong>三木市役所</strong><br>所在地: 兵庫県三木市上の丸町10番30号<br>電話: 0794-82-2000</p>
-        <p>開庁時間は月曜日から金曜日の午前8時30分から午後5時までです。吉川支所は兵庫県三木市吉川町大沢412にあります。戸籍、住所変更、おくやみ、福祉、空き家相談は担当窓口が分かれるため、先に必要な手続きを整理してください。</p>
-        <p><a href="https://www.city.miki.lg.jp/" target="_blank" rel="noopener">三木市公式サイトを確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ ごみ相談・三木市清掃センター</h3>
-        <p><strong>三木市 市民生活部 環境課（三木市清掃センター）</strong><br>所在地: 三木市加佐1199<br>電話: 0794-83-2608<br>FAX: 0794-83-2695</p>
-        <p>家庭ごみの持ち込み、一時多量ごみ、分別、粗大ごみかけつけ隊、処理困難ごみは、環境課・清掃センターの公式案内で確認します。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/2330.html" target="_blank" rel="noopener">三木市清掃センターを確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ ごみの分別辞典</h3>
-        <p>三木市公式のごみ分別辞典では、品目ごとの分別区分や出し方を確認できます。家具、寝具、食器、衣装ケース、掃除機、電子レンジ、工具、庭用品、物干し台などは、品目名で確認してから袋詰めします。</p>
-        <p>遺品整理では「残す」「探す」「行政で出す」「清掃センターへ持ち込む」「業者に任せる」に分けると、形見分けと処分が混ざりにくくなります。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/75815.html" target="_blank" rel="noopener">ごみの分別辞典を確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 家庭ごみの持ち込み</h3>
-        <p>家庭ごみを直接持ち込む場合は、分別して清掃センターへ向かいます。公式案内では、ごみの発生場所が三木市内であることを確認するため、免許証、保険証、住所記載の公共料金領収書などを計量棟で提示する案内があります。</p>
-        <p>持ち込みできるごみは、可燃ごみ、あらごみ、埋立ごみ、資源ごみ、小型家電リサイクル対象品です。品目によって荷下ろし場所が異なるため、混載せず分けて積み込みます。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/36196.html" target="_blank" rel="noopener">家庭ごみの持ち込みを確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 持ち込み受付時間</h3>
-        <p>公式案内では、受入日は月曜日から金曜日です。年末年始（12月29日から1月3日）を除き、祝日も業務を行っています。</p>
-        <p>受入時間は午前8時30分から11時30分、午後1時から3時30分です。混雑、臨時休止、交通規制がある場合もあるため、搬入前に最新情報を確認してください。</p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 一時多量ごみ</h3>
-        <p>三木市では、一度にごみステーションに出せる量は3袋までで、4袋以上になる場合は一時多量ごみとして扱われます。引っ越し、退去、実家じまい、庭木の剪定で量が多い場合は、この扱いを確認します。</p>
-        <p>一時多量ごみは、自分で三木市清掃センターへ搬入するか、市が許可している一般廃棄物処理業者に依頼します。分別されていないごみ、三木市以外で発生したごみは搬入受入れできない案内があります。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/2343.html" target="_blank" rel="noopener">一時多量ごみを確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 粗大ごみかけつけ隊</h3>
-        <p>粗大ごみかけつけ隊は、粗大ごみを自ら清掃センターへ搬入することが困難な高齢者・障がい者世帯などを対象にした制度です。三木市に住民票があり、現にその住所に居住していることなど、対象要件があります。</p>
-        <p>対象となる粗大ごみは、分別区分で収集困難ごみのうち、一辺の長さが1m以上の大型家具等で、1個当たり50kg未満のものです。収集は建物外からで、建物内からの搬出は対象外です。1回5個以下、年度2回まで、申請から収集まで2から3週間程度かかる案内があります。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/73628.html" target="_blank" rel="noopener">粗大ごみかけつけ隊を確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 処理・収集できないごみ</h3>
-        <p>家電リサイクル法対象品は、テレビ、冷蔵庫、冷凍庫、洗濯機、衣類乾燥機、エアコンの6品目です。市では処理できないため、購入店、買い換え店、市内の電機商業組合加盟店などへ確認します。</p>
-        <p>自動車部品、オートバイ、タイヤ、バッテリー、農機具、ピアノ、消火器、電気温水器、液体の塗料・ペンキ、AED、FRP船、廃油、灯油、プロパンボンベ、農薬なども別確認が必要です。</p>
-        <p><a href="https://www.city.miki.lg.jp/soshiki/23/73366.html" target="_blank" rel="noopener">市では処理・収集できないごみを確認</a></p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 吉川クリーンセンターの注意</h3>
-        <p>吉川クリーンセンターへ持ち込みできる家庭ごみは、あらごみ、埋立ごみ、資源ごみ、小型家電リサイクル対象品です。可燃ごみは持ち込みできない案内があります。</p>
-        <p>剪定枝、畳、ソファ、スプリング入りマットレスは、保管場所の都合上、吉川クリーンセンターでは受付していないため、三木市清掃センターへ直接持ち込む案内があります。吉川町方面の片付けでは特に確認してください。</p>
-      </div>
-      <div class="harima-admin-card">
+      <div class="admin-box">
         <h3>□ 三木市の地域事情</h3>
-        <p>三木市中心部や三木駅周辺では、古い戸建て、店舗併用住宅、前面道路、駐車位置、近隣配慮を確認します。緑が丘・自由が丘では、集合住宅や坂道、階段、管理会社への届出が見積もりに影響します。</p>
-        <p>志染・別所・吉川町方面では、戸建て、農家住宅、納屋、物置、車庫、庭木、農具、長期空き家の状態まで確認します。室内だけでなく外回りの写真も用意してください。</p>
+        <p><span class="admin-strong">市街地と吉川方面で導線確認</span>緑が丘・自由が丘の住宅地、志染・別所の戸建て、吉川町方面の広い敷地では、階段、駐車位置、納屋・車庫・庭木、搬入先の違いを見積もり前に整理します。</p>
       </div>
-      <div class="harima-admin-card">
-        <h3>□ 業者へ伝えること</h3>
-        <p>退去期限、立会い可否、鍵の受け渡し、ごみステーションに出すもの、清掃センターへ持ち込むもの、粗大ごみかけつけ隊や許可業者を確認するもの、業者が屋内搬出するものを分けて伝えます。</p>
-        <p>家電リサイクル対象品、仏壇・写真、貴重品探索、供養希望品、買取希望品、庭・物置・車庫、車両導線、写真報告の範囲まで整理しておくと、費用と作業時間を判断しやすくなります。</p>
+      <div class="admin-box">
+        <h3>□ 写真で伝える場所</h3>
+        <p><span class="admin-strong">屋内と屋外を分けて撮影</span>玄関、廊下、階段、駐車位置、各部屋、押入れ、物置、車庫、納屋、庭を撮影します。大型家具は幅・高さ、曲がり角、階段幅が分かる写真があると判断しやすくなります。</p>
       </div>
     </div>
-    <p class="source-note">出典：三木市公式サイト、三木市 ごみ・し尿、家庭ごみの持ち込みについて、大量のごみが出たとき（一時多量ごみ）、粗大ごみ戸別収集（粗大ごみかけつけ隊）、市では処理・収集できないごみ、三木市清掃センター。電話番号、受付時間、対象要件、手数料、搬入条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h3>□ 自治体・関連窓口</h3>
+        <p><span class="admin-strong">三木市役所</span>所在地: 〒673-0492 兵庫県三木市上の丸町10番30号<br>電話: 0794-82-2000<br>開庁時間: 月〜金 8:30〜17:00（祝日・休日・年末年始を除く）</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ ごみ相談・清掃センター</h3>
+        <p><span class="admin-strong">三木市 市民生活部 環境課（三木市清掃センター）</span>所在地: 三木市加佐1199<br>電話: 0794-83-2608<br>FAX: 0794-83-2695<br>家庭ごみの持ち込み、一時多量ごみ、粗大ごみかけつけ隊、処理困難物の確認先です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 家庭ごみの持ち込み</h3>
+        <p><span class="admin-strong">分別して清掃センターへ</span>持ち込み時は、ごみの発生場所が三木市内であることを確認するため、免許証・保険証・住所記載の公共料金領収書などを計量棟で提示します。可燃ごみ、あらごみ、埋立ごみ、資源ごみ、小型家電リサイクル対象品を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 持ち込み受付時間</h3>
+        <p><span class="admin-strong">祝日も業務あり</span>受入日: 月〜金（12月29日〜1月3日を除く。祝日も業務）<br>受入時間: 8:30〜11:30 / 13:00〜15:30<br>分別されていないごみ、三木市以外で発生したごみは受入不可です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 処理手数料</h3>
+        <p><span class="admin-strong">直接搬入の料金</span><span class="admin-price">300kgまで手数料免除 / 300kg超は搬入全重量に10kgあたり73円</span><br>一度に4袋以上となる場合は一時多量ごみです。自分で清掃センターへ搬入するか、市が許可している一般廃棄物処理業者へ依頼します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 粗大ごみかけつけ隊</h3>
+        <p><span class="admin-strong">対象世帯限定・無料制度</span>自ら清掃センターへ搬入することが困難な65歳以上、要介護・要支援、障がい者手帳等の対象世帯向け制度です。対象は一辺1m以上の大型家具等で1個50kg未満。建物外からの収集で、1回5個以下、年度2回まで、申請から収集まで2〜3週間程度です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 吉川クリーンセンターの注意</h3>
+        <p><span class="admin-strong">持ち込める品目が異なります</span>吉川クリーンセンターへ持ち込みできる家庭ごみは、あらごみ、埋立ごみ、資源ごみ、小型家電リサイクル対象品です。可燃ごみは持ち込みできません。剪定枝、畳、ソファ、スプリング入りマットレスは三木市清掃センターへ確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 別ルールになりやすい品目</h3>
+        <p><span class="admin-strong">通常ごみと混ぜない</span>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコン、パソコン、消火器、バッテリー、スプレー缶、塗料、農薬、建築廃材、事業系ごみ、仏壇・写真などの供養希望品は別確認にします。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 業者へ伝えること</h3>
+        <p><span class="admin-strong">行政範囲と屋内搬出を分ける</span>退去期限、立会い可否、鍵の受け渡し、ごみステーションに出すもの、清掃センターへ持ち込むもの、粗大ごみかけつけ隊や許可業者を確認するもの、業者が屋内搬出するもの、庭・物置・車庫、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+      </div>
+    </div>
+
+    <div class="admin-link-row">
+      <a href="https://www.city.miki.lg.jp/">三木市公式サイト</a>
+      <a href="https://www.city.miki.lg.jp/life/1/5/22/">三木市 ごみ・し尿</a>
+      <a href="https://www.city.miki.lg.jp/soshiki/23/36196.html">家庭ごみの持ち込み</a>
+      <a href="https://www.city.miki.lg.jp/soshiki/23/2343.html">一時多量ごみ</a>
+      <a href="https://www.city.miki.lg.jp/soshiki/23/12653.html">家庭ごみの処理手数料</a>
+      <a href="https://www.city.miki.lg.jp/soshiki/23/73628.html">粗大ごみかけつけ隊</a>
+      <a href="https://www.city.miki.lg.jp/soshiki/23/2344.html">市で処理できないごみ</a>
+    </div>
+    <p class="source-note">出典: 三木市公式サイト、三木市「ごみ・し尿」「家庭ごみの持ち込みについて」「大量のごみが出たとき（一時多量ごみ）」「家庭ごみの処理手数料」「粗大ごみ戸別収集（粗大ごみかけつけ隊）」各ページ。電話番号、受付時間、料金、対象条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
   </section>
 </main>
 <script id="common-kita-before-after-script">

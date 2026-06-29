@@ -1297,30 +1297,176 @@
 
 <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、写真報告、残す品の事前共有を行えば、遠方のご家族でも進めやすくなります。</p></div><div class="card"><h3>見積もり前に何を用意すればよいですか？</h3><p>部屋全体、押入れ、物置、搬出経路、駐車位置の写真と、残したい品・探したい書類のリストがあるとスムーズです。</p></div><div class="card"><h3>淡路市で見積もり前に地域事情として何を伝えるべきですか？</h3><p>淡路市は志筑・津名の戸建て、岩屋の海沿い住宅、北淡方面の空き家、別荘・季節利用の住まいで整理条件が変わります。島外家族は写真報告を使うと判断しやすくなります。</p></div><div class="card"><h3>淡路市で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>淡路市の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
+<style id="awaji-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .container { max-width: 1120px; margin: 0 auto; }
+#admin .admin-kicker {
+  display: inline-flex;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e5f1fb;
+  color: #164f86;
+  font-weight: 800;
+  font-size: .92rem;
+}
+#admin .section-title { margin-bottom: 14px; }
+#admin .admin-lead { margin: 0 0 16px; line-height: 1.9; font-size: 1.02rem; }
+#admin .admin-note {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border-left: 5px solid #1f6fb2;
+  background: #fff;
+  border-radius: 8px;
+  line-height: 1.85;
+}
+#admin .admin-grid,
+#admin .admin-contact-grid { display: grid; gap: 14px; margin: 18px 0; }
+#admin .admin-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#admin .admin-contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#admin .admin-box {
+  background: #fff;
+  border: 1px solid #c7dff2;
+  border-radius: 10px;
+  padding: 16px;
+}
+#admin .admin-box h3 { margin: 0 0 10px; color: #164f86; font-size: 1.05rem; line-height: 1.45; }
+#admin .admin-box p { margin: 0; line-height: 1.85; }
+#admin .admin-strong { display: block; margin-bottom: 6px; font-weight: 800; color: #1b3550; }
+#admin .admin-price {
+  display: inline-block;
+  margin: .2em 0;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: #eaf4ff;
+  color: #164f86;
+  font-weight: 800;
+}
+#admin .admin-link-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 8px; }
+#admin .admin-link-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #1f6fb2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+#admin .source-note { margin-top: 14px; color: #526273; font-size: .92rem; line-height: 1.7; }
+@media (max-width: 820px) {
+  #admin .admin-grid,
+  #admin .admin-contact-grid { grid-template-columns: 1fr; }
+}
+</style>
 <section id="admin" class="section admin-hotline-section">
-  <div class="admin-hotline-inner">
-    <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
+  <div class="container">
+    <p class="admin-kicker">行政窓口・粗大ごみ・持ち込み先</p>
     <h2 class="section-title">淡路市の行政窓口・粗大ごみ・持ち込み先</h2>
-    <p class="lead">淡路市で遺品整理・生前整理・実家じまいを進める前に、町内会などの粗大・不燃ごみの日に出せるもの、夕陽が丘クリーンセンターへ持ち込む可燃ごみ、奥畑粗大ごみ処理場へ持ち込む不燃・粗大ごみ、業者が屋内から搬出するものを分けて整理します。引越し・片付けで出る多量ごみは自己処理が基本と案内されているため、退去期限、車両、搬出経路、家電リサイクル対象品、庭・物置、仏壇・写真、貴重品探索の範囲を先に決めてください。</p>
+    <p class="admin-lead">淡路市で遺品整理・生前整理を進める前に、町内会などの粗大・不燃ごみの日に出せるもの、夕陽が丘クリーンセンターへ持ち込む可燃ごみ、奥畑粗大ごみ処理場へ持ち込む粗大・不燃ごみ、許可業者や片付け業者が屋内から搬出する家財を分けます。島外の親族が立ち会う場合や、別荘・空き家・海沿いの住宅では、車両導線、鍵の受け渡し、写真報告の方法も先に決めておくと進めやすくなります。</p>
+    <p class="admin-note"><strong>先に確認すること:</strong> 引越し・大掃除などで出る多量ごみは、淡路市公式ページで「自己処理」と案内されています。町内会の粗大・不燃ごみの日にまとめて出さず、自己搬入、一般廃棄物収集運搬業許可業者、家財整理業者のどこに任せるかを分けてください。</p>
+
     <div class="admin-grid">
-      <div class="admin-card"><h3>□ まず分ける4つの箱</h3><p><strong>1. 通常の分別・粗大不燃で出すもの</strong><br>自治会・町内会の収集ルール、ごみカレンダー、粗大・不燃ごみの日の注意事項を確認します。</p><p><strong>2. 自分で施設へ持ち込むもの</strong><br>可燃ごみは夕陽が丘クリーンセンター、不燃・粗大ごみは奥畑粗大ごみ処理場に分けて確認します。</p><p><strong>3. 業者が屋内搬出するもの</strong><br>大型家具、階段作業、物置・車庫、別荘・空き家、短い退去期限、大量家財は業者見積もりに分けます。</p><p><strong>4. 別ルールのもの</strong><br>家電リサイクル対象品、電池、リチウムイオン電池、パソコン、危険物、事業系ごみ、農業・漁業由来のごみは別に確認します。</p></div>
-      <div class="admin-card"><h3>□ 市役所・基本窓口</h3><p><strong>淡路市役所</strong><br>所在地: 兵庫県淡路市生穂新島8番地<br>代表電話: 0799-64-0001<br>IP電話: 050-7105-5000<br>FAX: 0799-64-2500<br>開庁時間: 月〜金 8:30〜17:15（祝日・休日・年末年始を除く）</p><p>住所変更、戸籍、福祉、空き家、住まい、地域包括支援、相続後の実家じまいに関する相談先は担当課が分かれます。行政手続きと片付け作業を分けて整理します。</p><a href="https://www.city.awaji.lg.jp/" target="_blank" rel="noopener">淡路市公式情報を確認</a></div>
-      <div class="admin-card"><h3>□ ごみ相談・生活環境課</h3><p><strong>淡路市 市民生活部 生活環境課</strong><br>所在地: 淡路市生穂新島8番地<br>電話: 0799-64-2523（直通）<br>IP電話: 050-7105-5023<br>FAX: 0799-64-2565<br>夕陽が丘クリーンセンター: 0799-82-3144</p><p>一般廃棄物、塵芥処理、ごみ減量化、エコプラザ、夕陽が丘クリーンセンターなどの相談先です。粗大・不燃ごみ、引越し・片付けごみ、家電リサイクル、事業系ごみは、作業日より前に確認してください。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/" target="_blank" rel="noopener">生活環境課を確認</a></div>
-      <div class="admin-card"><h3>□ 粗大・不燃ごみ</h3><p>淡路市公式ページでは、粗大・不燃ごみの出し方チラシや、リユースの検討が案内されています。まだ使える家具・家電は「おいくら」や「ジモティー」などのリユースも選択肢になります。</p><p>単品の家具や不燃ごみは自治会・町内会の収集ルールを確認し、一軒分の家財や退去期限が近い片付けは、自己搬入または許可業者への依頼、遺品整理業者の屋内搬出と分けて考えます。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47719.html" target="_blank" rel="noopener">粗大・不燃ごみを確認</a></div>
-      <div class="admin-card"><h3>□ 引越し・片付けごみ</h3><p><strong>多量ごみは自己処理</strong><br>家庭で引越しまたは大掃除の際などに出る多量ごみは、自己処理が必要と案内されています。</p><p>方法は、夕陽が丘クリーンセンターまたは奥畑粗大ごみ処理場へ直接搬入する、または淡路市の一般廃棄物収集運搬業許可業者と委託契約を交わし回収してもらう、のいずれかです。町内会の粗大・不燃ごみの日に出さないよう注意が必要です。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47749.html" target="_blank" rel="noopener">引越し・片付けごみを確認</a></div>
-      <div class="admin-card"><h3>□ 持ち込み先（可燃ごみ）</h3><p><strong>夕陽が丘クリーンセンター</strong><br>所在地: 淡路市野島常盤1559-29<br>電話: 0799-82-3144<br>利用時間: 月〜金 8:30〜16:30、土曜 8:30〜14:00<br>休日: 日曜、年始（1月1日〜1月3日）<br>手数料: 10kgにつき130円（税込）</p><p>淡路市内で発生した家庭系一般廃棄物と事業系一般廃棄物の焼却施設で、可燃性ごみのみ受け入れます。予約は特に不要と案内されています。支払いは現金のみです。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/51370.html" target="_blank" rel="noopener">夕陽が丘クリーンセンターを確認</a></div>
-      <div class="admin-card"><h3>□ 夕陽が丘へ持ち込む前</h3><p>搬入できるのは、ごみの排出者本人（親族含む）または淡路市の一般廃棄物収集運搬許可業者に限られます。受け入れできないごみは持ち帰りになるため、車両に積み込む前に確認してください。</p><p>不燃ごみ、金属類、ガラス類、電化製品、不燃物を含むごみ、産業廃棄物、有毒性・危険性・爆発性・引火性のあるものは受け入れできません。個人等で直接搬入する場合は2トン車（長さ4m50cm）までとされています。</p></div>
-      <div class="admin-card"><h3>□ 持ち込み先（不燃・粗大ごみ）</h3><p><strong>淡路広域行政事務組合 粗大ごみ処理場</strong><br>所在地: 洲本市奥畑字西の谷394-1<br>電話: 0799-24-1676<br>受入時間: 月〜金 8:30〜16:30（祝日・年末年始を除く）<br>手数料: 100kgにつき1,600円</p><p>家具類等の粗大ごみや不燃ごみは奥畑粗大ごみ処理場で処理できると案内されています。受け入れできない場合があるため、搬入物について事前に問い合わせてください。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/sodaigomi.html" target="_blank" rel="noopener">粗大ごみ処理場を確認</a></div>
-      <div class="admin-card"><h3>□ 家電リサイクル対象品</h3><p><strong>市の粗大・不燃ごみ、粗大ごみ処理場への持ち込み不可</strong><br>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品目です。</p><p>買い替え時は新しい商品を購入する販売店へ依頼します。自分で指定引取場所へ持ち込む場合は、郵便局で家電リサイクル券を購入し、淡路共正陸運株式会社（洲本市納319番地、電話0799-24-3650）へ直接持ち込みます。家電リサイクル券センターは0120-319640、受付時間は9:00〜18:00（日曜・祝日休み）と案内されています。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47752.html" target="_blank" rel="noopener">家電リサイクルを確認</a></div>
-      <div class="admin-card"><h3>□ エコプラザ・資源ごみ</h3><p>紙類、布類、プラスチック類などは、資源ごみとしてリサイクルできる場合があります。淡路市内5か所のエコプラザへ無料で持ち込めるものもあるため、持ち込む前に受入可否を確認します。</p><p>遺品整理では、古紙、衣類、アルバム、書類、段ボールが大量に出ることがあります。重要書類や写真を処分前に分け、資源化できるものと探索対象を混ぜないようにしてください。</p><a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/25065.html" target="_blank" rel="noopener">エコプラザを確認</a></div>
-      <div class="admin-card"><h3>□ 淡路市の地域事情</h3><p><strong>志筑・津名</strong><br>戸建て、集合住宅、店舗併用住宅では、退去日、前面道路、駐車位置、家具の分解搬出を確認します。</p><p><strong>岩屋・東浦・海沿い</strong><br>別荘、季節利用住宅、海沿い住宅では、ベランダ品、屋外用品、潮風で傷んだ家具家電、車庫まわりを見ます。</p><p><strong>北淡・一宮方面</strong><br>空き家化した住まいでは、鍵、水道電気、進入路、庭、物置、納屋の状態を写真で共有します。</p></div>
-      <div class="admin-card"><h3>□ 見積もり前の写真ポイント</h3><p>玄関、廊下、階段、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、納屋、車庫を撮影します。</p><p>大型家具は幅・高さ、搬出経路の曲がり角、階段幅、車両までの距離が分かる写真があると、人数、車両、養生、分解搬出の要否を判断しやすくなります。島外の家族が立ち会えない場合は、作業前後写真、貴重品候補、形見分け品の返送方法も決めます。</p><a href="#process">相談前の準備を見る</a></div>
-      <div class="admin-card"><h3>□ 業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、町内会収集で出すもの、夕陽が丘クリーンセンターへ持ち込むもの、奥畑粗大ごみ処理場へ持ち込むもの、業者が屋内搬出するものを分けて伝えます。</p><p>あわせて、家電リサイクル対象品、電池・リチウムイオン電池、パソコン、庭・物置・納屋、仏壇・写真、供養希望品、探してほしい通帳・印鑑・権利書・保険証券、買取希望品、車両導線、作業後の写真報告範囲を共有してください。</p><a href="#compare">業者比較の確認点へ</a></div>
+      <div class="admin-box">
+        <h3>□ まず4つに分ける</h3>
+        <p><span class="admin-strong">1. 町内会・自治会で出すもの</span>少量の粗大・不燃ごみ、指定日に出せる単品家具など。</p>
+        <p><span class="admin-strong">2. 自分で持ち込むもの</span>可燃ごみは夕陽が丘クリーンセンター、粗大・不燃ごみは奥畑粗大ごみ処理場へ分けて確認します。</p>
+        <p><span class="admin-strong">3. 許可業者・整理業者に任せるもの</span>多量ごみ、屋内搬出、階段作業、物置・車庫、遠方家族の立会いなし作業。</p>
+        <p><span class="admin-strong">4. 別ルールのもの</span>家電4品目、パソコン、電池、消火器、産業廃棄物、農業・漁業由来のごみ、仏壇・写真など。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 淡路市の地域事情</h3>
+        <p><span class="admin-strong">志筑・津名周辺</span>集合住宅、店舗併用住宅、前面道路の停車可否を確認します。</p>
+        <p><span class="admin-strong">岩屋・東浦・海沿い</span>潮風で傷んだ家具家電、ベランダ品、屋外用品、車庫まわりを分けます。</p>
+        <p><span class="admin-strong">北淡・一宮方面</span>坂道、水道閉栓、空き家化した住まい、庭・物置・納屋の残置物まで写真で共有します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 見積もり前の写真ポイント</h3>
+        <p>玄関、廊下、階段、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、曲がり角、階段幅、車両までの距離が分かる写真があると、人数・車両・養生・分解搬出の判断がしやすくなります。</p>
+      </div>
     </div>
-    <p class="source-note">出典：<a href="https://www.city.awaji.lg.jp/" target="_blank" rel="noopener">淡路市公式サイト</a>、<a href="https://www.city.awaji.lg.jp/life/2/12/47/" target="_blank" rel="noopener">淡路市 ごみ</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/" target="_blank" rel="noopener">淡路市 生活環境課</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47719.html" target="_blank" rel="noopener">淡路市 粗大・不燃ごみ</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47749.html" target="_blank" rel="noopener">淡路市 引越し・片付けごみ</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/51370.html" target="_blank" rel="noopener">淡路市 夕陽が丘クリーンセンターのごみ受入</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/sodaigomi.html" target="_blank" rel="noopener">淡路市 粗大ごみ処理場</a>、<a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47752.html" target="_blank" rel="noopener">淡路市 エアコン・テレビ・冷蔵庫・洗濯機</a>。電話番号、受付時間、対象条件、料金、持込条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h3>□ 自治体・関連窓口</h3>
+        <p><span class="admin-strong">淡路市役所</span>所在地: 兵庫県淡路市生穂新島8番地<br>代表電話: 0799-64-0001<br>IP電話: 050-7105-5000<br>FAX: 0799-64-2500<br>開庁時間: 月〜金 8:30〜17:15（祝日・休日・年末年始を除く）</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ ごみ相談・生活環境課</h3>
+        <p><span class="admin-strong">淡路市 市民生活部 生活環境課</span>所在地: 淡路市生穂新島8番地<br>電話: 0799-64-2523（直通）<br>IP電話: 050-7105-5023<br>FAX: 0799-64-2565<br>夕陽が丘クリーンセンター: 0799-82-3144</p>
+        <p>一般廃棄物、塵芥処理、ごみ減量化、エコプラザ、夕陽が丘クリーンセンターなどの相談先です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 粗大・不燃ごみ</h3>
+        <p>淡路市公式ページでは、粗大・不燃ごみの出し方チラシ、リユースの検討、町内会・自治会などの収集ルール確認が案内されています。単品の家具、小型家電、金属類、ガラス類などは、出せる日・出せる場所・出し方を先に確認してください。</p>
+        <p>一軒分の片付け、退去期限が近い片付け、多量ごみは、町内会の粗大・不燃ごみの日ではなく、自己搬入または許可業者・整理業者の範囲として分けます。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 引越し・片付けごみ</h3>
+        <p><span class="admin-strong">多量ごみは自己処理</span>家庭で引越しまたは大掃除の際などに出る多量ごみは、夕陽が丘クリーンセンターまたは奥畑粗大ごみ処理場へ直接搬入する、または淡路市の一般廃棄物収集運搬業許可業者と委託契約を交わして回収してもらう方法が案内されています。</p>
+        <p><span class="admin-price">町内会の粗大・不燃ごみの日に出さない</span></p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 持ち込み先（可燃ごみ）</h3>
+        <p><span class="admin-strong">夕陽が丘クリーンセンター</span>所在地: 淡路市野島常盤1559-29<br>電話: 0799-82-3144<br>利用時間: 月〜金 8:30〜16:30、土 8:30〜14:00<br>休み: 日曜、年始（1月1日〜1月3日）<br><span class="admin-price">手数料: 10kgにつき130円（税込）</span><br>支払い: 現金のみ</p>
+        <p>淡路市内で発生した可燃性ごみのみ受け入れ。予約は特に不要と案内されています。市指定ごみ袋に入れた家庭系一般廃棄物は手数料徴収なし、事業系一般廃棄物は市指定ごみ袋を使用できません。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 夕陽が丘へ持ち込む前の注意</h3>
+        <p>搬入できるのは排出者本人（親族含む）または淡路市の一般廃棄物収集運搬許可業者です。受け入れできないごみは持ち帰りになるため、車両へ積み込む前に確認してください。</p>
+        <p>不燃ごみ、金属類、ガラス類、電化製品、不燃物を含むごみ、産業廃棄物、有毒性・危険性・爆発性・引火性のあるものは受け入れ不可です。袋に入れる場合は透明・半透明にし、荷降ろしは搬入者自身で行います。個人の直接搬入車両は2トン車（長さ4m50cm）までです。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 可燃性の大型家具を持ち込む場合</h3>
+        <p>タンス、本棚、机、畳、木材などの可燃性の家具類は、金属類・ガラス類を取り外す必要があります。木材は長さ1m、太さ10cm以内、箱状家具は長さ1m以内・厚さ10cm以内の板状に解体して搬入します。</p>
+        <p>施設内での解体作業や工具の貸し出しはありません。家具類等の粗大ごみや不燃ごみは、奥畑粗大ごみ処理場で処理できる場合があります。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 持ち込み先（粗大・不燃ごみ）</h3>
+        <p><span class="admin-strong">淡路広域行政事務組合 粗大ごみ処理場（奥畑）</span>所在地: 洲本市奥畑字西の谷394-1<br>電話: 0799-24-1676<br>受入時間: 月〜金 8:30〜16:30（祝日・年末年始を除く）<br><span class="admin-price">手数料: 100kgにつき1,600円</span></p>
+        <p>家具類などの粗大ごみ・不燃ごみを搬入する場合の確認先です。受け入れできない場合があるため、品目・数量・車両・発生場所を事前に問い合わせてください。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 一般廃棄物収集運搬業許可業者</h3>
+        <p>淡路市公式ページ掲載の許可業者例です。料金、屋内搬出の可否、階段作業、分解、回収日、古紙回収の扱いは各社へ直接確認します。</p>
+        <p>株式会社淡路観光開発公社: 0799-72-0201<br>株式会社淡路紙料センター: 0799-62-1118<br>淡路清掃株式会社: 0799-45-0413<br>関西技研株式会社: 0799-74-0358<br>有限会社クリーンサービス: 0799-62-2150<br>鳥取興業株式会社: 0799-52-2068</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 家電4品目</h3>
+        <p><span class="admin-strong">市の粗大・不燃ごみ、粗大ごみ処理場への持ち込み不可</span>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品目です。</p>
+        <p>買い換え時は販売店へ依頼。自分で指定引取場所へ持ち込む場合は、郵便局で家電リサイクル券を購入し、淡路共正陸運株式会社（洲本市納319、電話0799-24-3650）へ直接持ち込みます。家電リサイクル券センター: 0120-319640、受付9:00〜18:00（日曜・祝日休み）。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 別ルールになりやすい品目</h3>
+        <p>パソコン、小型充電式電池、リチウムイオン電池、モバイルバッテリー、電動工具・電動自転車のバッテリー、消火器、灯油、塗料、農薬、ガスボンベ、金庫、事業系ごみ、農業・漁業由来のごみ、建築廃材、解体材、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。</p>
+        <p>「行政確認」「持ち込み確認」「許可業者・整理業者相談」に分けると、当日の積み残しや持ち帰りを減らせます。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 業者へ伝えること</h3>
+        <p>退去期限、立会い可否、鍵の受け渡し、町内会・自治会で出すもの、夕陽が丘クリーンセンターへ持ち込むもの、奥畑粗大ごみ処理場へ持ち込むもの、屋内搬出する大型家具、家電4品目、庭・物置・車庫、貴重品探索、仏壇・写真の供養希望を分けて伝えてください。</p>
+      </div>
+    </div>
+
+    <div class="admin-link-row">
+      <a href="https://www.city.awaji.lg.jp/" target="_blank" rel="noopener">淡路市公式サイト</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/" target="_blank" rel="noopener">生活環境課</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47719.html" target="_blank" rel="noopener">粗大・不燃ごみ</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47749.html" target="_blank" rel="noopener">引越し・片付けごみ</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/51370.html" target="_blank" rel="noopener">夕陽が丘クリーンセンター</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/sodaigomi.html" target="_blank" rel="noopener">粗大ごみ処理場</a>
+      <a href="https://www.city.awaji.lg.jp/soshiki/seikatsu/47752.html" target="_blank" rel="noopener">家電リサイクル</a>
+    </div>
+    <p class="source-note">出典：淡路市公式サイト、淡路市生活環境課、粗大・不燃ごみ、引越し・片付けごみ、夕陽が丘クリーンセンターのごみ受入、淡路広域行政事務組合 粗大ごみ処理場、家電リサイクル対象品目の各公式ページ。電話番号、受付時間、対象条件、料金、持込条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
   </div>
 </section>
-</main>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {

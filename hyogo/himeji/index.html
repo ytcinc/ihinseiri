@@ -1365,89 +1365,121 @@
 </section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 
+<style id="himeji-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .admin-kicker { display:inline-flex; margin:0 0 10px; padding:6px 10px; border-radius:999px; background:#e5f1fb; color:#164f86; font-weight:800; font-size:.92rem; }
+#admin .section-title { margin-bottom:14px; }
+#admin .admin-lead { margin:0 0 16px; line-height:1.9; font-size:1.02rem; }
+#admin .admin-note { margin:0 0 20px; padding:14px 16px; border-left:5px solid #1f6fb2; background:#fff; border-radius:8px; line-height:1.85; }
+#admin .admin-grid, #admin .admin-contact-grid { display:grid; gap:14px; margin:18px 0; }
+#admin .admin-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+#admin .admin-contact-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+#admin .admin-box { background:#fff; border:1px solid #c7dff2; border-radius:10px; padding:16px; }
+#admin .admin-box h3 { margin:0 0 10px; color:#164f86; font-size:1.05rem; line-height:1.45; }
+#admin .admin-box p { margin:0; line-height:1.85; }
+#admin .admin-strong { display:block; margin-bottom:6px; font-weight:800; color:#1b3550; }
+#admin .admin-price { display:inline-block; margin:.2em 0; padding:5px 9px; border-radius:8px; background:#eaf4ff; color:#164f86; font-weight:800; }
+#admin .admin-link-row { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 8px; }
+#admin .admin-link-row a { display:inline-flex; align-items:center; justify-content:center; min-height:40px; padding:9px 13px; border-radius:999px; background:#1f6fb2; color:#fff; text-decoration:none; font-weight:800; }
+#admin .source-note { margin-top:14px; color:#526273; font-size:.92rem; line-height:1.7; }
+@media (max-width:820px){ #admin .admin-grid, #admin .admin-contact-grid { grid-template-columns:1fr; } }
+</style>
 <section id="admin" class="section admin-hotline-section">
-  <div class="container">
-    <p class="section-kicker">姫路市の行政窓口・粗大ごみ・持ち込み先</p>
-    <h2 class="section-title">姫路市の家庭ごみ・大型家具・処理施設持ち込みを先に分ける</h2>
-    <p class="lead">姫路市で遺品整理・生前整理を進める前に、家庭ごみとして出すもの、処理施設へ自分で持ち込むもの、家電4品目・パソコンなど市で扱いが分かれるもの、業者が屋内から搬出するものを分けて整理します。姫路駅周辺のマンション、城下町周辺の路地沿い住宅、飾磨・広畑・網干の戸建て、夢前・香寺・安富・家島方面では、搬出経路と持ち込み先が変わりやすいため、作業前に公式情報で確認してください。</p>
-    <div class="harima-admin-grid">
-      <div class="harima-admin-card">
-        <h3>□ まず分ける3つの箱</h3>
-        <p><strong>家庭ごみで出すもの</strong>は、クリーンカレンダー、分け方と出し方、ごみステーションの条件を確認します。<br><strong>持ち込みを検討するもの</strong>は、エコパークあぼし、市川美化センター、くれさかクリーンセンター、家島美化センターなど、居住地域と品目で行き先を分けます。<br><strong>業者作業にするもの</strong>は、屋内搬出が必要な大型家具、階段作業、大量家財、短い退去期限、貴重品探索、仏壇・写真、庭・物置・車庫まわりです。</p>
-      </div>
+  <span class="admin-kicker">行政窓口・ごみ分別・持ち込み先</span>
+  <h2 class="section-title">姫路市の行政窓口・家庭ごみ・持ち込み先</h2>
+  <p class="admin-lead">姫路市で遺品整理・生前整理を進める前に、<strong>家庭ごみとして出すもの</strong>、<strong>処理施設へ自分で持ち込むもの</strong>、<strong>家電4品目・パソコンなど市で扱えないもの</strong>、<strong>業者が屋内から搬出するもの</strong>を分けます。姫路駅周辺の集合住宅、城下町周辺の路地沿い住宅、飾磨・広畑・網干の戸建て、夢前・香寺・安富・家島方面では、搬出経路と持ち込み先が変わります。</p>
+  <p class="admin-note">姫路市の自己搬入は地域と品目で行き先が分かれます。旧姫路市域はエコパークあぼし・市川美化センター、夢前町域・香寺町域・安富町域はくれさかクリーンセンター、家島町域は家島美化センターを確認します。料金、受付時間、搬入できない品目は作業日直前に公式ページで再確認してください。</p>
 
-      <div class="harima-admin-card">
-        <h3>□ 姫路市役所</h3>
-        <p><strong>所在地: 兵庫県姫路市安田四丁目1番地</strong><br><strong>電話番号: 079-221-2111</strong>（庁内番号案内）<br><strong>開庁時間: 月〜金 9:00〜17:00</strong>（土曜・日曜・祝日・12月29日〜1月3日は閉庁）</p>
-        <p>戸籍、住所変更、介護・福祉、空き家、住まい、ごみの相談先は担当課が分かれます。相続後の実家じまいでは、戸籍・固定資産・空き家・福祉・ごみの窓口を先に分けて確認すると進めやすくなります。</p>
-        <a href="https://www.city.himeji.lg.jp/" target="_blank" rel="noopener">姫路市公式サイトを確認</a>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 家庭ごみ・クリーンカレンダー</h3>
-        <p>姫路市の家庭ごみは、地区別のクリーンカレンダー、家庭ごみの分け方と出し方、ごみステーションの利用ルールを確認します。指定袋、収集日、悪天候時の収集、収集できないごみは公式カテゴリで確認してください。</p>
-        <p>単品の小型家具、布団、袋ごみ、片付け中に出る日用品は、まず「家庭ごみで出せるか」「ごみステーションまで自力で運べるか」を基準に分けます。</p>
-        <a href="https://www.city.himeji.lg.jp/kurashi/category/2-10-3-0-0-0-0-0-0-0.html" target="_blank" rel="noopener">家庭ごみの公式情報を確認</a>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 自分で持ち込む場合（有料）</h3>
-        <p>家庭から出るごみは、市の処理施設へ持ち込める場合があります。公式ページでは、燃やせるものと燃えないものに分別して搬入すること、指定袋に入れる必要はないことが案内されています。</p>
-        <p>旧姫路市域は、燃やせるものはエコパークあぼしまたは市川美化センター、燃やせないものや家具・ベッド・ふとん・電化製品などはエコパークあぼしへの分別搬入が案内されています。処理料金は、旧姫路市域などで<strong>積載量10kgあたり130円</strong>が案内されています。</p>
-        <a href="https://www.city.himeji.lg.jp/kurashi/0000000155.html" target="_blank" rel="noopener">自分で持ち込む場合を確認</a>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ エコパークあぼし</h3>
-        <p><strong>所在地: 姫路市網干区網干浜4-1</strong><br><strong>電話: 079-272-5540</strong><br>搬入できる日: 月〜土（12月31日、1月1日〜3日は除く）<br>受付時間: 8:00〜17:00</p>
-        <p>旧姫路市域の燃やせるもの、燃やせないもの、そのままでは燃やせないものの搬入先として案内されています。家具、ベッド、ふとん、電化製品などは、家電4品目・パソコンを混ぜずに確認してください。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 市川美化センター</h3>
-        <p><strong>所在地: 姫路市東郷町1451-3</strong><br><strong>電話: 079-282-5389</strong><br>搬入できる日: 月〜土（1月1日〜3日は除く）<br>受付時間: 8:00〜15:30</p>
-        <p>旧姫路市域の燃やせるものの搬入先として案内されています。市川美化センターは袋ごみ（可燃ごみ）のみで、粗大ごみは持ち込みできない旨が公式ページで案内されています。大型家具はエコパークあぼしや業者搬出と分けて考えます。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 夢前・香寺・安富方面</h3>
-        <p><strong>くれさかクリーンセンター</strong><br>所在地: 姫路市夢前町宮置803番地<br>電話: 079-335-3670<br>搬入できる日: 月〜金（年末年始・GWは事前確認）<br>受付時間: 8:30〜12:00、13:00〜16:30</p>
-        <p>夢前町域、香寺町域、安富町域は、くれさかクリーンセンターへの搬入が案内されています。埋立ごみ、自己解体ごみは、事前に一般廃棄物処理申出書が必要な場合があるため、地域事務所で手続きを確認してください。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 家島町域</h3>
-        <p><strong>家島美化センター</strong><br>所在地: 姫路市家島町宮2144番地18<br>電話: 079-325-2133<br>搬入できる日: 月〜金（祝日、12月31日、1月1日〜3日、5月3日〜5日は除く）<br>受付時間: 8:00〜16:00</p>
-        <p>家島町域は、家島美化センター（長井集積所を含む）への搬入が案内されています。処理料金は処分券方式のため、家島事務所または坊勢サービスセンターで購入条件を確認します。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 持ち込みできない・別確認の品目</h3>
-        <p>テレビ、エアコン、洗濯機・衣類乾燥機、冷蔵庫・冷凍庫、パソコンは、処理施設へ搬入できない品目として公式ページで案内されています。家電4品目は家電リサイクル、パソコンはリネットジャパンリサイクルやメーカー回収、または小型家電回収ボックスの条件を確認します。</p>
-        <p>消火器、バッテリー、灯油、塗料、農薬、スプレー缶、建築廃材、事業所ごみ、自己解体ごみ、危険物は、家庭ごみや通常の持ち込みと分けて確認してください。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 高齢者等世帯のごみ出し支援</h3>
-        <p>姫路市には、高齢者や障害のある方、妊産婦などで、ごみステーションまで可燃ごみを運ぶことが困難な世帯向けに「ふれあい収集」が案内されています。週1回、決まった曜日に玄関先まで収集に来る制度です。</p>
-        <p>対象は可燃ごみで、屋内に入っての収集は行わないと案内されています。対象要件、現地調査、審査、受付フォームの送付先は公式ページで確認してください。</p>
-        <a href="https://www.city.himeji.lg.jp/kurashi/0000014055.html" target="_blank" rel="noopener">ふれあい収集を確認</a>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 姫路市の地域事情</h3>
-        <p>姫路駅周辺はマンションの搬出時間、エレベーター予約、管理会社への届出を確認します。城下町周辺や古い住宅地では、路地幅、前面道路、階段幅、大型家具の向きが重要です。</p>
-        <p>飾磨・広畑・網干方面は車庫・物置・庭まわり、夢前・香寺・安富方面は納屋・農具・屋外残置物、家島方面は搬入先と日程の確認を先に分けてください。</p>
-      </div>
-
-      <div class="harima-admin-card">
-        <h3>□ 業者へ伝えること</h3>
-        <p>退去期限、立会い可否、鍵の受け渡し、家庭ごみで出すもの、処理施設へ持ち込むもの、業者が屋内搬出するもの、家電4品目、パソコン、庭・物置・車庫、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
-        <p>写真は、玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、ベランダ、庭、物置、車庫、納屋を撮ると、人数・車両・養生・分解搬出の要否を判断しやすくなります。</p>
-      </div>
+  <div class="admin-grid">
+    <div class="admin-box">
+      <h3>□ 先に分ける3つの箱</h3>
+      <p><span class="admin-strong">行政収集・自己搬入・業者作業</span>少量で自力排出できるものはクリーンカレンダーとごみステーション、車で運べるものは施設持ち込み、屋内搬出・大量家財・階段作業・供養品・貴重品探索は業者作業として分けます。</p>
     </div>
-    <p class="source-note">出典：姫路市公式サイト、姫路市「ごみ・リサイクル・美化」「家庭ごみ」「自分で持ち込む場合（有料）」「高齢者等世帯に対するごみ出し支援事業」を確認して作成しています。電話番号、受付時間、料金、搬入条件、対象品目は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+    <div class="admin-box">
+      <h3>□ 姫路市の地域事情</h3>
+      <p><span class="admin-strong">駅前・旧市街・郊外で条件が変わる</span>姫路駅前は管理会社への届出と搬出時間、城下町周辺は路地幅と階段、飾磨・広畑・網干は車庫・物置、夢前・香寺・安富は納屋・農具・屋外残置物、家島方面は日程と搬入先を先に確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 見積もり前の写真</h3>
+      <p><span class="admin-strong">玄関から処理施設までを想定</span>玄関、廊下、階段、エレベーター、駐車位置、部屋全体、押入れ、庭、物置、車庫、納屋を撮影します。大型家具は幅・高さ・曲がり角が分かる写真があると判断しやすくなります。</p>
+    </div>
   </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-box">
+      <h3>自治体・関連窓口</h3>
+      <p><span class="admin-strong">姫路市役所</span>所在地: 〒670-8501 兵庫県姫路市安田四丁目1番地<br>電話: 079-221-2111（庁内番号案内）<br>開庁時間: 月〜金 9:00〜17:00（土日祝・12月29日〜1月3日を除く）<br>戸籍、住所変更、介護・福祉、空き家、住まい、ごみ相談は担当窓口が分かれます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>ごみ相談・リサイクル課</h3>
+      <p><span class="admin-strong">姫路市 リサイクル課</span>電話: 079-221-2404<br>FAX: 079-221-2408<br>家庭ごみの分け方、自己搬入、施設別の受け入れ、ふれあい収集、一般廃棄物処理業者の確認で見る中心窓口です。</p>
+    </div>
+    <div class="admin-box">
+      <h3>自己搬入の料金</h3>
+      <p><span class="admin-strong">旧姫路市域・くれさか方面</span><span class="admin-price">積載量10kgあたり130円</span><br>車両1台ごとに積載量で計算されます。指定袋に入れる必要はありませんが、燃やせるもの・燃えないものを分け、テレビ、エアコン、洗濯機、冷蔵庫・冷凍庫、パソコンは混ぜません。</p>
+    </div>
+    <div class="admin-box">
+      <h3>エコパークあぼし</h3>
+      <p><span class="admin-strong">姫路市網干区網干浜4-1 / 079-272-5540</span>搬入できる日: 月〜土（12月31日、1月1日〜3日を除く）<br>受付時間: 8:00〜17:00<br>旧姫路市域の燃やせるもの、燃えないもの、家具・ベッド・ふとん・電化製品などの搬入先として確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>市川美化センター</h3>
+      <p><span class="admin-strong">姫路市東郷町1451-3 / 079-282-5389</span>搬入できる日: 月〜土（1月1日〜3日を除く）<br>受付時間: 8:00〜15:30<br>袋ごみ（可燃ごみ）のみ。粗大ごみは持ち込みできないため、大型家具はエコパークあぼしや業者搬出と分けます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>くれさかクリーンセンター</h3>
+      <p><span class="admin-strong">姫路市夢前町宮置803番地 / 079-335-3670</span>対象: 夢前町域、香寺町域、安富町域<br>搬入できる日: 月〜金（年末年始・GWは事前確認）<br>受付時間: 8:30〜12:00、13:00〜16:30<br>埋立ごみ・自己解体ごみは事前申出が必要な場合があります。</p>
+    </div>
+    <div class="admin-box">
+      <h3>家島美化センター</h3>
+      <p><span class="admin-strong">姫路市家島町宮2144番地18 / 079-325-2133</span>搬入できる日: 月〜金（祝日、12月31日、1月1日〜3日、5月3日〜5日を除く）<br>受付時間: 8:00〜16:00<br>処分券方式のため、家島事務所または坊勢サービスセンターで購入条件を確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>家島町域の処理料金</h3>
+      <p><span class="admin-strong">処分券が必要</span><span class="admin-price">軽四輪車 2,050円</span> <span class="admin-price">2t車 6,830円</span> <span class="admin-price">2t車超 13,650円</span><br>令和7年10月1日からの改定案内があるため、既存処分券や差額の扱いは事前に確認します。</p>
+    </div>
+  </div>
+
+  <div class="admin-grid">
+    <div class="admin-box">
+      <h3>□ 持ち込みできない・別ルール品</h3>
+      <p>家電4品目、パソコン、消火器、バッテリー、灯油、塗料、農薬、危険物、建築廃材、事業所ごみ、自己解体ごみ、仏壇・写真などの供養希望品は、通常の家庭ごみや自己搬入と別確認にします。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ ごみ出し支援・高齢者支援</h3>
+      <p><span class="admin-strong">ふれあい収集 / リサイクル課 079-221-2404</span>可燃ごみをごみステーションまで運ぶことが困難な世帯へ、週1回玄関先まで収集に伺う制度です。対象要件、現地調査、ケアマネジャーや親族の立会い、安否確認の希望を確認します。</p>
+    </div>
+    <div class="admin-box">
+      <h3>□ 空家・住まいの相談</h3>
+      <p>売却前整理、解体前整理、相続後の実家じまい、長期不在の部屋は、空き家・住まい・福祉・ごみの相談を分けます。家財処分の前に、残す書類、固定資産関係、解体予定、補助制度の有無を確認します。</p>
+    </div>
+  </div>
+
+  <div class="admin-contact-grid">
+    <div class="admin-box">
+      <h3>業者へ伝えること</h3>
+      <p><span class="admin-strong">行政処分と屋内搬出を分けて共有</span>退去期限、立会い可否、鍵の受け渡し、家庭ごみで出すもの、処理施設へ持ち込むもの、業者が屋内搬出するもの、家電4品目、庭・物置・納屋、仏壇・写真、貴重品探索の範囲を分けます。</p>
+    </div>
+    <div class="admin-box">
+      <h3>当日の判断ミスを減らす準備</h3>
+      <p><span class="admin-strong">残す品・探す品・供養品を先に指定</span>通帳、印鑑、権利書、保険証券、写真、位牌、仏壇、貴金属、鍵、薬、介護用品、思い出の品は、処分品とは別にメモを作って共有します。</p>
+    </div>
+  </div>
+
+  <div class="admin-link-row">
+    <a href="https://www.city.himeji.lg.jp/" target="_blank" rel="noopener">姫路市公式サイト</a>
+    <a href="https://www.city.himeji.lg.jp/kurashi/category/2-10-3-0-0-0-0-0-0-0.html" target="_blank" rel="noopener">家庭ごみ</a>
+    <a href="https://www.city.himeji.lg.jp/kurashi/0000000155.html" target="_blank" rel="noopener">自分で持ち込む場合</a>
+    <a href="https://www.city.himeji.lg.jp/kurashi/0000014055.html" target="_blank" rel="noopener">ふれあい収集</a>
+    <a href="/hyogo/">兵庫県ページへ戻る</a>
+  </div>
+  <p class="source-note">出典: 姫路市公式サイト、姫路市「ごみ・リサイクル・美化」「家庭ごみ」「自分で持ち込む場合（有料）」「市で収集できないごみの種類と処理方法」「高齢者等世帯に対するごみ出し支援事業」。電話番号、受付時間、対象条件、料金、持ち込み条件は変更される場合があるため、作業日・見積もり前に公式情報で最新条件を確認してください。</p>
 </section>
 </main>
 <script id="common-kita-before-after-script">

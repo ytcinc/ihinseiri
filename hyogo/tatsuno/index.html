@@ -1365,87 +1365,101 @@
 </section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 
+<style id="tatsuno-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .admin-kicker { display:inline-flex; margin:0 0 10px; padding:6px 10px; border-radius:999px; background:#e5f1fb; color:#164f86; font-weight:800; font-size:.92rem; }
+#admin .section-title { margin-bottom:14px; }
+#admin .admin-lead { margin:0 0 16px; line-height:1.9; font-size:1.02rem; }
+#admin .admin-note { margin:0 0 20px; padding:14px 16px; border-left:5px solid #1f6fb2; background:#fff; border-radius:8px; line-height:1.85; }
+#admin .admin-grid, #admin .admin-contact-grid { display:grid; gap:14px; margin:18px 0; }
+#admin .admin-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+#admin .admin-contact-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+#admin .admin-box { background:#fff; border:1px solid #c7dff2; border-radius:10px; padding:16px; }
+#admin .admin-box h3 { margin:0 0 10px; color:#164f86; font-size:1.05rem; line-height:1.45; }
+#admin .admin-box p { margin:0; line-height:1.85; }
+#admin .admin-strong { display:block; margin-bottom:6px; font-weight:800; color:#1b3550; }
+#admin .admin-price { display:inline-block; margin:.2em 0; padding:5px 9px; border-radius:8px; background:#eaf4ff; color:#164f86; font-weight:800; }
+#admin .admin-link-row { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 8px; }
+#admin .admin-link-row a { display:inline-flex; align-items:center; justify-content:center; min-height:40px; padding:9px 13px; border-radius:999px; background:#1f6fb2; color:#fff; text-decoration:none; font-weight:800; }
+#admin .source-note { margin-top:14px; color:#526273; font-size:.92rem; line-height:1.7; }
+@media (max-width:820px) { #admin .admin-grid, #admin .admin-contact-grid { grid-template-columns:1fr; } }
+</style>
 <section id="admin" class="section admin-hotline-section">
-    <p class="section-kicker">たつの市の行政窓口・大型ごみ・持ち込み先</p>
-    <h2 class="section-title">たつの市で遺品整理前に確認したいごみ分別・一時多量ごみ・クリーンセンター</h2>
-    <p class="lead">たつの市で遺品整理・生前整理を進める前に、通常収集で出すもの、大型ごみとして収集日に出すもの、引越し・大掃除などで一時的に多量に出るためクリーンセンターへ直接搬入するもの、業者が屋内から搬出するものを分けて整理します。龍野・揖保川・御津地域と新宮地域では搬入先が異なるため、住所地を先に確認してください。</p>
-    <p class="lead">龍野町・揖保町・揖西町周辺の市街地、揖保川町・御津町方面の戸建て、新宮町方面の山あい住宅や広い敷地では、駐車位置、前面道路、階段、庭、納屋、物置、車庫まわりで搬出条件が変わります。退去期限、大型家具、家電4品目、農機具・工具、仏壇・写真、貴重品探索の範囲を先に分けておくと、行政でできる範囲と業者作業の範囲が見えやすくなります。</p>
+    <p class="admin-kicker">行政窓口・一時多量ごみ・地域別クリーンセンター</p>
+    <h2 class="section-title">たつの市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p class="admin-lead">たつの市で遺品整理・生前整理を進める前に、収集日に出せる少量ごみ、一時多量ごみとしてクリーンセンターへ持ち込むもの、市の許可業者へ相談するもの、専門業者が屋内から搬出する大型家財を分けて整理します。</p>
+    <p class="admin-note">龍野・揖保川・御津地域は揖龍クリーンセンター、新宮地域はにしはりまクリーンセンターが持ち込み先として案内されています。住所地で搬入先が変わるため、龍野町・揖保町・揖西町、揖保川町、御津町、新宮町のどこかを先に確認してください。</p>
 
-    <div class="harima-admin-grid">
-      <div class="harima-admin-card">
-        <h3>□ まず分ける4つの箱</h3>
-        <p><strong>1. 通常収集：</strong>指定ごみ袋に入る普通ごみ・可燃ごみ、資源ごみなど。</p>
-        <p><strong>2. 大型ごみ：</strong>タンス、本棚、机、椅子、ベッド、マットレス、ふとん、自転車、小型農機具など。</p>
-        <p><strong>3. 直接搬入：</strong>引越し、大掃除、実家じまいで一時的に多量に出たごみ。</p>
-        <p><strong>4. 業者作業：</strong>屋内搬出、階段作業、分解搬出、貴重品探索、仏壇・写真、庭・物置・車庫まわり。</p>
+    <div class="admin-grid">
+      <div class="admin-box">
+        <h3>□ まず分ける順番</h3>
+        <p><span class="admin-strong">収集・直接搬入・許可業者・屋内搬出</span>日常ごみは収集日、引越し・大掃除・実家じまいで一時的に多量に出るごみは直接搬入、自力搬出が難しい場合は市の許可業者や片付け業者へ分けます。</p>
       </div>
-      <div class="harima-admin-card">
-        <h3>□ たつの市役所・基本窓口</h3>
-        <p>所在地：〒679-4192 兵庫県たつの市龍野町富永1005-1</p>
-        <p>代表電話：0791-64-3131<br>ファクス：0791-63-2594</p>
-        <p>住所変更、戸籍、福祉、空き家、住まい、ごみ相談は担当窓口が分かれるため、相続後の実家じまいでは必要な手続きを先に整理します。</p>
-        <a href="https://www.city.tatsuno.lg.jp/" target="_blank" rel="noopener">たつの市公式サイトを確認</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ ごみ相談・担当課</h3>
-        <p>たつの市の家庭ごみ、分別、一時多量ごみ、収集処理できないごみの公式ページでは、環境課が問い合わせ先として案内されています。</p>
-        <p>環境課：0791-64-3150<br>ファックス：0791-63-3785</p>
-        <p>品目名、数量、サイズ、住所地の地域、搬入希望日、屋内搬出の有無を控えてから相談すると確認が進みやすくなります。</p>
-        <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/4/4622.html" target="_blank" rel="noopener">ごみの分け方を確認</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 収集で出しやすいもの</h3>
-        <p>たつの市公式では、新宮地域を除く地域は普通ごみ・資源ごみ・大型ごみ、新宮地域は可燃ごみ・不燃ごみ・資源ごみ・大型ごみに分けて案内されています。</p>
-        <p>指定ごみ袋に入らないものは大型ごみとして扱う案内があるため、家具、寝具、自転車、小型農機具などは収集日、排出場所、安全な出し方を確認します。</p>
-        <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/3/4634.html" target="_blank" rel="noopener">ごみ収集カレンダーを確認</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 龍野・揖保川・御津地域の持ち込み</h3>
-        <p>引越しや大掃除で家庭から一時的に多量に出たごみは、クリーンセンターへ直接搬入するよう公式ページで案内されています。</p>
-        <p>搬入先：揖龍クリーンセンター<br>所在地：たつの市揖西町前地513-1<br>電話：0791-64-8018</p>
-        <p>予約受付時間：平日 9時から16時30分（12時から13時を除く）、土曜日 9時から12時。祝日・12月31日から1月3日は除外、12月30日は9時から12時。事前に2日前までの電話予約が必要です。</p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 新宮地域の持ち込み</h3>
-        <p>新宮地域にお住まいの方は、にしはりまクリーンセンターが搬入先として案内されています。住所地によって搬入先が変わるため、見積もり前に地域を確認してください。</p>
-        <p>搬入先：にしはりまクリーンセンター<br>所在地：佐用郡佐用町三ツ尾483-10<br>電話：0790-79-8550</p>
-        <p>手数料：10キログラム当たり100円（分別された資源ごみは無料）。予約受付時間は平日・土曜・祝日 8時30分から16時30分（日曜・12月31日から1月3日を除く）。事前に電話予約が必要です。</p>
-        <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/4/4629.html" target="_blank" rel="noopener">一時多量ごみの条件を確認</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 家電4品目・パソコン</h3>
-        <p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象です。通常収集や大型ごみに混ぜず、販売店、メーカー、指定引取場所、収集運搬の方法を別に確認します。</p>
-        <p>パソコンも通常の収集・処理できない品目に含まれるため、メーカー回収や小型家電回収など、公式案内に沿って分けてください。</p>
-        <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/4/4596.html" target="_blank" rel="noopener">家電リサイクル対象品を確認</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 収集・処理できない品目</h3>
-        <p>公式ページでは、テレビ、冷蔵庫、冷凍庫、洗濯機、衣類乾燥機、エアコン、パソコン、毒物、劇物、農薬、ガスボンベ、廃油、バッテリー、自動車部品、単車、消火器、機械器具、大型農機具、モーター、船舶などは販売店やメーカーへ確認するよう案内されています。</p>
-        <p>液状のてんぷら油、ペンキ等の処理困難物、動物の死骸、事業系廃棄物も収集・処理できない品目として分けます。</p>
-      </div>
-      <div class="harima-admin-card">
+      <div class="admin-box">
         <h3>□ たつの市の地域事情</h3>
-        <p>龍野町・揖保町周辺は市街地の前面道路や駐車位置、集合住宅の搬出時間を確認します。揖西町・揖保川町・御津町方面は戸建て、庭、物置、車庫、海沿い・川沿いの道路条件が見積もりに影響します。</p>
-        <p>新宮町方面はにしはりまクリーンセンターの利用条件、山あい住宅の車両導線、納屋・倉庫・農機具・工具類の量を先に確認すると、当日の追加作業を減らせます。</p>
+        <p><span class="admin-strong">龍野・新宮・御津で条件が違う</span>龍野町の古い住宅、揖保川町・御津町の戸建て、新宮町方面の山あい住宅では、前面道路、駐車位置、階段、納屋・物置・農具、海側の屋外品まで確認します。</p>
       </div>
-      <div class="harima-admin-card">
+      <div class="admin-box">
         <h3>□ 写真で伝える場所</h3>
-        <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、納戸、ベランダ、庭、物置、車庫、納屋を撮影します。</p>
-        <p>大型家具は幅・高さ、搬出経路の曲がり角、階段幅が分かる写真があると、人数、車両、養生、分解搬出の要否を判断しやすくなります。</p>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 業者へ伝えること</h3>
-        <p>退去期限、立会い可否、鍵の受け渡し、通常収集で出すもの、大型ごみで出すもの、クリーンセンターへ持ち込むもの、業者が屋内搬出するものを分けて伝えます。</p>
-        <p>家電4品目、物置・車庫・庭、仏壇・写真、重要書類、通帳、印鑑、権利書、貴金属、買取希望品、写真報告の範囲も見積もり前に共有してください。</p>
-        <a href="#process">相談前の準備へ</a>
-      </div>
-      <div class="harima-admin-card">
-        <h3>□ 無許可回収に注意</h3>
-        <p>たつの市公式では、市の許可を受けていない回収業者が家庭ごみを収集することは認められていないと案内されています。廃家電や粗大ごみの処分で無許可回収業者を利用しないよう注意してください。</p>
-        <p>家族で運べない場合は、公式の一般廃棄物収集運搬業許可業者や、適正処理を説明できる片付け業者に相談します。</p>
+        <p><span class="admin-strong">屋内外と搬入先を整理</span>玄関、廊下、階段、駐車位置、各部屋、押入れ、庭、物置、車庫、納屋を撮影します。大型家具はサイズ、搬出経路、曲がり角、階段幅が分かる写真を用意します。</p>
       </div>
     </div>
-    <p class="source-note">出典：たつの市公式サイト、たつの市「ごみの分け方」「一時多量ごみ・収集処理できないごみ」「ごみ収集カレンダー」「家電リサイクル法対象電化製品のリサイクル」。電話番号、受付時間、手数料、対象品目、搬入条件は変更される場合があります。相談・搬入前に公式ページで最新情報を確認してください。</p>
+
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h3>□ 自治体・関連窓口</h3>
+        <p><span class="admin-strong">たつの市役所</span>所在地: 〒679-4192 兵庫県たつの市龍野町富永1005-1<br>電話番号: 0791-64-3131<br>FAX: 0791-63-2594</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ ごみ相談・環境課</h3>
+        <p><span class="admin-strong">環境課</span>所在地: 兵庫県たつの市龍野町富永1005-1<br>電話番号: 0791-64-3150<br>FAX: 0791-63-3785<br>家庭ごみ、分別、一時多量ごみ、収集・処理できないごみの確認先です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 龍野・揖保川・御津地域</h3>
+        <p><span class="admin-strong">揖龍クリーンセンター</span>所在地: たつの市揖西町前地513-1<br>電話: 0791-64-8018<br>対象: 龍野・揖保川・御津地域にお住まいの方。手数料は揖龍クリーンセンターの料金表で確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 揖龍クリーンセンター予約</h3>
+        <p><span class="admin-strong">2日前までに電話予約</span>予約受付: 平日 9:00〜16:30（12:00〜13:00を除く）/ 土曜 9:00〜12:00<br>祝日・12月31日〜1月3日は除く。12月30日は9:00〜12:00。持ち込み時間帯は受付時に相談します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 新宮地域</h3>
+        <p><span class="admin-strong">にしはりまクリーンセンター</span>所在地: 佐用郡佐用町三ツ尾483-10<br>電話: 0790-79-8550<br>対象: 新宮地域にお住まいの方。<br><span class="admin-price">手数料: 10kgあたり100円（分別された資源ごみは無料）</span></p>
+      </div>
+      <div class="admin-box">
+        <h3>□ にしはりま予約</h3>
+        <p><span class="admin-strong">事前に電話予約</span>予約受付: 平日・土曜・祝日 8:30〜16:30（日曜・12月31日〜1月3日を除く）<br>搬入できる品目、車両条件、荷下ろし方法は搬入前に確認してください。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 許可業者へ相談する場面</h3>
+        <p><span class="admin-strong">自力搬出・直接搬入が難しい時</span>引越し時や大掃除などで家庭から一時多量に出たごみを直接搬入できない場合、または事業系一般廃棄物を排出する場合は、たつの市一般廃棄物収集運搬業許可業者を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 別ルールになりやすい品目</h3>
+        <p><span class="admin-strong">収集・処理できないごみ</span>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコン、パソコン、毒物、劇物、農薬、ガスボンベ、廃油、バッテリー、自動車部品、単車、消火器、機械器具、大型農機具、船舶、ペンキ、動物の死骸、事業系廃棄物は別確認です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 業者へ伝えること</h3>
+        <p><span class="admin-strong">行政処分と屋内搬出を分ける</span>退去期限、立会い可否、鍵の受け渡し、住所地の地域、収集日に出すもの、クリーンセンターへ持ち込むもの、許可業者へ相談するもの、業者が屋内搬出するもの、庭・物置・車庫、仏壇・写真、貴重品探索の範囲を伝えてください。</p>
+      </div>
+    </div>
+
+    <div class="admin-link-row">
+      <a href="https://www.city.tatsuno.lg.jp/">たつの市公式サイト</a>
+      <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/index.html">ごみ・リサイクル</a>
+      <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/index.html">家庭ごみ</a>
+      <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/3/index.html">収集</a>
+      <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/4/index.html">分別</a>
+      <a href="https://www.city.tatsuno.lg.jp/kurashi-tetsuzuki/gomi-recycle/1/4/4629.html">一時多量ごみ</a>
+      <a href="https://www.city.tatsuno.lg.jp/iju/akiya-bank/1538.html">空き家の利活用</a>
+    </div>
+    <p class="source-note">出典: たつの市公式サイト、たつの市「ごみ・リサイクル」「家庭ごみ」「収集」「分別」「一時多量ごみ・収集処理できないごみ」「空き家の利活用」。電話番号、受付時間、手数料、対象条件は変更される場合があります。相談・搬入前に公式ページで最新情報を確認してください。</p>
   </section>
 
 </main>

@@ -2151,21 +2151,116 @@
       </section>
 
       <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">和歌山市の行政窓口・粗大ごみ・持込先確認</h2>
-  <p>和歌山市で遺品整理・生前整理を進める前に、行政収集で出す物、自己搬入できる物、専門業者に任せる物を分けます。受付日、料金、本人確認、搬入車両、家電4品目、危険物、処理困難物は変更される場合があるため、相談前に公式情報で確認してください。</p>
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>和歌山市役所</strong><br>和歌山市公式サイトで担当課、受付時間、窓口の場所を確認します。戸籍、福祉、空き家、住まい、地域包括支援の相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p><a href="https://www.city.wakayama.wakayama.jp/" target="_blank" rel="noopener">和歌山市公式情報を確認</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>和歌山市の粗大ごみ・ごみ分別案内</strong><br>粗大ごみ、戸別収集、処理券・証紙、収集日、収集できない品目を確認します。屋内からの大型家具搬出、階段作業、分別が難しい家財は行政収集と業者作業を分けて考えます。</p><a href="https://www.city.wakayama.wakayama.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p><strong>和歌山市青岸清掃センター</strong><br>和歌山市の粗大ごみ受付、自己搬入、家電4品目を分けて確認。 自己搬入は、本人確認、予約要否、搬入日、車両条件、手数料、家電4品目・危険物・事業系ごみの扱いを公式情報で確認してください。</p><a href="/wakayama/" rel="noopener">府県ページの処理圏情報を見る</a></div>
-    <div class="admin-card"><h3>ごみ出し支援・高齢者支援</h3><p>高齢者・障がい者など、自力でごみを出しにくい世帯は、ふれあい収集、戸別支援、福祉窓口、地域包括支援センターの対象条件を確認します。施設入居前整理や生前整理では、家族の立会い可否も先に決めます。</p><a href="#compare" rel="noopener">業者比較の確認へ</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分、庭・物置・車庫、仏壇や写真の供養は、自治体の空き家担当や住まいの相談窓口も確認します。補助制度は年度や対象条件で変わります。</p><a href="#local" rel="noopener">住宅特性・統計を見る</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出す物、和歌山市青岸清掃センターへ持ち込む物、業者が屋内搬出する物、探す貴重品、写真報告の範囲を分けて伝えてください。</p><a href="#process" rel="noopener">相談の流れへ</a></div>
-  </div>
-  <p class="source-note">出典：和歌山市公式情報。電話番号、受付時間、持込先、対象条件、料金は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
-</section>
+  <div class="container">
+    <style id="wakayama-city-admin-readable-style-v2">
+      #admin.admin-hotline-section{border:2px solid #1f6fb2;background:#f7fbff;border-radius:12px;padding:clamp(22px,4vw,36px);box-shadow:0 10px 24px rgba(31,111,178,.12)}
+      #admin .container{max-width:1120px;margin:0 auto}
+      #admin .admin-kicker{display:inline-flex;margin:0 0 10px;padding:6px 10px;border-radius:999px;background:#e5f1fb;color:#164f86;font-weight:800;font-size:.92rem}
+      #admin .section-title{margin-bottom:14px}
+      #admin .admin-lead{margin:0 0 16px;line-height:1.9;font-size:1.02rem}
+      #admin .admin-note{margin:0 0 20px;padding:14px 16px;border-left:5px solid #1f6fb2;background:#fff;border-radius:8px;line-height:1.85}
+      #admin .admin-grid,#admin .admin-contact-grid{display:grid;gap:14px;margin:18px 0}
+      #admin .admin-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      #admin .admin-contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      #admin .admin-box{background:#fff;border:1px solid #c7dff2;border-radius:10px;padding:16px}
+      #admin .admin-box h3{margin:0 0 10px;color:#164f86;font-size:1.05rem;line-height:1.45}
+      #admin .admin-box p{margin:0 0 8px;line-height:1.85}
+      #admin .admin-box p:last-child{margin-bottom:0}
+      #admin .admin-strong{display:block;margin-bottom:6px;font-weight:800;color:#1b3550}
+      #admin .admin-price{display:inline-block;margin:.2em 0;padding:5px 9px;border-radius:8px;background:#eaf4ff;color:#164f86;font-weight:800}
+      #admin .admin-link-row{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 8px}
+      #admin .admin-link-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:9px 13px;border-radius:999px;background:#1f6fb2;color:#fff;text-decoration:none;font-weight:800}
+      #admin .source-note{margin-top:14px;color:#526273;font-size:.92rem;line-height:1.7}
+      @media (max-width:820px){#admin .admin-grid,#admin .admin-contact-grid{grid-template-columns:1fr}}
+    </style>
+    <span class="admin-kicker">公式窓口・粗大ごみ・自己搬入</span>
+    <h2 class="section-title">和歌山市の行政窓口・粗大ごみ・持ち込み先</h2>
+    <p class="admin-lead">和歌山市で遺品整理・生前整理を進める前に、通常の収集で出すもの、粗大ごみとして個別収集を申し込むもの、青岸ストックヤードなどへ自己搬入するもの、家電4品目・電池類など別ルールで確認するもの、業者が屋内から搬出するものを分けて整理します。</p>
+    <p class="admin-note"><strong>先に見るポイント:</strong> 和歌山市の粗大ごみは、家具類・寝具類・楽器類・家電製品などで「1辺の長さが30cmを超えるもの」が目安です。処分方法は個別収集と自己搬入の2通りが案内されています。個別収集はインターネットまたは電話で申し込み、収集は原則として受付日の翌週以降です。収集日当日の午前8時までに、受付時に決めた場所へ「名前・粗大ごみ」と書いた紙を貼って出します。</p>
 
-      <style id="wakayama-report-style-v1">
+    <div class="admin-grid">
+      <div class="admin-box">
+        <h3>□ 先に5分類する</h3>
+        <p><span class="admin-strong">1. 普通ごみ・資源</span>市の通常収集で出せる少量のもの。</p>
+        <p><span class="admin-strong">2. 粗大ごみ個別収集</span>自分で屋外へ出せる大型家具・寝具など。</p>
+        <p><span class="admin-strong">3. 自己搬入</span>車で運べるごみ。搬入先・受付時間・本人確認を確認。</p>
+        <p><span class="admin-strong">4. 別ルール品</span>家電4品目、電池類、消火器、危険物、事業系ごみ、建築廃材。</p>
+        <p><span class="admin-strong">5. 業者作業</span>屋内搬出、階段作業、貴重品探索、仏壇・写真の供養、短い退去期限。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 和歌山市の地域事情</h3>
+        <p>和歌山駅・和歌山市駅周辺のマンションは、管理会社への届出、共用部養生、搬出時間、駐車位置を確認します。</p>
+        <p>中心市街地や旧住宅地は前面道路が狭いことがあり、2トン車の停車位置、近隣への声かけ、長時間駐車の可否が見積もりに影響します。</p>
+        <p>和歌浦・加太方面、六十谷・紀伊方面、山手や沿岸部の戸建てでは、坂道、段差、庭、物置、車庫、台風後の片付け品まで先に写真で確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 写真で伝える場所</h3>
+        <p>玄関、廊下、階段、エレベーター、駐車位置、各部屋、押入れ、納戸、ベランダ、庭、物置、車庫を撮っておくと、行政で出すものと業者搬出に回すものを分けやすくなります。</p>
+        <p>大型家具は幅・高さ、搬出経路の曲がり角、階段幅、分解できるかが分かる写真を用意します。</p>
+      </div>
+    </div>
+
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h3>□ 自治体・関連窓口</h3>
+        <p><span class="admin-strong">和歌山市役所</span>所在地: 〒640-8511 和歌山市七番丁23番地<br>代表電話: 073-432-0001</p>
+        <p><span class="admin-strong">ごみ・リサイクルの確認</span>和歌山市 廃棄物対策課<br>電話: 073-435-1352 / FAX: 073-435-1270</p>
+        <p>戸籍、住所変更、相続後の手続き、福祉、空き家、住まい、ごみの相談先は担当が分かれます。実家じまいでは、片付け前に必要な窓口を整理します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 粗大ごみ・大型ごみ</h3>
+        <p><span class="admin-strong">対象の目安</span>1辺の長さが30cmを超える家具類、寝具類、楽器類、家電製品など。</p>
+        <p><span class="admin-strong">申し込み</span>インターネットまたは電話で粗大ごみ収集を依頼します。収集は原則、受付日の翌週以降です。</p>
+        <p><span class="admin-strong">出し方</span>収集日当日の午前8時までに、受付時に決めた場所へ「名前・粗大ごみ」と書いた紙を貼って出します。ダンボールや発泡スチロールなどの梱包材は、資源・一般ごみの分別も確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 持ち込み・自己搬入</h3>
+        <p><span class="admin-strong">青岸ストックヤード</span>所在地: 和歌山市湊1342<br>一般ごみ、粗大ごみ、蛍光管等、がれき類、小型家電等、かん・びん・ペットボトル、紙・布などの自己搬入先として案内されています。</p>
+        <p><span class="admin-strong">小型家電・蛍光管等の持ち込み確認先</span>北事務所: 和歌山市出島79-1 / 電話 073-471-1503<br>西事務所: 和歌山市土入325 / 電話 073-453-0253</p>
+        <p>搬入時間は月曜日から金曜日の9時から15時までが案内されています。祝日を含む扱い、搬入できる品目、車両条件、手数料、本人確認は、出発前に公式ページで確認してください。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 別ルールになりやすい品目</h3>
+        <p>家電4品目、パソコン、電池類、小型充電式電池、リチウムイオン電池、モバイルバッテリー、電動工具、電動自転車のバッテリー、消火器、ガスボンベ、灯油、塗料、農薬、金庫、事業系ごみ、建築廃材、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。</p>
+        <p><span class="admin-price">電池類は令和8年4月から拠点回収開始予定</span>電池やバッテリーは発火事故につながりやすいため、混ぜずに公式の排出方法を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ ごみ出し支援・高齢者支援</h3>
+        <p><span class="admin-strong">ふれあい収集</span>自力でごみ集積場所まで出しにくい在宅世帯を対象に、職員が玄関先などへ収集に伺う制度です。収集は週1回で、一般ごみ、かん、びん、紙、布、ペットボトルなどが対象です。</p>
+        <p><span class="admin-strong">対象の目安</span>65歳以上で要介護度2以上の方、または視覚障害・肢体不自由など一定の障害があり、同居家族も同様にごみ出しが難しい場合など。粗大ごみや小型家電等は対象外です。</p>
+        <p><span class="admin-strong">相談先</span>収集センター北事務所: 073-471-1503 / FAX 073-471-2140<br>廃棄物対策課: 073-435-1352 / FAX 073-435-1270</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 空き家・住まいの相談</h3>
+        <p>売却前整理、解体前整理、長期不在の家財整理、相続後の実家じまいは、空き家・住まい関連の制度と家財処分を分けて確認します。</p>
+        <p>和歌山市には住まい関連の相談、移住・定住に関する支援制度、空き家改修・除却などの制度案内があります。補助金や支援制度は、建物状態、所有者、申請時期、工事前申請、市内業者利用など条件が付く場合があるため、片付けや解体の前に確認します。</p>
+      </div>
+    </div>
+
+    <div class="admin-box">
+      <h3>□ 業者へ伝えること</h3>
+      <p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、粗大ごみ個別収集を申し込むもの、青岸ストックヤードなどへ自己搬入するもの、業者が屋内搬出するもの、家電4品目、電池類、危険物、庭・物置・車庫、車両導線、仏壇・写真、貴重品探索、作業後の写真報告を分けて伝えてください。</p>
+      <p>残す品、探してほしい通帳・権利書・印鑑・保険証券、供養したい品、買取希望品を別にしておくと、作業中の判断ミスを減らせます。</p>
+    </div>
+
+    <div class="admin-link-row">
+      <a href="https://www.city.wakayama.wakayama.jp/" target="_blank" rel="noopener">和歌山市公式サイト</a>
+      <a href="https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/index.html" target="_blank" rel="noopener">ごみ・環境・衛生</a>
+      <a href="https://rerecle.net/" target="_blank" rel="noopener">リリクルネット</a>
+      <a href="https://rerecle.net/wakekata/sodaigomi.html" target="_blank" rel="noopener">粗大ごみ個別収集</a>
+      <a href="https://rerecle.net/wakekata/self-loading.html" target="_blank" rel="noopener">ごみの自己搬入</a>
+      <a href="https://rerecle.net/wakekata/syobun.html" target="_blank" rel="noopener">家電4品目</a>
+      <a href="https://rerecle.net/wakekata/dekinai.html" target="_blank" rel="noopener">市で処理できないもの</a>
+      <a href="https://rerecle.net/syusyunitsuite/fureai.html" target="_blank" rel="noopener">ふれあい収集</a>
+      <a href="https://www.city.wakayama.wakayama.jp/kurashi/gomi_kankyo/1001113/1001251/1067112.html" target="_blank" rel="noopener">電池類の排出方法</a>
+      <a href="https://www.city.wakayama.wakayama.jp/kurashi/kourei_kaigo/1001100/index.html" target="_blank" rel="noopener">地域包括支援</a>
+      <a href="https://www.city.wakayama.wakayama.jp/kurashi/sumai_jyougesuidou/1001110/index.html" target="_blank" rel="noopener">住まい</a>
+      <a href="#compare" rel="noopener">業者比較の確認点へ</a>
+    </div>
+    <p class="source-note">出典: 和歌山市公式サイト、和歌山市ごみ分別検索サイト「リリクルネット」、粗大ごみ個別収集、ごみの自己搬入、家電4品目、市で収集・処理できないもの、ふれあい収集、電池類の排出方法、地域包括支援、住まい関連ページ。電話番号、受付時間、対象条件、搬入条件、料金は変更される場合があります。相談前・搬入前に公式ページで最新情報を確認してください。</p>
+  </div>
+</section>
+<style id="wakayama-report-style-v1">
 .wakayama-report{margin-top:52px;padding:26px;border:1px solid #e4ded6;background:#fff;box-shadow:0 12px 28px rgba(34,28,22,.06)}
 .wakayama-report .section-title{margin:0 0 18px;padding:0 0 12px;border:0!important;border-bottom:3px solid #eadfc9!important;background:transparent!important;color:#2B2B2B!important;box-shadow:none!important}
 .wakayama-report .section-title:before{content:"";display:inline-block;width:12px;height:12px;margin-right:9px;background:#D05300;border-radius:2px;vertical-align:middle}

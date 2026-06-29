@@ -1002,6 +1002,34 @@
 </style>
 
 
+
+<style id="minamiawaji-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .container { max-width: 1120px; margin: 0 auto; }
+#admin .admin-kicker { display:inline-flex; margin:0 0 10px; padding:6px 10px; border-radius:999px; background:#e5f1fb; color:#164f86; font-weight:800; font-size:.92rem; }
+#admin .section-title { margin-bottom:14px; }
+#admin .admin-lead { margin:0 0 16px; line-height:1.9; font-size:1.02rem; }
+#admin .admin-note { margin:0 0 20px; padding:14px 16px; border-left:5px solid #1f6fb2; background:#fff; border-radius:8px; line-height:1.85; }
+#admin .admin-grid, #admin .admin-contact-grid { display:grid; gap:14px; margin:18px 0; }
+#admin .admin-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+#admin .admin-contact-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+#admin .admin-box { background:#fff; border:1px solid #c7dff2; border-radius:10px; padding:16px; }
+#admin .admin-box h3 { margin:0 0 10px; color:#164f86; font-size:1.05rem; line-height:1.45; }
+#admin .admin-box p { margin:0; line-height:1.85; }
+#admin .admin-strong { display:block; margin-bottom:6px; font-weight:800; color:#1b3550; }
+#admin .admin-price { display:inline-block; margin:.2em 0; padding:5px 9px; border-radius:8px; background:#eaf4ff; color:#164f86; font-weight:800; }
+#admin .admin-link-row { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 8px; }
+#admin .admin-link-row a { display:inline-flex; align-items:center; justify-content:center; min-height:40px; padding:9px 13px; border-radius:999px; background:#1f6fb2; color:#fff; text-decoration:none; font-weight:800; }
+#admin .source-note { margin-top:14px; color:#526273; font-size:.92rem; line-height:1.7; }
+@media (max-width:820px){ #admin .admin-grid, #admin .admin-contact-grid { grid-template-columns:1fr; } }
+</style>
+
 </head>
 <body>
 <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span><span class="brand-main"><span class="brand-area-name">南あわじ市の</span> 遺品整理・生前整理jp</span><br><span class="brand-sub">地域別の相談前チェックガイド</span></span></a><nav class="nav" aria-label="サイト内ナビ"><a href="/hyogo/">兵庫県</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a><a href="#local">地域特性</a><a href="#price">料金目安</a><a class="call" href="#process">相談準備</a></nav></div></header>
@@ -1298,29 +1326,92 @@
 <section id="faq" class="section"><h2 class="section-title">よくある質問</h2><div class="grid cols2"><div class="card"><h3>立会いなしでも依頼できますか？</h3><p>鍵の受け渡し、写真報告、残す品の事前共有を行えば、遠方のご家族でも進めやすくなります。</p></div><div class="card"><h3>見積もり前に何を用意すればよいですか？</h3><p>部屋全体、押入れ、物置、搬出経路、駐車位置の写真と、残したい品・探したい書類のリストがあるとスムーズです。</p></div><div class="card"><h3>南あわじ市で見積もり前に地域事情として何を伝えるべきですか？</h3><p>南あわじ市は三原周辺の戸建て、福良や海沿いの住宅、阿万・西淡方面の農家住宅で、室内外の整理量が大きく変わります。納屋・倉庫・農具まで含めた確認が必要です。</p></div><div class="card"><h3>南あわじ市で搬出が難しくなりやすいのはどんな住まいですか？</h3><p>兵庫県内では、神戸市内の坂道・高層マンション、阪神間の集合住宅、播磨の戸建て、但馬・丹波・淡路の広い敷地や山間部で条件が変わります。搬出経路と車両位置を写真で共有してください。 特に大型家具、仏壇、家電リサイクル品、長く使っていない屋外品がある場合は、屋内搬出と車両までの距離を事前に確認してください。</p></div><div class="card"><h3>南あわじ市の実家じまいは行政制度と業者作業をどう分ければよいですか？</h3><p>少量で自力搬出できるものは自治体の粗大ごみ・持込制度を確認し、屋内からの搬出、大量家財、短い退去期限、貴重品探索、供養、買取査定がある場合は業者見積もりで作業範囲を分けて比較してください。</p></div></div></section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 <section id="admin" class="section admin-hotline-section">
-  <div class="admin-hotline-inner">
-    <p class="section-kicker">行政窓口・粗大ごみ・持ち込み先</p>
+  <div class="container">
+    <p class="admin-kicker">行政窓口・粗大ごみ・中央リサイクルセンター</p>
     <h2 class="section-title">南あわじ市の行政窓口・粗大ごみ・持ち込み先</h2>
-    <p class="lead">南あわじ市で遺品整理・生前整理・実家じまいを進める前に、行政の粗大ごみで出せるもの、中央リサイクルセンターへ直接持ち込むもの、業者が屋内から搬出するものを分けて整理します。南あわじ市は戸建て、農家住宅、倉庫、納屋、海沿い住宅の整理が多く、粗大ごみの軒先収集には予約・回数・搬出場所の条件があります。退去期限、大型家具、家電リサイクル対象品、農具・漁具、庭・物置、仏壇・写真、貴重品探索の範囲を先に決めてください。</p>
+    <p class="admin-lead">南あわじ市で遺品整理・生前整理・実家じまいを進める前に、中央リサイクルセンターへ直接持ち込む粗大ごみ、事前予約で軒先収集を依頼する粗大ごみ、業者が屋内から搬出する家財を分けます。三原・市周辺の戸建て、福良・阿万・灘方面の海沿い住宅、西淡・緑・広田方面の農家住宅では、納屋、倉庫、農具、漁具、庭木、車両進入路まで整理範囲に入ることがあります。</p>
+    <p class="admin-note"><strong>南あわじ市は「直接持ち込み」と「軒先収集」の条件差が大きいです。</strong> 直接持ち込みは中央リサイクルセンター、軒先収集は環境課への事前予約です。引越しや家屋整理で出る大量の粗大ごみは軒先収集できない案内があるため、一軒分の片付けでは行政で出す少量品と業者搬出を先に分けます。</p>
+
     <div class="admin-grid">
-      <div class="admin-card"><h3>□ まず分ける4つの箱</h3><p><strong>1. 行政の粗大ごみで出すもの</strong><br>1辺の長さが40cm以上の家庭ごみは粗大ごみとして確認します。軒先収集は事前予約と条件確認が必要です。</p><p><strong>2. 自分で持ち込むもの</strong><br>車で運べる粗大ごみは中央リサイクルセンターへの直接持込を確認します。予約不要とされていますが、品目・形状・混載可否は事前確認が安心です。</p><p><strong>3. 業者が屋内搬出するもの</strong><br>大型家具、階段作業、納屋・倉庫、農具、物置、短い退去期限、大量家財は業者見積もりに分けます。</p><p><strong>4. 別ルールのもの</strong><br>家電リサイクル対象品、農業・漁業用資材、タイヤ、バッテリー、建設廃材、ピアノ、金庫などは通常の粗大ごみと分けます。</p></div>
-      <div class="admin-card"><h3>□ 市役所・基本窓口</h3><p><strong>南あわじ市役所</strong><br>所在地: 兵庫県南あわじ市市善光寺22番地1<br>代表電話: 0799-43-5001<br>開庁時間: 8:30〜17:15（土曜・日曜、祝日、年末年始を除く）</p><p>住所変更、戸籍、福祉、空き家、住まい、地域包括支援、相続後の実家じまいに関する相談先は担当課が分かれます。見積もり前に、行政手続きと片付け作業の窓口を分けて整理します。</p><a href="https://www.city.minamiawaji.hyogo.jp/" target="_blank" rel="noopener">南あわじ市公式情報を確認</a></div>
-      <div class="admin-card"><h3>□ ごみ相談・環境課</h3><p><strong>南あわじ市 市民部 環境課</strong><br>所在地: 南あわじ市市善光寺22番地1<br>電話: 0799-43-5214<br>FAX: 0799-43-5314</p><p>ごみ減量化、家庭ごみ、粗大ごみ、リサイクル、火葬場の管理運営などの相談先です。粗大ごみの軒先収集、収集できないごみ、家電リサイクル、事業系ごみは作業日より前に確認してください。</p><a href="https://www.city.minamiawaji.hyogo.jp/soshiki/kankyou/" target="_blank" rel="noopener">環境課を確認</a></div>
-      <div class="admin-card"><h3>□ 粗大ごみの考え方</h3><p><strong>1辺の長さが40cm以上の家庭ごみ</strong><br>南あわじ市では、家庭から出る粗大ごみの直接持込と軒先収集が案内されています。</p><p>見積もり前には、タンス、食器棚、ベッド、布団、自転車、ソファ、物置内の道具などを「自分で運べるもの」と「屋内搬出が必要なもの」に分けます。行政の収集は屋内からの搬出作業ではないため、重い家具や階段下ろしは業者作業として考えてください。</p><a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/sodaigomi.html" target="_blank" rel="noopener">粗大ごみを確認</a></div>
-      <div class="admin-card"><h3>□ 直接持ち込み</h3><p><strong>中央リサイクルセンター</strong><br>所在地: 南あわじ市榎列上幡多1911番地1<br>電話: 0799-43-3200<br>受入日時: 月〜金（祝日も営業）、毎月第2日曜 9:00〜16:00<br>手数料: 10kgあたり160円</p><p>リサイクルセンター入口の計量所で係員の指示に従います。南あわじ市内の家庭で発生したごみは何回でも利用でき、予約不要と案内されています。車両に積める量、降ろしやすさ、搬入できない品目は事前に確認してください。</p><a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/sodaigomi.html" target="_blank" rel="noopener">中央リサイクルセンターの条件を確認</a></div>
-      <div class="admin-card"><h3>□ 軒先収集</h3><p><strong>事前予約が必要</strong><br>申込先: 環境課 0799-43-5214<br>申込期限: 希望日の1週間前まで<br>収集日: 毎週水曜・金曜、毎月第2日曜の午前中（時間指定不可）<br>手数料: 10kgあたり320円</p><p>利用は4月から9月の間、10月から3月の間で1世帯につき1回限りです。申し込み時にごみの内容をすべて伝え、粗大ごみは2トントラックが通れる道まで出します。立会いが必要で、料金は現場で重量を量った後、後日納付書で支払う流れです。</p></div>
-      <div class="admin-card"><h3>□ 軒先収集で注意すること</h3><p>引越しや家屋整理などで出た大量の粗大ごみは収集できないと案内されています。大きさ・重さの関係で収集車に積載できないものも収集できない場合があります。</p><p>75歳以上高齢者のみの世帯、重度障害者がいる世帯、生活保護世帯などは減免の対象となる場合があります。対象かどうかは市が確認するため、申し込み時に必ず申し出ます。</p><p>遺品整理で一軒分の家財がある場合は、行政収集で少量を出すのか、業者がまとめて屋内搬出するのかを先に分けてください。</p></div>
-      <div class="admin-card"><h3>□ 市で収集・持込できないもの</h3><p>農機具、家電リサイクル対象品、タイヤ、バッテリー、建設廃材、農業・漁業用資材、ピアノ、金庫などは、粗大ごみとして持ち込み・収集できないものに含まれます。</p><p>農業・漁業用資材は資材販売店へ、ガスボンベ、バッテリー、原動機付き自転車、オートバイ、消火器、農機具、耐火金庫、大型鉄製品、農薬類、漁具、自動車タイヤは販売店または専門業者へ相談します。納屋や倉庫を片付ける場合は、通常の家庭ごみと混ぜずに仕分けてください。</p><a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/gomi2.html" target="_blank" rel="noopener">収集できないごみを確認</a></div>
-      <div class="admin-card"><h3>□ 家電リサイクル対象品</h3><p><strong>市の粗大・不燃ごみ、中央リサイクルセンターへの持ち込み不可</strong><br>エアコン、ブラウン管テレビ・液晶テレビ・プラズマテレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品目です。</p><p>買い替え時は購入する販売店へ、購入店が分かる場合は購入店へ依頼します。自分で指定引取場所へ持ち込む場合は、郵便局で家電リサイクル券を購入し、淡路共正陸運株式会社（洲本市納319、電話0799-24-3650）へ直接持ち込む案内があります。リサイクル料金は家電リサイクル券センター（0120-319640）で確認します。</p><a href="https://www.city.minamiawaji.hyogo.jp/soshiki/kankyou/kadenrecycle2.html" target="_blank" rel="noopener">家電リサイクルの案内を確認</a></div>
-      <div class="admin-card"><h3>□ パソコン・小型家電</h3><p>パソコンは各メーカー、パソコン3R推進協会、国の認定事業者リネットジャパンリサイクルなどへの相談が案内されています。南あわじ市リサイクルセンターへ直接持ち込みに限り無料で引き取る案内もあります。</p><p>持ち込む前にパソコン内部のデータを消去してください。遺品整理では、写真、住所録、仕事関係のデータが残っている場合があるため、処分前に家族で確認します。</p></div>
-      <div class="admin-card"><h3>□ 南あわじ市の地域事情</h3><p><strong>三原・市周辺</strong><br>戸建てや集合住宅では、退去日、駐車位置、前面道路、家具の分解搬出を確認します。</p><p><strong>福良・海沿い</strong><br>漁具、屋外用品、ベランダ品、潮風で傷んだ家具家電、車庫まわりの残置物を見落とさないようにします。</p><p><strong>阿万・西淡・農家住宅</strong><br>納屋、倉庫、農具、農業資材、庭木、物置、敷地内の車両導線を屋内家財と分けて見積もります。</p></div>
-      <div class="admin-card"><h3>□ 見積もり前の写真ポイント</h3><p>玄関、廊下、階段、駐車位置、前面道路、各部屋、押入れ、ベランダ、庭、物置、納屋、倉庫、車庫を撮影します。</p><p>大型家具は幅・高さ、搬出経路の曲がり角、階段幅、車両までの距離が分かる写真があると、人数、車両、養生、分解搬出の要否を判断しやすくなります。島外の家族が立ち会えない場合は、作業前後写真、貴重品候補、形見分け品の返送方法も先に決めます。</p><a href="#process">相談前の準備を見る</a></div>
-      <div class="admin-card"><h3>□ 業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政の粗大ごみで出すもの、中央リサイクルセンターへ持ち込むもの、業者が屋内搬出するものを分けて伝えます。</p><p>あわせて、家電リサイクル対象品、農具・漁具、農業資材、庭・物置・納屋、仏壇・写真、供養希望品、探してほしい通帳・印鑑・権利書・保険証券、買取希望品、車両導線、作業後の写真報告範囲を共有してください。</p><a href="#compare">業者比較の確認点へ</a></div>
+      <div class="admin-box">
+        <h3>□ まず分ける4つの箱</h3>
+        <p><span class="admin-strong">1. 直接持ち込み</span>車で運べる粗大ごみは中央リサイクルセンターへ。<br><span class="admin-strong">2. 軒先収集</span>自宅前・2トントラックが通れる道まで出せる少量の粗大ごみ。<br><span class="admin-strong">3. 業者の屋内搬出</span>大型家具、階段作業、納屋・倉庫、短納期、大量家財。<br><span class="admin-strong">4. 別ルール品</span>家電リサイクル品、農業・漁業資材、危険物、供養品。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 南あわじ市の地域事情</h3>
+        <p>三原・市周辺は戸建てや集合住宅の駐車位置、福良・阿万・灘方面は海沿い道路や坂道、潮風で傷んだ屋外品を確認します。西淡・緑・広田方面の農家住宅では、納屋、倉庫、農機具、肥袋、苗箱、コンテナ、ビニール類、庭木、車庫まわりを家庭ごみと分けて確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 写真で伝える場所</h3>
+        <p>玄関、廊下、階段、駐車位置、前面道路、各部屋、押入れ、仏間、庭、物置、車庫、納屋、倉庫を撮影します。粗大ごみはサイズ、重量感、車までの距離、2トントラックが通れる道かどうかが分かる写真を用意します。</p>
+      </div>
     </div>
-    <p class="source-note">出典：<a href="https://www.city.minamiawaji.hyogo.jp/" target="_blank" rel="noopener">南あわじ市公式サイト</a>、<a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/" target="_blank" rel="noopener">南あわじ市 ごみの正しい分別</a>、<a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/sodaigomi.html" target="_blank" rel="noopener">南あわじ市 粗大ごみ</a>、<a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/gomi2.html" target="_blank" rel="noopener">南あわじ市 収集できないごみ</a>、<a href="https://www.city.minamiawaji.hyogo.jp/soshiki/kankyou/kadenrecycle2.html" target="_blank" rel="noopener">南あわじ市 家電リサイクル法対象品目及び処理方法のご案内</a>。電話番号、受付時間、対象条件、料金、持込条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+
+    <div class="admin-contact-grid">
+      <div class="admin-box">
+        <h3>□ 自治体・基本窓口</h3>
+        <p><span class="admin-strong">南あわじ市役所</span>所在地: 兵庫県南あわじ市市善光寺22番地1<br>代表電話: 0799-43-5001<br>開庁時間: 8:30〜17:15（土曜・日曜、祝日、12月29日〜1月3日を除く）<br>住所変更、戸籍、福祉、空き家、住まい、ごみの相談先は担当課が分かれるため、見積もり前に必要な窓口を整理します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ ごみ相談の担当</h3>
+        <p><span class="admin-strong">市民部 環境課</span>所在地: 南あわじ市市善光寺22番地1<br>直通: 0799-43-5214<br>FAX: 0799-43-5314<br>ごみ減量化、家庭ごみ、粗大ごみ、収集できないごみ、家電リサイクル、火葬場管理などの確認先です。軒先収集は環境課へ電話で申し込みます。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 粗大ごみの考え方</h3>
+        <p>南あわじ市では、家庭から出る粗大ごみについて「直接持ち込み」と「軒先収集」が案内されています。タンス、食器棚、ベッド、布団、自転車、ソファ、物置内の道具は、自分で運べるもの、軒先まで出せるもの、屋内搬出が必要なものに分けます。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 直接持ち込み</h3>
+        <p><span class="admin-strong">中央リサイクルセンター</span>所在地: 南あわじ市榎列上幡多1911番地1<br>電話: 0799-43-3200<br>受付: 月〜金（祝日も営業）、毎月第2日曜日 9:00〜16:00<br><span class="admin-price">手数料: 10kgあたり160円</span><br>南あわじ市内の家庭で発生したごみは、予約不要で何回でも利用できる案内があります。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 持ち込み時の注意</h3>
+        <p>リサイクルセンター入口の計量所で係員の指示に従います。持ち込みは家庭ごみが前提です。農業・漁業用資材、建設廃材、危険物、家電リサイクル対象品など、持ち込み・収集できない品目を混ぜないようにします。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 軒先収集</h3>
+        <p><span class="admin-strong">申込先: 環境課 0799-43-5214</span>希望日の1週間前までに電話予約します。収集は毎週水曜・金曜、毎月第2日曜の午前中で、時間指定はできません。<br><span class="admin-price">手数料: 10kgあたり320円</span><br>現場で重量を量り、後日納付書で支払う流れです。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 軒先収集の条件</h3>
+        <p>利用は4月〜9月の間、10月〜3月の間で1世帯につき1回限りです。粗大ごみは2トントラックが通れる道まで出し、立会いが必要です。ごみの内容は申し込み時にすべて伝えます。引越しや家屋整理などで出た大量の粗大ごみは収集できない案内があります。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 減免の確認</h3>
+        <p>75歳以上高齢者のみの世帯、重度障害者がいる世帯は10kgあたり100円で収集される場合があります。生活保護世帯は無料収集の案内があります。該当するかは市が確認するため、申し込み時に必ず申し出ます。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 家電リサイクル対象品</h3>
+        <p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は、市の粗大・不燃ごみでの収集や中央リサイクルセンターへの持ち込みができません。買い替え時は販売店、処分だけの場合は購入店、兵庫県電機商業組合加盟店、または指定引取場所を確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 指定引取場所</h3>
+        <p><span class="admin-strong">淡路共正陸運株式会社</span>所在地: 洲本市納319<br>電話: 0799-24-3650<br>自分で家電リサイクル対象品を持ち込む場合は、郵便局で家電リサイクル券を購入してから指定引取場所へ持ち込む流れです。リサイクル料金は家電リサイクル券センターで確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 収集・持込できないもの</h3>
+        <p>農業・漁業用資材、肥袋、マルチ、畔シート、ビニール類、ビニールホース、苗箱、コンテナ、農機具の部品、ガスボンベ、バッテリー、原動機付き自転車、オートバイ、消火器、農機具、耐火金庫、大型鉄製品、農薬類、漁具、自動車タイヤ、建設廃材などは別確認です。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ パソコン・小型充電式電池</h3>
+        <p>パソコンは各メーカー、パソコン3R推進協会、リネットジャパンなどの確認先があります。南あわじ市リサイクルセンターへ直接持ち込む場合の案内もありますが、持ち込み前にデータ消去を行います。リチウム蓄電池、モバイルバッテリー、小型充電式電池は発火事故防止のため通常ごみと混ぜずに確認します。</p>
+      </div>
+      <div class="admin-box">
+        <h3>□ 業者へ伝えること</h3>
+        <p>退去期限、立会い可否、鍵の受け渡し、直接持ち込むもの、軒先収集を使うもの、業者が屋内搬出するものを分けて伝えます。家電リサイクル品、農具・漁具、農業資材、庭・物置・納屋、仏壇・写真、供養品、通帳・印鑑・権利書、貴重品探索、作業後写真報告の範囲も共有してください。</p>
+      </div>
+    </div>
+
+    <div class="admin-link-row">
+      <a href="https://www.city.minamiawaji.hyogo.jp/" target="_blank" rel="noopener">南あわじ市公式サイト</a>
+      <a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/sodaigomi.html" target="_blank" rel="noopener">粗大ごみ</a>
+      <a href="https://www.city.minamiawaji.hyogo.jp/site/gomi/gomi2.html" target="_blank" rel="noopener">収集できないごみ</a>
+      <a href="https://www.city.minamiawaji.hyogo.jp/soshiki/kankyou/kadenrecycle2.html" target="_blank" rel="noopener">家電リサイクル</a>
+      <a href="https://www.city.minamiawaji.hyogo.jp/soshiki/kankyou/" target="_blank" rel="noopener">環境課</a>
+    </div>
+    <p class="source-note">出典：南あわじ市公式サイト、南あわじ市「粗大ごみ」、南あわじ市「収集できないごみ」、南あわじ市「家電リサイクル法対象品目及び処理方法のご案内（淡路島地域）」、南あわじ市環境課。電話番号、受付時間、対象条件、料金、持込条件は変更される場合があります。相談前・搬入前に公式ページで最新情報を確認してください。</p>
   </div>
 </section>
-</main>
 <script id="common-kita-before-after-script">
   (() => {
     document.querySelectorAll('[data-common-ba-track]').forEach((track) => {

@@ -1365,83 +1365,172 @@
 </section><section class="section"><h2 class="section-title">兵庫県の地域カテゴリ</h2><div class="area-links"><a href="/hyogo/hanshin/">阪神間・北摂</a><a href="/hyogo/harima/">播磨</a><a href="/hyogo/tajima-tanba-awaji/">但馬・丹波・淡路</a></div></section>
 
 
+<style id="kato-admin-readable-style-v2">
+#admin.admin-hotline-section {
+  border: 2px solid #1f6fb2;
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: clamp(22px, 4vw, 36px);
+  box-shadow: 0 10px 24px rgba(31,111,178,.12);
+}
+#admin .admin-kicker {
+  display: inline-flex;
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e5f1fb;
+  color: #164f86;
+  font-weight: 800;
+  font-size: .92rem;
+}
+#admin .section-title { margin-bottom: 14px; }
+#admin .admin-lead {
+  margin: 0 0 16px;
+  line-height: 1.9;
+  font-size: 1.02rem;
+}
+#admin .admin-note {
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border-left: 5px solid #1f6fb2;
+  background: #fff;
+  border-radius: 8px;
+  line-height: 1.85;
+}
+#admin .admin-grid,
+#admin .admin-contact-grid {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0;
+}
+#admin .admin-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#admin .admin-contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#admin .admin-box {
+  background: #fff;
+  border: 1px solid #c7dff2;
+  border-radius: 10px;
+  padding: 16px;
+}
+#admin .admin-box h3 {
+  margin: 0 0 10px;
+  color: #164f86;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+#admin .admin-box p {
+  margin: 0;
+  line-height: 1.85;
+}
+#admin .admin-strong {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 800;
+  color: #1b3550;
+}
+#admin .admin-price {
+  display: inline-block;
+  margin: .2em 0;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: #eaf4ff;
+  color: #164f86;
+  font-weight: 800;
+}
+#admin .admin-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 8px;
+}
+#admin .admin-link-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #1f6fb2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+#admin .source-note {
+  margin-top: 14px;
+  color: #526273;
+  font-size: .92rem;
+  line-height: 1.7;
+}
+@media (max-width: 820px) {
+  #admin .admin-grid,
+  #admin .admin-contact-grid { grid-template-columns: 1fr; }
+}
+</style>
 <section id="admin" class="section admin-hotline-section">
-        <p class="section-kicker">加東市の行政窓口・粗大ごみ・持ち込み先</p>
-        <h2 class="section-title">加東市で遺品整理前に確認したいごみ収集カレンダー・一時多量ごみ・小野クリーンセンター</h2>
-        <p class="lead">加東市で遺品整理・生前整理を進めるときは、最初に「収集カレンダーで出すもの」「一時多量ごみとして処理施設へ持ち込むもの」「業者が屋内から搬出するもの」を分けておくと迷いにくくなります。社地域・滝野地域・東条地域では、ごみ収集カレンダーの区分、住宅地の道路幅、集合住宅の搬出ルール、庭・物置・車庫まわりの量が変わります。</p>
-        <p class="lead">電話番号、受付時間、搬入条件、料金、対象品目は変更される場合があります。退去日や見積もり日が決まっている場合は、作業前に加東市公式サイトと小野クリーンセンターの最新情報を確認してください。</p>
-        <div class="harima-admin-grid">
-          <div class="harima-admin-card">
-            <h3>□ まず分ける3つの箱</h3>
-            <p><strong>1. 収集日に出すもの</strong><br>通常のごみ、資源ごみ、少量の片付け品は、加東市のごみ収集カレンダーと分別辞典で出し方を確認します。</p>
-            <p><strong>2. 持ち込みを検討するもの</strong><br>引越し・退去・実家じまいで一時的に多量に出るものは、小野クリーンセンターへの搬入条件を確認します。</p>
-            <p><strong>3. 業者作業にするもの</strong><br>大型家具、階段作業、屋内搬出、分解搬出、貴重品探索、仏壇・写真の供養品、庭・物置・車庫まわりは、見積もり時に別枠で伝えます。</p>
+        <p class="admin-kicker">行政窓口・ごみ収集カレンダー・小野クリーンセンター</p>
+        <h2 class="section-title">加東市の行政窓口・粗大ごみ・持ち込み先</h2>
+        <p class="admin-lead">加東市で遺品整理・生前整理を進める前に、自治会・地域の収集カレンダーで出すもの、一時多量ごみとして小野クリーンセンターへ直接搬入するもの、家電4品目・小型家電・電池など別ルールで確認するもの、専門業者が屋内から搬出する家財を分けて整理します。</p>
+        <p class="admin-note">社地域・滝野地域・東条地域で収集カレンダーの区分が分かれます。退去日、車両の停車位置、階段・坂道、納屋・倉庫・農機具まわり、仏壇・写真、通帳・権利書などの探索範囲を先に分けると、行政処分と業者作業の境目がはっきりします。</p>
+
+        <div class="admin-grid">
+          <div class="admin-box">
+            <h3>□ まず3つに分ける</h3>
+            <p><span class="admin-strong">収集・持込・業者作業</span>少量で指定袋に入るものは収集カレンダー、引越しや実家じまいで一時的に多量に出るものは小野クリーンセンター、屋内搬出・階段作業・貴重品探索が必要なものは業者見積もりに分けます。</p>
           </div>
-          <div class="harima-admin-card">
-            <h3>□ 加東市役所・基本窓口</h3>
-            <p><strong>加東市役所</strong><br>所在地: 兵庫県加東市社50番地<br>代表電話: 0795-42-3301</p>
-            <p>開庁時間は平日8時30分から17時15分までです。木曜日は一部予約制で市民課窓口業務を延長しているため、住所変更・戸籍・相続関係の相談がある場合は、対象業務と予約要否を確認してから動くと安心です。</p>
-            <p><a href="https://www.city.kato.lg.jp/">加東市公式サイトを確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ ごみ相談・生活環境課</h3>
-            <p><strong>加東市 市民協働部 生活環境課</strong><br>所在地: 兵庫県加東市社50番地 庁舎1階<br>電話: 0795-43-0503<br>FAX: 0795-42-5282</p>
-            <p>分別、収集カレンダー、一時多量ごみ、家電4品目、小型家電回収、電池回収などは、まず生活環境課の公式案内で確認します。品目名、数量、サイズ、搬出予定日を控えてから問い合わせると整理しやすくなります。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/index.html">加東市のごみ情報を確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ ごみ収集カレンダーで確認すること</h3>
-            <p>加東市の収集カレンダーは、社・東条地域、滝野地域の一部、滝野地域の別区域など、地域ごとに区分されています。社、滝野、東条のどの区域に該当するかを先に確認してください。</p>
-            <p>遺品整理では、燃えるごみ、資源ごみ、不燃ごみ、びん・缶、ペットボトル、古紙などを部屋ごとに分け、収集日に出せる量と退去期限までに残る量を見比べます。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12184.html">ごみ収集カレンダー及び一時多量ごみを確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 加東市ごみ分別辞典</h3>
-            <p>品目ごとの出し方は、加東市のごみ分別辞典で確認します。タンス、布団、照明器具、食器、衣装ケース、掃除機、電子レンジ、工具類などは、品目名が似ていても扱いが変わることがあります。</p>
-            <p>見積もり前には「行政で出す」「持ち込み確認」「業者に任せる」の3つに印を付けておくと、当日の判断ミスを減らせます。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12188.html">加東市ごみ分別辞典を確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 一時多量ごみ・持ち込み先</h3>
-            <p><strong>小野加東加西環境施設事務組合 小野クリーンセンター</strong><br>所在地: 小野市天神町538番地1<br>電話: 0794-62-6250<br>搬入できる方: 加東市内の方</p>
-            <p>引越し、退去、実家じまい、倉庫整理などで一時的に多量のごみが出る場合は、直接処理施設へ搬入する案内があります。本人確認、搬入できる品目、車両条件、手数料、荷下ろし方法は事前に確認してください。</p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 小野クリーンセンターの受付時間</h3>
-            <p>公式案内では、受付時間は月曜日から金曜日が8時30分から16時30分、土曜日・祝祭日が8時30分から11時30分です。ただし、第2・第4土曜日は除く案内があります。</p>
-            <p>年末年始、祝日、混雑日、臨時変更がある場合があります。退去期限が近い場合は、搬入日、受付時間、必要書類、搬入できない品目を電話で確認してから予定を組んでください。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12184.html">一時多量ごみの公式案内を確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 家電4品目は別ルール</h3>
-            <p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は、通常のごみとして出せない品目です。購入店への引き取り、買い替え時の引き取り、兵庫県電機商業組合加盟店への相談など、リサイクルルートを確認します。</p>
-            <p>遺品整理では、家電の年式、メーカー、型番、設置場所、搬出経路、リサイクル券の扱いを写真で残し、業者に搬出だけ依頼するのか、処分手続きまで相談するのかを分けてください。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12190.html">特定家電の扱いを確認</a></p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 別確認にしたい品目</h3>
-            <p>危険物、消火器、バッテリー、灯油、塗料、農薬、スプレー缶、建築廃材、事業系ごみ、医療系廃棄物、金庫、ピアノ、仏壇・位牌・写真などは、通常の片付け品と混ぜずに確認します。</p>
-            <p>小型家電や電池は回収ボックスの案内があるため、対象品目と投入できるサイズを公式ページで確認してください。供養希望品や探索希望品は、袋詰め前に別の箱へ移します。</p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12187.html">使用済小型家電の回収を確認</a></p>
-            <p><a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/15446.html">電池回収ボックスを確認</a></p>
-          </div>
-          <div class="harima-admin-card">
+          <div class="admin-box">
             <h3>□ 加東市の地域事情</h3>
-            <p>社地域の中心部や集合住宅では、管理会社への届出、搬出時間、共用部養生、駐車位置の確認が必要になりやすいです。滝野地域では、上滝野・下滝野・河高・北野など、住宅地と道路条件を合わせて見ます。</p>
-            <p>東条地域では、戸建て、農家住宅、納屋、物置、車庫、庭まわりの残置物が多くなることがあります。屋内だけでなく、外回りの写真も見積もり前に用意してください。</p>
+            <p><span class="admin-strong">社・滝野・東条で導線確認</span>社中心部の集合住宅、滝野地域の戸建て、東条地域の農家・納屋付き住宅では、前面道路、駐車位置、車庫・倉庫、庭木、農具・工具の有無で作業時間が変わります。</p>
           </div>
-          <div class="harima-admin-card">
-            <h3>□ 見積もり前の写真ポイント</h3>
-            <p>玄関、廊下、階段、エレベーター、駐車位置、前面道路、各部屋、押入れ、納戸、ベランダ、庭、物置、車庫を撮影します。大型家具は幅・高さ、階段幅、曲がり角、分解の可否が分かる写真があると判断しやすくなります。</p>
-            <p>遠方から依頼する場合は、鍵の受け渡し、立会い可否、残す品、探してほしい書類、通帳・印鑑・権利証・写真・形見品の探索範囲を先に共有してください。</p>
-          </div>
-          <div class="harima-admin-card">
-            <h3>□ 業者へ伝えること</h3>
-            <p>退去期限、作業希望日、立会い可否、鍵の受け渡し、行政収集で出すもの、小野クリーンセンターへ持ち込むもの、業者が屋内搬出するものを分けて伝えます。</p>
-            <p>家電4品目、仏壇・写真、貴重品探索、供養希望品、買取希望品、庭木、物置、車庫、車両導線、近隣配慮、管理会社への届出がある場合は、見積もり時点でまとめておくと追加費用の確認がしやすくなります。</p>
+          <div class="admin-box">
+            <h3>□ 写真で伝える場所</h3>
+            <p><span class="admin-strong">玄関から保管場所まで</span>玄関、廊下、階段、駐車位置、各部屋、押入れ、納屋、倉庫、車庫、庭を撮影します。大型家具は幅・高さと搬出経路の曲がり角が分かる写真を用意します。</p>
           </div>
         </div>
-        <p class="source-note">出典：加東市公式サイト、加東市 ごみ収集カレンダー及び一時多量ごみ、加東市ごみ分別辞典、特定家電の公式案内。電話番号、受付時間、搬入条件、料金、対象品目は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
+
+        <div class="admin-contact-grid">
+          <div class="admin-box">
+            <h3>□ 自治体・関連窓口</h3>
+            <p><span class="admin-strong">加東市役所</span>所在地: 〒673-1493 兵庫県加東市社50番地<br>代表電話: 0795-42-3301<br>開庁時間: 8:30〜17:15（土曜・日曜・祝日・年末年始を除く）</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ ごみ相談・生活環境課</h3>
+            <p><span class="admin-strong">加東市 市民協働部 生活環境課</span>所在地: 兵庫県加東市社50番地 庁舎1階<br>電話: 0795-43-0503<br>FAX: 0795-42-5282<br>分別、収集カレンダー、一時多量ごみ、家電4品目、小型家電、電池回収の確認先です。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ ごみ収集カレンダー・指定袋</h3>
+            <p><span class="admin-strong">地区別カレンダーを確認</span>社・東条地域、滝野地域の一部、滝野地域の各地区でカレンダーが分かれます。燃えるごみ・容器包装プラスチックは加東市指定ごみ袋を使用します。<br><span class="admin-price">指定袋: 大45L 10枚300円 / 中30L 10枚200円 / 小20L 10枚150円</span></p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 一時多量ごみ・持ち込み</h3>
+            <p><span class="admin-strong">小野加東加西環境施設事務組合 小野クリーンセンター</span>所在地: 小野市天神町538番地1<br>電話: 0794-62-6250<br>搬入できる方: 加東市内の方<br>一時的多量ごみは、ごみステーションに出さず直接処理施設へ搬入します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 小野クリーンセンター受付時間</h3>
+            <p><span class="admin-strong">搬入前に品目と時間を確認</span>月〜金: 8:30〜16:30<br>土曜・祝祭日: 8:30〜11:30（第2・第4土曜を除く）<br>受入可否、車両条件、手数料、荷下ろし方法は作業前に公式案内・施設へ確認してください。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 別ルールになりやすい品目</h3>
+            <p><span class="admin-strong">混ぜずに先に確認</span>家電4品目、パソコン、小型家電、電池、消火器、バッテリー、スプレー缶、灯油、塗料、農薬、金庫、事業系ごみ、解体材、仏壇・写真などの供養希望品は、通常のごみと分けて確認します。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 高齢者支援・住まい相談</h3>
+            <p><span class="admin-strong">福祉・住まいの窓口も分ける</span>自力でごみ出しや搬出が難しい世帯は、福祉窓口、地域包括支援センター、ケアマネジャーの関与、空き家・住まい相談の対象を確認します。生前整理では本人同意と残す薬・書類の扱いも先に決めます。</p>
+          </div>
+          <div class="admin-box">
+            <h3>□ 業者へ伝えること</h3>
+            <p><span class="admin-strong">見積もり前の共有項目</span>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、小野クリーンセンターへ持ち込むもの、業者が屋内搬出するもの、家電4品目、納屋・倉庫、車両導線、仏壇・写真、貴重品探索の範囲を分けて伝えてください。</p>
+          </div>
+        </div>
+
+        <div class="admin-link-row">
+          <a href="https://www.city.kato.lg.jp/">加東市公式サイト</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/index.html">加東市 ごみ情報</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12184.html">収集カレンダー・一時多量ごみ</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12188.html">ごみ分別辞典</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12190.html">家電4品目</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/12187.html">小型家電回収</a>
+          <a href="https://www.city.kato.lg.jp/kurashi_tetsuzuki/gomi/15446.html">電池回収ボックス</a>
+        </div>
+        <p class="source-note">出典: 加東市公式サイト、加東市「ごみ」「ごみ収集カレンダー及び一時多量ごみについて」「ごみ分別辞典」「特定家電」「使用済小型家電」「電池回収ボックス」各ページ。電話番号、受付時間、料金、対象条件は変更される場合があります。相談前に公式ページで最新情報を確認してください。</p>
       </section>
 </main>
 <script id="common-kita-before-after-script">

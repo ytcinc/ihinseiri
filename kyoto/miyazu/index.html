@@ -297,6 +297,7 @@
     .faq { display:grid; gap:10px; margin:18px 0; } .faq details { border:1px solid var(--line); background:#fff; padding:12px 14px; } .faq summary { cursor:pointer; font-weight:900; }
     .notice { border:1px solid #d9c78d; background:var(--notice); padding:16px 18px; margin:18px 0; }
     .cta-band { margin-top:38px; background:#2d2d2d; color:#fff; padding:24px; display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; } .cta-band h2 { margin:0 0 6px; font-size:23px; line-height:1.4; } .cta-band p { margin:0; color:rgba(255,255,255,.82); }
+    .cta-band.estimate-check { display:block; background:#fff; color:#202622; padding:28px; border-left:5px solid #b55422; } .estimate-check .section-kicker { color:#b55422; margin-bottom:8px; } .estimate-check h2 { color:#202622; max-width:880px; } .estimate-check>p { color:#4f5b54; max-width:900px; line-height:1.85; } .estimate-check-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:18px 0 4px; } .estimate-check-item { border:1px solid #eadfd3; background:#fffaf5; padding:14px; } .estimate-check-item b { display:block; color:#9b4318; margin-bottom:5px; } .estimate-check-item span { display:block; color:#4f5b54; font-size:14px; line-height:1.65; } @media (max-width:900px){ .estimate-check-grid{grid-template-columns:1fr 1fr;} } @media (max-width:560px){ .estimate-check-grid{grid-template-columns:1fr;} }
     .footer { margin-top:28px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
      .site-footer { margin-top:38px; padding:24px; border:1px solid var(--line); background:#f7f3ec; color:var(--ink); }
     .site-footer h2 { margin:0 0 12px; font-size:18px; line-height:1.45; }
@@ -2251,10 +2252,16 @@
         <div class="ward-links"><a href="/kyoto/yosano/">与謝野町</a><a href="/kyoto/kyotango/">京丹後市</a><a href="/kyoto/ine/">伊根町</a></div>
       </section>
 
-      <section id="contact" class="cta-band">
+      <section id="contact" class="cta-band estimate-check">
         <p class="section-kicker">見積もり前チェック</p>
-        <h2>宮津市の遺品整理・生前整理は、無理に抱え込まず任せられる範囲から相談を</h2>
-        <p>行政の粗大ごみで済むもの、家族で残したいもの、専門業者に任せた方がよいものを分けると、費用も作業範囲も判断しやすくなります。</p>
+        <h2>宮津市で相談前に分けておきたいこと</h2>
+        <p>宮津市の遺品整理・生前整理は、行政で出せるもの、家族で残すもの、専門業者に任せるものを先に分けると、費用と作業範囲を判断しやすくなります。</p>
+        <div class="estimate-check-grid">
+          <div class="estimate-check-item"><b>行政で出す</b><span>少量の生活ごみ、資源ごみ、自力で指定場所まで出せる大型品。</span></div>
+          <div class="estimate-check-item"><b>家族で残す</b><span>通帳、印鑑、権利書、保険証券、写真、形見分け品。</span></div>
+          <div class="estimate-check-item"><b>業者に任せる</b><span>屋内搬出、大量家財、階段作業、供養品、貴重品探索。</span></div>
+          <div class="estimate-check-item"><b>写真で伝える</b><span>部屋全体、収納、玄関、階段、駐車位置、庭・物置。</span></div>
+        </div>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
 </main>
