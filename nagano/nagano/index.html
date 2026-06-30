@@ -592,13 +592,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1302,9 +1302,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     @media(max-width:760px){.admin-deep-grid,.manual-admin-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card,.manual-admin-card{padding:16px}}
     #contact.contact-check-card{margin:28px 0 0;padding:24px;background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2f261d;display:block}
     #contact.contact-check-card .section-kicker{margin:0 0 6px;color:#b64a1c;font-weight:900}
@@ -2010,6 +2010,32 @@
 
 
 
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/nagano/#professional-service",
+  "name": "遺品整理・生前整理.jp 長野市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/nagano/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "長野市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "長野市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -2510,7 +2536,7 @@
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
     <h2>長野市の行政窓口・粗大ごみ・持ち込み先</h2>
-    <p>長野市では、集積所に出せるごみ、資源再生センター・ながの環境エネルギーセンターへ自己搬入するごみ、一時多量ごみ収集制度を使うごみ、専門業者が屋内から搬出する家財を分けると、見積もりの範囲が明確になります。駅周辺の集合住宅、郊外戸建て、山沿い住宅では、EV予約、駐車位置、冬季道路、物置・庭まわりも一緒に確認します。</p>
+    <p>長野市では、集積所に出せるごみ、資源再生センター・ながの環境エネルギーセンターへ自己搬入するごみ、一時多量ごみ収集制度を使うごみ、ストックヤードや家電リサイクルで別確認にするもの、専門業者が屋内から搬出する家財を分けると、見積もりの範囲が明確になります。駅周辺の集合住宅、権堂・善光寺周辺の旧市街地、郊外戸建て、戸隠・鬼無里・大岡方面の山沿い住宅では、エレベーター予約、管理会社への届出、駐車位置、冬季道路、物置・庭まわりも一緒に確認します。</p>
   </div>
   <div class="admin-deep-grid">
     <div class="admin-deep-card"><h3>行政で先に確認</h3><p>地域別収集日、ごみ分別簡単検索、ごみの出し方・分け方、集積所に出せないもの、粗大ごみシール、資源再生センターへの自己搬入、一時多量ごみ収集制度を確認します。</p></div>
@@ -2527,6 +2553,36 @@
     <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p>空き家対策は建築指導課空き家対策室（第二庁舎7階、電話026-224-8901、FAX026-224-5124）で確認します。長野市は空き家対策の支援策として、相談窓口、相談会、空き家バンク等、管理事業者紹介、解体補助金、解体跡地活用補助などを整理しています。冬期は水道管の凍結、屋根・雪止め、落雪、雪下ろしも空き家管理の重要項目です。</p><a href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策</a><a href="https://www.city.nagano.nagano.jp/n183500/contents/p003373.html" target="_blank" rel="noopener">空き家対策（支援策等）</a></div>
     <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>長野駅周辺、権堂・善光寺周辺、篠ノ井・川中島・松代、若穂・豊野・戸隠方面では、集合住宅、戸建て、山沿い住宅、物置付き住宅が混在します。行政は分別、集積所排出、自己搬入、一時多量ごみ、空き家・福祉相談。業者は室内搬出、大型家具の階段作業、物置・庭、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、作業後写真報告を担当範囲として分けます。</p></div>
   </div>
+  <div class="admin-callout">
+    <h3>長野市の片付けは「5つの出口」に分ける</h3>
+    <p>集積所、自己搬入、一時多量ごみ、ストックヤード・家電リサイクル、業者搬出を混ぜると、料金と段取りが分かりにくくなります。マンションの室内搬出や短時間搬出は行政収集だけでは完結しないため、管理会社対応と業者作業を先に切り分けます。</p>
+    <ul>
+      <li>集積所: 地域別収集日、分別、粗大ごみシール、少量の生活ごみ。</li>
+      <li>自己搬入: 資源再生センター、ながの環境エネルギーセンター、受付時間、処理手数料。</li>
+      <li>一時多量ごみ: 予約制収集、玄関先または集合住宅1階出入口外への排出、当日立会い。</li>
+      <li>別確認: ストックヤード、家電4品目、パソコン、消火器、処理困難物。</li>
+      <li>業者搬出: 室内搬出、階段作業、共用部養生、物置・庭、貴重品探索、写真報告。</li>
+    </ul>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>状況</th><th>長野市で先に見ること</th><th>業者へ伝えること</th></tr></thead>
+    <tbody>
+      <tr><td>長野駅周辺・集合住宅</td><td>管理会社の届出、エレベーター予約、共用部養生、駐車位置、短時間搬出。</td><td>階数、エレベーター有無、搬出可能時間、車両を停められる場所。</td></tr>
+      <tr><td>権堂・善光寺周辺</td><td>旧市街地の道幅、一方通行、近隣店舗、観光客や参拝客が多い時間帯。</td><td>前面道路、台車経路、近隣への声かけ、軽トラック搬出の要否。</td></tr>
+      <tr><td>篠ノ井・川中島・松代方面</td><td>戸建て、物置、庭、車庫、仏壇、古い家具、家電4品目。</td><td>母屋以外の範囲、残す品、供養品、買取候補、家電リサイクル対象品。</td></tr>
+      <tr><td>戸隠・鬼無里・大岡方面</td><td>山沿い道路、冬季道路、坂道、車両進入、空き家管理。</td><td>鍵の受け渡し、作業前後写真、雪の時期、庭・物置・蔵の範囲。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>電話番号</th><th>確認する内容</th></tr></thead>
+    <tbody>
+      <tr><td>長野市役所</td><td>026-226-4911</td><td>ごみ、福祉、空き家、住まいの担当窓口を確認します。</td></tr>
+      <tr><td>生活環境課 ごみ収集・啓発担当</td><td>026-224-7635</td><td>ごみ指定袋、粗大ごみシール、集積所に出せないものを確認します。</td></tr>
+      <tr><td>資源再生センター</td><td>026-221-5316<br>FAX 026-221-5319</td><td>自己搬入、一時多量ごみ、ストックヤード予約を確認します。</td></tr>
+      <tr><td>地域包括支援センター</td><td>026-224-7174</td><td>介護、医療、福祉の総合相談、生前整理前の支援窓口を確認します。</td></tr>
+      <tr><td>建築指導課 空き家対策室</td><td>026-224-8901<br>FAX 026-224-5124</td><td>空き家相談、管理、解体補助、冬期の空き家対策を確認します。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 

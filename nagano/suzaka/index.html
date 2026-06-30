@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1290,9 +1290,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     #contact.contact-check-card{margin:28px 0 0;padding:24px;background:#fff;border:1px solid #e5ded5;box-shadow:0 14px 36px rgba(34,28,22,.08);color:#2f261d;display:block}
     #contact.contact-check-card .section-kicker{margin:0 0 6px;color:#b64a1c;font-weight:900}
     #contact.contact-check-card h2{margin:0 0 10px;font-size:24px;line-height:1.45;color:#231f1a}
@@ -1529,7 +1529,7 @@
         "name": "須坂市で粗大ごみを出す前に何を確認しますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "生活環境課または清掃センターで、品目、数量、指定袋・ごみシール、自己搬入可否、家電4品目や処理困難物に当たるかを確認します。屋内搬出が必要な家具は業者作業に分けます。"
+          "text": "生活環境課または清掃センターで、品目、数量、指定袋・ごみシール、自己搬入可否、別確認が必要な品目に当たるかを確認します。屋内搬出が必要な家具は業者作業に分けます。"
         }
       },
       {
@@ -1542,10 +1542,10 @@
       },
       {
         "@type": "Question",
-        "name": "須坂市で家電4品目や処理困難物はどう分けますか？",
+        "name": "須坂市で別確認が必要な品目はどう分けますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "家電4品目、パソコン、消火器、バッテリー、タイヤ、農薬、塗料、建築廃材、事業系ごみ、仏壇・写真などの供養希望品は通常ごみと分け、生活環境課や清掃センターで扱いを確認します。"
+          "text": "古い家電、パソコン、危険物に当たる可能性があるもの、建築廃材に近いもの、事業活動由来か判断が必要な残置物、仏壇・写真などの供養希望品は通常ごみと分け、生活環境課や清掃センターで扱いを確認します。"
         }
       },
       {
@@ -1570,7 +1570,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "須坂市の遺品整理・生前整理ガイド",
-    "description": "須坂市で遺品整理・生前整理を進める前に、生活環境課、清掃センター、地域包括支援センター、空き家相談、家電4品目、処理困難物を整理する地域特化ガイド。",
+    "description": "須坂市で遺品整理・生前整理を進める前に、生活環境課、清掃センター、地域包括支援センター、空き家相談、別確認が必要な品目を整理する地域特化ガイド。",
     "inLanguage": "ja",
     "publisher": {
       "@type": "Organization",
@@ -1911,6 +1911,32 @@
 
 
 
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/suzaka/#professional-service",
+  "name": "遺品整理・生前整理.jp 須坂市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/suzaka/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "須坂市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "須坂市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -2404,7 +2430,7 @@
     <p>須坂市で整理を進める前に、行政収集で出すもの、清掃センターへ自己搬入するもの、専門業者が屋内から搬出するものを分けます。市街地の住宅、果樹園周辺の戸建て、郊外の空き家・物置で確認点が変わるため、最初に窓口・品目・搬出範囲をそろえると見積もりが安定します。</p>
   </div>
   <div class="admin-deep-grid">
-    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>ごみ収集日、分別、指定袋・ごみシール、粗大ごみ、自己搬入、家電4品目、処理困難物を分けます。少量ごみと一時多量ごみを混ぜないことが大切です。</p></div>
+    <div class="admin-deep-card"><h3>行政で先に確認</h3><p>ごみ収集日、分別、指定袋・ごみシール、粗大ごみ、自己搬入、別確認が必要な品目を分けます。少量ごみと一時多量ごみを混ぜないことが大切です。</p></div>
     <div class="admin-deep-card"><h3>業者見積もりで確認</h3><p>室内搬出、階段作業、駐車位置、庭・物置、仏壇・写真、通帳・権利書などの探索、果樹園周辺や山手側の道路幅を写真で共有します。</p></div>
     <div class="admin-deep-card"><h3>福祉・空き家相談</h3><p>高齢者福祉課、地域包括支援センター、まちづくり課の空き家対策を分けて確認します。施設入居前や売却・解体前は先に相談先を整理します。</p></div>
     <div class="admin-deep-card"><h3>確認に使う公式ページ</h3><p>ごみは生活環境課・清掃センター、福祉は高齢者福祉課・地域包括支援センター、空き家はまちづくり課を確認します。番号は須坂市の業務案内に掲載されているものを使います。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a><a href="https://www.city.suzaka.nagano.jp/mokuteki/koreisha_kaigo/index.html" target="_blank" rel="noopener">高齢者・介護</a></div>
@@ -2412,12 +2438,42 @@
   <div class="manual-admin-grid">
     <div class="manual-admin-card"><h3>自治体・関連窓口</h3><p><strong>須坂市役所</strong><br>所在地: 〒382-8511 長野県須坂市大字須坂1528番地の1<br>代表電話: 026-245-1400<br>FAX: 026-246-0750<br>ごみ、福祉、空き家、住まい相談は担当課が分かれます。ごみは市民環境部 生活環境課、福祉は健康福祉部 高齢者福祉課、空き家はまちづくり推進部 まちづくり課を確認します。</p><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a></div>
     <div class="manual-admin-card"><h3>粗大ごみ・大型ごみ</h3><p><strong>市民環境部 生活環境課</strong><br>電話: 026-248-9019 / FAX: 026-251-2459<br>一般廃棄物、ごみシール、ごみ処理の広域化、清掃センターを担当します。タンス、ベッド、マットレス、布団、仏壇、屋外用品、古い家電は、自治体収集で出せるもの、自己搬入に回すもの、業者が屋内から搬出するものを分けます。大型家具の室内搬出、2階からの階段作業、物置の解体を伴う場合は、行政収集だけで考えず業者作業として見積もりに入れます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">生活環境課を確認</a></div>
-    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>生活環境課 清掃センター</strong><br>所在地: 長野県須坂市大字米子1218番地4<br>電話: 026-246-9000 / FAX: 026-246-9093<br>管理運営、ごみの収集運搬、不燃ごみの破砕処分、その他廃棄物の処分を担当します。自己搬入を考える場合は、受付日、本人確認、車両条件、分別、料金を公式案内で確認し、室内から運び出す作業とは別に考えます。果樹園周辺や郊外戸建てでは、庭木、物置、農具、タイヤ、処理困難物を通常ごみと分けてください。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">清掃センターを確認</a></div>
-    <div class="manual-admin-card"><h3>家電4品目・処理困難物</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコン、パソコン、消火器、タイヤ、農薬、バッテリー、事業系に近い残置物は通常の家庭ごみと分けます。購入店、指定引取、専門処理、業者搬出のどれに回すかを、品目ごとに確認します。処分方法が分からない品目は生活環境課または清掃センターに確認してから見積もりに入れます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">生活環境課・清掃センター</a></div>
+    <div class="manual-admin-card"><h3>持ち込み・自己搬入</h3><p><strong>生活環境課 清掃センター</strong><br>所在地: 長野県須坂市大字米子1218番地4<br>電話: 026-246-9000 / FAX: 026-246-9093<br>管理運営、ごみの収集運搬、不燃ごみの破砕処分、その他廃棄物の処分を担当します。自己搬入を考える場合は、受付日、本人確認、車両条件、分別、料金を公式案内で確認し、室内から運び出す作業とは別に考えます。果樹園周辺や郊外戸建てでは、庭木、物置、農具、屋外保管品を通常ごみと分けてください。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">清掃センターを確認</a></div>
+    <div class="manual-admin-card"><h3>別確認にしたい品目</h3><p>大きな家具、古い家電、パソコン、危険物に当たる可能性があるもの、事業活動由来か判断が必要な残置物は、通常の家庭ごみと分けます。購入店、専門窓口、清掃センター確認、業者搬出のどれに回すかを、品目ごとに確認します。処分方法が分からない品目は生活環境課または清掃センターに確認してから見積もりに入れます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">生活環境課・清掃センター</a></div>
     <div class="manual-admin-card"><h3>福祉・高齢者相談</h3><p><strong>高齢者福祉課</strong><br>電話: 026-248-9020 / FAX: 026-248-7208<br><strong>地域包括支援センター</strong><br>電話: 026-245-4566 / FAX: 026-248-1119<br>高齢者だけの世帯、施設入居前、介護が必要な家族の片付けでは、高齢者福祉課と地域包括支援センターの相談範囲を確認します。ごみ出しが難しい場合も、まず福祉側の相談窓口と整理作業の範囲を分けて見ます。</p><a href="https://www.city.suzaka.nagano.jp/mokuteki/koreisha_kaigo/index.html" target="_blank" rel="noopener">高齢者・介護</a><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">業務案内</a></div>
     <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p><strong>まちづくり推進部 まちづくり課</strong><br>電話: 026-248-9007 / FAX: 026-248-9040<br>都市計画、公園、市営住宅、歴史的町並み、景観育成、空き家対策、耐震診断・改修、空き家バンクなどを担当します。須坂市の実家じまいでは、売却、解体、相続、空き家管理、草木管理、近隣対応を家財整理と同時に考えます。契約前に空き家相談や補助制度の対象になるかを確認し、通帳、権利書、保険証券、写真、仏壇を処分前に分けます。</p><a href="https://www.city.suzaka.nagano.jp/soshiki/1010/1/4266.html" target="_blank" rel="noopener">まちづくり課を確認</a></div>
     <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>須坂駅周辺、市役所周辺、村山・日滝・豊洲・井上方面では、集合住宅、戸建て、果樹園近くの物置付き住宅が混在します。家庭ごみ、屋外保管品、事業系に近い残置物、屋内搬出が必要な家財を分けて見積もりに出します。</p><ul class="manual-admin-list"><li>行政: 分別、収集日、指定袋・ごみシール、清掃センター自己搬入、福祉・空き家制度の相談</li><li>業者: 室内搬出、大型家具の階段作業、庭・物置、仏壇・写真、通帳・権利書探索、供養、買取、鍵預かり、作業後写真報告</li></ul></div>
   </div>
+  <div class="admin-callout">
+    <h3>須坂市の片付けは「5つの出口」に分ける</h3>
+    <p>行政収集、清掃センターへの自己搬入、別確認が必要な品目、空き家・福祉相談、業者搬出を混ぜると、費用と段取りがぼやけます。市街地の集合住宅は駐車位置と短時間搬出、旧市街地や蔵のある家は道幅と近隣配慮、果樹園周辺の戸建ては物置・農具・庭まわりまで先に分けます。</p>
+    <ul>
+      <li>行政収集: 分別、収集日、指定袋・ごみシール、少量の家庭ごみ。</li>
+      <li>自己搬入: 生活環境課清掃センター、受付日、車両条件、分別、料金。</li>
+      <li>別確認: 古い家電、パソコン、危険物に当たる可能性があるもの、事業活動由来か判断が必要な残置物。</li>
+      <li>空き家・福祉: 高齢者福祉課、地域包括支援センター、まちづくり課の空き家対策。</li>
+      <li>業者搬出: 室内搬出、階段作業、庭・物置、農具、仏壇・写真、貴重品探索。</li>
+    </ul>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>状況</th><th>須坂市で先に見ること</th><th>業者へ伝えること</th></tr></thead>
+    <tbody>
+      <tr><td>須坂駅・市役所周辺</td><td>集合住宅、階数、エレベーター、駐車位置、短時間搬出。</td><td>管理会社の届出、共用部養生、搬出可能時間、車両を停める場所。</td></tr>
+      <tr><td>旧市街地・蔵のある家</td><td>前面道路の幅、近隣店舗、蔵・土間・物置、古い家具や仏壇。</td><td>軽トラック搬出の要否、台車経路、残す古道具・供養品。</td></tr>
+      <tr><td>日滝・豊洲・井上方面</td><td>果樹園周辺の戸建て、庭、物置、農具、屋外保管品。</td><td>屋外まで作業範囲に含めるか、農具・工具・分別に迷う品の写真。</td></tr>
+      <tr><td>遠方家族の実家じまい</td><td>鍵の預け方、売却・解体予定、空き家相談、福祉相談。</td><td>作業前後写真、処分前確認、通帳・印鑑・権利書・写真の探索範囲。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>電話番号</th><th>確認する内容</th></tr></thead>
+    <tbody>
+      <tr><td>須坂市役所</td><td>026-245-1400<br>FAX 026-246-0750</td><td>ごみ、福祉、空き家、住まいの担当窓口を確認します。</td></tr>
+      <tr><td>生活環境課</td><td>026-248-9019<br>FAX 026-251-2459</td><td>一般廃棄物、ごみシール、清掃センター、分別を確認します。</td></tr>
+      <tr><td>生活環境課 清掃センター</td><td>026-246-9000<br>FAX 026-246-9093</td><td>自己搬入、収集運搬、不燃ごみ破砕、廃棄物処分を確認します。</td></tr>
+      <tr><td>高齢者福祉課・地域包括支援センター</td><td>026-248-9020<br>026-245-4566</td><td>介護、配食、緊急通報、総合相談、施設入居前の生前整理を確認します。</td></tr>
+      <tr><td>まちづくり課</td><td>026-248-9007<br>FAX 026-248-9040</td><td>空き家対策、景観、耐震、空き家バンク、売却前整理を確認します。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 
@@ -2434,7 +2490,7 @@
     </div>
     <table class="nagano-report-table">
       <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金確認</th><td>自己搬入、粗大ごみ、家電4品目、処理困難物は、品目と搬入先で扱いが変わります。料金を作らず、須坂市公式のごみ案内で確認します。</td></tr>
+      <tr><th>料金確認</th><td>自己搬入、粗大ごみ、別確認が必要な品目は、品目と搬入先で扱いが変わります。料金を作らず、須坂市公式のごみ案内で確認します。</td></tr>
       <tr><th>見積もり前</th><td>都市部の集合住宅と郊外戸建てが混在します。管理会社対応、冬季道路、海沿いではなく山間・坂道側の車両導線を先に確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
       <tr><th>出典</th><td><a href="https://www.city.suzaka.nagano.jp/" target="_blank" rel="noopener">須坂市公式サイト</a></td></tr>
     </table>
@@ -2476,13 +2532,13 @@
   <div class="suzaka-deep-guide__hero">
     <p class="suzaka-deep-guide__kicker">須坂市の行政窓口・粗大ごみ・持ち込み先</p>
     <h2>須坂市で遺品整理前に分ける処分ルート</h2>
-    <p class="suzaka-deep-guide__lead">須坂市で遺品整理・生前整理を進める前に、家庭ごみとして分別するもの、生活環境課・清掃センターへ確認する粗大ごみや自己搬入、家電4品目・パソコン・処理困難物、専門業者が屋内から搬出する家財を分けます。須坂駅・市役所周辺の集合住宅、市街地の戸建て、日滝・豊洲・井上方面や果樹園近くの物置付き住宅では、前面道路、庭・物置、農具、冬季道路、車両導線まで先に確認します。</p>
+    <p class="suzaka-deep-guide__lead">須坂市で遺品整理・生前整理を進める前に、家庭ごみとして分別するもの、生活環境課・清掃センターへ確認する粗大ごみや自己搬入、別確認が必要な品目、専門業者が屋内から搬出する家財を分けます。須坂駅・市役所周辺の集合住宅、市街地の戸建て、日滝・豊洲・井上方面や果樹園近くの物置付き住宅では、前面道路、庭・物置、農具、冬季道路、車両導線まで先に確認します。</p>
   </div>
 
   <div class="suzaka-quick">
     <div><b>生活環境課</b><span>一般廃棄物、ごみシール、ごみ処理、清掃センターを担当。026-248-9019。</span></div>
     <div><b>清掃センター</b><span>須坂市大字米子1218番地4。収集運搬、不燃ごみ破砕、廃棄物処分。026-246-9000。</span></div>
-    <div><b>別ルール</b><span>家電4品目、パソコン、消火器、バッテリー、タイヤ、農薬、建築廃材は別確認。</span></div>
+    <div><b>別ルール</b><span>古い家電、パソコン、危険物に当たる可能性があるもの、事業活動由来か判断が必要な残置物は別確認。</span></div>
     <div><b>福祉・空き家</b><span>地域包括支援センター026-245-4566、まちづくり課026-248-9007。</span></div>
   </div>
 
@@ -2505,7 +2561,7 @@
     </div>
     <div class="suzaka-block">
       <h3>□ 須坂市の地域事情</h3>
-      <p>須坂駅・市役所周辺は集合住宅の搬出時間、駐車位置、管理会社届出を確認します。村山・日滝・豊洲・井上方面は戸建て、果樹園近くの物置、農具・工具、タイヤ、庭木が残りやすい地域です。峰の原高原方面や山手側では、冬季道路、凍結、除雪、車両サイズを見積もり条件に入れます。</p>
+      <p>須坂駅・市役所周辺は集合住宅の搬出時間、駐車位置、管理会社届出を確認します。村山・日滝・豊洲・井上方面は戸建て、果樹園近くの物置、農具・工具、庭木が残りやすい地域です。峰の原高原方面や山手側では、冬季道路、凍結、除雪、車両サイズを見積もり条件に入れます。</p>
     </div>
   </div>
 
@@ -2531,11 +2587,11 @@
 
   <div class="suzaka-block">
     <h3>□ 別ルールになりやすい品目</h3>
-    <p>家電4品目、パソコン、小型充電式電池、リチウムイオン電池、モバイルバッテリー、電動工具・電動自転車のバッテリー、消火器、タイヤ、ガスボンベ、灯油、塗料、農薬、建築廃材、事業系ごみ、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。</p>
+    <p>古い家電、パソコン、電池を含む小型機器、危険物に当たる可能性があるもの、建築廃材に近いもの、事業活動由来か判断が必要な残置物、仏壇・写真などの供養希望品は通常の粗大ごみと別確認にします。</p>
     <ul>
-      <li><strong>家電4品目</strong>: テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクルの対象です。販売店、リサイクル券、指定引取場所を確認します。</li>
+      <li><strong>古い家電</strong>: 大型家電やパソコンなどは、通常ごみ、販売店確認、専門窓口、業者搬出のどれに回すかを確認します。</li>
       <li><strong>パソコン</strong>: メーカー回収、PC3R、宅配回収などを確認。データ消去と付属品の扱いを先に決めます。</li>
-      <li><strong>農具・果樹園まわり</strong>: 脚立、噴霧器、農薬容器、肥料袋、支柱、タイヤなどは家庭ごみか事業系かを分け、清掃センターで受け入れ可否を確認します。</li>
+      <li><strong>農具・果樹園まわり</strong>: 脚立、支柱、肥料袋、工具類などは家庭ごみか事業活動由来かを分け、清掃センターで受け入れ可否を確認します。</li>
       <li><strong>供養品</strong>: 仏壇、位牌、写真、人形、神棚は処分品と分け、供養希望の有無を家族で決めます。</li>
     </ul>
   </div>
@@ -2559,7 +2615,7 @@
     <ul>
       <li>退去期限、立会い可否、鍵の受け渡し、写真報告の希望。</li>
       <li>行政で確認する品、清掃センターへ持ち込む品、業者が屋内搬出する品。</li>
-      <li>家電4品目、パソコン、バッテリー、タイヤ、農薬、建築廃材、事業系に近い残置物。</li>
+      <li>古い家電、パソコン、危険物に当たる可能性があるもの、建築廃材に近いもの、事業活動由来か判断が必要な残置物。</li>
       <li>仏壇、写真、位牌、神棚、供養希望品、買取希望品、探索してほしい通帳・権利書・保険証券。</li>
       <li>須坂駅周辺は管理会社届出と駐車位置、郊外戸建ては庭・物置・農具、山手側は冬季道路と車両導線。</li>
     </ul>
@@ -2569,7 +2625,7 @@
     <h3>□ 須坂市のよくある確認</h3>
     <details><summary>粗大ごみの料金をページに書かないのはなぜですか？</summary><p>須坂市公式で確認できた窓口は掲載していますが、品目別料金や受付条件は年度・品目・搬入先で変わるため、未確認の金額は作らず、生活環境課または清掃センターで確認する形にしています。</p></details>
     <details><summary>自己搬入と業者依頼はどう分けますか？</summary><p>自分で車に積めて分別できるものは清掃センター確認、室内搬出・階段作業・大量家財・物置・庭まわりは業者見積もりに分けると判断しやすくなります。</p></details>
-    <details><summary>果樹園まわりの道具も一緒に片付けられますか？</summary><p>脚立、支柱、農薬容器、噴霧器、タイヤなどは家庭ごみか事業系か、危険物かで扱いが変わります。行政確認と業者相談を分けて、写真で先に共有してください。</p></details>
+    <details><summary>果樹園まわりの道具も一緒に片付けられますか？</summary><p>脚立、支柱、工具類、肥料袋などは家庭ごみか事業活動由来かで扱いが変わる場合があります。行政確認と業者相談を分けて、写真で先に共有してください。</p></details>
     <details><summary>空き家整理では何を先に決めますか？</summary><p>所有者、鍵、売却・解体・賃貸の予定、庭木・物置、近隣対応、残す書類、仏壇・写真の扱いを先に決めます。制度相談はまちづくり課へ確認します。</p></details>
   </div>
 

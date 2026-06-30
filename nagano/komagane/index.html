@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1514,57 +1514,57 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "駒ヶ根市で生前整理だけでも相談できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として駒ヶ根市でも早めに進める方が増えています。"
+        {
+            "@type": "Question",
+            "name": "駒ヶ根市で粗大ごみを出す場合、何を先に確認しますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "駒ヶ根市公式では、粗大ごみの拠点回収日と処理手数料が案内されています。令和8年3月22日（日曜日）の拠点回収情報、委託処理業者による現物確認、概算料金、家電4品目が粗大ごみに出せない点を先に確認します。屋内から運び出せない家具は行政回収だけで考えず、搬出作業として分けます。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "駒ヶ根市でごみを処理場へ直接持ち込めますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "駒ヶ根市公式では、上伊那広域連合が運営する上伊那クリーンセンターとクリーンセンター八乙女へ直接搬入できると案内されています。搬入時は受付票や搬入申請書、搬入前の注意事項を確認します。クリーンセンター八乙女の不燃粗大ごみは20kgまで400円、20kgを超える場合は10kg当たり200円加算とされています。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "家電4品目やリチウムイオン電池はどう分けますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコンは市の粗大ごみ回収には出せません。郵便局で家電リサイクル券を購入して指定場所へ搬入する方法や、公式掲載の市内業者への相談を確認します。小型家電とリチウムイオン電池は無料回収の対象や45cm以内などの条件を確認し、発火防止のため電池を外せるものは外して分けます。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "空き家の片づけで補助制度はありますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "駒ヶ根市公式には、空き家バンク登録物件の片付け経費を対象とする空き家片づけ事業補助制度が掲載されています。補助額は経費の2分の1以内、上限20万円で、空き家1件につき1回です。空き家バンク登録後、片付け前に申請する必要があり、登録前や片付け後は対象外になるため先に確認します。"
+            }
         }
-      },
-      {
-        "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "駒ヶ根市の粗大ごみと業者依頼はどちらがよいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
-        }
-      }
     ]
-  },
+},
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "駒ヶ根市で遺品整理・生前整理を相談する前に確認したいこと",
-    "description": "駒ヶ根市で遺品整理・生前整理を検討している方向けに、住宅特性、令和2年国勢調査、行政窓口、料金目安、品目別対応、業者比較、FAQをまとめた地域特化ガイド。遺品整理・生前整理に加えて、実家じまいの確認点も掲載。",
+    "headline": "駒ヶ根市の遺品整理・生前整理で先に確認したい行政窓口とごみ処分",
+    "description": "駒ヶ根市で遺品整理・生前整理を進める前に、資源物・ごみのガイドブック、粗大ごみ拠点回収、クリーンセンター八乙女への直接搬入、家電4品目、小型家電・リチウムイオン電池、空き家片づけ補助、地域包括支援センターを公式情報に基づいて整理します。",
     "inLanguage": "ja",
     "publisher": {
-      "@type": "Organization",
-      "name": "遺品整理・生前整理.jp"
+        "@type": "Organization",
+        "name": "遺品整理・生前整理.jp"
     },
     "datePublished": "2026-06-25",
-    "dateModified": "2026-06-25",
+    "dateModified": "2026-06-29",
     "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/komagane/"
+        "@type": "WebPage",
+        "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/komagane/"
     }
-  }
+}
 ]
   </script>
 
@@ -1736,6 +1736,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/komagane/#professional-service",
+  "name": "遺品整理・生前整理.jp 駒ヶ根市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/komagane/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "駒ヶ根市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "駒ヶ根市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1762,19 +1857,19 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>駒ヶ根市で特に多い相談</h2><ul class="quick-list"><li>駒ヶ根市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>粗大ごみ・持込制度に加えて、EV予約、共用部養生、搬出時間を確認したい</li><li>前面道路、駐車位置、階段幅、搬出距離を写真で共有したい</li></ul></div>
+      <div class="hero-panel"><h2>駒ヶ根市で特に多い相談</h2><ul class="quick-list"><li>駒ヶ根駅・小町屋駅周辺の退去前整理を短時間で進めたい</li><li>赤穂・赤須町・上穂周辺の集合住宅や店舗兼住宅で、駐車位置と搬出時間を決めたい</li><li>駒ヶ根高原・大田切川方面の戸建て、別荘、山側住宅で坂道や冬季道路を確認したい</li><li>粗大ごみ拠点回収、上伊那クリーンセンター、クリーンセンター八乙女、業者搬出を分けたい</li><li>空き家片づけ補助、家電4品目、小型家電、リチウムイオン電池を処分前に確認したい</li></ul></div>
     </div>
   </section>
 
 
-  <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="駒ヶ根市の地域事情と搬出条件">
+    <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="駒ヶ根市の地域事情と搬出条件">
     <p class="section-kicker">地域オリジナル情報</p>
-    <h2>駒ヶ根市は中央アルプス麓の傾斜地搬出と空き家整理に備えます</h2>
+    <h2>駒ヶ根市は市街地の退去前整理と、中央アルプス側の戸建て・空き家整理を分けて見ます</h2>
     <div class="local-landmark-prose">
-      <p>駒ヶ根市は中央アルプスの麓に広がり、道路から玄関までに階段やスロープがある住宅もあります。遺品整理では、搬出経路と安全な運搬方法を先に確認します。</p>
-      <p>生前整理では、将来の施設入所や住み替えに向けて家財量を減らす相談が増えます。実家じまいでは、売却や賃貸に出せる状態まで一括で家財を撤去する段取りが必要です。</p>
-      <p>不用品の自己搬入や粗大ごみは、上伊那広域連合や駒ヶ根市の公式案内で確認します。受け入れ品目や受付条件は変わるため、見積もり時点の最新情報が大切です。</p>
-      <p>駒ヶ根駅周辺、山麓側、郊外戸建てのどの地域かを伝え、階段、スロープ、駐車位置、物置の写真を共有すると、作業人数を見積もりやすくなります。</p>
+      <p>駒ヶ根市は、駒ヶ根駅・小町屋駅周辺、赤須町・上穂・赤穂周辺の市街地と、駒ヶ根高原、大田切川、中央アルプス側の山麓住宅で、片付けの段取りが変わります。市街地の集合住宅や店舗兼住宅では、駐車位置、搬出時間、共用部養生、管理会社への確認を先に決めます。</p>
+      <p>山麓側や郊外戸建てでは、道路から玄関までの段差、坂道、冬季道路、敷地内の駐車位置、物置や車庫までの距離が作業時間に影響します。母屋だけでなく、納屋、庭、車庫、農具、工具、タイヤ、古い家電まで片付け範囲に入るかを写真で確認します。</p>
+      <p>駒ヶ根高原、光前寺、早太郎温泉、大田切川周辺では、観光時間帯や道路混雑、宿泊施設・別荘の残置物にも注意が必要です。布団、厨房用品、店舗備品、倉庫残置物がある場合は、家庭ごみと事業系ごみを混ぜずに分けて相談します。</p>
+      <p>粗大ごみの拠点回収で出せるもの、上伊那クリーンセンターへ持ち込む可燃系、クリーンセンター八乙女へ持ち込む不燃粗大、家電4品目や小型家電として別確認するもの、業者が屋内から搬出するものを分けると、遠方家族でも見積もり内容を判断しやすくなります。</p>
     </div>
   </section>
 
@@ -1912,19 +2007,19 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">駒ヶ根市で失敗しないための地域特化チェック</h2>
-  <p class="lead">駒ヶ根市は長野県の上伊那地域に属します。駅周辺の集合住宅、市街地の戸建て、郊外・山間部の空家整理まで相談内容が分かれます。人口密度は194.2人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">駒ヶ根市は人口密度194.2人/k㎡で、共同住宅居住率も県平均より高めです。一方で、中央アルプス側の戸建て、山麓の空き家、農家住宅、倉庫付き住宅も多く、同じ市内でも「駅周辺の短時間搬出」と「郊外の大きな実家じまい」では見積もりの見方が変わります。</p>
   <div class="grid cols3">
-    <div class="card"><h3>建物条件を先に分ける</h3><p>集合住宅では、管理会社への届出、エレベーター予約、共用部養生、搬出時間を先に確認します。戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、駒ヶ根市の作業範囲を判断しやすくなります。</p></div>
-    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+    <div class="card"><h3>駅周辺は退去日と駐車位置を先に見る</h3><p>駒ヶ根駅、小町屋駅、赤須町、上穂、赤穂周辺では、集合住宅、賃貸、店舗兼住宅の片付けがあります。管理会社、共用部養生、搬出時間、トラック停車位置、鍵返却日を先に共有します。</p></div>
+    <div class="card"><h3>山麓側は坂道・冬季道路を見る</h3><p>駒ヶ根高原、大田切川、光前寺周辺や山側の住宅では、坂道、段差、冬季道路、玄関から車両までの距離が作業時間に影響します。軽トラックで小分け搬出になるか、事前写真で確認します。</p></div>
+    <div class="card"><h3>戸建ては物置・車庫・庭まで分ける</h3><p>下平、中沢、東伊那方面などの戸建てでは、母屋、庭、物置、車庫、農具、工具、タイヤ、草木、古い家電が残りやすくなります。家電4品目、小型家電、リチウムイオン電池、農薬・薬品類は通常ごみと分けます。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>駒ヶ根市の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
+  <div class="notice" style="margin-top:18px"><b>駒ヶ根市の見積もり前チェック</b><br>粗大ごみ拠点回収を待てるもの、上伊那クリーンセンターへ持ち込むもの、クリーンセンター八乙女へ持ち込むもの、家電リサイクル・小型家電として別確認するもの、空き家片づけ補助の申請前に動かしてはいけないもの、業者が屋内搬出するものを分けてください。</div>
 </section>
 
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">駒ヶ根市でよくある相談パターン</a></li><li><a href="#cases">駒ヶ根市の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">駒ヶ根市で料金が変わりやすい条件</a></li><li><a href="#price">駒ヶ根市の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">駒ヶ根市の住宅特性・行政ルール</a></li><li><a href="#towns">駒ヶ根市の対応エリア</a></li><li><a href="#service">駒ヶ根市で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、地区名、建物種別、階数、駐車位置、搬出距離</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">駒ヶ根市の行政窓口</a></li><li><a href="#local">駒ヶ根市の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -2161,7 +2256,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">駒ヶ根市の対応エリア・町名確認</h2>
         <p>駒ヶ根市全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>駒ヶ根市全域</span><span>赤須町20-1周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>上伊那地域</span></div>      </section>
+        <div class="area-tags"><span>駒ヶ根市全域</span><span>赤須町・駒ヶ根市役所周辺</span><span>駒ヶ根市役所周辺</span><span>駒ヶ根駅・小町屋駅周辺</span><span>戸建て・集合住宅・空家</span><span>上伊那地域</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2197,75 +2292,82 @@
         </tbody></table>
       </section>
 
-<section id="admin" class="admin-hotline-section">
+<section id="admin" class="section admin-deep">
   <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">駒ヶ根市の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>駒ヶ根市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、駒ヶ根市公式サイトで最新情報を確認してください。</p>
-  <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>駒ヶ根市役所</strong><br>代表電話: 0265-83-2111<br>所在地: 〒399-4192 駒ヶ根市赤須町20-1<br>FAX: 0265-83-4348</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">駒ヶ根市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>駒ヶ根市のごみ・リサイクル案内</strong><br>粗大ごみ、収集日、予約要否、手数料、収集できない品目を確認します。大型家具の屋内搬出、仏壇・写真の扱い、短期整理は自治体制度と業者作業を分けて考えます。</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">ごみ・リサイクル情報を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>上伊那地域の自治体や広域処理圏では、持込先、受付日、本人確認、車両条件、料金、受け入れできない品目が自治体ごとに異なります。未確認の施設名や料金は作らず、公式案内で確認します。</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">持込条件を確認</a></div>
-    <div class="admin-card"><h3>駒ヶ根市で特に確認したいこと</h3><p>戸建て、山手住宅、庭・車庫、前面道路を確認します。 実家じまいでは、室内の家財だけでなく、庭、物置、車庫、農機具、仏壇、重要書類、写真、形見分け品を先に分けてください。</p><a href="#process">相談前の流れを見る</a></div>
-    <div class="admin-card"><h3>高齢者・障がい者世帯の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認します。制度名は自治体により異なるため公式確認を優先します。</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">福祉・暮らし情報を確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。相続後の実家では、固定資産税通知、権利書、通帳、印鑑、保険証券を処分前に探索します。</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">空き家・住まい情報を確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。家電リサイクル対象品、農薬・薬品、消火器、農機具などは別ルート確認が必要です。</p><a href="/nagano/" target="_blank" rel="noopener">長野県ページへ戻る</a></div>
+  <h2 class="section-title">駒ヶ根市の行政窓口・粗大ごみ・持ち込み・住まい相談</h2>
+  <p class="admin-lead">駒ヶ根市で遺品整理・生前整理を進めるときは、収集日に出すもの、粗大ごみ拠点回収で相談するもの、上伊那クリーンセンターやクリーンセンター八乙女へ直接搬入するもの、家電リサイクルや小型家電として分けるもの、業者が屋内から搬出するものを分けます。空き家バンク登録物件は、片づけ補助の申請時期も先に確認します。</p>
+  <div class="admin-deep-grid">
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>駒ヶ根市役所</strong><br>代表電話: 0265-83-2111<br>所在地: 〒399-4192 駒ヶ根市赤須町20-1<br>FAX: 0265-83-4348</p><p>ごみ、福祉、空き家、住まいの相談先は担当が分かれます。相続後の実家じまいでは、戸籍・固定資産・空き家・ごみ・福祉の質問をまとめてから確認します。</p><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">駒ヶ根市公式サイト</a></div>
+    <div class="admin-card"><h3>収集で出すもの</h3><p>燃やせるごみ、燃やせないごみ、資源プラスチック、紙類、びん・缶・電池類などは、駒ヶ根市の資源物・ごみのガイドブックと収集日程で確認します。退去日が近い片付けほど、地区の収集日、指定袋、集積所、分別できる量を先に見ます。</p><p>少量で自分で集積所へ出せるものは行政収集、大型家具や屋内から動かせないものは業者搬出に分けます。</p><a href="#nagano-report">公式データを見る</a></div>
+    <div class="admin-card"><h3>粗大ごみ拠点回収</h3><p>既存の公式調査データでは、粗大ごみは拠点回収日と処理手数料を確認します。令和8年3月22日（日曜日）の拠点回収情報が掲載され、最終料金は委託処理業者の現物確認で決まる整理です。</p><p>家電4品目は粗大ごみに出せません。大型家具を屋外へ出せない場合は、行政処分ではなく搬出作業として見積もりに入れます。</p><a href="#faq">粗大ごみFAQへ</a></div>
+    <div class="admin-card"><h3>直接持ち込み</h3><p>上伊那クリーンセンターとクリーンセンター八乙女は、可燃系・不燃粗大で行き先が分かれます。搬入時は受付票、搬入申請書、搬入前の注意事項を確認します。</p><p>既存調査データでは、クリーンセンター八乙女の不燃粗大ごみは20kgまで400円、20kgを超える場合は10kg当たり200円加算です。可燃・不燃を混載しないよう先に分けます。</p><a href="#nagano-report">持ち込み整理を見る</a></div>
+    <div class="admin-card"><h3>家電4品目・小型家電</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコンは市の粗大ごみ回収には出せません。郵便局で家電リサイクル券を購入して指定場所へ搬入する方法や、公式掲載の市内業者への相談を確認します。</p><p>小型家電とリチウムイオン電池は無料回収の対象や45cm以内などの条件を確認します。モバイルバッテリー、加熱式たばこ機器、電動工具の電池は発火防止のため通常ごみに混ぜないようにします。</p><a href="#items">品目別の確認へ</a></div>
+    <div class="admin-card"><h3>駒ヶ根市の地域事情</h3><p>駒ヶ根駅・小町屋駅周辺は集合住宅、賃貸退去、店舗兼住宅の短時間搬出を確認します。駒ヶ根高原、大田切川、光前寺周辺は観光時間帯、坂道、冬季道路、別荘・宿泊施設の残置物を見ます。</p><p>下平、中沢、東伊那方面などの戸建てでは、庭、物置、車庫、農具、工具、タイヤ、草木まで作業範囲に入るかを写真で共有します。</p><a href="#major-local-guide">地域別の確認へ</a></div>
+    <div class="admin-card"><h3>空き家・住まい</h3><p>駒ヶ根市公式には、空き家バンク登録物件の片付け経費を対象とする空き家片づけ事業補助制度が掲載されています。補助額は経費の2分の1以内、上限20万円、空き家1件につき1回です。</p><p>空き家バンク登録後、片付け前申請が条件です。売却前整理、解体前整理、実家じまいでは、作業前に空き家担当へ確認します。</p><a href="#nagano-report">空き家補助の確認へ</a></div>
+    <div class="admin-card"><h3>高齢者・福祉</h3><p>高齢者の生前整理では、地域包括支援センター、介護保険、在宅サービス、認知症相談を確認します。本人の同意、親族やケアマネジャーの立会い、残す薬・介護用品・通帳・印鑑・保険証券を先に分けます。</p><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口と環境担当で利用できる支援や条件を確認します。</p><a href="#nagano-report">福祉の確認へ</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、粗大ごみ拠点回収まで待てるもの、処理場へ持ち込むもの、屋内搬出が必要なものを分けて伝えます。</p><p>家電4品目、小型家電、リチウムイオン電池、農薬・薬品類、消火器、農機具、仏壇・写真、貴重品探索、空き家補助の申請状況、作業前後の写真報告も共有してください。</p><a href="#compare">業者比較の確認点へ</a></div>
   </div>
-  <p class="source-note">出典: 長野県公式「市町村一覧（役場所在地・電話番号等）」、駒ヶ根市公式サイト。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典: <a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">駒ヶ根市公式サイト</a>、ページ内の既存公式調査データ。収集日、受付時間、対象品目、料金、補助制度は変更される場合があります。相談前に必ず公式ページで最新情報を確認してください。</p>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">行政・地域データ</p>
-    <h2 class="section-title">駒ヶ根市で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">駒ヶ根市公式情報と長野県公式の市町村一覧をもとに、遺品整理・生前整理を進める前に確認したい自治体窓口、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">駒ヶ根市調査データ</p>
+    <h2 class="section-title">駒ヶ根市で行政処分・直接持ち込み・空き家補助を分ける要点</h2>
+    <p class="lead">駒ヶ根市は、通常の集積所ごみ、粗大ごみ拠点回収、上伊那広域連合施設への直接搬入、家電リサイクル、小型家電・リチウムイオン電池回収、空き家片づけ補助を分けて確認する必要があります。特に退去期限が近い片付けや空き家バンク登録物件では、処分方法と申請時期を先にそろえると手戻りを減らせます。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>上伊那地域。クリーンセンター八乙女</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>20kgまで400円、20kgを超えると10kgごと200円加算が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>伊那谷の戸建て、農家住宅、倉庫付き住宅では、屋内だけでなく物置・車庫・農機具の確認が必要です。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">駒ヶ根市公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>令和8年3月22日（日曜日）の拠点回収が公式掲載。最終料金は委託処理業者の現物確認で決まります。</span></div>
+      <div class="nagano-report-card"><b>直接搬入</b><span>上伊那クリーンセンター、クリーンセンター八乙女へ搬入可。受付票・搬入申請書・注意事項の確認が必要です。</span></div>
+      <div class="nagano-report-card"><b>八乙女料金</b><span>不燃粗大ごみは20kgまで400円、20kg超は10kg当たり200円加算と公式掲載。</span></div>
+      <div class="nagano-report-card"><b>空き家補助</b><span>空き家バンク登録物件の片付けは、経費2分の1以内・上限20万円。片付け前申請が条件です。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>20kgまで400円、20kgを超えると10kgごと200円加算が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>伊那谷の戸建て、農家住宅、倉庫付き住宅では、屋内だけでなく物置・車庫・農機具の確認が必要です。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.komagane.nagano.jp/" target="_blank" rel="noopener">駒ヶ根市公式サイト</a></td></tr>
+      <tr><th>行政収集</th><td>燃やせるごみ、燃やせないごみ、資源プラスチック、紙類、びん・缶・電池類などは、公式ガイドブックと収集日程で分別します。指定袋や地区ごとの収集日を見積もり前に確認します。</td></tr>
+      <tr><th>粗大ごみ</th><td>市の拠点回収は回収日、場所、時間、概算料金表を確認します。家電4品目は粗大ごみに出せません。大型家具を屋外へ出せない場合は、搬出作業として業者見積もりに入れます。</td></tr>
+      <tr><th>持ち込み</th><td>処理場へ直接搬入する場合は、上伊那クリーンセンター搬入申請書、クリーンセンター八乙女受付票、搬入時の注意事項を確認します。可燃系・不燃粗大ごみで行き先が分かれるため、混載しないよう先に分けます。</td></tr>
+      <tr><th>別ルール</th><td>家電4品目、リチウムイオン電池、モバイルバッテリー、加熱式たばこ機器、小型家電、アスベスト含有珪藻土製品、事業系ごみ、建築廃材、農薬・薬品類、消火器、仏壇・写真などの供養希望品は通常ごみと別確認にします。</td></tr>
+      <tr><th>地域事情</th><td>駒ヶ根駅周辺は集合住宅と退去前整理、駒ヶ根高原・大田切川方面は坂道・観光時間帯・冬季道路、郊外戸建ては庭・物置・車庫・農具まで確認します。</td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">民間まとめサイトの料金や電話番号は出典にせず、駒ヶ根市公式とページ内の既存公式調査データで確認できる情報を優先しています。作業日直前に回収日、料金、受付票、搬入可否、補助申請の時期を再確認してください。</p>
   </div>
 </section>
-
 
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
     <p class="major-seo-local__kicker">駒ヶ根市で失敗しない整理導線</p>
     <h2>駒ヶ根市で遺品整理・生前整理を相談する前に見るポイント</h2>
-    <p class="major-seo-local__lead">駅周辺の住宅、山手の戸建て、空き家整理で、坂道・冬季道路・屋外品の確認が必要です。 坂道、冬季道路、車両進入、庭・物置、残す書類、写真報告を整理します。</p>
+    <p class="major-seo-local__lead">駒ヶ根市では、年次の粗大ごみ拠点回収、広域施設への直接搬入、家電4品目のリサイクル、空き家バンク登録後の片づけ補助が関係します。赤穂・赤須町周辺の住宅、駒ヶ根駅周辺の賃貸、駒ヶ根高原側の戸建て、農家住宅・倉庫付き住宅では、行政処分だけでなく搬出導線と屋外残置物を分けて確認します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
-    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>1. 先に分ける</b><span>集積所へ出すもの、粗大ごみ拠点回収へ相談するもの、処理場へ持ち込むもの、業者が屋内搬出するものを分けます。</span></div>
+    <div class="major-seo-local__card"><b>2. 期限を見る</b><span>粗大ごみ拠点回収日まで待てるか、退去日・売却日・鍵返却日が先に来るかで、行政利用と業者作業の割合が変わります。</span></div>
+    <div class="major-seo-local__card"><b>3. 補助を先に確認</b><span>空き家片づけ補助は片付け前申請が重要です。空き家バンク登録状況、所有者、契約者、対象経費を確認してから動きます。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、廊下、階段、駐車位置、庭、物置、車庫、農機具、分別したい大型家具を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
-      <thead><tr><th>検索している状況</th><th>駒ヶ根市で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
+      <thead><tr><th>相談場面</th><th>駒ヶ根市で先に確認すること</th><th>業者へ伝える内容</th></tr></thead>
       <tbody>
-        <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
-        <tr><td>行政ごみと業者作業を分けたい</td><td>自治体で出せる少量ごみと、屋内搬出・大量家財・供養・買取を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
-        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、写真報告、残す品、返送品、立会い可否を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
-        <tr><td>悪質業者を避けたい</td><td>見積書の内訳、追加料金条件、許可・提携先、買取査定の説明、契約前のキャンセル条件を見る。</td><td>業者の見分け方・比較表</td></tr>
+        <tr><td>駅周辺の退去前整理</td><td>駒ヶ根駅・小町屋駅周辺は、駐車位置、共用部養生、短時間搬出、管理会社確認、鍵返却日を見ます。</td><td>階段、エレベーター、廊下幅、作業時間、駐車位置、退去期限。</td></tr>
+        <tr><td>粗大ごみを使いたい</td><td>令和8年3月22日（日曜日）の拠点回収、委託処理業者、概算料金、家電4品目対象外、屋外排出の可否。</td><td>処分したい品名、数量、サイズ、屋内搬出の有無、階段・段差、車両位置。</td></tr>
+        <tr><td>処理場へ持ち込みたい</td><td>上伊那クリーンセンターかクリーンセンター八乙女か、受付票、搬入申請書、可燃・不燃の分別、料金。</td><td>誰が運ぶか、車両、荷下ろし可否、搬入できない品、持ち込み後に残る家財。</td></tr>
+        <tr><td>山麓・観光地側の整理</td><td>駒ヶ根高原、大田切川、光前寺、早太郎温泉周辺は、観光時間帯、坂道、冬季道路、別荘・宿泊施設備品を見ます。</td><td>道路写真、駐車位置、布団・厨房用品、倉庫残置物、庭・車庫、軽トラック搬出の可否。</td></tr>
+        <tr><td>空き家を片づけたい</td><td>空き家バンク登録、片づけ前申請、補助対象経費、所有者・売買契約者・賃貸借契約者の確認。</td><td>申請前か申請後か、残置物の範囲、写真報告、処分前確認、鍵預かり。</td></tr>
+        <tr><td>高齢者の生前整理</td><td>地域包括支援センター、介護保険、在宅サービス、認知症相談、本人同意と親族・ケアマネジャーの立会い。</td><td>残す薬・介護用品、探す書類、通帳・印鑑、貴重品探索、作業中の連絡先。</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="major-seo-local__note">駒ヶ根市では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
+  <p class="major-seo-local__note">駒ヶ根市では「回収日に合わせる処分」と「退去・売却日に合わせる整理」を分けると判断しやすくなります。特に空き家補助は片付け前申請が前提なので、家財を動かす前に公式窓口で確認してください。</p>
 </section>
 
 <section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">駒ヶ根市の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>駒ヶ根市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として駒ヶ根市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>駒ヶ根市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        <details><summary>駒ヶ根市で粗大ごみはいつでも回収してもらえますか？</summary><p>公式ページでは、粗大ごみの拠点回収日と処理手数料が案内されています。令和8年3月22日（日曜日）の拠点回収情報が掲載されているため、退去日や売却日が近い場合は、その日程まで待てるかを先に確認します。屋内から出せない大型家具は、行政処分とは別に搬出作業として見積もりに入れます。</p></details>
+        <details><summary>クリーンセンター八乙女へ持ち込む場合の料金は？</summary><p>駒ヶ根市公式の粗大ごみページでは、クリーンセンター八乙女へ直接持ち込む場合の施設使用料金として、20kgまで一律400円、20kgを超える場合は10kg当たり200円ずつ加算と案内されています。搬入時と帰りに計量し、料金は帰りに支払う流れです。搬入前に受付票と注意事項を確認してください。</p></details>
+        <details><summary>家電4品目は粗大ごみで出せますか？</summary><p>出せません。駒ヶ根市公式では、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコンは市の粗大ごみ回収には出せないと案内されています。郵便局で家電リサイクル券を購入して指定場所へ搬入する方法、または公式掲載の市内業者への相談を確認します。</p></details>
+        <details><summary>小型家電やモバイルバッテリーはどう分けますか？</summary><p>駒ヶ根市公式では、使用済み小型家電28品目とリチウムイオン電池の無料回収が案内されています。対象は一辺45cm以内の小型家電などで、バッテリーが外せるものは外してから出します。モバイルバッテリーや加熱式たばこ機器など発火リスクのある品は、通常ごみへ混ぜないようにします。</p></details>
+        <details><summary>空き家片づけの補助は片付け後でも申請できますか？</summary><p>公式ページでは、空き家バンク登録後、必ず片付け前に申請する必要があると案内されています。空き家バンク登録前の片付けは補助対象外です。補助額は経費の2分の1以内、上限20万円、空き家1件につき1回です。売却前整理や実家じまいでは、作業前に空き家担当へ確認します。</p></details>
       </section>
 
 <section id="links" class="nearby-wards">

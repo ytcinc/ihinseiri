@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1511,44 +1511,60 @@
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "大町市で生前整理だけでも相談できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として大町市でも早めに進める方が増えています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "大町市の粗大ごみと業者依頼はどちらがよいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "大町市で大型家具や粗大ごみはどう分ければよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "指定袋に入る日常ごみと、指定袋に入らない粗大ごみを分けます。大町市公式では粗大ごみ拠点回収日が案内されており、大町リサイクルパーク駐車場、八坂支所駐車場・山村広場、美麻支所駐車場などで回収日が設定されています。屋内から運び出せない大型家具は業者搬出と分けて確認します。"
       }
-    ]
-  },
-  {
+    },
+    {
+      "@type": "Question",
+      "name": "粗大ごみ拠点回収の料金目安はありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "大町市公式ページでは、拠点回収時の料金として可燃性粗大ごみ20円/kg、金属製粗大ごみ・小型家電・混合製品・畳など77円/kg、スキー板など88円/kg、車載用バッテリー小330円・大550円などが案内されています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "北アルプスエコパークや大町リサイクルパークに何でも持ち込めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "何でも持ち込めるわけではありません。通常引き取れない粗大ごみがあり、拠点回収や指定業者への相談が必要な品があります。厚さ・太さ5cm以上の木材、スプリング入りマットレス、タイヤ、バッテリーなどは公式ページで確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家電4品目は大町市の粗大ごみに出せますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "家電4品目は通常の粗大ごみとは別です。大町市公式では、引取り手がない家電は旧環境プラント（大町リサイクルパーク内）へ搬入できる案内がありますが、あらかじめ郵便局で家電リサイクル券を購入する必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "大町市の別荘や山間部の片付けで注意することは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "大町温泉郷、木崎湖・仁科三湖周辺、八坂・美麻などは、前面道路の幅、坂道、冬季の積雪・凍結、除雪状況で搬出条件が変わります。鍵の受け渡し、写真報告、残す物、探す貴重品を先に決めてください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "空き家整理や高齢者の生前整理はどこへ相談しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "空き家は大町市空き家バンクや空き家流通促進事業補助金の対象を確認します。高齢者の生活・介護相談は地域包括支援センターが総合相談窓口です。片付け前に補助金条件、本人同意、立会い、重要書類の扱いを整理します。"
+      }
+    }
+  ]
+},
+{
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "大町市で遺品整理・生前整理を相談する前に確認したいこと",
@@ -1736,6 +1752,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/omachi/#professional-service",
+  "name": "遺品整理・生前整理.jp 大町市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/omachi/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "大町市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "大町市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1757,7 +1868,7 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>養生対応</b><span>市街地集合住宅・山側戸建て・別荘の搬出配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
@@ -1769,12 +1880,12 @@
 
   <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="大町市の地域事情と搬出条件">
     <p class="section-kicker">地域オリジナル情報</p>
-    <h2>大町市は豪雪と別荘・ペンション整理を見据えた日程調整が必要です</h2>
+    <h2>大町市は市街地・温泉郷・仁科三湖・八坂美麻で段取りが変わります</h2>
     <div class="local-landmark-prose">
-      <p>大町市は立山黒部アルペンルートの玄関口として知られ、冬季は積雪や路面凍結の影響を受けやすい地域です。市街地、木崎湖周辺、大町温泉郷、山側の住宅で作業条件が変わります。</p>
-      <p>冬場の整理では、敷地内の除雪、前面道路、駐車場所、車両が入れるかを先に確認します。雪が多い時期は無理に作業せず、春から秋にかけた実家じまいを提案することもあります。</p>
-      <p>大町温泉郷や木崎湖周辺では、別荘、ペンション、元民宿の残置物整理も想定されます。ベッド、布団、食器、厨房用品、アウトドア用品など、一般家庭より量が多くなることがあります。</p>
-      <p>遠方の所有者からの相談では、鍵預かり、写真報告、電気水道の状態確認、残す品の指定を組み合わせると、現地に何度も来なくても進めやすくなります。</p>
+      <p>大町市は立山黒部アルペンルートの玄関口で、市街地の集合住宅や戸建て、大町温泉郷、木崎湖・中綱湖・青木湖周辺、八坂・美麻方面の山側住宅まで住環境が大きく分かれます。同じ2LDKでも、駅周辺の短時間搬出と、湖畔・山側の別荘や空き家整理では車両計画がまったく変わります。</p>
+      <p>市街地ではエレベーター予約、共用部養生、駐車位置、搬出時間の確認が重要です。一方で北アルプス山麓や仁科三湖周辺では、積雪、凍結、坂道、別荘地の管理ルール、鍵の受け渡し、近隣への連絡まで見積もり前に決めておく必要があります。</p>
+      <p>大町市の片付けでは、粗大ごみ拠点回収、北アルプスエコパーク・大町リサイクルパークで扱えるもの、家電リサイクル券が必要な家電4品目、業者が屋内から搬出する大型家具を分けると進めやすくなります。スキー板、スノーボード、ストーブ、除雪用品、薪、古い家電がまとまって出ることもあります。</p>
+      <p>遠方家族の実家じまいや別荘整理では、玄関、前面道路、駐車位置、階段、部屋全体、押入れ、物置、車庫、庭、除雪状況の写真を送ってください。冬季は作業できる日程が限られるため、売却・解体・退去の期限も早めに共有すると安心です。</p>
     </div>
   </section>
 
@@ -1912,19 +2023,19 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">大町市で失敗しないための地域特化チェック</h2>
-  <p class="lead">大町市は長野県の大北地域（北アルプス）に属します。駅周辺の集合住宅、市街地の戸建て、郊外・山間部の空家整理まで相談内容が分かれます。人口密度は46.1人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">大町市は大北地域（北アルプス）に属し、駅周辺の集合住宅、市街地の戸建て、木崎湖・中綱湖・青木湖周辺の別荘、大町温泉郷、八坂・美麻の空き家で搬出条件が変わります。人口密度は46.1人/k㎡、65歳以上人口割合は38.8%で、冬季道路、坂道、敷地内階段、屋外倉庫、別荘管理の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
-    <div class="card"><h3>建物条件を先に分ける</h3><p>集合住宅では、管理会社への届出、エレベーター予約、共用部養生、搬出時間を先に確認します。戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、大町市の作業範囲を判断しやすくなります。</p></div>
-    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+    <div class="card"><h3>市街地と山側を分ける</h3><p>大町駅周辺や市街地では、集合住宅の共用部養生、エレベーター予約、駐車位置、短時間搬出を確認します。山側や湖畔では、冬季道路、坂道、軽トラック搬出、鍵預かりを先に見ます。</p></div>
+    <div class="card"><h3>粗大ごみ拠点回収と業者搬出を分ける</h3><p>指定袋で出せるもの、拠点回収に回せる粗大ごみ、家電4品目、北アルプスエコパーク・大町リサイクルパークで確認するもの、業者が屋内搬出するものを分けます。</p></div>
+    <div class="card"><h3>別荘・空き家は写真報告を前提にする</h3><p>大町温泉郷、仁科三湖周辺、八坂・美麻では、遠方家族や管理者とのやり取りが多くなります。鍵、写真報告、残す品、返送品、近隣連絡、冬季作業の可否を先に決めます。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>大町市の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
+  <div class="notice" style="margin-top:18px"><b>大町市の見積もり前チェック</b><br>料金だけで判断せず、拠点回収日程、粗大ごみ料金、家電リサイクル券、冬季道路、駐車位置、別荘管理、写真報告を書面で確認してください。</div>
 </section>
 
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">大町市でよくある相談パターン</a></li><li><a href="#cases">大町市の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">大町市で料金が変わりやすい条件</a></li><li><a href="#price">大町市の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">大町市の住宅特性・行政ルール</a></li><li><a href="#towns">大町市の対応エリア</a></li><li><a href="#service">大町市で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、駐車位置、冬季道路の状況</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">大町市の行政窓口</a></li><li><a href="#local">大町市の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1947,7 +2058,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>大町市の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>集合住宅の共用部、戸建ての床・建具、別荘地の道路条件に備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1978,8 +2089,8 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>大町市のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="大町市の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="大町市の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>大町市の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="大町市の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="大町市の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
+      <article class="common-ba-card"><h3>大町市の市街地住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="大町市の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="大町市の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>大町市の別荘・山側住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="大町市の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="大町市の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市の木崎湖周辺、大町温泉郷、八坂・美麻方面の別荘や山側住宅で、鍵預かり、冬季道路、管理会社・近隣への連絡が必要なケースです。積雪、坂道、駐車位置、搬出距離を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>道路条件確認</span><span>写真報告</span><span>立会い不要</span></div></div></article>
       <article class="common-ba-card"><h3>大町市の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="大町市の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="大町市の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
       <article class="common-ba-card"><h3>大町市の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="大町市の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="大町市の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>大町市の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="大町市の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="大町市の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大町市の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
@@ -1995,7 +2106,7 @@
         <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。大町市では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
-          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
+          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、道路条件確認。</td></tr>
           <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
           <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
         </tbody></table>
@@ -2148,7 +2259,7 @@
           </div>
         </div>        <div class="regional-original">
           <h3>大町市ならではの整理メモ</h3>
-          <p class="regional-lead">大町市は該当地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
+          <p class="regional-lead">大町市は大北地域（北アルプス）に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
             <div class="regional-original-card"><strong>戸建て・旧道沿いの搬出</strong><span>大町市は人口密度が46.1人/k㎡で、戸建て、旧道沿いの住宅、前面道路の幅、駐車位置で作業人数が変わりやすい地域です。</span></div>
             <div class="regional-original-card"><strong>搬出経路・車両位置</strong><span>該当地域では、市街地と郊外で搬出条件が変わるため、道路幅、駐車位置、階段、屋外倉庫の有無を見積もり時に確認します。</span></div>
@@ -2199,42 +2310,46 @@
 
 <section id="admin" class="admin-hotline-section">
   <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">大町市の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>大町市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、大町市公式サイトで最新情報を確認してください。</p>
+  <h2 class="section-title">大町市の行政窓口・粗大ごみ・持ち込み先</h2>
+  <p>大町市で遺品整理・生前整理を進める前に、指定袋で出す日常ごみ、資源物、粗大ごみ拠点回収に回すもの、北アルプスエコパーク・大町リサイクルパークで確認するもの、家電リサイクル券が必要な家電4品目、専門業者が屋内から搬出するものを分けます。</p>
+  <p>大町市は市街地、木崎湖・中綱湖・青木湖周辺、大町温泉郷、八坂・美麻方面で作業条件が変わります。冬季道路、積雪、坂道、別荘地の管理ルール、鍵の受け渡し、写真報告まで見積もり前に整理してください。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>大町市役所</strong><br>代表電話: 0261-22-0420<br>所在地: 〒398-8601 大町市大町3887<br>FAX: 0261-23-4304</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">大町市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>大町市のごみ・リサイクル案内</strong><br>粗大ごみ、収集日、予約要否、手数料、収集できない品目を確認します。大型家具の屋内搬出、仏壇・写真の扱い、短期整理は自治体制度と業者作業を分けて考えます。</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">ごみ・リサイクル情報を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>大北地域の自治体や広域処理圏では、持込先、受付日、本人確認、車両条件、料金、受け入れできない品目が自治体ごとに異なります。未確認の施設名や料金は作らず、公式案内で確認します。</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">持込条件を確認</a></div>
-    <div class="admin-card"><h3>大町市で特に確認したいこと</h3><p>北アルプス山麓の戸建て、空き家、冬季日程、車両位置を確認します。 実家じまいでは、室内の家財だけでなく、庭、物置、車庫、農機具、仏壇、重要書類、写真、形見分け品を先に分けてください。</p><a href="#process">相談前の流れを見る</a></div>
-    <div class="admin-card"><h3>高齢者・障がい者世帯の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認します。制度名は自治体により異なるため公式確認を優先します。</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">福祉・暮らし情報を確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。相続後の実家では、固定資産税通知、権利書、通帳、印鑑、保険証券を処分前に探索します。</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">空き家・住まい情報を確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。家電リサイクル対象品、農薬・薬品、消火器、農機具などは別ルート確認が必要です。</p><a href="/nagano/" target="_blank" rel="noopener">長野県ページへ戻る</a></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>大町市役所</strong><br>代表電話: 0261-22-0420<br>所在地: 〒398-8601 長野県大町市大町3887<br>FAX: 0261-23-4304<br>開庁時間: 平日8時30分から17時15分</p><p>ごみ、福祉、空き家、住まいの相談先は担当が分かれます。相続後の実家じまいでは、粗大ごみ、家電4品目、空き家バンク、地域包括支援センター、介護・福祉を同じ日に確認できるよう質問をまとめます。</p><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">大町市公式サイト</a></div>
+    <div class="admin-card"><h3>収集で出すもの</h3><p><strong>ごみ・資源物収集日程</strong><br>大町市公式の収集日程では、大町地区、平地区、常盤地区、社地区、八坂地区、美麻地区ごとに確認します。燃えるごみ・燃えないごみは朝8時まで、資源物は朝7時から8時に収集と案内されています。</p><p>新聞、段ボール、ペットボトル、びん、缶、古着・古布、雑紙などは、日常ごみや粗大ごみと混ぜずに分けます。市役所前資源物集積所は毎週日曜日の午前7時から10時を基本に開催される案内があります。</p><a href="https://www.city.omachi.nagano.jp/garbage" target="_blank" rel="noopener">ごみ・資源物収集日程を確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ拠点回収</h3><p>大町市公式では、粗大ごみ拠点回収日程・料金・処理業者が案内されています。大町リサイクルパーク駐車場、八坂支所駐車場・山村広場、美麻支所駐車場などの回収日を確認します。</p><p>料金目安として、可燃性粗大ごみ20円/kg、金属製粗大ごみ・小型家電・混合製品・畳など77円/kg、スキー板・スノーボードなど88円/kg、車載用バッテリー小330円・大550円などがページ内の既存調査情報に整理されています。年度で変わるため持ち込み前に公式確認が必要です。</p><a href="#nagano-report">粗大ごみ料金の整理を見る</a></div>
+    <div class="admin-card"><h3>持ち込み・処理施設</h3><p>北アルプスエコパークや大町リサイクルパークに何でも持ち込めるわけではありません。指定袋に入らない長さ50cm以上のもの、厚さ・太さ5cm以上の木材、スプリング入りマットレス、タイヤ、バッテリー、エンジン付き機器などは、拠点回収や指定業者への相談が必要になる場合があります。</p><p>大量の家具、布団、スキー用品、除雪用品、ストーブ、薪、物置の残置物を動かす場合は、自己搬入で足りるか、業者が屋内搬出から対応するかを分けます。</p><a href="#faq">持ち込み前の確認へ</a></div>
+    <div class="admin-card"><h3>家電4品目</h3><p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品で、通常の粗大ごみとは別確認です。大町市公式の既存調査では、引取り手がない家電は旧環境プラント（大町リサイクルパーク内）へ搬入できる案内があり、事前に郵便局で家電リサイクル券を購入する必要があります。</p><p>別荘や空き家では古い冷蔵庫、洗濯機、ブラウン管テレビ、エアコン室外機が残りやすいため、台数、設置場所、搬出経路を写真で共有してください。</p><a href="https://www.city.omachi.nagano.jp/garbage" target="_blank" rel="noopener">家電リサイクルを確認</a></div>
+    <div class="admin-card"><h3>収集しないもの・別確認品</h3><p>家電4品目、パソコン、消火器、ガスボンベ、農機具、灯油、塗料、薬品、事業系ごみ、建築廃材、厚い木材、スプリング入りマットレス、タイヤ、バッテリー、エンジン付き機器、仏壇・写真などの供養希望品は、通常ごみや粗大ごみと分けて確認します。</p><p>大町市ではスキー板、スノーボード、ストーブ、除雪用品、薪、アウトドア用品、別荘備品がまとまって出ることがあります。販売店、専門窓口、行政確認、業者搬出のどれに回すかを先に分けます。</p><a href="#items">品目別の確認へ</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>大町市は空き家バンクや空き家流通促進事業補助金の対象確認が必要です。売却前整理、解体前整理、空き家バンク掲載前の片付けでは、家財だけでなく、固定資産関係書類、権利書、境界資料、鍵、残す建具・設備、物置や庭の残置物を分けます。</p><p>木崎湖・中綱湖・青木湖周辺、大町温泉郷、八坂・美麻の空き家や別荘では、管理会社、近隣、除雪、通水・電気、鍵の保管場所も事前確認に入れます。</p><a href="https://iju-omachi.jp/" target="_blank" rel="noopener">大町市移住・住まい情報を確認</a></div>
+    <div class="admin-card"><h3>高齢者・福祉の確認</h3><p>高齢者の生活・介護相談は地域包括支援センターが総合相談窓口として既存調査情報に整理されています。生前整理では、本人の同意、ケアマネジャーの関与、残す薬・介護用品・通帳・印鑑・保険証券の扱いを先に分けます。</p><p>施設入居前の整理では、生活動線をふさぐ家具、ストーブ、灯油缶、古い布団、転倒しやすい廊下まわりから確認すると、処分と安全確保を同時に進めやすくなります。</p><a href="https://www.city.omachi.nagano.jp/kenko" target="_blank" rel="noopener">健康・医療・福祉を確認</a></div>
+    <div class="admin-card"><h3>大町市の地域事情</h3><p>市街地では集合住宅の共用部養生、駐車位置、短時間搬出が重要です。北アルプス山麓、仁科三湖周辺、大町温泉郷、八坂・美麻では、坂道、積雪、凍結、軽トラック搬出、別荘地の管理ルール、鍵預かりが費用と日程に影響します。</p><p>遠方家族の依頼では、作業前後の写真報告、処分前確認、返送品、近隣への声かけ、冬季作業の可否を見積もり時に共有してください。</p><a href="#local">住宅特性・統計を見る</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、自治体収集で出すもの、粗大ごみ拠点回収に回すもの、北アルプスエコパーク・大町リサイクルパークで確認するもの、業者が屋内搬出するもの、家電4品目、仏壇・写真、貴重品探索、物置・庭・車庫を分けて伝えます。</p><p>大町市では冬季道路と搬出距離が費用に影響しやすいため、駐車位置、道路幅、積雪状況、除雪の有無、管理会社や近隣への連絡も見積もり時に共有します。</p><a href="#compare">業者比較の確認点へ</a></div>
   </div>
-  <p class="source-note">出典: 長野県公式「市町村一覧（役場所在地・電話番号等）」、大町市公式サイト。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典: 大町市公式サイト、大町市「ごみ・資源物収集日程」、大町市公式の粗大ごみ拠点回収・家電リサイクル・事業系廃棄物・空き家バンク・地域包括支援センターに関する既存調査情報。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">行政・地域データ</p>
-    <h2 class="section-title">大町市で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">大町市公式情報と長野県公式の市町村一覧をもとに、遺品整理・生前整理を進める前に確認したい自治体窓口、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">長野県調査データ</p>
+    <h2 class="section-title">大町市に反映した行政・ごみ処理の要点</h2>
+    <p class="lead">大町市は「北アルプスエコパークで処理できるもの」「拠点回収や指定業者に回す粗大ごみ」「家電リサイクル券が必要な家電4品目」を分けることが重要です。特に別荘、山間部、冬季の退去、遠方家族の立会いなし整理では、出す場所だけでなく、屋内から屋外まで誰が運ぶかを先に決めてください。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>北アルプス地域。北アルプスエコパーク</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>10kg200円が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>別荘・観光地・豪雪地の整理では、立会いなし、鍵預かり、積雪前後の候補日調整をセットで考えます。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">大町市公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>まず分ける</b><span>指定袋で出す日常ごみ、分別検索で確認する資源物、拠点回収に回す粗大ごみ、家電4品目、業者搬出品を分けます。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ料金</b><span>拠点回収時は可燃性粗大ごみ20円/kg、金属製・小型家電・混合製品など77円/kg、スキー板など88円/kgが公式目安です。</span></div>
+      <div class="nagano-report-card"><b>家電4品目</b><span>郵便局でリサイクル券を購入し、引取り手がない場合は旧環境プラント（大町リサイクルパーク内）への搬入可否を確認します。</span></div>
+      <div class="nagano-report-card"><b>地域事情</b><span>信濃大町駅周辺、大町温泉郷、木崎湖・仁科三湖、八坂・美麻では、坂道、除雪、前面道路、別荘管理者の立会いが変わります。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>10kg200円が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>別荘・観光地・豪雪地の整理では、立会いなし、鍵預かり、積雪前後の候補日調整をセットで考えます。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.city.omachi.nagano.jp/" target="_blank" rel="noopener">大町市公式サイト</a></td></tr>
+      <tr><th>行政収集で進める品</th><td>指定袋に入る燃えるごみ、金属類、資源物などは分別表・ごみ分別簡単検索で確認します。集積所を使う場合は自治会や管理者のルール、回収日、袋の種類を合わせます。</td></tr>
+      <tr><th>粗大ごみ拠点回収</th><td>大町リサイクルパーク駐車場、八坂支所駐車場・山村広場、美麻支所駐車場などの拠点回収日を確認します。指定袋に入らない長さ50cm以上のもの、厚さ・太さ5cm以上の木材、スプリング入りマットレスなどは通常ルートと分けます。</td></tr>
+      <tr><th>直接業者へ相談</th><td>平田商店、タカダ、子田商会、高橋商店など公式掲載の業者に、品目、サイズ、重量、搬入希望日を電話で確認します。タイヤ、バッテリー、エンジン付き機器は料金や受入先が変わります。</td></tr>
+      <tr><th>家電・処理困難物</th><td>家電4品目、パソコン、消火器、ガスボンベ、農機具、灯油、塗料、薬品、事業系ごみ、建築廃材、仏壇・写真などは通常の粗大ごみと別確認にします。家電4品目はリサイクル券の購入が必要です。</td></tr>
+      <tr><th>冬季・別荘整理</th><td>積雪や凍結で車両が近づけない場合があります。大町温泉郷、木崎湖周辺、八坂・美麻の空き家や別荘では、除雪、鍵の受け渡し、写真報告、管理会社・近隣への連絡を見積もり前に決めます。</td></tr>
+      <tr><th>空き家・高齢者</th><td>空き家バンク登録、片付け清掃・リフォーム補助、地域包括支援センターの相談対象を公式窓口で確認します。生前整理では介護用品、薬、通帳、保険証券、権利書の扱いを作業前に分けます。</td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">出典は大町市公式サイトの「令和8年度 粗大ごみ拠点回収日程・料金・処理業者」「ごみ分別簡単検索」「家電リサイクル法」「事業系廃棄物の処理」「大町市空き家バンク」「地域包括支援センター」に絞り、未確認の民間情報は入れていません。</p>
   </div>
 </section>
-
 
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
@@ -2243,7 +2358,7 @@
     <p class="major-seo-local__lead">市街地住宅、山手の戸建て、別荘・空き家整理で、冬季道路と搬出距離が見積もりに影響します。 冬季道路、駐車位置、庭・物置、別荘管理、仏壇・写真、写真報告を整理します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>地区名、市街地か山側か、集合住宅か戸建て・別荘か、階数、前面道路、冬季に車両が入れるかを先に整理します。</span></div>
     <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
@@ -2263,10 +2378,19 @@
 </section>
 
 <section id="faq" class="faq">
-        <p class="section-kicker">FAQ</p>
-        <h2 class="section-title">大町市の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>大町市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として大町市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>大町市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
-      </section>
+  <div class="container">
+    <p class="section-kicker">FAQ</p>
+    <h2 class="section-title">大町市の遺品整理・生前整理でよくある質問</h2>
+    <div class="faq-list">
+      <details><summary>大町市で大型家具や粗大ごみはどう分ければよいですか？</summary><p>まず指定袋に入る日常ごみと、指定袋に入らない粗大ごみを分けます。大町市公式では粗大ごみ拠点回収日が案内されており、大町リサイクルパーク駐車場、八坂支所駐車場・山村広場、美麻支所駐車場などで回収日が設定されています。屋内から運び出せないタンス、ベッド、食器棚、スプリング入りマットレスは、行政確認と業者搬出を別に考えると安全です。</p></details>
+      <details><summary>粗大ごみ拠点回収の料金目安はありますか？</summary><p>大町市公式ページでは、拠点回収時の料金として可燃性粗大ごみ20円/kg、金属製粗大ごみ・小型家電・混合製品・畳など77円/kg、スキー板やスノーボードなど88円/kg、車載用バッテリー小330円・大550円などが案内されています。品目や年度で変わる可能性があるため、持ち込み前に最新の日程・料金を確認してください。</p></details>
+      <details><summary>北アルプスエコパークや大町リサイクルパークに何でも持ち込めますか？</summary><p>何でも持ち込めるわけではありません。通常、北アルプスエコパーク・大町リサイクルパークでは引き取れない粗大ごみもあり、拠点回収や指定業者への相談が必要な品があります。厚さ・太さ5cm以上の木材、スプリング入りマットレス、タイヤ、バッテリー、エンジン付き機器などは、公式ページの拠点回収・指定業者欄で確認してください。</p></details>
+      <details><summary>家電4品目は大町市の粗大ごみに出せますか？</summary><p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品で、通常の粗大ごみとは別です。大町市公式では、引取り手がない家電は旧環境プラント（大町リサイクルパーク内）へ搬入できる案内がありますが、あらかじめ郵便局で家電リサイクル券を購入する必要があります。直接搬入が難しい場合は、公式掲載の引取り相談先を確認します。</p></details>
+      <details><summary>大町市の別荘や山間部の片付けで注意することは？</summary><p>大町温泉郷、木崎湖・仁科三湖周辺、八坂・美麻などは、前面道路の幅、坂道、冬季の積雪・凍結、除雪状況で搬出条件が変わります。遠方からの依頼では、鍵の受け渡し、立会いなしの写真報告、残す物、探す貴重品、管理者や近隣への連絡を先に決めてください。</p></details>
+      <details><summary>空き家整理や高齢者の生前整理はどこへ相談しますか？</summary><p>空き家は大町市空き家バンクや空き家流通促進事業補助金の対象を確認します。高齢者の生活・介護相談は地域包括支援センターが総合相談窓口です。片付け前に、補助金の対象条件、家財撤去の時期、本人同意、ケアマネジャーや親族の立会い、薬・介護用品・重要書類の扱いを整理しておくと進めやすくなります。</p></details>
+    </div>
+  </div>
+</section>
 
 <section id="links" class="nearby-wards">
         <p class="section-kicker">周辺リンク</p>

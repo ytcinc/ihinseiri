@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1746,6 +1746,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/nagawa/#professional-service",
+  "name": "遺品整理・生前整理.jp 長和町店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/nagawa/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "長和町",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "長和町"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1767,12 +1862,12 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>養生対応</b><span>旧家の建具・階段・別荘床に配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>長和町で特に多い相談</h2><ul class="quick-list"><li>長和町の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・納屋の作業範囲を確認したい</li></ul></div>
+      <div class="hero-panel"><h2>長和町で特に多い相談</h2><ul class="quick-list"><li>古町・長久保・大門・和田の戸建てや空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、旧中山道沿いの旧家や山手住宅の作業前後を写真報告で確認したい</li><li>学者村周辺などの別荘・山側物件で、冬季道路や管理日程に合わせて片付けたい</li><li>家庭ごみ検索、丸子クリーンセンター、民間処理業者、屋内搬出の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・物置・土蔵・薪の作業範囲を確認したい</li></ul></div>
     </div>
   </section>
 
@@ -1922,10 +2017,10 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">長和町で失敗しないための地域特化チェック</h2>
-  <p class="lead">長和町は長野県の上小地域に属します。町村中心部の住宅、旧道沿いの戸建て、集落部の空家整理で搬出条件が変わります。人口密度は30.5人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">長和町は長野県の上小地域に属します。古町・長久保・大門・和田の戸建て、長久保宿・和田宿周辺の旧家、学者村周辺などの別荘・山手住宅で搬出条件が変わります。人口密度は30.5人/k㎡で、冬季の道路状況、坂道、敷地内階段、物置・土蔵・薪置き場の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
     <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、長和町の作業範囲を判断しやすくなります。</p></div>
+    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、階段、前面道路、駐車位置、庭、物置、土蔵、車庫、薪置き場を撮影しておくと、長和町の作業範囲を判断しやすくなります。</p></div>
     <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
   </div>
   <div class="notice" style="margin-top:18px"><b>長和町の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
@@ -1934,7 +2029,7 @@
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">長和町でよくある相談パターン</a></li><li><a href="#cases">長和町の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">長和町で料金が変わりやすい条件</a></li><li><a href="#price">長和町の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">長和町の住宅特性・行政ルール</a></li><li><a href="#towns">長和町の対応エリア</a></li><li><a href="#service">長和町で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、坂道、駐車位置</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">長和町の行政窓口</a></li><li><a href="#local">長和町の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1957,7 +2052,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>長和町の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、屋内外の破損時の対応。</td><td>旧家の階段・建具・土壁、別荘の床、物置・土蔵・車庫まわりまで備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1988,21 +2083,21 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>長和町のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="長和町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="長和町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>長和町で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>長和町の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="長和町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="長和町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>長和町のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
-      <article class="common-ba-card"><h3>長和町の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="長和町の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="長和町の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>長和町で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
+      <article class="common-ba-card"><h3>古町・長久保の旧家整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="長和町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="長和町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>古町・長久保の旧家では、押入れ、棚、衣類、書類を一つずつ確認しながら、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。長久保宿周辺の古い家は、前面道路や建具を傷つけない搬出計画も大切です。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・空き家管理前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>旧家整理</span><span>貴重品探索</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>大門・和田方面の物置整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="長和町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="長和町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>大門・和田方面の戸建てでは、室内だけでなく物置、土蔵、車庫、庭、薪、農具、工具まで確認が必要になることがあります。丸子クリーンセンターへ持ち込める可燃粗大と、不燃粗大・家電製品の民間処理相談を分けます。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>物置・土蔵</span><span>写真報告</span><span>遠方家族</span></div></div></article>
+      <article class="common-ba-card"><h3>学者村周辺の別荘整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="長和町の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="長和町の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>学者村周辺などの別荘・山手住宅では、冬季道路、管理日、鍵の受け渡し、玄関から車両までの距離で作業時間が変わります。古い冷蔵庫、ストーブ内の灯油、布団、薪、庭木、塗料・農薬は通常ごみと分けて確認します。</p><p>残す家具、返送する書類、処分する家電、供養したい写真や人形を分けておくと、立会いが難しい場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>別荘整理</span><span>冬季道路</span><span>鍵預かり</span></div></div></article>
       <article class="common-ba-card"><h3>長和町の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="長和町の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="長和町の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>長和町の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>長和町の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="長和町の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="長和町の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>長和町の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
     </div>
   </div>
 </section>
 
-<section id="kita-price-factors"><h2 class="section-title">長和町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、エレベーター、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
+<section id="kita-price-factors"><h2 class="section-title">長和町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、坂道、道路幅、トラック停車位置、玄関から車両までの距離で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、土蔵、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
 
 <section id="price">
         <p class="section-kicker">料金</p>
         <h2 class="section-title">長和町の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。長和町では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、坂道、搬出距離、物置・土蔵の有無、買取品、供養品、退去期限によって変わります。長和町では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
           <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
@@ -2111,7 +2206,7 @@
           <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
           <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
           <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
-          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、エレベーター利用、養生、駐車位置、冬季道路状況を確認します。</div>
+          <div class="checkitem"><strong>建物・道路条件</strong><br>搬出時間、階段、坂道、養生、駐車位置、冬季道路状況を確認します。</div>
         </div>
       </section>
 
@@ -2171,7 +2266,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">長和町の対応エリア・町名確認</h2>
         <p>長和町全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>長和町全域</span><span>古町4247-1周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>上小地域</span></div>      </section>
+        <div class="area-tags"><span>長和町全域</span><span>古町・長久保</span><span>大門・和田</span><span>長久保宿・和田宿周辺</span><span>学者村周辺</span><span>物置・土蔵・別荘整理</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2254,10 +2349,10 @@
     <p class="major-seo-local__lead">山間部住宅、別荘、空き家整理で、季節条件と搬出距離の確認が重要です。 冬季道路、別荘管理、車両位置、庭・物置、写真報告、作業予備日を確認します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
-    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>1. 地区と建物</b><span>古町・長久保・大門・和田のどの地区か、旧家か別荘か、前面道路、坂道、駐車位置を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>家庭ごみ検索、丸子クリーンセンター、家電4品目、不燃粗大、危険物、民間処理業者へ相談するものを分けます。</span></div>
+    <div class="major-seo-local__card"><b>3. 残す品と屋外</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇に加えて、物置、土蔵、薪、農具、工具、灯油・農薬も確認します。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、土蔵、車庫、庭、駐車位置、冬季道路を撮ると見積もりが安定します。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
@@ -2270,7 +2365,7 @@
       </tbody>
     </table>
   </div>
-  <p class="major-seo-local__note">長和町では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
+  <p class="major-seo-local__note">長和町では「町の分別で出すもの」「丸子クリーンセンターへ持ち込む可燃粗大」「不燃粗大・家電製品など民間処理業者へ相談するもの」「屋内搬出や仕分けを専門業者に任せるもの」を分けると、費用・日程・家族の負担が見えやすくなります。古町・長久保の旧家、大門・和田の物置付き住宅、学者村周辺の別荘は、道路幅、冬季道路、鍵、物置・土蔵、薪、危険物まで写真で共有してください。</p>
 </section>
 
 <section id="faq" class="faq">

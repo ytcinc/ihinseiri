@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1744,6 +1744,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/tomi/#professional-service",
+  "name": "遺品整理・生前整理.jp 東御市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/tomi/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "東御市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "東御市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1770,7 +1865,7 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>東御市で特に多い相談</h2><ul class="quick-list"><li>東御市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>住み替え・退去前に、残す家具と処分する家財を短期間で分けたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>前面道路、駐車位置、階段幅、搬出距離を写真で共有したい</li></ul></div>
+      <div class="hero-panel"><h2>東御市で特に多い相談</h2><ul class="quick-list"><li>田中駅周辺や市街地の集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>滋野・祢津・和・北御牧方面の戸建てで、庭、物置、納屋、農具までまとめて確認したい</li><li>湯の丸方面や坂道のある家で、冬季道路、駐車位置、軽トラック搬出を先に見たい</li><li>地区別ごみカレンダー、東部クリーンセンター、許可業者へ相談するものを分けたい</li><li>前面道路、駐車位置、階段幅、搬出距離、屋外保管品を写真で共有したい</li></ul></div>
     </div>
   </section>
 
@@ -1955,7 +2050,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>東御市の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>集合住宅の共用部、戸建ての階段・土壁・納屋・車庫まわりまで備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1986,9 +2081,9 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>東御市のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="東御市の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="東御市の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>東御市で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>東御市の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="東御市の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="東御市の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>東御市のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
-      <article class="common-ba-card"><h3>東御市の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="東御市の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="東御市の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>東御市で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
+      <article class="common-ba-card"><h3>田中駅周辺の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="東御市の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="東御市の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>田中駅周辺や市街地の集合住宅では、退去日、管理会社への連絡、共用部養生、短時間搬出、駐車位置を先に確認します。押入れ、棚、衣類、書類を一つずつ見ながら、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>田中駅周辺</span><span>共用部養生</span><span>退去前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>滋野・祢津・和方面の戸建て整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="東御市の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="東御市の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>滋野・祢津・和方面の戸建てでは、室内だけでなく庭、物置、納屋、車庫、農具、工具、枝木類まで作業範囲に入ることがあります。家庭ごみで出せるもの、東部クリーンセンターへ持ち込むもの、許可業者へ確認するものを分けます。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>戸建て整理</span><span>納屋・物置</span><span>写真報告</span></div></div></article>
+      <article class="common-ba-card"><h3>北御牧・湯の丸方面の冬季整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="東御市の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="東御市の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>北御牧や湯の丸方面では、坂道、道幅、積雪、玄関から車両までの距離で作業時間が変わります。冬季は無理に大きな車両を入れず、軽トラックでの小分け搬出や日程調整を含めて段取りします。</p><p>残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けておくと、退去期限がある場合も進めやすくなります。</p><div class="common-ba-points"><span>北御牧</span><span>冬季道路</span><span>軽トラ搬出</span></div></div></article>
       <article class="common-ba-card"><h3>東御市の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="東御市の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="東御市の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>東御市の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>東御市の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="東御市の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="東御市の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>東御市の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
     </div>
@@ -2169,7 +2264,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">東御市の対応エリア・町名確認</h2>
         <p>東御市全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>東御市全域</span><span>県281-2周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>上小地域</span></div>      </section>
+        <div class="area-tags"><span>東御市全域</span><span>田中駅周辺</span><span>滋野・祢津・和</span><span>北御牧方面</span><span>湯の丸方面</span><span>戸建て・納屋・集合住宅</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2231,13 +2326,13 @@
     <div class="nagano-report-grid">
       <div class="nagano-report-card"><b>処理圏</b><span>東部クリーンセンターと地区別ごみカレンダーを軸に確認。一般廃棄物の収集運搬・処分を委託する場合は、東御市の許可業者一覧を確認します。</span></div>
       <div class="nagano-report-card"><b>料金目安</b><span>指定袋は家庭用燃やせるごみM30Lが20枚1,000円、S20Lが20枚700円、10Lが20枚500円など。持込・処理料金は品目ごとに公式確認します。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>田中・滋野・祢津・和・北御牧で収集日が分かれます。農家住宅、物置、庭木、冬季の坂道、別荘・山手住宅は搬出写真が重要です。</span></div>
+      <div class="nagano-report-card"><b>地域特性</b><span>田中・滋野・祢津・和・北御牧で収集日が分かれます。農家住宅、物置、庭木、湯の丸方面の冬季道路や山手住宅は、搬出写真と車両導線の確認が重要です。</span></div>
       <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.tomi.nagano.jp/category/gomi/130196.html" target="_blank" rel="noopener">ごみ・資源物の分け方・出し方</a>、<a href="https://www.city.tomi.nagano.jp/category/gomi/155105.html" target="_blank" rel="noopener">東部クリーンセンター持込</a>、<a href="https://www.city.tomi.nagano.jp/category/gomi/164073.html" target="_blank" rel="noopener">小型充電式電池</a>を参照。</span></div>
     </div>
     <table class="nagano-report-table">
       <tr><th>受付確認</th><td>地区別カレンダー、東部クリーンセンター持込、許可業者相談、小型充電式電池、家電4品目、事業系ごみ、空き家相談を分けて確認します。</td></tr>
       <tr><th>料金目安</th><td>施設・ごみ種別・搬入条件で手数料が変わるため、自治体公式の案内で搬入先と受付条件を確認します。</td></tr>
-      <tr><th>見積もり前</th><td>市街地、農村部、別荘・山手住宅が近接します。大型家具、納屋・物置、前面道路幅、冬季の搬出可否を分けて見積もります。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
+      <tr><th>見積もり前</th><td>田中駅周辺の市街地、滋野・祢津・和方面の農村部、北御牧・湯の丸方面の山手住宅で搬出条件が変わります。大型家具、納屋・物置、前面道路幅、冬季の搬出可否を分けて見積もります。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
       <tr><th>出典</th><td><a href="https://www.city.tomi.nagano.jp/category/gomi/130196.html" target="_blank" rel="noopener">東御市 ごみ・資源物の分け方・出し方</a>、<a href="https://www.city.tomi.nagano.jp/category/gomi/150910.html" target="_blank" rel="noopener">ごみ出しカレンダー</a>、<a href="https://www.city.tomi.nagano.jp/category/gomi/130190.html" target="_blank" rel="noopener">一般廃棄物許可業者</a></td></tr>
     </table>
     <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
@@ -2252,10 +2347,10 @@
     <p class="major-seo-local__lead">戸建て、郊外住宅、畑や物置付きの実家整理で、屋外品と車両導線の確認が大切です。 前面道路、車両進入、庭・物置、農具、残す書類、写真報告を確認します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
-    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>1. 地区と建物</b><span>田中・滋野・祢津・和・北御牧のどの地区か、集合住宅か戸建てか、階数、前面道路、駐車位置を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>地区別ごみカレンダー、東部クリーンセンター持込、小型充電式電池、家電4品目、許可業者へ相談するものを分けます。</span></div>
+    <div class="major-seo-local__card"><b>3. 屋外と残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇に加えて、物置、納屋、庭木、農具、工具、枝木類も処分前に確認します。</span></div>
+    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、納屋、駐車位置、湯の丸方面の坂道や冬季道路を撮ると見積もりが安定します。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
@@ -2268,7 +2363,7 @@
       </tbody>
     </table>
   </div>
-  <p class="major-seo-local__note">東御市では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
+  <p class="major-seo-local__note">東御市では「地区別カレンダーで出せるもの」「東部クリーンセンターへ持ち込むもの」「許可業者へ相談するもの」「屋内搬出や仕分けを専門業者に任せるもの」を分けると、費用・日程・家族の負担が見えやすくなります。田中駅周辺は短時間搬出、滋野・祢津・和・北御牧の戸建ては納屋や庭、湯の丸方面は坂道と冬季道路まで写真で共有してください。</p>
 </section>
 
 <section id="faq" class="faq">

@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1290,9 +1290,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
     .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
@@ -1756,6 +1756,101 @@
 
 
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/takayama/#professional-service",
+  "name": "遺品整理・生前整理.jp 高山村店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/takayama/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "高山村",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "高山村"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1782,7 +1877,7 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>高山村で特に多い相談</h2><ul class="quick-list"><li>高山村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+      <div class="hero-panel"><h2>高山村で特に多い相談</h2><ul class="quick-list"><li>高山村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、高井・山田温泉・山田牧場方面の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>村の収集日・粗大ごみ指定日持込みと、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
     </div>
   </section>
 
@@ -2286,6 +2381,31 @@
       <p>高山村は冬季道路、温泉地周辺、山あいの集落、農家住宅で搬出条件が大きく変わるため、候補日、除雪状況、車両進入、玄関までの距離を写真で共有してください。</p>
     </div>
   </div>
+  <div class="admin-callout">
+    <h3>高山村は「山側・温泉地・果樹園まわり」まで見て見積もる</h3>
+    <p>高山村は長野市街地や須坂方面から近い一方で、村域の大部分が森林・原野で、松川渓谷、山田温泉、山田牧場方面へ進むほど坂道、道幅、冬季道路、車両の切り返しが作業時間に影響します。室内の家財だけでなく、納屋、物置、車庫、庭、果樹園まわりの道具まで片付け範囲に入る場合は、普通車で行ける場所か、軽トラックで小分け搬出が必要かを先に見ます。</p>
+    <p>空き家は、草木の繁茂、害虫・野生動物、不法投棄、冬場の乾燥による火災リスクも公式に注意喚起されています。売却・賃貸・解体の前に、家財整理と空き家管理を別々に考えると、家族間の判断も進めやすくなります。</p>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>場所・住環境</th><th>高山村で起きやすい確認点</th><th>見積もり前に送る写真</th></tr></thead>
+    <tbody>
+      <tr><td>高井・役場周辺の戸建て</td><td>集落内の前面道路、車両の停車位置、近隣への配慮、短時間搬出の可否を確認します。</td><td>玄関、前面道路、駐車位置、部屋全体、階段。</td></tr>
+      <tr><td>山田温泉・松川渓谷周辺</td><td>温泉地や観光動線に近い場所は、観光時間帯、坂道、車両の切り返し、宿泊施設由来の布団・備品を分けて見ます。</td><td>建物入口、搬出経路、停車できる場所、布団・厨房品・倉庫。</td></tr>
+      <tr><td>山田牧場・YAMABOKU方面</td><td>標高差と冬季道路の影響が大きいため、作業日、積雪、除雪状況、軽トラックでの小分け搬出を先に決めます。</td><td>道路幅、坂道、敷地入口、車庫・物置、積雪時の写真。</td></tr>
+      <tr><td>果樹園・農家住宅</td><td>りんご・ぶどうの農家住宅では、母屋以外に納屋、農具、脚立、肥料、古い工具が残りやすく、家庭ごみと別確認が必要です。</td><td>納屋、物置、農具、タイヤ、庭、車両を寄せる場所。</td></tr>
+      <tr><td>空き家・遠方家族</td><td>鍵預かり、作業前後写真、草木管理、残す品、返送品、重要書類の探索範囲を最初にそろえます。</td><td>鍵の保管場所、全室、押入れ、仏壇、通帳や書類がありそうな棚。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>公式に確認できる内容</th><th>片付けでの使い方</th></tr></thead>
+    <tbody>
+      <tr><td>高山村役場</td><td>所在地は高山村大字高井4972、代表電話は026-245-1100、FAXは026-248-0066です。</td><td>相続後の実家じまいでは、ごみ、福祉、空き家、住まいの相談先を分けて確認します。</td></tr>
+      <tr><td>住民税務課 生活環境係</td><td>ごみ・リサイクルの問い合わせ先は026-214-9267、メールはjumin@vill.takayama.nagano.jpです。</td><td>収集計画表、指定袋、氏名記入、粗大ごみ指定日持込み、家電4品目を確認します。</td></tr>
+      <tr><td>粗大ごみ指定日持込み</td><td>普通車、軽トラック、2トン車、タイヤの料金区分が公式に示されています。大型車は不可です。</td><td>屋内搬出が必要な家具、2階から下ろす家具、納屋の大量品は業者作業と分けます。</td></tr>
+      <tr><td>家電4品目</td><td>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・乾燥機は通常収集と分けます。取引義務外品はヒザワ電機商会が選定されています。</td><td>リサイクル券、搬出方法、屋内から運び出す人を先に決めます。</td></tr>
+      <tr><td>空き家・定住支援</td><td>空き家の適正管理、移住相談、住まい関連情報は定住支援室 定住支援係でも確認できます。</td><td>草刈り、雪の時期、売却・賃貸・解体前の家財整理を作業前に切り分けます。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 

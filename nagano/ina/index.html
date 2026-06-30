@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1516,34 +1516,42 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "伊那市で生前整理だけでも相談できますか？",
+        "name": "伊那市で粗大ごみはどう出しますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として伊那市でも早めに進める方が増えています。"
+          "text": "伊那市公式FAQでは、粗大ごみは自分でクリーンセンター八乙女へ持ち込む方法と、粗大ごみ処理券を購入して収集運搬指定業者へ依頼する方法が案内されています。処理券は1枚200円で、大きさに応じて2枚から6枚が必要です。3辺合計500cmを超えるもの、事業用粗大ごみ、農業用機械・資材、大型可燃ごみは別確認です。"
         }
       },
       {
         "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
+        "name": "伊那市の直接持ち込み先と料金は？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
+          "text": "燃やせるごみと大型可燃ごみは上伊那クリーンセンター、燃やせないごみと粗大ごみはクリーンセンター八乙女です。家庭系の料金は、上伊那クリーンセンターが20kgまで400円、超過10kgごと200円、クリーンセンター八乙女も一般家庭は20kgまで400円、超過10kgごと200円です。指定ごみ袋のみで持ち込む場合は料金がかからない案内があります。"
         }
       },
       {
         "@type": "Question",
-        "name": "伊那市の粗大ごみと業者依頼はどちらがよいですか？",
+        "name": "家電4品目やパソコンは伊那市でどう分けますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
+          "text": "テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品で、市の通常収集や粗大ごみと分けます。販売店、郵便局での家電リサイクル券、指定引取場所、一般廃棄物収集運搬業者を確認します。小型家電は市役所本庁舎、総合支所、支所、伊那図書館などの回収ボックスや、リネットジャパンの宅配回収を確認します。"
         }
       },
       {
         "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
+        "name": "伊那市で大量の片付けをするときは？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
+          "text": "大量にごみを出す場合、伊那市公式FAQでは自分で運べるものは上伊那クリーンセンターまたはクリーンセンター八乙女へ直接持ち込み、自分で運べない場合は一般廃棄物収集運搬業者へ依頼すると案内されています。遺品整理では屋内搬出、分別、貴重品探索、供養品、写真報告、退去期限を業者見積もりに分けて伝えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "伊那市の空き家整理や高齢者相談はどこを確認しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "空き家は伊那市の空き家バンク、被相続人居住用家屋等確認書、住まい関連窓口を確認します。高齢者の生前整理では、伊那市地域包括支援センター、在宅生活支援、エンディングノート「自分ノート」などを確認し、本人同意、親族立会い、残す書類や介護用品を先に分けます。"
         }
       }
     ]
@@ -1736,6 +1744,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/ina/#professional-service",
+  "name": "遺品整理・生前整理.jp 伊那市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/ina/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "伊那市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "伊那市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1762,19 +1865,19 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>伊那市で特に多い相談</h2><ul class="quick-list"><li>伊那市の戸建て・農家住宅で、母屋、物置、庭、納屋まで整理範囲を決めたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>坂道、駐車位置、屋外倉庫の有無を見積もり前に確認したい</li></ul></div>
+      <div class="hero-panel"><h2>伊那市で特に多い相談</h2><ul class="quick-list"><li>伊那市駅・伊那北駅周辺の退去前整理を短時間で進めたい</li><li>高遠町・長谷・西箕輪・美篶方面の戸建てで、母屋、物置、庭、納屋まで整理したい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>粗大ごみ処理券、上伊那クリーンセンター、クリーンセンター八乙女、業者搬出を分けたい</li><li>農機具、農業資材、タイヤ、建築資材、家電4品目を通常ごみと分けたい</li></ul></div>
     </div>
   </section>
 
 
   <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="伊那市の地域事情と搬出条件">
     <p class="section-kicker">地域オリジナル情報</p>
-    <h2>伊那市は大型農家住宅の実家じまいと広域搬入を見据えます</h2>
+    <h2>伊那市は市街地の退去前整理と、高遠・長谷方面の戸建て整理を分けて見ます</h2>
     <div class="local-landmark-prose">
-      <p>伊那市は高遠町・長谷地区を含む広い市で、郊外には母屋、納屋、物置を持つ大型一軒家が多く残っています。遺品整理では、家財量が多く大規模な片付けになりやすい地域です。</p>
-      <p>実家じまいでは、解体や売却に向けて家の中を空にする一括撤去が必要になることがあります。生前整理では、介護環境を整えるために家具や不用品を減らし、生活動線を確保します。</p>
-      <p>ごみの自己搬入や粗大ごみ、空き家家財処分に関する支援制度は、上伊那広域連合や伊那市の公式情報で最新条件を確認します。補助金は年度や予算で変わるため早めの確認が必要です。</p>
-      <p>伊那市街地、高遠、長谷、農家住宅か集合住宅かを伝え、母屋、納屋、庭、物置、駐車位置の写真を分けて共有すると、見積もりが具体的になります。</p>
+      <p>伊那市は伊那市駅・伊那北駅周辺、荒井・山寺・坂下・中央周辺の市街地と、高遠町、長谷、西箕輪、美篶、富県、東春近、西春近方面の戸建て・農家住宅で、片付けの段取りが大きく変わります。市街地では駐車位置、短時間搬出、共用部養生、退去日を先に決めます。</p>
+      <p>高遠町や長谷方面では、山あいの道路、坂道、冬季道路、玄関から車両までの距離が作業時間に影響します。母屋だけでなく、納屋、物置、車庫、庭、農機具、農業資材、タイヤ、古い工具まで作業範囲に入るかを写真で確認します。</p>
+      <p>西箕輪、美篶、富県、東春近、西春近では、広い敷地の戸建てや倉庫付き住宅が多く、家財量が多くなりやすい地域です。粗大ごみ処理券で出すもの、上伊那クリーンセンターへ持ち込む可燃、クリーンセンター八乙女へ持ち込む不燃・粗大、業者が屋内から搬出するものを分けます。</p>
+      <p>伊那市役所、伊那市駅、伊那北駅、高遠城址公園、春日公園、みはらしファーム、長谷・美和湖方面など近くの目印と、前面道路、駐車位置、玄関、階段、納屋、物置、庭の写真を共有しておくと、遠方家族でも見積もり内容を判断しやすくなります。</p>
     </div>
   </section>
 
@@ -1912,19 +2015,19 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">伊那市で失敗しないための地域特化チェック</h2>
-  <p class="lead">伊那市は長野県の上伊那地域に属します。駅周辺の集合住宅、市街地の戸建て、郊外・山間部の空家整理まで相談内容が分かれます。人口密度は99.0人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">伊那市は人口密度99.0人/k㎡で、市街地、郊外、山間部が広く分かれます。伊那市駅周辺の退去前整理では駐車位置と搬出時間、高遠町・長谷方面では山道と冬季道路、西箕輪・美篶・富県方面では納屋・物置・農機具まで確認すると、見積もりの抜け漏れを減らせます。</p>
   <div class="grid cols3">
-    <div class="card"><h3>建物条件を先に分ける</h3><p>集合住宅では、管理会社への届出、エレベーター予約、共用部養生、搬出時間を先に確認します。戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、伊那市の作業範囲を判断しやすくなります。</p></div>
-    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+    <div class="card"><h3>市街地は駐車位置と短時間搬出を見る</h3><p>伊那市駅、伊那北駅、荒井、山寺、坂下、中央周辺では、集合住宅、店舗兼住宅、退去前整理の相談があります。管理会社、共用部養生、搬出時間、トラック停車位置を先に共有します。</p></div>
+    <div class="card"><h3>高遠・長谷は山道と冬季道路を見る</h3><p>高遠町、長谷方面では、坂道、狭い道、冬季道路、玄関から車両までの距離が作業時間に影響します。遠方家族は鍵の受け渡し、作業前後写真、処分前確認の範囲を決めておきます。</p></div>
+    <div class="card"><h3>郊外戸建ては納屋・農業資材まで分ける</h3><p>西箕輪、美篶、富県、東春近、西春近では、母屋、庭、物置、車庫、農機具、農業資材、タイヤ、工具が出やすくなります。事業系・農業系・建築資材は家庭ごみと混ぜず、別確認にします。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>伊那市の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
+  <div class="notice" style="margin-top:18px"><b>伊那市の見積もり前チェック</b><br>粗大ごみ処理券で出すもの、上伊那クリーンセンターへ持ち込むもの、クリーンセンター八乙女へ持ち込むもの、家電リサイクル・小型家電・農業資材として別確認するもの、業者が屋内から搬出するものを分けてください。</div>
 </section>
 
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">伊那市でよくある相談パターン</a></li><li><a href="#cases">伊那市の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">伊那市で料金が変わりやすい条件</a></li><li><a href="#price">伊那市の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">伊那市の住宅特性・行政ルール</a></li><li><a href="#towns">伊那市の対応エリア</a></li><li><a href="#service">伊那市で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、階段・搬出経路</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">伊那市の行政窓口</a></li><li><a href="#local">伊那市の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -2108,7 +2211,7 @@
 <section id="local">
         <p class="section-kicker">地域情報</p>
         <h2 class="section-title">伊那市の住宅特性・行政ルール</h2>
-        <p>伊那市は長野県の上伊那地域に属します。駅周辺の集合住宅、市街地の戸建て、郊外・山間部の空家整理まで相談内容が分かれます。人口密度は99.0人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+        <p>伊那市は長野県の上伊那地域に属します。伊那市駅周辺の集合住宅、市街地の戸建て、高遠町・長谷方面の山間部、郊外の農家住宅まで相談内容が分かれます。人口密度は99.0人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
         <div class="stats">
           <div class="stat"><b>66,125人</b><span>令和2年国勢調査人口</span></div>
           <div class="stat"><b>-3.1%</b><span>2015年比人口増減率</span></div>
@@ -2161,7 +2264,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">伊那市の対応エリア・町名確認</h2>
         <p>伊那市全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>伊那市全域</span><span>下新田3050周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>上伊那地域</span></div>      </section>
+        <div class="area-tags"><span>伊那市全域</span><span>下新田3050周辺</span><span>伊那市役所周辺</span><span>伊那市駅・伊那北駅周辺</span><span>戸建て・集合住宅・空家</span><span>上伊那地域</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2198,76 +2301,80 @@
       </section>
 
 <section id="admin" class="admin-hotline-section">
-  <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">伊那市の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>伊那市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、伊那市公式サイトで最新情報を確認してください。</p>
+  <p class="section-kicker">行政・福祉のホットライン</p>
+  <h2 class="section-title">伊那市の行政窓口・粗大ごみ・持ち込み先</h2>
+  <p class="admin-lead">伊那市で遺品整理・生前整理を進めるときは、収集日に出すもの、粗大ごみ処理券で出すもの、上伊那クリーンセンターへ持ち込むもの、クリーンセンター八乙女へ持ち込むもの、家電4品目・小型家電・農業資材など別確認にするもの、業者が屋内から搬出するものを分けます。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>伊那市役所</strong><br>代表電話: 0265-78-4111<br>所在地: 〒396-8617 伊那市下新田3050<br>FAX: 0265-74-1250</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">伊那市公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>伊那市のごみ・リサイクル案内</strong><br>粗大ごみ、収集日、予約要否、手数料、収集できない品目を確認します。大型家具の屋内搬出、仏壇・写真の扱い、短期整理は自治体制度と業者作業を分けて考えます。</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">ごみ・リサイクル情報を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>上伊那地域の自治体や広域処理圏では、持込先、受付日、本人確認、車両条件、料金、受け入れできない品目が自治体ごとに異なります。未確認の施設名や料金は作らず、公式案内で確認します。</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">持込条件を確認</a></div>
-    <div class="admin-card"><h3>伊那市で特に確認したいこと</h3><p>市街地と山手・農家住宅が混在し、物置・農機具を確認します。 実家じまいでは、室内の家財だけでなく、庭、物置、車庫、農機具、仏壇、重要書類、写真、形見分け品を先に分けてください。</p><a href="#process">相談前の流れを見る</a></div>
-    <div class="admin-card"><h3>高齢者・障がい者世帯の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認します。制度名は自治体により異なるため公式確認を優先します。</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">福祉・暮らし情報を確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。相続後の実家では、固定資産税通知、権利書、通帳、印鑑、保険証券を処分前に探索します。</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">空き家・住まい情報を確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。家電リサイクル対象品、農薬・薬品、消火器、農機具などは別ルート確認が必要です。</p><a href="/nagano/" target="_blank" rel="noopener">長野県ページへ戻る</a></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>伊那市役所</strong><br>代表電話: 0265-78-4111<br>所在地: 〒396-8617 長野県伊那市下新田3050番地<br>FAX: 0265-74-1250</p><p>ごみ、戸籍、固定資産、福祉、空き家、住まいの相談先は担当が分かれます。相続後の実家じまいでは、質問をまとめてから確認します。</p><a href="https://www.inacity.jp/" target="_blank" rel="noopener">伊那市公式サイト</a></div>
+    <div class="admin-card"><h3>粗大ごみ処理券</h3><p>既存の公式確認情報では、粗大ごみは自分でクリーンセンター八乙女へ持ち込む方法と、粗大ごみ処理券を購入して収集運搬指定業者へ依頼する方法があります。処理券は1枚200円で、大きさに応じて2枚から6枚が必要です。</p><p>3辺合計500cmを超えるもの、事業用粗大ごみ、農業用機械・資材、大型可燃ごみは別確認にします。</p><a href="#nagano-report">粗大ごみの確認へ</a></div>
+    <div class="admin-card"><h3>上伊那クリーンセンター</h3><p>既存調査データでは、燃やせるごみと大型可燃ごみは上伊那クリーンセンターへ確認します。家庭系の料金は20kgまで400円、超過10kgごと200円として整理されています。</p><p>布団、大型可燃ごみ、袋に入らない可燃系の片付け品は、不燃や粗大と混ぜずに分けて写真を撮ります。</p><a href="#nagano-report">直接持ち込みを見る</a></div>
+    <div class="admin-card"><h3>クリーンセンター八乙女</h3><p>燃やせないごみと粗大ごみはクリーンセンター八乙女へ確認します。既存調査データでは、一般家庭は20kgまで400円、超過10kgごと200円です。指定ごみ袋のみで持ち込む場合は料金がかからない案内も整理されています。</p><p>金属を含む家具、家電、工具、自転車、物置の不燃物は、可燃系と分けます。</p><a href="#nagano-report">不燃・粗大持ち込みを見る</a></div>
+    <div class="admin-card"><h3>家電4品目・小型家電</h3><p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品で、市の通常収集や粗大ごみとは分けます。販売店、郵便局での家電リサイクル券、指定引取場所、一般廃棄物収集運搬業者を確認します。</p><p>小型家電は市役所本庁舎、総合支所、支所、伊那図書館などの回収ボックスや、リネットジャパンの宅配回収を確認します。</p><a href="#faq">家電・小型家電のFAQへ</a></div>
+    <div class="admin-card"><h3>地域別の搬出条件</h3><p>伊那市駅・伊那北駅周辺では、集合住宅、店舗兼住宅、駐車位置、短時間搬出を確認します。高遠町・長谷方面では、山道、坂道、冬季道路、軽トラック搬出、玄関から車両までの距離を見ます。</p><p>西箕輪、美篶、富県、東春近、西春近の戸建てでは、納屋、物置、農機具、農業資材、タイヤ、庭木まで範囲に入るか確認します。</p><a href="#major-local-guide">地域別の確認へ</a></div>
+    <div class="admin-card"><h3>空き家・住まい</h3><p>既存調査データでは、空き家は伊那市の空き家バンク、被相続人居住用家屋等確認書、住まい関連窓口を確認対象にしています。</p><p>売却前整理、解体前整理、空き家バンク掲載前は、固定資産税通知、権利書、通帳、印鑑、保険証券、写真、仏壇、庭・倉庫・車庫の残置物を処分前に分けます。</p><a href="#nagano-report">住まい・福祉の確認へ</a></div>
+    <div class="admin-card"><h3>高齢者・福祉</h3><p>既存調査データでは、高齢者の生前整理で伊那市地域包括支援センター、在宅生活支援、エンディングノート「自分ノート」を確認対象にしています。</p><p>本人の同意、親族やケアマネジャーの関与、残す薬・介護用品・通帳・印鑑・保険証券・写真の扱いを先に決めます。</p><a href="#nagano-report">高齢者支援の確認へ</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、行政収集で出すもの、処理券で出すもの、上伊那クリーンセンターへ持ち込むもの、クリーンセンター八乙女へ持ち込むもの、屋内搬出が必要なものを分けて伝えます。</p><p>家電4品目、パソコン、小型家電、農業用機械・資材、建築資材、医療系廃棄物、仏壇・写真、貴重品探索、庭・納屋・物置、写真報告の範囲も共有してください。</p><a href="#compare">業者比較の確認点へ</a></div>
   </div>
-  <p class="source-note">出典: 長野県公式「市町村一覧（役場所在地・電話番号等）」、伊那市公式サイト。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典: <a href="https://www.inacity.jp/" target="_blank" rel="noopener">伊那市公式サイト</a>、ページ内の既存公式調査データ。収集日、受付時間、対象品目、料金、指定業者、補助制度は変更される場合があります。相談前に必ず公式ページで最新情報を確認してください。</p>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">行政・地域データ</p>
-    <h2 class="section-title">伊那市で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">伊那市公式情報と長野県公式の市町村一覧をもとに、遺品整理・生前整理を進める前に確認したい自治体窓口、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <p class="section-kicker">伊那市調査データ</p>
+    <h2 class="section-title">伊那市で行政処分・直接持ち込み・業者作業を分ける要点</h2>
+    <p class="lead">伊那市公式情報に基づき、家庭ごみ、粗大ごみ処理券、直接搬入、家電4品目、小型家電、事業系ごみ、空き家バンク、高齢者支援を整理しました。伊那谷の戸建て・農家住宅・倉庫付き住宅では、家財だけでなく納屋、農具、タイヤ、資材、庭木、軽トラックの導線を先に確認します。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>上伊那地域。クリーンセンター八乙女</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>20kgまで400円、20kgを超えると10kgごと200円加算が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>伊那谷の戸建て、農家住宅、倉庫付き住宅では、屋内だけでなく物置・車庫・農機具の確認が必要です。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.inacity.jp/" target="_blank" rel="noopener">伊那市公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>処理券は1枚200円。大きさにより400円・800円・1,200円。3辺合計500cm超は収集不可。</span></div>
+      <div class="nagano-report-card"><b>可燃持込</b><span>上伊那クリーンセンターは燃やせるごみ・大型可燃ごみ。家庭系は20kgまで400円。</span></div>
+      <div class="nagano-report-card"><b>不燃・粗大持込</b><span>クリーンセンター八乙女は燃やせないごみ・粗大ごみ。一般家庭は20kgまで400円。</span></div>
+      <div class="nagano-report-card"><b>別ルール</b><span>家電4品目、小型家電、事業系ごみ、農業用機械・資材、医療系廃棄物は別確認。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>20kgまで400円、20kgを超えると10kgごと200円加算が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>伊那谷の戸建て、農家住宅、倉庫付き住宅では、屋内だけでなく物置・車庫・農機具の確認が必要です。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.inacity.jp/" target="_blank" rel="noopener">伊那市公式サイト</a></td></tr>
+      <tr><th>行政で確認</th><td>指定袋、収集カレンダー、ステーション、粗大ごみ処理券、処理券の枚数、収集運搬指定業者、分別早見表を確認します。</td></tr>
+      <tr><th>直接持ち込み</th><td>燃やせるごみ・大型可燃ごみは上伊那クリーンセンター、燃やせないごみ・粗大ごみはクリーンセンター八乙女。大量片付けでは可燃・不燃を混ぜず、申請書や受入時間を確認します。</td></tr>
+      <tr><th>業者作業</th><td>屋内搬出、階段作業、大型家具の分解、納屋・物置・車庫、農機具、貴重品探索、仏壇・写真、立会いなし作業、作業後写真報告は見積もり範囲に入れます。</td></tr>
+      <tr><th>住まい・福祉</th><td>空き家バンク、被相続人居住用家屋等確認書、地域包括支援センター、在宅生活支援、エンディングノート「自分ノート」を確認し、片付けと手続きの順番を分けます。</td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">料金や休日受入は変更されることがあります。公式ページで最新情報を確認し、持ち込み前には品目、量、車両、本人確認、荷下ろし方法、事業系・農業系の混入がないかを整理してください。</p>
   </div>
 </section>
-
-
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
     <p class="major-seo-local__kicker">伊那市で失敗しない整理導線</p>
     <h2>伊那市で遺品整理・生前整理を相談する前に見るポイント</h2>
-    <p class="major-seo-local__lead">市街地の集合住宅、郊外戸建て、農家住宅の整理で、家財量と車両位置が分かれます。 EV利用、前面道路、庭・物置、農具、仏壇・写真、売却予定を確認します。</p>
+    <p class="major-seo-local__lead">伊那市は、粗大ごみ処理券で出す方法と、上伊那クリーンセンター・クリーンセンター八乙女へ直接持ち込む方法が分かれます。伊那市駅周辺の集合住宅、高遠町・長谷方面の戸建て、西箕輪・美篶・富県の農家住宅、倉庫付き住宅では、搬出経路と処分ルールを先に分けるほど見積もりが安定します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
-    <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
-    <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
+    <div class="major-seo-local__card"><b>1. 可燃・不燃を分ける</b><span>布団や大型可燃は上伊那クリーンセンター、金属を含む粗大・不燃はクリーンセンター八乙女を確認します。</span></div>
+    <div class="major-seo-local__card"><b>2. 地域条件を見る</b><span>市街地は駐車位置、高遠・長谷は山道、西箕輪・美篶・富県は納屋と農業資材を確認します。</span></div>
+    <div class="major-seo-local__card"><b>3. 別ルール品を外す</b><span>家電4品目、パソコン、小型家電、医療系廃棄物、農機具、建築資材、仏壇・写真は通常ごみと分けます。</span></div>
+    <div class="major-seo-local__card"><b>4. 住まい手続きを並行</b><span>空き家バンク、売却、解体、賃貸退去、地域包括支援センター相談を、家財整理と同時に確認します。</span></div>
   </div>
   <div class="major-seo-local__table-wrap">
     <table>
-      <thead><tr><th>検索している状況</th><th>伊那市で先に確認すること</th><th>ページ内で見る場所</th></tr></thead>
-      <tbody>
-        <tr><td>料金を早く知りたい</td><td>間取りだけでなく、荷物量、階数、駐車位置、買取品、供養品、退去期限をそろえる。</td><td>料金目安・見積もり前チェック</td></tr>
-        <tr><td>行政ごみと業者作業を分けたい</td><td>自治体で出せる少量ごみと、屋内搬出・大量家財・供養・買取を分ける。</td><td>行政窓口・粗大ごみ・持ち込み先</td></tr>
-        <tr><td>遠方から実家を片付けたい</td><td>鍵の受け渡し、写真報告、残す品、返送品、立会い可否を先に決める。</td><td>相談から作業完了までの流れ</td></tr>
-        <tr><td>悪質業者を避けたい</td><td>見積書の内訳、追加料金条件、許可・提携先、買取査定の説明、契約前のキャンセル条件を見る。</td><td>業者の見分け方・比較表</td></tr>
-      </tbody>
+      <thead><tr><th>場面</th><th>伊那市で確認すること</th><th>業者へ伝えること</th></tr></thead>
+      <tr><td>市街地の退去前整理</td><td>伊那市駅・伊那北駅周辺は駐車位置、共用部養生、短時間搬出、退去日を確認します。</td><td>階段、共用部、駐車位置、作業時間、管理会社確認、鍵返却日。</td></tr>
+      <tr><td>高遠・長谷の戸建て</td><td>山道、坂道、冬季道路、軽トラック搬出、玄関から車両までの距離を確認します。</td><td>道路写真、庭・物置・納屋、二階家具、仏壇、写真報告、立会い可否。</td></tr>
+      <tr><td>農家住宅・倉庫付き住宅</td><td>西箕輪、美篶、富県、東春近、西春近は農機具、農業資材、タイヤ、建築資材を分けます。</td><td>部屋数、袋数、大型家具、納屋・物置、農業資材の有無。</td></tr>
+      <tr><td>直接持ち込み</td><td>上伊那クリーンセンターと八乙女で分ける品目、受入時間、料金、指定袋。</td><td>車両、持ち込み予定日、可燃・不燃の分類、荷下ろし可否。</td></tr>
+      <tr><td>家電・小型家電</td><td>家電4品目、指定引取場所、小型家電回収ボックス、宅配回収。</td><td>リサイクル券の有無、運搬希望、データ消去、バッテリー取り外し。</td></tr>
+      <tr><td>空き家整理</td><td>空き家バンク、被相続人居住用家屋等確認書、売却・解体前の相談先。</td><td>鍵、立会い、残す品、貴重品探索、写真報告、庭・倉庫・車庫。</td></tr>
     </table>
   </div>
-  <p class="major-seo-local__note">伊那市では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
+  <p class="major-seo-local__note">伊那市では「処理券で出せる粗大」「直接持ち込む可燃・不燃」「家電リサイクル」「農業・事業系・処理困難物」を混ぜないことが大切です。見積もり前に、写真、品目、大きさ、搬出経路、処分希望日をそろえると判断が早くなります。</p>
 </section>
 
 <section id="faq" class="faq">
-        <p class="section-kicker">FAQ</p>
+      <div class="container">
         <h2 class="section-title">伊那市の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>伊那市で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として伊那市でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>伊那市の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
-      </section>
-
+        <details><summary>伊那市で粗大ごみを出す方法は？</summary><p>自分で運べる場合はクリーンセンター八乙女へ持ち込みます。自分で運べない場合は、生活環境課や総合支所窓口で粗大ごみ処理券を購入し、収集運搬指定業者へ直接申し込みます。処理券は1枚200円で、3辺合計により400円、800円、1,200円に分かれます。</p></details>
+        <details><summary>上伊那クリーンセンターとクリーンセンター八乙女は何が違いますか？</summary><p>上伊那クリーンセンターは燃やせるごみ・大型可燃ごみ、クリーンセンター八乙女は燃やせないごみ・粗大ごみです。どちらも家庭系は20kgまで400円、超過10kgごと200円の案内がありますが、受入時間が異なるため持ち込み前に公式情報を確認します。</p></details>
+        <details><summary>家電4品目やパソコンはどう分けますか？</summary><p>テレビ、エアコン、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法対象品です。販売店、郵便局の家電リサイクル券、株式会社キタニなどの指定引取場所、一般廃棄物収集運搬業者を確認します。小型家電やパソコンは回収ボックスまたはリネットジャパンの宅配回収を確認します。</p></details>
+        <details><summary>大量の家財を一度に片付けたい場合は？</summary><p>自分で運べるものは、燃やせるごみを上伊那クリーンセンター、燃やせないごみをクリーンセンター八乙女へ分けて持ち込みます。自分で運べない量や屋内搬出が必要な家具は、一般廃棄物収集運搬業者や遺品整理業者へ相談します。</p></details>
+        <details><summary>事業系ごみや農業資材は家庭ごみと一緒にできますか？</summary><p>できません。伊那市公式では、事業所から出るプラスチック・缶・びんなどは家庭ごみと違い産業廃棄物となり、上伊那クリーンセンターやクリーンセンター八乙女へ搬入・処分依頼できないと案内されています。農業用機械・資材も粗大ごみで受け付けできないため別確認です。</p></details>
+        <details><summary>空き家整理や生前整理で先に確認する窓口は？</summary><p>空き家は伊那市の空き家バンク、被相続人居住用家屋等確認書、住まい関連情報を確認します。高齢者の生前整理では地域包括支援センター、在宅生活の支援、エンディングノート「自分ノート」などを確認し、本人同意、残す書類、介護用品、親族立会いを先に決めます。</p></details>
+      </div>
+    </section>
 <section id="links" class="nearby-wards">
         <p class="section-kicker">周辺リンク</p>
         <h2 class="section-title">伊那市周辺のページも見る</h2>

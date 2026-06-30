@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1511,43 +1511,59 @@
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "佐久穂町で生前整理だけでも相談できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として佐久穂町でも早めに進める方が増えています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "佐久穂町の粗大ごみと業者依頼はどちらがよいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "佐久穂町の家庭ごみは何時までに出しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "佐久穂町公式では、家庭で出たごみを分別し、佐久穂町専用ごみ袋に入れて、住んでいる地区の決められたごみステーションへ当日午前8時までに出す案内です。収集日以外や前日夜からのごみ出しは、鳥獣による飛散や悪臭など周囲への迷惑になるため避けます。"
       }
-    ]
-  },
+    },
+    {
+      "@type": "Question",
+      "name": "佐久穂町清掃センターへ家庭ごみを持ち込めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "佐久穂町清掃センターでは、毎週月曜・木曜（祝日・年末年始を除く）午前8時30分から午前10時30分に、持込による一般家庭ごみを受け入れる案内です。住所は佐久穂町大字畑5690-2です。必ず事前に生活環境係（0267-86-2552）へ連絡し、日程調整を行います。持ち込めるのは地区のごみステーションで収集している家庭ごみ全般で、佐久穂町の指定ごみ袋へ入れる必要があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "佐久穂町の粗大ごみはどう出しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "佐久穂町では、年2回（6月・10月）粗大ごみ収集を有料で行っています。受付時間は6月が午前6時から午前9時、10月が午前7時から午前10時です。茶ダンスなどのガラス戸は取り外し、持ち込んだごみは自分で降ろします。指定ごみ袋に入るものは通常のごみステーションへ出し、粗大ごみ収集へ混ぜないようにします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "粗大ごみ収集や清掃センターで受けられないものは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "粗大ごみ収集では、エアコン、テレビ、冷蔵庫類、洗濯機、衣類乾燥機、パソコン、大型車のタイヤ、石膏ボード、断熱材、ウレタン製発泡スチロールなどの建築廃材、営業行為に伴う廃棄物は受付できない案内です。清掃センターでも、粗大ごみ、建築廃材、営業行為に伴うごみ、家電4品目、パソコン、一升瓶・ビール瓶などは持ち込めないため、遺品整理では別確認にします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "佐久穂町で家電4品目はどう処分しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "テレビ、エアコン、洗濯機・衣類乾燥機、冷蔵庫・冷凍庫は、町の小型家電回収対象ではありません。買い替え時は新品を購入する店へ、処分だけの場合は購入した店へ相談します。購入店が遠方・廃業・不明の場合は、佐久穂町公式掲載の株式会社平元商店へ依頼する方法、または郵便局でリサイクル料金を支払い小柳産業株式会社東御倉庫へ持ち込む方法が案内されています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "空き家・空き地バンク掲載前の片付けは何を確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "佐久穂町の移住定住支援サイトでは、空き家・空き地バンク制度、町営住宅、雁明ニュータウン、住まい相談が案内されています。空き家の売買や賃貸前には、残置物、蔵・物置、農機具、仏壇、写真、権利書、鍵、庭木、車両進入を整理します。平林、大日向、海瀬、畑、八郡、千代里など、集落や旧道沿いで搬出条件が変わるため、写真報告の範囲も先に決めます。"
+      }
+    }
+  ]
+},
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -1736,6 +1752,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/sakuho/#professional-service",
+  "name": "遺品整理・生前整理.jp 佐久穂町店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/sakuho/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "佐久穂町",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "佐久穂町"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1757,12 +1868,12 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>搬出養生</b><span>戸建て階段・建具・別荘床面に配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>佐久穂町で特に多い相談</h2><ul class="quick-list"><li>佐久穂町の別荘・二地域居住の家財、鍵預かり、管理会社連絡まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・納屋の作業範囲を確認したい</li></ul></div>
+      <div class="hero-panel"><h2>佐久穂町で特に多い相談</h2><ul class="quick-list"><li>羽黒下・海瀬・高野町周辺の戸建てで、母屋、物置、庭、車庫まで整理したい</li><li>畑・八郡・千代里・大日向方面で、農具、納屋、冬季道路、車両進入を確認したい</li><li>八千穂高原方面の別荘・山手住宅で、鍵預かりと作業前後の写真報告を依頼したい</li><li>通常収集、清掃センター持込、年2回の粗大ごみ、家電4品目を分けたい</li><li>通帳、印鑑、権利書、写真、仏壇、貴金属を処分前に探してほしい</li></ul></div>
     </div>
   </section>
 
@@ -1771,10 +1882,10 @@
     <p class="section-kicker">地域オリジナル情報</p>
     <h2>佐久穂町は千曲川沿いの旧家と八千穂高原の別荘整理を分けて考えます</h2>
     <div class="local-landmark-prose">
-      <p>佐久穂町は千曲川沿いの古い商店街・住宅街と、八千穂高原の別荘地で片付けの内容が変わります。中心部の旧家では家族の思い出の品が多く、別荘地では遠方オーナーの生前整理が出やすい地域です。</p>
-      <p>ごみ処理は佐久広域連合のルールや町の公式案内を確認し、自己搬入できるもの、粗大ごみ、専門処分が必要なものを切り分けます。料金や受付条件は最新情報を確認します。</p>
-      <p>古い一軒家では、写真、人形、衣類、仏壇、古い家具を丁寧に仕分けることが求められます。別荘地では、鍵預かり、写真報告、冬季道路、電気水道の状態確認が重要です。</p>
-      <p>羽黒下、海瀬、八千穂高原方面など地域名と、母屋・物置・駐車場所・残す品の写真を共有すると、現地確認がスムーズです。</p>
+      <p>佐久穂町は羽黒下・海瀬・高野町周辺の生活圏、畑・八郡・千代里・大日向方面の集落、八千穂高原方面の別荘・山手住宅で片付けの内容が変わります。中心部の旧家では家族の思い出の品が多く、山手住宅では遠方家族の鍵預かり整理が出やすい地域です。</p>
+      <p>ごみ処理は佐久穂町公式の収集カレンダー、清掃センター持込、年2回の粗大ごみ収集、家電4品目を確認し、行政で出すものと屋内からの搬出を業者に任せるものを切り分けます。料金や受付条件は年度で変わるため最新情報を確認します。</p>
+      <p>古い一軒家では、写真、人形、衣類、仏壇、古い家具に加えて、物置、納屋、農具、庭木まで丁寧に仕分けることが求められます。八千穂高原方面では、鍵預かり、写真報告、冬季道路、電気水道の状態確認が重要です。</p>
+      <p>羽黒下、海瀬、高野町、畑、八郡、千代里、大日向、八千穂高原方面などの地域名と、母屋・物置・駐車場所・残す品の写真を共有すると、現地確認がスムーズです。</p>
     </div>
   </section>
 
@@ -1915,7 +2026,7 @@
   <p class="lead">佐久穂町は長野県の佐久地域に属します。町村中心部の住宅、旧道沿いの戸建て、集落部の空家整理で搬出条件が変わります。人口密度は54.3人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
     <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、佐久穂町の作業範囲を判断しやすくなります。</p></div>
+    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、階段、前面道路、駐車位置、庭、物置、納屋、農具、冬季に不安な道路を撮影しておくと、佐久穂町の作業範囲を判断しやすくなります。</p></div>
     <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
   </div>
   <div class="notice" style="margin-top:18px"><b>佐久穂町の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
@@ -1924,7 +2035,7 @@
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">佐久穂町でよくある相談パターン</a></li><li><a href="#cases">佐久穂町の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">佐久穂町で料金が変わりやすい条件</a></li><li><a href="#price">佐久穂町の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">佐久穂町の住宅特性・行政ルール</a></li><li><a href="#towns">佐久穂町の対応エリア</a></li><li><a href="#service">佐久穂町で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>羽黒下・海瀬・高野町・畑・八郡・千代里・大日向・八千穂高原方面などの地域名</li><li>戸建て、空き家、別荘、物置、納屋、車庫、庭、農具の有無</li><li>冬季道路、坂道、駐車位置、車両進入、鍵の受け渡し方法</li><li>通常収集、清掃センター持込、粗大ごみ収集、家電4品目、業者搬出の分け方</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">佐久穂町の行政窓口</a></li><li><a href="#local">佐久穂町の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1947,7 +2058,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>佐久穂町の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>戸建ての階段・建具、別荘の床、物置・納屋・車庫まわり、冬季搬出に備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1978,21 +2089,21 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>佐久穂町のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="佐久穂町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="佐久穂町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>佐久穂町で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>佐久穂町の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="佐久穂町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="佐久穂町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>佐久穂町のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
-      <article class="common-ba-card"><h3>佐久穂町の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="佐久穂町の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="佐久穂町の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>佐久穂町で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
+      <article class="common-ba-card"><h3>羽黒下・海瀬周辺の戸建て整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="佐久穂町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="佐久穂町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>羽黒下・海瀬周辺の戸建てで、相続後に母屋、押入れ、仏壇、物置、庭まで確認するケースです。通帳・印鑑・権利書・写真などを処分前に探します。</p><p>通常収集で出すもの、清掃センターへ持ち込むもの、屋内から搬出が必要な家具を分けると、退去前の判断がしやすくなります。</p><div class="common-ba-points"><span>戸建て整理</span><span>物置確認</span><span>貴重品探索</span></div></div></article>
+      <article class="common-ba-card"><h3>畑・八郡・千代里方面の実家じまい</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="佐久穂町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="佐久穂町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>畑・八郡・千代里方面の実家では、室内だけでなく納屋、車庫、農具、庭木、古い家電まで範囲が広がることがあります。</p><p>遠方家族の立会いなし整理では、作業前後の写真報告、処分前確認、返送品の扱いを決めておくと、後から迷いにくくなります。</p><div class="common-ba-points"><span>納屋・農具</span><span>写真報告</span><span>遠方家族</span></div></div></article>
+      <article class="common-ba-card"><h3>八千穂高原方面の別荘整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="佐久穂町の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="佐久穂町の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>八千穂高原方面の別荘・山手住宅では、鍵の受け渡し、冬季道路、電気水道の状態、車両を停められる場所を見積もり前に整理します。</p><p>家電4品目、パソコン、建築廃材、営業ごみなどは通常ごみや粗大ごみと分け、公式で受けられない品目を確認してから業者へ伝えます。</p><div class="common-ba-points"><span>別荘整理</span><span>鍵預かり</span><span>冬季道路</span></div></div></article>
       <article class="common-ba-card"><h3>佐久穂町の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="佐久穂町の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="佐久穂町の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>佐久穂町の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>佐久穂町の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="佐久穂町の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="佐久穂町の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>佐久穂町の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
     </div>
   </div>
 </section>
 
-<section id="kita-price-factors"><h2 class="section-title">佐久穂町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、エレベーター、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
+<section id="kita-price-factors"><h2 class="section-title">佐久穂町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、坂道、冬季道路、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
 
 <section id="price">
         <p class="section-kicker">料金</p>
         <h2 class="section-title">佐久穂町の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。佐久穂町では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階段、坂道、搬出距離、買取品、供養品、退去期限によって変わります。佐久穂町では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
           <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
@@ -2101,7 +2212,7 @@
           <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
           <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
           <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
-          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、エレベーター利用、養生、駐車位置、冬季道路状況を確認します。</div>
+          <div class="checkitem"><strong>建物・道路条件</strong><br>搬出時間、階段、養生、駐車位置、冬季道路状況を確認します。</div>
         </div>
       </section>
 
@@ -2151,7 +2262,7 @@
           <p class="regional-lead">佐久穂町は佐久地域に属し、人口密度、共同住宅居住率、高齢化、人口増減の数字から、見積もり前に見るべきポイントが変わります。</p>
           <div class="regional-original-grid">
             <div class="regional-original-card"><strong>戸建て・旧道沿いの搬出</strong><span>佐久穂町は人口密度が54.3人/k㎡で、戸建て、旧道沿いの住宅、前面道路の幅、駐車位置で作業人数が変わりやすい地域です。</span></div>
-            <div class="regional-original-card"><strong>別荘・山手住宅の鍵管理</strong><span>佐久地域では、別荘、山手住宅、管理会社経由の鍵預かりが絡むことがあるため、入室方法と写真報告のルールを先に決めます。</span></div>
+            <div class="regional-original-card"><strong>八千穂高原方面の鍵管理</strong><span>八千穂高原方面の別荘・山手住宅では、鍵の受け渡し、冬季道路、電気水道の状態、作業前後の写真報告を先に決めます。</span></div>
             <div class="regional-original-card"><strong>家族判断・重要書類の探索</strong><span>佐久穂町では通帳、印鑑、権利書、保険証券、写真、貴金属を先に探し、残す品、供養する品、処分する品を家族で分けます。</span></div>
             <div class="regional-original-card"><strong>人口減少と空家リスク</strong><span>佐久穂町の2015年比人口増減率は-8.7%で、相続後に空家期間が長くなると、家財量、湿気、屋外残置物の確認範囲が広がりやすくなります。</span></div>
           </div>
@@ -2161,7 +2272,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">佐久穂町の対応エリア・町名確認</h2>
         <p>佐久穂町全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>佐久穂町全域</span><span>高野町569周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>佐久地域</span></div>      </section>
+        <div class="area-tags"><span>佐久穂町全域</span><span>羽黒下・海瀬</span><span>高野町・畑</span><span>八郡・千代里</span><span>大日向・余地</span><span>八千穂高原方面</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2200,39 +2311,40 @@
 <section id="admin" class="admin-hotline-section">
   <div class="section-heading">
     <p class="eyebrow">佐久穂町の行政窓口・粗大ごみ・住まい相談</p>
-    <h2>佐久穂町で確認したい自治体情報</h2>
-    <p>佐久穂町で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、佐久穂町公式サイトで最新情報を確認してください。</p>
+    <h2>佐久穂町で片付け前に確認したい自治体情報</h2>
+    <p>佐久穂町で遺品整理・生前整理を進める前に、通常収集で出すもの、佐久穂町清掃センターへ事前連絡して持ち込むもの、年2回の粗大ごみ収集に回すもの、町では受けられないもの、業者が屋内から搬出するものを分けます。羽黒下・海瀬・高野町の戸建て、畑・八郡・千代里・大日向方面の集落、八千穂高原方面の別荘・山手住宅では、駐車位置、冬季道路、物置・納屋・庭の範囲も見積もりに関わります。</p>
   </div>
   <div class="admin-card-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>佐久穂町役場</strong><br>代表電話: 0267-86-2525<br>所在地: 〒384-0697 南佐久郡佐久穂町大字高野町569<br>FAX: 0267-86-4935</p><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">佐久穂町公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p>佐久穂町公式サイトで、粗大ごみ、戸別収集、予約方法、手数料、収集できない品目を確認します。屋内からの大型家具搬出は行政回収だけでは対応できない場合があります。</p><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>佐久地域の広域処理圏、清掃センター、自己搬入の可否、本人確認、搬入日、車両条件、予約要否を確認します。未確認の施設名や料金は作らず、公式情報で確認します。</p><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">公式ページで確認</a></div>
-    <div class="admin-card"><h3>佐久穂町で特に確認したいこと</h3><p>佐久庁舎・八千穂庁舎の確認を含め、戸建て、納屋、山手住宅の搬出条件を整理します。</p></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>佐久穂町役場</strong><br>所在地: 〒384-0697 長野県南佐久郡佐久穂町大字高野町569番地<br>代表電話: 0267-86-2525<br>FAX: 0267-86-4935</p><p>ごみ・リサイクルは住民税務課 生活環境係へ確認します。公式ページでは生活環境係の直通電話 0267-86-2552、FAX 0267-86-2633、対応時間は土日祝・年末年始を除く8時30分から17時15分と案内されています。</p><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">佐久穂町公式サイト</a></div>
+    <div class="admin-card"><h3>収集で出すもの</h3><p>家庭で出たごみは分別し、佐久穂町専用ごみ袋に入れて、住んでいる地区の決められたごみステーションへ当日午前8時までに出します。令和8年度カレンダーでは、畑・八郡・千代里・花岡、大日向・余地・海瀬・羽黒下・曽原・東町、平林・高野町・宿岩・上・下畑など地域ごとの収集PDFが分かれています。</p><p>前日夜や収集日以外に出すと、鳥獣による飛散や悪臭など近隣の迷惑になりやすいため、退去期限が近い片付けほど地区カレンダーを先に見ます。</p><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3589.html" target="_blank" rel="noopener">ごみ収集カレンダー・分別ポスター</a></div>
+    <div class="admin-card"><h3>清掃センター持込</h3><p><strong>佐久穂町清掃センター</strong><br>所在地: 佐久穂町大字畑5690-2<br>受入日時: 毎週月曜・木曜 8時30分から10時30分（祝日・年末年始を除く）</p><p>家庭ごみを持ち込む場合は、必ず事前に生活環境係 0267-86-2552へ連絡し、日程調整を行います。持ち込めるのは地区のごみステーションで収集している家庭ごみ全般で、佐久穂町の指定ごみ袋へ入れる必要があります。</p><p>粗大ごみ、建築廃材、営業ごみ、家電4品目、パソコン、一升瓶・ビール瓶は持ち込めないため、遺品整理では別確認にします。</p><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3460.html" target="_blank" rel="noopener">清掃センター受け入れ</a></div>
+    <div class="admin-card"><h3>粗大ごみ・小型家電</h3><p>佐久穂町では年2回、6月・10月に粗大ごみ収集を有料で行います。受付時間は6月が6時から9時、10月が7時から10時で、実施日はごみ収集カレンダーで確認します。茶ダンスなどのガラス戸は取り外し、持ち込んだごみは自分で降ろす案内です。</p><p>指定ごみ袋に入るものはごみステーションへ出し、粗大ごみ会場に混ぜないようにします。当日は小型家電製品の無料回収も案内されています。</p><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_108.html" target="_blank" rel="noopener">粗大ごみの収集</a></div>
+    <div class="admin-card"><h3>家電4品目・受けられないもの</h3><p>テレビ、エアコン、洗濯機・衣類乾燥機、冷蔵庫・冷凍庫は家電リサイクル法の対象です。買い替え時は購入店、処分のみの場合は購入店へ相談し、購入店が遠方・廃業・不明の場合は町公式掲載の株式会社平元商店へ依頼する方法、郵便局でリサイクル料金を支払い小柳産業株式会社東御倉庫へ持ち込む方法が案内されています。</p><p>粗大ごみ収集では家電4品目、パソコン、大型車のタイヤ、石膏ボード、断熱材、ウレタン製発泡スチロールなどの建築廃材、営業行為に伴う廃棄物は受付できません。</p><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3398.html" target="_blank" rel="noopener">家電4品目の処分</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>佐久穂町の移住定住支援サイトでは、空き家・空き地バンク、住まい、町営住宅、雁明ニュータウンなどが案内されています。空き家の売買・賃貸前には、残置物、仏壇、写真、権利書、鍵、庭木、農具、物置、納屋、車両進入を先に整理します。</p><p>八千穂高原方面や大日向・余地などでは、冬季道路と鍵の受け渡し、作業前後の写真報告を決めておくと、遠方家族でも進めやすくなります。</p><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3589.html" target="_blank" rel="noopener">公式情報を確認</a></div>
   </div>
+  <div class="admin-note"><strong>業者へ伝えること:</strong> 退去・売却・解体の期限、立会い可否、鍵の受け渡し、地区の収集カレンダー、午前8時までに出すもの、清掃センターへ持ち込む予定のもの、年2回の粗大ごみに回すもの、家電4品目、パソコン、建築廃材、物置・納屋・庭、仏壇・写真、貴重品探索、冬季道路、駐車位置を分けて伝えてください。</div>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
-    <p class="section-kicker">行政・地域データ</p>
+    <p class="section-kicker">長野県調査データ</p>
     <h2 class="section-title">佐久穂町で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">佐久穂町で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に佐久穂町公式サイトで最新条件を確認してください。</p>
+    <p class="lead">佐久穂町で遺品整理・生前整理を進める前に、家庭ごみの午前8時排出、清掃センターへの持込条件、年2回の粗大ごみ収集、家電4品目、小型家電回収、空き家・住まい相談を分けます。公式ページで確認できた内容だけを掲載し、未確認の民間料金や処分先は載せていません。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>佐久・小諸広域。軽井沢町じん芥処理場、クリーンヒルこもろ、Eステージなど地域指定施設</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>軽井沢町は10kg100円、小諸市は10kg100円に切断・破砕等の個別手数料、佐久市委託は5kg未満440円・10kg増ごと550円が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>別荘地、山間部、広い敷地、冬季道路の影響が出やすい地域です。鍵預かり、写真報告、候補日調整を早めに決めると進めやすくなります。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">佐久穂町公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>家庭ごみ</b><span>佐久穂町専用ごみ袋に入れ、地区のごみステーションへ当日午前8時まで。前日夜や収集日以外の排出は避けます。</span></div>
+      <div class="nagano-report-card"><b>持ち込み</b><span>佐久穂町清掃センターは畑5690-2。月曜・木曜の8:30〜10:30、事前に生活環境係へ連絡して日程調整します。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>年2回、6月・10月に有料収集。6月は6:00〜9:00、10月は7:00〜10:00。家電4品目、PC、建築廃材、営業ごみは受付不可です。</span></div>
+      <div class="nagano-report-card"><b>地域特性</b><span>高野町、畑、海瀬、平林、八郡、千代里、大日向、余地など、千曲川沿い・旧道沿い・八千穂高原方面で搬出路と冬季道路が変わります。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>軽井沢町は10kg100円、小諸市は10kg100円に切断・破砕等の個別手数料、佐久市委託は5kg未満440円・10kg増ごと550円が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>別荘地、山間部、広い敷地、冬季道路の影響が出やすい地域です。鍵預かり、写真報告、候補日調整を早めに決めると進めやすくなります。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.town.sakuho.nagano.jp/" target="_blank" rel="noopener">佐久穂町公式サイト</a></td></tr>
+      <tr><th>受付確認</th><td>通常収集は午前8時まで。清掃センター持込は月・木8:30〜10:30、事前連絡必須。粗大ごみは6月・10月の年2回で、実施日はごみ収集カレンダーを確認します。</td></tr>
+      <tr><th>料金目安</th><td>粗大ごみは有料収集です。料金表は佐久穂町公式のPDFで確認します。家電4品目はリサイクル料金・収集運搬料金、小型家電ボックス回収は無料案内です。</td></tr>
+      <tr><th>別確認品</th><td>家電4品目、パソコン、建築廃材、営業行為に伴うごみ、大型車タイヤ、一升瓶・ビール瓶、農機具、危険物、仏壇・写真などの供養希望品は通常ごみと分けます。</td></tr>
+      <tr><th>出典</th><td><a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3589.html" target="_blank" rel="noopener">ごみ収集カレンダー</a> / <a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3460.html" target="_blank" rel="noopener">清掃センター受け入れ</a> / <a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_108.html" target="_blank" rel="noopener">粗大ごみ収集</a> / <a href="https://www.town.sakuho.nagano.jp/kurashi/sumai/gomi/juminzeimuka_3398.html" target="_blank" rel="noopener">家電4品目</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">出典は佐久穂町公式サイト、佐久穂町移住定住支援サイトに限定しています。受付日、料金、対象品目は年度で変わるため、作業前に公式ページで最新条件を確認してください。</p>
   </div>
 </section>
-
 
 <section class="major-seo-local" id="major-local-guide">
   <div class="major-seo-local__head">
@@ -2241,8 +2353,8 @@
     <p class="major-seo-local__lead">戸建て、山手住宅、広い敷地の整理で、納屋・物置・屋外品まで作業範囲が広がります。 坂道、車両進入、庭・納屋、仏壇・写真、遠方写真報告、売却予定を確認します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
-    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>羽黒下・海瀬・高野町・畑・八郡・千代里・大日向・八千穂高原方面など、戸建て・別荘・空き家・物置の範囲を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>午前8時までの通常収集、清掃センター持込、年2回の粗大ごみ、家電4品目、清掃センターや粗大ごみで受けられない品目を公式ページで確認します。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
   </div>
@@ -2263,7 +2375,12 @@
 <section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">佐久穂町の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>佐久穂町で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として佐久穂町でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>佐久穂町の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        <details><summary>佐久穂町の家庭ごみは何時までに出しますか？</summary><p>佐久穂町公式では、家庭で出たごみを分別し、佐久穂町専用ごみ袋に入れて、住んでいる地区の決められたごみステーションへ当日午前8時までに出す案内です。収集日以外や前日夜からのごみ出しは、鳥獣による飛散や悪臭など周囲への迷惑になるため避けます。</p></details>
+        <details><summary>佐久穂町清掃センターへ家庭ごみを持ち込めますか？</summary><p>佐久穂町清掃センターでは、毎週月曜・木曜（祝日・年末年始を除く）午前8時30分から午前10時30分に、持込による一般家庭ごみを受け入れる案内です。住所は佐久穂町大字畑5690-2です。必ず事前に生活環境係（0267-86-2552）へ連絡し、日程調整を行います。持ち込めるのは地区のごみステーションで収集している家庭ごみ全般で、佐久穂町の指定ごみ袋へ入れる必要があります。</p></details>
+        <details><summary>佐久穂町の粗大ごみはどう出しますか？</summary><p>佐久穂町では、年2回（6月・10月）粗大ごみ収集を有料で行っています。受付時間は6月が午前6時から午前9時、10月が午前7時から午前10時です。茶ダンスなどのガラス戸は取り外し、持ち込んだごみは自分で降ろします。指定ごみ袋に入るものは通常のごみステーションへ出し、粗大ごみ収集へ混ぜないようにします。</p></details>
+        <details><summary>粗大ごみ収集や清掃センターで受けられないものは何ですか？</summary><p>粗大ごみ収集では、エアコン、テレビ、冷蔵庫類、洗濯機、衣類乾燥機、パソコン、大型車のタイヤ、石膏ボード、断熱材、ウレタン製発泡スチロールなどの建築廃材、営業行為に伴う廃棄物は受付できない案内です。清掃センターでも、粗大ごみ、建築廃材、営業行為に伴うごみ、家電4品目、パソコン、一升瓶・ビール瓶などは持ち込めないため、遺品整理では別確認にします。</p></details>
+        <details><summary>佐久穂町で家電4品目はどう処分しますか？</summary><p>テレビ、エアコン、洗濯機・衣類乾燥機、冷蔵庫・冷凍庫は、町の小型家電回収対象ではありません。買い替え時は新品を購入する店へ、処分だけの場合は購入した店へ相談します。購入店が遠方・廃業・不明の場合は、佐久穂町公式掲載の株式会社平元商店へ依頼する方法、または郵便局でリサイクル料金を支払い小柳産業株式会社東御倉庫へ持ち込む方法が案内されています。</p></details>
+        <details><summary>空き家・空き地バンク掲載前の片付けは何を確認しますか？</summary><p>佐久穂町の移住定住支援サイトでは、空き家・空き地バンク制度、町営住宅、雁明ニュータウン、住まい相談が案内されています。空き家の売買や賃貸前には、残置物、蔵・物置、農機具、仏壇、写真、権利書、鍵、庭木、車両進入を整理します。平林、大日向、海瀬、畑、八郡、千代里など、集落や旧道沿いで搬出条件が変わるため、写真報告の範囲も先に決めます。</p></details>
       </section>
 
 <section id="links" class="nearby-wards">
@@ -2276,7 +2393,7 @@
 <section id="contact" class="cta-band">
         <p class="section-kicker">見積もり前チェック</p>
         <h2>佐久穂町の遺品整理・生前整理を相談する</h2>
-        <p>粗大ごみで出せるもの、家族で残すもの、専門業者に任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
+        <p>通常収集で出すもの、清掃センターへ事前連絡して持ち込むもの、年2回の粗大ごみに回すもの、家電4品目やパソコンなど別ルートにするもの、専門業者に屋内搬出から任せるものを分けておくと、見積もりと作業範囲を決めやすくなります。</p>
         <div class="hero-actions"><a class="btn primary" href="#process">チェックリストを見る</a><a class="btn secondary" href="#admin">行政窓口を確認する</a></div>
       </section>
     </main>

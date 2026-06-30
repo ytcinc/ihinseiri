@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1511,51 +1511,59 @@
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "立科町で粗大ごみや小型家電はどこへ確認しますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は、川西粗大ごみ処分場（電話54-2610）へ確認します。屋内搬出が必要な家具や大量家財は行政確認と業者作業を分けます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "立科町で資源物を直接持ち込む場合の相談先は？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "新聞紙、雑誌・雑紙、段ボール、牛乳パック、衣類、びん類、ペットボトル、発泡スチロール・トレイ、容器包装プラスチック、金属類などは、品目により三井金属（0268-62-0235）や春山商店（53-7667）を確認します。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "直接持ち込みで指定袋は必要ですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "立科町公式ページでは、直接持ち込む場合も、地区のごみ集積所に出す場合と同様に、不燃ごみ（ガラス・陶磁器類、金属類）と容器包装プラスチックは、それぞれの指定袋に入れて持ち込むよう案内されています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "高齢者世帯の生前整理はどこに相談しますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "立科町地域包括支援センター（立科町役場内、0267-88-8418）と町民課高齢者支援係（0267-88-8406）を確認します。軽度生活援助、配食サービス、緊急通報システムなど、制度で対応できる範囲と家財整理業者へ任せる範囲を分けます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "別荘や山手住宅の片付けで注意することは？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "女神湖・白樺高原方面、山手住宅、農家住宅では、冬季道路、山道、駐車位置、玄関階段、物置・車庫・薪棚、庭木、鍵預かり、写真報告を先に確認します。"
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "立科町で粗大ごみや小型家電はどこへ確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "立科町公式の「ごみ処理『困ったとき』の問い合わせ先」では、粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は川西粗大ごみ処分場へ確認する品目として案内されています。搬入前に品目、量、指定袋の要否、開場条件を確認します。"
       }
-    ]
-  },
+    },
+    {
+      "@type": "Question",
+      "name": "立科町のごみで迷ったらどの窓口へ相談しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ごみ・資源物・直接持ち込みで迷う場合は、立科町役場 建設環境課 生活環境係（電話0267-88-8411、FAX0267-56-2310）へ確認します。町公式サイトには「ごみ出し検索」や環境衛生カレンダー、資源ごみの分別方法も用意されています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "不燃ごみや容器包装プラスチックを直接持ち込む時の注意点は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "立科町公式の案内では、不燃ごみや容器包装プラスチックを直接持ち込む場合も、指定ごみ袋に入れたうえで持ち込むよう案内されています。袋に入らないもの、割れ物、電池・蛍光管・ライターなどは、通常のごみと混ぜずに問い合わせ先を分けて確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "高齢者の生前整理や見守り相談はどこへ確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "高齢者の生活や介護の相談は、立科町の地域包括支援センターへ確認します。公式ページでは、高齢者が住み慣れた地域で安心して暮らせるよう、心身の健康保持や生活の安定に必要な援助を行う機関と説明されています。問い合わせは町民課 高齢者支援係（0267-88-8406）です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "白樺高原・女神湖方面の整理で先に見ることは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "白樺高原、女神湖、蓼科牧場方面は標高差、冬季道路、別荘・宿泊施設利用、管理会社の有無で搬出条件が変わります。鍵の受け渡し、除雪状況、駐車位置、階段、物置、薪・工具、写真報告の範囲を先に決め、行政処分と業者搬出を分けて見積もります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "空き家・売却前整理では何を先に確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "立科町の引越し・住まい情報には、空き家バンク、老朽危険空き家除却支援事業補助金、住宅断熱性能向上リフォーム事業補助金、薪ストーブ購入助成などの住まい関連項目があります。片付け前に、売却・解体予定、補助の申請時期、残す書類や写真、探索品を整理します。"
+      }
+    }
+  ]
+},
   {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -1744,6 +1752,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/tateshina/#professional-service",
+  "name": "遺品整理・生前整理.jp 立科町店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/tateshina/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "立科町",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "立科町"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1765,12 +1868,12 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>養生対応</b><span>別荘・旧家・山道搬出の養生配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>立科町で特に多い相談</h2><ul class="quick-list"><li>立科町の別荘・二地域居住の家財、鍵預かり、管理会社連絡まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・納屋の作業範囲を確認したい</li></ul></div>
+      <div class="hero-panel"><h2>立科町で特に多い相談</h2><ul class="quick-list"><li>立科町の別荘・二地域居住の家財、鍵預かり、管理会社連絡まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>川西粗大ごみ処分場へ確認するもの、資源物、屋内搬出を分けたい</li><li>芦田・茂田井の旧家、白樺高原・女神湖方面の冬季道路を確認したい</li></ul></div>
     </div>
   </section>
 
@@ -1923,7 +2026,7 @@
   <p class="lead">立科町は長野県の佐久地域に属します。町村中心部の住宅、旧道沿いの戸建て、集落部の空家整理で搬出条件が変わります。人口密度は98.9人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
     <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、立科町の作業範囲を判断しやすくなります。</p></div>
+    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、階段、駐車位置、前面道路、庭、物置、車庫、薪棚を撮影しておくと、立科町の作業範囲を判断しやすくなります。</p></div>
     <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
   </div>
   <div class="notice" style="margin-top:18px"><b>立科町の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
@@ -1932,7 +2035,7 @@
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">立科町でよくある相談パターン</a></li><li><a href="#cases">立科町の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">立科町で料金が変わりやすい条件</a></li><li><a href="#price">立科町の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">立科町の住宅特性・行政ルール</a></li><li><a href="#towns">立科町の対応エリア</a></li><li><a href="#service">立科町で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、道路幅、冬季道路</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">立科町の行政窓口</a></li><li><a href="#local">立科町の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1955,7 +2058,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>立科町の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>旧家・別荘の床、壁、階段、搬出経路の養生に備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1986,8 +2089,8 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>立科町のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="立科町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="立科町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>立科町の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="立科町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="立科町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
+      <article class="common-ba-card"><h3>立科町の旧家・戸建て整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="立科町の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="立科町の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>立科町の別荘・山手住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="立科町の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="立科町の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町の白樺高原・女神湖方面の別荘や山手住宅で、鍵や管理会社への確認が必要なケースです。冬季道路、除雪、建物養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
       <article class="common-ba-card"><h3>立科町の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="立科町の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="立科町の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
       <article class="common-ba-card"><h3>立科町の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="立科町の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="立科町の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>立科町の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="立科町の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="立科町の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>立科町の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
@@ -1995,12 +2098,12 @@
   </div>
 </section>
 
-<section id="kita-price-factors"><h2 class="section-title">立科町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、エレベーター、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
+<section id="kita-price-factors"><h2 class="section-title">立科町で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、山道、冬季道路、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
 
 <section id="price">
         <p class="section-kicker">料金</p>
         <h2 class="section-title">立科町の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。立科町では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、搬出距離、山道や冬季道路、庭・物置・車庫の有無、買取品、供養品、退去期限によって変わります。立科町では、川西粗大ごみ処分場や資源物の直接持ち込み、業者搬出の使い分けも確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
           <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
@@ -2109,7 +2212,7 @@
           <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
           <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
           <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
-          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、エレベーター利用、養生、駐車位置、冬季道路状況を確認します。</div>
+          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、山道、建物養生、駐車位置、冬季道路状況を確認します。</div>
         </div>
       </section>
 
@@ -2169,7 +2272,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">立科町の対応エリア・町名確認</h2>
         <p>立科町全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>立科町全域</span><span>芦田2532周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>佐久地域</span></div>      </section>
+        <div class="area-tags"><span>立科町全域</span><span>芦田・茂田井</span><span>山部・宇山</span><span>塩沢・藤沢</span><span>女神湖・白樺高原</span><span>戸建て・別荘・空き家</span><span>佐久地域</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2205,42 +2308,45 @@
         </tbody></table>
       </section>
 
+
 <section id="admin" class="admin-hotline-section">
   <div class="admin-inner">
     <p class="eyebrow">立科町の行政窓口・粗大ごみ・持ち込み先</p>
-    <h2>立科町で家財整理前に確認したい自治体情報</h2>
-    <p>立科町で遺品整理・生前整理を進める前に、地区の集積所へ出すもの、川西粗大ごみ処分場へ確認するもの、三井金属・春山商店へ直接持ち込む資源物、専門業者が屋内から搬出する家財を分けます。芦田、茂田井、山部、女神湖・白樺高原方面では、山道、冬季道路、別荘、物置、車庫、薪・工具類の有無で搬出条件が変わります。</p>
+    <h2>立科町で片付け前に確認したい自治体情報</h2>
+    <p>立科町で遺品整理・生前整理を進める前に、地区の集積所へ出すもの、川西粗大ごみ処分場へ確認するもの、三井金属・春山商店へ直接持ち込む資源物、専門業者が屋内から搬出する大型家財を分けます。芦田・茂田井の旧家、山部・宇山の戸建て、女神湖・白樺高原方面の別荘では、山道、冬季道路、鍵、薪・工具、物置、車庫の有無で作業計画が変わります。</p>
     <div class="admin-card-grid">
-      <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>立科町役場</strong><br>所在地: 〒384-2305 北佐久郡立科町大字芦田2532<br>代表電話: 0267-56-2311<br>FAX: 0267-56-2310</p><p>ごみは建設環境課生活環境係、粗大ごみ・有害ごみは川西粗大ごみ処分場、資源物は直接持込先、高齢者支援は町民課高齢者支援係へ分けて確認します。</p><a href="https://www.town.tateshina.nagano.jp/" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>粗大ごみ・処理相談</h3><p><strong>川西粗大ごみ処分場</strong><br>電話: 54-2610</p><p>粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は、川西粗大ごみ処分場が問い合わせ先として案内されています。集積所で出せるものと直接持ち込むものを分けます。</p><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>直接持ち込み</h3><p><strong>資源物の持込先</strong><br>有限会社三井金属: 0268-62-0235<br>春山商店: 53-7667</p><p>三井金属は月〜土 8:00〜17:00（年末年始除く）、春山商店は月〜金 8:30〜17:00（祝日・年末年始除く）。新聞紙、雑誌・雑紙、段ボール、牛乳パック、衣類等、びん類、ペットボトル、発泡スチロール・トレイ、容器包装プラスチック、金属類などは品目ごとに持込先を確認します。</p><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>持込時の注意</h3><p><strong>指定袋が必要なもの</strong></p><p>直接持ち込む場合も、地区のごみ集積所に出す場合と同様に、不燃ごみ（ガラス・陶磁器類、金属類）と容器包装プラスチックは、それぞれの指定袋に入れて持ち込みます。</p><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>高齢者支援・地域包括</h3><p><strong>立科町地域包括支援センター</strong><br>所在地: 立科町役場内<br>電話: 0267-88-8418<br><strong>町民課 高齢者支援係</strong><br>電話: 0267-88-8406</p><p>地域包括支援センターは高齢者の総合相談窓口です。在宅福祉サービスには、軽度生活援助、配食サービス、生活管理指導員派遣、緊急通報システムなどがあります。</p><a href="https://www.town.tateshina.nagano.jp/hoken_kenkou/kourei_fukushi_kaigo/kourei_fukushi/1201.html" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>空き家・別荘整理</h3><p>女神湖・白樺高原方面、山手住宅、農家住宅、別荘利用は搬出条件を先に確認</p><p>明確な補助制度名は作らず、所有者、鍵、管理会社、残す書類、冬季道路、薪・工具、庭木、浄化槽・水道閉栓、写真報告の方法を分けて確認します。</p><a href="https://www.town.tateshina.nagano.jp/" target="_blank" rel="noopener">公式情報を確認</a></div>
-      <div class="admin-card"><h3>業者へ伝えること</h3><p>川西粗大ごみ処分場へ確認する品、資源物持込先、屋内搬出、鍵預かり</p><p>芦田・茂田井の住宅、女神湖・白樺高原周辺の別荘では、山道、積雪、駐車位置、玄関階段、物置・車庫・薪棚、仏壇・写真、貴重品探索を写真で共有します。</p><a href="#compare">業者比較の確認点へ</a></div>
+      <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>立科町役場</strong><br>所在地: 〒384-2305 長野県北佐久郡立科町大字芦田2532<br>代表電話: 0267-56-2311<br>FAX: 0267-56-2310</p><p>ごみは建設環境課生活環境係、粗大ごみや小型家電は川西粗大ごみ処分場、資源物は直接持込先、高齢者支援は町民課高齢者支援係へ分けて確認します。</p><a href="https://www.town.tateshina.nagano.jp/" target="_blank" rel="noopener">立科町公式サイト</a></div>
+      <div class="admin-card"><h3>収集・分別で見るもの</h3><p><strong>建設環境課 生活環境係</strong><br>電話: 0267-88-8411<br>FAX: 0267-56-2310</p><p>町公式サイトには、ごみ出し検索、環境衛生カレンダー、資源ごみの分別方法が用意されています。少量の生活ごみや資源物は、地区の収集日、指定袋、出せる場所を確認してから分けます。</p><a href="https://www.town.tateshina.nagano.jp/" target="_blank" rel="noopener">ごみ・環境を確認</a></div>
+      <div class="admin-card"><h3>粗大ごみ・小型家電</h3><p><strong>川西粗大ごみ処分場</strong><br>電話: 54-2610</p><p>粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は、川西粗大ごみ処分場が問い合わせ先として案内されています。袋に入るもの、袋に入らないもの、割れ物、電池類を混ぜずに分けます。</p><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">困ったときの問い合わせ先</a></div>
+      <div class="admin-card"><h3>資源物の直接持ち込み</h3><p><strong>有限会社三井金属</strong>: 0268-62-0235<br><strong>春山商店</strong>: 53-7667</p><p>新聞紙、雑誌・雑紙、段ボール、牛乳パック、衣類等、びん類、ペットボトル、発泡スチロール・トレイ、容器包装プラスチック、金属類などは、品目ごとに持込先を確認します。不燃ごみや容器包装プラスチックは、直接持ち込みでも指定袋に入れる案内があります。</p><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">資源物の分別を見る</a></div>
+      <div class="admin-card"><h3>白樺高原・女神湖方面</h3><p>白樺高原、女神湖、蓼科牧場方面の別荘や宿泊施設では、標高差、冬季道路、除雪、観光時間帯、鍵の受け渡し、管理会社の有無で作業時間が変わります。</p><p>布団、暖房器具、薪、工具、アウトドア用品、物置、車庫、庭まわりは、通常の室内家財とは別に写真で共有してください。遠方家族の場合は、作業前後写真と処分前確認の範囲も決めます。</p><a href="#local">地域事情を見る</a></div>
+      <div class="admin-card"><h3>高齢者支援・地域包括</h3><p><strong>立科町地域包括支援センター</strong><br>所在地: 立科町役場内<br>電話: 0267-88-8418<br><strong>町民課 高齢者支援係</strong><br>電話: 0267-88-8406</p><p>地域包括支援センターは、高齢者が住み慣れた地域で安心して暮らせるよう、健康保持や生活安定に必要な援助を行う総合相談窓口です。生前整理では、本人の同意、親族立会い、ケアマネジャー連携、残す薬・介護用品を先に分けます。</p><a href="https://www.town.tateshina.nagano.jp/hoken_kenkou/kourei_fukushi_kaigo/kourei_fukushi/1201.html" target="_blank" rel="noopener">高齢者支援を確認</a></div>
+      <div class="admin-card"><h3>空き家・住まい</h3><p>立科町の引越し・住まい情報には、空き家バンク、老朽危険空き家除却支援事業補助金、住宅断熱性能向上リフォーム事業補助金、薪ストーブ購入助成などの住まい関連項目があります。</p><p>売却前整理、解体前整理、別荘売却前の片付けでは、補助や申請時期を片付け前に確認し、通帳、印鑑、権利書、保険証券、写真、仏壇、管理書類を処分前に探します。</p><a href="https://www.town.tateshina.nagano.jp/" target="_blank" rel="noopener">引越し・住まいを確認</a></div>
+      <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、川西粗大ごみ処分場へ確認する品、資源物の持込先、屋内搬出が必要な家具、仏壇・写真、貴重品探索、庭・物置・車庫・薪棚の範囲を分けて伝えます。</p><p>芦田・茂田井の旧家では蔵や物置、白樺高原・女神湖方面では冬季道路と除雪、観光時間帯、管理会社連絡が費用と日程に影響します。</p><a href="#compare">業者比較の確認点へ</a></div>
     </div>
+    <p class="source-note">出典は立科町公式サイトの「ごみ・環境」「ごみ処理『困ったとき』の問い合わせ先」「地域包括支援センターとは」「引越し・住まい」および公式トップの役場情報です。料金、開場日、対象品目、受付条件は変更される場合があります。搬入・申請前に必ず公式窓口で最新情報を確認してください。</p>
   </div>
 </section>
-
 
 <section id="nagano-report" class="section nagano-report">
   <div class="container">
     <p class="section-kicker">行政・地域データ</p>
-    <h2 class="section-title">立科町で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">立科町で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に立科町公式サイトで最新条件を確認してください。</p>
+    <h2 class="section-title">立科町で整理前に分ける公式ルール</h2>
+    <p class="lead">立科町は、ごみ出し検索、環境衛生カレンダー、資源ごみの分別方法、困ったときの問い合わせ先が町公式サイトで分かれています。遺品整理・生前整理では、通常ごみ、資源物、粗大ごみ、小型家電、水銀使用製品、屋内搬出が必要な大型家具、空き家・住まいの制度を分けて確認します。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>粗大ごみ・乾電池・蛍光管・ライター・ガラス陶磁器類・小型家電・水銀使用製品は川西粗大ごみ処分場へ確認します。資源物は三井金属・春山商店など品目別に分けます。</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>公式ページに掲載の電話先で確認します。不燃ごみや容器包装プラスチックを直接持ち込む場合も指定袋が必要です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>山手住宅、別荘、農家住宅、冬季道路、薪・工具・物置・車庫の残置物で搬出時間が変わります。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">ごみ処理「困ったとき」の問い合わせ先</a>、<a href="https://www.town.tateshina.nagano.jp/hoken_kenkou/kourei_fukushi_kaigo/kourei_fukushi/1201.html" target="_blank" rel="noopener">地域包括支援センター</a>を参照。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は川西粗大ごみ処分場へ確認します。混載せず品目別に分けます。</span></div>
+      <div class="nagano-report-card"><b>直接持ち込み</b><span>不燃ごみや容器包装プラスチックを直接持ち込む場合も、指定ごみ袋に入れる案内があります。袋に入らない物は問い合わせ先を分けます。</span></div>
+      <div class="nagano-report-card"><b>住まい制度</b><span>引越し・住まい情報には空き家バンク、老朽危険空き家除却、断熱リフォーム、薪ストーブ購入助成などの項目があります。</span></div>
+      <div class="nagano-report-card"><b>地域特性</b><span>芦田、茂田井、塩沢、宇山、山部、白樺高原、女神湖方面は、冬季道路、別荘管理、薪・工具・物置の残置物を先に見ます。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>川西粗大ごみ処分場、三井金属、春山商店、指定袋が必要な持込品、高齢者支援、別荘・空き家整理の搬出条件を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>軽井沢町は10kg100円、小諸市は10kg100円に切断・破砕等の個別手数料、佐久市委託は5kg未満440円・10kg増ごと550円が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>別荘地、山間部、広い敷地、冬季道路の影響が出やすい地域です。鍵預かり、写真報告、候補日調整を早めに決めると進めやすくなります。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.town.tateshina.nagano.jp/kurashi/gomi_pet_kankyo/gomi/kateigomi/1140.html" target="_blank" rel="noopener">立科町 ごみ処理「困ったとき」の問い合わせ先</a>、<a href="https://www.town.tateshina.nagano.jp/hoken_kenkou/kourei_fukushi_kaigo/kourei_fukushi/1166.html" target="_blank" rel="noopener">在宅福祉サービス</a></td></tr>
+      <tr><th>行政確認</th><td>ごみ出し検索、環境衛生カレンダー、資源ごみの分別方法、川西粗大ごみ処分場の対象品目、空き家・住まい関連制度、地域包括支援センターを分けて確認します。</td></tr>
+      <tr><th>別ルール品</th><td>粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品、家電4品目、パソコン、消火器、灯油、塗料、農薬、建築廃材、事業系ごみ、仏壇・写真は通常ごみと別確認にします。</td></tr>
+      <tr><th>業者作業</th><td>屋内搬出が必要なタンス、食器棚、ベッド、冷蔵庫まわり、金庫、物置内の工具、薪棚、農機具、庭木、貴重品探索、供養品は、行政処分ではなく作業範囲として見積もりへ入れます。</td></tr>
+      <tr><th>高齢者支援</th><td>地域包括支援センターは高齢者が住み慣れた地域で安心して暮らせるよう、健康保持や生活安定に必要な援助を行う機関です。生前整理では本人同意、親族立会い、ケアマネジャー連携を先に整理します。</td></tr>
+      <tr><th>空き家・住まい</th><td>空き家バンク、老朽危険空き家除却支援、住宅断熱性能向上リフォーム、薪ストーブ助成などは、片付け前に申請条件や時期を確認します。売却・解体予定がある場合は、家財処分前に書類と写真探索を済ませます。</td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">出典は立科町公式サイトの「ごみ・環境」「ごみ処理『困ったとき』の問い合わせ先」「地域包括支援センターとは」「引越し・住まい」です。料金、開場日、対象条件は変更される場合があるため、搬入・申請前に公式窓口で最新情報を確認してください。</p>
   </div>
 </section>
 
@@ -2252,7 +2358,7 @@
     <p class="major-seo-local__lead">山手住宅、別荘、農家住宅の整理で、季節条件と納屋・屋外品の量が見積もりに影響します。 冬季道路、別荘管理、庭・納屋、農具、車両進入、遠方立会いなしを整理します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>芦田・茂田井・白樺高原などの地区、旧家か別荘か、階数、前面道路、冬季道路を先に整理します。</span></div>
     <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
@@ -2271,11 +2377,18 @@
   <p class="major-seo-local__note">立科町では「自治体でできる処分」と「専門業者に任せる整理」を分けるだけで、費用・日程・家族の負担がかなり見えやすくなります。まずは住所、建物、残す品、期限、写真の5点をそろえて相談してください。</p>
 </section>
 
+
 <section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">立科町の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>立科町で粗大ごみや小型家電はどこへ確認しますか？</summary><p>粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は、川西粗大ごみ処分場（電話54-2610）へ確認します。屋内搬出が必要な家具や大量家財は行政確認と業者作業を分けます。</p></details><details><summary>立科町で資源物を直接持ち込む場合の相談先は？</summary><p>新聞紙、雑誌・雑紙、段ボール、牛乳パック、衣類、びん類、ペットボトル、発泡スチロール・トレイ、容器包装プラスチック、金属類などは、品目により三井金属（0268-62-0235）や春山商店（53-7667）を確認します。</p></details><details><summary>直接持ち込みで指定袋は必要ですか？</summary><p>立科町公式ページでは、直接持ち込む場合も、地区のごみ集積所に出す場合と同様に、不燃ごみ（ガラス・陶磁器類、金属類）と容器包装プラスチックは、それぞれの指定袋に入れて持ち込むよう案内されています。</p></details><details><summary>高齢者世帯の生前整理はどこに相談しますか？</summary><p>立科町地域包括支援センター（立科町役場内、0267-88-8418）と町民課高齢者支援係（0267-88-8406）を確認します。軽度生活援助、配食サービス、緊急通報システムなど、制度で対応できる範囲と家財整理業者へ任せる範囲を分けます。</p></details><details><summary>別荘や山手住宅の片付けで注意することは？</summary><p>女神湖・白樺高原方面、山手住宅、農家住宅では、冬季道路、山道、駐車位置、玄関階段、物置・車庫・薪棚、庭木、鍵預かり、写真報告を先に確認します。</p></details>
+        <details><summary>立科町で粗大ごみや小型家電はどこへ確認しますか？</summary><p>立科町公式の「ごみ処理『困ったとき』の問い合わせ先」では、粗大ごみ、乾電池、蛍光管、ライター、ガラス・陶磁器類、小型家電、水銀使用製品は川西粗大ごみ処分場へ確認する品目として案内されています。搬入前に品目、量、指定袋の要否、開場条件を確認します。</p></details>
+        <details><summary>立科町のごみで迷ったらどの窓口へ相談しますか？</summary><p>ごみ・資源物・直接持ち込みで迷う場合は、立科町役場 建設環境課 生活環境係（電話0267-88-8411、FAX0267-56-2310）へ確認します。町公式サイトには「ごみ出し検索」や環境衛生カレンダー、資源ごみの分別方法も用意されています。</p></details>
+        <details><summary>不燃ごみや容器包装プラスチックを直接持ち込む時の注意点は？</summary><p>立科町公式の案内では、不燃ごみや容器包装プラスチックを直接持ち込む場合も、指定ごみ袋に入れたうえで持ち込むよう案内されています。袋に入らないもの、割れ物、電池・蛍光管・ライターなどは、通常のごみと混ぜずに問い合わせ先を分けて確認します。</p></details>
+        <details><summary>高齢者の生前整理や見守り相談はどこへ確認しますか？</summary><p>高齢者の生活や介護の相談は、立科町の地域包括支援センターへ確認します。公式ページでは、高齢者が住み慣れた地域で安心して暮らせるよう、心身の健康保持や生活の安定に必要な援助を行う機関と説明されています。問い合わせは町民課 高齢者支援係（0267-88-8406）です。</p></details>
+        <details><summary>白樺高原・女神湖方面の整理で先に見ることは？</summary><p>白樺高原、女神湖、蓼科牧場方面は標高差、冬季道路、別荘・宿泊施設利用、管理会社の有無で搬出条件が変わります。鍵の受け渡し、除雪状況、駐車位置、階段、物置、薪・工具、写真報告の範囲を先に決め、行政処分と業者搬出を分けて見積もります。</p></details>
+        <details><summary>空き家・売却前整理では何を先に確認しますか？</summary><p>立科町の引越し・住まい情報には、空き家バンク、老朽危険空き家除却支援事業補助金、住宅断熱性能向上リフォーム事業補助金、薪ストーブ購入助成などの住まい関連項目があります。片付け前に、売却・解体予定、補助の申請時期、残す書類や写真、探索品を整理します。</p></details>
       </section>
+
 
 <section id="links" class="nearby-wards">
         <p class="section-kicker">周辺リンク</p>

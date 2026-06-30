@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1290,9 +1290,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
     .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
@@ -1786,6 +1786,101 @@
 
 
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/sakaki/#professional-service",
+  "name": "遺品整理・生前整理.jp 坂城町店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/sakaki/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "坂城町",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "坂城町"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -2298,6 +2393,35 @@
     <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p>坂城町の実家じまいでは、売却、解体、相続、空き家管理、草木管理、近隣対応を家財整理と同時に考えます。公式サイトでは移住・定住、引越し・住まい、補助・助成、相談窓口から関連制度を探せます。契約前に住まい相談や補助制度の対象になるかを確認し、権利書、保険証券、通帳、写真、仏壇を処分前に分けます。</p><a href="https://www.town.sakaki.nagano.jp/" target="_blank" rel="noopener">坂城町公式サイト</a><a href="https://www.town.sakaki.nagano.jp/life/1/6/" target="_blank" rel="noopener">生活環境</a></div>
     <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>行政で確認することは、分別、収集日、サンデーリサイクル、粗大ごみ、可燃ごみ直接搬入、家電4品目、収集できないごみ、福祉・住まい相談です。業者に任せることは、室内からの大型家具搬出、階段作業、庭・物置・車庫の片付け、仏壇・写真の供養、買取査定、通帳・権利書探索、鍵預かり、作業前後の写真報告です。</p></div>
   </div>
+  <div class="admin-callout">
+    <h3>坂城町の片付けは「家庭ごみ」「粗大ごみ」「事業系」を最初に分けます</h3>
+    <ul>
+      <li>指定袋や地区収集で出せるものは、収集日と区ごとの出せる時間を確認します。</li>
+      <li>指定袋に入らないもの、5kgを超えるものは、サンデーリサイクルの粗大ごみ回収を確認します。</li>
+      <li>工場・作業場・店舗で使っていた工具、金属資材、油類、事業由来の残置物は、家庭ごみと混ぜずに住民環境課や許可業者へ確認します。</li>
+      <li>家族が残したい通帳、印鑑、権利書、写真、仏壇、貴金属は、処分作業に入る前に探索範囲を決めます。</li>
+    </ul>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>坂城町の地域事情</th><th>見積もり前に見ること</th><th>作業で注意したいこと</th></tr></thead>
+    <tbody>
+      <tr><td>坂城駅・中心部周辺</td><td>住宅密集地、前面道路、駐車位置、短時間搬出、近隣への声かけ。</td><td>道幅や停車場所で作業時間が変わります。玄関前、車両を置ける位置、階段幅を写真で共有します。</td></tr>
+      <tr><td>中之条・南条・網掛方面</td><td>戸建て、庭、物置、車庫、農具、古い工具、剪定枝、収集地区のカレンダー。</td><td>室内だけでなく外まわりの量が増えやすい地域です。母屋、物置、庭、車庫を分けて撮ると見積もりが安定します。</td></tr>
+      <tr><td>テクノさかき・工業系エリア周辺</td><td>自宅兼作業場、町工場跡、工具、金属部材、機械部品、油・塗料の有無。</td><td>家庭由来か事業由来かで処理ルートが変わります。産業廃棄物や事業系一般廃棄物に近いものは、町の通常収集に混ぜない確認が必要です。</td></tr>
+      <tr><td>上平・鼠・金井など山側の住宅</td><td>坂道、道幅、冬季道路、軽トラックでの小分け搬出、玄関から車両までの距離。</td><td>家財量が同じでも、搬出距離と積み込み回数で費用が変わります。遠方家族は鍵預かりと写真報告の範囲も決めます。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>電話・場所</th><th>確認する内容</th></tr></thead>
+    <tbody>
+      <tr><td>坂城町役場</td><td>0268-82-3111 / FAX 0268-82-8307<br>埴科郡坂城町大字坂城10050番地</td><td>役場全体、住民票・相続後の手続き、住まい相談、福祉相談の入口。</td></tr>
+      <tr><td>住民環境課 環境保全係</td><td>0268-75-6204 / FAX 0268-82-8307</td><td>ごみ分別、収集日、指定袋、サンデーリサイクル、粗大ごみ、収集できないごみ、一般廃棄物収集運搬業許可。</td></tr>
+      <tr><td>サンデーリサイクル</td><td>毎月第1・第3日曜日が基本。会場は年度日程表で確認。</td><td>資源物、有害ごみ、充電式電池、小型家電、粗大ごみ、有料の家電リサイクル品。可燃・不燃ごみは対象外です。</td></tr>
+      <tr><td>ちくま環境エネルギーセンター</td><td>026-214-9017</td><td>可燃ごみの直接搬入、受入時間、10kgまでごと190円、本人確認、ご自身での積み下ろし。</td></tr>
+      <tr><td>家電リサイクル指定引取場所</td><td>信濃陸送 026-273-3601 / 小柳産業 0268-71-7155 / 西濃運輸長野指定引取所 026-214-7556</td><td>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコン。営業日時は各引取場所へ確認します。</td></tr>
+      <tr><td>高齢者福祉・移動支援</td><td>坂城町役場代表 0268-82-3111</td><td>施設入居前の生前整理、デマンド交通、循環バス、家族だけで運び出せない場合の相談先整理。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 <section id="nagano-report" class="section nagano-report">

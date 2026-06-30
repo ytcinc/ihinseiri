@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1290,9 +1290,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
     .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
@@ -1758,6 +1758,101 @@
 
 
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/obuse/#professional-service",
+  "name": "遺品整理・生前整理.jp 小布施町店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/obuse/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "小布施町",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "小布施町"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1784,7 +1879,7 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>小布施町で特に多い相談</h2><ul class="quick-list"><li>小布施町の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+      <div class="hero-panel"><h2>小布施町で特に多い相談</h2><ul class="quick-list"><li>小布施駅周辺や町なかの住宅で、退去期限や駐車位置に合わせて片付けたい</li><li>遠方から鍵を預け、旧家・蔵・物置の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・東山クリーンセンター搬入と、屋内搬出や大量家財の業者作業を分けたい</li><li>栗の木小径・北斎館周辺など観光導線に近い場所で、短時間搬出や近隣配慮を相談したい</li></ul></div>
     </div>
   </section>
 
@@ -2292,6 +2387,35 @@
       <p>小布施町は観光客が多い時期や町なかの狭い道で搬出時間が限られることがあるため、候補日、駐車位置、近隣配慮を見積もり前に共有してください。</p>
     </div>
   </div>
+  <div class="admin-callout">
+    <h3>小布施町は「景観・観光導線」と「空き家補助の事前申請」を先に見ます</h3>
+    <ul>
+      <li>町なかや観光客の多い通りでは、トラックの停車位置、搬出時間、近隣店舗・歩行者への配慮を見積もり前に決めます。</li>
+      <li>旧家や蔵では、古家具、器、掛軸、茶道具、写真、仏壇などを処分前に分け、買取や供養の確認を先に行います。</li>
+      <li>果樹園に近い戸建てでは、母屋だけでなく物置、車庫、農具、剪定枝、マルチ材を別確認にします。</li>
+      <li>空き家の家財道具等処分補助を使う可能性がある場合は、処分前写真と見積書が必要になるため、作業開始前に企画財政課へ相談します。</li>
+    </ul>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>小布施町の地域事情</th><th>見積もり前に見ること</th><th>片付けで注意したいこと</th></tr></thead>
+    <tbody>
+      <tr><td>小布施駅・町中心部</td><td>前面道路、駐車位置、短時間搬出、近隣店舗、歩行者導線。</td><td>町なかは大きな車両を長く停めにくいことがあります。軽トラックでの小分け搬出や時間帯指定も見積もり条件に入れます。</td></tr>
+      <tr><td>栗の木小径・北斎館周辺</td><td>観光時間帯、景観への配慮、搬出時の養生、近隣への声かけ。</td><td>観光客の多い時間帯を避けたい場所では、搬出時間と車両位置を先に決めると当日の混乱を減らせます。</td></tr>
+      <tr><td>旧家・蔵・庭付き戸建て</td><td>蔵、納戸、仏間、押入れ、庭、物置、古家具、骨董・美術品の有無。</td><td>価値が分からない品を一括処分に混ぜないことが大切です。写真を撮って、残す品・査定する品・供養する品を先に分けます。</td></tr>
+      <tr><td>果樹園周辺・郊外戸建て</td><td>農具、脚立、コンテナ、剪定枝、マルチ材、作業小屋、車庫。</td><td>家庭ごみと農業由来のごみで扱いが変わります。東山クリーンセンターへ搬入できないものは、JAなど別ルートの確認が必要です。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>電話・所在地</th><th>確認する内容</th></tr></thead>
+    <tbody>
+      <tr><td>小布施町役場</td><td>026-247-3111 / FAX 026-247-3113<br>上高井郡小布施町小布施1491-2</td><td>町全体の手続き、担当課の確認、相続後の住まい・福祉・おくやみ関連相談。</td></tr>
+      <tr><td>住民税務課 住民係</td><td>026-214-9109</td><td>家庭ごみ、資源物、収集日、粗大ごみ、東山クリーンセンター代理搬入、収集できない品目。</td></tr>
+      <tr><td>東山クリーンセンター</td><td>0269-22-7074<br>中野市大字中野1308-1</td><td>可燃性・不燃性粗大ごみ、一時多量ごみ、搬入可否、受付時間、分別済み搬入。</td></tr>
+      <tr><td>有限会社マテック小布施</td><td>026-247-6635<br>小布施町大字大島655-3</td><td>不燃性粗大ごみ、電気コード、使用済み食用油の随時回収可否と手数料。</td></tr>
+      <tr><td>企画財政課 企画交流係</td><td>026-214-9102 / kikaku@town.obuse.nagano.jp</td><td>空き家改修等補助金、家財道具等処分、空き家バンク登録、処分前写真と見積書の確認。</td></tr>
+      <tr><td>地域包括支援センター・高齢者支援</td><td>小布施町公式の高齢・介護ページで確認</td><td>施設入居前の生前整理、本人同意、ケアマネジャーとの連携、薬・介護用品・重要書類の扱い。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 

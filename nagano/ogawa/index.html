@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1795,6 +1795,101 @@
 
 
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/ogawa/#professional-service",
+  "name": "遺品整理・生前整理.jp 小川村店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/ogawa/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "小川村",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "小川村"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1821,7 +1916,7 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>小川村で特に多い相談</h2><ul class="quick-list"><li>小川村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+      <div class="hero-panel"><h2>小川村で特に多い相談</h2><ul class="quick-list"><li>小川村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、高府・瀬戸川・山あい集落の実家を写真報告で片付けたい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>A・B・C地区の収集日、粗大ごみ、電池類、家電4品目を分けて考えたい</li><li>冬季道路、積雪、坂道、駐車位置、納屋・蔵の範囲を見積もり前に確認したい</li></ul></div>
     </div>
   </section>
 
@@ -2294,6 +2389,31 @@
     <div class="manual-admin-card"><h3>空き家・住まい相談</h3><p>小川村公式サイトでは、よく見られる情報として空き家バンクが案内されています。山間部の空き家や実家じまいでは、売却・賃貸・解体・管理の予定、草木管理、雪害、近隣対応を家財整理と同時に考えます。村道、住宅、建築関係は役場担当窓口で建設経済課系の案内を確認します。</p><a href="https://ogawamura.jp/" target="_blank" rel="noopener">小川村空き家バンク</a></div>
     <div class="manual-admin-card"><h3>行政でできること・業者に任せること</h3><p>小川村では、母屋、物置、納屋、庭、農具、古い家電、屋外保管品が同時に残りやすいです。行政は分別、地区別収集日、家電4品目、電池・蛍光管、生活環境相談。業者は屋内搬出、大型家具の階段作業、物置・納屋、貴重品探索、供養、買取、鍵預かり、作業後写真報告を担当範囲として分けます。</p></div>
   </div>
+  <div class="admin-callout">
+    <h3>小川村は「家の中」より先に、道路と敷地を見たい地域です</h3>
+    <p>小川村は山あいの集落に住宅が点在し、家の前まで2トン車が入れるか、途中で軽トラックへ積み替えるかで作業時間が変わります。空き家バンクにも蔵付き・畑付き・古民家・農家住宅の物件が並ぶため、室内だけでなく蔵、納屋、物置、車庫、庭、畑まわりの道具まで最初に範囲を決めておくと、見積もりのズレを減らせます。</p>
+    <p>雨や雪の影響も見落とせません。小川村公式サイトには村の雨量積雪情報への導線があり、冬季や大雨後の作業では道路幅、路面、除雪状況、駐車位置を確認してから日程を組むのが現実的です。遠方家族の立会いなし整理では、鍵の受け渡し、作業前後写真、返送品、処分前確認を先に決めます。</p>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>場所・住環境</th><th>小川村で起きやすい確認点</th><th>見積もり前に送る写真</th></tr></thead>
+    <tbody>
+      <tr><td>高府・役場周辺</td><td>役場や生活導線に近い一方、前面道路、短時間搬出、駐車位置、近隣への声かけを確認します。</td><td>玄関、前面道路、駐車位置、階段、部屋全体。</td></tr>
+      <tr><td>瀬戸川・山あい集落</td><td>坂道、細い道、車両進入、庭から玄関までの距離、冬季の積雪・凍結を先に見ます。</td><td>道路幅、坂道、敷地入口、玄関までの通路、積雪時の写真。</td></tr>
+      <tr><td>蔵付き古民家・農家住宅</td><td>母屋のほか、蔵、納屋、物置、車庫、農具、古い家電、屋外保管品が残りやすくなります。</td><td>蔵、納屋、物置、農具、工具棚、車庫、庭。</td></tr>
+      <tr><td>空き家バンク相談前</td><td>売却・賃貸に進める家か、片付ければ出せる家かを分け、残置物と清掃範囲を決めます。</td><td>全室、押入れ、台所、浴室、庭、外観、残置物の全体。</td></tr>
+      <tr><td>遠方家族・高齢者世帯</td><td>本人同意、福祉相談、鍵預かり、貴重品探索、写真報告、返送品の扱いを先に決めます。</td><td>仏壇、書類棚、通帳がありそうな場所、薬・介護用品、残す品。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>公式に確認できる内容</th><th>片付けでの使い方</th></tr></thead>
+    <tbody>
+      <tr><td>住民福祉課 住民係</td><td>ごみ・し尿処理、A・B・C地区の収集カレンダー、可燃ごみ地区割、家電4品目を確認します。</td><td>通常収集、粗大ごみ回収、屋内搬出、処理困難品を作業前に分けます。</td></tr>
+      <tr><td>おひさまハウス</td><td>令和8年4月から蛍光管・乾電池・ボタン電池の通年回収を実施。営業時間内に職員へ対面手渡しです。</td><td>家財整理で出た電池類を可燃ごみや家具に混ぜず、別箱で保管します。</td></tr>
+      <tr><td>役場担当窓口</td><td>高齢者福祉は住民福祉課 社会福祉係、農林業や村道・建築は建設経済課系の窓口が案内されています。</td><td>福祉整理、農具・畑まわり、道路や住宅相談を家財整理と分けます。</td></tr>
+      <tr><td>小川村空き家バンク</td><td>売却又は賃貸できる住宅の所有者から登録された物件を移住希望者へ情報提供しています。</td><td>売却・賃貸前に、家財、蔵、庭、畑、車庫の片付け範囲を決めます。</td></tr>
+      <tr><td>雨量積雪情報</td><td>小川村公式サイトから村の雨量積雪情報を確認できます。</td><td>冬季や大雨後の作業日、車両進入、除雪の有無を判断します。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 <section id="nagano-report" class="section nagano-report">

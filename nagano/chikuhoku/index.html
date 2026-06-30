@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1511,44 +1511,52 @@
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "筑北村で生前整理だけでも相談できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として筑北村でも早めに進める方が増えています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "筑北村の粗大ごみと業者依頼はどちらがよいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "筑北村の粗大ごみはいつ出せますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "筑北村公式では、布団、ソファー、ガスレンジ、タンス、古タイヤなど、不燃ごみ袋に入らないものや分別できないものは春と秋の指定日に有料で回収すると案内されています。"
       }
-    ]
-  },
-  {
+    },
+    {
+      "@type": "Question",
+      "name": "小型家電や電池類はどう分けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "小型家電は40cm×20cm以内のものが対象で、役場、筑北村図書館、坂井支所入口内の回収ボックスへ出します。乾電池、蛍光灯、ライター、インクカートリッジは専用集積所の扱いがあります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家電4品目は粗大ごみで出せますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象で、ごみステーションには出せません。購入店、指定引取場所、許可業者、年2回の粗大ごみ回収日を確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "穂高クリーンセンターへ直接持ち込めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "筑北村の一般廃棄物処理実施計画では、可燃物の処理施設として穂高クリーンセンターが記載されています。家庭ごみの直接搬入可否や手数料は、積み込む前に筑北村住民福祉課へ確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "空き家や納屋付き住宅の片付けで先に見ることは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "室内家財、納屋・物置、庭、古タイヤ、農機具、権利書、固定資産関係書類、鍵、境界資料を先に分けると、行政確認と業者見積もりを進めやすくなります。"
+      }
+    }
+  ]
+},
+{
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "筑北村で遺品整理・生前整理を相談する前に確認したいこと",
@@ -1736,6 +1744,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/chikuhoku/#professional-service",
+  "name": "遺品整理・生前整理.jp 筑北村店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/chikuhoku/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "筑北村",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "筑北村"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1757,24 +1860,24 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>養生対応</b><span>玄関・階段・庭・納屋まわりの搬出配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>筑北村で特に多い相談</h2><ul class="quick-list"><li>筑北村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・納屋の作業範囲を確認したい</li></ul></div>
+      <div class="hero-panel"><h2>筑北村で特に多い相談</h2><ul class="quick-list"><li>筑北村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、西条・坂北・坂井の空き家や山あい住宅の作業前後を写真報告で確認したい</li><li>施設入居・相続前に、通帳、印鑑、権利書、写真、貴金属を探してほしい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>坂道、狭い前面道路、軽トラック進入、庭・納屋の作業範囲を確認したい</li></ul></div>
     </div>
   </section>
 
 
   <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="筑北村の地域事情と搬出条件">
     <p class="section-kicker">地域オリジナル情報</p>
-    <h2>筑北村は空き家解体前の一括整理と遠方家族への明朗な説明が必要です</h2>
+    <h2>筑北村は山あいの空き家・納屋・冬季道路まで見て進めます</h2>
     <div class="local-landmark-prose">
-      <p>筑北村は旧坂井村・本城村・坂北村の集落が山あいに広がり、人口減少に伴う空き家整理や解体前の家財撤去が課題になりやすい地域です。</p>
-      <p>村部では一軒家、納屋、物置、庭、屋外保管品まで含む片付けが中心です。誰も住まなくなった実家では、家財量が読みにくく、家具・衣類・農具・古い家電がまとまって残っていることがあります。</p>
-      <p>遠方に住む遺族からの相談では、現地に何度も来られないため、見積もりの内訳、追加料金が発生する条件、鍵預かり、写真報告、作業完了後の確認方法を明確にすることが大切です。</p>
-      <p>解体前や売却前の整理では、残す書類、仏壇、写真、貴重品探索を最初に分けます。道路幅、駐車場所、物置の有無を写真で共有すると、予算も立てやすくなります。</p>
+      <p>筑北村は西条、坂北、坂井の集落が山あいに広がり、旧道沿いの戸建て、農家住宅、空き家、納屋付き住宅の整理が多くなりやすい地域です。室内だけを見て見積もると、庭、物置、車庫、納屋、古タイヤ、農具、冬用品が後から出てくることがあります。</p>
+      <p>高齢化率が高く、相続後にしばらく空き家になった実家では、押入れの布団、古い家電、仏壇、写真、権利書、保険証券、固定資産関係書類を処分前に探す段取りが大切です。遠方の家族は、鍵の預け方と写真報告の範囲を先に決めておくと安心です。</p>
+      <p>村の公式案内では、粗大ごみは春と秋の指定日に有料回収、小型家電は回収ボックス、家電4品目はリサイクルルートというように、品目ごとに出口が分かれています。退去日や売却日が近い場合は、行政日程を待てるものと業者搬出が必要なものを分けます。</p>
+      <p>見積もり前には、玄関、前面道路、駐車位置、階段、部屋全体、押入れ、仏壇、庭、納屋、車庫の写真を送ってください。冬季道路や坂道で大きな車両が入りにくい場合は、軽トラックでの小分け搬出も含めて計画します。</p>
     </div>
   </section>
 
@@ -1912,19 +2015,19 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">筑北村で失敗しないための地域特化チェック</h2>
-  <p class="lead">筑北村は長野県の松本地域に属します。町村中心部の住宅、旧道沿いの戸建て、集落部の空家整理で搬出条件が変わります。人口密度は41.7人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">筑北村は人口密度41.7人/k㎡、65歳以上人口割合46.5%で、山あいの戸建て、空き家、納屋付き住宅、長く使っていない実家の整理が起きやすい地域です。共同住宅前提ではなく、母屋・庭・物置・車庫・納屋・冬季道路まで見積もり前に確認すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
-    <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、筑北村の作業範囲を判断しやすくなります。</p></div>
-    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+    <div class="card"><h3>家の中と外まわりを分ける</h3><p>室内、押入れ、仏壇、二階家具に加えて、庭、物置、納屋、車庫、古タイヤ、農具、工具、雪かき用品を別枠で確認します。外まわりの写真があると、当日の追加作業を減らせます。</p></div>
+    <div class="card"><h3>行政日程と退去期限を合わせる</h3><p>粗大ごみは春と秋の指定日回収、小型家電は回収ボックス、家電4品目はリサイクルルートです。売却日・解体日が近い場合は、行政で出せるものと業者搬出が必要なものを分けます。</p></div>
+    <div class="card"><h3>遠方家族の判断を先に決める</h3><p>鍵の預け方、写真報告、処分前確認、返送品、探す書類を決めておくと、立会いなしでも進めやすくなります。通帳、印鑑、権利書、保険証券、写真、貴金属は探索対象です。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>筑北村の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
+  <div class="notice" style="margin-top:18px"><b>筑北村の見積もり前チェック</b><br>料金だけで判断せず、春秋の粗大ごみ日程、穂高クリーンセンター等の確認、家電4品目、納屋・物置、坂道・冬季道路、写真報告を書面で確認してください。</div>
 </section>
 
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">筑北村でよくある相談パターン</a></li><li><a href="#cases">筑北村の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">筑北村で料金が変わりやすい条件</a></li><li><a href="#price">筑北村の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">筑北村の住宅特性・行政ルール</a></li><li><a href="#towns">筑北村の対応エリア</a></li><li><a href="#service">筑北村で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、前面道路、軽トラックが入れる場所</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">筑北村の行政窓口</a></li><li><a href="#local">筑北村の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1947,7 +2050,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>筑北村の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>玄関、廊下、階段、床、建具、庭まわりの養生に備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1978,8 +2081,8 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>筑北村のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="筑北村の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="筑北村の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>筑北村の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="筑北村の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="筑北村の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
+      <article class="common-ba-card"><h3>筑北村の戸建て・空き家整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="筑北村の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="筑北村の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>筑北村の納屋・物置付き住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="筑北村の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="筑北村の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村の納屋・物置付き住宅で、母屋以外の屋外残置物まで確認が必要なケースです。坂道、前面道路、軽トラック進入、庭・納屋・車庫の作業範囲を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>納屋整理</span><span>写真報告</span><span>立会い不要</span></div></div></article>
       <article class="common-ba-card"><h3>筑北村の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="筑北村の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="筑北村の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
       <article class="common-ba-card"><h3>筑北村の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="筑北村の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="筑北村の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>筑北村の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="筑北村の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="筑北村の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>筑北村の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
@@ -1987,15 +2090,15 @@
   </div>
 </section>
 
-<section id="kita-price-factors"><h2 class="section-title">筑北村で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、エレベーター、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
+<section id="kita-price-factors"><h2 class="section-title">筑北村で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、坂道、道路幅、トラック停車位置、軽トラックでの小分け搬出で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
 
 <section id="price">
         <p class="section-kicker">料金</p>
         <h2 class="section-title">筑北村の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。筑北村では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、搬出距離、駐車位置、買取品、供養品、退去期限によって変わります。筑北村では、春秋の粗大ごみ回収を待てるか、穂高クリーンセンター等の確認が必要か、業者が屋内から搬出するかも分けて確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
-          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
+          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、納屋整理。</td></tr>
           <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
           <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
         </tbody></table>
@@ -2101,7 +2204,7 @@
           <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
           <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
           <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
-          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、エレベーター利用、養生、駐車位置、冬季道路状況を確認します。</div>
+          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、階段幅、床・建具の養生、駐車位置、冬季道路状況を確認します。</div>
         </div>
       </section>
 
@@ -2161,7 +2264,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">筑北村の対応エリア・町名確認</h2>
         <p>筑北村全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>筑北村全域</span><span>西条4195周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>松本地域</span></div>      </section>
+        <div class="area-tags"><span>筑北村全域</span><span>西条4195周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・納屋付き住宅・空家</span><span>松本地域</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2192,25 +2295,29 @@
         <table><thead><tr><th>比較項目</th><th>確認する内容</th><th>良い表示例</th></tr></thead><tbody>
           <tr><td>料金</td><td>間取り別料金、基本作業、追加料金条件。</td><td>見積もり後の追加料金なし、基本料金に養生・簡易清掃込み。</td></tr>
           <tr><td>許認可</td><td>古物商許可、一般廃棄物処理の体制、保険。</td><td>許可番号や提携先の仕組みが公開されている。</td></tr>
-          <tr><td>建物対応</td><td>階段、共用部、駐車位置、冬季搬出。</td><td>現地写真で搬出経路を確認し、養生範囲を説明。</td></tr>
+          <tr><td>建物対応</td><td>階段、坂道、前面道路、駐車位置、冬季搬出、納屋・物置。</td><td>現地写真で搬出経路を確認し、養生範囲を説明。</td></tr>
           <tr><td>遠方対応</td><td>鍵預かり、写真報告、オンライン確認、振込精算。</td><td>立会い不要プランの流れがわかりやすい。</td></tr>
         </tbody></table>
       </section>
 
 <section id="admin" class="admin-hotline-section">
   <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">筑北村の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>筑北村で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、筑北村公式サイトで最新情報を確認してください。</p>
+  <h2 class="section-title">筑北村の行政窓口・粗大ごみ・持ち込み確認</h2>
+  <p>筑北村で遺品整理・生前整理を進める前に、村の収集で出すもの、春秋の粗大ごみ回収に合わせるもの、小型家電回収ボックスへ出すもの、家電リサイクルに回すもの、業者が屋内から搬出するものを分けます。山あいの空き家や納屋付き住宅では、室内だけでなく庭・車庫・物置まで範囲を決めてから相談すると、見積もりのズレを減らせます。</p>
+  <p>筑北村は西条・坂北・坂井の集落、旧道沿い、坂道、冬季道路、軽トラックの進入可否で作業時間が変わります。退去期限や売却・解体予定がある場合は、行政の日程を待てる品と、業者搬出で一気に片付ける品を最初に分けてください。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>筑北村役場</strong><br>代表電話: 0263-66-2111<br>所在地: 〒399-7501 東筑摩郡筑北村西条4195<br>FAX: 0263-66-3370</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">筑北村公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>筑北村のごみ・リサイクル案内</strong><br>粗大ごみ、収集日、予約要否、手数料、収集できない品目を確認します。大型家具の屋内搬出、仏壇・写真の扱い、短期整理は自治体制度と業者作業を分けて考えます。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">ごみ・リサイクル情報を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>松本地域の自治体や広域処理圏では、持込先、受付日、本人確認、車両条件、料金、受け入れできない品目が自治体ごとに異なります。未確認の施設名や料金は作らず、公式案内で確認します。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">持込条件を確認</a></div>
-    <div class="admin-card"><h3>筑北村で特に確認したいこと</h3><p>山あいの空き家、坂道、冬季道路、鍵預かり・写真報告を確認します。 実家じまいでは、室内の家財だけでなく、庭、物置、車庫、農機具、仏壇、重要書類、写真、形見分け品を先に分けてください。</p><a href="#process">相談前の流れを見る</a></div>
-    <div class="admin-card"><h3>高齢者・障がい者世帯の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認します。制度名は自治体により異なるため公式確認を優先します。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">福祉・暮らし情報を確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。相続後の実家では、固定資産税通知、権利書、通帳、印鑑、保険証券を処分前に探索します。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">空き家・住まい情報を確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。家電リサイクル対象品、農薬・薬品、消火器、農機具などは別ルート確認が必要です。</p><a href="/nagano/" target="_blank" rel="noopener">長野県ページへ戻る</a></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>筑北村役場 / 住民福祉課</strong><br>代表電話: 0263-66-2111<br>所在地: 〒399-7501 長野県東筑摩郡筑北村西条4195<br>FAX: 0263-66-3370<br>E-Mail: jyufuk@vill.chikuhoku.lg.jp</p><p>ごみ、福祉、空き家、住まいの相談先は担当が分かれます。相続後の実家じまいでは、収集日、粗大ごみ、家電4品目、空き家バンク、介護・福祉を同じ日に確認できるよう質問をまとめます。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">筑北村公式サイト</a></div>
+    <div class="admin-card"><h3>収集で出すもの</h3><p><strong>ごみの分け方・収集日</strong><br>可燃物は毎週水曜日、不燃物は内容により偶数月または奇数月の第2木曜日、資源物は品目ごとに第1木曜日・第3木曜日・第1土曜日・第2土曜日・第3土曜日などに分かれます。収集日は年度で変わるため、作業前に最新のカレンダーを確認します。</p><p>新聞紙、段ボール、ペットボトル、プラスチック製容器包装、白色トレイ、雑誌、古着、牛乳パック、紙製容器包装などは、通常の片付けごみと混ぜず、資源物として分けると処分量を抑えやすくなります。</p><a href="https://www.vill.chikuhoku.lg.jp/docs/3441.html" target="_blank" rel="noopener">ごみの分け方・収集日を確認</a></div>
+    <div class="admin-card"><h3>粗大ごみ</h3><p>筑北村公式では、布団、ソファー、ガスレンジ、タンス、古タイヤなど、不燃ごみ袋に入らないものや分別できないものは粗大ごみとして、春と秋の指定日に有料で回収すると案内されています。</p><p>退去日、売却日、解体日が近い場合は、春秋の回収日を待てるものと、業者が屋内から搬出する大型家具・大量家財を分けます。納屋や車庫の古タイヤ、工具、農具も、粗大ごみで扱えるか事前確認が必要です。</p><a href="https://www.vill.chikuhoku.lg.jp/docs/3441.html" target="_blank" rel="noopener">粗大ごみの案内を確認</a></div>
+    <div class="admin-card"><h3>小型家電・専用集積所</h3><p>小型家電は40cm×20cm以内が対象で、役場、筑北村図書館、坂井支所入口内の小型家電回収ボックスへ出す案内があります。専用ごみ袋に入る大きさを超えるものは粗大ごみになります。</p><p>蛍光灯、乾電池、ボタン電池、ライター、インクカートリッジは専用集積所の扱いがあり、役場前、筑北村商工会前、筑北小学校体育館前が案内されています。通常ごみや粗大ごみに混ぜないようにします。</p><a href="https://www.vill.chikuhoku.lg.jp/docs/3441.html" target="_blank" rel="noopener">小型家電・専用集積所を確認</a></div>
+    <div class="admin-card"><h3>家電4品目</h3><p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象で、ごみステーションには出せません。筑北村公式では、購入店・買替店、郵便局でリサイクル料金を支払って指定引取場所へ運ぶ方法、村の許可を受けた収集運搬業者へ依頼する方法、年2回の粗大ごみ回収日に持ち込む方法が案内されています。</p><p>古い実家では、納戸や車庫にブラウン管テレビ、使っていない冷蔵庫、洗濯機、エアコン部材が残ることがあります。台数、設置場所、搬出経路を写真で共有してください。</p><a href="https://www.vill.chikuhoku.lg.jp/docs/356.html" target="_blank" rel="noopener">家電4品目の出し方を確認</a></div>
+    <div class="admin-card"><h3>持ち込み・処理施設</h3><p>筑北村の一般廃棄物処理実施計画では、可燃物の処理施設として穂高クリーンセンターが記載されています。ただし、家庭ごみの直接搬入可否、受付時間、手数料、本人確認、搬入できない品目は年度や条件で変わるため、積み込む前に筑北村住民福祉課へ確認してください。</p><p>大量の布団、木製家具、畳、古い衣類、納屋の残置物を一度に動かす場合は、自己搬入で足りるか、許可業者や整理業者に屋内搬出から相談するかを分けます。</p><a href="https://www.vill.chikuhoku.lg.jp/docs/357.html" target="_blank" rel="noopener">一般廃棄物処理実施計画を確認</a></div>
+    <div class="admin-card"><h3>収集しないもの・別確認品</h3><p>家電4品目、パソコン、リチウムイオン電池、バッテリー、消火器、薬品、農薬、灯油、廃油、ガスボンベ、農機具、農業用ビニール、建築廃材、事業系ごみ、仏壇・位牌・写真などの供養希望品は、通常ごみと分けて確認します。</p><p>筑北村の納屋や車庫では、古タイヤ、農具、工具、肥料袋、木材、金属類が生活ごみに混ざりやすくなります。販売店、専門窓口、行政確認、業者搬出のどれに回すかを先に分けると当日の判断が減ります。</p><a href="#items">品目別の確認へ</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>筑北村公式トップには空き家バンクと移住サポート住宅への導線があります。売却前整理、解体前整理、空き家バンク相談前の片付けでは、家財だけでなく、固定資産関係書類、権利書、境界資料、鍵、残す建具・設備、農地や納屋の扱いを分けます。</p><p>空き家期間が長い実家では、湿気、動物侵入、屋外残置物、庭木、冬季道路も確認対象です。片付け後に制度を探すより、住まい相談と家財整理を並行して進めるほうが手戻りを減らせます。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">空き家バンク・移住定住情報を確認</a></div>
+    <div class="admin-card"><h3>高齢者・福祉の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、住民福祉課、健康・福祉、介護の相談先へ、利用できる支援や対象条件を確認します。生前整理では、本人の同意、ケアマネジャーの関与、残す薬・介護用品・通帳・印鑑・保険証券の扱いを先に分けます。</p><p>高齢世帯の片付けでは、生活動線をふさぐ家具、ストーブ、灯油缶、古い布団、転倒しやすい廊下まわりから確認すると、処分と安全確保を同時に進めやすくなります。</p><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">健康・福祉情報を確認</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、村の収集で出すもの、春秋の粗大ごみに回すもの、穂高クリーンセンター等へ確認するもの、業者が屋内搬出するもの、家電4品目、仏壇・写真、貴重品探索、納屋・物置・庭、農機具を分けて伝えます。</p><p>遠方家族の場合は、作業前後の写真報告、処分前確認、返送品、近隣への声かけ、冬季道路や坂道での作業可否も見積もり時に共有してください。</p><a href="#compare">業者比較の確認点へ</a></div>
   </div>
-  <p class="source-note">出典: 長野県公式「市町村一覧（役場所在地・電話番号等）」、筑北村公式サイト。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典: 筑北村公式サイト、筑北村「ごみの分け方・収集日（令和8年4月から）」、筑北村「家電4品目（エアコン・テレビ・冷蔵庫・洗濯機）の出し方について」、筑北村「令和7年度 一般廃棄物処理実施計画」。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
 </section>
 
 
@@ -2218,20 +2325,21 @@
   <div class="container">
     <p class="section-kicker">行政・地域データ</p>
     <h2 class="section-title">筑北村で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">筑北村公式情報と長野県公式の市町村一覧をもとに、遺品整理・生前整理を進める前に確認したい自治体窓口、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <p class="lead">筑北村の片付けでは、収集カレンダーで出せるもの、春秋の粗大ごみ回収に合わせるもの、家電リサイクルで処理するもの、業者が屋内から搬出するものを分けると迷いが減ります。粗大ごみは年2回の指定日回収が基本になるため、退去日や売却日が近い場合は、行政日程に合わせるよりも業者作業を含めて段取りを組む必要があります。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>穂高広域。穂高クリーンセンター</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃性ごみ・可燃性粗大ごみは10kg220円が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>北アルプス側の戸建て、農家住宅、空き家、物置を含む整理が多くなります。車両進入と庭・納屋の範囲を写真で共有します。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">筑北村公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>収集カレンダー</b><span>可燃物は毎週水曜。不燃物と資源物は品目ごとに曜日が分かれるため、処分日から逆算して仕分けます。</span></div>
+      <div class="nagano-report-card"><b>粗大ごみ</b><span>布団、ソファー、ガスレンジ、タンス、古タイヤなどは春・秋の指定日に有料回収。短納期なら業者搬出も検討します。</span></div>
+      <div class="nagano-report-card"><b>小型家電</b><span>40cm×20cm以内は小型家電回収ボックス。設置場所は役場、筑北村図書館、坂井支所入口内です。</span></div>
+      <div class="nagano-report-card"><b>家電4品目</b><span>ごみステーション不可。購入店、指定引取場所、許可業者、年2回の粗大ごみ回収日を分けて確認します。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃性ごみ・可燃性粗大ごみは10kg220円が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>北アルプス側の戸建て、農家住宅、空き家、物置を含む整理が多くなります。車両進入と庭・納屋の範囲を写真で共有します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.vill.chikuhoku.lg.jp/" target="_blank" rel="noopener">筑北村公式サイト</a></td></tr>
+      <tr><th>行政で確認</th><td>収集日、分別表、粗大ごみ回収日、専用集積所、小型家電回収ボックス、家電4品目、一般廃棄物処理実施計画を確認します。</td></tr>
+      <tr><th>施設・搬入前</th><td>計画上の可燃物処理施設は穂高クリーンセンターですが、家庭の直接搬入可否、受付時間、手数料、搬入できない品目は住民福祉課へ確認してから積み込みます。</td></tr>
+      <tr><th>業者へ任せる範囲</th><td>大型家具の屋内搬出、2階・階段作業、納屋・物置・庭まわり、古タイヤや農機具、仏壇・写真、貴重品探索、遠方家族への写真報告は見積もり範囲として伝えます。</td></tr>
+      <tr><th>筑北村の地域事情</th><td>西条・坂北・坂井の集落、旧道沿い、山あいの戸建て、冬季道路、軽トラックの進入可否で作業時間が変わります。室内、玄関、階段、庭、納屋、車庫を写真で共有してください。</td></tr>
+      <tr><th>公式出典</th><td><a href="https://www.vill.chikuhoku.lg.jp/docs/3441.html" target="_blank" rel="noopener">ごみの分け方・収集日</a> / <a href="https://www.vill.chikuhoku.lg.jp/docs/356.html" target="_blank" rel="noopener">家電4品目</a> / <a href="https://www.vill.chikuhoku.lg.jp/docs/357.html" target="_blank" rel="noopener">一般廃棄物処理実施計画</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">未確認の補助金額や民間サイトの電話番号は掲載していません。収集日、粗大ごみ回収日、搬入条件は年度で変わるため、作業前に筑北村公式ページと住民福祉課で最新条件を確認してください。</p>
   </div>
 </section>
 
@@ -2243,7 +2351,7 @@
     <p class="major-seo-local__lead">山間部の戸建て、空き家、広い敷地の整理で、移動距離と道路幅が重要です。 坂道、狭い道路、車両進入、庭・納屋、鍵預かり、遠方立会いなしを確認します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>地区名、集落、戸建てか空き家か、階数、前面道路、軽トラックが入れるかを先に整理します。</span></div>
     <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
@@ -2265,8 +2373,13 @@
 <section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">筑北村の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>筑北村で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として筑北村でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>筑北村の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        <details><summary>筑北村の粗大ごみはいつ出せますか？</summary><p>筑北村公式では、布団、ソファー、ガスレンジ、タンス、古タイヤなど、不燃ごみ袋に入らないものや分別できないものは粗大ごみとして、春と秋の指定日に有料で回収すると案内されています。退去期限が近い場合は、回収日を待てる品と業者搬出が必要な品を分けてください。</p></details>
+        <details><summary>小型家電や電池類はどう分けますか？</summary><p>小型家電は40cm×20cm以内のものが対象で、役場、筑北村図書館、坂井支所入口内の回収ボックスへ出します。乾電池、ボタン電池、蛍光灯、ライター、インクカートリッジは専用集積所の扱いがあるため、通常ごみや粗大ごみと混ぜないようにします。</p></details>
+        <details><summary>家電4品目は粗大ごみで出せますか？</summary><p>エアコン、テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機は家電リサイクル法の対象で、ごみステーションには出せません。筑北村公式では、購入店・買替店、指定引取場所、村の許可を受けた収集運搬業者、年2回の粗大ごみ回収日の方法が案内されています。</p></details>
+        <details><summary>穂高クリーンセンターへ直接持ち込めますか？</summary><p>筑北村の一般廃棄物処理実施計画では、可燃物の処理施設として穂高クリーンセンターが記載されています。ただし、家庭ごみの直接搬入可否、受付時間、手数料、本人確認、搬入できない品目は年度や条件で変わるため、積み込む前に筑北村住民福祉課へ確認してください。</p></details>
+        <details><summary>空き家や納屋付き住宅の片付けで先に見ることは？</summary><p>筑北村は空き家バンクへの導線があり、移住サポート住宅でも空き家バンク利用登録の案内があります。実家じまいでは、室内家財、納屋・物置、庭、古タイヤ、農機具、権利書、固定資産関係書類、鍵、境界資料を先に分けると、行政確認と業者見積もりを進めやすくなります。</p></details>
       </section>
+
 
 <section id="links" class="nearby-wards">
         <p class="section-kicker">周辺リンク</p>

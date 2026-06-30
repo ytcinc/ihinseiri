@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1511,44 +1511,52 @@
     ]
   },
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "朝日村で生前整理だけでも相談できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として朝日村でも早めに進める方が増えています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "遠方に住んでいて立会いできない場合はどうしますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "朝日村の粗大ごみと業者依頼はどちらがよいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "買取で費用は安くなりますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。"
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "朝日村の自己搬入先はどこですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "朝日村にお住まいの方は、塩尻クリーンセンターへ搬入すると公式案内されています。受付は平日8時30分から11時45分、13時から16時30分、土曜8時30分から12時で、料金は150円/10kgです。"
       }
-    ]
-  },
-  {
+    },
+    {
+      "@type": "Question",
+      "name": "資源物も塩尻クリーンセンターへ持ち込めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "塩尻クリーンセンターは資源物を受け入れないため、朝日村の収集日程・分別表で出し方を確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家電4品目、パソコン、農機具、消火器はどう分けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "家電4品目、家庭系パソコン、農機具、農業用ビニール、LPガスボンベ、バッテリー、消火器、引火性のあるものは通常のごみと分け、公式窓口または専門窓口で確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "紙おむつや介護用品が多い場合はどうしますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "紙おむつを使用している方がいる世帯は、朝日村の紙おむつ減免制度を確認します。介護用品や薬、通院書類は処分品と混ざらないように先に分けます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "空き家や売却前の片付けは何を先に確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "朝日村の空き家バンクや住まい相談を確認し、固定資産関係書類、権利書、境界資料、鍵、残す設備、農地や納屋の扱いを片付け前に分けます。"
+      }
+    }
+  ]
+},
+{
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "朝日村で遺品整理・生前整理を相談する前に確認したいこと",
@@ -1736,6 +1744,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/asahi/#professional-service",
+  "name": "遺品整理・生前整理.jp 朝日村店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/asahi/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "朝日村",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "朝日村"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1757,24 +1860,24 @@
         <div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div>
         <div class="hero-badges">
           <div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div>
-          <div class="badge"><b>養生対応</b><span>共用廊下・エレベーター・管理組合配慮</span></div>
+          <div class="badge"><b>養生対応</b><span>玄関まわり・階段・物置・車庫の搬出配慮</span></div>
           <div class="badge"><b>買取相殺</b><span>古物商許可に基づく査定</span></div>
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>朝日村で特に多い相談</h2><ul class="quick-list"><li>朝日村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、山間部や別荘地の作業前後を写真報告で確認したい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>山道、狭い前面道路、車両進入、庭・納屋の作業範囲を確認したい</li></ul></div>
+      <div class="hero-panel"><h2>朝日村で特に多い相談</h2><ul class="quick-list"><li>朝日村の戸建て・空き家で、大型家具、物置、屋外残置物まで整理したい</li><li>遠方から鍵を預け、鉢盛山麓の一軒家や空き家の作業前後を写真報告で確認したい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>坂道、前面道路、軽トラック進入、庭・納屋・車庫の作業範囲を確認したい</li></ul></div>
     </div>
   </section>
 
 
   <section id="local-landmark-original" class="local-landmark-original-v1" aria-label="朝日村の地域事情と搬出条件">
     <p class="section-kicker">地域オリジナル情報</p>
-    <h2>朝日村は山麓の大きな一軒家と冬用品の仕分けが重要です</h2>
+    <h2>朝日村は鉢盛山麓の一軒家・農家住宅・冬用品まで見るページです</h2>
     <div class="local-landmark-prose">
-      <p>朝日村は鉢盛山の麓に広がる地域で、敷地の広い木造一軒家や物置・納屋を持つ住宅が多く残っています。村部では集合住宅よりも、家全体と外まわりを含めた整理が中心になります。</p>
-      <p>冬の寒さが厳しいため、古い家の物置には防寒衣類、石油ストーブ、こたつ、スタッドレスタイヤ、除雪道具などが残っていることがあります。処分、買取、残すものを仕分ける視点が必要です。</p>
-      <p>長年住んだ家では、現金、通帳、権利書、写真、思い出の品が押入れや古い家具の奥から出てくることもあります。スピードだけでなく、丁寧な探索と確認が安心につながります。</p>
-      <p>松本広域の処理ルールや自治体確認を踏まえ、室内、物置、庭、車庫、冬用品の保管場所を写真で共有しておくと、分別と搬出の段取りが取りやすくなります。</p>
+      <p>朝日村は鉢盛山の麓に住宅と農地が広がり、松本市や塩尻市に近い一方で、村内の実家じまいでは母屋だけでなく物置、車庫、庭、畑まわりまで荷物が残りやすい地域です。共同住宅前提の見積もりではなく、家全体と外まわりを最初から作業範囲に入れて考えるとズレが減ります。</p>
+      <p>古い木造住宅や農家住宅では、押入れの布団、こたつ、石油ストーブ、スタッドレスタイヤ、雪かき道具、工具、農業資材がまとめて出ることがあります。塩尻クリーンセンターへ持ち込めるもの、村の収集で出すもの、業者が屋内から搬出するものを分けておくと、当日の判断が楽になります。</p>
+      <p>遠方の家族が朝日村の実家を片付ける場合は、鍵の受け渡し、作業前後の写真報告、通帳・印鑑・権利書・保険証券・写真の探索範囲を先に決めてください。特に物置や車庫は、残す農具や冬用品と処分品が混ざりやすい場所です。</p>
+      <p>見積もり前には、玄関、前面道路、駐車位置、階段、部屋全体、押入れ、物置、車庫、庭の写真を送るのがおすすめです。冬季や雨天時に車両が入りにくい場所は、軽トラックでの小分け搬出や作業日程の調整も含めて相談します。</p>
     </div>
   </section>
 
@@ -1912,19 +2015,19 @@
 </section>
 <section id="city-original-guide" class="section city-original-guide">
   <h2 class="section-title">朝日村で失敗しないための地域特化チェック</h2>
-  <p class="lead">朝日村は長野県の松本地域に属します。町村中心部の住宅、旧道沿いの戸建て、集落部の空家整理で搬出条件が変わります。人口密度は60.6人/k㎡で、冬季の道路状況、坂道、敷地内階段、屋外倉庫の有無を見積もり前に共有すると、作業人数と車両計画を決めやすくなります。</p>
+  <p class="lead">朝日村は松本地域の村部で、共同住宅よりも戸建て、農家住宅、空き家、物置付き住宅の相談が中心になりやすい地域です。人口密度は60.6人/k㎡、共同住宅居住率は1.4%と低く、家の中だけでなく庭・車庫・納屋・冬用品まで見積もり範囲に入るかを先に確認すると、作業人数と車両計画を決めやすくなります。</p>
   <div class="grid cols3">
-    <div class="card"><h3>建物条件を先に分ける</h3><p>戸建てでは、庭、物置、車庫、納屋、仏壇、二階家具を室内家財と分けて確認します。坂道や路地、階段搬出がある場合は、前面道路、階段幅、車両を停められる場所を写真で共有します。</p></div>
-    <div class="card"><h3>写真で共有したい場所</h3><p>玄関、各部屋、押入れ、ベランダ、階段、エレベーター、駐車位置、庭・物置を撮影しておくと、朝日村の作業範囲を判断しやすくなります。</p></div>
-    <div class="card"><h3>残す物・探す物を決める</h3><p>通帳、印鑑、権利書、保険証券、写真、手紙、形見分け品、供養したい品を先に共有し、処分品と混ざらないようにします。</p></div>
+    <div class="card"><h3>家と外まわりを分けて見る</h3><p>母屋、二階、押入れ、仏壇だけでなく、庭、物置、車庫、納屋、畑まわり、農具、雪かき用品を別枠で確認します。室内写真だけでは物量が見えにくいので、外まわりも撮影しておくと安心です。</p></div>
+    <div class="card"><h3>塩尻クリーンセンターと収集を分ける</h3><p>朝日村は塩尻クリーンセンターへの直接搬入が確認対象です。資源物は施設で受け入れないため、村の収集日・分別表で出すものと、施設へ運ぶものを分けます。</p></div>
+    <div class="card"><h3>遠方家族の確認を先に済ませる</h3><p>鍵の預け方、写真報告、処分前確認、返送品、探す書類を決めておくと、立会いなしでも進めやすくなります。通帳、印鑑、権利書、保険証券、写真、貴金属は探索対象として共有してください。</p></div>
   </div>
-  <div class="notice" style="margin-top:18px"><b>朝日村の見積もり前チェック</b><br>料金だけで判断せず、搬出経路、車両位置、立会い可否、写真報告、買取査定、供養品の扱いを書面で確認してください。</div>
+  <div class="notice" style="margin-top:18px"><b>朝日村の見積もり前チェック</b><br>料金だけで判断せず、前面道路、駐車位置、冬季道路、物置・車庫の有無、塩尻クリーンセンターへ持ち込むもの、業者が屋内搬出するものを書面で確認してください。</div>
 </section>
 
 <div class="toc"><h2>このページでわかること</h2><ol><li><a href="#trust">安心して依頼できる業者の見分け方</a></li><li><a href="#avoid-bad-vendors">国民生活センターも警告！悪質な遺品整理業者の手口と見分け方</a></li><li><a href="#kita-consult-patterns">朝日村でよくある相談パターン</a></li><li><a href="#cases">朝日村の遺品整理ビフォーアフター事例</a></li><li><a href="#kita-price-factors">朝日村で料金が変わりやすい条件</a></li><li><a href="#price">朝日村の遺品整理料金と作業内容</a></li><li><a href="#process">相談から作業完了までの流れ</a></li><li><a href="#local">朝日村の住宅特性・行政ルール</a></li><li><a href="#towns">朝日村の対応エリア</a></li><li><a href="#service">朝日村で任せられる遺品整理・生前整理サービス</a></li><li><a href="#items">品目別の処分・買取・供養</a></li><li><a href="#compare">業者比較と見積もり前チェック</a></li><li><a href="#faq">よくある質問</a></li></ol></div>
 
 <div class="precheck-top">
-        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、エレベーターの有無</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
+        <div class="precheck-card"><h2>見積もり前に確認すること</h2><ul><li>住所、建物種別、階数、前面道路、車両を停められる場所</li><li>退去日、売却予定日、鍵の受け渡し方法</li><li>残したい品、探したい書類、供養したい品</li><li>粗大ごみで出せるものと業者に任せるもの</li></ul></div>
         <div class="precheck-card"><h2>行政・福祉リンク</h2><ul><li><a href="#admin">朝日村の行政窓口</a></li><li><a href="#local">朝日村の住宅特性・統計</a></li><li><a href="#avoid-bad-vendors">悪徳業者の見分け方</a></li><li><a href="/nagano/">長野県の市町村一覧へ戻る</a></li></ul></div>
       </div>
 
@@ -1947,7 +2050,7 @@
           <tr><td>古物商許可</td><td>許可番号、公安委員会名、買取対象品。</td><td>買取額を整理費用から差し引ける体制があるか。</td></tr>
           <tr><td>一般廃棄物処理の体制</td><td>朝日村の許可業者・行政制度との役割分担、処分ルート。</td><td>家庭ごみを適法に処分しているか。</td></tr>
           <tr><td>遺品整理士</td><td>資格保有者、遺品の扱い方、形見分け対応。</td><td>ただの不用品回収ではなく、遺品整理として向き合う姿勢があるか。</td></tr>
-          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>マンションの壁・床・エレベーター養生に備えているか。</td></tr>
+          <tr><td>損害賠償保険</td><td>補償上限、対象範囲、共用部破損時の対応。</td><td>玄関、廊下、階段、床、建具、車庫まわりの養生に備えているか。</td></tr>
         </tbody></table>
       </section>
 
@@ -1978,8 +2081,8 @@
     <button class="common-ba-btn" type="button" data-common-ba-prev aria-label="前の事例へ">&lt;</button>
     <button class="common-ba-btn" type="button" data-common-ba-next aria-label="次の事例へ">&gt;</button>
     <div class="common-ba-track" data-common-ba-track>
-      <article class="common-ba-card"><h3>朝日村のマンション整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="朝日村の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="朝日村の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
-      <article class="common-ba-card"><h3>朝日村の集合住宅整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="朝日村の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="朝日村の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村のマンションや集合住宅で、管理会社への確認が必要なケースです。エレベーター利用、共用部養生、搬出時間、駐車位置を見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>共用部養生</span><span>写真報告</span><span>立会い不要</span></div></div></article>
+      <article class="common-ba-card"><h3>朝日村の戸建て・実家整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-00.jpg" alt="朝日村の遺品整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-00.jpg" alt="朝日村の遺品整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村で相続後の実家や住まいを整理した想定事例です。押入れ、棚、衣類、書類を一つずつ確認し、処分前に通帳・印鑑・権利書・写真などの貴重品探索を行います。</p><p>大型家具の搬出、生活用品の分別、簡易清掃まで進めることで、売却前・退去前に室内の状態を確認しやすくします。</p><div class="common-ba-points"><span>貴重品探索</span><span>大型家具搬出</span><span>売却前整理</span></div></div></article>
+      <article class="common-ba-card"><h3>朝日村の農家住宅・物置整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-01.jpg" alt="朝日村の生前整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-01.jpg" alt="朝日村の生前整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村の農家住宅や物置付きの実家で、母屋以外にも納屋・車庫・庭まわりまで確認が必要なケースです。軽トラックの進入、前面道路、積み込み場所、冬用品や農具の扱いを見積もり時に整理します。</p><p>立会いが難しい家族には、作業前後の写真報告とオンライン確認を組み合わせ、遠方からでも判断しやすい形にします。</p><div class="common-ba-points"><span>物置整理</span><span>写真報告</span><span>立会い不要</span></div></div></article>
       <article class="common-ba-card"><h3>朝日村の単身整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-02.jpg" alt="朝日村の実家じまいビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-02.jpg" alt="朝日村の実家じまいアフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村で施設入居や住み替え前に進める生前整理の想定事例です。残す家具、持っていく衣類、処分する家電、供養したい写真や人形を分けます。</p><p>必要な物だけを残して整理することで、家族が後から判断に迷いにくくなり、退去期限がある場合も段取りを組みやすくなります。</p><div class="common-ba-points"><span>生前整理</span><span>形見分け</span><span>退去期限対応</span></div></div></article>
       <article class="common-ba-card"><h3>朝日村の和室・収納整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-03.jpg" alt="朝日村の和室整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-03.jpg" alt="朝日村の和室整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村の和室、押入れ、納戸に多い、書類・衣類・布団・思い出品が混在した整理事例です。捨てる前に必要書類と写真を分け、供養品は通常処分と別に扱います。</p><p>家族だけでは進めにくい仕分けを第三者が入って進めることで、処分する物と残す物の判断がしやすくなります。</p><div class="common-ba-points"><span>押入れ整理</span><span>思い出品仕分け</span><span>供養相談</span></div></div></article>
       <article class="common-ba-card"><h3>朝日村の物置・車庫まわり整理</h3><div class="common-ba-photos"><figure class="common-ba-photo"><img src="/assets/before-after/before-04.jpg" alt="朝日村の物置整理ビフォー"><span class="common-ba-label">ビフォー</span></figure><figure class="common-ba-photo"><img src="/assets/before-after/after-04.jpg" alt="朝日村の物置整理アフター"><span class="common-ba-label after">アフター</span></figure></div><div class="common-ba-detail"><p>朝日村の物置、車庫、ベランダ、庭まわりの残置物整理を想定した事例です。屋外用品、工具、古い家電、粗大ごみを分け、搬出経路と車両位置を確認します。</p><p>屋内だけでなく外まわりまで片付けると、空家管理、売却査定、退去前確認に進みやすくなります。</p><div class="common-ba-points"><span>物置片付け</span><span>粗大ごみ分別</span><span>空家管理</span></div></div></article>
@@ -1987,15 +2090,15 @@
   </div>
 </section>
 
-<section id="kita-price-factors"><h2 class="section-title">朝日村で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、エレベーター、道路幅、トラック停車位置で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
+<section id="kita-price-factors"><h2 class="section-title">朝日村で料金が変わりやすい条件</h2><div class="cards"><div class="card"><strong>搬出経路・駐車位置</strong><span>階段、前面道路、坂道、トラック停車位置、軽トラックでの小分け搬出で作業人数と時間が変わります。</span></div><div class="card"><strong>荷物量・大型家具</strong><span>押入れ、納戸、物置、庭まわり、大型家具の有無を写真で共有すると見積もり精度が上がります。</span></div><div class="card"><strong>買取・供養・探索</strong><span>貴重品探索、仏壇供養、買取査定、形見分け品の返送がある場合は範囲を確認します。</span></div></div></section>
 
 <section id="price">
         <p class="section-kicker">料金</p>
         <h2 class="section-title">朝日村の遺品整理料金と基本作業</h2>
-        <p>料金は間取りだけでなく、荷物量、階数、エレベーターの有無、搬出距離、買取品、供養品、退去期限によって変わります。朝日村では、冬季の道路状況、駐車位置、行政制度との使い分けも確認しましょう。</p>
+        <p>料金は間取りだけでなく、荷物量、階数、搬出距離、駐車位置、買取品、供養品、退去期限によって変わります。朝日村では、物置・車庫・庭まわり、冬季道路、塩尻クリーンセンターへ持ち込むものと業者が屋内から搬出するものの分け方も確認しましょう。</p>
         <table><thead><tr><th>間取り</th><th>料金目安</th><th>基本作業に含めたい内容</th></tr></thead><tbody>
           <tr><td>1K・1DK</td><td>35,000円〜</td><td>単身整理、少量家財、仕分け、搬出、簡易清掃、写真報告。</td></tr>
-          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、共用部養生。</td></tr>
+          <tr><td>1LDK・2DK</td><td>70,000円〜</td><td>家具・家電・衣類・書類の仕分け、貴重品探索、物置整理。</td></tr>
           <tr><td>2LDK・3DK</td><td>120,000円〜</td><td>家族住まい、形見分け、買取査定、供養品の分別、退去前整理。</td></tr>
           <tr><td>戸建て・実家じまい</td><td>180,000円〜</td><td>大型家具、物置、庭、仏壇供養、空家・売却前の残置物整理。</td></tr>
         </tbody></table>
@@ -2101,7 +2204,7 @@
           <div class="checkitem"><strong>立ち会いできるか</strong><br>遠方の場合は鍵の受け渡し方法、写真報告、支払い方法を決めます。</div>
           <div class="checkitem"><strong>退去期限・売却予定</strong><br>賃貸退去日、売却査定日、管理会社への返却日を確認します。</div>
           <div class="checkitem"><strong>探してほしい貴重品</strong><br>通帳、印鑑、権利書、保険証券、写真、形見分け品をリスト化します。</div>
-          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、エレベーター利用、養生、駐車位置、冬季道路状況を確認します。</div>
+          <div class="checkitem"><strong>建物ルール</strong><br>搬出時間、階段幅、床・建具の養生、駐車位置、冬季道路状況を確認します。</div>
         </div>
       </section>
 
@@ -2161,7 +2264,7 @@
         <p class="section-kicker">対応エリア</p>
         <h2 class="section-title">朝日村の対応エリア・町名確認</h2>
         <p>朝日村全域を対象に、建物種別、道路幅、駐車位置、屋外倉庫や納屋の有無を確認します。詳細な町名・大字は公式住所や現地写真で確認し、見積もり時に誤認が出ないよう共有します。</p>
-        <div class="area-tags"><span>朝日村全域</span><span>古見1555-1周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・集合住宅・空家</span><span>松本地域</span></div>      </section>
+        <div class="area-tags"><span>朝日村全域</span><span>古見1555-1周辺</span><span>市役所・町村役場周辺</span><span>駅・バス停周辺</span><span>戸建て・農家住宅・空家</span><span>松本地域</span></div>      </section>
 
 <section id="service">
         <p class="section-kicker">サービス</p>
@@ -2192,25 +2295,29 @@
         <table><thead><tr><th>比較項目</th><th>確認する内容</th><th>良い表示例</th></tr></thead><tbody>
           <tr><td>料金</td><td>間取り別料金、基本作業、追加料金条件。</td><td>見積もり後の追加料金なし、基本料金に養生・簡易清掃込み。</td></tr>
           <tr><td>許認可</td><td>古物商許可、一般廃棄物処理の体制、保険。</td><td>許可番号や提携先の仕組みが公開されている。</td></tr>
-          <tr><td>建物対応</td><td>階段、共用部、駐車位置、冬季搬出。</td><td>現地写真で搬出経路を確認し、養生範囲を説明。</td></tr>
+          <tr><td>建物対応</td><td>階段、前面道路、駐車位置、冬季搬出、物置・車庫。</td><td>現地写真で搬出経路を確認し、養生範囲を説明。</td></tr>
           <tr><td>遠方対応</td><td>鍵預かり、写真報告、オンライン確認、振込精算。</td><td>立会い不要プランの流れがわかりやすい。</td></tr>
         </tbody></table>
       </section>
 
 <section id="admin" class="admin-hotline-section">
   <p class="section-kicker">行政・福祉ホットライン</p>
-  <h2 class="section-title">朝日村の行政窓口・粗大ごみ・住まい相談</h2>
-  <p>朝日村で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、朝日村公式サイトで最新情報を確認してください。</p>
+  <h2 class="section-title">朝日村の行政窓口・粗大ごみ・持ち込み先</h2>
+  <p>朝日村で遺品整理・生前整理を進める前に、村の収集で出すもの、塩尻クリーンセンターへ持ち込むもの、専門業者が屋内から搬出するものを分けます。松塩地区だから松本クリーンセンターへ行くと決めつけず、朝日村は塩尻クリーンセンターが直接搬入先として案内されている点を最初に確認してください。</p>
+  <p>朝日村の片付けは、戸建て、農家住宅、空き家、物置、車庫、庭まわりまで範囲が広がりやすいのが特徴です。布団、木製家具、じゅうたん、畳、雪かき用品、工具、農業資材、家電4品目、パソコン、危険物を混ぜずに分けておくと、見積もりも作業当日も迷いにくくなります。</p>
   <div class="grid cols2 admin-hotline-grid">
-    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>朝日村役場</strong><br>代表電話: 0263-99-2001<br>所在地: 〒390-1188 東筑摩郡朝日村大字古見1555-1<br>FAX: 0263-99-2745</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">朝日村公式サイト</a></div>
-    <div class="admin-card"><h3>粗大ごみ・収集の相談</h3><p><strong>朝日村のごみ・リサイクル案内</strong><br>粗大ごみ、収集日、予約要否、手数料、収集できない品目を確認します。大型家具の屋内搬出、仏壇・写真の扱い、短期整理は自治体制度と業者作業を分けて考えます。</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">ごみ・リサイクル情報を確認</a></div>
-    <div class="admin-card"><h3>持込・処理施設</h3><p>松本地域の自治体や広域処理圏では、持込先、受付日、本人確認、車両条件、料金、受け入れできない品目が自治体ごとに異なります。未確認の施設名や料金は作らず、公式案内で確認します。</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">持込条件を確認</a></div>
-    <div class="admin-card"><h3>朝日村で特に確認したいこと</h3><p>戸建て、農家住宅、庭・物置・農機具を含む整理範囲を確認します。 実家じまいでは、室内の家財だけでなく、庭、物置、車庫、農機具、仏壇、重要書類、写真、形見分け品を先に分けてください。</p><a href="#process">相談前の流れを見る</a></div>
-    <div class="admin-card"><h3>高齢者・障がい者世帯の確認</h3><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認します。制度名は自治体により異なるため公式確認を優先します。</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">福祉・暮らし情報を確認</a></div>
-    <div class="admin-card"><h3>空家・住まいの相談</h3><p>空き家、売却前整理、解体前整理、家財処分補助、住まい相談、地域包括支援センター等の相談先を確認します。相続後の実家では、固定資産税通知、権利書、通帳、印鑑、保険証券を処分前に探索します。</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">空き家・住まい情報を確認</a></div>
-    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、残す書類、仏壇・写真、買取希望品、搬出経路、駐車位置を先に共有すると見積もりが安定します。家電リサイクル対象品、農薬・薬品、消火器、農機具などは別ルート確認が必要です。</p><a href="/nagano/" target="_blank" rel="noopener">長野県ページへ戻る</a></div>
+    <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>朝日村役場</strong><br>代表電話: 0263-99-2001<br>所在地: 〒390-1188 長野県東筑摩郡朝日村大字古見1555番地1<br>FAX: 0263-99-2745<br>開庁時間: 平日8時30分から17時15分</p><p>ごみ、福祉、空き家、住まいの相談先は担当が分かれます。相続後の実家じまいでは、収集日、持ち込み、紙おむつ減免、空き家バンク、介護・福祉を同じ日に確認できるよう、質問を先にまとめます。</p><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">朝日村公式サイト</a></div>
+    <div class="admin-card"><h3>収集で出すもの</h3><p><strong>資源物・ごみの出し方</strong><br>資源物、収集日、生涯学習カレンダー、分別表、指定袋、集積所のルールを確認します。塩尻クリーンセンターは資源物を受け入れないため、びん、缶、紙類、資源物は村の案内で出し方を見ます。</p><p>退去日が近い片付けでも、出せる日と出せる場所を見ずにまとめて置くと回収されない可能性があります。自分で集積所へ運べる少量ごみと、屋内から動かせない家具・大量家財は分けて考えます。</p><a href="https://www.vill.asahi.nagano.jp/official/kurashi_tetsuzuki/gomi_kankyo_pet/gomi_recycle/699.html" target="_blank" rel="noopener">資源物・ごみの出し方を確認</a></div>
+    <div class="admin-card"><h3>持ち込み先</h3><p><strong>塩尻クリーンセンター</strong><br>松塩地区広域施設組合の案内では、塩尻市・朝日村にお住まいの方は塩尻クリーンセンターへ搬入できます。受付は平日8時30分から11時45分、13時から16時30分、土曜8時30分から12時、日曜・祝日・12月31日から1月3日は休みです。</p><p>料金は150円/10kg、証紙付の指定袋に入れて持ち込む場合は無料と案内されています。多量搬入、不明な品目、荷下ろしの可否は、搬入前に塩尻クリーンセンターへ確認してください。</p><a href="https://www.matsukuri.or.jp/facility/shiojiri/bring/" target="_blank" rel="noopener">塩尻クリーンセンター搬入の手引き</a></div>
+    <div class="admin-card"><h3>持ち込み前に分けるもの</h3><p>塩尻クリーンセンターでは、もえるごみ、うめたてごみ、有害物、可燃さい断ごみ、資源粗大ごみなどを分けて持ち込む必要があります。分別されていない場合は持ち込みを断られることがあるため、細かいものは中身が見える袋に入れて整理します。</p><p>ふとん、じゅうたん、畳、木製品、衣装ケース、ポリタンク、雪かき用品などは、状態や量で扱いが変わります。朝日村の実家では押入れ・物置・車庫にまとまって残りやすいので、写真で量を共有してください。</p><a href="https://www.matsukuri.or.jp/facility/shiojiri/bring/" target="_blank" rel="noopener">持ち込めるごみの種類を確認</a></div>
+    <div class="admin-card"><h3>収集しないもの・別確認品</h3><p>タイヤ、バイク、ボイラー類、浴槽、大型マッサージ機、複合粗大ごみ、事業系ごみ、農機具類、農業用ビニール・マルチ類、肥料類、LPガスボンベ、薬品・農薬容器、バッテリー類、消火器、引火性のあるものは、通常の収集や持ち込みと分けて確認します。</p><p>納屋・物置の片付けでは、農薬、灯油、廃油、古い肥料、工具、農業資材が生活ごみに混ざりやすくなります。処分ルートが違うものを先に分けるだけで、当日の追加確認を減らせます。</p><a href="https://www.matsukuri.or.jp/facility/shiojiri/bring/" target="_blank" rel="noopener">持ち込めないごみを確認</a></div>
+    <div class="admin-card"><h3>家電4品目・パソコン</h3><p>テレビ、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機、エアコンなどの家電4品目は、家電リサイクル法の対象として通常の粗大ごみと分けます。家庭系パソコンも、メーカー回収やPCリサイクルの確認が必要です。</p><p>古い実家では、納戸や物置にブラウン管テレビ、古い冷蔵庫、使っていないパソコン、プリンター、ストーブが残っていることがあります。年式、台数、設置場所を写真で送ると、搬出と処分ルートを分けやすくなります。</p><a href="#items">品目別の確認へ</a></div>
+    <div class="admin-card"><h3>紙おむつ・福祉の確認</h3><p>朝日村ページ内の既存調査では、紙おむつを使用している方がいる世帯のごみ処理手数料を一部軽減する制度案内を確認対象にしています。介護用品、薬、通院書類、保険証、福祉用具は処分品に混ざりやすいため、生前整理では本人・親族・ケアマネジャーで残す範囲を先に決めます。</p><p>自力でごみ出しや屋外搬出が難しい場合は、福祉・介護窓口、地域包括支援センター、環境担当課へ、利用できる支援や対象条件を確認してください。</p><a href="https://www.vill.asahi.nagano.jp/official/kenko_iryo_kaigo/index.html" target="_blank" rel="noopener">福祉・介護を確認</a></div>
+    <div class="admin-card"><h3>空き家・住まい相談</h3><p>朝日村公式サイトでは、引越し・住まいの情報として空き家バンク、田舎暮らし、住宅関連補助、耐震関係補助が案内されています。売却前整理、空き家バンク相談前、解体前整理では、家財処分だけでなく、固定資産関係書類、権利書、境界資料、鍵、残す建具・設備、農地や納屋の扱いを分けます。</p><p>片付け後に制度を探すより、作業前に住まい相談と家財整理を並行して確認したほうが、捨ててはいけない書類や設備を残しやすくなります。</p><a href="https://www.vill.asahi.nagano.jp/official/lifescenekarasagasu/hikkoshi_sumai/index.html" target="_blank" rel="noopener">引越し・住まい情報を確認</a></div>
+    <div class="admin-card"><h3>朝日村の地域事情</h3><p>朝日村は鉢盛山麓の戸建て、農家住宅、空き家、物置付き住宅で、前面道路、坂道、冬季道路、軽トラックの進入可否が作業時間に影響します。母屋から車両まで距離がある家では、屋内搬出だけでなく積み込み場所の確保も重要です。</p><p>庭、車庫、物置、納屋には、農具、工具、雪かき用品、タイヤ、灯油缶、古い家電、木材が残りやすく、生活ごみと別確認が必要です。室内だけでなく外まわりも写真で共有してください。</p><a href="#local">住宅特性・統計を見る</a></div>
+    <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、塩尻クリーンセンターへ持ち込む予定のもの、村の収集で出すもの、業者が屋内搬出するもの、仏壇・写真、貴重品探索、物置・車庫・庭、農機具、家電4品目を分けて伝えます。</p><p>遠方家族の場合は、作業前後の写真報告、処分前確認、返送品、近隣への声かけ、冬季作業の可否も見積もり時に共有します。</p><a href="#compare">業者比較の確認点へ</a></div>
   </div>
-  <p class="source-note">出典: 長野県公式「市町村一覧（役場所在地・電話番号等）」、朝日村公式サイト。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
+  <p class="source-note">出典: 朝日村公式サイト、朝日村「資源物・ごみの出し方」、朝日村「引越し・住まい」、朝日村「医療・健康・福祉・介護」、松塩地区広域施設組合「塩尻クリーンセンターごみ搬入の手引き」。制度、受付時間、対象条件、料金は相談前に公式ページで最新情報を確認してください。</p>
 </section>
 
 
@@ -2218,20 +2325,21 @@
   <div class="container">
     <p class="section-kicker">行政・地域データ</p>
     <h2 class="section-title">朝日村で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">朝日村公式情報と長野県公式の市町村一覧をもとに、遺品整理・生前整理を進める前に確認したい自治体窓口、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変更されるため、依頼前に自治体公式サイトで最新条件を確認してください。</p>
+    <p class="lead">朝日村の片付けでは「松塩地区だから松本へ持ち込む」と決めつけないことが重要です。松塩地区広域施設組合の公式案内では、塩尻市・朝日村にお住まいの方は塩尻クリーンセンターへ搬入するとされています。資源物は施設で受け入れないため、村の収集日・分別表で出すものと、施設へ持ち込むもの、業者が屋内から搬出するものを先に分けます。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>松塩地区。松本クリーンセンター、松本市リサイクルセンター</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>可燃・粗大・破砕は10kg150円、不燃・埋立は10kg110円、資源物等は10kg31円が目安です。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>駅周辺の集合住宅、郊外戸建て、農家住宅が混在します。スプリング入りマットやソファなど品目別の扱いも確認します。</span></div>
-      <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">朝日村公式サイト</a>のみを出典として記載。</span></div>
+      <div class="nagano-report-card"><b>直接搬入先</b><span>朝日村の家庭ごみ自己搬入は塩尻クリーンセンター。松本クリーンセンターへの直接搬入ではありません。</span></div>
+      <div class="nagano-report-card"><b>料金目安</b><span>塩尻クリーンセンターは150円/10kg。証紙付の指定袋に入れて持ち込む場合は無料と案内されています。</span></div>
+      <div class="nagano-report-card"><b>資源物</b><span>塩尻クリーンセンターは資源物を受け入れません。資源物・ごみの出し方、生涯学習カレンダー、分別表で村の出し方を確認します。</span></div>
+      <div class="nagano-report-card"><b>住まい相談</b><span>空き家バンク、住宅関連制度、耐震・売却前整理は家財処分と分け、片付け前に担当窓口へ確認します。</span></div>
     </div>
     <table class="nagano-report-table">
-      <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>可燃・粗大・破砕は10kg150円、不燃・埋立は10kg110円、資源物等は10kg31円が目安です。</td></tr>
-      <tr><th>見積もり前</th><td>駅周辺の集合住宅、郊外戸建て、農家住宅が混在します。スプリング入りマットやソファなど品目別の扱いも確認します。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
-      <tr><th>出典</th><td><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">朝日村公式サイト</a></td></tr>
+      <tr><th>行政で確認</th><td>収集日、分別表、資源物、紙おむつ減免、塩尻クリーンセンターへの搬入可否、持ち込めない品目を確認します。</td></tr>
+      <tr><th>施設へ持ち込む前</th><td>もえるごみ、うめたてごみ、有害物、可燃さい断ごみ、資源粗大ごみを分け、細かいものは中身が見える袋へ。多量搬入や不明点は事前に塩尻クリーンセンターへ確認します。</td></tr>
+      <tr><th>業者へ任せる範囲</th><td>屋内搬出、大型家具の分解、納屋・物置・庭まわり、農機具、除雪用品、仏壇・写真、貴重品探索、遠方からの鍵預かり・写真報告は見積もり範囲として伝えます。</td></tr>
+      <tr><th>朝日村の地域事情</th><td>鉢盛山麓の戸建て、農家住宅、納屋付き住宅、冬季の道路状況、軽トラックの進入可否で作業人数と車両位置が変わります。室内だけでなく、庭・物置・車庫・納屋を写真で共有します。</td></tr>
+      <tr><th>公式出典</th><td><a href="https://www.vill.asahi.nagano.jp/" target="_blank" rel="noopener">朝日村公式サイト</a> / <a href="https://www.vill.asahi.nagano.jp/official/kurashi_tetsuzuki/gomi_kankyo_pet/gomi_recycle/699.html" target="_blank" rel="noopener">資源物・ごみの出し方</a> / <a href="https://www.matsukuri.or.jp/facility/shiojiri/bring/" target="_blank" rel="noopener">塩尻クリーンセンター搬入の手引き</a></td></tr>
     </table>
-    <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>
+    <p class="nagano-report-note">未確認の補助金額や民間サイトの電話番号は掲載していません。料金、受付時間、対象品目は変更される場合があるため、作業日・搬入日の前に朝日村公式サイトと塩尻クリーンセンターで最新条件を確認してください。</p>
   </div>
 </section>
 
@@ -2243,7 +2351,7 @@
     <p class="major-seo-local__lead">農家住宅、戸建て、広い敷地の整理で、納屋・屋外品まで確認が必要です。 庭・納屋、農具・屋外品、車両進入、仏壇・写真、写真報告、売却予定を整理します。</p>
   </div>
   <div class="major-seo-local__grid">
-    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>市区町村、町名、集合住宅か戸建てか、階数、エレベーター、前面道路を先に整理します。</span></div>
+    <div class="major-seo-local__card"><b>1. 住所と建物</b><span>住所、地区名、戸建てか空き家か、階数、前面道路、軽トラックが入れるかを先に整理します。</span></div>
     <div class="major-seo-local__card"><b>2. 自治体ルール</b><span>粗大ごみ、自己搬入、家電4品目、処理困難物を公式ページで確認し、業者作業と分けます。</span></div>
     <div class="major-seo-local__card"><b>3. 残す品</b><span>通帳、印鑑、権利書、保険証券、写真、仏壇、形見分け品は処分前に探索対象として伝えます。</span></div>
     <div class="major-seo-local__card"><b>4. 写真共有</b><span>玄関、通路、階段、部屋全体、物置、駐車位置を撮ると、見積もりのズレを抑えやすくなります。</span></div>
@@ -2265,8 +2373,13 @@
 <section id="faq" class="faq">
         <p class="section-kicker">FAQ</p>
         <h2 class="section-title">朝日村の遺品整理・生前整理でよくある質問</h2>
-        <details><summary>朝日村で生前整理だけでも相談できますか？</summary><p>相談できます。施設入居、住み替え、同居前、売却前など、必要な荷物だけを残す整理として朝日村でも早めに進める方が増えています。</p></details><details><summary>遠方に住んでいて立会いできない場合はどうしますか？</summary><p>鍵の受け渡し、作業前後の写真報告、探索品リスト、返却方法を事前に決めます。見積もり時に立会い不要対応の範囲を確認してください。</p></details><details><summary>朝日村の粗大ごみと業者依頼はどちらがよいですか？</summary><p>少量で時間に余裕があるものは自治体制度を確認し、屋内搬出、大量家財、短納期、供養、買取、貴重品探索を伴う場合は業者見積もりと比較してください。</p></details><details><summary>買取で費用は安くなりますか？</summary><p>家電、貴金属、時計、ブランド品、趣味用品、工具などは査定対象になり得ます。買取額を整理費用から差し引けるか、見積書で分けて確認してください。</p></details>
+        <details><summary>朝日村の自己搬入先はどこですか？</summary><p>朝日村にお住まいの方は、松塩地区広域施設組合の案内で塩尻クリーンセンターへ搬入するとされています。受付は平日8:30〜11:45、13:00〜16:30、土曜8:30〜12:00で、日曜・祝日・12月31日〜1月3日は休みです。料金は150円/10kgです。</p></details>
+        <details><summary>資源物も塩尻クリーンセンターへ持ち込めますか？</summary><p>塩尻クリーンセンターは資源物を受け入れないと案内しています。資源物、収集日、分別表は朝日村の「資源物・ごみの出し方」や生涯学習カレンダーで確認し、施設へ持ち込むごみと村の収集で出すものを分けてください。</p></details>
+        <details><summary>家電4品目、パソコン、農機具、消火器はどう分けますか？</summary><p>家電4品目と家庭系パソコンは通常の粗大ごみと別ルールです。タイヤ、バイク、ボイラー類、浴槽、大型マッサージ機、農機具類、農業用ビニール・マルチ類、LPガスボンベ、バッテリー類、消火器、引火性のあるものも別確認にします。納屋や農家住宅の片付けでは、室内家財と農業系・危険物を混ぜずに写真で分けると見積もりが正確になります。</p></details>
+        <details><summary>紙おむつや介護用品が多い場合はどうしますか？</summary><p>朝日村には、紙おむつを使用している方がいる世帯のごみ処理手数料を一部軽減する制度案内があります。介護用品、薬、通院書類、保険証、残す福祉用具は処分品と混ざりやすいため、生前整理では本人・親族・ケアマネジャーの確認範囲を先に決めてください。</p></details>
+        <details><summary>空き家や売却前の片付けは何を先に確認しますか？</summary><p>朝日村は空き家バンクを案内しており、売買物件の取り扱い開始も案内されています。片付け前に、固定資産関係書類、権利書、境界資料、鍵、残す建具・設備、農地や納屋の扱いを分け、家財処分と住まい相談を同時に進めると手戻りを減らせます。</p></details>
       </section>
+
 
 <section id="links" class="nearby-wards">
         <p class="section-kicker">周辺リンク</p>

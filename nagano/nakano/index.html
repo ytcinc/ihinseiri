@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1290,9 +1290,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     #contact.contact-check-card{background:#fffaf6;border:1px solid #ead9ca;border-radius:12px;padding:24px;box-shadow:none}
     .contact-check-list{margin:14px 0 18px;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
     .contact-check-list li{background:#fff;border:1px solid #eadfd4;border-radius:8px;padding:10px 12px;font-weight:700;color:#3f332b}
@@ -1758,6 +1758,101 @@
 
 
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/nakano/#professional-service",
+  "name": "遺品整理・生前整理.jp 中野市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/nakano/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "中野市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "中野市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -1784,7 +1879,7 @@
           <div class="badge"><b>福祉連携</b><span>空家・高齢者相談窓口も案内</span></div>
         </div>
       </div>
-      <div class="hero-panel"><h2>中野市で特に多い相談</h2><ul class="quick-list"><li>中野市の駅周辺・集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>家族で残す品、供養する品、買取できそうな品を処分前に分けたい</li><li>自治体の粗大ごみ・持込制度と、屋内搬出や大量家財の業者作業を分けたい</li><li>冬季道路、積雪、坂道、駐車位置を見積もり前に確認したい</li></ul></div>
+      <div class="hero-panel"><h2>中野市で特に多い相談</h2><ul class="quick-list"><li>信州中野駅・中野松川駅周辺の集合住宅で、退去期限や管理会社ルールに合わせて片付けたい</li><li>遠方家族が立会いできないため、鍵預かりと作業前後の写真報告で進めたい</li><li>延徳・高丘・豊田方面の果樹園に近い戸建てで、物置・農具・庭まわりまで整理したい</li><li>東山クリーンセンターへ持ち込むものと、屋内搬出や大量家財の業者作業を分けたい</li><li>布団、木製家具、剪定枝、金属ごみ、不燃性粗大ごみの条件を見積もり前に確認したい</li></ul></div>
     </div>
   </section>
 
@@ -2230,7 +2325,7 @@
   <div class="section-heading">
     <p class="eyebrow">中野市の行政窓口・粗大ごみ・住まい相談</p>
     <h2>中野市で確認したい自治体情報</h2>
-    <p>中野市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。代表電話と役場所在地は、長野県公式の市町村一覧で確認した情報です。粗大ごみ、自己搬入、福祉的なごみ出し支援、空き家相談は、制度名や受付条件が変わるため、中野市公式サイトで最新情報を確認してください。</p>
+    <p>中野市で遺品整理・生前整理を進める前に、自治体で確認できることと、屋内搬出・仕分け・貴重品探索など業者に任せることを分けて整理します。市街地の集合住宅、旧市街地の戸建て、延徳・高丘・豊田方面の果樹園に近い家では、搬出条件とごみの分け方が変わります。粗大ごみ、自己搬入、福祉相談、空き家相談は、制度名や受付条件が変わるため、中野市公式サイトで最新情報を確認してください。</p>
   </div>
   <div class="admin-card-grid">
     <div class="admin-card"><h3>自治体・関連窓口</h3><p><strong>中野市役所</strong><br>所在地: 〒383-8614 中野市三好町1-3-19<br>代表電話: 0269-22-2111<br>ごみは生活環境課衛生係、空き家は都市建設課建築住宅係、高齢者相談は地域包括支援センターへ分けて確認します。</p><a href="https://www.city.nakano.nagano.jp/" target="_blank" rel="noopener">中野市公式サイト</a></div>
@@ -2239,6 +2334,31 @@
     <div class="admin-card"><h3>高齢者支援・生前整理</h3><p><strong>中野市地域包括支援センター</strong><br>直通: 0269-24-1064<br>北信病院内: 0269-38-1377<br>介護・福祉の総合相談、介護予防、成年後見、権利擁護などを確認します。本人同意、立会い、残す薬・介護用品・重要書類を先に分けます。</p><a href="https://www.city.nakano.nagano.jp/docs/2014052200026/" target="_blank" rel="noopener">中野市地域包括支援センター</a></div>
     <div class="admin-card"><h3>空き家・住まい相談</h3><p>中野市空き家バンク、空き家活用等事業補助金は、都市建設課建築住宅係（0269-22-2111 内線273）が窓口です。家財道具等の搬出・処分、屋内外清掃は補助対象になる区分があるため、見積もり・写真・申請順を片付け前に確認します。</p><a href="https://www.city.nakano.nagano.jp/docs/2015033100328/" target="_blank" rel="noopener">中野市空き家バンク事業</a></div>
   </div>
+  <div class="admin-callout">
+    <h3>中野市は「駅周辺の集合住宅」と「果樹園側の戸建て」を分けて見る</h3>
+    <p>信州中野駅・中野松川駅周辺では、アパートや集合住宅の退去期限、管理会社への届出、共用部養生、エレベーターや階段搬出、短時間の駐車位置が見積もりに影響します。一方で、延徳・高丘・豊田方面の果樹園に近い家では、母屋の家財だけでなく、物置、車庫、農具、収穫コンテナ、支柱、剪定枝、古い工具まで範囲が広がりやすくなります。</p>
+    <p>東山クリーンセンターへ直接持ち込めるものでも、屋内から大型家具を運び出す作業は別です。布団・カーペット・木製家具・庭木類は長さや束ね方、金属ごみ・不燃性粗大ごみは料金区分があるため、写真を見ながら「市で処理するもの」「業者が運ぶもの」「空き家補助の申請前に残す写真」を分けるのが安全です。</p>
+  </div>
+  <table class="admin-check-table">
+    <thead><tr><th>場所・住環境</th><th>中野市で起きやすい確認点</th><th>見積もり前に送る写真</th></tr></thead>
+    <tbody>
+      <tr><td>信州中野駅・市役所周辺</td><td>集合住宅、駐車場所、管理会社への届出、共用部養生、搬出時間を先に確認します。</td><td>建物入口、階段、エレベーター、共用廊下、駐車位置。</td></tr>
+      <tr><td>中野松川駅・一本木公園周辺</td><td>住宅地と観光・イベント動線が重なるため、短時間搬出、近隣配慮、道路幅を見ます。</td><td>前面道路、停車位置、玄関、搬出経路、周辺の目印。</td></tr>
+      <tr><td>延徳・高丘方面</td><td>果樹園に近い戸建てでは、物置、農具、収穫コンテナ、支柱、剪定枝、車庫まで範囲が広がります。</td><td>物置、車庫、庭、農具、屋外保管品、トラックを寄せる場所。</td></tr>
+      <tr><td>豊田・上今井・替佐方面</td><td>戸建て、旧家、空き家では、冬季道路、庭木、仏壇、二階家具、東山クリーンセンター搬入品を分けます。</td><td>道路幅、敷地入口、階段、仏壇、庭木、残置物全体。</td></tr>
+      <tr><td>空き家バンク・売却前</td><td>家財搬出、屋内外清掃、写真、申請順を片付け前に決めます。</td><td>全室、押入れ、台所、浴室、外観、庭、処分前の家財。</td></tr>
+    </tbody>
+  </table>
+  <table class="admin-check-table">
+    <thead><tr><th>確認先</th><th>公式に確認できる内容</th><th>片付けでの使い方</th></tr></thead>
+    <tbody>
+      <tr><td>生活環境課 衛生係</td><td>ごみと資源物の分け方、収集ステーション、区の指定場所、粗大ごみ、収集運搬許可業者を確認します。</td><td>通常収集、直接搬入、業者搬出、処理困難品を作業前に分けます。</td></tr>
+      <tr><td>東山クリーンセンター</td><td>可燃性粗大ごみ・一時多量ごみ、金属ごみ、不燃性粗大ごみの受付時間と料金を確認します。</td><td>タンス、布団、木製机、庭木、金属製品を品目別に仕分けます。</td></tr>
+      <tr><td>中野市地域包括支援センター</td><td>介護・福祉の総合相談、介護予防、成年後見、権利擁護を確認できます。</td><td>生前整理では、本人同意、ケアマネジャー、残す薬・介護用品・重要書類を分けます。</td></tr>
+      <tr><td>都市建設課 建築住宅係</td><td>空き家バンク、空き家活用等事業補助金、家財道具等の搬出・処分、屋内外清掃を確認します。</td><td>補助を検討する場合は、見積もり・写真・申請前相談を片付け前に行います。</td></tr>
+      <tr><td>中野市空き家相談所</td><td>空き家バンクページでは問い合わせ先として電話とメールが掲載されています。</td><td>売却・賃貸前の家財整理、媒介業者との流れ、登録前の片付け順を確認します。</td></tr>
+    </tbody>
+  </table>
 </section>
 
 
@@ -2246,17 +2366,17 @@
   <div class="container">
     <p class="section-kicker">行政・地域データ</p>
     <h2 class="section-title">中野市で整理前に確認したい行政・地域データ</h2>
-    <p class="lead">中野市で遺品整理・生前整理を進める前に確認したい行政回収、自己搬入、空き家・残置物、終活相談の要点を整理しました。手数料や受付日は変わるため、依頼前に中野市公式サイトで最新条件を確認してください。</p>
+    <p class="lead">中野市で遺品整理・生前整理を進める前に確認したい行政回収、東山クリーンセンターへの自己搬入、空き家・残置物、地域包括支援センターの要点を整理しました。手数料や受付日は変わるため、依頼前に中野市公式サイトで最新条件を確認してください。</p>
     <div class="nagano-report-grid">
-      <div class="nagano-report-card"><b>処理圏</b><span>岳北地域。中野市・飯山市の指定処理施設など</span></div>
-      <div class="nagano-report-card"><b>料金目安</b><span>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</span></div>
-      <div class="nagano-report-card"><b>地域特性</b><span>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。</span></div>
+      <div class="nagano-report-card"><b>処理先</b><span>東山クリーンセンター。可燃性粗大ごみ、一時多量ごみ、金属ごみ、不燃性粗大ごみを品目別に確認します。</span></div>
+      <div class="nagano-report-card"><b>料金目安</b><span>可燃性粗大ごみ・一時多量ごみは10kgにつき90円、金属ごみは10kgにつき45円。不燃性粗大ごみは500円・1,000円・2,000円の区分があります。</span></div>
+      <div class="nagano-report-card"><b>地域特性</b><span>駅周辺の集合住宅と、延徳・高丘・豊田方面の果樹園に近い戸建てで、搬出計画と屋外品の範囲が変わります。</span></div>
       <div class="nagano-report-card"><b>役所出典</b><span><a href="https://www.city.nakano.nagano.jp/" target="_blank" rel="noopener">中野市公式サイト</a>のみを出典として記載。</span></div>
     </div>
     <table class="nagano-report-table">
       <tr><th>受付確認</th><td>粗大ごみ、自己搬入、一時多量ごみ、家電リサイクル、空き家補助は、予約、本人確認、発生場所、搬入者、事前申請の要否を分けて確認します。</td></tr>
-      <tr><th>料金目安</th><td>中野市は可燃10kg90円・不燃10kg45円、飯山市は粗大ごみ10kg520円、可燃性家具・布団等は無料扱いの例があります。</td></tr>
-      <tr><th>見積もり前</th><td>豪雪地、温泉地、山間集落があり、冬季道路と搬出日程の読みが重要です。春先・降雪前の作業計画が安心です。 残す品、探す書類、買取候補、供養品、庭・物置・車庫の範囲も先に共有します。</td></tr>
+      <tr><th>料金目安</th><td>可燃性粗大ごみ・一時多量ごみは10kgにつき90円、金属ごみは10kgにつき45円。不燃性粗大ごみは品目ごとに500円、1,000円、2,000円の区分があります。</td></tr>
+      <tr><th>見積もり前</th><td>信州中野駅周辺の集合住宅では管理会社・共用部養生・駐車位置、果樹園側の戸建てでは庭・物置・農具・剪定枝・車庫の範囲を先に共有します。残す品、探す書類、買取候補、供養品も分けます。</td></tr>
       <tr><th>出典</th><td><a href="https://www.city.nakano.nagano.jp/docs/2014020500011/" target="_blank" rel="noopener">ごみと資源物の出し方・分け方</a> / <a href="https://www.city.nakano.nagano.jp/docs/2014011600010/" target="_blank" rel="noopener">東山クリーンセンターへの直接持ち込み</a> / <a href="https://www.city.nakano.nagano.jp/docs/2014052200026/" target="_blank" rel="noopener">中野市地域包括支援センター</a> / <a href="https://www.city.nakano.nagano.jp/docs/2015033100328/" target="_blank" rel="noopener">中野市空き家バンク事業</a> / <a href="https://www.city.nakano.nagano.jp/docs/2016021000064/" target="_blank" rel="noopener">中野市空き家活用等事業補助金</a></td></tr>
     </table>
     <p class="nagano-report-note">民間まとめサイトや未確認の電話番号は出典として掲載せず、自治体公式で確認できる範囲を優先しています。</p>

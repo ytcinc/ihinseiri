@@ -580,13 +580,13 @@
   </style>
 <link rel="stylesheet" href="/assets/site-mobile.css?v=1">
   <style id="local-priority-v1">
-    .local-priority{margin-top:22px;padding:22px;background:#26332d;color:#fff;box-shadow:0 14px 36px rgba(34,28,22,.14)}
-    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#fff}
-    .local-priority p{margin:0 0 16px;color:#f3efe7;font-size:16px;line-height:1.85}
+    .local-priority{margin-top:22px;padding:24px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300;box-shadow:0 12px 28px rgba(34,28,22,.06)}
+    .local-priority h3{margin:0 0 10px;font-size:20px;line-height:1.5;color:#2b2b2b}
+    .local-priority p{margin:0 0 16px;color:#4f5c55;font-size:16px;line-height:1.85}
     .priority-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    .priority-card{padding:15px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22)}
-    .priority-card b{display:block;margin-bottom:5px;color:#fff;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#f8f0df;font-size:14px;line-height:1.75}
-    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#f4b23b;color:#2a2119;font-size:13px;font-weight:900;line-height:1.3}
+    .priority-card{padding:16px;background:#fff;border:1px solid #eadfd4;box-shadow:0 8px 20px rgba(34,28,22,.045)}
+    .priority-card b{display:block;margin-bottom:5px;color:#28332e;font-size:16px;line-height:1.5}.priority-card span{display:block;color:#4f5c55;font-size:14px;line-height:1.75}
+    .priority-tag{display:inline-flex;align-items:center;margin-bottom:8px;padding:4px 9px;background:#fff1e4;border:1px solid #f0c49d;color:#a24708;font-size:13px;font-weight:900;line-height:1.3}
     @media(max-width:640px){.local-priority{padding:18px}.priority-grid{grid-template-columns:1fr}.local-priority h3{font-size:18px}}
   </style>
   <style id="local-nagano-compare-v2">
@@ -1288,9 +1288,9 @@
     .admin-check-table{width:100%;border-collapse:collapse;margin:10px 0 12px;background:#fff}
     .admin-check-table th,.admin-check-table td{border:1px solid #e1d8cb;padding:10px 12px;text-align:left;vertical-align:top;font-size:15px;line-height:1.65}
     .admin-check-table th{background:#f5efe5;color:#2f261d;font-weight:800}
-    .admin-callout{margin:20px 0 0;padding:18px;background:#26332d;color:#fff}
-    .admin-callout h3{margin:0 0 8px;color:#fff;font-size:19px}
-    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#f3efe7}
+    .admin-callout{margin:20px 0 0;padding:18px;background:#fffdf9;color:#2b2b2b;border:1px solid #eadfd4;border-left:6px solid #d05300}
+    .admin-callout h3{margin:0 0 8px;color:#2b2b2b;font-size:19px}
+    .admin-callout ul{margin:0;padding-left:1.2em;line-height:1.85;color:#4f5c55}
     .admin-official-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
     .admin-official-row a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:8px 14px;background:#164f3a;color:#fff;text-decoration:none;font-weight:800;border-radius:0}
     @media(max-width:760px){.admin-deep-grid{grid-template-columns:1fr}.admin-check-table{display:block;overflow-x:auto;white-space:nowrap}.admin-deep-card{padding:16px}}
@@ -1760,6 +1760,101 @@
   }
 </style>
 
+
+<style id="nagano-contact-cta-fix">
+  #contact.cta-band {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+    margin-top: 44px;
+    padding: 28px;
+    border: 1px solid #e2d8ca;
+    border-left: 7px solid #d05300;
+    background: #fffaf2;
+    color: #2f332f;
+    box-shadow: 0 14px 34px rgba(34,28,22,.08);
+  }
+  #contact.cta-band h2 {
+    margin: 0 0 8px;
+    color: #2f332f;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.45;
+  }
+  #contact.cta-band p {
+    margin: 0;
+    color: #555f59;
+    line-height: 1.9;
+  }
+  #contact.cta-band .section-kicker {
+    color: #a94900;
+    font-weight: 900;
+    letter-spacing: 0;
+  }
+  #contact.cta-band .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 6px 0 0;
+  }
+  #contact.cta-band .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 4px;
+    box-shadow: none;
+    white-space: normal;
+    text-align: center;
+  }
+  #contact.cta-band .btn.primary {
+    background: #d05300;
+    border-color: #d05300;
+    color: #fff;
+  }
+  #contact.cta-band .btn.secondary {
+    background: #fff;
+    border-color: #d8cbb9;
+    color: #8c3d00;
+  }
+  @media (max-width: 620px) {
+    #contact.cta-band {
+      padding: 22px;
+    }
+    #contact.cta-band .hero-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #contact.cta-band .btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script type="application/ld+json" data-schema="professional-service">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.ihinseiri-seizenseiri.jp/nagano/ueda/#professional-service",
+  "name": "遺品整理・生前整理.jp 上田市店",
+  "image": "https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png",
+  "url": "https://www.ihinseiri-seizenseiri.jp/nagano/ueda/",
+  "priceRange": "¥25,000 - ¥500,000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上田市",
+    "addressRegion": "長野県",
+    "addressCountry": "JP"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "上田市"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "遺品整理・生前整理.jp 運営事務局",
+    "url": "https://www.ihinseiri-seizenseiri.jp/"
+  }
+}
+</script>
 </head>
 <body>
   <header class="topbar">
@@ -2236,6 +2331,35 @@
       <div class="admin-card"><h3>空き家・住まい相談</h3><p>相続後の実家じまい、売却前整理、解体前整理、別所温泉・真田・武石方面の空き家、土蔵・物置・車庫の残置物は、所有者、鍵、境界、残す書類、家財撤去の範囲を分けて確認します。</p><p>上田市には「信州うえだ空き家バンク」の案内があります。登録や内覧、売買・賃貸の予定がある場合は、家財を処分する前に写真、設備、残置物、冬季管理、庭木・農具の扱いを整理してから相談します。</p><a href="https://www.city.ueda.nagano.jp/" target="_blank" rel="noopener">上田市公式サイトで空き家情報を確認</a></div>
       <div class="admin-card"><h3>業者へ伝えること</h3><p>退去期限、立会い可否、鍵の受け渡し、上田・丸子クリーンセンターへ持ち込むもの、民間処理業者へ相談するもの、屋内搬出が必要なもの、家電4品目、仏壇・写真、貴重品探索、土蔵・物置・庭・車庫、冬季の除雪、車両導線を分けて伝えます。</p><p>上田駅周辺の集合住宅は管理会社届出と共用部養生、中央・大手の旧市街地は停車位置、塩田平・丸子・真田・武石方面は敷地内の納屋・農具・薪・枝木類を写真で共有すると見積もりの精度が上がります。</p><a href="#compare">業者比較の確認点へ</a></div>
     </div>
+    <div class="admin-callout">
+      <h3>上田市の片付けは「5つの出口」に分ける</h3>
+      <p>集積所、上田・丸子クリーンセンター、民間処理業者、有害ごみ・資源物回収、業者搬出を混ぜると、料金と作業範囲が分かりにくくなります。特にアパート・マンションは管理会社の集積所ルール、旧市街地は停車位置、真田・武石方面は冬季道路と納屋の範囲を先に見ます。</p>
+      <ul>
+        <li>集積所: 指定曜日、指定袋、自治会名・氏名、通常2袋まで、引越し時4袋までの目安。</li>
+        <li>持ち込み: 上田クリーンセンター、丸子クリーンセンター、燃やせる粗大ごみ・大量ごみ。</li>
+        <li>民間処理: 燃やせない粗大ごみ、大量の金属・ガラス・プラスチック、家電製品。</li>
+        <li>別確認: 資源物回収、ウィークエンドリサイクル、有害ごみ・危険ごみ、事業系ごみ。</li>
+        <li>業者搬出: 室内搬出、階段作業、土蔵・物置・庭、貴重品探索、写真報告。</li>
+      </ul>
+    </div>
+    <table class="admin-check-table">
+      <thead><tr><th>状況</th><th>上田市で先に見ること</th><th>業者へ伝えること</th></tr></thead>
+      <tbody>
+        <tr><td>上田駅周辺・アパート</td><td>専用集積所の有無、管理会社ルール、ごみ出し曜日、短時間搬出。</td><td>階数、エレベーター、共用部養生、駐車位置、退去期限。</td></tr>
+        <tr><td>中央・大手の旧市街地</td><td>前面道路、停車位置、近隣店舗、古い家財、仏壇・写真。</td><td>台車経路、作業時間、近隣への声かけ、供養品の扱い。</td></tr>
+        <tr><td>塩田平・別所温泉方面</td><td>戸建て、旅館・店舗由来の残置物、坂道、観光時間帯。</td><td>客室備品の有無、庭・物置、駐車位置、事業系に近い品の写真。</td></tr>
+        <tr><td>丸子・真田・武石方面</td><td>山沿い道路、冬季道路、納屋、農具、薪、枝木類、車庫。</td><td>母屋以外の作業範囲、軽トラ搬出の要否、除雪・鍵預かり。</td></tr>
+      </tbody>
+    </table>
+    <table class="admin-check-table">
+      <thead><tr><th>確認先</th><th>電話番号</th><th>確認する内容</th></tr></thead>
+      <tbody>
+        <tr><td>上田市役所</td><td>0268-22-4100</td><td>ごみ、福祉、空き家、住まいの担当窓口を確認します。</td></tr>
+        <tr><td>廃棄物対策課</td><td>0268-22-0666<br>FAX 0268-26-0815</td><td>ごみ分別、集積所、さんあ〜る、粗大ごみ・大量ごみを確認します。</td></tr>
+        <tr><td>高齢者介護課</td><td>0268-23-5131<br>0268-23-5140<br>FAX 0268-29-4466</td><td>配食、緊急通報、外出支援、訪問理美容、軽度生活援助を確認します。</td></tr>
+        <tr><td>地域包括支援センター</td><td>担当地区ごとに確認</td><td>介護、ケアマネジャー、施設入居前の生前整理、親族立会いを確認します。</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
