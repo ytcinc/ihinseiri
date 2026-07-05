@@ -61,10 +61,57 @@
       text-decoration:underline!important;
     }
   </style>
+
+  <style id="shared-top-header-style">
+    .global-site-header.global-site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:9999!important;background:#fff!important;border-bottom:1px solid #f0ded8!important;box-shadow:0 4px 18px rgba(37,33,29,.04)!important;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;color:#2f2924!important}
+    .global-site-header *{box-sizing:border-box!important;letter-spacing:0!important}
+    html body{padding-top:132px!important}
+    .global-header-head{width:min(1180px,calc(100% - 32px))!important;min-height:74px!important;margin:0 auto!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:22px!important;align-items:center!important}
+    .global-header-nav-wrap{background:#fff!important}
+    .global-header-nav-row{width:min(1180px,calc(100% - 32px))!important;min-height:58px!important;margin:0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important}
+    .global-brand{display:flex!important;align-items:center!important;gap:10px!important;font-weight:900!important;color:#3a312c!important;text-decoration:none!important}
+    .global-brand:hover{text-decoration:none!important}
+    .global-brand-mark{width:46px!important;height:46px!important;display:block!important;object-fit:contain!important;flex:0 0 auto!important}
+    .global-brand>span{display:flex!important;flex-direction:column!important;gap:3px!important;align-items:flex-start!important;justify-content:center!important;line-height:1!important;margin:0!important;padding:0!important}
+    .global-brand-main{display:block!important;font-size:25px!important;line-height:1.08!important;font-weight:900!important;color:#3a312c!important;margin:0!important;padding:0!important}
+    .global-brand-sub{display:block!important;color:#5f5550!important;font-size:12px!important;font-weight:800!important;line-height:1.2!important;margin:0!important;padding:0!important}
+    .global-header-copy{margin:0!important;color:#4f4740!important;font-size:13px!important;font-weight:800!important;line-height:1.75!important;text-align:center!important;white-space:nowrap!important}
+    .global-header-contact{display:flex!important;align-items:center!important;gap:12px!important;justify-content:flex-end!important}
+    .global-header-contact small{display:block!important;color:#6b625b!important;font-size:11px!important;font-weight:800!important;line-height:1.35!important;text-align:right!important}
+    .global-header-contact a{min-height:38px!important;display:grid!important;place-items:center!important;padding:0 14px!important;border-radius:4px!important;background:#ef746f!important;color:#fff!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;text-decoration:none!important;border:0!important}
+    .global-header-nav{display:flex!important;align-items:stretch!important;justify-content:center!important;gap:34px!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important;max-width:100%!important}
+    .global-header-nav a{min-width:132px!important;min-height:58px!important;display:grid!important;place-items:center!important;padding:0 16px!important;color:#2f2925!important;text-align:center!important;border-radius:0!important;text-decoration:none!important;background:transparent!important;border:0!important}
+    .global-header-nav a:hover{background:#fff4ec!important;color:#d95852!important;text-decoration:none!important}
+    @media(max-width:900px){.global-header-head{grid-template-columns:1fr!important;gap:10px!important;padding:12px 0!important;text-align:center!important}.global-brand{justify-content:center!important}.global-header-contact{justify-content:center!important}.global-header-contact small{text-align:center!important}.global-header-nav-wrap{padding:10px 0!important}.global-header-nav-row{width:calc(100vw - 80px)!important;max-width:calc(100vw - 80px)!important}.global-header-nav{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;white-space:normal!important;overflow:visible!important;padding-bottom:4px!important}.global-header-nav a{display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px!important;padding:6px 8px!important;border:1px solid #f0ded8!important;border-radius:3px!important;background:#fff!important;font-size:13px!important;text-align:center!important}}
+    @media(max-width:900px){.global-site-header.global-site-header{position:static!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important}html body{padding-top:0!important}}
+  </style>
 </head>
 <body>
 
-  <header class="topbar"><div class="topbar-inner"><a class="brand" href="/"><span class="brand-main">遺品整理・生前整理.jp</span></a><nav class="nav"><a href="/">TOP</a><a href="/osaka/">大阪府</a><a href="/hyogo/">兵庫県</a><a href="/privacy/">プライバシー</a><a href="/disclaimer/">免責事項</a><a href="/sitemap/">サイトマップ</a></nav></div></header>
+  <header class="global-site-header">
+  <div class="global-header-head">
+    <a class="global-brand" href="/">
+      <img class="global-brand-mark" src="/assets/site-logo-hands.png" alt="" aria-hidden="true">
+      <span><span class="global-brand-main">遺品整理・生前整理.jp</span><span class="global-brand-sub">相談前に確認できる全国ガイド</span></span>
+    </a>
+    <p class="global-header-copy">全国の地域ごとの粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載</p>
+    <div class="global-header-contact" aria-label="お問い合わせ案内">
+      <small>相談前の確認や<br>掲載基準はこちら</small>
+      <a href="/operator/">お問い合わせ</a>
+    </div>
+  </div>
+  <div class="global-header-nav-wrap">
+    <div class="global-header-nav-row">
+      <nav class="global-header-nav" aria-label="主要メニュー">
+        <a href="/#areas-bottom">地域から探す</a>
+        <a href="/guide/ihinseiri/">遺品整理とは</a>
+        <a href="/#price-guide">費用目安</a>
+        <a href="/guide/">ガイド記事</a>
+        <a href="/operator/">運営者・掲載基準</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
   <section class="hero"><div class="hero-inner"><span class="eyebrow">全国ページ一覧</span><h1>サイトマップ</h1><p>都道府県ページ、主要な市区町村ページ、運営情報へ移動できます。作業場所に近いページから確認してください。</p><div class="toc"><a href="/">TOPへ戻る</a><a href="/privacy/">プライバシーポリシー</a><a href="/disclaimer/">免責事項</a><a href="/sitemap/">サイトマップ</a></div></div></section>
   <main class="wrap">

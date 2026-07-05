@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>遺品整理・生前整理.jp | 実家じまいも相談前に確認できる全国ガイド</title>
-  <meta name="description" content="遺品整理・生前整理を相談する前に、料金目安、作業内容、貴重品探索、供養、買取、立会い不要対応、地域別の確認点を整理できる全国ポータルです。遺品整理・生前整理に加えて、実家じまいの確認点も掲載。">
+  <meta name="description" content="遺品整理・生前整理を相談する前に、行政ごみ、粗大ごみ、自己搬入先、貴重品探索、供養、買取、立会いなし対応、実家じまいの進め方を地域別に確認できる全国ポータルです。">
   <style>
     :root{--base:#fffaf5;--surface:#fff;--ink:#2f2924;--muted:#5f5550;--line:#f0ded8;--primary:#ef746f;--primary-dark:#d95852;--green:#5aa884;--soft:#fff4ec;--blue:#6b8fa3;--shadow:0 10px 24px rgba(92,58,45,.08)}
     *{box-sizing:border-box}
@@ -169,8 +169,18 @@
     .city-links{display:flex;flex-wrap:wrap;gap:10px 16px}
     .guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.columns-more{margin-top:26px;text-align:center}.columns-more .btn{min-width:180px}
     .guide-card{border-top:5px solid var(--primary)}
+    .intent-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .intent-card{display:flex;flex-direction:column;min-height:250px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--primary);border-radius:3px;padding:20px;box-shadow:0 12px 26px rgba(55,42,31,.08)}
+    .intent-card .intent-label{display:inline-flex;align-self:flex-start;margin-bottom:10px;padding:3px 9px;border-radius:999px;background:#fff1e8;color:var(--primary-dark);font-size:12px;font-weight:900}
+    .intent-card h3{margin:0 0 8px;font-size:20px;line-height:1.45;color:#2f2924}
+    .intent-card p{margin:0 0 12px;color:#555;font-size:15px;font-weight:750;line-height:1.75}
+    .intent-card ul{margin:0 0 16px;padding-left:20px;color:#625950;font-size:14px;font-weight:800;line-height:1.7}
+    .intent-actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+    .intent-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:6px 12px;border-radius:999px;background:#fff;color:var(--primary-dark);border:1px solid #ddd;font-size:13px;font-weight:900;text-decoration:none}
+    .intent-actions a:first-child{background:var(--primary);color:#fff;border-color:var(--primary)}
+
     .faq{display:grid;gap:10px;max-width:900px;margin:0 auto}
-    details{background:#fff;border:1px solid var(--line);border-radius:3px;padding:16px 18px;box-shadow:none}
+    details{background:#fff;border:1px solid var(--line);border-left:5px solid var(--primary);border-radius:3px;padding:16px 18px;box-shadow:0 12px 26px rgba(55,42,31,.08)}
     summary{cursor:pointer;font-weight:900;color:#332b25}
     details p{margin:10px 0 0;color:var(--muted);font-weight:700}
     footer{background:#3d3028;color:#f8efe6;padding:34px 0;margin-top:0}
@@ -195,6 +205,10 @@
     .guide-card{position:relative;min-height:190px;border-top:0;border-left:5px solid var(--primary);box-shadow:0 12px 26px rgba(55,42,31,.08)}
     .guide-card:before{content:"専門コラム";display:inline-flex;margin-bottom:10px;padding:3px 10px;border-radius:999px;background:#fff1e8;color:var(--primary-dark);font-size:12px;font-weight:900}
     .guide-card h3{font-size:20px;color:#2f2924}
+    .marker,.marker-conclusion{font-weight:900;color:#3f2f00;background:linear-gradient(transparent 52%,rgba(250,204,21,.92) 52%);padding:0 .04em}
+    .marker-warning,.red-marker{font-weight:900;color:#7f1d1d;background:linear-gradient(transparent 56%,rgba(248,113,113,.48) 56%);padding:0 .04em}
+    .marker-step,.blue-marker{font-weight:900;color:#1e3a8a;background:linear-gradient(transparent 56%,rgba(96,165,250,.44) 56%);padding:0 .04em}
+    .marker-kuyo,.marker-emotion,.orange-marker,.marker-orange{font-weight:900;color:#7c2d12;background:linear-gradient(transparent 56%,rgba(251,146,60,.50) 56%);padding:0 .04em}
     @media(max-width:900px){
       .top-trust-inner,.trust-mini-grid{grid-template-columns:1fr}
       .trust-mini-grid{transform:none;padding:16px 0 0}
@@ -227,7 +241,7 @@
       .section-head h2{font-size:24px;word-break:break-all}
       .search-panel,.service-card,.pickup-card,.guide-card,.area-card,.proof-card{max-width:100%;overflow:hidden}
       .hero-inner{grid-template-columns:1fr}
-      .cards,.pickup-grid,.guide-grid,.area-grid,.price-grid,.flow-grid,.value-grid,.chosen-grid,.chosen-grid.strong,.chosen-proof,.scenario-grid,.reason-list{grid-template-columns:1fr}
+      .cards,.pickup-grid,.guide-grid,.intent-grid,.area-grid,.price-grid,.flow-grid,.value-grid,.chosen-grid,.chosen-grid.strong,.chosen-proof,.scenario-grid,.reason-list{grid-template-columns:1fr}
       .area-directory-card{grid-template-columns:1fr;padding:22px 18px;border-radius:3px}
       .pref-row{grid-template-columns:1fr;gap:4px;padding-bottom:10px;border-bottom:1px solid #eee}
       .pref-row:last-child{border-bottom:0}
@@ -274,44 +288,123 @@
       .home-pickup-strip{grid-template-columns:1fr}
     }
 
+
+    .strategy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .strategy-card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:18px;box-shadow:var(--shadow)}
+    .strategy-card b{display:block;margin-bottom:8px;color:var(--primary-dark);font-size:17px;line-height:1.45}
+    .strategy-card p{margin:0;color:#4b443e;font-size:14.5px;line-height:1.85}
+    .guardrail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .guardrail-card{background:#fff;border:1px solid var(--line);border-left:6px solid var(--primary);border-radius:4px;padding:18px}
+    .guardrail-card h3{margin:0 0 8px;color:#2b241f;font-size:18px;line-height:1.45}
+    .guardrail-card ul{margin:0;padding-left:1.2em;color:#4b443e;font-size:14.5px;line-height:1.85}
+    .guardrail-card li+li{margin-top:4px}
+    .steps-rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;counter-reset:homeStep}
+    .step-box{position:relative;background:#fff;border:1px solid var(--line);border-radius:4px;padding:46px 14px 16px;min-height:160px}
+    .step-box:before{counter-increment:homeStep;content:counter(homeStep);position:absolute;left:14px;top:14px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;font-weight:900}
+    .step-box b{display:block;margin-bottom:7px;color:#2b241f;font-size:15px;line-height:1.45}
+    .step-box p{margin:0;color:#4b443e;font-size:13.5px;line-height:1.75}
+    .license-note{margin-top:14px;padding:14px 16px;background:#fff8ea;border:1px solid #ead8b8;color:#4b3c25;font-size:14px;line-height:1.8}
+    @media(max-width:900px){.strategy-grid,.guardrail-grid,.steps-rail{grid-template-columns:1fr}.step-box{min-height:auto}}
+
+
+    .deep-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .deep-card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:18px;box-shadow:var(--shadow)}
+    .deep-card h3{margin:0 0 10px;color:#2b241f;font-size:19px;line-height:1.45}
+    .deep-card p{margin:0 0 10px;color:#4b443e;font-size:14.5px;line-height:1.85}
+    .deep-card ul{margin:0;padding-left:1.2em;color:#4b443e;font-size:14.5px;line-height:1.85}
+    .deep-card li+li{margin-top:4px}
+    .wide-check-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14.5px;line-height:1.75}
+    .wide-check-table th,.wide-check-table td{padding:13px 14px;border:1px solid var(--line);vertical-align:top;text-align:left}
+    .wide-check-table th{background:#fff4ec;color:#2b241f;font-weight:900;white-space:nowrap}
+    .wide-check-table td{color:#4b443e}
+    .signal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .signal-card{background:#fff;border:1px solid var(--line);border-top:5px solid var(--primary);border-radius:4px;padding:16px}
+    .signal-card b{display:block;margin-bottom:7px;color:#2b241f;font-size:16px;line-height:1.45}
+    .signal-card p{margin:0;color:#4b443e;font-size:14px;line-height:1.8}
+    .family-note{margin-top:14px;padding:16px;background:#f7fbff;border:1px solid #cfe0ef;color:#2b3b48;font-size:14.5px;line-height:1.85}
+    @media(max-width:900px){.deep-grid,.signal-grid{grid-template-columns:1fr}.wide-check-table{font-size:13.5px}.wide-check-table th,.wide-check-table td{display:block;width:100%}}
+
+
+
+/* SEO trust block */
+.seo-trust{background:#fff;border-bottom:1px solid var(--line)}
+.seo-trust .wrap{padding:28px 0 34px}
+.seo-trust-head{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:22px;align-items:stretch;margin-bottom:18px}
+.seo-trust-copy,.seo-trust-route{border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:var(--shadow);padding:22px}
+.seo-trust-copy h2,.seo-trust-route h2{font-size:1.38rem;line-height:1.42;margin:0 0 10px;letter-spacing:0}
+.seo-trust-copy p,.seo-trust-route p{margin:0;color:var(--muted)}
+.seo-trust-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 0}
+.seo-trust-point{border:1px solid var(--line);border-radius:8px;background:#fffaf4;padding:16px}
+.seo-trust-point span{display:inline-flex;margin-bottom:8px;border-radius:999px;background:#fff3e8;color:#9f341f;border:1px solid #f0c9b3;padding:3px 9px;font-size:.78rem;font-weight:900}
+.seo-trust-point h3{font-size:1.05rem;margin:0 0 8px;line-height:1.45}
+.seo-trust-point p{margin:0;color:var(--muted);font-size:.95rem}
+.seo-route-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.seo-route-links a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:7px;background:#2f241f;color:#fff;font-weight:900;text-align:center;padding:10px 12px;text-decoration:none}
+.seo-route-links a:nth-child(2){background:#c93b27}
+.seo-route-links a:nth-child(3){background:#2456a6}
+.seo-route-links a:hover{text-decoration:none;filter:brightness(1.05)}
+@media(max-width:860px){.seo-trust-head,.seo-trust-points,.seo-route-links{grid-template-columns:1fr}.seo-trust .wrap{padding:22px 0 28px}}
+</style>
+
+  <style id="shared-top-header-style">
+    .global-site-header.global-site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:9999!important;background:#fff!important;border-bottom:1px solid #f0ded8!important;box-shadow:0 4px 18px rgba(37,33,29,.04)!important;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;color:#2f2924!important}
+    .global-site-header *{box-sizing:border-box!important;letter-spacing:0!important}
+    html body{padding-top:132px!important}
+    .global-header-head{width:min(1180px,calc(100% - 32px))!important;min-height:74px!important;margin:0 auto!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:22px!important;align-items:center!important}
+    .global-header-nav-wrap{background:#fff!important}
+    .global-header-nav-row{width:min(1180px,calc(100% - 32px))!important;min-height:58px!important;margin:0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important}
+    .global-brand{display:flex!important;align-items:center!important;gap:10px!important;font-weight:900!important;color:#3a312c!important;text-decoration:none!important}
+    .global-brand:hover{text-decoration:none!important}
+    .global-brand-mark{width:46px!important;height:46px!important;display:block!important;object-fit:contain!important;flex:0 0 auto!important}
+    .global-brand>span{display:flex!important;flex-direction:column!important;gap:3px!important;align-items:flex-start!important;justify-content:center!important;line-height:1!important;margin:0!important;padding:0!important}
+    .global-brand-main{display:block!important;font-size:25px!important;line-height:1.08!important;font-weight:900!important;color:#3a312c!important;margin:0!important;padding:0!important}
+    .global-brand-sub{display:block!important;color:#5f5550!important;font-size:12px!important;font-weight:800!important;line-height:1.2!important;margin:0!important;padding:0!important}
+    .global-header-copy{margin:0!important;color:#4f4740!important;font-size:13px!important;font-weight:800!important;line-height:1.75!important;text-align:center!important;white-space:nowrap!important}
+    .global-header-contact{display:flex!important;align-items:center!important;gap:12px!important;justify-content:flex-end!important}
+    .global-header-contact small{display:block!important;color:#6b625b!important;font-size:11px!important;font-weight:800!important;line-height:1.35!important;text-align:right!important}
+    .global-header-contact a{min-height:38px!important;display:grid!important;place-items:center!important;padding:0 14px!important;border-radius:4px!important;background:#ef746f!important;color:#fff!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;text-decoration:none!important;border:0!important}
+    .global-header-nav{display:flex!important;align-items:stretch!important;justify-content:center!important;gap:34px!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important;max-width:100%!important}
+    .global-header-nav a{min-width:132px!important;min-height:58px!important;display:grid!important;place-items:center!important;padding:0 16px!important;color:#2f2925!important;text-align:center!important;border-radius:0!important;text-decoration:none!important;background:transparent!important;border:0!important}
+    .global-header-nav a:hover{background:#fff4ec!important;color:#d95852!important;text-decoration:none!important}
+    @media(max-width:900px){.global-header-head{grid-template-columns:1fr!important;gap:10px!important;padding:12px 0!important;text-align:center!important}.global-brand{justify-content:center!important}.global-header-contact{justify-content:center!important}.global-header-contact small{text-align:center!important}.global-header-nav-wrap{padding:10px 0!important}.global-header-nav-row{width:calc(100vw - 80px)!important;max-width:calc(100vw - 80px)!important}.global-header-nav{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;white-space:normal!important;overflow:visible!important;padding-bottom:4px!important}.global-header-nav a{display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px!important;padding:6px 8px!important;border:1px solid #f0ded8!important;border-radius:3px!important;background:#fff!important;font-size:13px!important;text-align:center!important}}
+    @media(max-width:900px){.global-site-header.global-site-header{position:static!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important}html body{padding-top:0!important}}
   </style>
 </head>
 <body>
   <div class="backup-note">temporary-minnano-structure-test</div>
-  <header class="topbar">
-    <div class="top-head">
-      <a class="brand" href="/">
-        <img class="brand-mark" src="/assets/site-logo-hands.png" alt="" aria-hidden="true">
-        <span><span class="brand-main">遺品整理・生前整理.jp</span><span class="brand-sub">相談前に確認できる全国ガイド</span></span>
-      </a>
-      <p class="head-copy">全国の地域ページから、行政ごみ・持ち込み先・見積もり前の確認点を整理できます</p>
-      <div class="head-contact" aria-label="お問い合わせ案内">
-        <small>相談前の確認や<br>掲載基準はこちら</small>
-        <a href="/operator/">お問い合わせ</a>
-      </div>
+  <header class="global-site-header">
+  <div class="global-header-head">
+    <a class="global-brand" href="/">
+      <img class="global-brand-mark" src="/assets/site-logo-hands.png" alt="" aria-hidden="true">
+      <span><span class="global-brand-main">遺品整理・生前整理.jp</span><span class="global-brand-sub">相談前に確認できる全国ガイド</span></span>
+    </a>
+    <p class="global-header-copy">全国の地域ごとの粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載</p>
+    <div class="global-header-contact" aria-label="お問い合わせ案内">
+      <small>相談前の確認や<br>掲載基準はこちら</small>
+      <a href="/operator/">お問い合わせ</a>
     </div>
-    <div class="topbar-inner">
-      <div class="topnav-row">
-        <nav class="nav" aria-label="主要メニュー">
-          <a href="#areas-bottom">地域から探す</a>
-          <a href="/guide/ihinseiri/">遺品整理とは</a>
-          <a href="#price-guide">費用目安</a>
-          <a href="/guide/">ガイド記事</a>
-          <a href="/operator/">運営者・掲載基準</a>
-        </nav>
-        <a class="nav-cta" href="#areas-bottom"><span>作業場所から</span><strong>都道府県を選ぶ</strong></a>
-      </div>
+  </div>
+  <div class="global-header-nav-wrap">
+    <div class="global-header-nav-row">
+      <nav class="global-header-nav" aria-label="主要メニュー">
+        <a href="/#areas-bottom">地域から探す</a>
+        <a href="/guide/ihinseiri/">遺品整理とは</a>
+        <a href="/#price-guide">費用目安</a>
+        <a href="/guide/">ガイド記事</a>
+        <a href="/operator/">運営者・掲載基準</a>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 
   <main>
     <section class="hero home-search-hero" id="search">
       <div class="home-hero-bg" aria-hidden="true"></div>
       <div class="home-hero-inner">
         <div class="home-hero-copy">
-          <span class="home-kicker">作業場所で変わる片付けの確認点</span>
-          <h1>片付けで迷う前に、<br>まず作業場所から確認</h1>
-          <p>粗大ごみの出し方、持ち込み先、自治体で処理できる物、業者へ任せるべき作業は地域で変わります。作業場所を選んで、見積もり前に確認すべきことを整理しましょう。</p>
+          <span class="home-kicker">片付け前に、地域の出し方を確認</span>
+          <h1>遺品整理・生前整理の前に、<br>まず地域の出し方を確認</h1>
+          <p><span class="marker-conclusion">粗大ごみで出せる物、持ち込める物、家の中から運び出す物は、地域と住まいの状況で変わります。</span>作業場所を選ぶと、相談前に見ておきたい窓口や写真の撮り方まで確認できます。</p>
         </div>
 
         <div class="home-search-card" aria-label="遺品整理・生前整理の検索">
@@ -404,8 +497,8 @@
     <section class="top-trust-strip" id="top-contact">
       <div class="top-trust-inner">
         <div class="top-trust-copy">
-          <h2>迷ったら、まず地域のルールを確認できます</h2>
-          <p>遺品整理・生前整理は、自治体で出せる物と業者に任せる作業を分けるだけで、相談内容が整理しやすくなります。地域ごとのごみ出し、持ち込み先、見積もり前の確認点をまとめています。</p>
+          <h2>まずは、片付ける家の地域ルールを見る</h2>
+          <p>遺品整理や生前整理は、最初に全部を業者へ任せる前提にしなくても大丈夫です。<span class="marker-conclusion">自治体で出せる物、持ち込める物、屋内から運び出してもらう物</span>を分けておくと、見積もりで聞かれる内容がはっきりします。</p>
         </div>
         <div class="top-trust-actions" aria-label="地域確認導線">
           <a class="main" href="#areas-bottom">作業場所の地域を選ぶ</a>
@@ -413,9 +506,68 @@
         </div>
       </div>
       <div class="trust-mini-grid" aria-label="信頼情報">
-        <article class="trust-mini"><b>公式情報を優先</b><p>自治体公式サイトや広域処理組合など、確認できる情報をもとに整理します。未確認の電話番号、料金、受付時間は本文に作りません。</p></article>
-        <article class="trust-mini"><b>見積もり前に分ける</b><p>粗大ごみで出す物、自己搬入する物、屋内搬出が必要な物を分け、業者へ相談する範囲を見えやすくします。</p></article>
-        <article class="trust-mini"><b>不安が残る場合の確認</b><p>見積書、追加料金条件、作業範囲、写真報告、買取や供養の扱いなど、依頼前に確認したい点を整理します。</p></article>
+        <article class="trust-mini"><b>公式情報を優先</b><p>役所、広域処理組合、清掃センターなどの公式情報をもとに書いています。<span class="marker-warning">確認できない電話番号、料金、受付時間は作って載せません。</span></p></article>
+        <article class="trust-mini"><b>見積もり前に分ける</b><p><span class="marker-step">粗大ごみで出す物、持ち込む物、家の中から運んでもらう物</span>を先に分けると、相談内容がぐっと伝わりやすくなります。</p></article>
+        <article class="trust-mini"><b>掲載基準と停止ルール</b><p>紹介先があるページでも、見積書、追加料金、作業範囲の確認を重視します。<span class="marker-warning">説明のない高額請求などが確認できた場合は、掲載や導線を見直します。</span></p></article>
+      </div>
+    </section>
+
+
+
+
+    <section class="seo-trust" id="site-trust">
+      <div class="wrap">
+        <div class="seo-trust-head">
+          <div class="seo-trust-copy">
+            <span class="label">WHY THIS SITE</span>
+            <h2>地域の片付けで迷う前に、公式情報と見積もり準備を同じ場所で確認できます</h2>
+            <p>遺品整理や生前整理は、最初から業者へ丸投げするより、<span class="marker-conclusion">自治体で確認すること、家族で決めること、業者へ任せること</span>を分けた方が進めやすくなります。このサイトでは、地域ページとコラムをつなげて、相談前の迷いを減らします。</p>
+          </div>
+          <div class="seo-trust-route">
+            <h2>まず進むなら、この3つです</h2>
+            <p>急ぎの退去、遠方からの実家じまい、料金の不安がある場合も、最初に見る場所を絞れます。</p>
+            <div class="seo-route-links">
+              <a href="#areas-bottom">地域ページを見る</a>
+              <a href="#price-guide">料金の目安を見る</a>
+              <a href="#intent-guide">相談前チェックを見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="seo-trust-points" aria-label="このサイトで確認できること">
+          <article class="seo-trust-point">
+            <span>行政確認</span>
+            <h3>自治体で出せるものを先に分ける</h3>
+            <p>粗大ごみ、自己搬入、家電4品目、処理困難物など、地域ページで確認する入口を用意しています。</p>
+          </article>
+          <article class="seo-trust-point">
+            <span>料金理解</span>
+            <h3>費用が変わる理由を間取りだけで判断しない</h3>
+            <p>階段、駐車位置、品目、確認作業、退去期限まで、見積もりで差が出る条件を記事で読めます。</p>
+          </article>
+          <article class="seo-trust-point">
+            <span>家族確認</span>
+            <h3>残す品・供養品・返送品を処分前に止める</h3>
+            <p>写真、手紙、位牌、貴金属、重要書類など、あとで困りやすい品を作業前に分けられます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="section" id="intent-guide">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">GUIDE BY CONCERN</span>
+          <h2>いま困っていることから読む</h2>
+          <p>地域ページを見る前に、まず引っかかっているところから読めます。<span class="marker-conclusion">費用、行政ごみ、家族確認、空き家、供養、遠方対応</span>のどこで迷っているかを分けると、次に確認することが見えやすくなります。</p>
+        </div>
+        <div class="intent-grid">
+          <article class="intent-card"><span class="intent-label">初めて</span><h3>最初に何をすればいいか分からない</h3><p>業者を探す前に、まず探す物、残す物、自治体で出せる物を分けます。</p><ul><li>最初の7日でやること</li><li>捨てる前に探す物</li><li>家族で決めること</li></ul><div class="intent-actions"><a href="/guide/ihinseiri/">遺品整理とは</a><a href="/guide/valuable-search/">探す物を見る</a></div></article>
+          <article class="intent-card"><span class="intent-label">費用</span><h3>料金がどこで変わるか知りたい</h3><p>同じ間取りでも、荷物の量、階段、駐車位置、処理が難しい物、退去期限で金額は変わります。</p><ul><li>費用が上がる条件</li><li>見積書の見方</li><li>写真で伝える場所</li></ul><div class="intent-actions"><a href="/guide/ihinseiri-cost-guide/">費用目安を見る</a><a href="/guide/photo-checklist/">写真チェック</a></div></article>
+          <article class="intent-card"><span class="intent-label">行政ごみ</span><h3>自治体で出す物と業者に頼む物を分けたい</h3><p>粗大ごみ、自己搬入、家電4品目、屋内搬出、大量の家財を分けると、業者へ頼む範囲がはっきりします。</p><ul><li>行政収集で出す物</li><li>自己搬入する物</li><li>業者へ任せる物</li></ul><div class="intent-actions"><a href="/guide/admin-vs-company/">分け方を見る</a><a href="#areas-bottom">地域ルール</a></div></article>
+          <article class="intent-card"><span class="intent-label">家族</span><h3>親族間で揉めたくない</h3><p>代表者、残す品、形見分け、写真共有、処分前に確認する期限を決めておくと、あとで揉めにくくなります。</p><ul><li>形見分け</li><li>処分前確認</li><li>写真共有</li></ul><div class="intent-actions"><a href="/guide/family-meeting-cleanout/">家族確認を見る</a><a href="/guide/memory-guilt-cleanout/">手放せない時</a></div></article>
+          <article class="intent-card"><span class="intent-label">実家・空き家</span><h3>売却・解体前に家を空にしたい</h3><p>権利書、固定資産関係の書類、仏壇、写真、庭、物置、車庫の荷物は、処分品と混ぜずに見ておきます。</p><ul><li>書類探索</li><li>物置・庭</li><li>空き家整理</li></ul><div class="intent-actions"><a href="/guide/jikka-jimai/">実家じまい</a><a href="/guide/akiya-sale-demolition/">売却・解体前</a></div></article>
+          <article class="intent-card"><span class="intent-label">供養・品物</span><h3>仏壇・写真・デジタル遺品に迷う</h3><p>仏壇、写真、手紙、スマホやパソコンは、普通の処分品とは分けて考えます。供養、返送、買取、データ確認を一緒に進めない方が安心です。</p><ul><li>仏壇・神棚</li><li>写真・手紙</li><li>スマホ・PC</li></ul><div class="intent-actions"><a href="/guide/butsudan-kamidana-cleanout/">仏壇・神棚</a><a href="/guide/digital-ihin/">デジタル遺品</a></div></article>
+        </div>
       </div>
     </section>
 
@@ -423,15 +575,93 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">WHAT YOU CAN CHECK</span>
-          <h2>このサイトで確認できること</h2>
-          <p>遺品整理・生前整理を頼む前に、自治体でできることと業者へ任せることを分けて確認できます。</p>
+          <h2>電話する前に分けておくこと</h2>
+          <p>電話や写真見積もりの前に、自治体で出す物、施設へ持ち込む物、業者に運び出してもらう物を分けます。ここが分かれていると、当日の追加作業を減らしやすくなります。</p>
         </div>
         <div class="value-grid">
-          <article class="value-card"><b>自治体で出せる物</b><p>袋に入る生活ごみ、資源ごみ、自分で屋外へ出せる粗大ごみは、まず自治体の分別表と収集日を見ます。退去日が近い場合は、収集日まで待てる物と待てない物を分けると判断しやすくなります。</p></article>
-          <article class="value-card"><b>自己搬入できる物</b><p>車で運べる量なら、清掃工場やクリーンセンターへ持ち込める場合があります。受付日、予約、本人確認、車両条件、持ち込めない品目が地域で違うため、屋内搬出とは別に確認します。</p></article>
-          <article class="value-card"><b>業者へ任せる物</b><p>大型家具、2階からの搬出、分別前の大量家財、物置、庭まわりは人手と車両が必要です。行政収集で考えるより、搬出経路、駐車位置、階段作業を含めて見積もりに出します。</p></article>
-          <article class="value-card"><b>立会いなしの確認</b><p>遠方から進める時は、鍵の受け渡し、処分前写真、探索品、返送品、支払い方法を先に決めます。作業後写真だけでなく、捨てる前に確認したい物の範囲も共有します。</p></article>
-          <article class="value-card"><b>空き家・実家じまい</b><p>売却や解体の前は、権利書、固定資産、保険、契約書、通帳、仏壇、写真を処分品に混ぜないことが大切です。室内だけでなく、物置、庭、車庫、納屋まで確認します。</p></article>
+          <article class="value-card"><b>自治体で出せる物</b><p>袋に入る生活ごみや資源ごみ、自分で外へ出せる粗大ごみは、まず自治体の分別表と収集日を確認します。退去日が近いときは、収集日まで待てる物と待てない物を分けておきます。</p></article>
+          <article class="value-card"><b>自己搬入できる物</b><p>車で運べる量なら、清掃工場やクリーンセンターへ持ち込める地域もあります。受付日、予約、本人確認、車両条件、持ち込めない品目は地域で違うため、屋内搬出とは別に見ておきます。</p></article>
+          <article class="value-card"><b>業者へ任せる物</b><p>大型家具、2階からの搬出、分別前の大量家財、物置や庭まわりは、人手と車両が必要になりやすい部分です。搬出経路、駐車位置、階段の有無まで見積もり時に伝えます。</p></article>
+          <article class="value-card"><b>立会いなしの確認</b><p>遠方から進める場合は、鍵の受け渡し、処分前に確認する写真、探してほしい物、返送する物、支払い方法を先に決めます。作業後の写真だけでなく、捨てる前に見たい物も共有しておきます。</p></article>
+          <article class="value-card"><b>空き家・実家じまい</b><p>売却や解体の前は、権利書、固定資産関係の書類、保険、契約書、通帳、仏壇、写真を処分品に混ぜないようにします。室内だけでなく、物置、庭、車庫、納屋も見ておくと安心です。</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section alt" id="strategy-check">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">SITE GUIDE</span>
+          <h2>業者へ相談する前に、ここだけ先に確認</h2>
+          <p>最初から業者名や金額だけを比べると、何が含まれている見積もりなのか分かりにくくなります。先に地域のルール、家の状況、業者へ頼む範囲を分けると、見積もりの差を見やすくなります。</p>
+        </div>
+        <div class="strategy-grid">
+          <article class="strategy-card"><b>1. 地域の出し方を先に見る</b><p>粗大ごみ、自己搬入、処理施設、家電4品目、収集できない品目は市区町村ごとに違います。地域ページでは、公式情報で確認できる範囲を先にまとめています。</p></article>
+          <article class="strategy-card"><b>2. 自分で出せる物と運び出してもらう物を分ける</b><p>玄関前や指定場所まで出せる物は、行政収集で済む場合があります。タンス、食器棚、ベッド、仏壇、金庫、物置、階段作業は、業者へ頼む作業として分けます。</p></article>
+          <article class="strategy-card"><b>3. 同じ条件で見積もりを比べる</b><p>同じ間取りでも、荷物の量、階数、エレベーター、駐車位置、買取、供養、貴重品探索の有無で金額は変わります。写真と作業範囲をそろえて相談します。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="safe-check">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">TROUBLE PREVENTION</span>
+          <h2>あとで困らないための確認点</h2>
+          <p>安さだけで決める前に、見積書、処分ルート、追加料金、買取や供養の扱いを確認します。ここが曖昧なままだと、当日の追加請求や処分方法の行き違いにつながりやすくなります。</p>
+        </div>
+        <div class="guardrail-grid">
+          <article class="guardrail-card">
+            <h3>見積書で見るところ</h3>
+            <ul>
+              <li>作業人数、車両、搬出階、階段作業、養生の有無</li>
+              <li>処分費、家電リサイクル、買取、供養、探索の扱い</li>
+              <li>追加料金が発生する条件と、キャンセル時の扱い</li>
+            </ul>
+          </article>
+          <article class="guardrail-card">
+            <h3>許可・資格の見方</h3>
+            <ul>
+              <li>古物商許可は買取に関する確認材料です</li>
+              <li>一般廃棄物の収集運搬は自治体ルールの確認が必要です</li>
+              <li>遺品整理士などの資格は、作業姿勢を見る材料として確認します</li>
+            </ul>
+          </article>
+          <article class="guardrail-card">
+            <h3>通常ごみと分ける品目</h3>
+            <ul>
+              <li>テレビ、冷蔵庫、洗濯機、エアコンなど家電4品目</li>
+              <li>パソコン、リチウムイオン電池、消火器、灯油、塗料、農薬</li>
+              <li>金庫、タイヤ、建築廃材、事業系ごみ、仏壇・写真など供養品</li>
+            </ul>
+          </article>
+          <article class="guardrail-card">
+            <h3>立会いなし・遠方対応</h3>
+            <ul>
+              <li>鍵の受け渡し方法、作業前後の写真報告を決める</li>
+              <li>残す品、返送品、探す書類、貴重品探索の範囲を伝える</li>
+              <li>処分前確認が必要な品を、部屋ごとに分けておく</li>
+            </ul>
+          </article>
+        </div>
+        <p class="license-note">自治体公式情報や確認できた事実をもとに、粗大ごみ、自己搬入、屋内搬出、処理困難物を分けて掲載しています。行政手続きや処分可否は、各自治体・処理施設・公式窓口の最新情報を必ず確認してください。</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="use-flow">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">HOW TO USE</span>
+          <h2>相談前の進め方</h2>
+          <p>急いで電話する前に、<span class="marker-step">地域、行政窓口、家財の分け方、写真</span>を順番に見ておくと、自治体で済む物と業者へ頼む物を分けやすくなります。</p>
+        </div>
+        <div class="steps-rail">
+          <article class="step-box"><b>地域を選ぶ</b><p>都道府県、市区町村ページから作業場所を選びます。</p></article>
+          <article class="step-box"><b>行政窓口を見る</b><p>粗大ごみ、持ち込み先、処理困難物、支援制度を確認します。</p></article>
+          <article class="step-box"><b>家財を分ける</b><p>行政収集、自己搬入、業者搬出、保留品に分けます。</p></article>
+          <article class="step-box"><b>写真を用意する</b><p>部屋、収納、階段、駐車位置、物置、仏壇を撮ります。</p></article>
+          <article class="step-box"><b>同じ条件で相談</b><p>作業範囲と追加料金条件をそろえて見積もりを比べます。</p></article>
         </div>
       </div>
     </section>
@@ -440,38 +670,38 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">WHY CHOOSE US</span>
-          <h2>このサイトが選ばれる理由</h2>
-          <p>片付けは、急いで頼むほど「何を頼むのか」があいまいになりがちです。このサイトでは、相談前に迷いやすい点を先にほどいていきます。</p>
+          <h2>見積もり前に迷いやすいことを先に分ける</h2>
+          <p>遺品整理や生前整理では、自治体で出す物、持ち込める物、業者に運び出してもらう物が混ざりがちです。相談前に分けておくと、見積もりに何が含まれているか確認しやすくなります。</p>
         </div>
         <div class="chosen-proof" aria-label="このサイトの確認方針">
-          <span>分かることだけを書く</span>
-          <span>自治体と業者の役割を分ける</span>
-          <span>作業場所から確認できる</span>
+          <span>公式情報で確認した内容を優先</span>
+          <span>行政収集・持ち込み・屋内搬出を分けて確認</span>
+          <span>市区町村ページから粗大ごみ・持ち込み先へ進める</span>
         </div>
         <div class="chosen-grid strong">
           <article class="chosen-card" data-label="地域別">
-            <h3>地域ごとの違いを先に見られる</h3>
-            <p>粗大ごみの予約、持ち込み先、収集できない物は市区町村で変わります。作業場所のページから、<strong class="red">まず見るべき自治体情報</strong>へ進めます。</p>
+            <h3>地域ごとの違いを先に確認できる</h3>
+            <p>粗大ごみの予約、持ち込み先、収集できない物は市区町村で変わります。作業場所のページで、<strong class="red">最初に見る自治体情報</strong>を確認します。</p>
           </article>
           <article class="chosen-card" data-label="分け方">
-            <h3>自分でできることが分かる</h3>
+            <h3>自治体で出せる物を先に抜き出す</h3>
             <p>袋に入るごみ、資源ごみ、少量の粗大ごみは自治体で済む場合があります。大型家具、階段作業、物置や庭まわりは、<strong>業者へ任せる範囲</strong>として分けて考えます。</p>
           </article>
           <article class="chosen-card" data-label="費用">
-            <h3>金額が変わる理由が見える</h3>
+            <h3>金額が変わる理由を見ておく</h3>
             <p>同じ1Kでも、荷物の量、階段、駐車位置、家電4品目、分別の有無で見積もりは変わります。安い・高いだけでなく、<strong class="red">どこで差が出るか</strong>を見られます。</p>
           </article>
           <article class="chosen-card" data-label="探す物">
-            <h3>捨てる前に探す物が分かる</h3>
-            <p>通帳、印鑑、権利書、保険証券、鍵、写真、手紙は、片付け中に紛れやすい物です。先に探す物を決めて、<strong>処分品に混ぜない</strong>ようにします。</p>
+            <h3>捨てる前に探す物を決めておく</h3>
+            <p>通帳、印鑑、権利書、保険証券、鍵、写真、手紙は、片付け中に紛れやすい物です。先に探す物を決めて、<span class="marker-warning">処分品に混ぜない</span>ようにします。</p>
           </article>
           <article class="chosen-card" data-label="遠方">
-            <h3>遠方からの片付けも整理できる</h3>
-            <p>現地へ何度も行けない時は、鍵、写真報告、返送品、支払い方法を先に決めます。立会いなしで進める前に、<strong class="red">止まりやすい確認点</strong>を整理できます。</p>
+            <h3>遠方からでも段取りを組める</h3>
+            <p>現地へ何度も行けない時は、鍵、写真報告、返送品、支払い方法を先に決めます。立会いなしで進める場合は、<strong class="red">作業前に止まりやすい判断</strong>を家族と業者でそろえます。</p>
           </article>
           <article class="chosen-card" data-label="方針">
-            <h3>それらしい情報で埋めない</h3>
-            <p>電話番号、料金、受付時間、施設名は、確認できる情報を優先します。分からないことを断言せず、<strong>次にどこを見るか</strong>が分かる形にします。</p>
+            <h3>確認できない情報で埋めない</h3>
+            <p>電話番号、料金、受付時間、施設名は、自治体公式ページや処理施設の案内で確認できる内容を優先します。確認できない料金や条件は作らず、相談時に見るべき窓口を残します。</p>
           </article>
         </div>
       </div>
@@ -481,8 +711,8 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">COMMON CASES</span>
-          <h2>よくある相談場面</h2>
-          <p>実績を作って見せるのではなく、相談前に起こりやすい場面を整理しています。</p>
+          <h2>よくある相談の場面</h2>
+          <p>退去前の片付け、施設入居前の生前整理、相続後の実家じまい、遠方からの立会いなし作業など、実際に相談前で止まりやすい場面をまとめています。</p>
         </div>
         <div class="scenario-grid">
           <article class="scenario-card"><h3>賃貸退去前の1K整理</h3><p>退去日と鍵返却が決まっている部屋では、粗大ごみ収集日を待てないことがあります。ベッド、冷蔵庫、洗濯機、机、布団を行政で出す物と屋内搬出が必要な物に分け、管理会社の立会い時間も確認します。</p></article>
@@ -497,8 +727,8 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">LOCAL RULES</span>
-          <h2>地域ページを見る理由</h2>
-          <p>片付けの作業内容が同じでも、粗大ごみの予約、持ち込み施設、福祉相談、空き家相談は市区町村で違います。作業場所のページを先に見ると、行政で済むことと業者へ任せることを分けやすくなります。</p>
+          <h2>地域ページで先に見ること</h2>
+          <p>同じ片付けでも、粗大ごみの予約、持ち込み施設、福祉相談、空き家相談は市区町村で違います。作業場所のページを先に見ると、自治体へ確認することと業者へ頼むことを分けやすくなります。</p>
         </div>
         <div class="reason-panel">
           <ul class="reason-list">
@@ -516,12 +746,12 @@
         <div class="section-head">
           <span class="label">GUIDE BY PURPOSE</span>
           <h2>目的から探す</h2>
-          <p>遺品整理、生前整理、実家じまいなど、相談内容に近い入口から確認できます。</p>
+          <p>遺品整理、生前整理、実家じまい、空き家整理など、いまの状況に近い入口から読めます。</p>
         </div>
         <div class="cards">
           <article class="service-card">
             <h3>遺品整理とは</h3>
-            <p>通帳、印鑑、権利書、写真、形見分け品を処分品に混ぜないために、最初に確認する順番をまとめています。</p>
+            <p>通帳、印鑑、権利書、写真、形見分け品を処分品に混ぜないために、最初に探す場所と残す物を決めます。</p>
             <div class="purpose-tags"><span>貴重品探索</span><span>形見分け</span><span>供養品</span><span>家財搬出</span></div>
             <a class="card-link" href="/guide/ihinseiri/">詳しく見る</a>
           </article>
@@ -559,12 +789,106 @@
       </div>
     </section>
 
+
+    <section class="section" id="sorting-detail">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">BEFORE ESTIMATE</span>
+          <h2>見積もり前に、ここまで分けておくと話が早いです</h2>
+          <p>家の中を全部片付ける相談でも、実際には「残す」「探す」「行政で出す」「業者へ任せる」「処分前に確認する」に分かれます。ここを先に決めておくと、見積もりの説明が短くなり、当日の判断ミスも減ります。</p>
+        </div>
+        <table class="wide-check-table">
+          <tr><th>残すもの</th><td>通帳、権利書、保険証券、印鑑、契約書、写真、手紙、形見分け予定品、本人が使う薬や介護用品。段ボールや袋で「残す」と分かるように分けます。</td></tr>
+          <tr><th>探してほしいもの</th><td>現金、貴金属、年金・保険関係書類、不動産書類、車の書類、鍵、スマートフォン、パソコン、暗号資産やネット銀行の手がかり。探索場所を押入れ、引き出し、仏壇まわりなど具体的に伝えます。</td></tr>
+          <tr><th>行政で出すもの</th><td>少量で自力搬出できる家具、布団、小型家電、衣類、資源ごみなど。地域ページで粗大ごみ受付、処理券、点数制限、排出場所、収集日を確認します。</td></tr>
+          <tr><th>業者へ任せるもの</th><td>屋内搬出が必要なタンス、食器棚、ベッド、冷蔵庫まわり、仏壇、金庫、物置、庭まわり、大量の生活用品。階段、エレベーター、駐車位置、養生の要否も一緒に伝えます。</td></tr>
+          <tr><th>別確認するもの</th><td>家電4品目、パソコン、リチウムイオン電池、消火器、灯油、塗料、農薬、タイヤ、建築廃材、事業系ごみ、供養希望品。普通ごみや粗大ごみに混ぜず、公式窓口や専門回収を確認します。</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section alt" id="estimate-depth">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">ESTIMATE DEPTH</span>
+          <h2>費用が変わる理由を、間取りだけで判断しない</h2>
+          <p>料金表は入口として便利ですが、最終金額は部屋数だけでは決まりません。家財量、搬出条件、処分品、確認作業の有無を同じ条件で伝えると、比較しやすくなります。</p>
+        </div>
+        <div class="deep-grid">
+          <article class="deep-card">
+            <h3>搬出条件で変わるもの</h3>
+            <ul>
+              <li>エレベーターなし、階段幅が狭い、曲がり角が多い</li>
+              <li>建物前に車両を停められない、台車移動が長い</li>
+              <li>管理会社への届出、共用部養生、搬出時間の制限がある</li>
+            </ul>
+          <p><a class="card-link" href="/guide/carry-out-condition-cost/">詳しく見る</a></p></article>
+          <article class="deep-card">
+            <h3>品目で変わるもの</h3>
+            <ul>
+              <li>大型家具、スプリングマットレス、金庫、仏壇、ピアノ</li>
+              <li>家電4品目、パソコン、バッテリー、危険物、液体類</li>
+              <li>物置、庭木、倉庫、車庫、農具、工具、屋外用品</li>
+            </ul>
+          <p><a class="card-link" href="/guide/item-cost-factor/">詳しく見る</a></p></article>
+          <article class="deep-card">
+            <h3>確認作業で変わるもの</h3>
+            <ul>
+              <li>通帳や権利書などの貴重品探索</li>
+              <li>形見分け、返送品、供養品、買取候補の仕分け</li>
+              <li>処分前確認、写真報告、遠方家族とのオンライン確認</li>
+            </ul>
+          <p><a class="card-link" href="/guide/confirmation-work-cost/">詳しく見る</a></p></article>
+          <article class="deep-card">
+            <h3>日程で変わるもの</h3>
+            <ul>
+              <li>退去期限が近い、鍵返却日が決まっている</li>
+              <li>土日祝、早朝・夕方、管理規約で搬出時間が限られる</li>
+              <li>行政収集日まで待てず、短期間で搬出する必要がある</li>
+            </ul>
+          <p><a class="card-link" href="/guide/schedule-cost-factor/">詳しく見る</a></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="photo-estimate-depth">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">PHOTO ESTIMATE</span>
+          <h2>写真見積もりで送るとよい場所</h2>
+          <p>写真が少ないと、当日になって「聞いていない作業」が出やすくなります。部屋の量だけでなく、搬出経路と建物まわりまで撮っておくと、人数・車両・時間を判断しやすくなります。</p>
+        </div>
+        <div class="signal-grid">
+          <article class="signal-card"><b>室内</b><p>各部屋を入口から全体で撮り、押入れ、クローゼット、食器棚、冷蔵庫まわり、仏壇、金庫、床に積んだ荷物も撮ります。</p></article>
+          <article class="signal-card"><b>搬出経路</b><p>玄関、廊下、階段、エレベーター、曲がり角、段差、共用廊下を撮ります。家具が通る幅が分かる写真があると安全です。</p></article>
+          <article class="signal-card"><b>建物外</b><p>建物入口、前面道路、駐車位置、トラックを停められる場所、ごみ置き場、物置、庭、車庫を撮ります。</p></article>
+        </div>
+        <p class="family-note">遠方から依頼する場合は、写真に加えて「残す品」「探す品」「返送する品」「処分前に確認する品」を先に共有してください。業者任せにしすぎず、判断が必要なものだけ家族で決めておくと作業が止まりにくくなります。</p>
+      </div>
+    </section>
+
+    <section class="section alt" id="family-meeting">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="label">FAMILY MEETING</span>
+          <h2>家族で先に決めておきたいこと</h2>
+          <p>遺品整理は、作業そのものより「誰が何を判断するか」で止まりやすいです。相談前に決めることを減らしておくと、見積もりも作業日も進めやすくなります。</p>
+        </div>
+        <div class="deep-grid">
+          <article class="deep-card"><h3>残す・返す・送る</h3><p>写真、手紙、アルバム、記念品、位牌、貴金属、重要書類は処分前に確認します。遠方家族へ送るものは、送り先と梱包方法も決めます。</p><p><a class="card-link" href="/guide/keep-return-send-items/">詳しく見る</a></p></article>
+          <article class="deep-card"><h3>供養・お焚き上げ</h3><p><span class="marker-kuyo">仏壇、遺影、位牌、神棚、人形、写真などは、処分品と混ぜずに供養希望品として分けます。</span>宗派や家族の意向がある場合は先に伝えます。</p><p><a class="card-link" href="/guide/memorial-service-items/">詳しく見る</a></p></article>
+          <article class="deep-card"><h3>買取・査定</h3><p>家具、家電、骨董品、着物、工具、趣味用品などは買取候補としてまとめます。古物商許可は買取の確認材料で、一般ごみ回収の許可とは別に見ます。</p><p><a class="card-link" href="/guide/purchase-appraisal-items/">詳しく見る</a></p></article>
+          <article class="deep-card"><h3>鍵と立会い</h3><p>鍵の受け渡し、管理会社への連絡、作業前後の写真報告、当日の連絡先、支払い方法を決めます。賃貸退去では鍵返却時間も確認します。</p><p><a class="card-link" href="/guide/key-handover-attendance/">詳しく見る</a></p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section alt" id="price-guide">
       <div class="wrap">
         <div class="section-head">
           <span class="label">PRICE GUIDE</span>
           <h2>間取り別の費用目安</h2>
-          <p>料金は、部屋の広さだけでなく、家財量、階段作業、駐車位置、分別状況、家電4品目や処理困難物の有無で変わります。まずは間取りごとの目安、作業時間、作業人数を見て、写真見積もりの準備に進んでください。</p>
+          <p>料金は、部屋の広さだけでは決まりません。荷物の量、階段作業、駐車位置、分別状況、家電4品目や処理が難しい物の有無で変わります。まずは間取りごとの目安を見て、写真見積もりの準備に進んでください。</p>
         </div>
         <div class="price-table-wrap">
           <table class="price-detail-table">
@@ -643,7 +967,7 @@
           <article class="price-factor"><b>見積もり前の写真</b><p>部屋全体、収納、階段、エレベーター、建物前道路、駐車位置、仏壇、物置を撮ります。</p></article>
           <article class="price-factor"><b>別確認にする物</b><p>テレビ、冷蔵庫、洗濯機、エアコン、消火器、灯油、塗料、金庫、農薬、事業系ごみ。</p></article>
         </div>
-        <p class="price-mini-note">料金は「間取り」よりも、家財量・搬出条件・処理できない品目・退去期限で変わります。表の金額だけで判断せず、写真と作業範囲をそろえて比較してください。</p>
+        <p class="price-mini-note">料金は「間取り」だけでは決まりません。家財量、搬出条件、処理が難しい品目、退去期限で変わります。<span class="marker-warning">表の金額だけで決めず</span>、写真と作業範囲をそろえて比較してください。</p>
         <p><a class="card-link" href="/guide/estimate-trouble-check/">見積もりで揉めない確認事項を見る</a></p>
       </div>
     </section>
@@ -653,8 +977,8 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">FIRST STEP</span>
-          <h2>実際に確認する順番</h2>
-          <p>いきなり業者を探すより、先に自治体で出せる物と業者へ任せる物を分けると見積もりが安定します。</p>
+          <h2>実際に進める順番</h2>
+          <p>いきなり業者を探すより、先に自治体で出せる物と業者へ頼む物を分けると、見積もりの話が進めやすくなります。</p>
         </div>
         <div class="flow-grid">
           <article class="flow-card" data-step="1">
@@ -677,7 +1001,7 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">PICK UP</span>
-          <h2>相談前に見ておきたい確認ポイント</h2>
+          <h2>相談前に見ておきたい記事</h2>
         </div>
         <div class="pickup-grid">
           <article class="pickup-card"><h3>行政ごみと業者作業を分ける</h3><p>袋に入る生活ごみ、自治体の粗大ごみ、自己搬入できる物、屋内搬出が必要な物を分けます。最初にここを分けると、見積もりで「何を頼むのか」がはっきりします。</p><a class="card-link" href="/guide/admin-vs-company/">詳しく見る</a></article>
@@ -691,13 +1015,13 @@
       <div class="wrap">
         <div class="section-head">
           <span class="label">TRUST</span>
-          <h2>安心して相談するための確認体制</h2>
-          <p>遺品整理・生前整理は、料金や作業範囲の不安が残りやすい相談です。運営者情報、掲載基準、トラブル時の確認窓口をまとめ、相談前に確認できるようにしています。</p>
+          <h2>安心して相談するために見せていること</h2>
+          <p>遺品整理・生前整理は、料金や作業範囲が分かりにくい相談です。このサイトでは、運営者、掲載基準、紹介導線の考え方、問題が起きた時の対応を見える形にしています。</p>
         </div>
         <div class="proof-grid">
           <article class="proof-card">
             <b>運営者・情報確認の方針</b>
-            <p>本サイトは、遺品整理・生前整理.jp運営事務局が、地域ごとの行政ごみ、持ち込み先、見積もり前の確認点を整理しています。自治体公式サイト、広域処理組合、統計資料などの公的情報を優先し、電話番号・料金・受付時間は確認できたものだけ掲載します。</p>
+            <p>遺品整理・生前整理.jp運営事務局では、地域ごとの粗大ごみ、自己搬入先、行政窓口、高齢者支援、空き家相談、業者へ伝える内容を確認しています。自治体公式サイト、広域処理組合、統計資料などの公的情報を優先し、電話番号・料金・受付時間は確認できたものだけ掲載します。</p>
             <p class="proof-link"><a href="/operator/">運営者情報を見る</a></p>
           </article>
           <article class="proof-card">
@@ -706,9 +1030,9 @@
             <p class="proof-link"><a href="/operator/">監修・編集方針を見る</a></p>
           </article>
           <article class="proof-card">
-            <b>掲載停止・相談窓口</b>
-            <p>紹介先で、事前説明のない高額追加請求、見積書と異なる請求、作業内容の重大な説明不足が確認された場合は、掲載継続を見直します。見積書、請求書、作業前後の写真などを確認し、必要に応じて紹介導線を停止します。</p>
-            <p class="proof-link"><a href="/disclaimer/">トラブル時の確認事項を見る</a></p>
+            <b>掲載基準・掲載停止ルール</b>
+            <p>紹介先や相談導線は、見積書の内訳、追加料金条件、作業範囲、写真報告、買取・供養の扱いを確認する前提で整理します。事前説明のない高額追加請求、見積書と異なる請求、重大な説明不足が確認された場合は、利用者からの申告、見積書、請求書、作業前後の写真を確認し、必要に応じて掲載や紹介導線を停止します。</p>
+            <p class="proof-link"><a href="/operator/">掲載基準を確認する</a></p>
           </article>
         </div>
       </div>
@@ -717,17 +1041,57 @@
     <section class="section alt" id="columns">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">COLUMN</p>
-          <h2>専門コラム・お役立ち記事</h2>
-          <p>地域ページだけでは拾いきれない、相続、家電、退去、施設入居、重要書類の確認をテーマ別に整理しています。</p>
+          <span class="label">COLUMN</span>
+          <h2>相談前に読んでおくと役立つコラム</h2>
+          <p>見積もり、電池や危険物、相続放棄、重要書類、デジタル遺品など、片付けを始めてから困りやすいテーマを先に読めます。</p>
         </div>
         <div class="guide-grid">
-          <article class="guide-card"><h3>デジタル遺品と暗号資産</h3><p>スマホやパソコンは、写真や連絡先だけでなく、ネット銀行、証券口座、暗号資産、サブスク契約の手掛かりになります。処分や初期化の前に、端末、パスワードメモ、認証アプリ、紙の請求書を分けて確認します。</p><p>ログインや資産確認を誰が行うか、業者へ頼める範囲と頼まない方がよい範囲まで整理しています。</p><a class="card-link" href="/guide/digital-ihin/">詳しく見る</a></article>
-          <article class="guide-card"><h3>相続放棄と遺品整理</h3><p>相続放棄を考えている時は、急いで片付けたい場合でも、家財の売却、買取、形見分けを自己判断で進めない方が安全です。借金、督促状、契約書、通帳、貴金属、車、骨董品などは処分前に保留します。</p><p>衛生上どうしても片付ける物と、専門家へ確認する物を分けるための記事です。</p><a class="card-link" href="/guide/souzoku-houki-cleanout/">詳しく見る</a></article>
-          <article class="guide-card"><h3>仏壇・写真・人形の供養</h3><p>仏壇、位牌、遺影、過去帳、写真、手紙、人形は、作業前に家族で扱いを決めたい物です。残す物、親族へ返送する物、供養する物、処分する物を混ぜないように分けます。</p><p>買取に回す物と供養品を分ける考え方もまとめています。</p><a class="card-link" href="/guide/kuyo-kaitori/">詳しく見る</a></article>
-          <article class="guide-card"><h3>家電4品目と処理困難物</h3><p>テレビ、エアコン、冷蔵庫、洗濯機は、自治体の粗大ごみと別確認になることがあります。消火器、灯油、塗料、農薬、バッテリー、金庫なども通常ごみに混ぜない方がよい品目です。</p><p>見積もり前に撮る写真、伝える数量、設置場所の確認を整理します。</p><a class="card-link" href="/guide/recycle-appliances/">詳しく見る</a></article>
-          <article class="guide-card"><h3>賃貸退去前の片付け</h3><p>退去日と鍵返却が決まっている部屋では、粗大ごみ収集日を待てないことがあります。1Kでも、冷蔵庫、洗濯機、ベッド、机、布団、階段作業、エレベーター予約で金額差が出ます。</p><p>管理会社の立会い、原状回復、残せない物の確認までまとめます。</p><a class="card-link" href="/guide/rental-moveout-cleanout/">詳しく見る</a></article>
-          <article class="guide-card"><h3>施設入居前の生前整理</h3><p>施設入居前は、持ち込める量が限られます。衣類、薬、診察券、保険証、介護用品、眼鏡、補聴器、写真など、本人の生活に必要な物を先に分けます。</p><p>家族が預かる物、本人に確認する物、処分を保留する物まで整理します。</p><a class="card-link" href="/guide/facility-move-seiri/">詳しく見る</a></article>
+          <article class="guide-card">
+            <h3>遺品整理の相見積もりで見るべきこと</h3>
+            <p>安い・高いだけで比べず、写真、作業範囲、階段、駐車位置、供養、返送品、追加費用の条件をそろえて確認します。</p>
+            <a class="card-link" href="/guide/quote-comparison-check/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>退去日・売却日が近い時の片付け優先順位</h3>
+            <p>期限が迫っている片付けで、先に探す書類、残す品、行政収集で間に合う物、業者へ任せる物を分けます。</p>
+            <a class="card-link" href="/guide/urgent-cleanout-plan/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>リチウムイオン電池・モバイルバッテリーの処分方法</h3>
+            <p>モバイルバッテリー、電動工具のバッテリー、古いパソコン、ワイヤレスイヤホンは、普通ごみや粗大ごみに混ぜる前に別確認します。</p>
+            <p>端子の絶縁、JBRC回収対象、膨張・破損品、自治体やメーカーへ確認する場面を整理します。</p>
+            <a class="card-link" href="/guide/lithium-battery-disposal/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>見積もりで揉めない確認事項</h3>
+            <p>一式料金、追加費用、キャンセル料、買取、供養、返送品の扱いは、口頭だけで決めると後で食い違いやすい部分です。</p>
+            <p>見積書で見ておきたい項目と、作業前に写真で残す内容をまとめています。</p>
+            <a class="card-link" href="/guide/estimate-trouble-check/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>相続放棄を考えている時の遺品整理</h3>
+            <p>相続放棄を検討している時は、家財の売却、買取、形見分けを自己判断で進めない方が安全です。</p>
+            <p>借金、督促状、通帳、契約書、貴金属、車など、処分前に保留したい物を整理します。</p>
+            <a class="card-link" href="/guide/souzoku-houki-cleanout/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>貴重品・重要書類を探す場所</h3>
+            <p>通帳、印鑑、権利書、保険証券、年金書類、鍵、写真、手紙は、片付け前に探す場所を決めておくと見落としを減らせます。</p>
+            <p>押入れ、仏壇まわり、机、金庫、バッグ、書類棚など、確認したい場所をまとめています。</p>
+            <a class="card-link" href="/guide/valuable-search/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>遺品整理業者とのトラブルを避ける確認手順</h3>
+            <p>高額請求、当日追加、キャンセル、処分方法の説明不足を避けるために、依頼前・作業当日・請求後で見る点を分けます。</p>
+            <p>安さだけで選ぶ前に、会社情報、作業範囲、追加料金条件、写真報告の有無を確認します。</p>
+            <a class="card-link" href="/guide/ihinseiri-trouble-response/">詳しく見る</a>
+          </article>
+          <article class="guide-card">
+            <h3>デジタル遺品と暗号資産</h3>
+            <p>スマホやパソコンには、写真、連絡先、ネット銀行、証券口座、暗号資産、サブスク契約の手掛かりが残ります。</p>
+            <p>初期化や処分の前に、端末、パスワードメモ、認証アプリ、紙の請求書を分けて確認します。</p>
+            <a class="card-link" href="/guide/digital-ihin/">詳しく見る</a>
+          </article>
         </div>
         <div class="columns-more"><a class="btn secondary" href="/guide/">MORE</a></div>
       </div>
@@ -740,9 +1104,21 @@
           <h2>よくある質問</h2>
         </div>
         <div class="faq">
-          <details><summary>市区町村ページでは何を確認できますか？</summary><p>住宅条件、行政ごみ、持ち込み先、見積もり前チェック、空き家整理の注意点を地域別に確認できます。</p></details>
+
+          <details><summary>このサイトは何を確認するためのサイトですか？</summary><p>遺品整理や生前整理を頼む前に、地域の行政ルール、料金が変わる条件、写真見積もりで伝えること、家族で決めることを整理するためのサイトです。地域ページでは自治体確認、コラムでは見積もり前の判断材料を確認できます。</p></details>
+          <details><summary>自治体公式情報はどこで確認すればいいですか？</summary><p>各地域ページの行政窓口、粗大ごみ、自己搬入、空き家・住まい相談の欄に公式リンクを載せています。制度名、受付日、料金、対象品目は変わることがあるため、作業日を決める前に公式ページで最新条件を確認してください。</p></details>
+
+          <details><summary>市区町村ページで見る内容は？</summary><p>地域ページでは、役所窓口、粗大ごみ・大型ごみ、自己搬入先、処理困難物、高齢者支援、空き家相談、見積もり前に業者へ伝える内容を確認します。</p></details>
           <details><summary>立会いなしでも相談できますか？</summary><p>鍵の受け渡し、写真報告、オンライン確認、返送品の扱いを決めれば、遠方家族でも進めやすくなります。</p></details>
           <details><summary>行政ごみと業者作業はどう分けますか？</summary><p>少量で自力搬出できる物は行政、大型家具の屋内搬出や大量家財、供養品、貴重品探索は業者作業として分けます。</p></details>
+
+          <details><summary>安い業者を選べば大丈夫ですか？</summary><p>金額だけでは判断しない方が安全です。作業人数、搬出階、車両、処分費、家電リサイクル、追加料金の条件、買取や供養の扱いを見積書で確認してください。</p></details>
+          <details><summary>古物商許可があれば不用品をすべて回収できますか？</summary><p>古物商許可は買取に関する確認材料です。家庭ごみや粗大ごみの収集運搬は自治体ルールと別に確認が必要です。行政収集、自己搬入、業者作業を分けて相談してください。</p></details>
+          <details><summary>家電4品目やパソコンは粗大ごみで出せますか？</summary><p>テレビ、冷蔵庫、洗濯機、エアコンなどの家電4品目、パソコン、リチウムイオン電池、消火器、灯油、塗料などは通常ごみと別確認になることが多い品目です。地域ページと公式窓口で扱いを確認します。</p></details>
+
+          <details><summary>写真見積もりでは何を撮ればいいですか？</summary><p>各部屋の全体、収納の中、玄関、廊下、階段、エレベーター、建物入口、駐車位置、物置、庭、仏壇、金庫を撮ると、作業量と搬出条件を伝えやすくなります。</p></details>
+          <details><summary>家族で先に決めることはありますか？</summary><p>残す品、探す書類、形見分け、返送品、供養品、買取候補、処分前確認が必要な品を決めます。判断者と連絡方法を決めておくと、作業当日に迷いにくくなります。</p></details>
+          <details><summary>退去期限が近い場合はどう進めますか？</summary><p>行政収集で間に合うもの、自己搬入を検討するもの、業者が屋内搬出するものを先に分けます。鍵返却日、管理会社の搬出ルール、駐車位置、エレベーター予約も同時に確認してください。</p></details>
         </div>
       </div>
     </section>
@@ -752,7 +1128,7 @@
         <div class="section-head">
           <span class="label">AREA SEARCH</span>
           <h2>都道府県から探す</h2>
-          <p>各都道府県の遺品整理・生前整理ページへ進めます。作業場所の地域を選んで、行政ごみ、持ち込み先、見積もり前チェックを確認してください。</p>
+
         </div>
         <div class="area-directory-card">
           <div>
@@ -773,8 +1149,8 @@
               <div class="city-links"><a href="/hokkaido/sapporo/">札幌市</a><a href="/kanagawa/yokohama/">横浜市</a><a href="/kanagawa/kawasaki/">川崎市</a><a href="/saitama/saitama/">さいたま市</a><a href="/chiba/chiba/">千葉市</a><a href="/aichi/nagoya/">名古屋市</a><a href="/kyoto/kyoto/">京都市</a><a href="/osaka/">大阪府</a><a href="/osaka/sakai/">堺市</a><a href="/hyogo/kobe/">神戸市</a><a href="/okayama/okayama/">岡山市</a><a href="/hiroshima/hiroshima/">広島市</a><a href="/fukuoka/fukuoka/">福岡市</a><a href="/kumamoto/kumamoto/">熊本市</a></div>
             </div>
             <div class="city-block">
-              <h3>よく検索されるエリア</h3>
-              <div class="city-links"><a href="/tokyo/setagaya/">世田谷区</a><a href="/tokyo/nerima/">練馬区</a><a href="/tokyo/ota/">大田区</a><a href="/tokyo/adachi/">足立区</a><a href="/tokyo/edogawa/">江戸川区</a><a href="/tokyo/suginami/">杉並区</a><a href="/tokyo/itabashi/">板橋区</a><a href="/tokyo/koto/">江東区</a><a href="/tokyo/katsushika/">葛飾区</a><a href="/tokyo/shinagawa/">品川区</a><a href="/tokyo/minato/">港区</a><a href="/tokyo/shinjuku/">新宿区</a><a href="/tokyo/chuo/">中央区</a><a href="/tokyo/shibuya/">渋谷区</a><a href="/tokyo/meguro/">目黒区</a><a href="/tokyo/toshima/">豊島区</a></div>
+              <h3>よく調べられる地域</h3>
+              <div class="city-links"><a href="/kanagawa/yokohama/">横浜市</a><a href="/aichi/nagoya/">名古屋市</a><a href="/hokkaido/sapporo/">札幌市</a><a href="/fukuoka/fukuoka/">福岡市</a><a href="/kanagawa/kawasaki/">川崎市</a><a href="/hyogo/kobe/">神戸市</a><a href="/kyoto/kyoto/">京都市</a><a href="/saitama/saitama/">さいたま市</a><a href="/hiroshima/hiroshima/">広島市</a><a href="/miyagi/sendai/">仙台市</a><a href="/fukuoka/kitakyushu/">北九州市</a><a href="/chiba/chiba/">千葉市</a><a href="/osaka/sakai/">堺市</a><a href="/niigata/niigata/">新潟市</a><a href="/shizuoka/hamamatsu/">浜松市</a><a href="/kumamoto/kumamoto/">熊本市</a></div>
             </div>
           </div>
         </div>
@@ -792,7 +1168,6 @@
         <a href="/guide/ihinseiri/">遺品整理とは</a>
         <a href="/guide/">ガイド記事</a>
       </div>
-      <small>このTOPは構成テスト版です。元のTOPはバックアップから戻せます。</small>
     </div>
   </footer>
   <script>
@@ -818,5 +1193,97 @@
       resizeMap();
     })();
   </script>
+
+  <script type="application/ld+json" id="top-website-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "遺品整理・生前整理.jp",
+    "url": "https://www.ihinseiri-seizenseiri.jp/",
+    "description": "遺品整理・生前整理を相談する前に、全国の地域別に行政ごみ、粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載しています。",
+    "inLanguage": "ja"
+  }
+  </script>
+  <script type="application/ld+json" id="top-faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "市区町村ページで見る内容は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "地域ページでは、役所窓口、粗大ごみ・大型ごみ、自己搬入先、処理困難物、高齢者支援、空き家相談、見積もり前に業者へ伝える内容を確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "立会いなしでも相談できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "鍵の受け渡し、写真報告、オンライン確認、返送品の扱いを決めれば、遠方家族でも進めやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "行政ごみと業者作業はどう分けますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "少量で自力搬出できる物は行政、重い家具の屋内搬出、大量家財、仏壇、貴重品探索は業者作業として分けます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "安い業者を選べば大丈夫ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "金額だけでは判断しない方が安全です。作業人数、搬出階、車両、処分費、家電リサイクル、追加料金の条件、買取や供養の扱いを見積書で確認してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "古物商許可があれば不用品をすべて回収できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "古物商許可は買取に関する確認材料です。家庭ごみや粗大ごみの収集運搬は自治体ルールと別に確認が必要です。行政収集、自己搬入、業者作業を分けて相談してください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家電4品目やパソコンは粗大ごみで出せますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "テレビ、冷蔵庫、洗濯機、エアコンなどの家電4品目、パソコン、リチウムイオン電池、消火器、灯油、塗料などは通常ごみと別確認になることが多い品目です。地域ページと公式窓口で扱いを確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "写真見積もりでは何を撮ればいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "各部屋の全体、収納の中、玄関、廊下、階段、エレベーター、建物入口、駐車位置、物置、庭、仏壇、金庫を撮ると、作業量と搬出条件を伝えやすくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家族で先に決めることはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "残す品、探す書類、形見分け、返送品、供養品、買取候補、処分前確認が必要な品を決めます。判断者と連絡方法を決めておくと、作業当日に迷いにくくなります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "退去期限が近い場合はどう進めますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "行政収集で間に合うもの、自己搬入を検討するもの、業者が屋内搬出するものを先に分けます。鍵返却日、管理会社の搬出ルール、駐車位置、エレベーター予約も同時に確認してください。"
+      }
+    }
+  ]
+}
+  </script>
+
 </body>
 </html>

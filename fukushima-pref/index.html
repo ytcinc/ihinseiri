@@ -711,14 +711,56 @@
       text-decoration:underline!important;
     }
   </style>
+
+  <style id="shared-top-header-style">
+    .global-site-header.global-site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:9999!important;background:#fff!important;border-bottom:1px solid #f0ded8!important;box-shadow:0 4px 18px rgba(37,33,29,.04)!important;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;color:#2f2924!important}
+    .global-site-header *{box-sizing:border-box!important;letter-spacing:0!important}
+    html body{padding-top:132px!important}
+    .global-header-head{width:min(1180px,calc(100% - 32px))!important;min-height:74px!important;margin:0 auto!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:22px!important;align-items:center!important}
+    .global-header-nav-wrap{background:#fff!important}
+    .global-header-nav-row{width:min(1180px,calc(100% - 32px))!important;min-height:58px!important;margin:0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important}
+    .global-brand{display:flex!important;align-items:center!important;gap:10px!important;font-weight:900!important;color:#3a312c!important;text-decoration:none!important}
+    .global-brand:hover{text-decoration:none!important}
+    .global-brand-mark{width:46px!important;height:46px!important;display:block!important;object-fit:contain!important;flex:0 0 auto!important}
+    .global-brand>span{display:flex!important;flex-direction:column!important;gap:3px!important;align-items:flex-start!important;justify-content:center!important;line-height:1!important;margin:0!important;padding:0!important}
+    .global-brand-main{display:block!important;font-size:25px!important;line-height:1.08!important;font-weight:900!important;color:#3a312c!important;margin:0!important;padding:0!important}
+    .global-brand-sub{display:block!important;color:#5f5550!important;font-size:12px!important;font-weight:800!important;line-height:1.2!important;margin:0!important;padding:0!important}
+    .global-header-copy{margin:0!important;color:#4f4740!important;font-size:13px!important;font-weight:800!important;line-height:1.75!important;text-align:center!important;white-space:nowrap!important}
+    .global-header-contact{display:flex!important;align-items:center!important;gap:12px!important;justify-content:flex-end!important}
+    .global-header-contact small{display:block!important;color:#6b625b!important;font-size:11px!important;font-weight:800!important;line-height:1.35!important;text-align:right!important}
+    .global-header-contact a{min-height:38px!important;display:grid!important;place-items:center!important;padding:0 14px!important;border-radius:4px!important;background:#ef746f!important;color:#fff!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;text-decoration:none!important;border:0!important}
+    .global-header-nav{display:flex!important;align-items:stretch!important;justify-content:center!important;gap:34px!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important;max-width:100%!important}
+    .global-header-nav a{min-width:132px!important;min-height:58px!important;display:grid!important;place-items:center!important;padding:0 16px!important;color:#2f2925!important;text-align:center!important;border-radius:0!important;text-decoration:none!important;background:transparent!important;border:0!important}
+    .global-header-nav a:hover{background:#fff4ec!important;color:#d95852!important;text-decoration:none!important}
+    @media(max-width:900px){.global-header-head{grid-template-columns:1fr!important;gap:10px!important;padding:12px 0!important;text-align:center!important}.global-brand{justify-content:center!important}.global-header-contact{justify-content:center!important}.global-header-contact small{text-align:center!important}.global-header-nav-wrap{padding:10px 0!important}.global-header-nav-row{width:calc(100vw - 80px)!important;max-width:calc(100vw - 80px)!important}.global-header-nav{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;white-space:normal!important;overflow:visible!important;padding-bottom:4px!important}.global-header-nav a{display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px!important;padding:6px 8px!important;border:1px solid #f0ded8!important;border-radius:3px!important;background:#fff!important;font-size:13px!important;text-align:center!important}}
+    @media(max-width:900px){.global-site-header.global-site-header{position:static!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important}html body{padding-top:0!important}}
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="/"><span><span class="brand-main">遺品整理・生前整理.jp</span><br><span class="brand-sub">全国の地域ページから相談前の情報を確認</span></span></a>
-      <nav class="nav" aria-label="サイト内ナビ"><a href="/">TOP</a><a href="#faq">FAQ</a><a href="#flow">見積もり準備</a></nav>
+  <header class="global-site-header">
+  <div class="global-header-head">
+    <a class="global-brand" href="/">
+      <img class="global-brand-mark" src="/assets/site-logo-hands.png" alt="" aria-hidden="true">
+      <span><span class="global-brand-main">遺品整理・生前整理.jp</span><span class="global-brand-sub">相談前に確認できる全国ガイド</span></span>
+    </a>
+    <p class="global-header-copy">福島県の市の粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載</p>
+    <div class="global-header-contact" aria-label="お問い合わせ案内">
+      <small>相談前の確認や<br>掲載基準はこちら</small>
+      <a href="/operator/">お問い合わせ</a>
     </div>
-  </header>
+  </div>
+  <div class="global-header-nav-wrap">
+    <div class="global-header-nav-row">
+      <nav class="global-header-nav" aria-label="主要メニュー">
+        <a href="/#areas-bottom">地域から探す</a>
+        <a href="/guide/ihinseiri/">遺品整理とは</a>
+        <a href="/#price-guide">費用目安</a>
+        <a href="/guide/">ガイド記事</a>
+        <a href="/operator/">運営者・掲載基準</a>
+      </nav>
+    </div>
+  </div>
+</header>
 
   <section class="hero"><div class="hero-inner"><div><span class="eyebrow">福島県で遺品整理・生前整理を探す</span><h1>福島県の市区町村ページを準備中です</h1><p>福島県内の市区町村ごとに、遺品整理・生前整理の相談前情報を追加していく予定です。現在は大阪府ページを基準に構築しています。</p><div class="hero-actions"><a class="btn primary" href="#prefectures">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#vendor">危ない業者を避ける</a></div></div><aside class="hero-panel"><h2>今後入れる内容</h2><ul><li>市区町村別ページ一覧</li><li>料金目安と作業内容</li><li>行政窓口・粗大ごみ情報</li><li>事例・FAQ・見積もり準備</li></ul></aside></div></section>
 
@@ -855,7 +897,7 @@
 <section class="section"><h2 class="section-title">福島県ページの展開予定</h2><p class="lead">大阪府ページと同じ型で、地域名 + 遺品整理、地域名 + 生前整理の検索意図に合わせて順次拡張します。</p></section>
 <section id="kita-before-after-cases" class="section common-kita-ba">
   <h2 class="section-title">福島県の遺品整理ビフォーアフター事例</h2>
-  <p class="common-ba-lead"><span class="marker">写真で作業前後を確認できる</span>と、どこまで片付くのか、どの程度の荷物量なのかをイメージしやすくなります。見積もり前に仕上がりを判断しやすいよう、福島県の遺品整理のビフォーアフター写真を掲載しています。</p>
+  <p class="common-ba-lead"><span class="marker marker-kuyo">写真で作業前後を確認できる</span>と、どこまで片付くのか、どの程度の荷物量なのかをイメージしやすくなります。見積もり前に仕上がりを判断しやすいよう、福島県の遺品整理のビフォーアフター写真を掲載しています。</p>
   <div class="common-ba-guide" aria-label="ビフォーアフターの見方">
     <span>左が作業前、右が作業後です。</span>
     <span>床・通路・収納の空き具合を確認できます。</span>
@@ -875,8 +917,8 @@
 </section>
 </main>
 
-  
-      
+
+
       <section id="towns" class="section"><p class="section-kicker">対応エリア</p><h2 class="section-title">福島県の市区町村ページを準備中ですの対応エリア</h2>
         <p>福島県の市区町村ページを準備中です全域の遺品整理・生前整理・実家じまいに対応します。町名、駅名、団地名、建物名、階数、駐車位置を見積もり前に共有すると、搬出経路と作業時間を判断しやすくなります。</p>
       </section>
@@ -1273,6 +1315,41 @@
 
 
   <p class="last-updated" data-schema-injected="true">最終更新日：2026-06-25</p>
-</body>
+<style id="semantic-marker-palette">
+  html body .marker,
+  html body mark,
+  html body .mark,
+  html body .marker-conclusion {
+    background: linear-gradient(transparent 56%, rgba(255, 211, 61, .88) 56%) !important;
+    color: inherit !important;
+    font-weight: 900 !important;
+    padding: 0 .04em !important;
+  }
+  html body .marker-warning,
+  html body .mark-warning,
+  html body .red-marker {
+    background: linear-gradient(transparent 56%, rgba(248, 113, 113, .38) 56%) !important;
+    color: #7f1d1d !important;
+    font-weight: 900 !important;
+    padding: 0 .04em !important;
+  }
+  html body .marker-step,
+  html body .mark-step,
+  html body .blue-marker {
+    background: linear-gradient(transparent 56%, rgba(96, 165, 250, .36) 56%) !important;
+    color: #1e3a8a !important;
+    font-weight: 900 !important;
+    padding: 0 .04em !important;
+  }
+  html body .marker-kuyo,
+  html body .marker-emotion,
+  html body .mark-kuyo,
+  html body .orange-marker {
+    background: linear-gradient(transparent 56%, rgba(251, 146, 60, .42) 56%) !important;
+    color: #7c2d12 !important;
+    font-weight: 900 !important;
+    padding: 0 .04em !important;
+  }
+</style></body>
 </html>
 
