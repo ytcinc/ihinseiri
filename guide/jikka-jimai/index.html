@@ -101,6 +101,11 @@ h1{font-size:clamp(2rem,4vw,3.25rem);line-height:1.25;margin:0 0 18px;letter-spa
 .toc ol{margin:0;padding-left:1.2em}
 .toc li{margin:.45em 0;font-size:.92rem;color:#5b5149}
 .toc a{text-decoration:none}
+.article-toc{background:#fff;border:2px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:0;margin:0 0 26px;overflow:hidden}
+.article-toc strong{display:block;background:var(--accent);color:#fff;padding:10px 16px;font-size:1rem}
+.article-toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 22px;margin:0;padding:16px 20px 18px 38px}
+.article-toc li{font-weight:800;color:#4b423a}
+.article-toc a{text-decoration:none;color:#3d342d}
 .reader-guide,.article-section,.precheck,.mid-cta,.related,.region-directory{
   background:#fff;
   border:1px solid var(--line);
@@ -174,7 +179,7 @@ tr:last-child td{border-bottom:0}
 @media (max-width:900px){
   .hero-inner,.layout{grid-template-columns:1fr}
   .side{position:static}
-  .cards,.decision-grid,.precheck-grid,.related-grid{grid-template-columns:1fr}
+  .cards,.decision-grid,.precheck-grid,.related-grid,.article-toc ol{grid-template-columns:1fr}
   .pref-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
   .precheck-download{align-items:flex-start;flex-direction:column}
 }
@@ -268,6 +273,24 @@ tr:last-child td{border-bottom:0}
           <p>実家じまいで失敗しやすいのは、先に物を捨て始めてしまうことです。家を売るのか、解体するのか、しばらく管理するのかで、<span class="blue-marker marker-kuyo">残す設備、外す物、写真で残す物、業者に伝える内容</span>が変わります。</p>
           <p>片付けの前に、<span class="blue-marker marker-kuyo">家の予定、探す書類、残す物、返送する物、処分する物</span>を分けておくと、家族の判断がぶれにくくなります。</p>
         </section>
+
+        <nav class="article-toc" aria-label="本文の目次">
+          <strong>目次</strong>
+          <ol>
+            <li><a href="#basic">実家じまいとは</a></li>
+            <li><a href="#difference">遺品整理・空き家整理との違い</a></li>
+            <li><a href="#timing">始めるタイミング</a></li>
+            <li><a href="#documents">捨てる前に探す書類</a></li>
+            <li><a href="#keepsake">写真・仏壇・形見</a></li>
+            <li><a href="#family">家族で決めること</a></li>
+            <li><a href="#sale">売却前の確認</a></li>
+            <li><a href="#demolition">解体前の確認</a></li>
+            <li><a href="#inheritance">相続後・相続放棄の注意</a></li>
+            <li><a href="#outside">物置・庭・納屋</a></li>
+            <li><a href="#checklist">チェックリスト</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
 
         <section class="article-section" id="basic">
           <h2>実家じまいとは</h2>

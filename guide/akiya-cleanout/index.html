@@ -83,6 +83,11 @@ h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.25;margin:0 0 18px;letter-spac
 .toc ol{margin:0;padding-left:1.2em}
 .toc li{margin:.45em 0;font-size:.92rem;color:#5b5149}
 .toc a{text-decoration:none}
+.article-toc{background:#fff;border:2px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:0;margin:0 0 26px;overflow:hidden}
+.article-toc strong{display:block;background:var(--accent);color:#fff;padding:10px 16px;font-size:1rem}
+.article-toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 22px;margin:0;padding:16px 20px 18px 38px}
+.article-toc li{font-weight:800;color:#4b423a}
+.article-toc a{text-decoration:none;color:#3d342d}
 .reader-guide,.article-section,.precheck,.mid-cta,.related,.region-directory{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:28px;margin-bottom:26px}
 .reader-guide{background:#fffaf2}
 .article-section h2,.reader-guide h2,.precheck h2,.mid-cta h2,.related h2,.region-directory h2{font-size:1.65rem;line-height:1.45;margin:0 0 16px;padding-left:14px;border-left:6px solid var(--accent)}
@@ -132,7 +137,7 @@ tr:last-child td{border-bottom:0}
 .related-card strong{display:block;color:var(--accent-dark);margin-bottom:6px}
 .pref-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:14px}
 .pref-grid a{border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center;text-decoration:none;background:#fff;font-weight:800}
-@media (max-width:900px){.hero-inner,.layout{grid-template-columns:1fr}.side{position:static}.cards,.precheck-grid,.related-grid{grid-template-columns:1fr}.pref-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.precheck-download{align-items:flex-start;flex-direction:column}}
+@media (max-width:900px){.hero-inner,.layout{grid-template-columns:1fr}.side{position:static}.cards,.precheck-grid,.related-grid,.article-toc ol{grid-template-columns:1fr}.pref-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.precheck-download{align-items:flex-start;flex-direction:column}}
 </style>
 
   <style id="shared-top-header-style">
@@ -223,6 +228,24 @@ tr:last-child td{border-bottom:0}
           <p>空き家整理は、片付けの前に目的を決めると失敗しにくくなります。<span class="marker-orange marker-kuyo">売却する、解体する、しばらく管理する、親族が使う、賃貸に出す</span>。目的によって、残す設備、撤去する物、写真で残す物、業者へ伝える内容が変わります。</p>
           <p>特に空き家は、室内よりも<span class="blue-marker marker-conclusion">庭、物置、納屋、車庫、ベランダ、床下、屋外の残置物</span>で作業量が増えやすいです。最初に家全体を一周して、見落としやすい場所を確認します。</p>
         </section>
+
+        <nav class="article-toc" aria-label="本文の目次">
+          <strong>目次</strong>
+          <ol>
+            <li><a href="#basic">空き家整理とは</a></li>
+            <li><a href="#difference">実家じまい・遺品整理との違い</a></li>
+            <li><a href="#timing">始めるタイミング</a></li>
+            <li><a href="#keys">鍵・書類・契約</a></li>
+            <li><a href="#inside">室内と収納の確認</a></li>
+            <li><a href="#outside">庭・物置・納屋・車庫</a></li>
+            <li><a href="#difficult">処理困難物を分ける</a></li>
+            <li><a href="#admin">自治体で出せる物</a></li>
+            <li><a href="#company">業者へ任せる物</a></li>
+            <li><a href="#sale">売却前の確認</a></li>
+            <li><a href="#demolition">解体前の確認</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
 
         <section class="article-section" id="basic">
           <h2>空き家整理とは</h2>

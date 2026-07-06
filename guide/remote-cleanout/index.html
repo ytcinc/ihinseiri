@@ -73,7 +73,7 @@ h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.25;margin:0 0 18px;letter-spac
 .hero-card h2{font-size:1.1rem;margin:0 0 12px}.hero-card ul{margin:0;padding-left:1.2em}.hero-card li{margin:.35em 0}
 .container{max-width:1120px;margin:auto;padding:42px 20px 80px}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 286px;gap:32px;align-items:start}.article{min-width:0}.side{position:sticky;top:86px}
-.toc{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px}.toc strong{display:block;margin-bottom:10px;color:var(--accent-dark)}.toc ol{margin:0;padding-left:1.2em}.toc li{margin:.45em 0;font-size:.92rem;color:#5b5149}.toc a{text-decoration:none}
+.toc{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px}.toc strong{display:block;margin-bottom:10px;color:var(--accent-dark)}.toc ol{margin:0;padding-left:1.2em}.toc li{margin:.45em 0;font-size:.92rem;color:#5b5149}.toc a{text-decoration:none}.article-toc{background:#fff;border:2px solid var(--accent);border-radius:16px;box-shadow:var(--shadow);padding:0;margin:0 0 26px;overflow:hidden}.article-toc strong{display:block;background:var(--accent);color:#fff;padding:10px 16px;font-size:1rem}.article-toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 22px;margin:0;padding:16px 20px 18px 38px}.article-toc li{font-weight:800;color:#4b423a}.article-toc a{text-decoration:none;color:#3d342d}
 .reader-guide,.article-section,.precheck,.mid-cta,.related,.region-directory{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:28px;margin-bottom:26px}
 .reader-guide{background:#fffaf2}
 .article-section h2,.reader-guide h2,.precheck h2,.mid-cta h2,.related h2,.region-directory h2{font-size:1.65rem;line-height:1.45;margin:0 0 16px;padding-left:14px;border-left:6px solid var(--accent)}
@@ -97,7 +97,7 @@ h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.25;margin:0 0 18px;letter-spac
 .mid-cta{background:linear-gradient(135deg,#fff5e8,#fff)}
 .related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.related-card{border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;background:#fff}.related-card strong{display:block;color:var(--accent-dark);margin-bottom:6px}
 .pref-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:14px}.pref-grid a{border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center;text-decoration:none;background:#fff;font-weight:800}
-@media (max-width:900px){.hero-inner,.layout{grid-template-columns:1fr}.side{position:static}.cards,.precheck-grid,.related-grid{grid-template-columns:1fr}.pref-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.precheck-download{align-items:flex-start;flex-direction:column}}
+@media (max-width:900px){.hero-inner,.layout{grid-template-columns:1fr}.side{position:static}.cards,.precheck-grid,.related-grid,.article-toc ol{grid-template-columns:1fr}.pref-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.precheck-download{align-items:flex-start;flex-direction:column}}
 </style>
 
   <style id="shared-top-header-style">
@@ -188,6 +188,24 @@ h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.25;margin:0 0 18px;letter-spac
           <p><span class="marker-orange marker-conclusion">遠方に住んでいる、仕事で現地へ行けない、退去日が近い、施設入居後の部屋を片付けたい</span>。こうした時に立会いなしの片付けを選ぶ人がいます。</p>
           <p>ただし、現地にいない分、<span class="blue-marker marker-kuyo">何を写真で確認するか、何を返送するか、何を処分保留にするか</span>を先に決めます。ここが曖昧だと、作業が止まるか、あとで後悔が残ります。</p>
         </section>
+
+        <nav class="article-toc" aria-label="本文の目次">
+          <strong>目次</strong>
+          <ol>
+            <li><a href="#basic">立会いなしとは</a></li>
+            <li><a href="#suitable">向いているケース</a></li>
+            <li><a href="#risk">先に決めないと困ること</a></li>
+            <li><a href="#key">鍵の受け渡し</a></li>
+            <li><a href="#photo">写真報告の範囲</a></li>
+            <li><a href="#before">処分前確認</a></li>
+            <li><a href="#search">探す物</a></li>
+            <li><a href="#return">返送品の決め方</a></li>
+            <li><a href="#estimate">見積もり前に送る写真</a></li>
+            <li><a href="#checklist">チェックリスト</a></li>
+            <li><a href="#cases">ケース別の進め方</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ol>
+        </nav>
 
         <section class="article-section" id="basic">
           <h2>立会いなしとは</h2>
