@@ -12,26 +12,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Roboto:wght@700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
-    :root { --orange:#e9651a; --orange-dark:#bf4b08; --green:#d05300; --blue:#286f94; --ink:#2e332f; --muted:#4f5551; --line:#e4ded6; --bg:#f5f2ee; --paper:#fff; --soft:#fbf8f3; --notice:#fff7d7; --shadow:0 12px 34px rgba(34,28,22,.08); }
+    :root{--base:#fff8f4;--surface:#fff;--paper:#fffdf9;--soft:#fff5f2;--ink:#2f2924;--muted:#5f5550;--line:#f1d7c8;--primary:#e85f61;--primary-dark:#7a2f35;--accent:#e85f61;--accent-dark:#7a2f35;--marker:#fff0a6;--green:#5aa884;--blue:#6b8fa3;--shadow:0 10px 24px rgba(92,58,45,.08);--orange:#e85f61;--orange-dark:#7a2f35;--bg:#fffdf9;--notice:#fff8f4}
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { margin:0; color:var(--ink); background:var(--bg); font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif; font-size:16px; font-weight:500; line-height:2; letter-spacing:0; }
     a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; }
-    .topbar { background:#fff; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; }
-    .topbar-inner { width:min(1160px,calc(100% - 28px)); margin:0 auto; min-height:62px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+
+
     .brand { display:flex; align-items:center; gap:10px; color:#2B2B2B; text-decoration:none; font-weight:900; line-height:1; white-space:nowrap; }
     .brand:hover { text-decoration:none; }
-    .brand-symbol { width:34px; height:34px; display:grid; place-items:center; background:#D05300; color:#fff; border-radius:4px; font-size:19px; font-weight:900; box-shadow:0 2px 0 rgba(126,55,8,.22); }
+
     .brand-word { display:flex; align-items:baseline; gap:4px; letter-spacing:0; }
     .brand-area { color:#2B2B2B; font-size:26px; font-weight:700; }
     .brand-no { color:#4A4A4A; font-size:17px; font-weight:700; }
-    .brand-main { color:#D05300; font-size:25px; font-weight:900; }
+
     .brand:hover { text-decoration:none; }
-    .brand-symbol { width:34px; height:34px; display:grid; place-items:center; background:#D05300; color:#fff; border-radius:4px; font-size:19px; font-weight:900; box-shadow:0 2px 0 rgba(126,55,8,.22); }
+
     .brand-word { display:flex; align-items:baseline; gap:4px; letter-spacing:0; }
     .brand-area { color:#2B2B2B; font-size:26px; font-weight:700; }
     .brand-no { color:#4A4A4A; font-size:17px; font-weight:700; }
-    .brand-main { color:#D05300; font-size:25px; font-weight:900; }
+
     .nav { display:flex; align-items:center; gap:13px; font-size:14px; font-weight:900; white-space:nowrap; overflow-x:auto; }
     .nav a { color:#333; } .call { display:inline-grid; place-items:center; min-height:36px; padding:0 14px; background:var(--orange); color:#fff!important; border-radius:4px; }
     .hero { background:linear-gradient(90deg,rgba(14,20,22,.9) 0%,rgba(14,20,22,.78) 42%,rgba(14,20,22,.42) 70%,rgba(14,20,22,.18) 100%),url("/assets/cv-hero-staff-photo.png?v=1"); background-size:cover; background-position:center; }
@@ -61,7 +61,7 @@
     p { margin:0 0 18px; } .marker { background:linear-gradient(transparent 62%,rgba(255,240,0,.58) 62%); font-weight:900; padding:0 .05em .02em; }
     .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:18px 0; }
     .card { border:1px solid var(--line); background:var(--soft); padding:15px; min-height:130px; } .card strong { display:block; margin-bottom:8px; line-height:1.5; } .card span { display:block; color:var(--muted); font-size:14px; line-height:1.8; }
-    table { width:100%; border-collapse:collapse; margin:18px 0 22px; background:#fff; font-size:14px; line-height:1.8; } th,td { border:1px solid #ddd7d0; padding:12px; vertical-align:top; } th { text-align:left; background:#f1eee8; white-space:nowrap; font-weight:900; }
+    table { width:100%; border-collapse:collapse; margin:18px 0 22px; background:#fff; font-size:14px; line-height:1.8; } th,td { border:1px solid #f1d7c8; padding:12px; vertical-align:top; } th { text-align:left; background:#f1eee8; white-space:nowrap; font-weight:900; }
     .area-tags,.ward-links { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 20px; } .area-tags span,.ward-links a { display:inline-block; padding:4px 10px; border:1px solid var(--line); background:#fff; color:#3a3632; border-radius:999px; font-size:14px; font-weight:900; }
 
     .city-map {
@@ -142,7 +142,7 @@
     .case-points span {
       display: block;
       padding: 8px 9px;
-      border: 1px solid #eadfd4;
+      border: 1px solid #f1d7c8;
       background: #fff;
       font-weight: 900;
       line-height: 1.55;
@@ -151,15 +151,15 @@
     .case-note {
       margin: 16px 0 0;
       padding: 14px 16px;
-      border: 1px solid #eadfd4;
-      background: #fff8e9;
+      border: 1px solid #f1d7c8;
+      background: #fff8f4;
       font-size: 14px;
       line-height: 1.9;
     }
 
     .bad-vendor-visual {
       margin: 18px 0;
-      border: 1px solid #eadfd4;
+      border: 1px solid #f1d7c8;
       background: #fff;
     }
 
@@ -175,7 +175,7 @@
       color: var(--muted);
       font-size: 13px;
       line-height: 1.7;
-      border-top: 1px solid #eadfd4;
+      border-top: 1px solid #f1d7c8;
       background: #fffdf8;
     }
 
@@ -281,7 +281,7 @@
     }
     .bar-fill {
       height: 100%;
-      background: linear-gradient(90deg, var(--orange), #f2b766);
+      background: linear-gradient(90deg, var(--orange), #f1d7c8);
       border-radius: inherit;
     }
     .flow { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:18px 0; counter-reset:step; } .flow-item { border:1px solid var(--line); background:#fff; padding:14px; min-height:140px; } .flow-item:before { counter-increment:step; content:"STEP " counter(step); display:inline-block; margin-bottom:8px; padding:1px 7px; background:var(--blue); color:#fff; font-size:12px; font-weight:900; } .flow-item b { display:block; margin-bottom:6px; } .flow-item span { color:var(--muted); display:block; font-size:14px; line-height:1.8; }
@@ -293,34 +293,24 @@
     .ba-photo { position:relative; overflow:hidden; margin:0; border:1px solid var(--line); background:#f3f0ea; aspect-ratio:1/1; }
     .ba-photo img { display:block; width:100%; height:100%; object-fit:cover; }
     .ba-label { position:absolute; left:10px; top:10px; padding:2px 9px; background:rgba(45,45,45,.9); color:#fff; font-size:13px; font-weight:900; }
-    .ba-label.after { background:rgba(208,83,0,.94); }
+    .ba-label.after { background:rgba(200,90,106,.94); }
     .faq { display:grid; gap:10px; margin:18px 0; } .faq details { border:1px solid var(--line); background:#fff; padding:12px 14px; } .faq summary { cursor:pointer; font-weight:900; }
     .notice { border:1px solid #d9c78d; background:var(--notice); padding:16px 18px; margin:18px 0; }
     .cta-band { margin-top:38px; background:#2d2d2d; color:#fff; padding:24px; display:grid; grid-template-columns:1fr auto; gap:18px; align-items:center; } .cta-band h2 { margin:0 0 6px; font-size:23px; line-height:1.4; } .cta-band p { margin:0; color:rgba(255,255,255,.82); }
-    .footer { margin-top:28px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-     .site-footer { margin-top:38px; padding:24px; border:1px solid var(--line); background:#f7f3ec; color:var(--ink); }
-    .site-footer h2 { margin:0 0 12px; font-size:18px; line-height:1.45; }
-    .footer-grid { display:grid; grid-template-columns:1fr 1.35fr 1fr; gap:18px; }
-    .footer-col { min-width:0; }
-    .footer-links,.hotline-list,.policy-list { list-style:none; padding:0; margin:0; display:grid; gap:9px; font-size:14px; line-height:1.75; }
+
+
+
     .hotline-list li { padding:10px; border:1px solid rgba(0,0,0,.08); background:#fff; }
     .hotline-list b,.hotline-list span { display:block; }
-    .footer-links a,.policy-list a { color:var(--ink); font-weight:900; }
-    .footer-note { margin:12px 0 0; color:var(--muted); font-size:13px; line-height:1.8; }
-    .footer-bottom { margin-top:18px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; line-height:1.8; }
-    @media (max-width:900px){ .page-shell{grid-template-columns:1fr} aside{position:static} }
-    .site-footer { margin-top:38px; padding:24px; border:1px solid var(--line); background:#f7f3ec; color:var(--ink); }
-    .site-footer h2 { margin:0 0 12px; font-size:18px; line-height:1.45; }
-    .footer-grid { display:grid; grid-template-columns:1fr 1.35fr 1fr; gap:18px; }
-    .footer-col { min-width:0; }
-    .footer-links,.hotline-list,.policy-list { list-style:none; padding:0; margin:0; display:grid; gap:9px; font-size:14px; line-height:1.75; }
-    .hotline-list li { padding:10px; border:1px solid rgba(0,0,0,.08); background:#fff; }
+
+@media (max-width:900px){ .page-shell{grid-template-columns:1fr} aside{position:static} }
+
+
+.hotline-list li { padding:10px; border:1px solid rgba(0,0,0,.08); background:#fff; }
     .hotline-list b,.hotline-list span { display:block; }
-    .footer-links a,.policy-list a { color:var(--ink); font-weight:900; }
-    .footer-note { margin:12px 0 0; color:var(--muted); font-size:13px; line-height:1.8; }
-    .footer-bottom { margin-top:18px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; line-height:1.8; }
-    @media (max-width:900px){ .footer-grid{grid-template-columns:1fr} .hero-inner{grid-template-columns:1fr}.cards,.stats,.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-grid{grid-template-columns:1fr}.cta-band{grid-template-columns:1fr} }
-    @media (max-width:640px){ .checklist,.bad-vendor-grid,.safe-checks{grid-template-columns:1fr} .topbar-inner{align-items:flex-start; flex-direction:column; padding:10px 0}.brand-word{flex-wrap:wrap;row-gap:2px}.brand-area{font-size:23px}.brand-main{font-size:22px}.page{padding:18px 16px 32px}.cards,.stats,.flow{grid-template-columns:1fr}.case{grid-template-columns:1fr}.ba-photos{grid-template-columns:1fr}.bar-row{grid-template-columns:88px 1fr 48px} table{display:block; overflow-x:auto; white-space:nowrap} }
+
+@media (max-width:900px){ .hero-inner{grid-template-columns:1fr}.cards,.stats,.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-grid{grid-template-columns:1fr}.cta-band{grid-template-columns:1fr} }
+    @media (max-width:640px){ .checklist,.bad-vendor-grid,.safe-checks{grid-template-columns:1fr} .brand-word{flex-wrap:wrap;row-gap:2px}.brand-area{font-size:23px}.page{padding:18px 16px 32px}.cards,.stats,.flow{grid-template-columns:1fr}.case{grid-template-columns:1fr}.ba-photos{grid-template-columns:1fr}.bar-row{grid-template-columns:88px 1fr 48px} table{display:block; overflow-x:auto; white-space:nowrap} }
     .nearby-wards { border:1px solid var(--line); background:#fffdf8; padding:18px; }
     .nearby-wards .section-title { margin-top:0; }
     .search-intent { border:1px solid var(--line); background:#fffdf8; padding:18px; }
@@ -341,7 +331,7 @@
       justify-content: center;
       min-height: 38px;
       padding: 8px 14px;
-      border: 1px solid #eadfd4;
+      border: 1px solid #f1d7c8;
       background: #fff;
       color: var(--ink);
       border-radius: 999px;
@@ -355,7 +345,7 @@
     .nearby-wards .ward-links a:hover {
       border-color: var(--orange);
       color: var(--orange-dark);
-      background: #fff8e9;
+      background: #fff8f4;
       text-decoration: none;
     }
 
@@ -423,33 +413,34 @@
 
 
     .breadcrumb {
-      background: #fffdf3;
-      border-bottom: 1px solid #eadfd4;
+      background: #fffdf9;
+      border-bottom: 1px solid #f1d7c8;
     }
 
     .breadcrumb-inner {
       width: min(1160px, calc(100% - 28px));
       margin: 0 auto;
       padding: 9px 0;
-      color: #75634f;
+      color: #5f5550;
       font-size: 14px;
       font-weight: 700;
       line-height: 1.7;
     }
 
     .breadcrumb a {
-      color: #8a6b18;
+      color: #2f2924;
       font-weight: 900;
       text-decoration: none;
     }
 
     .breadcrumb a:hover {
       text-decoration: underline;
+      color: #e85f61;
     }
 
     .breadcrumb span {
       margin: 0 7px;
-      color: #a58b61;
+      color: #e85f61;
     }
 
 
@@ -487,11 +478,7 @@
     .ba-grid,
     .bad-vendor-grid,
     .safe-checks,
-    .footer-grid {
-      gap: 18px;
-    }
-
-    .card,
+.card,
     .stat,
     .flow-item,
     .chart-box,
@@ -542,7 +529,7 @@
       display: inline-grid;
       place-items: center;
       border-radius: 50%;
-      background: #d05300;
+      background: #e85f61;
       color: #fff;
       box-shadow: none;
       font-size: 14px;
@@ -693,7 +680,7 @@
   .global-top-score-card b {
     display: block;
     margin-bottom: 8px;
-    color: #9f3e00;
+    color: #7a2f35;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -823,7 +810,7 @@
   .global-visual-body b {
     display: block;
     margin-bottom: 7px;
-    color: #9f3e00;
+    color: #7a2f35;
     font-size: 17px;
     line-height: 1.45;
   }
@@ -837,7 +824,7 @@
     padding: 26px;
     border-radius: 24px;
     background: linear-gradient(135deg, #fff7ec 0%, #fff 58%, #fff7e8 100%);
-    border: 1px solid #ead8c1;
+    border: 1px solid #f1d7c8;
   }
   .global-strategy-head h2 {
     margin: 0 0 10px;
@@ -860,13 +847,13 @@
     padding: 18px;
     border-radius: 18px;
     background: rgba(255,255,255,.92);
-    border: 1px solid #ead8c1;
-    box-shadow: 0 12px 24px rgba(208,83,0,.07);
+    border: 1px solid #f1d7c8;
+    box-shadow: 0 12px 24px rgba(200,90,106,.07);
   }
   .global-strategy-card b {
     display: block;
     margin-bottom: 8px;
-    color: #9f3e00;
+    color: #7a2f35;
     font-size: 17px;
   }
   .global-strategy-card span {
@@ -920,12 +907,10 @@
   body.structure-layout .brand-no,
   body.structure-layout .brand-main,
   body.structure-layout .brand-main::first-letter {
-    color: #D05300 !important;
+    color: #e85f61 !important;
   }
   .brand-symbol,
-  body.structure-layout .brand-symbol {
-    background: #D05300 !important;
-  }
+  body.structure-layout
   body.structure-layout .section-title,
   body.structure-layout .top-search-head h2,
   body.structure-layout .panel-heading h2,
@@ -939,44 +924,44 @@
   .streamlined-top .strategy-card b,
   .streamlined-top .quick-card b,
   .streamlined-top .area-shortcuts a {
-    color: #D05300 !important;
+    color: #e85f61 !important;
   }
   body.structure-layout .section-title::before,
   body.structure-layout .top-search-head h2::before,
   .engagement-refresh .section-title::before,
   .common-kita-ba .section-title::before {
-    background: #D05300 !important;
+    background: #e85f61 !important;
   }
   body.structure-layout .search-chips .primary-chip,
   .prefecture-100-actions a:first-child {
-    background: #D05300 !important;
-    border-color: #D05300 !important;
+    background: #e85f61 !important;
+    border-color: #e85f61 !important;
     color: #fff !important;
   }
   body.structure-layout .pill,
   #prefectures .pref-toggle,
   body.structure-layout #prefectures .pref-toggle,
   body.structure-layout #prefectures .pref-toggle::after {
-    color: #D05300 !important;
+    color: #e85f61 !important;
   }
   .common-ba-points span {
-    color: #D05300 !important;
+    color: #e85f61 !important;
     border-color: #f0c7ad !important;
     background: #fff6ef !important;
   }
   .impact-card,
   body.structure-layout .impact-card {
-    border-top-color: #D05300 !important;
+    border-top-color: #e85f61 !important;
   }
   .impact-card .metric-label,
   body.structure-layout .impact-card .metric-label {
-    background: #D05300 !important;
-    border-color: #D05300 !important;
+    background: #e85f61 !important;
+    border-color: #e85f61 !important;
     color: #fff !important;
   }
   .impact-card .metric-sub,
   body.structure-layout .impact-card .metric-sub {
-    color: #D05300 !important;
+    color: #e85f61 !important;
   }</style>
 
 
@@ -993,14 +978,14 @@
   body.west-tokai-city-quality .hero-panel h2{margin:0 0 12px!important;color:#2f312d!important;font-size:22px!important;font-weight:900!important;line-height:1.45!important}
   body.west-tokai-city-quality .hero-panel li{font-size:15px!important;line-height:1.75!important}
   body.west-tokai-city-quality .btn,body.west-tokai-city-quality .hero-actions a,body.west-tokai-city-quality .card-link{min-height:48px!important;display:inline-grid!important;place-items:center!important;padding:0 18px!important;border-radius:6px!important;font-size:15px!important;font-weight:900!important;text-decoration:none!important}
-  body.west-tokai-city-quality .btn.primary,body.west-tokai-city-quality .hero-actions .primary{background:#d05300!important;color:#fff!important;border:1px solid #d05300!important}
-  body.west-tokai-city-quality .btn.secondary,body.west-tokai-city-quality .btn.ghost{background:#fff!important;color:#8c3d00!important;border:1px solid #eadfd0!important}
-  body.west-tokai-city-quality .west-tokai-first-check{width:min(1120px,calc(100% - 32px))!important;margin:-28px auto 24px!important;position:relative!important;z-index:4!important;background:#fff!important;border:1px solid #eadfd0!important;border-left:6px solid #d05300!important;border-radius:8px!important;box-shadow:0 14px 32px rgba(34,28,22,.09)!important;padding:22px!important}
+  body.west-tokai-city-quality .btn.primary,body.west-tokai-city-quality .hero-actions .primary{background:#e85f61!important;color:#fff!important;border:1px solid #e85f61!important}
+  body.west-tokai-city-quality .btn.secondary,body.west-tokai-city-quality .btn.ghost{background:#fff!important;color:#7a2f35!important;border:1px solid #eadfd0!important}
+  body.west-tokai-city-quality .west-tokai-first-check{width:min(1120px,calc(100% - 32px))!important;margin:-28px auto 24px!important;position:relative!important;z-index:4!important;background:#fff!important;border:1px solid #eadfd0!important;border-left:6px solid #e85f61!important;border-radius:8px!important;box-shadow:0 14px 32px rgba(34,28,22,.09)!important;padding:22px!important}
   body.west-tokai-city-quality .west-tokai-first-check h2{margin:0 0 6px!important;color:#2f312d!important;font-size:24px!important;font-weight:900!important;line-height:1.45!important}
   body.west-tokai-city-quality .west-tokai-first-check p{margin:0 0 14px!important;color:#555f59!important;font-size:16px!important;line-height:1.75!important;font-weight:700!important}
   body.west-tokai-city-quality .west-tokai-first-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
-  body.west-tokai-city-quality .west-tokai-first-grid a{display:grid!important;align-content:center!important;min-height:76px!important;padding:14px!important;border:1px solid #eadfd0!important;border-top:5px solid var(--wt-card,#d05300)!important;border-radius:8px!important;background:linear-gradient(180deg,#fff 0%,var(--wt-bg,#fff8ef) 100%)!important;color:#2f312d!important;text-decoration:none!important}
-  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(1){--wt-card:#d05300;--wt-bg:#fff3e8}
+  body.west-tokai-city-quality .west-tokai-first-grid a{display:grid!important;align-content:center!important;min-height:76px!important;padding:14px!important;border:1px solid #eadfd0!important;border-top:5px solid var(--wt-card,#e85f61)!important;border-radius:8px!important;background:linear-gradient(180deg,#fff 0%,var(--wt-bg,#fff8ef) 100%)!important;color:#2f312d!important;text-decoration:none!important}
+  body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(1){--wt-card:#e85f61;--wt-bg:#fff3e8}
   body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(2){--wt-card:#2f6f63;--wt-bg:#f1faf5}
   body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(3){--wt-card:#4378a8;--wt-bg:#f1f7fb}
   body.west-tokai-city-quality .west-tokai-first-grid a:nth-child(4){--wt-card:#9a4f76;--wt-bg:#fff5f8}
@@ -1008,16 +993,16 @@
   body.west-tokai-city-quality .west-tokai-first-grid span{margin-top:4px!important;font-size:13px!important;line-height:1.55!important;font-weight:700!important;color:#555f59!important}
   body.west-tokai-city-quality main>section,body.west-tokai-city-quality .section,body.west-tokai-city-quality .toc,body.west-tokai-city-quality .area-keyword-guide,body.west-tokai-city-quality .common-kita-ba{background:#fff!important;border:1px solid #eadfd0!important;border-radius:8px!important;box-shadow:0 12px 28px rgba(34,28,22,.06)!important;padding:28px!important;margin-top:24px!important}
   body.west-tokai-city-quality .section-title,body.west-tokai-city-quality section>h2,body.west-tokai-city-quality .toc h2{margin:0 0 18px!important;padding:0 0 12px!important;border:0!important;border-bottom:3px solid #eadfc9!important;background:transparent!important;color:#2b2b2b!important;font-size:24px!important;line-height:1.45!important;font-weight:900!important}
-  body.west-tokai-city-quality .section-title::before,body.west-tokai-city-quality .toc h2::before{content:""!important;display:inline-block!important;width:12px!important;height:12px!important;margin-right:9px!important;background:#d05300!important;border-radius:2px!important;vertical-align:middle!important}
-  body.west-tokai-city-quality .section-kicker{display:inline-grid!important;place-items:center!important;min-height:28px!important;margin:0 0 8px!important;padding:0 10px!important;border-radius:999px!important;background:#fff1e6!important;color:#8c3d00!important;font-size:13px!important;font-weight:900!important}
+  body.west-tokai-city-quality .section-title::before,body.west-tokai-city-quality .toc h2::before{content:""!important;display:inline-block!important;width:12px!important;height:12px!important;margin-right:9px!important;background:#e85f61!important;border-radius:2px!important;vertical-align:middle!important}
+  body.west-tokai-city-quality .section-kicker{display:inline-grid!important;place-items:center!important;min-height:28px!important;margin:0 0 8px!important;padding:0 10px!important;border-radius:999px!important;background:#fff5f2!important;color:#7a2f35!important;font-size:13px!important;font-weight:900!important}
   body.west-tokai-city-quality .toc ol{margin:0!important;padding:0!important;list-style:none!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
   body.west-tokai-city-quality .toc li{margin:0!important;font-size:16px!important;line-height:1.5!important}
   body.west-tokai-city-quality .toc a,body.west-tokai-city-quality .ward-links a,body.west-tokai-city-quality .pref-links a{display:grid!important;place-items:center!important;min-height:40px!important;padding:8px 12px!important;border:1px solid #e7dcc5!important;border-radius:6px!important;background:#fffaf4!important;color:#2f312d!important;font-size:15px!important;font-weight:900!important;line-height:1.35!important;text-align:center!important;text-decoration:none!important}
-  body.west-tokai-city-quality .toc a:hover,body.west-tokai-city-quality .ward-links a:hover{background:#fff1e6!important;border-color:#d05300!important;color:#8c3d00!important}
+  body.west-tokai-city-quality .toc a:hover,body.west-tokai-city-quality .ward-links a:hover{background:#fff5f2!important;border-color:#e85f61!important;color:#7a2f35!important}
   body.west-tokai-city-quality .ward-links{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(108px,1fr))!important;gap:8px!important}
   body.west-tokai-city-quality .card,body.west-tokai-city-quality .admin-card,body.west-tokai-city-quality .checkitem,body.west-tokai-city-quality .stat,body.west-tokai-city-quality .flow-item,body.west-tokai-city-quality .area-box{background:#fff!important;border:1px solid #eadfd0!important;border-radius:8px!important;box-shadow:0 8px 20px rgba(34,28,22,.045)!important;padding:18px!important}
   body.west-tokai-city-quality table{width:100%!important;border-collapse:collapse!important;background:#fff!important;font-size:16px!important;line-height:1.72!important}
-  body.west-tokai-city-quality th,body.west-tokai-city-quality td{border:1px solid #ddd7d0!important;padding:14px!important;text-align:left!important;vertical-align:top!important;font-size:16px!important;line-height:1.72!important}
+  body.west-tokai-city-quality th,body.west-tokai-city-quality td{border:1px solid #f1d7c8!important;padding:14px!important;text-align:left!important;vertical-align:top!important;font-size:16px!important;line-height:1.72!important}
   body.west-tokai-city-quality th{background:#f1eee8!important;color:#2f312d!important;font-weight:900!important}
   body.west-tokai-city-quality .marker{background:linear-gradient(transparent 58%,rgba(255,198,77,.72) 58%)!important;font-weight:900!important}
   @media(max-width:900px){body.west-tokai-city-quality .hero-inner{display:block!important}body.west-tokai-city-quality .hero-panel{margin-top:18px!important}body.west-tokai-city-quality .toc ol,body.west-tokai-city-quality .west-tokai-first-grid{grid-template-columns:1fr!important}}
@@ -1029,7 +1014,7 @@
   #kodokushi-cost.kodokushi-cost {
     background:#fff!important;
     border:1px solid #eadfd0!important;
-    border-left:6px solid #d05300!important;
+    border-left:6px solid #e85f61!important;
     border-radius:8px!important;
     box-shadow:0 12px 28px rgba(34,28,22,.06)!important;
   }
@@ -1045,7 +1030,7 @@
   #kodokushi-cost.kodokushi-cost .stat {
     background:#fff!important;
     border:1px solid #eadfd0!important;
-    border-top:5px solid #d05300!important;
+    border-top:5px solid #e85f61!important;
     border-radius:8px!important;
     box-shadow:0 8px 20px rgba(34,28,22,.045)!important;
     padding:16px!important;
@@ -1070,7 +1055,7 @@
   #kodokushi-cost.kodokushi-cost .stat strong {
     display:block!important;
     margin-top:5px!important;
-    color:#8c3d00!important;
+    color:#7a2f35!important;
     font-size:26px!important;
     line-height:1.2!important;
     font-weight:900!important;
@@ -1107,7 +1092,7 @@
   #kodokushi-cost.kodokushi-cost .notice {
     background:#fff8ea!important;
     border:1px solid #ead8b7!important;
-    border-left:5px solid #d05300!important;
+    border-left:5px solid #e85f61!important;
     color:#3f3a31!important;
   }
   #kodokushi-cost.kodokushi-cost .source-note {
@@ -1125,12 +1110,12 @@
     margin: 30px 0;
     padding: clamp(22px, 3vw, 34px);
     background: #fff7ec;
-    border: 1px solid #ead8c1;
+    border: 1px solid #f1d7c8;
     border-radius: 8px;
     box-shadow: 0 14px 30px rgba(82, 54, 24, .07);
   }
   #service .section-kicker {
-    color: #9f3e00;
+    color: #7a2f35;
     font-weight: 900;
   }
   #service .section-title {
@@ -1150,14 +1135,14 @@
     margin: 0;
     padding: 18px;
     background: #fff;
-    border: 1px solid #eadfd4;
-    border-top: 4px solid #d05300;
+    border: 1px solid #f1d7c8;
+    border-top: 4px solid #e85f61;
     border-radius: 8px;
     box-shadow: 0 10px 22px rgba(34, 28, 22, .06);
   }
   #service .service-list .card h3 {
     margin: 0 0 8px;
-    color: #8c3d00;
+    color: #7a2f35;
     font-size: 18px;
     line-height: 1.45;
   }
@@ -1312,37 +1297,8 @@
   <meta property="og:image" content="https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png">
   <meta property="og:image:alt" content="遺品整理・生前整理.jpの遺品整理・生前整理ガイド">
   <meta name="twitter:image" content="https://www.ihinseiri-seizenseiri.jp/assets/cv-hero-staff-photo.png">
-  <meta name="theme-color" content="#D05300">
+  <meta name="theme-color" content="#e85f61">
   <meta name="format-detection" content="telephone=no">
-  <style id="global-footer-links-unified-v1">
-    .footer{
-      background:#2b231d!important;
-      color:#fff7ea!important;
-      margin-top:60px!important;
-      padding:34px 0!important;
-    }
-    .footer-inner,
-    .common-legal-links{
-      width:min(1120px,calc(100% - 28px))!important;
-      margin:0 auto!important;
-      color:#fff7ea!important;
-      font-size:14px!important;
-      line-height:1.8!important;
-    }
-    .common-legal-links{
-      margin-top:10px!important;
-      font-weight:700!important;
-    }
-    .common-legal-links a{
-      color:#fff7ea!important;
-      text-decoration:none!important;
-      font-weight:900!important;
-    }
-    .common-legal-links a:hover{
-      color:#ffd7a8!important;
-      text-decoration:underline!important;
-    }
-  </style>
 <style id="city-readable-width-unified-v1">
   html body .page,
   html body .page-shell,
@@ -1372,38 +1328,12 @@
     margin-left:0!important;
     margin-right:0!important;
   }
-  html body .footer,
-  html body .site-footer,
-  html body footer {
-    width:100%!important;
-  }
-  html body .footer-inner,
-  html body .common-legal-links,
-  html body .footer-bottom,
-  html body .footer-grid,
-  html body .footer-note {
-    width:min(1120px,calc(100% - 28px))!important;
-    max-width:1120px!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
-  }
-  html body .common-legal-links {
-    display:block!important;
-    padding-top:8px!important;
-    line-height:1.9!important;
-  }
   @media(max-width:640px){
     html body .page,
     html body .page-shell,
     html body .wrap,
-    html body .layout,
-    html body .footer-inner,
-    html body .common-legal-links,
-    html body .footer-bottom,
-    html body .footer-grid,
-    html body .footer-note {
-      width:calc(100% - 28px)!important;
-      max-width:calc(100% - 28px)!important;
+    html body .layout {
+      width:min(1120px,calc(100% - 20px))!important;
     }
   }
 </style>
@@ -1436,29 +1366,7 @@
 }
 </script>
 
-  <style id="shared-top-header-style">
-    .global-site-header.global-site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:9999!important;background:#fff!important;border-bottom:1px solid #f0ded8!important;box-shadow:0 4px 18px rgba(37,33,29,.04)!important;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;color:#2f2924!important}
-    .global-site-header *{box-sizing:border-box!important;letter-spacing:0!important}
-    html body{padding-top:132px!important}
-    .global-header-head{width:min(1180px,calc(100% - 32px))!important;min-height:74px!important;margin:0 auto!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:22px!important;align-items:center!important}
-    .global-header-nav-wrap{background:#fff!important}
-    .global-header-nav-row{width:min(1180px,calc(100% - 32px))!important;min-height:58px!important;margin:0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important}
-    .global-brand{display:flex!important;align-items:center!important;gap:10px!important;font-weight:900!important;color:#3a312c!important;text-decoration:none!important}
-    .global-brand:hover{text-decoration:none!important}
-    .global-brand-mark{width:46px!important;height:46px!important;display:block!important;object-fit:contain!important;flex:0 0 auto!important}
-    .global-brand>span{display:flex!important;flex-direction:column!important;gap:3px!important;align-items:flex-start!important;justify-content:center!important;line-height:1!important;margin:0!important;padding:0!important}
-    .global-brand-main{display:block!important;font-size:25px!important;line-height:1.08!important;font-weight:900!important;color:#3a312c!important;margin:0!important;padding:0!important}
-    .global-brand-sub{display:block!important;color:#5f5550!important;font-size:12px!important;font-weight:800!important;line-height:1.2!important;margin:0!important;padding:0!important}
-    .global-header-copy{margin:0!important;color:#4f4740!important;font-size:13px!important;font-weight:800!important;line-height:1.75!important;text-align:center!important;white-space:nowrap!important}
-    .global-header-contact{display:flex!important;align-items:center!important;gap:12px!important;justify-content:flex-end!important}
-    .global-header-contact small{display:block!important;color:#6b625b!important;font-size:11px!important;font-weight:800!important;line-height:1.35!important;text-align:right!important}
-    .global-header-contact a{min-height:38px!important;display:grid!important;place-items:center!important;padding:0 14px!important;border-radius:4px!important;background:#ef746f!important;color:#fff!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;text-decoration:none!important;border:0!important}
-    .global-header-nav{display:flex!important;align-items:stretch!important;justify-content:center!important;gap:34px!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important;max-width:100%!important}
-    .global-header-nav a{min-width:132px!important;min-height:58px!important;display:grid!important;place-items:center!important;padding:0 16px!important;color:#2f2925!important;text-align:center!important;border-radius:0!important;text-decoration:none!important;background:transparent!important;border:0!important}
-    .global-header-nav a:hover{background:#fff4ec!important;color:#d95852!important;text-decoration:none!important}
-    @media(max-width:900px){.global-header-head{grid-template-columns:1fr!important;gap:10px!important;padding:12px 0!important;text-align:center!important}.global-brand{justify-content:center!important}.global-header-contact{justify-content:center!important}.global-header-contact small{text-align:center!important}.global-header-nav-wrap{padding:10px 0!important}.global-header-nav-row{width:calc(100vw - 80px)!important;max-width:calc(100vw - 80px)!important}.global-header-nav{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;white-space:normal!important;overflow:visible!important;padding-bottom:4px!important}.global-header-nav a{display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px!important;padding:6px 8px!important;border:1px solid #f0ded8!important;border-radius:3px!important;background:#fff!important;font-size:13px!important;text-align:center!important}}
-    @media(max-width:900px){.global-site-header.global-site-header{position:static!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important}html body{padding-top:0!important}}
-  </style>
+
 
   <style id="standard-area-page-model-style">
     .standard-area-model{width:min(1100px,calc(100% - 28px));margin:28px auto;padding:0;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif;color:#2f2924}
@@ -1472,19 +1380,39 @@
     .standard-area-criteria-list li:before{content:"";position:absolute;left:0;top:.72em;width:9px;height:9px;border-radius:50%;background:#ef746f}
     .standard-area-admin{background:#fff;border:1px solid #f0ded8;border-radius:8px;padding:22px;box-shadow:0 10px 24px rgba(92,58,45,.06)}
     .standard-area-admin-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:14px}
-    .standard-area-admin-grid a{display:block;min-height:84px;padding:12px;border:1px solid #f0ded8;border-radius:6px;background:#fffaf5;color:#2f2924;text-decoration:none!important;font-weight:900;font-size:14px;line-height:1.55}
+    .standard-area-admin-grid a{display:block;min-height:84px;padding:12px;border:1px solid #f0ded8;border-radius:6px;background:#fffdf9;color:#2f2924;text-decoration:none!important;font-weight:900;font-size:14px;line-height:1.55}
     .standard-area-admin-grid a span{display:block;margin-top:5px;color:#6b625b;font-size:12px;font-weight:800;line-height:1.55}
     @media(max-width:820px){.standard-area-model{width:calc(100% - 24px);margin:22px auto}.standard-area-model-head{grid-template-columns:1fr}.standard-area-admin-grid{grid-template-columns:1fr}.standard-area-sponsor,.standard-area-criteria,.standard-area-admin{padding:18px}.standard-area-sponsor h2,.standard-area-criteria h2,.standard-area-admin h2{font-size:20px}}
   </style>
+
+<style id="global-header-unified-v2">
+  .global-site-header.global-site-header{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;z-index:9999!important;background:#fffdf9!important;border-bottom:1px solid #f1d7c8!important;box-shadow:0 4px 18px rgba(92,58,45,.06)!important;font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;color:#2f2924!important}
+  .global-site-header *{box-sizing:border-box!important;letter-spacing:0!important}
+  .global-header-head{width:min(1180px,calc(100% - 32px))!important;min-height:72px!important;margin:0 auto!important;display:grid!important;grid-template-columns:minmax(260px,340px) minmax(240px,1fr) minmax(190px,260px)!important;gap:18px!important;align-items:center!important}
+  .global-header-nav-wrap{background:#fff!important}
+  .global-header-nav-row{width:min(1180px,calc(100% - 32px))!important;min-height:58px!important;margin:0 auto!important;display:flex!important;align-items:center!important;justify-content:center!important}
+  .global-brand{display:flex!important;align-items:center!important;gap:10px!important;font-weight:900!important;color:#3a312c!important;text-decoration:none!important}
+  .global-brand-mark{width:40px!important;height:40px!important;object-fit:contain!important;display:block!important;flex:0 0 auto!important}
+  .global-brand-main{display:block!important;font-size:25px!important;line-height:1.08!important;font-weight:900!important;color:#3a312c!important;margin:0!important;padding:0!important}
+  .global-brand-sub{display:block!important;color:#5f5550!important;font-size:12px!important;font-weight:800!important;line-height:1.2!important;margin:0!important;padding:0!important}
+  .global-header-copy{margin:0!important;color:#4f4740!important;font-size:13px!important;font-weight:800!important;line-height:1.75!important;text-align:center!important;white-space:nowrap!important}
+  .global-header-contact{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important}
+  .global-header-contact small{display:block!important;color:#6b625b!important;font-size:11px!important;font-weight:800!important;line-height:1.35!important;text-align:right!important}
+  .global-header-contact a{min-height:38px!important;display:grid!important;place-items:center!important;padding:0 14px!important;border-radius:4px!important;background:#e85f61!important;color:#fff!important;font-size:13px!important;font-weight:900!important;white-space:nowrap!important;text-decoration:none!important;border:0!important}
+  .global-header-nav{display:flex!important;align-items:stretch!important;justify-content:center!important;gap:34px!important;font-size:15px!important;font-weight:900!important;white-space:nowrap!important;max-width:100%!important}
+  .global-header-nav a{min-width:132px!important;min-height:58px!important;display:grid!important;place-items:center!important;padding:0 16px!important;color:#2f2925!important;text-align:center!important;border-radius:0!important;text-decoration:none!important;background:transparent!important;border:0!important}
+  .global-header-nav a:hover{background:#fff5f2!important;color:#7a2f35!important;text-decoration:none!important}
+  @media(max-width:900px){.global-site-header.global-site-header{position:static!important;top:auto!important;left:auto!important;right:auto!important;width:100%!important}.global-header-head{grid-template-columns:1fr!important;gap:10px!important;padding:12px 0!important;text-align:center!important}.global-brand{justify-content:center!important}.global-header-copy{white-space:normal!important}.global-header-contact{justify-content:center!important}.global-header-contact small{text-align:center!important}.global-header-nav-wrap{padding:10px 0!important}.global-header-nav-row{width:calc(100vw - 80px)!important;max-width:calc(100vw - 80px)!important}.global-header-nav{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:8px!important;white-space:normal!important;overflow:visible!important;padding-bottom:4px!important}.global-header-nav a{display:flex!important;align-items:center!important;justify-content:center!important;min-height:38px!important;padding:6px 8px!important;border:1px solid #f1d7c8!important;border-radius:3px!important;background:#fff!important;font-size:13px!important;text-align:center!important}html body{padding-top:0!important}}
+</style>
 </head>
 <body>
-  <header class="global-site-header">
+<header class="global-site-header">
   <div class="global-header-head">
     <a class="global-brand" href="/">
       <img class="global-brand-mark" src="/assets/site-logo-hands.png" alt="" aria-hidden="true">
       <span><span class="global-brand-main">遺品整理・生前整理.jp</span><span class="global-brand-sub">相談前に確認できる全国ガイド</span></span>
     </a>
-    <p class="global-header-copy">東員町の粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載</p>
+    <p class="global-header-copy">全国の地域ごとの粗大ごみ、自己搬入先、行政窓口、業者へ伝える内容を掲載</p>
     <div class="global-header-contact" aria-label="お問い合わせ案内">
       <small>相談前の確認や<br>掲載基準はこちら</small>
       <a href="/operator/">お問い合わせ</a>
@@ -1502,7 +1430,8 @@
     </div>
   </div>
 </header>
-  <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a><span>›</span><a href="/mie/">三重県</a><span>›</span>東員町</div></nav>
+
+  <nav class="breadcrumb" aria-label="パンくずリスト"><div class="breadcrumb-inner"><a href="/">TOP</a> <span>›</span> <a href="/mie/">三重県</a> <span>›</span> 東員町</div></nav>
   <section class="hero"><div class="hero-inner"><div><span class="eyebrow">三重県東員町で遺品整理・生前整理を探す</span><h1>東員町で遺品整理・生前整理を相談する前に確認したいこと</h1><p class="hero-lead">東員町で家財整理、貴重品探索、形見分け、仏壇・写真の供養、施設入居前の生前整理、実家じまいを進める方向けに、見積もり前に確認したい料金・作業内容・行政ルールをまとめました。</p><div class="hero-actions"><a class="btn primary" href="#towns">作業場所から探す</a><a class="btn secondary" href="#price">概算料金を見る</a><a class="btn ghost" href="#avoid-bad-vendors">危ない業者を避ける</a></div><div class="hero-badges"><div class="badge"><b>立会い不要</b><span>鍵預かり・写真報告・遠方親族対応</span></div><div class="badge"><b>養生対応</b><span>共用廊下・階段・搬出導線</span></div><div class="badge"><b>買取相殺</b><span>家電・貴金属・趣味用品の査定</span></div><div class="badge"><b>行政確認</b><span>不確実な番号は掲載せず公式へ誘導</span></div></div></div><div class="hero-panel"><h2>東員町で特に多い相談</h2><ul class="quick-list"><li>東員町の実家を遠方から立会いなしで整理したい</li><li>通帳・印鑑・権利書・写真・貴金属を処分前に探してほしい</li><li>行政の粗大ごみと業者作業の範囲を分けたい</li><li>仏壇・写真・人形を通常処分と分けて相談したい</li></ul></div></div></section>
 
 <section id="standard-area-listing-model" class="standard-area-model" aria-label="東員町の相談前確認と行政情報">
@@ -1600,8 +1529,8 @@
   section.area-keyword-guide .section-title{
     margin:0 0 18px!important;
     padding:11px 15px!important;
-    background:#D05300!important;
-    border-left:7px solid #9F3E00!important;
+    background:#e85f61!important;
+    border-left:7px solid #7a2f35!important;
     color:#fff!important;
     font-size:26px!important;
     line-height:1.45!important;
@@ -1631,7 +1560,7 @@
   section.area-keyword-guide .faq.area-keyword-details details{
     background:#fff!important;
     border:1px solid #ead8bf!important;
-    border-left:6px solid #D05300!important;
+    border-left:6px solid #e85f61!important;
     box-shadow:0 8px 18px rgba(34,28,22,.05)!important;
     margin:10px 0!important;
     padding:14px 16px!important;
@@ -1646,7 +1575,7 @@
   section.area-keyword-guide .area-keyword-details summary,
   #area-keyword-guide.area-keyword-guide .faq.area-keyword-details summary,
   section.area-keyword-guide .faq.area-keyword-details summary{
-    color:#8c3d00!important;
+    color:#7a2f35!important;
     font-weight:900!important;
   }
 </style>
@@ -1700,9 +1629,9 @@
         <label style="display:flex;align-items:center;gap:8px;min-height:42px;padding:8px 10px;border:1px solid #dfe6df;border-radius:6px;background:#fffaf4;font-size:14px;line-height:1.45"><input type="checkbox" data-global-price-option value="-10000" checked>買取できる品がある</label>
       </div>
     </div>
-    <div style="display:grid;align-content:center;background:#fff7ec;border:1px solid #ead8c1;border-radius:8px;padding:18px" aria-live="polite">
+    <div style="display:grid;align-content:center;background:#fff7ec;border:1px solid #f1d7c8;border-radius:8px;padding:18px" aria-live="polite">
       <span style="color:#4f5c55;font-size:14px;font-weight:900">概算目安</span>
-      <b data-global-price-result style="display:block;margin:5px 0;color:#d05300;font-size:30px;line-height:1.2">43,000円〜</b>
+      <b data-global-price-result style="display:block;margin:5px 0;color:#e85f61;font-size:30px;line-height:1.2">43,000円〜</b>
       <p style="margin:0;color:#4f5c55;font-size:13px;line-height:1.7">荷物量、駐車位置、建物条件、供養・買取の有無で変わります。詳細は見積もり時に確認してください。</p>
     </div>
   </div>
@@ -1922,14 +1851,9 @@
     color:#2B2B2B!important;
   }
   html body .brand-main,
-  html body.structure-layout .brand-main {
-    color:#D05300!important;
-  }
+  html body.structure-layout
   html body .brand-symbol,
-  html body.structure-layout .brand-symbol {
-    background:#D05300!important;
-    color:#fff!important;
-  }
+  html body.structure-layout
 </style>
 <style id="global-readable-palette-reset-v1">
   html body {
@@ -1948,16 +1872,14 @@
   html body .brand-no {
     color:#25211D!important;
   }
-  html body .brand-main {
-    color:#C65312!important;
-  }
+  html body
   html body .global-visual-proof {
     width:min(1160px,calc(100% - 28px))!important;
     margin:32px auto!important;
     padding:28px!important;
     background:#FFFDF9!important;
     background-image:none!important;
-    border:1px solid #E5DDD3!important;
+    border:1px solid #f1d7c8!important;
     border-radius:0!important;
     box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
   }
@@ -2014,7 +1936,7 @@
   html body .global-strategy-card {
     background:#FFFDF9!important;
     background-image:none!important;
-    border-color:#E5DDD3!important;
+    border-color:#f1d7c8!important;
     color:#25211D!important;
     box-shadow:0 14px 34px rgba(45,36,28,.06)!important;
   }
@@ -2023,8 +1945,8 @@
     background:#FFFDF9!important;
     background-image:none!important;
     color:#25211D!important;
-    border:1px solid #E5DDD3!important;
-    border-left:7px solid #C65312!important;
+    border:1px solid #f1d7c8!important;
+    border-left:7px solid #e85f61!important;
     box-shadow:none!important;
   }
   html body h1,
@@ -2051,9 +1973,9 @@
   html body .cta,
   html body .hero a:first-of-type,
   html body .call {
-    background:#C65312!important;
+    background:#e85f61!important;
     background-image:none!important;
-    border-color:#C65312!important;
+    border-color:#e85f61!important;
     color:#fff!important;
   }
   html body .btn.secondary,
@@ -2068,7 +1990,7 @@
   html body .intent-card {
     background:#FFFDF9!important;
     background-image:none!important;
-    border:1px solid #E5DDD3!important;
+    border:1px solid #f1d7c8!important;
     color:#25211D!important;
     box-shadow:none!important;
   }
@@ -2106,9 +2028,9 @@
   html body .common-ba-label.after,
   html body .common-ba-points span,
   html body .global-visual-label {
-    background:#C65312!important;
+    background:#e85f61!important;
     background-image:none!important;
-    border-color:#C65312!important;
+    border-color:#e85f61!important;
     color:#fff!important;
   }
   html body .common-ba-label:not(.after) {
@@ -2132,15 +2054,15 @@
     background-image:linear-gradient(90deg,#4F6F8F,#8EACC6)!important;
   }
   html body .bar-fill.warm {
-    background:#D68A3A!important;
-    background-image:linear-gradient(90deg,#D68A3A,#EEC07E)!important;
+    background:#d9773f!important;
+    background-image:linear-gradient(90deg,#d9773f,#f1d7c8)!important;
   }
   html body .bar-fill.vacancy,
   html body .bar-fill.total-vacant,
   html body .pref-bar-fill.vacancy,
   html body .pref-bar-fill.total-vacant {
-    background:#C65312!important;
-    background-image:linear-gradient(90deg,#C65312,#E99A57)!important;
+    background:#e85f61!important;
+    background-image:linear-gradient(90deg,#e85f61,#f1d7c8)!important;
   }
   html body .bar-fill.national,
   html body .pref-bar-fill.national {
@@ -2171,7 +2093,7 @@
   html body .pref-data-card:nth-child(1) {border-top:4px solid #6C747D!important}
   html body .pref-data-card:nth-child(2) {border-top:4px solid #8B7356!important}
   html body .pref-data-card:nth-child(3),
-  html body .pref-data-card:nth-child(4) {border-top:4px solid #C65312!important}
+  html body .pref-data-card:nth-child(4) {border-top:4px solid #e85f61!important}
   html body .pref-data-card:nth-child(5) {border-top:4px solid #A76A2D!important}
   html body .pref-data-card:nth-child(6) {border-top:4px solid #2F6FA3!important}
   html body .pref-data-card:nth-child(7) {border-top:4px solid #7756B5!important}
@@ -2179,7 +2101,7 @@
   html body .pref-data-card:nth-child(1) b {color:#5D6670!important}
   html body .pref-data-card:nth-child(2) b {color:#745C3F!important}
   html body .pref-data-card:nth-child(3) b,
-  html body .pref-data-card:nth-child(4) b {color:#A94812!important}
+  html body .pref-data-card:nth-child(4) b {color:#8a4a2f!important}
   html body .pref-data-card:nth-child(5) b {color:#8D5D2F!important}
   html body .pref-data-card:nth-child(6) b {color:#2F6FA3!important}
   html body .pref-data-card:nth-child(7) b {color:#6D4FA8!important}
@@ -2196,7 +2118,7 @@
   html body .check,
   html body .source-note {
     background:#FFF6EA!important;
-    border-color:#EAD8C1!important;
+    border-color:#f1d7c8!important;
     color:#4D4740!important;
   }
   html body .marker {
@@ -2224,7 +2146,7 @@
       el.style.setProperty('margin','32px auto','important');
       el.style.setProperty('padding','28px','important');
       el.style.setProperty('background','#FFFDF9','important');
-      el.style.setProperty('border','1px solid #E5DDD3','important');
+      el.style.setProperty('border','1px solid #f1d7c8','important');
       el.style.setProperty('box-shadow','0 14px 34px rgba(45,36,28,.06)','important');
     });
     document.querySelectorAll('.global-visual-proof-head').forEach(function(el){
@@ -2252,8 +2174,8 @@
       else if (el.classList.contains('aging') || el.classList.contains('purple')) color = ['#7756B5','#B59BE3'];
       else if (el.classList.contains('apartment') || el.classList.contains('blue') || el.classList.contains('secondary') || el.classList.contains('secondary-home')) color = ['#2F6FA3','#7CB7DF'];
       else if (el.classList.contains('other') || el.classList.contains('other-vacant') || el.classList.contains('risk')) color = ['#A76A2D','#D9A66B'];
-      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#C65312','#E99A57'];
-      else if (el.classList.contains('warm')) color = ['#D68A3A','#EEC07E'];
+      else if (el.classList.contains('vacancy') || el.classList.contains('total-vacant')) color = ['#e85f61','#f1d7c8'];
+      else if (el.classList.contains('warm')) color = ['#d9773f','#f1d7c8'];
       el.style.setProperty('background', color[0], 'important');
       el.style.setProperty('background-image', 'linear-gradient(90deg,' + color[0] + ',' + color[1] + ')', 'important');
     });
@@ -2269,29 +2191,30 @@
 <!-- global-area-search-region-start -->
 <section class="global-area-search-region" aria-labelledby="global-area-search-region-title">
   <style>
-    .global-area-search-region{width:min(1120px,calc(100% - 28px));margin:38px auto 28px;padding:0;font-family:inherit;color:#25211D}
+        .global-area-search-region{width:min(1120px,calc(100% - 28px));margin:38px auto 28px;padding:0;font-family:inherit;color:#262626}
     .global-area-search-region *{box-sizing:border-box}
     .global-area-search-region .area-head{margin:0 0 18px;text-align:left}
-    .global-area-search-region .area-label{display:block;margin:0 0 6px;color:#C65312;font-size:12px;font-weight:900;letter-spacing:.08em}
-    .global-area-search-region h2{margin:0 0 8px;padding:0;background:transparent;border:0;color:#25211D;font-size:28px;line-height:1.35;font-weight:900;letter-spacing:0}
-    .global-area-search-region .area-lead{margin:0;color:#5A5048;font-size:15px;line-height:1.85}
-    .global-area-search-region .area-card{background:#FFFDF9;border:1px solid #E5DDD3;box-shadow:0 12px 30px rgba(45,36,28,.06);padding:22px}
-    .global-area-search-region .area-directory-title{margin:0 0 14px;padding:0;border:0;background:transparent;color:#25211D;font-size:20px;line-height:1.45;font-weight:900}
+    .global-area-search-region .area-label{display:block;margin:0 0 6px;color:#555;font-size:12px;font-weight:900;letter-spacing:.08em}
+    .global-area-search-region h2{margin:0 0 8px;padding:0;background:transparent;border:0;color:#222;font-size:28px;line-height:1.35;font-weight:900;letter-spacing:0}
+    .global-area-search-region .area-lead{margin:0;color:#555;font-size:15px;line-height:1.85}
+    .global-area-search-region .area-card{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.9fr);gap:24px;align-items:start;background:#fff;border:1px solid #ddd;border-radius:3px;box-shadow:none;padding:22px}
+    .global-area-search-region .area-directory-title{display:inline-flex;margin:0 0 14px;padding:4px 10px;border:0;border-radius:2px;background:#fff5f2;color:#7a2f35;font-size:20px;line-height:1.45;font-weight:900}
     .global-area-search-region .pref-directory{display:grid;gap:10px}
-    .global-area-search-region .pref-row{display:grid;grid-template-columns:112px minmax(0,1fr);gap:14px;align-items:start;padding:9px 0;border-bottom:1px dashed #E5DDD3}
+    .global-area-search-region .pref-row{display:grid;grid-template-columns:112px minmax(0,1fr);gap:12px;align-items:start;padding:9px 0;border-bottom:1px dashed #ddd}
     .global-area-search-region .pref-row:last-child{border-bottom:0}
-    .global-area-search-region .pref-row b{color:#9B7A24;font-size:14px;line-height:1.8;font-weight:900}
-    .global-area-search-region .pref-row div,.global-area-search-region .city-links{display:flex;flex-wrap:wrap;gap:9px 14px}
-    .global-area-search-region a{color:#25211D!important;text-decoration:underline;text-underline-offset:3px;font-size:14px;line-height:1.8;font-weight:800}
-    .global-area-search-region a:hover{color:#C65312!important}
-    .global-area-search-region .directory-bottom{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px;padding-top:18px;border-top:1px solid #E5DDD3}
-    .global-area-search-region .city-block h3{margin:0 0 10px;padding:0;border:0;background:transparent;color:#25211D;font-size:18px;line-height:1.45;font-weight:900}
+    .global-area-search-region .pref-row b{color:#333;font-size:14px;line-height:1.8;font-weight:900}
+    .global-area-search-region .pref-row div,.global-area-search-region .city-links{display:flex;flex-wrap:wrap;gap:8px 13px}
+    .global-area-search-region a{color:#222!important;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;font-size:14px;line-height:1.8;font-weight:800}
+    .global-area-search-region a:hover{color:#111!important;background:#f2f2f2;text-decoration:none}
+    .global-area-search-region .directory-bottom{display:grid;grid-template-columns:1fr;gap:20px;margin-top:0;padding-top:0;padding-left:22px;border-top:0;border-left:1px dotted #ccc}
+    .global-area-search-region .city-block{padding:0}.global-area-search-region .city-block+.city-block{border-top:1px dotted #ccc;padding-top:18px}.global-area-search-region .city-block h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;padding:0;border:0;background:transparent;color:#222;font-size:18px;line-height:1.45;font-weight:900}
+    .global-area-search-region .city-block h3:before{content:"";width:10px;height:10px;border-radius:999px;background:#555;box-shadow:0 0 0 4px #eee;flex:0 0 auto}
     @media(max-width:760px){
       .global-area-search-region{margin:30px auto 24px}
-      .global-area-search-region .area-card{padding:16px}
+      .global-area-search-region .area-card{grid-template-columns:1fr;padding:16px}
       .global-area-search-region h2{font-size:24px}
       .global-area-search-region .pref-row{grid-template-columns:1fr;gap:4px}
-      .global-area-search-region .directory-bottom{grid-template-columns:1fr}
+      .global-area-search-region .directory-bottom{grid-template-columns:1fr;padding-left:0;border-left:0;border-top:1px dotted #ccc;padding-top:18px}
     }
   </style>
   <div class="area-head">
@@ -2300,7 +2223,6 @@
 
   </div>
   <div class="area-card">
-    <h3 class="area-directory-title">都道府県から探す</h3>
     <div class="pref-directory">
       <div class="pref-row"><b>北海道・東北</b><div><a href="/hokkaido/">北海道</a><a href="/aomori/">青森</a><a href="/iwate/">岩手</a><a href="/akita/">秋田</a><a href="/miyagi/">宮城</a><a href="/yamagata/">山形</a><a href="/fukushima/">福島</a></div></div>
       <div class="pref-row"><b>関東</b><div><a href="/tokyo/">東京</a><a href="/kanagawa/">神奈川</a><a href="/saitama/">埼玉</a><a href="/chiba/">千葉</a><a href="/ibaraki/">茨城</a><a href="/tochigi/">栃木</a><a href="/gunma/">群馬</a></div></div>
@@ -2323,7 +2245,6 @@
   </div>
 </section>
 <!-- global-area-search-region-end -->
-<footer class="footer"><div class="footer-inner">東員町の遺品整理・生前整理・実家じまいなら</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
 
 <style id="hero-text-white-unify-v1">
   html body .hero .eyebrow { color: #fff !important; }
@@ -2366,9 +2287,41 @@
     font-weight: 900 !important;
     padding: 0 .04em !important;
   }
-</style></body>
+</style>
+<style id="global-footer-links-unified-v1">
+  .footer{
+    background:#fff!important;
+    color:#5c544b!important;
+    margin-top:38px!important;
+    padding:24px 0!important;
+    border-top:1px solid #f0ded8!important;
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;
+  }
+  .footer-inner,
+  .common-legal-links{
+    width:min(1120px,calc(100% - 28px))!important;
+    margin:0 auto!important;
+    color:#5c544b!important;
+    text-align:center!important;
+    font-size:13px!important;
+    line-height:1.7!important;
+    letter-spacing:0!important;
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif!important;
+  }
+  .common-legal-links{
+    margin-top:5px!important;
+    font-weight:700!important;
+  }
+  .common-legal-links a{
+    color:#7a2f35!important;
+    text-decoration:none!important;
+    font-weight:900!important;
+  }
+  .common-legal-links a:hover{
+    color:#e85f61!important;
+    text-decoration:underline!important;
+  }
+</style>
+<footer class="footer"><div class="footer-inner">遺品整理・生前整理.jp | 東員町の行政ごみ、自己搬入先、見積もり前チェックを整理</div><div class="common-legal-links"><a href="/privacy/">プライバシーポリシー</a> / <a href="/disclaimer/">免責事項</a> / <a href="/sitemap/">サイトマップ</a> / <a href="/operator/">サイト運営者</a></div></footer>
+</body>
 </html>
-
-
-
-

@@ -57,8 +57,8 @@
     .compare,.data-table{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
     .side-card{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);margin-bottom:14px}.side-card h3{margin:0;padding:12px 14px;background:#2f2924;color:#fff;font-size:16px}.side-card ul{margin:0;padding:12px 14px;list-style:none}.side-card li{padding:8px 0;border-bottom:1px dashed var(--line);font-size:13.5px;line-height:1.65}.side-card a{font-weight:900}
     .editor-lead{position:relative;margin:8px 0 54px;padding:34px 0 36px;border-top:3px solid var(--ink);border-bottom:1px solid var(--line)}
-    .editor-lead:before{content:"特集";display:block;margin:0 0 12px;color:var(--primary-dark);font-size:12px;font-weight:900;letter-spacing:.16em}
-    .editor-lead .lead-label{display:inline-flex;margin:0 0 14px;padding:5px 10px;background:var(--soft);border:1px solid var(--line);color:#7a2f35;font-size:12px;font-weight:900;letter-spacing:.06em}
+    .editor-lead:before{content:"特集";display:inline-flex;align-items:center;margin:0 0 12px;padding:4px 11px;background:#fff;border:1px solid var(--line);color:var(--primary-dark);font-size:14px;font-weight:900;letter-spacing:.08em;line-height:1.4}
+    .editor-lead .lead-label{display:inline-flex;margin:0 0 14px;padding:5px 11px;background:var(--soft);border:1px solid var(--line);color:#7a2f35;font-size:14px;font-weight:900;letter-spacing:.04em;line-height:1.4}
     .editor-lead h2{max-width:900px;margin:0 0 16px;font-size:clamp(31px,4vw,48px);line-height:1.34;color:var(--ink)}
     .editor-byline{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 22px;color:#6b625b;font-size:13px;font-weight:800}
     .editor-byline span{display:inline-flex;align-items:center;gap:6px}
@@ -82,7 +82,7 @@
     .magazine-cover b{color:var(--primary-dark)}
     .magazine-section{margin:46px 0 54px;padding:0;border-top:3px solid var(--ink)}
     .magazine-section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,.36fr);gap:18px;align-items:end;padding:22px 0 16px;border-bottom:1px solid var(--line)}
-    .magazine-section small{display:block;margin:0 0 8px;color:var(--primary-dark);font-size:12px;font-weight:900;letter-spacing:.14em}
+    .magazine-section small{display:inline-flex;align-items:center;margin:0 0 10px;padding:4px 10px;border:1px solid var(--line);background:#fff;color:var(--primary-dark);font-size:14px;font-weight:900;letter-spacing:.08em;line-height:1.4}
     .magazine-section h2{margin:0!important;padding:0!important;border:0!important;background:transparent!important;color:var(--ink)!important;font-size:31px!important;line-height:1.42!important}
     .magazine-section-head p{margin:0!important;color:#5a514b!important;font-size:14.5px!important;line-height:1.85!important}
     .magazine-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-bottom:1px solid var(--line)}
@@ -90,7 +90,7 @@
     .magazine-article:nth-child(3n){border-right:0;padding-left:18px}
     .magazine-article:nth-child(3n-1){padding-left:18px}
     .magazine-article:hover{background:var(--soft);text-decoration:none}
-    .magazine-article em{display:block;margin:0 0 8px;color:#7a2f35;font-style:normal;font-size:11px;font-weight:900;letter-spacing:.08em}
+    .magazine-article em{display:inline-flex;align-items:center;margin:0 0 10px;padding:4px 10px;border:1px solid var(--line);background:#fff;color:#7a2f35;font-style:normal;font-size:14px;font-weight:900;letter-spacing:.04em;line-height:1.35}
     .magazine-article b{display:block;margin:0 0 8px;color:#2f2924;font-size:18px;line-height:1.55}
     .magazine-article span{display:block;color:#4d4640;font-size:14.2px;line-height:1.75}
     .series-list{display:grid;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px 0 0}
@@ -271,6 +271,10 @@
   }
   .magazine-section small{
     color:var(--om-pink-dark)!important;
+    font-size:14px!important;
+    padding:4px 11px!important;
+    background:#fff!important;
+    border-color:var(--om-line)!important;
   }
   .magazine-section h2{
     font-size:clamp(29px,3vw,40px)!important;
@@ -285,6 +289,10 @@
   }
   .magazine-article em{
     color:var(--om-pink-dark)!important;
+    font-size:14px!important;
+    padding:4px 11px!important;
+    background:#fff!important;
+    border-color:var(--om-line)!important;
   }
   .data-grid,.cards,.media-hub,.scenario-grid,.reader-map,.next-read{
     border-top:2px solid var(--om-ink)!important;
@@ -1118,6 +1126,83 @@
   .common-legal-links a:hover{
     color:#e85f61!important;
     text-decoration:underline!important;
+  }
+</style>
+<style id="osaka-readable-small-text">
+  .breadcrumb-inner,
+  .kicker,
+  .global-brand-sub,
+  .global-header-copy,
+  .global-header-contact small,
+  .global-header-contact a,
+  .nav a,
+  .stat span,
+  .data-label,
+  .data-card small,
+  .area-links a,
+  .magazine-meta,
+  .magazine-meta span,
+  .editor-byline,
+  .editor-lead:before,
+  .editor-lead .lead-label,
+  .article-index a small,
+  .magazine-section small,
+  .magazine-article em,
+  .reader-card small,
+  .side .toc b,
+  .side .toc .toc-major>li>a,
+  .side .toc .toc-minor>li>a,
+  .side .toc .toc-group-only>span,
+  .global-area-search-region .area-label,
+  .global-area-search-region .pref-row b,
+  .global-area-search-region a {
+    font-size:15px!important;
+    line-height:1.55!important;
+  }
+  .global-header-contact small,
+  .global-brand-sub,
+  .data-card small,
+  .editor-byline,
+  .magazine-meta {
+    color:#4f4740!important;
+  }
+  .nav a {
+    min-height:44px!important;
+    padding:8px 9px!important;
+  }
+  .side .toc .toc-minor>li>a {
+    font-size:14px!important;
+  }
+  .article-index a small,
+  .magazine-section small,
+  .magazine-article em,
+  .editor-lead:before,
+  .editor-lead .lead-label,
+  .data-label,
+  .reader-card small {
+    padding:5px 12px!important;
+  }
+  .stat span,
+  .area-links a,
+  .media-card span,
+  .next-read span,
+  .deep-item span,
+  .source-list span {
+    font-size:15px!important;
+  }
+  @media(max-width:560px){
+    .breadcrumb-inner,
+    .kicker,
+    .global-header-copy,
+    .global-header-contact small,
+    .nav a,
+    .magazine-section small,
+    .magazine-article em,
+    .editor-lead:before,
+    .editor-lead .lead-label,
+    .article-index a small {
+      font-size:15px!important;
+    }
   }
 </style>
 <script id="osaka-column-toc-active">
