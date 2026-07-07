@@ -1318,6 +1318,10 @@ body .minato-mobile-break {
   display: none;
 }
 
+body:has(.global-site-header) {
+  padding-top: 130px !important;
+}
+
 body .global-site-header + .breadcrumb {
   margin-top: 0 !important;
   position: relative;
@@ -1325,6 +1329,10 @@ body .global-site-header + .breadcrumb {
 }
 
 @media (max-width: 900px) {
+  body:has(.global-site-header) {
+    padding-top: 0 !important;
+  }
+
   body .global-site-header + .breadcrumb {
     margin-top: 0 !important;
   }
